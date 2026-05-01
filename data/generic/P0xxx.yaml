@@ -2797,6 +2797,159 @@
   sources:
     - https://en.wikipedia.org/wiki/Exhaust_gas_recirculation
 
+- code: P0353
+  scope: generic
+  category: powertrain
+  title:
+    en: Ignition Coil "C" Primary/Secondary Circuit Malfunction (Cylinder 3)
+    de: Zündspule "C" Primär-/Sekundärkreis Fehlfunktion (Zylinder 3)
+  description:
+    en: Same fault as P0351 but on the cylinder 3 coil.
+    de: Gleicher Fehler wie P0351, aber an der Spule von Zylinder 3.
+  affected_components:
+    - ignition_coil
+    - ignition_coil_wiring
+  common_causes:
+    - id: ignition_coil_failed_electrical
+      likelihood: high
+      label:
+        en: Coil primary winding open or shorted
+        de: Primärwicklung offen oder kurzgeschlossen
+    - id: ignition_coil_wiring
+      likelihood: medium
+      label:
+        en: Wiring or connector fault
+        de: Kabel- oder Steckerfehler
+  repair:
+    difficulty: easy
+    diy_possible: true
+    estimated_cost_eur: [40, 300]
+    estimated_hours: [0.2, 1.5]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+  related_codes: [P0303]
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Ignition_coil
+
+- code: P0354
+  scope: generic
+  category: powertrain
+  title:
+    en: Ignition Coil "D" Primary/Secondary Circuit Malfunction (Cylinder 4)
+    de: Zündspule "D" Primär-/Sekundärkreis Fehlfunktion (Zylinder 4)
+  description:
+    en: Same fault as P0351 but on the cylinder 4 coil.
+    de: Gleicher Fehler wie P0351, aber an der Spule von Zylinder 4.
+  affected_components:
+    - ignition_coil
+    - ignition_coil_wiring
+  common_causes:
+    - id: ignition_coil_failed_electrical
+      likelihood: high
+      label:
+        en: Coil primary winding open or shorted
+        de: Primärwicklung offen oder kurzgeschlossen
+    - id: ignition_coil_wiring
+      likelihood: medium
+      label:
+        en: Wiring or connector fault
+        de: Kabel- oder Steckerfehler
+  repair:
+    difficulty: easy
+    diy_possible: true
+    estimated_cost_eur: [40, 300]
+    estimated_hours: [0.2, 1.5]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+  related_codes: [P0304]
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Ignition_coil
+
+- code: P0410
+  scope: generic
+  category: powertrain
+  title:
+    en: Secondary Air Injection System Malfunction
+    de: Sekundärluftsystem Fehlfunktion
+  description:
+    en: A general fault in the secondary air injection system. The system pumps fresh air into the exhaust during cold start to accelerate catalyst light-off; common faults are a seized pump, blocked passages or a stuck valve.
+    de: Allgemeiner Fehler im Sekundärluftsystem. Das System pumpt während des Kaltstarts Frischluft in den Abgastrakt, um den Katalysator schneller anspringen zu lassen. Häufige Fehler — festsitzende Pumpe, verstopfte Kanäle oder hängendes Ventil.
+  affected_components:
+    - secondary_air_pump
+    - secondary_air_valve
+    - secondary_air_hose
+  common_causes:
+    - id: secondary_air_pump_seized
+      likelihood: high
+      label:
+        en: Air pump seized (water ingress is a common cause)
+        de: Luftpumpe festgesetzt (häufig durch Wassereinbruch)
+    - id: secondary_air_valve_stuck
+      likelihood: medium
+      label:
+        en: Combi valve stuck
+        de: Kombiventil hängt
+  repair:
+    difficulty: medium
+    diy_possible: true
+    estimated_cost_eur: [150, 800]
+    estimated_hours: [1.0, 5.0]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Secondary_air_injection
+
+- code: P0411
+  scope: generic
+  category: powertrain
+  title:
+    en: Secondary Air Injection System Incorrect Flow
+    de: Sekundärluftsystem falscher Durchfluss
+  description:
+    en: When the ECU commands secondary air injection, the actual flow measured by the front oxygen sensor (or a dedicated mass flow meter) does not match the expected value. Usually a partially blocked passage or a leaking combi valve.
+    de: Wenn die Motorsteuerung Sekundärluft anfordert, weicht der tatsächlich gemessene Durchfluss (von der vorderen Lambdasonde oder einem dedizierten Sensor) vom erwarteten Wert ab. Meist ein teilweise verstopfter Kanal oder ein undichtes Kombiventil.
+  affected_components:
+    - secondary_air_pump
+    - secondary_air_valve
+    - secondary_air_passages
+  common_causes:
+    - id: secondary_air_passages_clogged
+      likelihood: high
+      label:
+        en: Air passages in cylinder head clogged with carbon
+        de: Luftkanäle im Zylinderkopf mit Ruß zugesetzt
+    - id: secondary_air_pump_weak
+      likelihood: medium
+      label:
+        en: Air pump weak
+        de: Luftpumpe schwach
+  repair:
+    difficulty: medium
+    diy_possible: true
+    estimated_cost_eur: [150, 1000]
+    estimated_hours: [1.0, 6.0]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+  related_codes: [P0410]
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Secondary_air_injection
+
 - code: P0420
   scope: generic
   category: powertrain
@@ -3453,3 +3606,773 @@
     - sae:J2012
   sources:
     - https://en.wikipedia.org/wiki/Torque_converter
+
+- code: P0441
+  scope: generic
+  category: powertrain
+  title:
+    en: Evaporative Emission System Incorrect Purge Flow
+    de: Tankentlüftungssystem falscher Spülluftstrom
+  description:
+    en: The actual purge flow does not match the commanded value. Usually a purge valve stuck closed (no flow) or stuck open (too much flow at idle). Distinct from a leak code.
+    de: Der tatsächliche Spülluftstrom weicht vom Sollwert ab. Meist ein Tankentlüftungsventil, das geschlossen hängt (kein Durchfluss) oder offen hängt (zu viel Durchfluss im Leerlauf). Kein Leck-Code.
+  affected_components:
+    - evap_purge_valve
+    - evap_canister
+    - evap_hose
+  common_causes:
+    - id: purge_valve_stuck
+      likelihood: high
+      label:
+        en: Purge valve stuck open or closed
+        de: Tankentlüftungsventil hängend
+    - id: purge_hose_kinked
+      likelihood: medium
+      label:
+        en: Purge hose kinked or restricted
+        de: Spülluftleitung geknickt oder verengt
+  repair:
+    difficulty: easy
+    diy_possible: true
+    estimated_cost_eur: [40, 300]
+    estimated_hours: [0.3, 2.0]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Onboard_refueling_vapor_recovery
+
+- code: P0444
+  scope: generic
+  category: powertrain
+  title:
+    en: Evaporative Emission Purge Control Valve Circuit Open
+    de: Tankentlüftungsventil Steuerkreis offen
+  description:
+    en: The ECU has detected an open circuit in the purge solenoid control line — usually a broken wire, unplugged connector, or open coil winding.
+    de: Die Motorsteuerung erkennt einen offenen Stromkreis in der Ansteuerung des Tankentlüftungsventils — meist gebrochene Leitung, abgezogener Stecker oder unterbrochene Wicklung.
+  affected_components:
+    - evap_purge_valve
+    - evap_purge_valve_wiring
+  common_causes:
+    - id: purge_valve_winding_open
+      likelihood: high
+      label:
+        en: Purge solenoid winding open
+        de: Magnetventil-Wicklung unterbrochen
+    - id: purge_valve_wiring
+      likelihood: medium
+      label:
+        en: Wiring or connector fault
+        de: Kabel- oder Steckerfehler
+  repair:
+    difficulty: easy
+    diy_possible: true
+    estimated_cost_eur: [30, 200]
+    estimated_hours: [0.3, 1.5]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Onboard_refueling_vapor_recovery
+
+- code: P0446
+  scope: generic
+  category: powertrain
+  title:
+    en: Evaporative Emission Vent Control Circuit Malfunction
+    de: Tankentlüftung Belüftungsventil Schaltung Fehlfunktion
+  description:
+    en: A fault in the EVAP vent valve circuit. The vent valve seals the canister against atmosphere during the leak test; without it, the test cannot pull a vacuum and may set false leak codes alongside.
+    de: Fehler im Steuerkreis des EVAP-Belüftungsventils. Das Belüftungsventil dichtet den Aktivkohlebehälter während des Dichtheitstests gegen die Atmosphäre ab; ohne dieses Ventil kann das System keinen Unterdruck aufbauen und setzt mitunter zusätzliche falsche Leck-Codes.
+  affected_components:
+    - evap_vent_valve
+    - evap_vent_valve_wiring
+  common_causes:
+    - id: vent_valve_failed
+      likelihood: high
+      label:
+        en: Vent valve seized or contaminated by water/dirt
+        de: Belüftungsventil festgesetzt oder durch Wasser/Schmutz verschmutzt
+    - id: vent_valve_wiring
+      likelihood: medium
+      label:
+        en: Wiring or connector fault
+        de: Kabel- oder Steckerfehler
+  repair:
+    difficulty: easy
+    diy_possible: true
+    estimated_cost_eur: [40, 250]
+    estimated_hours: [0.3, 1.5]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Onboard_refueling_vapor_recovery
+
+- code: P0500
+  scope: generic
+  category: powertrain
+  title:
+    en: Vehicle Speed Sensor "A" Malfunction
+    de: Fahrzeuggeschwindigkeitssensor "A" Fehlfunktion
+  description:
+    en: The vehicle speed sensor (VSS) signal is missing or implausible. On automatic transmissions this often disables cruise control and shift adaptation; ABS-equipped cars typically derive speed from wheel speed sensors as a fallback.
+    de: Das Signal des Fahrzeuggeschwindigkeitssensors (VSS) fehlt oder ist unplausibel. Bei Automatikgetrieben sind dadurch oft Tempomat und Schaltadaption deaktiviert; ABS-Fahrzeuge greifen üblicherweise auf die Raddrehzahlsensoren als Backup zurück.
+  affected_components:
+    - vehicle_speed_sensor
+    - vehicle_speed_sensor_wiring
+  common_causes:
+    - id: vss_failed
+      likelihood: high
+      label:
+        en: Speed sensor failed
+        de: Geschwindigkeitssensor defekt
+    - id: vss_wiring
+      likelihood: medium
+      label:
+        en: Wiring or connector fault
+        de: Kabel- oder Steckerfehler
+  repair:
+    difficulty: medium
+    diy_possible: true
+    estimated_cost_eur: [80, 400]
+    estimated_hours: [0.5, 3.0]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Speed_sensor
+
+- code: P0501
+  scope: generic
+  category: powertrain
+  title:
+    en: Vehicle Speed Sensor "A" Range/Performance
+    de: Fahrzeuggeschwindigkeitssensor "A" Funktionsbereich/Leistung
+  description:
+    en: The VSS signal is present but inconsistent — either values jump implausibly or the sensor reports a speed inconsistent with engine RPM in gear. Often a damaged reluctor ring or a sensor with degraded magnetic response.
+    de: Das VSS-Signal ist vorhanden, aber inkonsistent — entweder springen die Werte unplausibel oder die Geschwindigkeit passt nicht zur Drehzahl im jeweiligen Gang. Häufig beschädigtes Geberrad oder Sensor mit schwachem Magnetfeld.
+  affected_components:
+    - vehicle_speed_sensor
+    - reluctor_ring
+  common_causes:
+    - id: vss_intermittent
+      likelihood: high
+      label:
+        en: Sensor signal intermittent
+        de: Sensorsignal sporadisch
+    - id: reluctor_damage
+      likelihood: low
+      label:
+        en: Reluctor tooth damaged
+        de: Geberrad-Zahn beschädigt
+  repair:
+    difficulty: medium
+    diy_possible: true
+    estimated_cost_eur: [80, 400]
+    estimated_hours: [0.5, 3.0]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+  related_codes: [P0500]
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Speed_sensor
+
+- code: P0560
+  scope: generic
+  category: powertrain
+  title:
+    en: System Voltage Malfunction
+    de: Bordnetzspannung Fehlfunktion
+  description:
+    en: A general fault in the system voltage seen by the ECU — value implausible, missing, or unstable but without crossing the specific thresholds of P0562 (low) or P0563 (high). Often appears intermittently with a marginal alternator or weak battery.
+    de: Allgemeine Störung der Bordnetzspannung am Steuergerät — Wert unplausibel, fehlt oder ist instabil, ohne die spezifischen Schwellwerte von P0562 (niedrig) oder P0563 (hoch) zu überschreiten. Tritt oft sporadisch auf bei grenzwertiger Lichtmaschine oder schwacher Batterie.
+  affected_components:
+    - battery
+    - alternator
+    - battery_cables
+  common_causes:
+    - id: charging_marginal
+      likelihood: high
+      label:
+        en: Charging system marginal (aged battery or alternator)
+        de: Ladesystem grenzwertig (gealterte Batterie oder Lichtmaschine)
+    - id: battery_terminal_corrosion
+      likelihood: medium
+      label:
+        en: Corroded battery terminals or ground strap
+        de: Korrodierte Batteriepole oder Massekabel
+  repair:
+    difficulty: easy
+    diy_possible: true
+    estimated_cost_eur: [80, 600]
+    estimated_hours: [0.3, 2.5]
+  flags:
+    mil: true
+    emissions_relevant: false
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Automotive_battery
+
+- code: P0571
+  scope: generic
+  category: powertrain
+  title:
+    en: Brake Switch "A" Circuit Malfunction
+    de: Bremslichtschalter "A" Schaltung Fehlfunktion
+  description:
+    en: The brake light switch signal seen by the ECU is implausible — for example, both contacts active simultaneously, or no signal change despite the brake pedal being pressed (cruise control engages and disengages on this signal). On many cars also disables shift interlock.
+    de: Das Signal des Bremslichtschalters am Steuergerät ist unplausibel — z. B. beide Kontakte gleichzeitig aktiv oder kein Signalwechsel beim Treten des Pedals (der Tempomat reagiert auf dieses Signal). Auf vielen Fahrzeugen blockiert das zusätzlich die Wähl-/Schaltsperre.
+  affected_components:
+    - brake_light_switch
+    - brake_light_switch_wiring
+  common_causes:
+    - id: brake_switch_failed
+      likelihood: high
+      label:
+        en: Brake switch failed (worn contacts, internal break)
+        de: Bremslichtschalter defekt (verschlissene Kontakte, interner Bruch)
+    - id: brake_switch_misadjusted
+      likelihood: medium
+      label:
+        en: Switch misadjusted (does not actuate at correct pedal position)
+        de: Schalter falsch eingestellt (löst bei falscher Pedalstellung aus)
+  repair:
+    difficulty: easy
+    diy_possible: true
+    estimated_cost_eur: [20, 150]
+    estimated_hours: [0.2, 1.0]
+  flags:
+    mil: true
+    emissions_relevant: false
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Brake_switch
+
+- code: P0601
+  scope: generic
+  category: powertrain
+  title:
+    en: Internal Control Module Memory Check Sum Error
+    de: Internes Steuergerät Speicher-Prüfsummenfehler
+  description:
+    en: The ECU's internal memory checksum does not match the expected value at startup — the firmware/calibration in flash has become corrupt. Often appears after a failed flash, low battery during programming, or genuine module hardware failure.
+    de: Die Prüfsumme des internen ECU-Speichers stimmt beim Start nicht — die Firmware/Kalibrierung im Flash ist korrupt. Tritt häufig nach einem fehlgeschlagenen Flash-Vorgang, niedriger Batteriespannung bei der Programmierung oder echtem Modulausfall auf.
+  affected_components:
+    - engine_control_module
+  common_causes:
+    - id: ecm_failed_flash
+      likelihood: medium
+      label:
+        en: Failed flash / interrupted programming
+        de: Fehlgeschlagener Flash / unterbrochene Programmierung
+    - id: ecm_hardware_failure
+      likelihood: medium
+      label:
+        en: Module hardware failure
+        de: Modul-Hardwarefehler
+  repair:
+    difficulty: hard
+    diy_possible: false
+    estimated_cost_eur: [150, 2000]
+    estimated_hours: [0.5, 6.0]
+  flags:
+    mil: true
+    emissions_relevant: false
+    limp_mode_possible: true
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Engine_control_unit
+
+- code: P0602
+  scope: generic
+  category: powertrain
+  title:
+    en: Control Module Programming Error
+    de: Steuergerät Programmierungsfehler
+  description:
+    en: The ECU is reporting that it is missing required calibration data — typically appears after a virgin module is installed but never coded/programmed for the vehicle, or after a flash that did not write all blocks.
+    de: Die Motorsteuerung meldet fehlende Kalibrierungsdaten — typischerweise nach Einbau eines unprogrammierten Steuergeräts ohne Codierung oder nach einem Flash, der nicht alle Datenblöcke geschrieben hat.
+  affected_components:
+    - engine_control_module
+  common_causes:
+    - id: ecm_not_coded
+      likelihood: high
+      label:
+        en: Replacement ECU not coded to vehicle
+        de: Ersatz-Steuergerät nicht ans Fahrzeug codiert
+    - id: ecm_partial_flash
+      likelihood: medium
+      label:
+        en: Partial / interrupted flash
+        de: Unvollständiger / unterbrochener Flash
+  repair:
+    difficulty: hard
+    diy_possible: false
+    estimated_cost_eur: [80, 800]
+    estimated_hours: [0.5, 4.0]
+  flags:
+    mil: true
+    emissions_relevant: false
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Engine_control_unit
+
+- code: P0606
+  scope: generic
+  category: powertrain
+  title:
+    en: ECM/PCM Processor Fault
+    de: ECM/PCM Prozessor-Fehler
+  description:
+    en: The ECU's internal processor self-test has failed. This is a hard module fault — the ECU usually triggers limp-home mode and may not respond to scan tools fully until replaced or repaired.
+    de: Der interne Prozessor-Selbsttest der Motorsteuerung schlägt fehl. Harter Modulfehler — die Motorsteuerung schaltet üblicherweise in den Notlauf und antwortet bis zum Tausch oder zur Reparatur eventuell nicht mehr vollständig auf Diagnosegeräte.
+  affected_components:
+    - engine_control_module
+  common_causes:
+    - id: ecm_processor_failed
+      likelihood: high
+      label:
+        en: Internal processor or memory failure
+        de: Interner Prozessor- oder Speicherfehler
+    - id: ecm_water_damage
+      likelihood: low
+      label:
+        en: Water ingress / corrosion in module
+        de: Wassereinbruch / Korrosion im Modul
+  repair:
+    difficulty: hard
+    diy_possible: false
+    estimated_cost_eur: [200, 2500]
+    estimated_hours: [1.0, 8.0]
+  flags:
+    mil: true
+    emissions_relevant: false
+    limp_mode_possible: true
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Engine_control_unit
+
+- code: P0641
+  scope: generic
+  category: powertrain
+  title:
+    en: Sensor Reference Voltage "A" Circuit Open
+    de: Sensor-Referenzspannung "A" Stromkreis offen
+  description:
+    en: The 5 V reference voltage that the ECU supplies to multiple sensors (TPS, MAP, accelerator pedal, etc.) has dropped out or is open-circuit. Symptoms cascade — many sensor codes appear at once, all related to the same reference rail.
+    de: Die 5-V-Referenzspannung, die das Steuergerät an mehrere Sensoren liefert (TPS, MAP, Pedal usw.), ist ausgefallen oder unterbrochen. Auswirkungen kaskadieren — mehrere Sensor-Codes erscheinen gleichzeitig, alle an derselben Referenzspannung.
+  affected_components:
+    - engine_control_module
+    - sensor_reference_wiring
+  common_causes:
+    - id: reference_short_to_ground
+      likelihood: high
+      label:
+        en: Reference wire shorted to ground (one defective sensor pulls the rail down)
+        de: Referenzleitung gegen Masse kurzgeschlossen (ein defekter Sensor zieht die Spannung herunter)
+    - id: ecm_reference_circuit_failed
+      likelihood: medium
+      label:
+        en: ECM internal reference output failed
+        de: Interner Referenzausgang im Steuergerät defekt
+  repair:
+    difficulty: hard
+    diy_possible: false
+    estimated_cost_eur: [80, 1500]
+    estimated_hours: [1.0, 6.0]
+  flags:
+    mil: true
+    emissions_relevant: true
+    limp_mode_possible: true
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Engine_control_unit
+
+- code: P0650
+  scope: generic
+  category: powertrain
+  title:
+    en: Malfunction Indicator Lamp Control Circuit Malfunction
+    de: Fehlfunktion im Ansteuerkreis der Motorkontrollleuchte
+  description:
+    en: A fault in the wiring or control circuit between the ECU and the malfunction indicator lamp (MIL). The MIL may stay on permanently, fail to light at key-on, or flicker — the OBD-II self-check on the bulb itself failed.
+    de: Fehler in der Verkabelung oder Ansteuerung zwischen Steuergerät und Motorkontrollleuchte (MIL). Die MIL leuchtet eventuell dauerhaft, geht beim Einschalten nicht an oder flackert — der OBD-II-Selbsttest der Lampe selbst ist fehlgeschlagen.
+  affected_components:
+    - mil_lamp
+    - mil_wiring
+    - instrument_cluster
+  common_causes:
+    - id: mil_bulb_failed
+      likelihood: medium
+      label:
+        en: MIL bulb burnt out (older clusters)
+        de: MIL-Lampe durchgebrannt (ältere Kombiinstrumente)
+    - id: cluster_fault
+      likelihood: medium
+      label:
+        en: Instrument cluster MIL driver failed
+        de: MIL-Endstufe im Kombiinstrument defekt
+    - id: mil_wiring
+      likelihood: low
+      label:
+        en: Wiring fault between ECU and cluster
+        de: Verkabelungsfehler zwischen ECU und Kombiinstrument
+  repair:
+    difficulty: medium
+    diy_possible: false
+    estimated_cost_eur: [50, 600]
+    estimated_hours: [0.5, 4.0]
+  flags:
+    mil: true
+    emissions_relevant: false
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Check_engine_light
+
+- code: P0701
+  scope: generic
+  category: powertrain
+  title:
+    en: Transmission Control System Range/Performance
+    de: Getriebesteuerung Funktionsbereich/Leistung
+  description:
+    en: The TCM has detected a transmission performance issue without identifying a specific component fault — typically slip outside expected range, shift timing outside spec, or a hydraulic issue not yet diagnosed by a more specific code.
+    de: Das TCM hat ein Performance-Problem erkannt, ohne einen spezifischen Komponentenfehler zu identifizieren — typischerweise Schlupf außerhalb erwartetem Bereich, Schaltzeit außerhalb der Spezifikation oder ein hydraulisches Problem ohne spezifischeren Code.
+  affected_components:
+    - transmission_control_module
+    - transmission_valve_body
+    - transmission_fluid
+  common_causes:
+    - id: transmission_fluid_low_burnt
+      likelihood: high
+      label:
+        en: Transmission fluid low or burnt
+        de: Getriebeöl niedrig oder verbrannt
+    - id: valve_body_wear
+      likelihood: medium
+      label:
+        en: Valve body wear
+        de: Verschleiß im Schaltschieberkasten
+  repair:
+    difficulty: hard
+    diy_possible: false
+    estimated_cost_eur: [200, 3500]
+    estimated_hours: [1.5, 12.0]
+  flags:
+    mil: true
+    emissions_relevant: false
+  related_codes: [P0700]
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Automatic_transmission
+
+- code: P0705
+  scope: generic
+  category: powertrain
+  title:
+    en: Transmission Range Sensor Circuit Malfunction
+    de: Wählhebelpositionssensor Schaltung Fehlfunktion
+  description:
+    en: The transmission range sensor (PRNDL switch / inhibitor switch) signal is implausible — multiple positions active simultaneously, or no position recognized. Engine may refuse to start unless P or N is detected.
+    de: Das Signal des Wählhebelpositionssensors (PRNDL-Schalter / Inhibitor-Schalter) ist unplausibel — mehrere Stellungen gleichzeitig aktiv oder keine Stellung erkannt. Der Motor startet eventuell nicht, wenn P oder N nicht erkannt wird.
+  affected_components:
+    - transmission_range_sensor
+    - shift_linkage
+  common_causes:
+    - id: range_sensor_misadjusted
+      likelihood: high
+      label:
+        en: Range sensor misadjusted
+        de: Schaltsensor falsch eingestellt
+    - id: range_sensor_failed
+      likelihood: medium
+      label:
+        en: Range sensor failed
+        de: Schaltsensor defekt
+  repair:
+    difficulty: medium
+    diy_possible: true
+    estimated_cost_eur: [80, 500]
+    estimated_hours: [0.5, 3.0]
+  flags:
+    mil: true
+    emissions_relevant: false
+    limp_mode_possible: true
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Automatic_transmission
+
+- code: P0731
+  scope: generic
+  category: powertrain
+  title:
+    en: Gear 1 Incorrect Ratio
+    de: Gang 1 falsche Übersetzung
+  description:
+    en: When 1st gear is commanded, the actual ratio between input and output speed sensors does not match the expected value. Indicates internal slip — typically worn clutches or low line pressure.
+    de: Wenn der 1. Gang angefordert wird, stimmt das gemessene Übersetzungsverhältnis zwischen Eingangs- und Ausgangsdrehzahlsensor nicht mit dem Erwarteten überein. Hinweis auf inneren Schlupf — typischerweise verschlissene Kupplungen oder niedriger Leitungsdruck.
+  affected_components:
+    - transmission_clutch_pack
+    - transmission_valve_body
+    - transmission_fluid
+  common_causes:
+    - id: clutch_pack_worn
+      likelihood: high
+      label:
+        en: 1st gear clutch pack worn
+        de: Kupplungspaket 1. Gang verschlissen
+    - id: line_pressure_low
+      likelihood: medium
+      label:
+        en: Line pressure low (pump or valve body)
+        de: Leitungsdruck zu niedrig (Pumpe oder Schaltschieberkasten)
+  repair:
+    difficulty: hard
+    diy_possible: false
+    estimated_cost_eur: [500, 4000]
+    estimated_hours: [4.0, 16.0]
+  flags:
+    mil: true
+    emissions_relevant: false
+    limp_mode_possible: true
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Automatic_transmission
+
+- code: P0732
+  scope: generic
+  category: powertrain
+  title:
+    en: Gear 2 Incorrect Ratio
+    de: Gang 2 falsche Übersetzung
+  description:
+    en: Same fault as P0731 but for 2nd gear. Most automatic transmission designs show 2nd-gear clutch wear before others because of the load and slip during the 1-2 shift.
+    de: Gleicher Fehler wie P0731, aber für den 2. Gang. Die meisten Automatikgetriebe zeigen Verschleiß am 2.-Gang-Kupplungspaket vor allen anderen, weil dieses bei der 1-2-Schaltung am stärksten belastet wird.
+  affected_components:
+    - transmission_clutch_pack
+    - transmission_valve_body
+  common_causes:
+    - id: clutch_pack_worn
+      likelihood: high
+      label:
+        en: 2nd gear clutch pack worn
+        de: Kupplungspaket 2. Gang verschlissen
+    - id: line_pressure_low
+      likelihood: medium
+      label:
+        en: Line pressure low
+        de: Leitungsdruck zu niedrig
+  repair:
+    difficulty: hard
+    diy_possible: false
+    estimated_cost_eur: [500, 4000]
+    estimated_hours: [4.0, 16.0]
+  flags:
+    mil: true
+    emissions_relevant: false
+    limp_mode_possible: true
+  related_codes: [P0731]
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Automatic_transmission
+
+- code: P0733
+  scope: generic
+  category: powertrain
+  title:
+    en: Gear 3 Incorrect Ratio
+    de: Gang 3 falsche Übersetzung
+  description:
+    en: Same fault as P0731 but for 3rd gear.
+    de: Gleicher Fehler wie P0731, aber für den 3. Gang.
+  affected_components:
+    - transmission_clutch_pack
+    - transmission_valve_body
+  common_causes:
+    - id: clutch_pack_worn
+      likelihood: high
+      label:
+        en: 3rd gear clutch pack worn
+        de: Kupplungspaket 3. Gang verschlissen
+  repair:
+    difficulty: hard
+    diy_possible: false
+    estimated_cost_eur: [500, 4000]
+    estimated_hours: [4.0, 16.0]
+  flags:
+    mil: true
+    emissions_relevant: false
+    limp_mode_possible: true
+  related_codes: [P0731]
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Automatic_transmission
+
+- code: P0734
+  scope: generic
+  category: powertrain
+  title:
+    en: Gear 4 Incorrect Ratio
+    de: Gang 4 falsche Übersetzung
+  description:
+    en: Same fault as P0731 but for 4th gear. On 4-speed transmissions this is the lockup gear — slip here often indicates a worn 4th-gear clutch or torque converter clutch issue (cross-check with P0741).
+    de: Gleicher Fehler wie P0731, aber für den 4. Gang. Bei 4-Gang-Getrieben ist das der Direkt-/Overdrive-Gang — Schlupf weist häufig auf verschlissene 4.-Gang-Kupplung oder ein TCC-Problem hin (mit P0741 abgleichen).
+  affected_components:
+    - transmission_clutch_pack
+    - torque_converter
+  common_causes:
+    - id: clutch_pack_worn
+      likelihood: high
+      label:
+        en: 4th gear clutch pack worn
+        de: Kupplungspaket 4. Gang verschlissen
+  repair:
+    difficulty: hard
+    diy_possible: false
+    estimated_cost_eur: [500, 4000]
+    estimated_hours: [4.0, 16.0]
+  flags:
+    mil: true
+    emissions_relevant: false
+    limp_mode_possible: true
+  related_codes: [P0731, P0741]
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Automatic_transmission
+
+- code: P0735
+  scope: generic
+  category: powertrain
+  title:
+    en: Gear 5 Incorrect Ratio
+    de: Gang 5 falsche Übersetzung
+  description:
+    en: Same fault as P0731 but for 5th gear (5+ speed transmissions).
+    de: Gleicher Fehler wie P0731, aber für den 5. Gang (5-Gang-Getriebe und höher).
+  affected_components:
+    - transmission_clutch_pack
+  common_causes:
+    - id: clutch_pack_worn
+      likelihood: high
+      label:
+        en: 5th gear clutch pack worn
+        de: Kupplungspaket 5. Gang verschlissen
+  repair:
+    difficulty: hard
+    diy_possible: false
+    estimated_cost_eur: [500, 4000]
+    estimated_hours: [4.0, 16.0]
+  flags:
+    mil: true
+    emissions_relevant: false
+    limp_mode_possible: true
+  related_codes: [P0731]
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Automatic_transmission
+
+- code: P0750
+  scope: generic
+  category: powertrain
+  title:
+    en: Shift Solenoid "A" Malfunction
+    de: Schaltsolenoid "A" Fehlfunktion
+  description:
+    en: An electrical or hydraulic fault in shift solenoid A. Shift solenoids open or close hydraulic passages inside the valve body to engage the right clutch pack for each gear; a stuck or shorted solenoid causes harsh shifts, no-shift, or limp-home.
+    de: Elektrischer oder hydraulischer Fehler am Schaltsolenoid A. Schaltsolenoide öffnen oder schließen Hydraulikkanäle im Schaltschieberkasten, um die jeweils benötigten Kupplungen einzulegen; ein hängendes oder kurzgeschlossenes Magnetventil verursacht harte Schaltungen, fehlende Schaltungen oder Notlauf.
+  affected_components:
+    - shift_solenoid
+    - transmission_valve_body
+  common_causes:
+    - id: shift_solenoid_stuck
+      likelihood: high
+      label:
+        en: Solenoid stuck (debris, varnish)
+        de: Magnetventil hängend (Späne, Lackbildung)
+    - id: shift_solenoid_electrical
+      likelihood: medium
+      label:
+        en: Open or shorted winding
+        de: Wicklung offen oder kurzgeschlossen
+  repair:
+    difficulty: hard
+    diy_possible: false
+    estimated_cost_eur: [200, 1500]
+    estimated_hours: [1.5, 8.0]
+  flags:
+    mil: true
+    emissions_relevant: false
+    limp_mode_possible: true
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Automatic_transmission
+
+- code: P0755
+  scope: generic
+  category: powertrain
+  title:
+    en: Shift Solenoid "B" Malfunction
+    de: Schaltsolenoid "B" Fehlfunktion
+  description:
+    en: Same fault as P0750 but on shift solenoid B.
+    de: Gleicher Fehler wie P0750, aber am Schaltsolenoid B.
+  affected_components:
+    - shift_solenoid
+    - transmission_valve_body
+  common_causes:
+    - id: shift_solenoid_stuck
+      likelihood: high
+      label:
+        en: Solenoid stuck
+        de: Magnetventil hängend
+    - id: shift_solenoid_electrical
+      likelihood: medium
+      label:
+        en: Open or shorted winding
+        de: Wicklung offen oder kurzgeschlossen
+  repair:
+    difficulty: hard
+    diy_possible: false
+    estimated_cost_eur: [200, 1500]
+    estimated_hours: [1.5, 8.0]
+  flags:
+    mil: true
+    emissions_relevant: false
+    limp_mode_possible: true
+  related_codes: [P0750]
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Automatic_transmission
