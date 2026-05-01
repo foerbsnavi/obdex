@@ -118,9 +118,9 @@ const indexHtml = `<!doctype html>
   <title>obdex — OBD-II diagnostic codes &amp; PIDs</title>
   <meta name="description" content="Open, machine-readable database of OBD-II diagnostic trouble codes and PIDs. CC0 data, MIT tooling.">
   <style>
-    :root { color-scheme: light dark; --fg: #111; --muted: #666; --bg: #fff; --accent: #0969da; --border: #d0d7de; --code-bg: #f6f8fa; }
+    :root { color-scheme: light dark; --fg: #111; --muted: #666; --bg: #fff; --accent: #0969da; --border: #d0d7de; --code-bg: #f6f8fa; --card: #f6f8fa; --pill-bg: #ddf4ff; --pill-fg: #0969da; --warn-bg: #fff8c5; --warn-fg: #7d4e00; }
     @media (prefers-color-scheme: dark) {
-      :root { --fg: #e6edf3; --muted: #8b949e; --bg: #0d1117; --accent: #58a6ff; --border: #30363d; --code-bg: #161b22; }
+      :root { --fg: #e6edf3; --muted: #8b949e; --bg: #0d1117; --accent: #58a6ff; --border: #30363d; --code-bg: #161b22; --card: #161b22; --pill-bg: #1f6feb33; --pill-fg: #58a6ff; --warn-bg: #4d350033; --warn-fg: #d4a72c; }
     }
     * { box-sizing: border-box; }
     body { font: 16px/1.6 system-ui, -apple-system, "Segoe UI", sans-serif; color: var(--fg); background: var(--bg); margin: 0; padding: 2rem 1.5rem; }
@@ -140,6 +140,43 @@ const indexHtml = `<!doctype html>
     .stat strong { color: var(--fg); font-size: 1.4em; font-weight: 600; display: block; line-height: 1.1; }
     footer { margin-top: 3rem; padding-top: 1.5rem; border-top: 1px solid var(--border); color: var(--muted); font-size: 0.92em; }
     footer a { color: var(--muted); text-decoration: underline; }
+
+    .search { margin: 1.5rem 0 0; }
+    .search input { width: 100%; padding: .75rem 1rem; font: 1rem ui-monospace, "SF Mono", Consolas, monospace; color: var(--fg); background: var(--bg); border: 1px solid var(--border); border-radius: 8px; outline: none; transition: border-color .12s; }
+    .search input:focus { border-color: var(--accent); }
+    .search input:disabled { opacity: .5; cursor: progress; }
+
+    #result { margin-top: 1rem; }
+    #result:empty { display: none; }
+    .card { background: var(--card); border: 1px solid var(--border); border-radius: 10px; padding: 1.25rem 1.5rem; }
+    .card-head { display: flex; align-items: baseline; gap: .75rem; flex-wrap: wrap; margin-bottom: .25rem; }
+    .card-code { font: 600 1.4rem ui-monospace, "SF Mono", Consolas, monospace; letter-spacing: -0.01em; }
+    .card-scope { font-size: .8rem; color: var(--muted); text-transform: uppercase; letter-spacing: .05em; }
+    .card-title { font-size: 1.05rem; font-weight: 500; margin: 0 0 .25rem; }
+    .card-title-de { font-size: .98rem; color: var(--muted); margin: 0 0 1rem; }
+    .card h3 { font-size: .82rem; text-transform: uppercase; letter-spacing: .05em; color: var(--muted); margin: 1.25rem 0 .4rem; font-weight: 600; }
+    .card .desc { margin: 0 0 .5rem; }
+    .card .desc-de { color: var(--muted); margin: 0; }
+    .causes { padding: 0; margin: 0; }
+    .causes li { display: grid; grid-template-columns: auto 1fr; gap: .75rem; align-items: baseline; padding: .25rem 0; border: none; }
+    .lik { font-size: .72rem; text-transform: uppercase; letter-spacing: .05em; padding: .15rem .5rem; border-radius: 999px; font-weight: 600; min-width: 4.2rem; text-align: center; }
+    .lik-high { background: var(--warn-bg); color: var(--warn-fg); }
+    .lik-medium { background: var(--pill-bg); color: var(--pill-fg); }
+    .lik-low { background: var(--code-bg); color: var(--muted); border: 1px solid var(--border); }
+    .repair-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: .75rem 1.5rem; }
+    .repair-grid div { display: flex; flex-direction: column; }
+    .repair-grid .label { font-size: .75rem; color: var(--muted); text-transform: uppercase; letter-spacing: .04em; }
+    .repair-grid .value { font-weight: 500; }
+    .flags { display: flex; flex-wrap: wrap; gap: .35rem; margin: .5rem 0 0; }
+    .flag { font-size: .75rem; padding: .15rem .55rem; border-radius: 999px; background: var(--code-bg); color: var(--muted); border: 1px solid var(--border); }
+    .flag.on { background: var(--pill-bg); color: var(--pill-fg); border-color: transparent; }
+    .sources { padding: 0; margin: 0; }
+    .sources li { display: block; padding: .15rem 0; border: none; word-break: break-all; }
+    .matches { padding: 0; margin: 0; }
+    .matches li { padding: .5rem 0; display: grid; grid-template-columns: auto 1fr; gap: .75rem; cursor: pointer; }
+    .matches li:hover { color: var(--accent); }
+    .matches code { background: transparent; font-weight: 600; }
+    .empty { color: var(--muted); padding: 1rem; text-align: center; }
   </style>
 </head>
 <body>
@@ -152,6 +189,11 @@ const indexHtml = `<!doctype html>
     <div class="stat"><strong>${totalPids}</strong> PIDs</div>
     <div class="stat"><strong>${Object.keys(manufacturers).length}</strong> manufacturers</div>
   </div>
+
+  <div class="search">
+    <input id="q" type="search" autocomplete="off" autocapitalize="characters" spellcheck="false" placeholder="Loading database…" disabled>
+  </div>
+  <div id="result"></div>
 
   <h2>Bundle</h2>
   <ul>
@@ -183,6 +225,151 @@ ${pidLinks}
     Each endpoint also has a <code>.min.json</code> variant.
   </footer>
 </main>
+
+<script>
+(function () {
+  const input = document.getElementById('q');
+  const result = document.getElementById('result');
+  let db = null;
+
+  fetch('all.min.json')
+    .then(r => r.json())
+    .then(d => {
+      db = [...d.generic];
+      for (const codes of Object.values(d.manufacturers || {})) db.push(...codes);
+      input.disabled = false;
+      input.placeholder = 'Enter a code (e.g. P0420) or search by keyword…';
+      input.focus();
+      handleHash();
+    })
+    .catch(() => { input.placeholder = 'Failed to load database.'; });
+
+  function esc(s) {
+    return String(s ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'})[c]);
+  }
+
+  function fmtRange(arr, suffix) {
+    if (!Array.isArray(arr) || arr.length !== 2) return '';
+    return arr[0] + '–' + arr[1] + ' ' + suffix;
+  }
+
+  function flag(label, on) {
+    return '<span class="flag' + (on ? ' on' : '') + '">' + esc(label) + '</span>';
+  }
+
+  function renderCard(c) {
+    const scope = c.scope === 'manufacturer' ? esc(c.manufacturer || 'manufacturer') : 'generic';
+    const titleEn = c.title?.en ? '<p class="card-title">' + esc(c.title.en) + '</p>' : '';
+    const titleDe = c.title?.de ? '<p class="card-title-de">' + esc(c.title.de) + '</p>' : '';
+    const descEn = c.description?.en ? '<p class="desc">' + esc(c.description.en) + '</p>' : '';
+    const descDe = c.description?.de ? '<p class="desc-de">' + esc(c.description.de) + '</p>' : '';
+
+    let causes = '';
+    if (Array.isArray(c.common_causes) && c.common_causes.length) {
+      causes = '<h3>Common causes</h3><ul class="causes">' +
+        c.common_causes.map(x => {
+          const lab = x.label?.en || x.id;
+          const labDe = x.label?.de ? ' <span style="color:var(--muted)">— ' + esc(x.label.de) + '</span>' : '';
+          return '<li><span class="lik lik-' + esc(x.likelihood) + '">' + esc(x.likelihood) + '</span><span>' + esc(lab) + labDe + '</span></li>';
+        }).join('') +
+        '</ul>';
+    }
+
+    let repair = '';
+    if (c.repair) {
+      const r = c.repair;
+      const fields = [];
+      if (r.difficulty) fields.push('<div><span class="label">Difficulty</span><span class="value">' + esc(r.difficulty) + '</span></div>');
+      if (typeof r.diy_possible === 'boolean') fields.push('<div><span class="label">DIY</span><span class="value">' + (r.diy_possible ? 'possible' : 'shop only') + '</span></div>');
+      const cost = fmtRange(r.estimated_cost_eur, '€');
+      if (cost) fields.push('<div><span class="label">Cost</span><span class="value">' + cost + '</span></div>');
+      const hours = fmtRange(r.estimated_hours, 'h');
+      if (hours) fields.push('<div><span class="label">Time</span><span class="value">' + hours + '</span></div>');
+      if (fields.length) repair = '<h3>Repair estimate</h3><div class="repair-grid">' + fields.join('') + '</div>';
+    }
+
+    let flags = '';
+    if (c.flags) {
+      const f = c.flags;
+      const out = [];
+      if (typeof f.mil === 'boolean') out.push(flag('MIL on', f.mil));
+      if (typeof f.emissions_relevant === 'boolean') out.push(flag('Emissions', f.emissions_relevant));
+      if (typeof f.drive_cycle_required === 'boolean') out.push(flag('Drive cycle', f.drive_cycle_required));
+      if (typeof f.limp_mode_possible === 'boolean') out.push(flag('Limp mode', f.limp_mode_possible));
+      if (out.length) flags = '<div class="flags">' + out.join('') + '</div>';
+    }
+
+    let sources = '';
+    if (Array.isArray(c.sources) && c.sources.length) {
+      sources = '<h3>Sources</h3><ul class="sources">' +
+        c.sources.map(s => /^https?:\\/\\//.test(s)
+          ? '<li><a href="' + esc(s) + '" target="_blank" rel="noopener">' + esc(s) + '</a></li>'
+          : '<li>' + esc(s) + '</li>'
+        ).join('') +
+        '</ul>';
+    }
+
+    return '<div class="card">' +
+      '<div class="card-head"><span class="card-code">' + esc(c.code) + '</span><span class="card-scope">' + scope + '</span></div>' +
+      titleEn + titleDe + descEn + descDe + flags + causes + repair + sources +
+      '</div>';
+  }
+
+  function renderMatches(list) {
+    return '<h3>' + list.length + ' matches</h3><ul class="matches">' +
+      list.map(c => '<li data-code="' + esc(c.code) + '"><code>' + esc(c.code) + '</code><span>' + esc(c.title?.en || '') + '</span></li>').join('') +
+      '</ul>';
+  }
+
+  function search(q) {
+    if (!db) return;
+    q = q.trim().toUpperCase();
+    if (!q) { result.innerHTML = ''; history.replaceState(null, '', location.pathname); return; }
+
+    const exact = db.find(c => c.code === q);
+    if (exact) {
+      result.innerHTML = renderCard(exact);
+      history.replaceState(null, '', '#' + exact.code);
+      return;
+    }
+
+    const codeMatches = db.filter(c => c.code.startsWith(q));
+    const textMatches = q.length >= 3 ? db.filter(c =>
+      !c.code.startsWith(q) && (
+        (c.title?.en || '').toUpperCase().includes(q) ||
+        (c.title?.de || '').toUpperCase().includes(q)
+      )
+    ) : [];
+    const all = [...codeMatches, ...textMatches].slice(0, 25);
+
+    if (all.length === 0) {
+      result.innerHTML = '<p class="empty">No code or title matches "' + esc(q) + '".</p>';
+      return;
+    }
+    if (all.length === 1) {
+      result.innerHTML = renderCard(all[0]);
+      history.replaceState(null, '', '#' + all[0].code);
+    } else {
+      result.innerHTML = renderMatches(all);
+    }
+  }
+
+  input.addEventListener('input', () => search(input.value));
+
+  result.addEventListener('click', e => {
+    const li = e.target.closest('li[data-code]');
+    if (!li) return;
+    input.value = li.dataset.code;
+    search(input.value);
+  });
+
+  function handleHash() {
+    const h = location.hash.replace('#', '');
+    if (h) { input.value = h; search(h); }
+  }
+  window.addEventListener('hashchange', handleHash);
+})();
+</script>
 </body>
 </html>
 `;
