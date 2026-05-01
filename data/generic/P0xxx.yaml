@@ -1,6 +1,978 @@
-- code: P0420
-  category: powertrain
+- code: P0101
   scope: generic
+  category: powertrain
+  title:
+    en: Mass or Volume Air Flow Circuit Range/Performance
+    de: Luftmassenmesser Funktionsbereich/Leistung
+  description:
+    en: The mass air flow (MAF) sensor signal is outside the expected range or does not track engine load plausibly. The ECU compares MAF readings against load calculated from RPM, throttle position and intake pressure; persistent disagreement triggers this code.
+    de: Das Signal des Luftmassenmessers liegt außerhalb des erwarteten Bereichs oder folgt der Motorlast nicht plausibel. Die Motorsteuerung vergleicht den LMM-Wert mit der aus Drehzahl, Drosselklappenstellung und Saugrohrdruck berechneten Last; eine dauerhafte Abweichung löst diesen Code aus.
+  affected_components:
+    - mass_air_flow_sensor
+    - air_filter
+    - intake_duct
+    - intake_manifold
+  common_causes:
+    - id: maf_contamination
+      likelihood: high
+      label:
+        en: MAF sensor contaminated (oil, dust)
+        de: Luftmassenmesser verschmutzt (Öl, Staub)
+    - id: intake_air_leak
+      likelihood: medium
+      label:
+        en: Unmetered air leak after MAF
+        de: Falschluft hinter dem LMM
+    - id: air_filter_clogged
+      likelihood: medium
+      label:
+        en: Air filter heavily clogged
+        de: Luftfilter stark verschmutzt
+    - id: maf_wiring
+      likelihood: low
+      label:
+        en: Wiring/connector fault to MAF
+        de: Kabel-/Steckerfehler am LMM
+  repair:
+    difficulty: easy
+    diy_possible: true
+    estimated_cost_eur: [50, 250]
+    estimated_hours: [0.3, 1.5]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+  references:
+    - sae:J2012
+    - iso:15031-6
+  sources:
+    - https://en.wikipedia.org/wiki/Mass_flow_sensor
+    - https://en.wikipedia.org/wiki/On-board_diagnostics
+
+- code: P0102
+  scope: generic
+  category: powertrain
+  title:
+    en: Mass or Volume Air Flow Circuit Low Input
+    de: Luftmassenmesser Eingangssignal zu niedrig
+  description:
+    en: The MAF sensor reports an air flow value below the plausible minimum for current engine speed and load. The ECU substitutes a calculated load value while the fault is active.
+    de: Der Luftmassenmesser meldet einen Wert unterhalb des plausiblen Minimums für die aktuelle Motordrehzahl und -last. Die Motorsteuerung verwendet bei aktivem Fehler einen berechneten Lastwert als Ersatz.
+  affected_components:
+    - mass_air_flow_sensor
+    - intake_duct
+  common_causes:
+    - id: maf_failed
+      likelihood: high
+      label:
+        en: MAF sensor failed
+        de: Luftmassenmesser defekt
+    - id: maf_disconnected
+      likelihood: medium
+      label:
+        en: MAF connector loose or disconnected
+        de: LMM-Stecker lose oder abgezogen
+    - id: maf_wiring_short_to_ground
+      likelihood: low
+      label:
+        en: Signal wire shorted to ground
+        de: Signalleitung gegen Masse kurzgeschlossen
+  repair:
+    difficulty: easy
+    diy_possible: true
+    estimated_cost_eur: [80, 300]
+    estimated_hours: [0.3, 1.5]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Mass_flow_sensor
+
+- code: P0106
+  scope: generic
+  category: powertrain
+  title:
+    en: Manifold Absolute Pressure Sensor Range/Performance
+    de: Saugrohrdrucksensor Funktionsbereich/Leistung
+  description:
+    en: The manifold absolute pressure (MAP) sensor signal is implausible relative to throttle position and engine speed. The ECU expects MAP to rise with throttle opening and fall under deceleration; deviation triggers the code.
+    de: Das Signal des Saugrohrdrucksensors (MAP) ist gegenüber Drosselklappenstellung und Drehzahl unplausibel. Erwartet wird ein Druckanstieg beim Öffnen der Drosselklappe und ein Abfall im Schubbetrieb; eine Abweichung löst den Code aus.
+  affected_components:
+    - map_sensor
+    - vacuum_hose
+    - intake_manifold
+  common_causes:
+    - id: vacuum_hose_leak
+      likelihood: high
+      label:
+        en: Vacuum hose to MAP sensor cracked or detached
+        de: Unterdruckschlauch zum MAP-Sensor rissig oder abgefallen
+    - id: map_sensor_drift
+      likelihood: medium
+      label:
+        en: MAP sensor drifting outside specification
+        de: MAP-Sensor driftet aus der Spezifikation
+    - id: intake_manifold_leak
+      likelihood: medium
+      label:
+        en: Intake manifold gasket leaking
+        de: Saugrohrdichtung undicht
+  repair:
+    difficulty: easy
+    diy_possible: true
+    estimated_cost_eur: [40, 200]
+    estimated_hours: [0.3, 2.0]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/MAP_sensor
+
+- code: P0107
+  scope: generic
+  category: powertrain
+  title:
+    en: Manifold Absolute Pressure Sensor Low Input
+    de: Saugrohrdrucksensor Eingangssignal zu niedrig
+  description:
+    en: The MAP sensor reports a pressure below the lower threshold the ECU expects at any engine state. Typically indicates a hard electrical fault rather than a slow drift.
+    de: Der MAP-Sensor meldet einen Druck unter dem unteren Schwellwert, den die Motorsteuerung in keinem Betriebszustand erwartet. Hinweis auf einen harten elektrischen Fehler, nicht auf eine langsame Drift.
+  affected_components:
+    - map_sensor
+    - map_sensor_wiring
+  common_causes:
+    - id: map_signal_short_to_ground
+      likelihood: high
+      label:
+        en: Signal wire shorted to ground
+        de: Signalleitung gegen Masse kurzgeschlossen
+    - id: map_failed
+      likelihood: medium
+      label:
+        en: MAP sensor failed
+        de: MAP-Sensor defekt
+    - id: map_reference_voltage_missing
+      likelihood: low
+      label:
+        en: 5V reference voltage missing
+        de: 5-V-Referenzspannung fehlt
+  repair:
+    difficulty: easy
+    diy_possible: true
+    estimated_cost_eur: [40, 200]
+    estimated_hours: [0.3, 2.0]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/MAP_sensor
+
+- code: P0121
+  scope: generic
+  category: powertrain
+  title:
+    en: Throttle/Pedal Position Sensor "A" Range/Performance
+    de: Drosselklappen-/Pedalstellungssensor "A" Funktionsbereich/Leistung
+  description:
+    en: The throttle position sensor (TPS) signal does not match the expected range for the commanded pedal position. On drive-by-wire vehicles, two redundant sensors are compared; a divergence between them or implausible motion triggers this code.
+    de: Das Signal des Drosselklappenstellungssensors (TPS) passt nicht zum erwarteten Bereich für die angeforderte Pedalstellung. Bei elektronischer Drosselklappe werden zwei redundante Sensoren verglichen; eine Abweichung zwischen ihnen oder unplausibles Verhalten löst den Code aus.
+  affected_components:
+    - throttle_position_sensor
+    - throttle_body
+    - accelerator_pedal_sensor
+  common_causes:
+    - id: tps_worn
+      likelihood: high
+      label:
+        en: TPS contact track worn (older potentiometer-type sensors)
+        de: TPS-Schleifbahn verschlissen (ältere Potentiometer-Sensoren)
+    - id: throttle_body_carbon
+      likelihood: medium
+      label:
+        en: Carbon buildup blocking throttle plate
+        de: Verkokung blockiert Drosselklappe
+    - id: tps_connector_corrosion
+      likelihood: low
+      label:
+        en: Corroded TPS connector
+        de: Korrodierter TPS-Stecker
+  repair:
+    difficulty: medium
+    diy_possible: true
+    estimated_cost_eur: [80, 400]
+    estimated_hours: [0.5, 2.5]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+    limp_mode_possible: true
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Throttle_position_sensor
+
+- code: P0122
+  scope: generic
+  category: powertrain
+  title:
+    en: Throttle/Pedal Position Sensor "A" Low Input
+    de: Drosselklappen-/Pedalstellungssensor "A" Eingangssignal zu niedrig
+  description:
+    en: The TPS signal voltage is below the lower acceptable threshold. The ECU usually enters limp-home mode and limits engine torque while the fault is active.
+    de: Die Signalspannung des TPS liegt unter dem unteren zulässigen Schwellwert. Die Motorsteuerung wechselt in der Regel in den Notlauf und begrenzt das Motormoment, solange der Fehler aktiv ist.
+  affected_components:
+    - throttle_position_sensor
+    - throttle_position_sensor_wiring
+  common_causes:
+    - id: tps_signal_short_to_ground
+      likelihood: high
+      label:
+        en: Signal wire shorted to ground
+        de: Signalleitung gegen Masse kurzgeschlossen
+    - id: tps_failed
+      likelihood: medium
+      label:
+        en: TPS internally failed
+        de: TPS intern defekt
+    - id: tps_reference_voltage_missing
+      likelihood: low
+      label:
+        en: 5V reference voltage to TPS missing
+        de: 5-V-Versorgung am TPS fehlt
+  repair:
+    difficulty: medium
+    diy_possible: true
+    estimated_cost_eur: [80, 400]
+    estimated_hours: [0.5, 2.5]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+    limp_mode_possible: true
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Throttle_position_sensor
+
+- code: P0123
+  scope: generic
+  category: powertrain
+  title:
+    en: Throttle/Pedal Position Sensor "A" High Input
+    de: Drosselklappen-/Pedalstellungssensor "A" Eingangssignal zu hoch
+  description:
+    en: The TPS signal voltage exceeds the upper acceptable threshold. As with P0122, limp-home mode is typical until the fault clears.
+    de: Die Signalspannung des TPS überschreitet den oberen zulässigen Schwellwert. Wie bei P0122 schaltet die Motorsteuerung üblicherweise in den Notlauf, bis der Fehler verschwindet.
+  affected_components:
+    - throttle_position_sensor
+    - throttle_position_sensor_wiring
+  common_causes:
+    - id: tps_signal_short_to_voltage
+      likelihood: high
+      label:
+        en: Signal wire shorted to supply voltage
+        de: Signalleitung gegen Versorgungsspannung kurzgeschlossen
+    - id: tps_ground_open
+      likelihood: medium
+      label:
+        en: Sensor ground broken
+        de: Sensor-Masseleitung unterbrochen
+    - id: tps_failed
+      likelihood: low
+      label:
+        en: TPS internally failed
+        de: TPS intern defekt
+  repair:
+    difficulty: medium
+    diy_possible: true
+    estimated_cost_eur: [80, 400]
+    estimated_hours: [0.5, 2.5]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+    limp_mode_possible: true
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Throttle_position_sensor
+
+- code: P0130
+  scope: generic
+  category: powertrain
+  title:
+    en: O2 Sensor Circuit Malfunction (Bank 1, Sensor 1)
+    de: Lambdasonde Schaltung Fehlfunktion (Bank 1, Sonde 1)
+  description:
+    en: The upstream oxygen sensor on bank 1 reports an implausible signal — typically stuck mid-range, no switching between rich and lean, or no signal at all. Closed-loop fuel control cannot run while this fault is active.
+    de: Die vorgeschaltete Lambdasonde auf Bank 1 liefert ein unplausibles Signal — typischerweise konstant im Mittelbereich, kein Wechsel zwischen fett und mager oder gar kein Signal. Die Gemischregelung im geschlossenen Regelkreis ist bei aktivem Fehler nicht möglich.
+  affected_components:
+    - oxygen_sensor_upstream
+    - oxygen_sensor_wiring
+  common_causes:
+    - id: o2_sensor_aged
+      likelihood: high
+      label:
+        en: Oxygen sensor aged or contaminated
+        de: Lambdasonde gealtert oder vergiftet
+    - id: o2_wiring_chafed
+      likelihood: medium
+      label:
+        en: Sensor harness chafed against exhaust
+        de: Sondenkabel an Abgasanlage durchgescheuert
+    - id: o2_connector_water
+      likelihood: low
+      label:
+        en: Water in sensor connector
+        de: Wasser im Sondenstecker
+  repair:
+    difficulty: easy
+    diy_possible: true
+    estimated_cost_eur: [60, 250]
+    estimated_hours: [0.3, 1.5]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Oxygen_sensor
+
+- code: P0131
+  scope: generic
+  category: powertrain
+  title:
+    en: O2 Sensor Circuit Low Voltage (Bank 1, Sensor 1)
+    de: Lambdasonde Schaltung Spannung zu niedrig (Bank 1, Sonde 1)
+  description:
+    en: The upstream oxygen sensor signal is fixed at a low voltage, indicating the ECU sees a continuously lean exhaust on bank 1 — or the sensor signal path is shorted to ground.
+    de: Das Signal der vorgeschalteten Lambdasonde verharrt bei niedriger Spannung. Die Motorsteuerung sieht entweder dauerhaft mageres Abgas auf Bank 1 oder die Signalleitung ist gegen Masse kurzgeschlossen.
+  affected_components:
+    - oxygen_sensor_upstream
+    - exhaust_pipe_pre_cat
+  common_causes:
+    - id: exhaust_leak_pre_sensor
+      likelihood: high
+      label:
+        en: Exhaust leak upstream of the sensor
+        de: Abgasleck vor der Sonde
+    - id: o2_signal_short_to_ground
+      likelihood: medium
+      label:
+        en: Signal wire shorted to ground
+        de: Signalleitung gegen Masse kurzgeschlossen
+    - id: lean_running_condition
+      likelihood: medium
+      label:
+        en: Genuine lean running (vacuum leak, low fuel pressure)
+        de: Tatsächlich mageres Gemisch (Falschluft, geringer Kraftstoffdruck)
+  repair:
+    difficulty: medium
+    diy_possible: true
+    estimated_cost_eur: [60, 400]
+    estimated_hours: [0.5, 3.0]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Oxygen_sensor
+
+- code: P0132
+  scope: generic
+  category: powertrain
+  title:
+    en: O2 Sensor Circuit High Voltage (Bank 1, Sensor 1)
+    de: Lambdasonde Schaltung Spannung zu hoch (Bank 1, Sonde 1)
+  description:
+    en: The upstream oxygen sensor signal is fixed at a high voltage, indicating either a continuously rich exhaust on bank 1 or a short to supply voltage in the signal circuit.
+    de: Das Signal der vorgeschalteten Lambdasonde verharrt bei hoher Spannung. Hinweis entweder auf dauerhaft fettes Abgas auf Bank 1 oder auf einen Kurzschluss der Signalleitung gegen Versorgungsspannung.
+  affected_components:
+    - oxygen_sensor_upstream
+    - fuel_injector
+    - fuel_pressure_regulator
+  common_causes:
+    - id: rich_running_condition
+      likelihood: high
+      label:
+        en: Genuine rich running (leaking injector, high fuel pressure)
+        de: Tatsächlich fettes Gemisch (undichter Injektor, hoher Kraftstoffdruck)
+    - id: o2_signal_short_to_voltage
+      likelihood: medium
+      label:
+        en: Signal wire shorted to supply voltage
+        de: Signalleitung gegen Versorgungsspannung kurzgeschlossen
+    - id: o2_silicon_poisoning
+      likelihood: low
+      label:
+        en: Sensor poisoned by silicone or coolant
+        de: Sonde durch Silikon oder Kühlmittel vergiftet
+  repair:
+    difficulty: medium
+    diy_possible: true
+    estimated_cost_eur: [60, 400]
+    estimated_hours: [0.5, 3.0]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Oxygen_sensor
+
+- code: P0133
+  scope: generic
+  category: powertrain
+  title:
+    en: O2 Sensor Slow Response (Bank 1, Sensor 1)
+    de: Lambdasonde langsames Ansprechverhalten (Bank 1, Sonde 1)
+  description:
+    en: The upstream oxygen sensor switches between rich and lean too slowly. Aged sensors lose response speed before they fail outright; this code typically appears before P0130/P0131/P0132.
+    de: Die vorgeschaltete Lambdasonde wechselt zu langsam zwischen fett und mager. Gealterte Sonden verlieren Reaktionszeit, bevor sie ganz ausfallen; dieser Code erscheint typischerweise vor P0130/P0131/P0132.
+  affected_components:
+    - oxygen_sensor_upstream
+  common_causes:
+    - id: o2_sensor_aged
+      likelihood: high
+      label:
+        en: Oxygen sensor aged
+        de: Lambdasonde gealtert
+    - id: o2_silicon_poisoning
+      likelihood: medium
+      label:
+        en: Sensor partially poisoned (silicone, lead, sulphur)
+        de: Sonde teilweise vergiftet (Silikon, Blei, Schwefel)
+  repair:
+    difficulty: easy
+    diy_possible: true
+    estimated_cost_eur: [60, 250]
+    estimated_hours: [0.3, 1.5]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Oxygen_sensor
+
+- code: P0135
+  scope: generic
+  category: powertrain
+  title:
+    en: O2 Sensor Heater Circuit Malfunction (Bank 1, Sensor 1)
+    de: Lambdasonden-Heizung Schaltung Fehlfunktion (Bank 1, Sonde 1)
+  description:
+    en: The heating element inside the upstream oxygen sensor draws no current, draws too much current, or is open-circuit. The heater brings the sensor to operating temperature so closed-loop control can start within seconds rather than minutes.
+    de: Das Heizelement der vorgeschalteten Lambdasonde nimmt keinen Strom auf, einen zu hohen Strom oder die Heizung ist unterbrochen. Die Heizung bringt die Sonde auf Betriebstemperatur, damit die Gemischregelung innerhalb von Sekunden statt Minuten arbeitet.
+  affected_components:
+    - oxygen_sensor_upstream
+    - o2_heater_relay
+    - o2_heater_fuse
+  common_causes:
+    - id: o2_heater_burnt
+      likelihood: high
+      label:
+        en: Heater element open-circuit
+        de: Heizelement unterbrochen
+    - id: o2_heater_fuse_blown
+      likelihood: medium
+      label:
+        en: Heater fuse blown
+        de: Heizungs-Sicherung durchgebrannt
+    - id: o2_wiring_to_heater
+      likelihood: low
+      label:
+        en: Wiring fault to heater
+        de: Verkabelungsfehler zur Heizung
+  repair:
+    difficulty: easy
+    diy_possible: true
+    estimated_cost_eur: [60, 250]
+    estimated_hours: [0.3, 1.5]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Oxygen_sensor
+
+- code: P0171
+  scope: generic
+  category: powertrain
+  title:
+    en: System Too Lean (Bank 1)
+    de: System zu mager (Bank 1)
+  description:
+    en: Long-term fuel trim on bank 1 is at the upper limit — the ECU is adding more fuel than baseline to maintain stoichiometric mixture but cannot reach target. Indicates unmetered air entering the intake or insufficient fuel delivery.
+    de: Die Langzeit-Kraftstofftrimmung auf Bank 1 hat ihre obere Grenze erreicht — die Motorsteuerung gibt mehr Kraftstoff als den Basiswert zu, um ein stöchiometrisches Gemisch zu halten, erreicht den Zielwert aber nicht. Hinweis auf Falschluft im Ansaugtrakt oder unzureichende Kraftstoffförderung.
+  affected_components:
+    - intake_manifold
+    - mass_air_flow_sensor
+    - fuel_pump
+    - fuel_pressure_regulator
+    - fuel_injector
+    - pcv_valve
+  common_causes:
+    - id: intake_vacuum_leak
+      likelihood: high
+      label:
+        en: Vacuum leak in intake or PCV system
+        de: Falschluft im Ansaugtrakt oder PCV-System
+    - id: maf_contamination
+      likelihood: high
+      label:
+        en: MAF sensor contaminated, under-reading
+        de: Luftmassenmesser verschmutzt, misst zu wenig
+    - id: fuel_pressure_low
+      likelihood: medium
+      label:
+        en: Fuel pressure below specification
+        de: Kraftstoffdruck unter Sollwert
+    - id: injector_clogged
+      likelihood: medium
+      label:
+        en: Fuel injectors partially clogged
+        de: Einspritzdüsen teilweise verstopft
+  repair:
+    difficulty: medium
+    diy_possible: true
+    estimated_cost_eur: [50, 600]
+    estimated_hours: [0.5, 4.0]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+  related_codes: [P0174]
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Engine_control_unit
+    - https://en.wikipedia.org/wiki/On-board_diagnostics
+
+- code: P0172
+  scope: generic
+  category: powertrain
+  title:
+    en: System Too Rich (Bank 1)
+    de: System zu fett (Bank 1)
+  description:
+    en: Long-term fuel trim on bank 1 is at the lower limit — the ECU is removing fuel from baseline but mixture remains too rich. Indicates excess fuel delivery, restricted air flow, or a faulty oxygen sensor reporting falsely lean.
+    de: Die Langzeit-Kraftstofftrimmung auf Bank 1 hat ihre untere Grenze erreicht — die Motorsteuerung reduziert die Einspritzmenge gegenüber dem Basiswert, das Gemisch bleibt aber zu fett. Hinweis auf Überfettung, eingeschränkten Luftdurchsatz oder eine Lambdasonde, die fälschlich mager meldet.
+  affected_components:
+    - fuel_pressure_regulator
+    - fuel_injector
+    - air_filter
+    - oxygen_sensor_upstream
+    - mass_air_flow_sensor
+  common_causes:
+    - id: fuel_pressure_high
+      likelihood: high
+      label:
+        en: Fuel pressure regulator stuck closed
+        de: Kraftstoffdruckregler hängt geschlossen
+    - id: injector_leaking
+      likelihood: medium
+      label:
+        en: Leaking fuel injector
+        de: Undichter Injektor
+    - id: air_filter_blocked
+      likelihood: medium
+      label:
+        en: Severely blocked air filter
+        de: Stark verstopfter Luftfilter
+    - id: o2_sensor_aged
+      likelihood: low
+      label:
+        en: Oxygen sensor reporting incorrectly
+        de: Lambdasonde liefert falsche Werte
+  repair:
+    difficulty: medium
+    diy_possible: true
+    estimated_cost_eur: [50, 600]
+    estimated_hours: [0.5, 4.0]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+  related_codes: [P0175]
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Engine_control_unit
+
+- code: P0174
+  scope: generic
+  category: powertrain
+  title:
+    en: System Too Lean (Bank 2)
+    de: System zu mager (Bank 2)
+  description:
+    en: Same condition as P0171 but on bank 2 of a multi-bank engine (V6, V8, flat-six, etc.). When P0171 and P0174 appear together, the cause is usually a shared component such as the MAF sensor or a central vacuum leak rather than a bank-specific fault.
+    de: Gleiche Bedingung wie P0171, aber auf Bank 2 eines Mehrbank-Motors (V6, V8, Boxer-6 usw.). Treten P0171 und P0174 gemeinsam auf, liegt die Ursache meist an einer gemeinsamen Komponente wie dem Luftmassenmesser oder einer zentralen Falschluftquelle, nicht an einem bankspezifischen Fehler.
+  affected_components:
+    - intake_manifold
+    - mass_air_flow_sensor
+    - fuel_pump
+    - fuel_pressure_regulator
+  common_causes:
+    - id: intake_vacuum_leak
+      likelihood: high
+      label:
+        en: Central vacuum leak (intake manifold gasket, brake booster)
+        de: Zentrale Falschluftquelle (Saugrohrdichtung, Bremskraftverstärker)
+    - id: maf_contamination
+      likelihood: high
+      label:
+        en: MAF sensor contaminated
+        de: Luftmassenmesser verschmutzt
+    - id: fuel_pressure_low
+      likelihood: medium
+      label:
+        en: Fuel pressure low (affects both banks)
+        de: Kraftstoffdruck zu niedrig (betrifft beide Bänke)
+  repair:
+    difficulty: medium
+    diy_possible: true
+    estimated_cost_eur: [50, 600]
+    estimated_hours: [0.5, 4.0]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+  related_codes: [P0171]
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Engine_control_unit
+
+- code: P0175
+  scope: generic
+  category: powertrain
+  title:
+    en: System Too Rich (Bank 2)
+    de: System zu fett (Bank 2)
+  description:
+    en: Same condition as P0172 but on bank 2. When paired with P0172, suspect shared causes (fuel pressure, blocked air filter); when alone, suspect a bank-specific injector or oxygen sensor.
+    de: Gleiche Bedingung wie P0172, aber auf Bank 2. Tritt zusammen mit P0172 auf, sind gemeinsame Ursachen wahrscheinlich (Kraftstoffdruck, blockierter Luftfilter); allein auftretend deutet auf einen bankspezifischen Injektor oder eine bankspezifische Lambdasonde hin.
+  affected_components:
+    - fuel_pressure_regulator
+    - fuel_injector
+    - oxygen_sensor_upstream
+  common_causes:
+    - id: fuel_pressure_high
+      likelihood: high
+      label:
+        en: Fuel pressure regulator stuck closed
+        de: Kraftstoffdruckregler hängt geschlossen
+    - id: injector_leaking
+      likelihood: medium
+      label:
+        en: Leaking fuel injector on bank 2
+        de: Undichter Injektor auf Bank 2
+  repair:
+    difficulty: medium
+    diy_possible: true
+    estimated_cost_eur: [50, 600]
+    estimated_hours: [0.5, 4.0]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+  related_codes: [P0172]
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Engine_control_unit
+
+- code: P0300
+  scope: generic
+  category: powertrain
+  title:
+    en: Random/Multiple Cylinder Misfire Detected
+    de: Zufällige/mehrfache Zylinder-Verbrennungsaussetzer erkannt
+  description:
+    en: The ECU has detected misfires that are not concentrated on a single cylinder. The misfire monitor measures crankshaft acceleration after each combustion event; missing acceleration on multiple cylinders, or randomly across cylinders, triggers this code.
+    de: Die Motorsteuerung hat Verbrennungsaussetzer erkannt, die sich nicht auf einen einzelnen Zylinder konzentrieren. Die Aussetzererkennung misst die Kurbelwellenbeschleunigung nach jeder Verbrennung; fehlende Beschleunigung auf mehreren Zylindern oder zufällig verteilt löst diesen Code aus.
+  affected_components:
+    - ignition_coil
+    - spark_plug
+    - fuel_injector
+    - intake_manifold
+    - timing_chain
+  common_causes:
+    - id: spark_plugs_worn
+      likelihood: high
+      label:
+        en: Worn spark plugs
+        de: Verschlissene Zündkerzen
+    - id: vacuum_leak_general
+      likelihood: high
+      label:
+        en: Vacuum leak affecting all cylinders
+        de: Falschluft, die alle Zylinder betrifft
+    - id: fuel_pressure_low
+      likelihood: medium
+      label:
+        en: Fuel pressure low
+        de: Kraftstoffdruck zu niedrig
+    - id: timing_chain_stretched
+      likelihood: low
+      label:
+        en: Timing chain stretched (high mileage)
+        de: Steuerkette gelängt (hohe Laufleistung)
+  repair:
+    difficulty: medium
+    diy_possible: true
+    estimated_cost_eur: [50, 1500]
+    estimated_hours: [0.5, 6.0]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+    limp_mode_possible: true
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Misfire
+
+- code: P0301
+  scope: generic
+  category: powertrain
+  title:
+    en: Cylinder 1 Misfire Detected
+    de: Verbrennungsaussetzer Zylinder 1 erkannt
+  description:
+    en: Misfires concentrated on cylinder 1. A cylinder-specific code points away from shared causes (fuel pressure, MAF) toward components dedicated to that cylinder — coil, spark plug, injector, compression.
+    de: Verbrennungsaussetzer konzentriert auf Zylinder 1. Ein zylinderspezifischer Code verweist weg von gemeinsamen Ursachen (Kraftstoffdruck, LMM) hin zu Komponenten, die nur diesen Zylinder betreffen — Zündspule, Zündkerze, Injektor, Kompression.
+  affected_components:
+    - ignition_coil
+    - spark_plug
+    - fuel_injector
+  common_causes:
+    - id: ignition_coil_failed
+      likelihood: high
+      label:
+        en: Ignition coil for cylinder 1 failed
+        de: Zündspule Zylinder 1 defekt
+    - id: spark_plug_failed
+      likelihood: high
+      label:
+        en: Spark plug for cylinder 1 worn or fouled
+        de: Zündkerze Zylinder 1 verschlissen oder verölt
+    - id: injector_clogged
+      likelihood: medium
+      label:
+        en: Cylinder 1 injector clogged
+        de: Injektor Zylinder 1 verstopft
+    - id: low_compression
+      likelihood: low
+      label:
+        en: Low compression on cylinder 1
+        de: Geringe Kompression auf Zylinder 1
+  repair:
+    difficulty: easy
+    diy_possible: true
+    estimated_cost_eur: [40, 800]
+    estimated_hours: [0.3, 4.0]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Misfire
+
+- code: P0302
+  scope: generic
+  category: powertrain
+  title:
+    en: Cylinder 2 Misfire Detected
+    de: Verbrennungsaussetzer Zylinder 2 erkannt
+  description:
+    en: Misfires concentrated on cylinder 2. Diagnostic approach is identical to P0301 — swap the suspect coil or plug with a known-good cylinder and see if the misfire follows.
+    de: Verbrennungsaussetzer konzentriert auf Zylinder 2. Die Diagnose entspricht P0301 — verdächtige Zündspule oder Kerze mit einem nachweislich funktionierenden Zylinder tauschen und prüfen, ob der Aussetzer mitwandert.
+  affected_components:
+    - ignition_coil
+    - spark_plug
+    - fuel_injector
+  common_causes:
+    - id: ignition_coil_failed
+      likelihood: high
+      label:
+        en: Ignition coil for cylinder 2 failed
+        de: Zündspule Zylinder 2 defekt
+    - id: spark_plug_failed
+      likelihood: high
+      label:
+        en: Spark plug for cylinder 2 worn or fouled
+        de: Zündkerze Zylinder 2 verschlissen oder verölt
+    - id: injector_clogged
+      likelihood: medium
+      label:
+        en: Cylinder 2 injector clogged
+        de: Injektor Zylinder 2 verstopft
+  repair:
+    difficulty: easy
+    diy_possible: true
+    estimated_cost_eur: [40, 800]
+    estimated_hours: [0.3, 4.0]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Misfire
+
+- code: P0303
+  scope: generic
+  category: powertrain
+  title:
+    en: Cylinder 3 Misfire Detected
+    de: Verbrennungsaussetzer Zylinder 3 erkannt
+  description:
+    en: Misfires concentrated on cylinder 3. See P0301 for diagnostic approach.
+    de: Verbrennungsaussetzer konzentriert auf Zylinder 3. Diagnostisches Vorgehen siehe P0301.
+  affected_components:
+    - ignition_coil
+    - spark_plug
+    - fuel_injector
+  common_causes:
+    - id: ignition_coil_failed
+      likelihood: high
+      label:
+        en: Ignition coil for cylinder 3 failed
+        de: Zündspule Zylinder 3 defekt
+    - id: spark_plug_failed
+      likelihood: high
+      label:
+        en: Spark plug for cylinder 3 worn or fouled
+        de: Zündkerze Zylinder 3 verschlissen oder verölt
+    - id: injector_clogged
+      likelihood: medium
+      label:
+        en: Cylinder 3 injector clogged
+        de: Injektor Zylinder 3 verstopft
+  repair:
+    difficulty: easy
+    diy_possible: true
+    estimated_cost_eur: [40, 800]
+    estimated_hours: [0.3, 4.0]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Misfire
+
+- code: P0304
+  scope: generic
+  category: powertrain
+  title:
+    en: Cylinder 4 Misfire Detected
+    de: Verbrennungsaussetzer Zylinder 4 erkannt
+  description:
+    en: Misfires concentrated on cylinder 4. See P0301 for diagnostic approach.
+    de: Verbrennungsaussetzer konzentriert auf Zylinder 4. Diagnostisches Vorgehen siehe P0301.
+  affected_components:
+    - ignition_coil
+    - spark_plug
+    - fuel_injector
+  common_causes:
+    - id: ignition_coil_failed
+      likelihood: high
+      label:
+        en: Ignition coil for cylinder 4 failed
+        de: Zündspule Zylinder 4 defekt
+    - id: spark_plug_failed
+      likelihood: high
+      label:
+        en: Spark plug for cylinder 4 worn or fouled
+        de: Zündkerze Zylinder 4 verschlissen oder verölt
+    - id: injector_clogged
+      likelihood: medium
+      label:
+        en: Cylinder 4 injector clogged
+        de: Injektor Zylinder 4 verstopft
+  repair:
+    difficulty: easy
+    diy_possible: true
+    estimated_cost_eur: [40, 800]
+    estimated_hours: [0.3, 4.0]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Misfire
+
+- code: P0380
+  scope: generic
+  category: powertrain
+  title:
+    en: Glow Plug/Heater Circuit "A" Malfunction
+    de: Glühkerzen-/Heizkreis "A" Fehlfunktion
+  description:
+    en: The glow plug control module reports an electrical fault on circuit A — typically a single glow plug open-circuit, the relay failing, or wiring to the harness damaged. Diesel-specific; affects cold-start behaviour.
+    de: Das Glühzeitsteuergerät meldet einen elektrischen Fehler im Kreis A — typischerweise eine unterbrochene Glühkerze, ein defektes Relais oder eine beschädigte Verkabelung. Dieselspezifisch; betrifft das Kaltstartverhalten.
+  affected_components:
+    - glow_plug
+    - glow_plug_relay
+    - glow_plug_control_module
+  common_causes:
+    - id: glow_plug_open_circuit
+      likelihood: high
+      label:
+        en: One or more glow plugs open-circuit
+        de: Eine oder mehrere Glühkerzen unterbrochen
+    - id: glow_plug_relay_failed
+      likelihood: medium
+      label:
+        en: Glow plug relay failed
+        de: Glühkerzenrelais defekt
+    - id: glow_plug_wiring
+      likelihood: low
+      label:
+        en: Wiring/harness damage
+        de: Verkabelung/Kabelbaum beschädigt
+  repair:
+    difficulty: medium
+    diy_possible: true
+    estimated_cost_eur: [80, 500]
+    estimated_hours: [0.5, 3.0]
+  flags:
+    mil: true
+    emissions_relevant: false
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Glowplug
+
+- code: P0420
+  scope: generic
+  category: powertrain
   title:
     en: Catalyst System Efficiency Below Threshold (Bank 1)
     de: Katalysatorwirkungsgrad unter Schwellwert (Bank 1)
@@ -33,15 +1005,233 @@
         en: Long-term misfire damage
         de: Langzeitschäden durch Verbrennungsaussetzer
   repair:
-    difficulty: medium
+    difficulty: hard
     diy_possible: false
     estimated_cost_eur: [600, 2500]
+    estimated_hours: [1.5, 5.0]
   flags:
     mil: true
     emissions_relevant: true
     drive_cycle_required: true
     limp_mode_possible: false
+  related_codes: [P0430]
+  references:
+    - sae:J2012
+    - iso:15031-6
+  sources:
+    - https://en.wikipedia.org/wiki/Catalytic_converter
+    - https://en.wikipedia.org/wiki/On-board_diagnostics
+
+- code: P0430
+  scope: generic
+  category: powertrain
+  title:
+    en: Catalyst System Efficiency Below Threshold (Bank 2)
+    de: Katalysatorwirkungsgrad unter Schwellwert (Bank 2)
+  description:
+    en: Same condition as P0420 but on bank 2. On engines with one shared catalyst per bank, P0420 and P0430 appearing together usually point to age rather than damage.
+    de: Gleiche Bedingung wie P0420, aber auf Bank 2. Bei Motoren mit je einem Katalysator pro Bank deuten gemeinsam auftretende P0420 und P0430 meist auf Alterung statt auf Beschädigung hin.
+  affected_components:
+    - catalytic_converter
+    - oxygen_sensor_upstream
+    - oxygen_sensor_downstream
+  common_causes:
+    - id: catalyst_aged
+      likelihood: high
+      label:
+        en: Catalyst aged or contaminated
+        de: Katalysator gealtert oder vergiftet
+    - id: o2_sensor_downstream_drift
+      likelihood: medium
+      label:
+        en: Downstream oxygen sensor drift
+        de: Nachgeschaltete Lambdasonde driftet
+  repair:
+    difficulty: hard
+    diy_possible: false
+    estimated_cost_eur: [600, 2500]
+    estimated_hours: [1.5, 5.0]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+  related_codes: [P0420]
   references:
     - sae:J2012
   sources:
-    - https://www.iso.org/standard/52072.html
+    - https://en.wikipedia.org/wiki/Catalytic_converter
+
+- code: P0440
+  scope: generic
+  category: powertrain
+  title:
+    en: Evaporative Emission Control System Malfunction
+    de: Tankentlüftungssystem Fehlfunktion
+  description:
+    en: A general fault in the evaporative emission (EVAP) system has been detected. The system seals the fuel tank and captures fuel vapour in a charcoal canister; this code indicates a failed leak test or sensor without identifying the specific failure.
+    de: Eine allgemeine Störung im Tankentlüftungssystem (EVAP) wurde erkannt. Das System dichtet den Kraftstofftank ab und fängt Benzindämpfe im Aktivkohlefilter auf; dieser Code zeigt einen fehlgeschlagenen Dichtheitstest oder Sensorfehler ohne nähere Eingrenzung an.
+  affected_components:
+    - evap_canister
+    - evap_purge_valve
+    - fuel_filler_cap
+    - evap_vent_valve
+  common_causes:
+    - id: fuel_cap_loose
+      likelihood: high
+      label:
+        en: Fuel filler cap loose or worn
+        de: Tankdeckel locker oder verschlissen
+    - id: evap_purge_valve
+      likelihood: medium
+      label:
+        en: Purge valve stuck open or closed
+        de: Tankentlüftungsventil hängend
+    - id: evap_hose_cracked
+      likelihood: medium
+      label:
+        en: Cracked EVAP hose
+        de: Rissiger EVAP-Schlauch
+  repair:
+    difficulty: easy
+    diy_possible: true
+    estimated_cost_eur: [20, 350]
+    estimated_hours: [0.2, 2.5]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Onboard_refueling_vapor_recovery
+
+- code: P0442
+  scope: generic
+  category: powertrain
+  title:
+    en: Evaporative Emission System Leak Detected (Small Leak)
+    de: Tankentlüftungssystem kleines Leck erkannt
+  description:
+    en: A small leak (typically equivalent to a 0.040 inch / 1.0 mm orifice) has been detected in the EVAP system. By far the most common cause is a fuel cap that is loose, missing, or has a worn seal.
+    de: Ein kleines Leck (typischerweise einem Loch von 0,040 Zoll / 1,0 mm Durchmesser entsprechend) wurde im Tankentlüftungssystem erkannt. Die mit Abstand häufigste Ursache ist ein lockerer, fehlender oder verschlissener Tankdeckel.
+  affected_components:
+    - fuel_filler_cap
+    - evap_canister
+    - evap_purge_valve
+  common_causes:
+    - id: fuel_cap_loose
+      likelihood: high
+      label:
+        en: Fuel cap loose, missing, or worn seal
+        de: Tankdeckel locker, fehlt oder Dichtung verschlissen
+    - id: evap_hose_small_crack
+      likelihood: medium
+      label:
+        en: Small crack in EVAP hose
+        de: Kleiner Riss in EVAP-Schlauch
+    - id: evap_purge_valve_leak
+      likelihood: low
+      label:
+        en: Purge valve leaking
+        de: Tankentlüftungsventil undicht
+  repair:
+    difficulty: easy
+    diy_possible: true
+    estimated_cost_eur: [10, 250]
+    estimated_hours: [0.1, 2.0]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Onboard_refueling_vapor_recovery
+
+- code: P0455
+  scope: generic
+  category: powertrain
+  title:
+    en: Evaporative Emission System Leak Detected (Large Leak)
+    de: Tankentlüftungssystem großes Leck erkannt
+  description:
+    en: A large leak has been detected during the EVAP system pressure or vacuum test — large enough that the system cannot hold pressure for the diagnostic interval. Typically a missing fuel cap, disconnected hose, or split canister.
+    de: Während der Druck- oder Unterdruckprüfung des Tankentlüftungssystems wurde ein großes Leck erkannt — so groß, dass das System den Druck im Diagnoseintervall nicht halten kann. Typischerweise fehlender Tankdeckel, abgefallener Schlauch oder gerissener Aktivkohlebehälter.
+  affected_components:
+    - fuel_filler_cap
+    - evap_canister
+    - evap_hose
+  common_causes:
+    - id: fuel_cap_missing
+      likelihood: high
+      label:
+        en: Fuel cap missing or not seated
+        de: Tankdeckel fehlt oder sitzt nicht richtig
+    - id: evap_hose_disconnected
+      likelihood: high
+      label:
+        en: EVAP hose disconnected
+        de: EVAP-Schlauch abgefallen
+    - id: evap_canister_cracked
+      likelihood: medium
+      label:
+        en: Charcoal canister cracked
+        de: Aktivkohlebehälter gerissen
+  repair:
+    difficulty: easy
+    diy_possible: true
+    estimated_cost_eur: [10, 350]
+    estimated_hours: [0.1, 2.5]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Onboard_refueling_vapor_recovery
+
+- code: P0456
+  scope: generic
+  category: powertrain
+  title:
+    en: Evaporative Emission System Leak Detected (Very Small Leak)
+    de: Tankentlüftungssystem sehr kleines Leck erkannt
+  description:
+    en: A very small leak (typically equivalent to a 0.020 inch / 0.5 mm orifice) has been detected. Smaller threshold than P0442; intermittent and often weather-dependent. Modern OBD-II requires this monitor on most vehicles since model year 2000.
+    de: Ein sehr kleines Leck (typischerweise einem Loch von 0,020 Zoll / 0,5 mm Durchmesser entsprechend) wurde erkannt. Kleinere Schwelle als P0442; oft sporadisch und witterungsabhängig. Modernes OBD-II verlangt diesen Test auf den meisten Fahrzeugen ab Modelljahr 2000.
+  affected_components:
+    - fuel_filler_cap
+    - evap_canister
+    - evap_purge_valve
+    - evap_vent_valve
+  common_causes:
+    - id: fuel_cap_seal_worn
+      likelihood: high
+      label:
+        en: Fuel cap seal hardened or worn
+        de: Tankdeckeldichtung verhärtet oder verschlissen
+    - id: evap_purge_valve_leak
+      likelihood: medium
+      label:
+        en: Purge or vent valve leaking slightly
+        de: Tankentlüftungs- oder Belüftungsventil leicht undicht
+    - id: evap_hose_small_crack
+      likelihood: medium
+      label:
+        en: Hairline crack in EVAP hose
+        de: Haarriss in EVAP-Schlauch
+  repair:
+    difficulty: medium
+    diy_possible: true
+    estimated_cost_eur: [10, 400]
+    estimated_hours: [0.1, 3.0]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+  related_codes: [P0442]
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Onboard_refueling_vapor_recovery

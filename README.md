@@ -66,11 +66,11 @@ tools/                    Node.js validation + build scripts
 
 ## Status
 
-Seed release — coverage is intentionally small while the structure stabilises.
+Early release — generic coverage is being built up; manufacturer-specific codes are community-driven.
 
 | Scope         | Codes | Coverage |
 | ------------- | ----: | -------- |
-| Generic P0    |     1 | seed     |
+| Generic P0    |    28 | growing  |
 | Generic P2    |     0 | wanted   |
 | Generic B/C/U |     0 | wanted   |
 | VAG           |     1 | seed     |
