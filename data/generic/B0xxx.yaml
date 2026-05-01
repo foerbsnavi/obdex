@@ -1,3 +1,815 @@
 # Generic Body codes (SAE J2012, B0xxx range).
 # Add entries here. See data/generic/P0xxx.yaml for the format.
-[]
+
+- code: B0001
+  scope: generic
+  category: body
+  title:
+    en: Driver Frontal Stage 1 Deployment Control
+    de: Fahrerseite Frontairbag Stufe 1 Auslösekreis
+  description:
+    en: The supplemental restraint system (SRS) module has detected a fault in the deployment control circuit for the first stage of the driver frontal airbag. The SRS warning lamp illuminates and airbag deployment may be impaired in a crash event.
+    de: Das Airbag-Steuergerät (SRS) hat einen Fehler im Auslösekreis der ersten Stufe des Fahrer-Frontairbags erkannt. Die Airbag-Warnleuchte leuchtet und die Auslösung im Crashfall kann beeinträchtigt sein.
+  affected_components:
+    - driver_airbag_module
+    - srs_control_module
+    - srs_wiring
+    - clock_spring
+  common_causes:
+    - id: clock_spring_failure
+      likelihood: high
+      label:
+        en: Clock spring (spiral cable) damaged in steering column
+        de: Wickelfeder in der Lenksäule defekt
+    - id: airbag_connector_loose
+      likelihood: medium
+      label:
+        en: Loose or corroded airbag connector under steering wheel
+        de: Loser oder korrodierter Airbag-Stecker unter dem Lenkrad
+    - id: srs_module_fault
+      likelihood: low
+      label:
+        en: SRS control module internal fault
+        de: Interner Fehler im SRS-Steuergerät
+  repair:
+    difficulty: hard
+    diy_possible: false
+    estimated_cost_eur: [200, 1500]
+    estimated_hours: [1.0, 4.0]
+  flags:
+    mil: false
+    emissions_relevant: false
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Airbag
+
+- code: B0002
+  scope: generic
+  category: body
+  title:
+    en: Driver Frontal Stage 2 Deployment Control
+    de: Fahrerseite Frontairbag Stufe 2 Auslösekreis
+  description:
+    en: The SRS module has detected a fault in the deployment control circuit for the second stage of the driver frontal airbag. Dual-stage airbags use two charges for severity-dependent deployment — this code indicates the high-severity stage cannot be triggered reliably.
+    de: Das SRS-Steuergerät hat einen Fehler im Auslösekreis der zweiten Stufe des Fahrer-Frontairbags erkannt. Zweistufige Airbags nutzen zwei Treibsätze für unfallabhängige Auslösung — dieser Code bedeutet, dass die Hochlast-Stufe nicht zuverlässig ausgelöst werden kann.
+  affected_components:
+    - driver_airbag_module
+    - srs_control_module
+    - srs_wiring
+    - clock_spring
+  common_causes:
+    - id: clock_spring_failure
+      likelihood: high
+      label:
+        en: Clock spring damaged or worn
+        de: Wickelfeder beschädigt oder verschlissen
+    - id: airbag_squib_circuit
+      likelihood: medium
+      label:
+        en: Stage 2 squib circuit open or shorted
+        de: Stufe-2-Zündkreis unterbrochen oder kurzgeschlossen
+    - id: srs_module_fault
+      likelihood: low
+      label:
+        en: SRS control module fault
+        de: Fehler im SRS-Steuergerät
+  repair:
+    difficulty: hard
+    diy_possible: false
+    estimated_cost_eur: [200, 1500]
+    estimated_hours: [1.0, 4.0]
+  flags:
+    mil: false
+    emissions_relevant: false
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Airbag
+
+- code: B0010
+  scope: generic
+  category: body
+  title:
+    en: Right Front/Passenger Frontal Deployment Control
+    de: Beifahrerseite Frontairbag Auslösekreis
+  description:
+    en: The SRS module has detected a fault in the deployment control circuit for the front passenger airbag. The airbag warning lamp activates and crash protection on the passenger side may be reduced.
+    de: Das SRS-Steuergerät hat einen Fehler im Auslösekreis des Beifahrer-Frontairbags erkannt. Die Airbag-Warnleuchte leuchtet und der Crashschutz auf der Beifahrerseite kann eingeschränkt sein.
+  affected_components:
+    - passenger_airbag_module
+    - srs_control_module
+    - srs_wiring
+  common_causes:
+    - id: passenger_airbag_connector
+      likelihood: high
+      label:
+        en: Loose or corroded passenger airbag connector
+        de: Loser oder korrodierter Beifahrer-Airbag-Stecker
+    - id: passenger_squib_circuit
+      likelihood: medium
+      label:
+        en: Squib circuit open or shorted
+        de: Zündkreis unterbrochen oder kurzgeschlossen
+    - id: srs_module_fault
+      likelihood: low
+      label:
+        en: SRS control module fault
+        de: Fehler im SRS-Steuergerät
+  repair:
+    difficulty: hard
+    diy_possible: false
+    estimated_cost_eur: [200, 1500]
+    estimated_hours: [1.0, 4.0]
+  flags:
+    mil: false
+    emissions_relevant: false
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Airbag
+
+- code: B0011
+  scope: generic
+  category: body
+  title:
+    en: Right Front/Passenger Frontal Stage 2 Deployment Control
+    de: Beifahrerseite Frontairbag Stufe 2 Auslösekreis
+  description:
+    en: Same fault as B0010 but for the second stage of a dual-stage passenger frontal airbag. The high-severity deployment stage cannot be reliably triggered.
+    de: Gleicher Fehler wie B0010, jedoch für die zweite Stufe eines zweistufigen Beifahrer-Frontairbags. Die Hochlast-Auslösestufe kann nicht zuverlässig ausgelöst werden.
+  affected_components:
+    - passenger_airbag_module
+    - srs_control_module
+    - srs_wiring
+  common_causes:
+    - id: passenger_squib_circuit
+      likelihood: high
+      label:
+        en: Stage 2 squib circuit open or shorted
+        de: Stufe-2-Zündkreis unterbrochen oder kurzgeschlossen
+    - id: passenger_airbag_connector
+      likelihood: medium
+      label:
+        en: Loose or corroded airbag connector
+        de: Loser oder korrodierter Airbag-Stecker
+    - id: srs_module_fault
+      likelihood: low
+      label:
+        en: SRS control module fault
+        de: Fehler im SRS-Steuergerät
+  repair:
+    difficulty: hard
+    diy_possible: false
+    estimated_cost_eur: [200, 1500]
+    estimated_hours: [1.0, 4.0]
+  flags:
+    mil: false
+    emissions_relevant: false
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Airbag
+
+- code: B0020
+  scope: generic
+  category: body
+  title:
+    en: Left Side Deployment Control
+    de: Seitenairbag links Auslösekreis
+  description:
+    en: The SRS module has detected a fault in the deployment control circuit for the left (driver) side airbag, typically located in the seat or door. The airbag warning lamp illuminates.
+    de: Das SRS-Steuergerät hat einen Fehler im Auslösekreis des linken Seitenairbags erkannt — meist in Sitz oder Tür verbaut. Die Airbag-Warnleuchte leuchtet.
+  affected_components:
+    - left_side_airbag_module
+    - srs_control_module
+    - srs_wiring
+    - seat_harness_connector
+  common_causes:
+    - id: seat_harness_connector_fault
+      likelihood: high
+      label:
+        en: Seat harness connector under driver seat damaged
+        de: Sitzkabelbaum-Stecker unter dem Fahrersitz beschädigt
+    - id: side_airbag_circuit_open
+      likelihood: medium
+      label:
+        en: Side airbag squib circuit open
+        de: Seitenairbag-Zündkreis unterbrochen
+    - id: srs_module_fault
+      likelihood: low
+      label:
+        en: SRS control module fault
+        de: Fehler im SRS-Steuergerät
+  repair:
+    difficulty: hard
+    diy_possible: false
+    estimated_cost_eur: [150, 1200]
+    estimated_hours: [0.5, 3.0]
+  flags:
+    mil: false
+    emissions_relevant: false
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Airbag
+
+- code: B0024
+  scope: generic
+  category: body
+  title:
+    en: Right Side Deployment Control
+    de: Seitenairbag rechts Auslösekreis
+  description:
+    en: Same fault as B0020 but for the right (passenger) side airbag. A wiring or squib fault prevents reliable deployment of the side airbag on the passenger side.
+    de: Gleicher Fehler wie B0020, jedoch für den rechten (beifahrerseitigen) Seitenairbag. Ein Verkabelungs- oder Zündfehler verhindert die zuverlässige Auslösung.
+  affected_components:
+    - right_side_airbag_module
+    - srs_control_module
+    - srs_wiring
+    - seat_harness_connector
+  common_causes:
+    - id: seat_harness_connector_fault
+      likelihood: high
+      label:
+        en: Seat harness connector under passenger seat damaged
+        de: Sitzkabelbaum-Stecker unter dem Beifahrersitz beschädigt
+    - id: side_airbag_circuit_open
+      likelihood: medium
+      label:
+        en: Side airbag squib circuit open
+        de: Seitenairbag-Zündkreis unterbrochen
+    - id: srs_module_fault
+      likelihood: low
+      label:
+        en: SRS control module fault
+        de: Fehler im SRS-Steuergerät
+  repair:
+    difficulty: hard
+    diy_possible: false
+    estimated_cost_eur: [150, 1200]
+    estimated_hours: [0.5, 3.0]
+  flags:
+    mil: false
+    emissions_relevant: false
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Airbag
+
+- code: B0028
+  scope: generic
+  category: body
+  title:
+    en: Driver Side Curtain Air Bag Deployment Control
+    de: Fahrerseite Kopfairbag (Curtain) Auslösekreis
+  description:
+    en: The SRS module has detected a fault in the deployment control circuit for the driver side curtain (head) airbag, which deploys from the headliner during a side impact or rollover.
+    de: Das SRS-Steuergerät hat einen Fehler im Auslösekreis des fahrerseitigen Kopfairbags (Curtain) erkannt. Dieser entfaltet sich bei Seitenaufprall oder Überschlag aus dem Dachhimmel.
+  affected_components:
+    - driver_curtain_airbag
+    - srs_control_module
+    - srs_wiring
+  common_causes:
+    - id: curtain_airbag_circuit_open
+      likelihood: high
+      label:
+        en: Curtain airbag squib circuit open or shorted
+        de: Kopfairbag-Zündkreis unterbrochen oder kurzgeschlossen
+    - id: srs_wiring_pillar
+      likelihood: medium
+      label:
+        en: Wiring damage in A/B/C-pillar
+        de: Verkabelungsschaden in A-/B-/C-Säule
+    - id: srs_module_fault
+      likelihood: low
+      label:
+        en: SRS control module fault
+        de: Fehler im SRS-Steuergerät
+  repair:
+    difficulty: hard
+    diy_possible: false
+    estimated_cost_eur: [200, 1500]
+    estimated_hours: [1.0, 4.0]
+  flags:
+    mil: false
+    emissions_relevant: false
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Airbag
+
+- code: B0029
+  scope: generic
+  category: body
+  title:
+    en: Right Side Curtain Air Bag Deployment Control
+    de: Beifahrerseite Kopfairbag (Curtain) Auslösekreis
+  description:
+    en: Same fault as B0028 but for the passenger side curtain airbag. A wiring or squib fault prevents reliable deployment from the passenger headliner.
+    de: Gleicher Fehler wie B0028, jedoch für den beifahrerseitigen Kopfairbag. Ein Verkabelungs- oder Zündfehler verhindert die zuverlässige Auslösung.
+  affected_components:
+    - passenger_curtain_airbag
+    - srs_control_module
+    - srs_wiring
+  common_causes:
+    - id: curtain_airbag_circuit_open
+      likelihood: high
+      label:
+        en: Curtain airbag squib circuit open or shorted
+        de: Kopfairbag-Zündkreis unterbrochen oder kurzgeschlossen
+    - id: srs_wiring_pillar
+      likelihood: medium
+      label:
+        en: Wiring damage in A/B/C-pillar
+        de: Verkabelungsschaden in A-/B-/C-Säule
+    - id: srs_module_fault
+      likelihood: low
+      label:
+        en: SRS control module fault
+        de: Fehler im SRS-Steuergerät
+  repair:
+    difficulty: hard
+    diy_possible: false
+    estimated_cost_eur: [200, 1500]
+    estimated_hours: [1.0, 4.0]
+  flags:
+    mil: false
+    emissions_relevant: false
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Airbag
+
+- code: B0040
+  scope: generic
+  category: body
+  title:
+    en: Outside Temperature Sensor Circuit
+    de: Außentemperatursensor Schaltung
+  description:
+    en: The HVAC or body control module has detected an implausible signal from the outside (ambient) temperature sensor. The displayed outside temperature may be wrong or missing and automatic climate control may behave incorrectly.
+    de: Das Klima- oder Karosserie-Steuergerät hat ein unplausibles Signal vom Außentemperatursensor erkannt. Die Anzeige der Außentemperatur kann fehlerhaft sein und die Klimaautomatik kann falsch regeln.
+  affected_components:
+    - outside_temperature_sensor
+    - hvac_control_module
+    - body_control_module
+  common_causes:
+    - id: ambient_sensor_failed
+      likelihood: high
+      label:
+        en: Ambient temperature sensor failed
+        de: Außentemperatursensor defekt
+    - id: ambient_sensor_wiring
+      likelihood: medium
+      label:
+        en: Wiring or connector fault to sensor
+        de: Verkabelungs- oder Steckerfehler am Sensor
+  repair:
+    difficulty: easy
+    diy_possible: true
+    estimated_cost_eur: [30, 150]
+    estimated_hours: [0.3, 1.0]
+  flags:
+    mil: false
+    emissions_relevant: false
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Automotive_air_conditioning
+
+- code: B0050
+  scope: generic
+  category: body
+  title:
+    en: Driver Pretensioner Deployment Control
+    de: Fahrer-Gurtstraffer Auslösekreis
+  description:
+    en: The SRS module has detected a fault in the deployment control circuit for the driver seat belt pretensioner. The pretensioner pulls the belt taut during a crash and may not function reliably with this fault active.
+    de: Das SRS-Steuergerät hat einen Fehler im Auslösekreis des Fahrer-Gurtstraffers erkannt. Der Gurtstraffer zieht den Gurt im Crashfall straff und arbeitet bei aktivem Fehler möglicherweise nicht zuverlässig.
+  affected_components:
+    - driver_pretensioner
+    - srs_control_module
+    - srs_wiring
+  common_causes:
+    - id: pretensioner_squib_circuit
+      likelihood: high
+      label:
+        en: Pretensioner squib circuit open or shorted
+        de: Gurtstraffer-Zündkreis unterbrochen oder kurzgeschlossen
+    - id: seat_harness_connector_fault
+      likelihood: medium
+      label:
+        en: Connector under seat damaged
+        de: Stecker unter dem Sitz beschädigt
+    - id: srs_module_fault
+      likelihood: low
+      label:
+        en: SRS control module fault
+        de: Fehler im SRS-Steuergerät
+  repair:
+    difficulty: hard
+    diy_possible: false
+    estimated_cost_eur: [150, 1000]
+    estimated_hours: [0.5, 2.5]
+  flags:
+    mil: false
+    emissions_relevant: false
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Airbag
+
+- code: B0051
+  scope: generic
+  category: body
+  title:
+    en: Driver Frontal Deployment Control Open
+    de: Fahrer-Frontairbag Auslösekreis offen
+  description:
+    en: The SRS module has detected an open circuit in the driver frontal airbag deployment loop. Resistance is above the upper threshold, indicating broken wiring or a disconnected igniter.
+    de: Das SRS-Steuergerät hat eine Unterbrechung im Auslösekreis des Fahrer-Frontairbags erkannt. Der Widerstand liegt über dem oberen Schwellwert, was auf eine unterbrochene Verkabelung oder einen abgezogenen Zünder hinweist.
+  affected_components:
+    - driver_airbag_module
+    - clock_spring
+    - srs_wiring
+    - srs_control_module
+  common_causes:
+    - id: clock_spring_open
+      likelihood: high
+      label:
+        en: Clock spring conductor broken
+        de: Wickelfeder-Leiter unterbrochen
+    - id: airbag_connector_loose
+      likelihood: medium
+      label:
+        en: Airbag connector not fully seated
+        de: Airbag-Stecker nicht vollständig eingerastet
+    - id: srs_wiring_open
+      likelihood: low
+      label:
+        en: Wiring open between module and squib
+        de: Verkabelung zwischen Steuergerät und Zünder unterbrochen
+  repair:
+    difficulty: hard
+    diy_possible: false
+    estimated_cost_eur: [200, 1200]
+    estimated_hours: [1.0, 3.0]
+  flags:
+    mil: false
+    emissions_relevant: false
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Airbag
+
+- code: B0053
+  scope: generic
+  category: body
+  title:
+    en: Passenger Pretensioner Deployment Control
+    de: Beifahrer-Gurtstraffer Auslösekreis
+  description:
+    en: Same fault as B0050 but for the passenger seat belt pretensioner. A circuit fault prevents reliable pretensioner activation on the passenger side during a crash.
+    de: Gleicher Fehler wie B0050, jedoch für den Beifahrer-Gurtstraffer. Ein Schaltkreisfehler verhindert die zuverlässige Aktivierung auf der Beifahrerseite im Crashfall.
+  affected_components:
+    - passenger_pretensioner
+    - srs_control_module
+    - srs_wiring
+  common_causes:
+    - id: pretensioner_squib_circuit
+      likelihood: high
+      label:
+        en: Pretensioner squib circuit open or shorted
+        de: Gurtstraffer-Zündkreis unterbrochen oder kurzgeschlossen
+    - id: seat_harness_connector_fault
+      likelihood: medium
+      label:
+        en: Connector under passenger seat damaged
+        de: Stecker unter dem Beifahrersitz beschädigt
+    - id: srs_module_fault
+      likelihood: low
+      label:
+        en: SRS control module fault
+        de: Fehler im SRS-Steuergerät
+  repair:
+    difficulty: hard
+    diy_possible: false
+    estimated_cost_eur: [150, 1000]
+    estimated_hours: [0.5, 2.5]
+  flags:
+    mil: false
+    emissions_relevant: false
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Airbag
+
+- code: B0064
+  scope: generic
+  category: body
+  title:
+    en: Driver Seat Belt Tension Sensor
+    de: Fahrer-Gurtbandkraftsensor
+  description:
+    en: The SRS module has detected a fault in the driver seat belt tension sensor. This sensor measures belt load and is used by adaptive restraint systems to scale airbag deployment force based on occupant size.
+    de: Das SRS-Steuergerät hat einen Fehler am Gurtbandkraftsensor des Fahrers erkannt. Dieser Sensor misst die Gurtkraft und wird von adaptiven Rückhaltesystemen genutzt, um die Airbag-Entfaltungskraft an die Insassengröße anzupassen.
+  affected_components:
+    - seat_belt_tension_sensor
+    - srs_control_module
+    - srs_wiring
+  common_causes:
+    - id: tension_sensor_failed
+      likelihood: high
+      label:
+        en: Belt tension sensor failed
+        de: Gurtbandkraftsensor defekt
+    - id: tension_sensor_wiring
+      likelihood: medium
+      label:
+        en: Wiring or connector fault
+        de: Verkabelungs- oder Steckerfehler
+  repair:
+    difficulty: hard
+    diy_possible: false
+    estimated_cost_eur: [150, 700]
+    estimated_hours: [0.5, 2.0]
+  flags:
+    mil: false
+    emissions_relevant: false
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Airbag
+
+- code: B0070
+  scope: generic
+  category: body
+  title:
+    en: Vehicle Rollover Sensor
+    de: Überschlagsensor
+  description:
+    en: The SRS module has detected a fault in the rollover sensor circuit. The rollover sensor triggers curtain airbags and seat belt pretensioners when the vehicle approaches a tip-over angle.
+    de: Das SRS-Steuergerät hat einen Fehler im Stromkreis des Überschlagsensors erkannt. Der Sensor löst Kopfairbags und Gurtstraffer aus, wenn sich das Fahrzeug einem Kippwinkel nähert.
+  affected_components:
+    - rollover_sensor
+    - srs_control_module
+    - srs_wiring
+  common_causes:
+    - id: rollover_sensor_failed
+      likelihood: high
+      label:
+        en: Rollover sensor failed
+        de: Überschlagsensor defekt
+    - id: rollover_sensor_wiring
+      likelihood: medium
+      label:
+        en: Wiring or connector fault
+        de: Verkabelungs- oder Steckerfehler
+    - id: srs_module_fault
+      likelihood: low
+      label:
+        en: SRS control module fault
+        de: Fehler im SRS-Steuergerät
+  repair:
+    difficulty: hard
+    diy_possible: false
+    estimated_cost_eur: [150, 800]
+    estimated_hours: [0.5, 2.5]
+  flags:
+    mil: false
+    emissions_relevant: false
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Airbag
+
+- code: B0081
+  scope: generic
+  category: body
+  title:
+    en: Front Passenger Belt Switch Circuit
+    de: Beifahrer-Gurtschloss-Schalter Schaltung
+  description:
+    en: The SRS or body control module has detected a fault in the front passenger seat belt buckle switch circuit. The switch reports whether the belt is fastened and is used for the belt warning lamp and for restraint logic.
+    de: Das SRS- oder Karosserie-Steuergerät hat einen Fehler im Stromkreis des Beifahrer-Gurtschloss-Schalters erkannt. Der Schalter meldet, ob der Gurt angelegt ist, und wird für die Gurtwarnleuchte sowie die Rückhaltelogik genutzt.
+  affected_components:
+    - belt_buckle_switch
+    - srs_control_module
+    - body_control_module
+  common_causes:
+    - id: buckle_switch_failed
+      likelihood: high
+      label:
+        en: Buckle switch failed or stuck
+        de: Gurtschloss-Schalter defekt oder klemmt
+    - id: buckle_switch_wiring
+      likelihood: medium
+      label:
+        en: Wiring under seat damaged
+        de: Verkabelung unter dem Sitz beschädigt
+  repair:
+    difficulty: medium
+    diy_possible: true
+    estimated_cost_eur: [80, 400]
+    estimated_hours: [0.5, 2.0]
+  flags:
+    mil: false
+    emissions_relevant: false
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Airbag
+
+- code: B0100
+  scope: generic
+  category: body
+  title:
+    en: Driver Door Lock Cylinder Switch Circuit
+    de: Fahrertür-Schließzylinderschalter Schaltung
+  description:
+    en: The body control module has detected a fault in the driver door lock cylinder switch circuit. This switch detects key rotation in the door lock and is used for keyless functions and the alarm system.
+    de: Das Karosserie-Steuergerät hat einen Fehler im Stromkreis des Schließzylinderschalters der Fahrertür erkannt. Dieser Schalter erkennt die Schlüsseldrehung im Türschloss und wird für Keyless-Funktionen und die Alarmanlage genutzt.
+  affected_components:
+    - door_lock_cylinder_switch
+    - body_control_module
+    - door_harness
+  common_causes:
+    - id: lock_cylinder_switch_failed
+      likelihood: high
+      label:
+        en: Lock cylinder switch failed
+        de: Schließzylinderschalter defekt
+    - id: door_harness_break
+      likelihood: medium
+      label:
+        en: Door harness broken in door hinge area
+        de: Türkabelbaum im Türscharnierbereich gebrochen
+  repair:
+    difficulty: medium
+    diy_possible: true
+    estimated_cost_eur: [50, 300]
+    estimated_hours: [0.5, 2.0]
+  flags:
+    mil: false
+    emissions_relevant: false
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/On-board_diagnostics
+
+- code: B0150
+  scope: generic
+  category: body
+  title:
+    en: HVAC Mode Door Range/Performance
+    de: HVAC-Klappensteller Funktionsbereich/Leistung
+  description:
+    en: The HVAC control module has detected that the air distribution mode door (e.g. floor/face/defrost) does not reach the commanded position within the expected time. The actuator may be stuck, the door binding, or the position feedback inaccurate.
+    de: Das Klima-Steuergerät hat erkannt, dass die Luftverteilungsklappe (z. B. Fuß/Gesicht/Defrost) die angesteuerte Position nicht in der erwarteten Zeit erreicht. Der Stellmotor klemmt, die Klappe blockiert oder die Positionsrückmeldung ist ungenau.
+  affected_components:
+    - mode_door_actuator
+    - hvac_control_module
+    - mode_door_linkage
+  common_causes:
+    - id: mode_door_actuator_failed
+      likelihood: high
+      label:
+        en: Mode door actuator motor failed
+        de: Klappensteller-Motor defekt
+    - id: mode_door_binding
+      likelihood: medium
+      label:
+        en: Mode door mechanically binding
+        de: Klappe mechanisch schwergängig
+    - id: actuator_wiring
+      likelihood: low
+      label:
+        en: Wiring or connector fault to actuator
+        de: Verkabelungs- oder Steckerfehler am Steller
+  repair:
+    difficulty: medium
+    diy_possible: true
+    estimated_cost_eur: [80, 600]
+    estimated_hours: [0.5, 4.0]
+  flags:
+    mil: false
+    emissions_relevant: false
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Automotive_air_conditioning
+
+- code: B0156
+  scope: generic
+  category: body
+  title:
+    en: Sun Load Sensor Circuit
+    de: Sonneneinstrahlungssensor Schaltung
+  description:
+    en: The HVAC control module has detected an implausible signal from the sun load (solar) sensor, typically located on the dashboard. Automatic climate control uses this signal to bias cooling on the side facing the sun.
+    de: Das Klima-Steuergerät hat ein unplausibles Signal vom Sonneneinstrahlungssensor erkannt — meist im Armaturenbrett verbaut. Die Klimaautomatik nutzt das Signal, um die Kühlung zur sonnenzugewandten Seite zu verstärken.
+  affected_components:
+    - sun_load_sensor
+    - hvac_control_module
+  common_causes:
+    - id: sun_load_sensor_failed
+      likelihood: high
+      label:
+        en: Sun load sensor failed
+        de: Sonneneinstrahlungssensor defekt
+    - id: sun_load_sensor_wiring
+      likelihood: medium
+      label:
+        en: Wiring or connector fault
+        de: Verkabelungs- oder Steckerfehler
+  repair:
+    difficulty: easy
+    diy_possible: true
+    estimated_cost_eur: [30, 200]
+    estimated_hours: [0.3, 1.5]
+  flags:
+    mil: false
+    emissions_relevant: false
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Automotive_air_conditioning
+
+- code: B0158
+  scope: generic
+  category: body
+  title:
+    en: Ambient Air Temperature Sensor Circuit
+    de: Umgebungslufttemperatursensor Schaltung
+  description:
+    en: The HVAC control module has detected an implausible signal from the ambient air temperature sensor used by the climate control system. Symptoms include incorrect outside temperature display and erratic automatic climate behavior.
+    de: Das Klima-Steuergerät hat ein unplausibles Signal vom Umgebungslufttemperatursensor erkannt. Symptome sind eine falsche Außentemperaturanzeige und unstetiges Verhalten der Klimaautomatik.
+  affected_components:
+    - ambient_air_temperature_sensor
+    - hvac_control_module
+  common_causes:
+    - id: ambient_sensor_failed
+      likelihood: high
+      label:
+        en: Ambient air temperature sensor failed
+        de: Umgebungslufttemperatursensor defekt
+    - id: ambient_sensor_wiring
+      likelihood: medium
+      label:
+        en: Wiring or connector fault
+        de: Verkabelungs- oder Steckerfehler
+  repair:
+    difficulty: easy
+    diy_possible: true
+    estimated_cost_eur: [30, 150]
+    estimated_hours: [0.3, 1.0]
+  flags:
+    mil: false
+    emissions_relevant: false
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Automotive_air_conditioning
+
+- code: B0188
+  scope: generic
+  category: body
+  title:
+    en: Rear Wiper Motor Circuit
+    de: Heckwischermotor Schaltung
+  description:
+    en: The body control module has detected a fault in the rear wiper motor circuit. Possible faults include an open or shorted motor winding, a stuck mechanism, or wiring damage in the tailgate harness.
+    de: Das Karosserie-Steuergerät hat einen Fehler im Stromkreis des Heckwischermotors erkannt. Möglich sind eine Unterbrechung oder ein Kurzschluss in der Motorwicklung, ein blockierter Mechanismus oder ein Verkabelungsschaden im Heckklappenkabelbaum.
+  affected_components:
+    - rear_wiper_motor
+    - body_control_module
+    - tailgate_harness
+  common_causes:
+    - id: rear_wiper_motor_failed
+      likelihood: high
+      label:
+        en: Rear wiper motor failed
+        de: Heckwischermotor defekt
+    - id: tailgate_harness_break
+      likelihood: medium
+      label:
+        en: Tailgate harness broken at hinge
+        de: Heckklappenkabelbaum am Scharnier gebrochen
+    - id: rear_wiper_fuse
+      likelihood: low
+      label:
+        en: Rear wiper fuse blown
+        de: Sicherung Heckwischer durchgebrannt
+  repair:
+    difficulty: medium
+    diy_possible: true
+    estimated_cost_eur: [50, 350]
+    estimated_hours: [0.3, 2.0]
+  flags:
+    mil: false
+    emissions_relevant: false
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/On-board_diagnostics

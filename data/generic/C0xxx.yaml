@@ -1,3 +1,844 @@
 # Generic Chassis codes (SAE J2012, C0xxx range).
 # Add entries here. See data/generic/P0xxx.yaml for the format.
-[]
+
+- code: C0035
+  scope: generic
+  category: chassis
+  title:
+    en: Left Front Wheel Speed Sensor Circuit Malfunction
+    de: Raddrehzahlsensor vorne links Schaltung Fehlfunktion
+  description:
+    en: The ABS control module has detected a fault in the left front wheel speed sensor circuit. Loss of wheel speed information disables ABS and stability control, and a separate ABS warning lamp is illuminated.
+    de: Das ABS-Steuergerät hat einen Fehler im Stromkreis des Raddrehzahlsensors vorne links erkannt. Ohne Raddrehzahlsignal werden ABS und Stabilitätsregelung deaktiviert und die ABS-Warnleuchte leuchtet.
+  affected_components:
+    - wheel_speed_sensor
+    - abs_control_module
+    - tone_ring
+    - sensor_wiring
+  common_causes:
+    - id: wheel_speed_sensor_failed
+      likelihood: high
+      label:
+        en: Wheel speed sensor failed
+        de: Raddrehzahlsensor defekt
+    - id: tone_ring_damaged
+      likelihood: medium
+      label:
+        en: Tone ring (reluctor) damaged or contaminated with debris
+        de: Polrad (Impulsrad) beschädigt oder verschmutzt
+    - id: sensor_wiring_break
+      likelihood: medium
+      label:
+        en: Wiring break or chafe at wheel arch
+        de: Kabelbruch oder Scheuerstelle im Radkasten
+    - id: hub_bearing_fault
+      likelihood: low
+      label:
+        en: Wheel hub bearing with integrated sensor ring failed
+        de: Radlager mit integriertem Sensorring defekt
+  repair:
+    difficulty: medium
+    diy_possible: true
+    estimated_cost_eur: [80, 400]
+    estimated_hours: [0.5, 2.5]
+  flags:
+    mil: false
+    emissions_relevant: false
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Wheel_speed_sensor
+    - https://en.wikipedia.org/wiki/Anti-lock_braking_system
+
+- code: C0040
+  scope: generic
+  category: chassis
+  title:
+    en: Right Front Wheel Speed Sensor Circuit Malfunction
+    de: Raddrehzahlsensor vorne rechts Schaltung Fehlfunktion
+  description:
+    en: Same fault as C0035 but for the right front wheel. ABS and stability control are disabled while the fault is active.
+    de: Gleicher Fehler wie C0035, jedoch für das rechte Vorderrad. ABS und Stabilitätsregelung sind bei aktivem Fehler deaktiviert.
+  affected_components:
+    - wheel_speed_sensor
+    - abs_control_module
+    - tone_ring
+    - sensor_wiring
+  common_causes:
+    - id: wheel_speed_sensor_failed
+      likelihood: high
+      label:
+        en: Wheel speed sensor failed
+        de: Raddrehzahlsensor defekt
+    - id: tone_ring_damaged
+      likelihood: medium
+      label:
+        en: Tone ring damaged or contaminated
+        de: Polrad beschädigt oder verschmutzt
+    - id: sensor_wiring_break
+      likelihood: medium
+      label:
+        en: Wiring break or chafe at wheel arch
+        de: Kabelbruch oder Scheuerstelle im Radkasten
+    - id: hub_bearing_fault
+      likelihood: low
+      label:
+        en: Wheel hub bearing with integrated sensor ring failed
+        de: Radlager mit integriertem Sensorring defekt
+  repair:
+    difficulty: medium
+    diy_possible: true
+    estimated_cost_eur: [80, 400]
+    estimated_hours: [0.5, 2.5]
+  flags:
+    mil: false
+    emissions_relevant: false
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Wheel_speed_sensor
+    - https://en.wikipedia.org/wiki/Anti-lock_braking_system
+
+- code: C0045
+  scope: generic
+  category: chassis
+  title:
+    en: Left Rear Wheel Speed Sensor Circuit Malfunction
+    de: Raddrehzahlsensor hinten links Schaltung Fehlfunktion
+  description:
+    en: Same fault as C0035 but for the left rear wheel. ABS and stability control are disabled while the fault is active.
+    de: Gleicher Fehler wie C0035, jedoch für das linke Hinterrad. ABS und Stabilitätsregelung sind bei aktivem Fehler deaktiviert.
+  affected_components:
+    - wheel_speed_sensor
+    - abs_control_module
+    - tone_ring
+    - sensor_wiring
+  common_causes:
+    - id: wheel_speed_sensor_failed
+      likelihood: high
+      label:
+        en: Wheel speed sensor failed
+        de: Raddrehzahlsensor defekt
+    - id: tone_ring_damaged
+      likelihood: medium
+      label:
+        en: Tone ring damaged or contaminated
+        de: Polrad beschädigt oder verschmutzt
+    - id: sensor_wiring_break
+      likelihood: medium
+      label:
+        en: Wiring break or chafe under chassis
+        de: Kabelbruch oder Scheuerstelle am Unterboden
+    - id: hub_bearing_fault
+      likelihood: low
+      label:
+        en: Wheel hub bearing with integrated sensor ring failed
+        de: Radlager mit integriertem Sensorring defekt
+  repair:
+    difficulty: medium
+    diy_possible: true
+    estimated_cost_eur: [80, 400]
+    estimated_hours: [0.5, 2.5]
+  flags:
+    mil: false
+    emissions_relevant: false
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Wheel_speed_sensor
+    - https://en.wikipedia.org/wiki/Anti-lock_braking_system
+
+- code: C0050
+  scope: generic
+  category: chassis
+  title:
+    en: Right Rear Wheel Speed Sensor Circuit Malfunction
+    de: Raddrehzahlsensor hinten rechts Schaltung Fehlfunktion
+  description:
+    en: Same fault as C0035 but for the right rear wheel. ABS and stability control are disabled while the fault is active.
+    de: Gleicher Fehler wie C0035, jedoch für das rechte Hinterrad. ABS und Stabilitätsregelung sind bei aktivem Fehler deaktiviert.
+  affected_components:
+    - wheel_speed_sensor
+    - abs_control_module
+    - tone_ring
+    - sensor_wiring
+  common_causes:
+    - id: wheel_speed_sensor_failed
+      likelihood: high
+      label:
+        en: Wheel speed sensor failed
+        de: Raddrehzahlsensor defekt
+    - id: tone_ring_damaged
+      likelihood: medium
+      label:
+        en: Tone ring damaged or contaminated
+        de: Polrad beschädigt oder verschmutzt
+    - id: sensor_wiring_break
+      likelihood: medium
+      label:
+        en: Wiring break or chafe under chassis
+        de: Kabelbruch oder Scheuerstelle am Unterboden
+    - id: hub_bearing_fault
+      likelihood: low
+      label:
+        en: Wheel hub bearing with integrated sensor ring failed
+        de: Radlager mit integriertem Sensorring defekt
+  repair:
+    difficulty: medium
+    diy_possible: true
+    estimated_cost_eur: [80, 400]
+    estimated_hours: [0.5, 2.5]
+  flags:
+    mil: false
+    emissions_relevant: false
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Wheel_speed_sensor
+    - https://en.wikipedia.org/wiki/Anti-lock_braking_system
+
+- code: C0051
+  scope: generic
+  category: chassis
+  title:
+    en: Power Steering Position Sensor Performance
+    de: Lenkwinkelsensor Funktionsbereich
+  description:
+    en: The chassis or power steering control module has detected that the steering position signal is implausible compared to vehicle motion. Stability control may be limited because correct yaw and slip-angle calculation depends on a valid steering angle.
+    de: Das Fahrwerks- oder Lenkungs-Steuergerät hat erkannt, dass das Lenkwinkelsignal im Vergleich zur Fahrzeugbewegung unplausibel ist. Die Stabilitätsregelung kann eingeschränkt sein, da Gier- und Schwimmwinkelberechnung einen gültigen Lenkwinkel benötigen.
+  affected_components:
+    - steering_angle_sensor
+    - power_steering_module
+    - chassis_control_module
+  common_causes:
+    - id: steering_angle_calibration
+      likelihood: high
+      label:
+        en: Steering angle sensor not calibrated after alignment or repair
+        de: Lenkwinkelsensor nach Achsvermessung oder Reparatur nicht kalibriert
+    - id: steering_angle_sensor_failed
+      likelihood: medium
+      label:
+        en: Steering angle sensor failed
+        de: Lenkwinkelsensor defekt
+    - id: clock_spring_signal
+      likelihood: low
+      label:
+        en: Signal path through clock spring degraded
+        de: Signalweg über Wickelfeder beeinträchtigt
+  repair:
+    difficulty: medium
+    diy_possible: false
+    estimated_cost_eur: [80, 600]
+    estimated_hours: [0.5, 2.5]
+  flags:
+    mil: false
+    emissions_relevant: false
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Power_steering
+
+- code: C0110
+  scope: generic
+  category: chassis
+  title:
+    en: ABS Pump Motor Circuit Malfunction
+    de: ABS-Pumpenmotor Schaltung Fehlfunktion
+  description:
+    en: The ABS control module has detected a fault in the hydraulic pump motor circuit. The pump rebuilds brake pressure during ABS regulation — without it, ABS and stability control are disabled.
+    de: Das ABS-Steuergerät hat einen Fehler im Stromkreis des hydraulischen Pumpenmotors erkannt. Die Pumpe baut bei ABS-Regelung den Bremsdruck wieder auf — ohne sie werden ABS und Stabilitätsregelung deaktiviert.
+  affected_components:
+    - abs_pump_motor
+    - abs_control_module
+    - abs_relay
+    - power_supply_wiring
+  common_causes:
+    - id: abs_pump_motor_failed
+      likelihood: high
+      label:
+        en: ABS pump motor failed (worn brushes, seized)
+        de: ABS-Pumpenmotor defekt (Bürstenverschleiß, festgefressen)
+    - id: abs_relay_failed
+      likelihood: medium
+      label:
+        en: ABS pump relay failed
+        de: ABS-Pumpenrelais defekt
+    - id: abs_power_wiring
+      likelihood: low
+      label:
+        en: Power supply wiring or fuse fault
+        de: Versorgungsleitungs- oder Sicherungsfehler
+  repair:
+    difficulty: hard
+    diy_possible: false
+    estimated_cost_eur: [300, 1500]
+    estimated_hours: [1.0, 4.0]
+  flags:
+    mil: false
+    emissions_relevant: false
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Anti-lock_braking_system
+
+- code: C0121
+  scope: generic
+  category: chassis
+  title:
+    en: Valve Relay Circuit Malfunction
+    de: Ventilrelais Schaltung Fehlfunktion
+  description:
+    en: The ABS control module has detected a fault in the valve relay circuit, which supplies power to the ABS solenoid valves. With this fault, the module cannot energize the valves and ABS is disabled.
+    de: Das ABS-Steuergerät hat einen Fehler im Stromkreis des Ventilrelais erkannt, das die ABS-Magnetventile mit Spannung versorgt. Bei aktivem Fehler kann das Steuergerät die Ventile nicht ansteuern und ABS wird deaktiviert.
+  affected_components:
+    - abs_valve_relay
+    - abs_control_module
+    - abs_hydraulic_unit
+  common_causes:
+    - id: valve_relay_failed
+      likelihood: high
+      label:
+        en: Valve relay failed
+        de: Ventilrelais defekt
+    - id: abs_module_internal
+      likelihood: medium
+      label:
+        en: Internal ABS module fault (relay integrated)
+        de: Interner Fehler im ABS-Steuergerät (Relais integriert)
+    - id: abs_power_wiring
+      likelihood: low
+      label:
+        en: Power supply wiring or fuse fault
+        de: Versorgungsleitungs- oder Sicherungsfehler
+  repair:
+    difficulty: hard
+    diy_possible: false
+    estimated_cost_eur: [200, 1200]
+    estimated_hours: [0.5, 3.0]
+  flags:
+    mil: false
+    emissions_relevant: false
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Anti-lock_braking_system
+
+- code: C0131
+  scope: generic
+  category: chassis
+  title:
+    en: Master Cylinder Pressure Sensor Range/Performance
+    de: Hauptbremszylinder-Drucksensor Funktionsbereich
+  description:
+    en: The ABS or stability control module has detected an implausible signal from the master cylinder brake pressure sensor. This sensor reports driver brake input and is used by ABS and ESP for control decisions.
+    de: Das ABS- oder ESP-Steuergerät hat ein unplausibles Signal vom Drucksensor des Hauptbremszylinders erkannt. Der Sensor meldet die Bremsanforderung des Fahrers und wird von ABS und ESP für Regelentscheidungen genutzt.
+  affected_components:
+    - master_cylinder_pressure_sensor
+    - abs_control_module
+    - esp_control_module
+  common_causes:
+    - id: pressure_sensor_failed
+      likelihood: high
+      label:
+        en: Pressure sensor failed
+        de: Drucksensor defekt
+    - id: pressure_sensor_wiring
+      likelihood: medium
+      label:
+        en: Wiring or connector fault
+        de: Verkabelungs- oder Steckerfehler
+    - id: brake_fluid_air
+      likelihood: low
+      label:
+        en: Air in brake system causing erratic pressure
+        de: Luft im Bremssystem verursacht unstetigen Druck
+  repair:
+    difficulty: medium
+    diy_possible: false
+    estimated_cost_eur: [150, 700]
+    estimated_hours: [0.5, 2.5]
+  flags:
+    mil: false
+    emissions_relevant: false
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Anti-lock_braking_system
+
+- code: C0141
+  scope: generic
+  category: chassis
+  title:
+    en: Left Front ABS Inlet Solenoid Circuit
+    de: ABS-Einlassventil vorne links Schaltung
+  description:
+    en: The ABS control module has detected an electrical fault in the inlet solenoid for the left front brake circuit. The solenoid isolates the wheel circuit from master cylinder pressure during ABS regulation.
+    de: Das ABS-Steuergerät hat einen elektrischen Fehler am Einlassventil des linken vorderen Bremskreises erkannt. Das Ventil trennt während der ABS-Regelung den Radkreis vom Hauptbremszylinderdruck.
+  affected_components:
+    - abs_inlet_solenoid
+    - abs_hydraulic_unit
+    - abs_control_module
+  common_causes:
+    - id: abs_solenoid_failed
+      likelihood: high
+      label:
+        en: Inlet solenoid coil open or shorted
+        de: Spule des Einlassventils unterbrochen oder kurzgeschlossen
+    - id: abs_module_internal
+      likelihood: medium
+      label:
+        en: Internal ABS module fault
+        de: Interner Fehler im ABS-Steuergerät
+  repair:
+    difficulty: hard
+    diy_possible: false
+    estimated_cost_eur: [300, 1500]
+    estimated_hours: [1.0, 4.0]
+  flags:
+    mil: false
+    emissions_relevant: false
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Anti-lock_braking_system
+
+- code: C0146
+  scope: generic
+  category: chassis
+  title:
+    en: Left Front ABS Outlet Solenoid Circuit
+    de: ABS-Auslassventil vorne links Schaltung
+  description:
+    en: The ABS control module has detected an electrical fault in the outlet solenoid for the left front brake circuit. The outlet valve releases brake pressure to the low-pressure accumulator during ABS regulation.
+    de: Das ABS-Steuergerät hat einen elektrischen Fehler am Auslassventil des linken vorderen Bremskreises erkannt. Das Auslassventil baut während der ABS-Regelung Bremsdruck zum Niederdruckspeicher ab.
+  affected_components:
+    - abs_outlet_solenoid
+    - abs_hydraulic_unit
+    - abs_control_module
+  common_causes:
+    - id: abs_solenoid_failed
+      likelihood: high
+      label:
+        en: Outlet solenoid coil open or shorted
+        de: Spule des Auslassventils unterbrochen oder kurzgeschlossen
+    - id: abs_module_internal
+      likelihood: medium
+      label:
+        en: Internal ABS module fault
+        de: Interner Fehler im ABS-Steuergerät
+  repair:
+    difficulty: hard
+    diy_possible: false
+    estimated_cost_eur: [300, 1500]
+    estimated_hours: [1.0, 4.0]
+  flags:
+    mil: false
+    emissions_relevant: false
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Anti-lock_braking_system
+
+- code: C0151
+  scope: generic
+  category: chassis
+  title:
+    en: Right Front ABS Inlet Solenoid Circuit
+    de: ABS-Einlassventil vorne rechts Schaltung
+  description:
+    en: Same fault as C0141 but for the right front brake circuit inlet solenoid.
+    de: Gleicher Fehler wie C0141, jedoch für das Einlassventil des rechten vorderen Bremskreises.
+  affected_components:
+    - abs_inlet_solenoid
+    - abs_hydraulic_unit
+    - abs_control_module
+  common_causes:
+    - id: abs_solenoid_failed
+      likelihood: high
+      label:
+        en: Inlet solenoid coil open or shorted
+        de: Spule des Einlassventils unterbrochen oder kurzgeschlossen
+    - id: abs_module_internal
+      likelihood: medium
+      label:
+        en: Internal ABS module fault
+        de: Interner Fehler im ABS-Steuergerät
+  repair:
+    difficulty: hard
+    diy_possible: false
+    estimated_cost_eur: [300, 1500]
+    estimated_hours: [1.0, 4.0]
+  flags:
+    mil: false
+    emissions_relevant: false
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Anti-lock_braking_system
+
+- code: C0156
+  scope: generic
+  category: chassis
+  title:
+    en: Right Front ABS Outlet Solenoid Circuit
+    de: ABS-Auslassventil vorne rechts Schaltung
+  description:
+    en: Same fault as C0146 but for the right front brake circuit outlet solenoid.
+    de: Gleicher Fehler wie C0146, jedoch für das Auslassventil des rechten vorderen Bremskreises.
+  affected_components:
+    - abs_outlet_solenoid
+    - abs_hydraulic_unit
+    - abs_control_module
+  common_causes:
+    - id: abs_solenoid_failed
+      likelihood: high
+      label:
+        en: Outlet solenoid coil open or shorted
+        de: Spule des Auslassventils unterbrochen oder kurzgeschlossen
+    - id: abs_module_internal
+      likelihood: medium
+      label:
+        en: Internal ABS module fault
+        de: Interner Fehler im ABS-Steuergerät
+  repair:
+    difficulty: hard
+    diy_possible: false
+    estimated_cost_eur: [300, 1500]
+    estimated_hours: [1.0, 4.0]
+  flags:
+    mil: false
+    emissions_relevant: false
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Anti-lock_braking_system
+
+- code: C0161
+  scope: generic
+  category: chassis
+  title:
+    en: ABS/TCS Brake Switch Circuit
+    de: ABS/ASR-Bremslichtschalter Schaltung
+  description:
+    en: The ABS or traction control module has detected an implausible signal from the brake light switch. The switch tells the module whether the driver is braking and is used to inhibit traction control during braking.
+    de: Das ABS- oder ASR-Steuergerät hat ein unplausibles Signal vom Bremslichtschalter erkannt. Der Schalter meldet dem Steuergerät die Betätigung der Bremse und wird zur Sperre der Antriebsschlupfregelung beim Bremsen genutzt.
+  affected_components:
+    - brake_light_switch
+    - abs_control_module
+    - tcs_control_module
+  common_causes:
+    - id: brake_switch_failed
+      likelihood: high
+      label:
+        en: Brake light switch failed or misadjusted
+        de: Bremslichtschalter defekt oder falsch justiert
+    - id: brake_switch_wiring
+      likelihood: medium
+      label:
+        en: Wiring or connector fault
+        de: Verkabelungs- oder Steckerfehler
+  repair:
+    difficulty: easy
+    diy_possible: true
+    estimated_cost_eur: [30, 200]
+    estimated_hours: [0.3, 1.0]
+  flags:
+    mil: false
+    emissions_relevant: false
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Anti-lock_braking_system
+
+- code: C0186
+  scope: generic
+  category: chassis
+  title:
+    en: Lateral Acceleration Sensor Circuit
+    de: Querbeschleunigungssensor Schaltung
+  description:
+    en: The stability control module has detected an implausible signal from the lateral acceleration sensor. ESP uses lateral g-force together with yaw rate and steering angle to detect skid conditions — without it, ESP is disabled.
+    de: Das ESP-Steuergerät hat ein unplausibles Signal vom Querbeschleunigungssensor erkannt. ESP nutzt die Querbeschleunigung zusammen mit Gierrate und Lenkwinkel zur Erkennung von Schleudersituationen — ohne dieses Signal wird ESP deaktiviert.
+  affected_components:
+    - lateral_acceleration_sensor
+    - esp_control_module
+    - sensor_cluster
+  common_causes:
+    - id: lateral_sensor_failed
+      likelihood: high
+      label:
+        en: Lateral acceleration sensor failed
+        de: Querbeschleunigungssensor defekt
+    - id: sensor_cluster_mounting
+      likelihood: medium
+      label:
+        en: Sensor cluster loose or mounted incorrectly
+        de: Sensorblock lose oder falsch montiert
+    - id: sensor_wiring
+      likelihood: low
+      label:
+        en: Wiring or connector fault
+        de: Verkabelungs- oder Steckerfehler
+  repair:
+    difficulty: medium
+    diy_possible: false
+    estimated_cost_eur: [150, 700]
+    estimated_hours: [0.5, 2.5]
+  flags:
+    mil: false
+    emissions_relevant: false
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Electronic_stability_control
+
+- code: C0196
+  scope: generic
+  category: chassis
+  title:
+    en: Yaw Rate Sensor Circuit
+    de: Gierratensensor Schaltung
+  description:
+    en: The stability control module has detected an implausible signal from the yaw rate sensor. The yaw sensor measures rotation around the vertical axis and is essential for ESP — a fault disables stability control.
+    de: Das ESP-Steuergerät hat ein unplausibles Signal vom Gierratensensor erkannt. Der Sensor misst die Drehung um die Hochachse und ist für ESP essenziell — bei einem Fehler wird die Stabilitätsregelung deaktiviert.
+  affected_components:
+    - yaw_rate_sensor
+    - esp_control_module
+    - sensor_cluster
+  common_causes:
+    - id: yaw_sensor_failed
+      likelihood: high
+      label:
+        en: Yaw rate sensor failed
+        de: Gierratensensor defekt
+    - id: yaw_sensor_calibration
+      likelihood: medium
+      label:
+        en: Sensor not calibrated after replacement or alignment
+        de: Sensor nach Tausch oder Achsvermessung nicht kalibriert
+    - id: sensor_wiring
+      likelihood: low
+      label:
+        en: Wiring or connector fault
+        de: Verkabelungs- oder Steckerfehler
+  repair:
+    difficulty: medium
+    diy_possible: false
+    estimated_cost_eur: [200, 900]
+    estimated_hours: [0.5, 2.5]
+  flags:
+    mil: false
+    emissions_relevant: false
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Electronic_stability_control
+
+- code: C0234
+  scope: generic
+  category: chassis
+  title:
+    en: Wheel Speed Sensor Frequency Error
+    de: Raddrehzahlsensor Frequenzfehler
+  description:
+    en: The ABS control module has detected that one of the wheel speed sensor signals has a frequency outside the plausible range, e.g. unrealistically high pulses or signal dropouts at speed. Stability control may be limited.
+    de: Das ABS-Steuergerät hat erkannt, dass ein Raddrehzahlsignal eine Frequenz außerhalb des plausiblen Bereichs aufweist — etwa unrealistisch hohe Impulse oder Signalaussetzer bei Geschwindigkeit. Die Stabilitätsregelung kann eingeschränkt sein.
+  affected_components:
+    - wheel_speed_sensor
+    - tone_ring
+    - abs_control_module
+  common_causes:
+    - id: tone_ring_damaged
+      likelihood: high
+      label:
+        en: Tone ring damaged, missing teeth, or contaminated
+        de: Polrad beschädigt, fehlende Zähne oder verschmutzt
+    - id: sensor_air_gap
+      likelihood: medium
+      label:
+        en: Sensor air gap incorrect (loose mounting)
+        de: Sensor-Luftspalt falsch (lose Befestigung)
+    - id: wheel_speed_sensor_failed
+      likelihood: low
+      label:
+        en: Wheel speed sensor degraded
+        de: Raddrehzahlsensor verschlissen
+  repair:
+    difficulty: medium
+    diy_possible: true
+    estimated_cost_eur: [80, 400]
+    estimated_hours: [0.5, 2.5]
+  flags:
+    mil: false
+    emissions_relevant: false
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Wheel_speed_sensor
+
+- code: C0235
+  scope: generic
+  category: chassis
+  title:
+    en: Wheel Speed Sensor Signal Erratic
+    de: Raddrehzahlsensor Signal unstetig
+  description:
+    en: The ABS control module has detected an erratic wheel speed sensor signal — sudden jumps or dropouts compared to the other wheels. Typical causes are a damaged tone ring or a loose sensor.
+    de: Das ABS-Steuergerät hat ein unstetiges Raddrehzahlsignal erkannt — plötzliche Sprünge oder Aussetzer im Vergleich zu den übrigen Rädern. Typische Ursachen sind ein beschädigtes Polrad oder ein loser Sensor.
+  affected_components:
+    - wheel_speed_sensor
+    - tone_ring
+    - abs_control_module
+  common_causes:
+    - id: tone_ring_damaged
+      likelihood: high
+      label:
+        en: Tone ring damaged or contaminated with metal debris
+        de: Polrad beschädigt oder mit Metallspänen verschmutzt
+    - id: sensor_loose
+      likelihood: medium
+      label:
+        en: Wheel speed sensor loose in housing
+        de: Raddrehzahlsensor lose im Sitz
+    - id: hub_bearing_play
+      likelihood: low
+      label:
+        en: Excessive hub bearing play
+        de: Übermäßiges Radlagerspiel
+  repair:
+    difficulty: medium
+    diy_possible: true
+    estimated_cost_eur: [80, 500]
+    estimated_hours: [0.5, 3.0]
+  flags:
+    mil: false
+    emissions_relevant: false
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Wheel_speed_sensor
+
+- code: C0455
+  scope: generic
+  category: chassis
+  title:
+    en: Steering Wheel Position Sensor Circuit
+    de: Lenkwinkelsensor Schaltung
+  description:
+    en: The chassis or stability control module has detected a fault in the steering wheel position sensor circuit. ESP and lane assist systems require an accurate steering angle and may be deactivated.
+    de: Das Fahrwerks- oder ESP-Steuergerät hat einen Fehler im Stromkreis des Lenkwinkelsensors erkannt. ESP- und Spurhaltesysteme benötigen einen genauen Lenkwinkel und können deaktiviert werden.
+  affected_components:
+    - steering_angle_sensor
+    - esp_control_module
+    - clock_spring
+  common_causes:
+    - id: steering_angle_sensor_failed
+      likelihood: high
+      label:
+        en: Steering angle sensor failed
+        de: Lenkwinkelsensor defekt
+    - id: steering_angle_calibration
+      likelihood: medium
+      label:
+        en: Sensor not calibrated after alignment
+        de: Sensor nach Achsvermessung nicht kalibriert
+    - id: steering_sensor_wiring
+      likelihood: low
+      label:
+        en: Wiring or connector fault
+        de: Verkabelungs- oder Steckerfehler
+  repair:
+    difficulty: medium
+    diy_possible: false
+    estimated_cost_eur: [150, 800]
+    estimated_hours: [0.5, 2.5]
+  flags:
+    mil: false
+    emissions_relevant: false
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Power_steering
+    - https://en.wikipedia.org/wiki/Electronic_stability_control
+
+- code: C0561
+  scope: generic
+  category: chassis
+  title:
+    en: ABS Disabled Warning Indicator Request
+    de: Anforderung ABS-Deaktiviert-Warnleuchte
+  description:
+    en: This code indicates that the ABS module has requested the ABS warning lamp to be illuminated because ABS function is disabled. It is typically logged together with the underlying root-cause code that disabled ABS.
+    de: Dieser Code bedeutet, dass das ABS-Steuergerät die Aktivierung der ABS-Warnleuchte angefordert hat, weil die ABS-Funktion deaktiviert ist. Er wird üblicherweise zusammen mit dem zugrundeliegenden Ursachencode abgelegt.
+  affected_components:
+    - abs_control_module
+    - instrument_cluster
+    - communication_bus
+  common_causes:
+    - id: secondary_fault_present
+      likelihood: high
+      label:
+        en: Secondary code disabling ABS is present
+        de: Folgefehler eines anderen ABS-deaktivierenden Codes
+    - id: communication_bus_fault
+      likelihood: medium
+      label:
+        en: Communication fault between ABS and cluster
+        de: Kommunikationsfehler zwischen ABS und Kombiinstrument
+  repair:
+    difficulty: medium
+    diy_possible: false
+    estimated_cost_eur: [50, 800]
+    estimated_hours: [0.3, 3.0]
+  flags:
+    mil: false
+    emissions_relevant: false
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Anti-lock_braking_system
+
+- code: C0710
+  scope: generic
+  category: chassis
+  title:
+    en: Steering Position Signal Malfunction
+    de: Lenkwinkelsignal Fehlfunktion
+  description:
+    en: The chassis or stability control module has received an invalid or missing steering position signal — often via the communication bus from the steering control module. ESP, lane assist and electric power steering may be limited.
+    de: Das Fahrwerks- oder ESP-Steuergerät hat ein ungültiges oder fehlendes Lenkwinkelsignal erhalten — häufig über den Kommunikationsbus vom Lenkungssteuergerät. ESP, Spurhalte- und elektrische Lenkunterstützung können eingeschränkt sein.
+  affected_components:
+    - steering_angle_sensor
+    - power_steering_module
+    - esp_control_module
+    - communication_bus
+  common_causes:
+    - id: steering_angle_sensor_failed
+      likelihood: high
+      label:
+        en: Steering angle sensor or steering control module failed
+        de: Lenkwinkelsensor oder Lenkungssteuergerät defekt
+    - id: communication_bus_fault
+      likelihood: medium
+      label:
+        en: Communication bus fault between modules
+        de: Kommunikationsbus-Fehler zwischen Steuergeräten
+    - id: steering_angle_calibration
+      likelihood: low
+      label:
+        en: Steering angle not calibrated
+        de: Lenkwinkel nicht kalibriert
+  repair:
+    difficulty: medium
+    diy_possible: false
+    estimated_cost_eur: [150, 1000]
+    estimated_hours: [0.5, 3.0]
+  flags:
+    mil: false
+    emissions_relevant: false
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Power_steering
+    - https://en.wikipedia.org/wiki/Electronic_stability_control

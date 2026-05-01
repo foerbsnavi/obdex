@@ -4376,3 +4376,2322 @@
     - sae:J2012
   sources:
     - https://en.wikipedia.org/wiki/Automatic_transmission
+
+- code: P0010
+  scope: generic
+  category: powertrain
+  title:
+    en: '"A" Camshaft Position Actuator Circuit (Bank 1)'
+    de: Nockenwellenversteller "A" Schaltung (Bank 1)
+  description:
+    en: An electrical fault in the bank 1 intake camshaft position actuator solenoid (variable valve timing). The ECU monitors current and feedback on the oil control valve and sets this code when the circuit is open, shorted, or out of range.
+    de: Elektrischer Fehler am Nockenwellenversteller-Magnetventil der Einlassnockenwelle Bank 1 (variable Ventilsteuerung). Die Motorsteuerung überwacht Strom und Rückmeldung des Ölsteuerventils und setzt diesen Code bei offenem, kurzgeschlossenem oder außerhalb des Bereichs liegendem Stromkreis.
+  affected_components:
+    - camshaft_position_actuator
+    - oil_control_valve
+    - actuator_wiring
+  common_causes:
+    - id: oil_control_valve_failed
+      likelihood: high
+      label:
+        en: Oil control valve electrically failed
+        de: Ölsteuerventil elektrisch defekt
+    - id: actuator_wiring_fault
+      likelihood: medium
+      label:
+        en: Wiring or connector fault to actuator
+        de: Kabel-/Steckerfehler am Stellglied
+  repair:
+    difficulty: medium
+    diy_possible: true
+    estimated_cost_eur: [80, 500]
+    estimated_hours: [0.5, 2.5]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Variable_valve_timing
+
+- code: P0011
+  scope: generic
+  category: powertrain
+  title:
+    en: '"A" Camshaft Position - Timing Over-Advanced or System Performance (Bank 1)'
+    de: Nockenwellenposition "A" — Steuerzeit zu früh oder Systemleistung (Bank 1)
+  description:
+    en: The bank 1 intake camshaft is more advanced than commanded, or the actuator does not respond as expected. Often caused by stuck-open oil control valves, sludge in VVT passages, or low oil pressure.
+    de: Die Einlassnockenwelle Bank 1 ist weiter als angefordert verstellt, oder das Stellglied reagiert nicht wie erwartet. Häufige Ursachen — hängendes Ölsteuerventil, Schlamm in VVT-Kanälen oder niedriger Öldruck.
+  affected_components:
+    - camshaft_position_actuator
+    - oil_control_valve
+    - engine_oil
+  common_causes:
+    - id: ocv_stuck_advance
+      likelihood: high
+      label:
+        en: Oil control valve stuck (advance position)
+        de: Ölsteuerventil hängend (Verstellrichtung früh)
+    - id: oil_sludge_vvt
+      likelihood: medium
+      label:
+        en: Sludge or debris in VVT oil passages
+        de: Schlamm oder Späne in VVT-Ölkanälen
+    - id: low_oil_pressure
+      likelihood: medium
+      label:
+        en: Low engine oil pressure or wrong oil viscosity
+        de: Niedriger Öldruck oder falsche Ölviskosität
+  repair:
+    difficulty: medium
+    diy_possible: true
+    estimated_cost_eur: [80, 800]
+    estimated_hours: [0.5, 4.0]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Variable_valve_timing
+
+- code: P0012
+  scope: generic
+  category: powertrain
+  title:
+    en: '"A" Camshaft Position - Timing Over-Retarded (Bank 1)'
+    de: Nockenwellenposition "A" — Steuerzeit zu spät (Bank 1)
+  description:
+    en: The bank 1 intake camshaft remains retarded compared to commanded position. Common causes include a stuck-closed oil control valve, blocked oil passages, or a worn cam phaser.
+    de: Die Einlassnockenwelle Bank 1 bleibt gegenüber dem Sollwert in Spätstellung. Häufige Ursachen — geschlossen hängendes Ölsteuerventil, verstopfte Ölkanäle oder verschlissener Phasensteller.
+  affected_components:
+    - camshaft_position_actuator
+    - oil_control_valve
+    - cam_phaser
+  common_causes:
+    - id: ocv_stuck_retard
+      likelihood: high
+      label:
+        en: Oil control valve stuck (retard position)
+        de: Ölsteuerventil hängend (Verstellrichtung spät)
+    - id: cam_phaser_worn
+      likelihood: medium
+      label:
+        en: Cam phaser internally worn
+        de: Phasensteller intern verschlissen
+  repair:
+    difficulty: medium
+    diy_possible: true
+    estimated_cost_eur: [80, 1000]
+    estimated_hours: [0.5, 5.0]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+  related_codes: [P0011]
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Variable_valve_timing
+
+- code: P0013
+  scope: generic
+  category: powertrain
+  title:
+    en: '"B" Camshaft Position Actuator Circuit (Bank 1)'
+    de: Nockenwellenversteller "B" Schaltung (Bank 1)
+  description:
+    en: Electrical fault in the bank 1 exhaust camshaft position actuator solenoid. Same diagnostic principle as P0010 but on the exhaust cam.
+    de: Elektrischer Fehler am Nockenwellenversteller-Magnetventil der Auslassnockenwelle Bank 1. Gleiche Diagnoselogik wie P0010, jedoch an der Auslassnockenwelle.
+  affected_components:
+    - camshaft_position_actuator
+    - oil_control_valve
+  common_causes:
+    - id: ocv_failed
+      likelihood: high
+      label:
+        en: Oil control valve electrically failed
+        de: Ölsteuerventil elektrisch defekt
+    - id: actuator_wiring_fault
+      likelihood: medium
+      label:
+        en: Wiring or connector fault
+        de: Kabel-/Steckerfehler
+  repair:
+    difficulty: medium
+    diy_possible: true
+    estimated_cost_eur: [80, 500]
+    estimated_hours: [0.5, 2.5]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+  related_codes: [P0010]
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Variable_valve_timing
+
+- code: P0014
+  scope: generic
+  category: powertrain
+  title:
+    en: '"B" Camshaft Position - Timing Over-Advanced (Bank 1)'
+    de: Nockenwellenposition "B" — Steuerzeit zu früh (Bank 1)
+  description:
+    en: The bank 1 exhaust camshaft is more advanced than commanded. Same root causes as P0011 but on the exhaust cam.
+    de: Die Auslassnockenwelle Bank 1 ist weiter als angefordert verstellt. Gleiche Grundursachen wie P0011, jedoch an der Auslassnockenwelle.
+  affected_components:
+    - camshaft_position_actuator
+    - oil_control_valve
+    - cam_phaser
+  common_causes:
+    - id: ocv_stuck_advance
+      likelihood: high
+      label:
+        en: Oil control valve stuck (advance)
+        de: Ölsteuerventil hängend (früh)
+    - id: oil_sludge_vvt
+      likelihood: medium
+      label:
+        en: Sludge in VVT oil passages
+        de: Schlamm in VVT-Ölkanälen
+  repair:
+    difficulty: medium
+    diy_possible: true
+    estimated_cost_eur: [80, 800]
+    estimated_hours: [0.5, 4.0]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+  related_codes: [P0011]
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Variable_valve_timing
+
+- code: P0015
+  scope: generic
+  category: powertrain
+  title:
+    en: '"B" Camshaft Position - Timing Over-Retarded (Bank 1)'
+    de: Nockenwellenposition "B" — Steuerzeit zu spät (Bank 1)
+  description:
+    en: The bank 1 exhaust camshaft remains retarded relative to commanded position. Same root causes as P0012 but on the exhaust cam.
+    de: Die Auslassnockenwelle Bank 1 bleibt gegenüber dem Sollwert in Spätstellung. Gleiche Grundursachen wie P0012, jedoch an der Auslassnockenwelle.
+  affected_components:
+    - camshaft_position_actuator
+    - oil_control_valve
+    - cam_phaser
+  common_causes:
+    - id: ocv_stuck_retard
+      likelihood: high
+      label:
+        en: Oil control valve stuck (retard)
+        de: Ölsteuerventil hängend (spät)
+    - id: cam_phaser_worn
+      likelihood: medium
+      label:
+        en: Cam phaser worn
+        de: Phasensteller verschlissen
+  repair:
+    difficulty: medium
+    diy_possible: true
+    estimated_cost_eur: [80, 1000]
+    estimated_hours: [0.5, 5.0]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+  related_codes: [P0012]
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Variable_valve_timing
+
+- code: P0016
+  scope: generic
+  category: powertrain
+  title:
+    en: Crankshaft Position - Camshaft Position Correlation (Bank 1 Sensor A)
+    de: Korrelation Kurbelwellen- zu Nockenwellenposition (Bank 1, Sensor A)
+  description:
+    en: The relative timing between the crankshaft and bank 1 intake camshaft is outside the expected window. Often caused by a stretched timing chain, jumped tooth, worn tensioner, or failed cam/crank sensor.
+    de: Die relative Steuerzeit zwischen Kurbelwelle und Einlassnockenwelle Bank 1 liegt außerhalb des erwarteten Fensters. Häufige Ursachen — gelängte Steuerkette, übergesprungener Zahn, verschlissener Spanner oder defekter Sensor.
+  affected_components:
+    - timing_chain
+    - timing_chain_tensioner
+    - camshaft_position_sensor
+    - crankshaft_position_sensor
+  common_causes:
+    - id: timing_chain_stretched
+      likelihood: high
+      label:
+        en: Timing chain stretched
+        de: Steuerkette gelängt
+    - id: tensioner_worn
+      likelihood: medium
+      label:
+        en: Chain tensioner worn or stuck
+        de: Kettenspanner verschlissen oder hängend
+    - id: cam_phaser_failed
+      likelihood: medium
+      label:
+        en: Cam phaser internally failed
+        de: Phasensteller intern defekt
+  repair:
+    difficulty: hard
+    diy_possible: false
+    estimated_cost_eur: [400, 2500]
+    estimated_hours: [3.0, 12.0]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Camshaft_position_sensor
+    - https://en.wikipedia.org/wiki/Variable_valve_timing
+
+- code: P0017
+  scope: generic
+  category: powertrain
+  title:
+    en: Crankshaft Position - Camshaft Position Correlation (Bank 1 Sensor B)
+    de: Korrelation Kurbelwellen- zu Nockenwellenposition (Bank 1, Sensor B)
+  description:
+    en: Same fault as P0016 but referenced to the bank 1 exhaust camshaft sensor.
+    de: Gleicher Fehler wie P0016, jedoch bezogen auf den Sensor der Auslassnockenwelle Bank 1.
+  affected_components:
+    - timing_chain
+    - camshaft_position_sensor
+    - crankshaft_position_sensor
+  common_causes:
+    - id: timing_chain_stretched
+      likelihood: high
+      label:
+        en: Timing chain stretched
+        de: Steuerkette gelängt
+    - id: cam_phaser_failed
+      likelihood: medium
+      label:
+        en: Exhaust cam phaser failed
+        de: Auslass-Phasensteller defekt
+  repair:
+    difficulty: hard
+    diy_possible: false
+    estimated_cost_eur: [400, 2500]
+    estimated_hours: [3.0, 12.0]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+  related_codes: [P0016]
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Camshaft_position_sensor
+
+- code: P0018
+  scope: generic
+  category: powertrain
+  title:
+    en: Crankshaft Position - Camshaft Position Correlation (Bank 2 Sensor A)
+    de: Korrelation Kurbelwellen- zu Nockenwellenposition (Bank 2, Sensor A)
+  description:
+    en: Same fault as P0016 but referenced to the bank 2 intake camshaft sensor (V-engines).
+    de: Gleicher Fehler wie P0016, jedoch bezogen auf den Sensor der Einlassnockenwelle Bank 2 (V-Motoren).
+  affected_components:
+    - timing_chain
+    - camshaft_position_sensor
+    - crankshaft_position_sensor
+  common_causes:
+    - id: timing_chain_stretched
+      likelihood: high
+      label:
+        en: Timing chain stretched (bank 2)
+        de: Steuerkette gelängt (Bank 2)
+    - id: cam_phaser_failed
+      likelihood: medium
+      label:
+        en: Bank 2 cam phaser failed
+        de: Phasensteller Bank 2 defekt
+  repair:
+    difficulty: hard
+    diy_possible: false
+    estimated_cost_eur: [400, 2500]
+    estimated_hours: [3.0, 12.0]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+  related_codes: [P0016]
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Camshaft_position_sensor
+
+- code: P0019
+  scope: generic
+  category: powertrain
+  title:
+    en: Crankshaft Position - Camshaft Position Correlation (Bank 2 Sensor B)
+    de: Korrelation Kurbelwellen- zu Nockenwellenposition (Bank 2, Sensor B)
+  description:
+    en: Same fault as P0016 but referenced to the bank 2 exhaust camshaft sensor.
+    de: Gleicher Fehler wie P0016, jedoch bezogen auf den Sensor der Auslassnockenwelle Bank 2.
+  affected_components:
+    - timing_chain
+    - camshaft_position_sensor
+    - crankshaft_position_sensor
+  common_causes:
+    - id: timing_chain_stretched
+      likelihood: high
+      label:
+        en: Timing chain stretched
+        de: Steuerkette gelängt
+  repair:
+    difficulty: hard
+    diy_possible: false
+    estimated_cost_eur: [400, 2500]
+    estimated_hours: [3.0, 12.0]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+  related_codes: [P0016]
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Camshaft_position_sensor
+
+- code: P0020
+  scope: generic
+  category: powertrain
+  title:
+    en: '"A" Camshaft Position Actuator Circuit (Bank 2)'
+    de: Nockenwellenversteller "A" Schaltung (Bank 2)
+  description:
+    en: Electrical fault in the bank 2 intake camshaft position actuator. Same diagnostic principle as P0010 but on the second cylinder bank.
+    de: Elektrischer Fehler am Einlass-Nockenwellenversteller Bank 2. Gleiche Diagnoselogik wie P0010, jedoch an der zweiten Zylinderbank.
+  affected_components:
+    - camshaft_position_actuator
+    - oil_control_valve
+  common_causes:
+    - id: ocv_failed
+      likelihood: high
+      label:
+        en: Oil control valve electrically failed
+        de: Ölsteuerventil elektrisch defekt
+    - id: actuator_wiring_fault
+      likelihood: medium
+      label:
+        en: Wiring or connector fault
+        de: Kabel-/Steckerfehler
+  repair:
+    difficulty: medium
+    diy_possible: true
+    estimated_cost_eur: [80, 500]
+    estimated_hours: [0.5, 2.5]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+  related_codes: [P0010]
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Variable_valve_timing
+
+- code: P0021
+  scope: generic
+  category: powertrain
+  title:
+    en: '"A" Camshaft Position - Timing Over-Advanced (Bank 2)'
+    de: Nockenwellenposition "A" — Steuerzeit zu früh (Bank 2)
+  description:
+    en: Same fault as P0011 but on bank 2 intake camshaft.
+    de: Gleicher Fehler wie P0011, jedoch an der Einlassnockenwelle Bank 2.
+  affected_components:
+    - camshaft_position_actuator
+    - oil_control_valve
+  common_causes:
+    - id: ocv_stuck_advance
+      likelihood: high
+      label:
+        en: Oil control valve stuck (advance)
+        de: Ölsteuerventil hängend (früh)
+    - id: oil_sludge_vvt
+      likelihood: medium
+      label:
+        en: Sludge in VVT passages
+        de: Schlamm in VVT-Kanälen
+  repair:
+    difficulty: medium
+    diy_possible: true
+    estimated_cost_eur: [80, 800]
+    estimated_hours: [0.5, 4.0]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+  related_codes: [P0011]
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Variable_valve_timing
+
+- code: P0022
+  scope: generic
+  category: powertrain
+  title:
+    en: '"A" Camshaft Position - Timing Over-Retarded (Bank 2)'
+    de: Nockenwellenposition "A" — Steuerzeit zu spät (Bank 2)
+  description:
+    en: Same fault as P0012 but on bank 2 intake camshaft.
+    de: Gleicher Fehler wie P0012, jedoch an der Einlassnockenwelle Bank 2.
+  affected_components:
+    - camshaft_position_actuator
+    - oil_control_valve
+    - cam_phaser
+  common_causes:
+    - id: ocv_stuck_retard
+      likelihood: high
+      label:
+        en: Oil control valve stuck (retard)
+        de: Ölsteuerventil hängend (spät)
+    - id: cam_phaser_worn
+      likelihood: medium
+      label:
+        en: Cam phaser worn
+        de: Phasensteller verschlissen
+  repair:
+    difficulty: medium
+    diy_possible: true
+    estimated_cost_eur: [80, 1000]
+    estimated_hours: [0.5, 5.0]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+  related_codes: [P0012]
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Variable_valve_timing
+
+- code: P0023
+  scope: generic
+  category: powertrain
+  title:
+    en: '"B" Camshaft Position Actuator Circuit (Bank 2)'
+    de: Nockenwellenversteller "B" Schaltung (Bank 2)
+  description:
+    en: Electrical fault in the bank 2 exhaust camshaft position actuator. Same diagnostic principle as P0013 but on the second cylinder bank.
+    de: Elektrischer Fehler am Auslass-Nockenwellenversteller Bank 2. Gleiche Diagnoselogik wie P0013, jedoch an der zweiten Zylinderbank.
+  affected_components:
+    - camshaft_position_actuator
+    - oil_control_valve
+  common_causes:
+    - id: ocv_failed
+      likelihood: high
+      label:
+        en: Oil control valve electrically failed
+        de: Ölsteuerventil elektrisch defekt
+  repair:
+    difficulty: medium
+    diy_possible: true
+    estimated_cost_eur: [80, 500]
+    estimated_hours: [0.5, 2.5]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+  related_codes: [P0013]
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Variable_valve_timing
+
+- code: P0024
+  scope: generic
+  category: powertrain
+  title:
+    en: '"B" Camshaft Position - Timing Over-Advanced (Bank 2)'
+    de: Nockenwellenposition "B" — Steuerzeit zu früh (Bank 2)
+  description:
+    en: Same fault as P0014 but on bank 2 exhaust camshaft.
+    de: Gleicher Fehler wie P0014, jedoch an der Auslassnockenwelle Bank 2.
+  affected_components:
+    - camshaft_position_actuator
+    - oil_control_valve
+  common_causes:
+    - id: ocv_stuck_advance
+      likelihood: high
+      label:
+        en: Oil control valve stuck (advance)
+        de: Ölsteuerventil hängend (früh)
+  repair:
+    difficulty: medium
+    diy_possible: true
+    estimated_cost_eur: [80, 800]
+    estimated_hours: [0.5, 4.0]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+  related_codes: [P0014]
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Variable_valve_timing
+
+- code: P0025
+  scope: generic
+  category: powertrain
+  title:
+    en: '"B" Camshaft Position - Timing Over-Retarded (Bank 2)'
+    de: Nockenwellenposition "B" — Steuerzeit zu spät (Bank 2)
+  description:
+    en: Same fault as P0015 but on bank 2 exhaust camshaft.
+    de: Gleicher Fehler wie P0015, jedoch an der Auslassnockenwelle Bank 2.
+  affected_components:
+    - camshaft_position_actuator
+    - oil_control_valve
+    - cam_phaser
+  common_causes:
+    - id: ocv_stuck_retard
+      likelihood: high
+      label:
+        en: Oil control valve stuck (retard)
+        de: Ölsteuerventil hängend (spät)
+  repair:
+    difficulty: medium
+    diy_possible: true
+    estimated_cost_eur: [80, 1000]
+    estimated_hours: [0.5, 5.0]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+  related_codes: [P0015]
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Variable_valve_timing
+
+- code: P0030
+  scope: generic
+  category: powertrain
+  title:
+    en: HO2S Heater Control Circuit (Bank 1 Sensor 1)
+    de: Lambdasonden-Heizung Schaltung (Bank 1, Sonde 1)
+  description:
+    en: Generic electrical fault in the heater circuit of the upstream oxygen sensor on bank 1. The ECU monitors the heater current and resistance to ensure the sensor reaches operating temperature for closed-loop fueling.
+    de: Allgemeiner elektrischer Fehler im Heizkreis der Vor-Katalysator-Lambdasonde Bank 1. Die Motorsteuerung überwacht Heizstrom und -widerstand, damit die Sonde die für den Lambda-Regelbetrieb nötige Betriebstemperatur erreicht.
+  affected_components:
+    - oxygen_sensor
+    - oxygen_sensor_heater
+    - sensor_wiring
+  common_causes:
+    - id: heater_open_circuit
+      likelihood: high
+      label:
+        en: Heater element open or burnt out
+        de: Heizelement unterbrochen oder durchgebrannt
+    - id: heater_fuse_blown
+      likelihood: medium
+      label:
+        en: Heater supply fuse blown
+        de: Heizungs-Versorgungssicherung defekt
+    - id: sensor_wiring_fault
+      likelihood: medium
+      label:
+        en: Wiring or connector fault
+        de: Kabel-/Steckerfehler
+  repair:
+    difficulty: easy
+    diy_possible: true
+    estimated_cost_eur: [80, 350]
+    estimated_hours: [0.5, 1.5]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Oxygen_sensor
+
+- code: P0031
+  scope: generic
+  category: powertrain
+  title:
+    en: HO2S Heater Control Circuit Low (Bank 1 Sensor 1)
+    de: Lambdasonden-Heizung Stromkreis niedrig (Bank 1, Sonde 1)
+  description:
+    en: The heater control line for the upstream bank 1 oxygen sensor reads below the expected voltage, typical of a short to ground or low driver current.
+    de: Die Steuerleitung der Heizung der Vor-Kat-Lambdasonde Bank 1 liegt unter der erwarteten Spannung — typisch für einen Masseschluss oder zu geringen Treiberstrom.
+  affected_components:
+    - oxygen_sensor_heater
+    - sensor_wiring
+  common_causes:
+    - id: heater_short_to_ground
+      likelihood: high
+      label:
+        en: Heater control wire shorted to ground
+        de: Heizungs-Steuerleitung gegen Masse kurzgeschlossen
+    - id: heater_internal_short
+      likelihood: medium
+      label:
+        en: Heater element internally shorted
+        de: Heizelement intern kurzgeschlossen
+  repair:
+    difficulty: easy
+    diy_possible: true
+    estimated_cost_eur: [80, 350]
+    estimated_hours: [0.5, 1.5]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+  related_codes: [P0030]
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Oxygen_sensor
+
+- code: P0032
+  scope: generic
+  category: powertrain
+  title:
+    en: HO2S Heater Control Circuit High (Bank 1 Sensor 1)
+    de: Lambdasonden-Heizung Stromkreis hoch (Bank 1, Sonde 1)
+  description:
+    en: The heater control line for the upstream bank 1 oxygen sensor reads above the expected voltage, typical of a short to supply.
+    de: Die Steuerleitung der Heizung der Vor-Kat-Lambdasonde Bank 1 liegt über der erwarteten Spannung — typisch für einen Kurzschluss gegen Versorgungsspannung.
+  affected_components:
+    - oxygen_sensor_heater
+    - sensor_wiring
+  common_causes:
+    - id: heater_short_to_voltage
+      likelihood: high
+      label:
+        en: Heater wire shorted to supply voltage
+        de: Heizleitung gegen Versorgungsspannung kurzgeschlossen
+  repair:
+    difficulty: easy
+    diy_possible: true
+    estimated_cost_eur: [80, 350]
+    estimated_hours: [0.5, 1.5]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+  related_codes: [P0030]
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Oxygen_sensor
+
+- code: P0036
+  scope: generic
+  category: powertrain
+  title:
+    en: HO2S Heater Control Circuit (Bank 1 Sensor 2)
+    de: Lambdasonden-Heizung Schaltung (Bank 1, Sonde 2)
+  description:
+    en: Same fault as P0030 but for the downstream (post-catalyst) sensor on bank 1.
+    de: Gleicher Fehler wie P0030, jedoch für die Nach-Kat-Sonde Bank 1.
+  affected_components:
+    - oxygen_sensor
+    - oxygen_sensor_heater
+    - sensor_wiring
+  common_causes:
+    - id: heater_open_circuit
+      likelihood: high
+      label:
+        en: Heater element open
+        de: Heizelement unterbrochen
+    - id: heater_fuse_blown
+      likelihood: medium
+      label:
+        en: Heater fuse blown
+        de: Heizungssicherung defekt
+  repair:
+    difficulty: easy
+    diy_possible: true
+    estimated_cost_eur: [80, 350]
+    estimated_hours: [0.5, 1.5]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+  related_codes: [P0030]
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Oxygen_sensor
+
+- code: P0037
+  scope: generic
+  category: powertrain
+  title:
+    en: HO2S Heater Control Circuit Low (Bank 1 Sensor 2)
+    de: Lambdasonden-Heizung Stromkreis niedrig (Bank 1, Sonde 2)
+  description:
+    en: Same fault as P0031 but for the downstream sensor on bank 1.
+    de: Gleicher Fehler wie P0031, jedoch für die Nach-Kat-Sonde Bank 1.
+  affected_components:
+    - oxygen_sensor_heater
+    - sensor_wiring
+  common_causes:
+    - id: heater_short_to_ground
+      likelihood: high
+      label:
+        en: Heater wire shorted to ground
+        de: Heizleitung gegen Masse kurzgeschlossen
+  repair:
+    difficulty: easy
+    diy_possible: true
+    estimated_cost_eur: [80, 350]
+    estimated_hours: [0.5, 1.5]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+  related_codes: [P0031]
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Oxygen_sensor
+
+- code: P0038
+  scope: generic
+  category: powertrain
+  title:
+    en: HO2S Heater Control Circuit High (Bank 1 Sensor 2)
+    de: Lambdasonden-Heizung Stromkreis hoch (Bank 1, Sonde 2)
+  description:
+    en: Same fault as P0032 but for the downstream sensor on bank 1.
+    de: Gleicher Fehler wie P0032, jedoch für die Nach-Kat-Sonde Bank 1.
+  affected_components:
+    - oxygen_sensor_heater
+    - sensor_wiring
+  common_causes:
+    - id: heater_short_to_voltage
+      likelihood: high
+      label:
+        en: Heater wire shorted to supply
+        de: Heizleitung gegen Versorgung kurzgeschlossen
+  repair:
+    difficulty: easy
+    diy_possible: true
+    estimated_cost_eur: [80, 350]
+    estimated_hours: [0.5, 1.5]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+  related_codes: [P0032]
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Oxygen_sensor
+
+- code: P0050
+  scope: generic
+  category: powertrain
+  title:
+    en: HO2S Heater Control Circuit (Bank 2 Sensor 1)
+    de: Lambdasonden-Heizung Schaltung (Bank 2, Sonde 1)
+  description:
+    en: Same fault as P0030 but for the upstream sensor on bank 2 (V-engines).
+    de: Gleicher Fehler wie P0030, jedoch für die Vor-Kat-Sonde Bank 2 (V-Motoren).
+  affected_components:
+    - oxygen_sensor
+    - oxygen_sensor_heater
+    - sensor_wiring
+  common_causes:
+    - id: heater_open_circuit
+      likelihood: high
+      label:
+        en: Heater element open
+        de: Heizelement unterbrochen
+  repair:
+    difficulty: easy
+    diy_possible: true
+    estimated_cost_eur: [80, 350]
+    estimated_hours: [0.5, 1.5]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+  related_codes: [P0030]
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Oxygen_sensor
+
+- code: P0051
+  scope: generic
+  category: powertrain
+  title:
+    en: HO2S Heater Control Circuit Low (Bank 2 Sensor 1)
+    de: Lambdasonden-Heizung Stromkreis niedrig (Bank 2, Sonde 1)
+  description:
+    en: Same fault as P0031 but for the upstream sensor on bank 2.
+    de: Gleicher Fehler wie P0031, jedoch für die Vor-Kat-Sonde Bank 2.
+  affected_components:
+    - oxygen_sensor_heater
+    - sensor_wiring
+  common_causes:
+    - id: heater_short_to_ground
+      likelihood: high
+      label:
+        en: Heater wire shorted to ground
+        de: Heizleitung gegen Masse kurzgeschlossen
+  repair:
+    difficulty: easy
+    diy_possible: true
+    estimated_cost_eur: [80, 350]
+    estimated_hours: [0.5, 1.5]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+  related_codes: [P0031]
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Oxygen_sensor
+
+- code: P0052
+  scope: generic
+  category: powertrain
+  title:
+    en: HO2S Heater Control Circuit High (Bank 2 Sensor 1)
+    de: Lambdasonden-Heizung Stromkreis hoch (Bank 2, Sonde 1)
+  description:
+    en: Same fault as P0032 but for the upstream sensor on bank 2.
+    de: Gleicher Fehler wie P0032, jedoch für die Vor-Kat-Sonde Bank 2.
+  affected_components:
+    - oxygen_sensor_heater
+    - sensor_wiring
+  common_causes:
+    - id: heater_short_to_voltage
+      likelihood: high
+      label:
+        en: Heater wire shorted to supply
+        de: Heizleitung gegen Versorgung kurzgeschlossen
+  repair:
+    difficulty: easy
+    diy_possible: true
+    estimated_cost_eur: [80, 350]
+    estimated_hours: [0.5, 1.5]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+  related_codes: [P0032]
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Oxygen_sensor
+
+- code: P0056
+  scope: generic
+  category: powertrain
+  title:
+    en: HO2S Heater Control Circuit (Bank 2 Sensor 2)
+    de: Lambdasonden-Heizung Schaltung (Bank 2, Sonde 2)
+  description:
+    en: Same fault as P0030 but for the downstream sensor on bank 2.
+    de: Gleicher Fehler wie P0030, jedoch für die Nach-Kat-Sonde Bank 2.
+  affected_components:
+    - oxygen_sensor
+    - oxygen_sensor_heater
+    - sensor_wiring
+  common_causes:
+    - id: heater_open_circuit
+      likelihood: high
+      label:
+        en: Heater element open
+        de: Heizelement unterbrochen
+  repair:
+    difficulty: easy
+    diy_possible: true
+    estimated_cost_eur: [80, 350]
+    estimated_hours: [0.5, 1.5]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+  related_codes: [P0030]
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Oxygen_sensor
+
+- code: P0057
+  scope: generic
+  category: powertrain
+  title:
+    en: HO2S Heater Control Circuit Low (Bank 2 Sensor 2)
+    de: Lambdasonden-Heizung Stromkreis niedrig (Bank 2, Sonde 2)
+  description:
+    en: Same fault as P0031 but for the downstream sensor on bank 2.
+    de: Gleicher Fehler wie P0031, jedoch für die Nach-Kat-Sonde Bank 2.
+  affected_components:
+    - oxygen_sensor_heater
+    - sensor_wiring
+  common_causes:
+    - id: heater_short_to_ground
+      likelihood: high
+      label:
+        en: Heater wire shorted to ground
+        de: Heizleitung gegen Masse kurzgeschlossen
+  repair:
+    difficulty: easy
+    diy_possible: true
+    estimated_cost_eur: [80, 350]
+    estimated_hours: [0.5, 1.5]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+  related_codes: [P0031]
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Oxygen_sensor
+
+- code: P0058
+  scope: generic
+  category: powertrain
+  title:
+    en: HO2S Heater Control Circuit High (Bank 2 Sensor 2)
+    de: Lambdasonden-Heizung Stromkreis hoch (Bank 2, Sonde 2)
+  description:
+    en: Same fault as P0032 but for the downstream sensor on bank 2.
+    de: Gleicher Fehler wie P0032, jedoch für die Nach-Kat-Sonde Bank 2.
+  affected_components:
+    - oxygen_sensor_heater
+    - sensor_wiring
+  common_causes:
+    - id: heater_short_to_voltage
+      likelihood: high
+      label:
+        en: Heater wire shorted to supply
+        de: Heizleitung gegen Versorgung kurzgeschlossen
+  repair:
+    difficulty: easy
+    diy_possible: true
+    estimated_cost_eur: [80, 350]
+    estimated_hours: [0.5, 1.5]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+  related_codes: [P0032]
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Oxygen_sensor
+
+- code: P0125
+  scope: generic
+  category: powertrain
+  title:
+    en: Insufficient Coolant Temperature for Closed Loop Fuel Control
+    de: Kühlmitteltemperatur reicht nicht für Lambda-Regelbetrieb
+  description:
+    en: The engine has run long enough that closed-loop fuel control should be active, but the coolant temperature has not risen high enough. Often caused by a stuck-open thermostat or a failed coolant temperature sensor.
+    de: Der Motor lief lange genug, dass der Lambda-Regelbetrieb aktiv sein sollte, doch die Kühlmitteltemperatur ist nicht ausreichend gestiegen. Häufige Ursachen — offen hängendes Thermostat oder defekter Kühlmitteltemperaturfühler.
+  affected_components:
+    - thermostat
+    - coolant_temperature_sensor
+  common_causes:
+    - id: thermostat_stuck_open
+      likelihood: high
+      label:
+        en: Thermostat stuck open
+        de: Thermostat offen hängend
+    - id: ect_sensor_drift
+      likelihood: medium
+      label:
+        en: Coolant temp sensor reading low
+        de: Kühlmitteltemperaturfühler liest zu niedrig
+  repair:
+    difficulty: medium
+    diy_possible: true
+    estimated_cost_eur: [80, 400]
+    estimated_hours: [0.5, 2.5]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Engine_coolant_temperature_sensor
+
+- code: P0126
+  scope: generic
+  category: powertrain
+  title:
+    en: Insufficient Coolant Temperature for Stable Operation
+    de: Kühlmitteltemperatur reicht nicht für stabilen Betrieb
+  description:
+    en: Coolant temperature stays below the value expected for stable engine operation. Almost always points to a thermostat stuck open or a sensor reading lower than the actual engine temperature.
+    de: Die Kühlmitteltemperatur bleibt unter dem für stabilen Motorbetrieb erwarteten Wert. Hinweis fast immer auf ein offen hängendes Thermostat oder einen Sensor, der unter der tatsächlichen Motortemperatur liegt.
+  affected_components:
+    - thermostat
+    - coolant_temperature_sensor
+  common_causes:
+    - id: thermostat_stuck_open
+      likelihood: high
+      label:
+        en: Thermostat stuck open
+        de: Thermostat offen hängend
+  repair:
+    difficulty: medium
+    diy_possible: true
+    estimated_cost_eur: [80, 400]
+    estimated_hours: [0.5, 2.5]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+  related_codes: [P0125]
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Engine_coolant_temperature_sensor
+
+- code: P0230
+  scope: generic
+  category: powertrain
+  title:
+    en: Fuel Pump Primary Circuit Malfunction
+    de: Kraftstoffpumpe Primärkreis Fehlfunktion
+  description:
+    en: An electrical fault in the fuel pump primary control circuit (relay or driver). The ECU detects an open, short, or out-of-range condition on the relay/driver output.
+    de: Elektrischer Fehler im Primär-Steuerkreis der Kraftstoffpumpe (Relais oder Treiber). Die Motorsteuerung erkennt einen offenen, kurzgeschlossenen oder außerhalb des Bereichs liegenden Zustand am Relais- oder Treiberausgang.
+  affected_components:
+    - fuel_pump_relay
+    - fuel_pump
+    - fuel_pump_wiring
+  common_causes:
+    - id: fuel_pump_relay_failed
+      likelihood: high
+      label:
+        en: Fuel pump relay failed
+        de: Kraftstoffpumpenrelais defekt
+    - id: fuel_pump_wiring_fault
+      likelihood: medium
+      label:
+        en: Wiring or connector fault
+        de: Kabel-/Steckerfehler
+  repair:
+    difficulty: medium
+    diy_possible: true
+    estimated_cost_eur: [50, 600]
+    estimated_hours: [0.5, 3.0]
+  flags:
+    mil: true
+    emissions_relevant: false
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Fuel_pump
+
+- code: P0231
+  scope: generic
+  category: powertrain
+  title:
+    en: Fuel Pump Secondary Circuit Low
+    de: Kraftstoffpumpe Sekundärkreis niedrig
+  description:
+    en: The voltage on the secondary side of the fuel pump circuit is below the expected level when the pump is commanded on. Often caused by a failed pump motor, corroded ground, or wiring fault.
+    de: Die Spannung auf der Sekundärseite des Kraftstoffpumpenkreises liegt bei aktivierter Pumpe unter dem erwarteten Wert. Häufige Ursachen — defekter Pumpenmotor, korrodierte Masse oder Verkabelungsfehler.
+  affected_components:
+    - fuel_pump
+    - fuel_pump_wiring
+  common_causes:
+    - id: fuel_pump_motor_failed
+      likelihood: high
+      label:
+        en: Fuel pump motor failed or worn
+        de: Kraftstoffpumpenmotor defekt oder verschlissen
+    - id: fuel_pump_ground_corroded
+      likelihood: medium
+      label:
+        en: Pump ground point corroded
+        de: Massepunkt der Pumpe korrodiert
+  repair:
+    difficulty: medium
+    diy_possible: true
+    estimated_cost_eur: [150, 800]
+    estimated_hours: [1.0, 4.0]
+  flags:
+    mil: true
+    emissions_relevant: false
+  related_codes: [P0230]
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Fuel_pump
+
+- code: P0232
+  scope: generic
+  category: powertrain
+  title:
+    en: Fuel Pump Secondary Circuit High
+    de: Kraftstoffpumpe Sekundärkreis hoch
+  description:
+    en: The voltage on the secondary side of the fuel pump circuit is higher than expected. Typical of a stuck relay or short to supply voltage that keeps the pump powered when it should be off.
+    de: Die Spannung auf der Sekundärseite des Kraftstoffpumpenkreises liegt über dem erwarteten Wert. Typisch für ein hängendes Relais oder einen Kurzschluss gegen Versorgungsspannung, der die Pumpe versorgt, obwohl sie aus sein sollte.
+  affected_components:
+    - fuel_pump_relay
+    - fuel_pump_wiring
+  common_causes:
+    - id: fuel_pump_relay_stuck
+      likelihood: high
+      label:
+        en: Pump relay stuck closed
+        de: Pumpenrelais hängend geschlossen
+    - id: short_to_voltage
+      likelihood: medium
+      label:
+        en: Wire shorted to supply voltage
+        de: Leitung gegen Versorgungsspannung kurzgeschlossen
+  repair:
+    difficulty: medium
+    diy_possible: true
+    estimated_cost_eur: [50, 500]
+    estimated_hours: [0.5, 3.0]
+  flags:
+    mil: true
+    emissions_relevant: false
+  related_codes: [P0230]
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Fuel_pump
+
+- code: P0307
+  scope: generic
+  category: powertrain
+  title:
+    en: Cylinder 7 Misfire Detected
+    de: Zündaussetzer Zylinder 7 erkannt
+  description:
+    en: Same as P0301 but cylinder 7 (V8 and larger engines).
+    de: Gleicher Fehler wie P0301, jedoch Zylinder 7 (V8 und größere Motoren).
+  affected_components:
+    - ignition_coil
+    - spark_plug
+    - fuel_injector
+  common_causes:
+    - id: ignition_coil_failed
+      likelihood: high
+      label:
+        en: Ignition coil failed
+        de: Zündspule defekt
+    - id: spark_plug_worn
+      likelihood: high
+      label:
+        en: Spark plug worn or fouled
+        de: Zündkerze verschlissen oder verölt
+  repair:
+    difficulty: easy
+    diy_possible: true
+    estimated_cost_eur: [30, 400]
+    estimated_hours: [0.3, 2.0]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+  related_codes: [P0301, P0300]
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Misfire
+
+- code: P0308
+  scope: generic
+  category: powertrain
+  title:
+    en: Cylinder 8 Misfire Detected
+    de: Zündaussetzer Zylinder 8 erkannt
+  description:
+    en: Same as P0301 but cylinder 8.
+    de: Gleicher Fehler wie P0301, jedoch Zylinder 8.
+  affected_components:
+    - ignition_coil
+    - spark_plug
+    - fuel_injector
+  common_causes:
+    - id: ignition_coil_failed
+      likelihood: high
+      label:
+        en: Ignition coil failed
+        de: Zündspule defekt
+  repair:
+    difficulty: easy
+    diy_possible: true
+    estimated_cost_eur: [30, 400]
+    estimated_hours: [0.3, 2.0]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+  related_codes: [P0301, P0300]
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Misfire
+
+- code: P0309
+  scope: generic
+  category: powertrain
+  title:
+    en: Cylinder 9 Misfire Detected
+    de: Zündaussetzer Zylinder 9 erkannt
+  description:
+    en: Same as P0301 but cylinder 9 (V10 and larger).
+    de: Gleicher Fehler wie P0301, jedoch Zylinder 9 (V10 und größer).
+  affected_components:
+    - ignition_coil
+    - spark_plug
+  common_causes:
+    - id: ignition_coil_failed
+      likelihood: high
+      label:
+        en: Ignition coil failed
+        de: Zündspule defekt
+  repair:
+    difficulty: easy
+    diy_possible: true
+    estimated_cost_eur: [30, 400]
+    estimated_hours: [0.3, 2.0]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+  related_codes: [P0301, P0300]
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Misfire
+
+- code: P0310
+  scope: generic
+  category: powertrain
+  title:
+    en: Cylinder 10 Misfire Detected
+    de: Zündaussetzer Zylinder 10 erkannt
+  description:
+    en: Same as P0301 but cylinder 10.
+    de: Gleicher Fehler wie P0301, jedoch Zylinder 10.
+  affected_components:
+    - ignition_coil
+    - spark_plug
+  common_causes:
+    - id: ignition_coil_failed
+      likelihood: high
+      label:
+        en: Ignition coil failed
+        de: Zündspule defekt
+  repair:
+    difficulty: easy
+    diy_possible: true
+    estimated_cost_eur: [30, 400]
+    estimated_hours: [0.3, 2.0]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+  related_codes: [P0301, P0300]
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Misfire
+
+- code: P0311
+  scope: generic
+  category: powertrain
+  title:
+    en: Cylinder 11 Misfire Detected
+    de: Zündaussetzer Zylinder 11 erkannt
+  description:
+    en: Same as P0301 but cylinder 11 (V12).
+    de: Gleicher Fehler wie P0301, jedoch Zylinder 11 (V12).
+  affected_components:
+    - ignition_coil
+    - spark_plug
+  common_causes:
+    - id: ignition_coil_failed
+      likelihood: high
+      label:
+        en: Ignition coil failed
+        de: Zündspule defekt
+  repair:
+    difficulty: easy
+    diy_possible: true
+    estimated_cost_eur: [30, 400]
+    estimated_hours: [0.3, 2.0]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+  related_codes: [P0301, P0300]
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Misfire
+
+- code: P0312
+  scope: generic
+  category: powertrain
+  title:
+    en: Cylinder 12 Misfire Detected
+    de: Zündaussetzer Zylinder 12 erkannt
+  description:
+    en: Same as P0301 but cylinder 12 (V12).
+    de: Gleicher Fehler wie P0301, jedoch Zylinder 12 (V12).
+  affected_components:
+    - ignition_coil
+    - spark_plug
+  common_causes:
+    - id: ignition_coil_failed
+      likelihood: high
+      label:
+        en: Ignition coil failed
+        de: Zündspule defekt
+  repair:
+    difficulty: easy
+    diy_possible: true
+    estimated_cost_eur: [30, 400]
+    estimated_hours: [0.3, 2.0]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+  related_codes: [P0301, P0300]
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Misfire
+
+- code: P0330
+  scope: generic
+  category: powertrain
+  title:
+    en: Knock Sensor 2 Circuit (Bank 2)
+    de: Klopfsensor 2 Schaltung (Bank 2)
+  description:
+    en: A general electrical fault in the bank 2 knock sensor circuit. The ECU monitors a piezoelectric sensor for engine vibration patterns associated with detonation; an open, shorted, or out-of-range circuit triggers this code.
+    de: Allgemeiner elektrischer Fehler im Klopfsensor-Stromkreis Bank 2. Die Motorsteuerung wertet ein piezoelektrisches Signal auf typische Klopfmuster aus; ein offener, kurzgeschlossener oder unplausibler Stromkreis löst diesen Code aus.
+  affected_components:
+    - knock_sensor
+    - sensor_wiring
+  common_causes:
+    - id: knock_sensor_failed
+      likelihood: high
+      label:
+        en: Knock sensor failed
+        de: Klopfsensor defekt
+    - id: knock_sensor_wiring
+      likelihood: medium
+      label:
+        en: Wiring/connector fault
+        de: Kabel-/Steckerfehler
+  repair:
+    difficulty: hard
+    diy_possible: false
+    estimated_cost_eur: [150, 900]
+    estimated_hours: [1.0, 6.0]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+  related_codes: [P0325]
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Knock_sensor
+
+- code: P0332
+  scope: generic
+  category: powertrain
+  title:
+    en: Knock Sensor 2 Circuit Low Input (Bank 2)
+    de: Klopfsensor 2 Eingangssignal zu niedrig (Bank 2)
+  description:
+    en: The bank 2 knock sensor signal is below the expected voltage range. Often caused by a failed sensor or a short to ground in the signal line.
+    de: Das Signal des Klopfsensors Bank 2 liegt unter dem erwarteten Spannungsbereich. Häufige Ursachen — defekter Sensor oder Masseschluss in der Signalleitung.
+  affected_components:
+    - knock_sensor
+    - sensor_wiring
+  common_causes:
+    - id: knock_sensor_failed
+      likelihood: high
+      label:
+        en: Knock sensor failed
+        de: Klopfsensor defekt
+    - id: signal_short_to_ground
+      likelihood: medium
+      label:
+        en: Signal wire shorted to ground
+        de: Signalleitung gegen Masse kurzgeschlossen
+  repair:
+    difficulty: hard
+    diy_possible: false
+    estimated_cost_eur: [150, 900]
+    estimated_hours: [1.0, 6.0]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+  related_codes: [P0330]
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Knock_sensor
+
+- code: P0333
+  scope: generic
+  category: powertrain
+  title:
+    en: Knock Sensor 2 Circuit High Input (Bank 2)
+    de: Klopfsensor 2 Eingangssignal zu hoch (Bank 2)
+  description:
+    en: The bank 2 knock sensor signal is above the expected voltage range. Typically caused by a short to supply voltage or an internal sensor fault.
+    de: Das Signal des Klopfsensors Bank 2 liegt über dem erwarteten Spannungsbereich. Typische Ursachen — Kurzschluss gegen Versorgungsspannung oder interner Sensorfehler.
+  affected_components:
+    - knock_sensor
+    - sensor_wiring
+  common_causes:
+    - id: signal_short_to_voltage
+      likelihood: high
+      label:
+        en: Signal wire shorted to supply
+        de: Signalleitung gegen Versorgung kurzgeschlossen
+    - id: knock_sensor_failed
+      likelihood: medium
+      label:
+        en: Knock sensor failed
+        de: Klopfsensor defekt
+  repair:
+    difficulty: hard
+    diy_possible: false
+    estimated_cost_eur: [150, 900]
+    estimated_hours: [1.0, 6.0]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+  related_codes: [P0330]
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Knock_sensor
+
+- code: P0345
+  scope: generic
+  category: powertrain
+  title:
+    en: Camshaft Position Sensor "A" Circuit (Bank 2)
+    de: Nockenwellensensor "A" Schaltung (Bank 2)
+  description:
+    en: General electrical fault in the bank 2 camshaft position sensor circuit. The ECU uses this signal together with the crank sensor for sequential injection and ignition timing.
+    de: Allgemeiner elektrischer Fehler im Stromkreis des Nockenwellensensors Bank 2. Die Motorsteuerung nutzt dieses Signal zusammen mit dem Kurbelwellensensor für sequentielle Einspritzung und Zündzeitpunkt.
+  affected_components:
+    - camshaft_position_sensor
+    - sensor_wiring
+  common_causes:
+    - id: cmp_sensor_failed
+      likelihood: high
+      label:
+        en: CMP sensor failed
+        de: Nockenwellensensor defekt
+    - id: sensor_wiring_fault
+      likelihood: medium
+      label:
+        en: Wiring/connector fault
+        de: Kabel-/Steckerfehler
+  repair:
+    difficulty: medium
+    diy_possible: true
+    estimated_cost_eur: [80, 400]
+    estimated_hours: [0.5, 2.0]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+  related_codes: [P0340]
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Camshaft_position_sensor
+
+- code: P0346
+  scope: generic
+  category: powertrain
+  title:
+    en: Camshaft Position Sensor "A" Circuit Range/Performance (Bank 2)
+    de: Nockenwellensensor "A" Funktionsbereich/Leistung (Bank 2)
+  description:
+    en: The bank 2 camshaft position sensor signal is present but does not match the crank reference correctly, or its pulse pattern is implausible.
+    de: Das Signal des Nockenwellensensors Bank 2 ist vorhanden, stimmt aber nicht plausibel mit der Kurbelwellenreferenz überein oder weist ein unplausibles Pulsmuster auf.
+  affected_components:
+    - camshaft_position_sensor
+    - reluctor_ring
+  common_causes:
+    - id: cmp_sensor_intermittent
+      likelihood: high
+      label:
+        en: CMP sensor intermittent
+        de: Nockenwellensensor mit Aussetzern
+    - id: reluctor_damaged
+      likelihood: low
+      label:
+        en: Reluctor wheel damaged
+        de: Geberrad beschädigt
+  repair:
+    difficulty: medium
+    diy_possible: true
+    estimated_cost_eur: [80, 600]
+    estimated_hours: [0.5, 3.0]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+  related_codes: [P0341]
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Camshaft_position_sensor
+
+- code: P0355
+  scope: generic
+  category: powertrain
+  title:
+    en: Ignition Coil "E" Primary/Secondary Circuit
+    de: Zündspule "E" Primär-/Sekundärkreis
+  description:
+    en: Same fault as P0351 but on ignition coil E (typically cylinder 5 in coil-on-plug systems).
+    de: Gleicher Fehler wie P0351, jedoch an Zündspule E (in der Regel Zylinder 5 bei Einzelfunkenspulen).
+  affected_components:
+    - ignition_coil
+    - coil_wiring
+  common_causes:
+    - id: coil_failed
+      likelihood: high
+      label:
+        en: Ignition coil failed
+        de: Zündspule defekt
+    - id: coil_wiring_fault
+      likelihood: medium
+      label:
+        en: Wiring/connector fault
+        de: Kabel-/Steckerfehler
+  repair:
+    difficulty: easy
+    diy_possible: true
+    estimated_cost_eur: [40, 350]
+    estimated_hours: [0.3, 1.5]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+  related_codes: [P0351, P0305]
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Ignition_coil
+
+- code: P0356
+  scope: generic
+  category: powertrain
+  title:
+    en: Ignition Coil "F" Primary/Secondary Circuit
+    de: Zündspule "F" Primär-/Sekundärkreis
+  description:
+    en: Same fault as P0351 but on ignition coil F (typically cylinder 6).
+    de: Gleicher Fehler wie P0351, jedoch an Zündspule F (in der Regel Zylinder 6).
+  affected_components:
+    - ignition_coil
+    - coil_wiring
+  common_causes:
+    - id: coil_failed
+      likelihood: high
+      label:
+        en: Ignition coil failed
+        de: Zündspule defekt
+  repair:
+    difficulty: easy
+    diy_possible: true
+    estimated_cost_eur: [40, 350]
+    estimated_hours: [0.3, 1.5]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+  related_codes: [P0351, P0306]
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Ignition_coil
+
+- code: P0357
+  scope: generic
+  category: powertrain
+  title:
+    en: Ignition Coil "G" Primary/Secondary Circuit
+    de: Zündspule "G" Primär-/Sekundärkreis
+  description:
+    en: Same fault as P0351 but on ignition coil G (cylinder 7).
+    de: Gleicher Fehler wie P0351, jedoch an Zündspule G (Zylinder 7).
+  affected_components:
+    - ignition_coil
+    - coil_wiring
+  common_causes:
+    - id: coil_failed
+      likelihood: high
+      label:
+        en: Ignition coil failed
+        de: Zündspule defekt
+  repair:
+    difficulty: easy
+    diy_possible: true
+    estimated_cost_eur: [40, 350]
+    estimated_hours: [0.3, 1.5]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+  related_codes: [P0351]
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Ignition_coil
+
+- code: P0358
+  scope: generic
+  category: powertrain
+  title:
+    en: Ignition Coil "H" Primary/Secondary Circuit
+    de: Zündspule "H" Primär-/Sekundärkreis
+  description:
+    en: Same fault as P0351 but on ignition coil H (cylinder 8).
+    de: Gleicher Fehler wie P0351, jedoch an Zündspule H (Zylinder 8).
+  affected_components:
+    - ignition_coil
+    - coil_wiring
+  common_causes:
+    - id: coil_failed
+      likelihood: high
+      label:
+        en: Ignition coil failed
+        de: Zündspule defekt
+  repair:
+    difficulty: easy
+    diy_possible: true
+    estimated_cost_eur: [40, 350]
+    estimated_hours: [0.3, 1.5]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+  related_codes: [P0351]
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Ignition_coil
+
+- code: P0443
+  scope: generic
+  category: powertrain
+  title:
+    en: Evaporative Emission System Purge Control Valve Circuit
+    de: Tankentlüftung Aktivkohlefilter-Spülventil Stromkreis
+  description:
+    en: Electrical fault in the EVAP purge solenoid circuit. The ECU detects an open, shorted, or out-of-range condition on the purge valve driver.
+    de: Elektrischer Fehler im Stromkreis des Tankentlüftungs-Spülventils. Die Motorsteuerung erkennt einen offenen, kurzgeschlossenen oder unplausiblen Zustand am Treiber des Spülventils.
+  affected_components:
+    - evap_purge_valve
+    - purge_valve_wiring
+  common_causes:
+    - id: purge_valve_failed
+      likelihood: high
+      label:
+        en: Purge solenoid electrically failed
+        de: Spülventil elektrisch defekt
+    - id: purge_wiring_fault
+      likelihood: medium
+      label:
+        en: Wiring/connector fault
+        de: Kabel-/Steckerfehler
+  repair:
+    difficulty: easy
+    diy_possible: true
+    estimated_cost_eur: [40, 250]
+    estimated_hours: [0.3, 1.5]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Onboard_refueling_vapor_recovery
+
+- code: P0451
+  scope: generic
+  category: powertrain
+  title:
+    en: Evaporative Emission System Pressure Sensor Range/Performance
+    de: Tankentlüftung Drucksensor Funktionsbereich/Leistung
+  description:
+    en: The fuel tank pressure sensor reading is implausible — for example, fluctuating signal, noise, or values that do not respond to known pressure events such as a key-on tank refill.
+    de: Der Wert des Tankdrucksensors ist unplausibel — etwa schwankendes Signal, Rauschen oder Werte, die nicht auf bekannte Druckereignisse wie das Tanken reagieren.
+  affected_components:
+    - fuel_tank_pressure_sensor
+    - sensor_wiring
+  common_causes:
+    - id: ftp_sensor_drift
+      likelihood: high
+      label:
+        en: Tank pressure sensor drifted/noisy
+        de: Tankdrucksensor driftet oder rauscht
+  repair:
+    difficulty: medium
+    diy_possible: true
+    estimated_cost_eur: [80, 400]
+    estimated_hours: [0.5, 2.5]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Onboard_refueling_vapor_recovery
+
+- code: P0452
+  scope: generic
+  category: powertrain
+  title:
+    en: Evaporative Emission System Pressure Sensor Low Input
+    de: Tankentlüftung Drucksensor Eingangssignal zu niedrig
+  description:
+    en: The fuel tank pressure sensor signal is below the expected minimum voltage. Often caused by a failed sensor or a short to ground in the signal line.
+    de: Das Signal des Tankdrucksensors liegt unter dem erwarteten Mindestwert. Häufige Ursachen — defekter Sensor oder Masseschluss in der Signalleitung.
+  affected_components:
+    - fuel_tank_pressure_sensor
+    - sensor_wiring
+  common_causes:
+    - id: ftp_sensor_failed_low
+      likelihood: high
+      label:
+        en: Tank pressure sensor failed
+        de: Tankdrucksensor defekt
+  repair:
+    difficulty: medium
+    diy_possible: true
+    estimated_cost_eur: [80, 400]
+    estimated_hours: [0.5, 2.5]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+  related_codes: [P0451]
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Onboard_refueling_vapor_recovery
+
+- code: P0453
+  scope: generic
+  category: powertrain
+  title:
+    en: Evaporative Emission System Pressure Sensor High Input
+    de: Tankentlüftung Drucksensor Eingangssignal zu hoch
+  description:
+    en: The fuel tank pressure sensor signal is above the expected maximum voltage, typical of a short to supply or a sensor that has failed high.
+    de: Das Signal des Tankdrucksensors liegt über dem erwarteten Maximalwert — typisch für Kurzschluss gegen Versorgungsspannung oder einen Sensor mit Maximalwert-Ausfall.
+  affected_components:
+    - fuel_tank_pressure_sensor
+    - sensor_wiring
+  common_causes:
+    - id: ftp_sensor_failed_high
+      likelihood: high
+      label:
+        en: Tank pressure sensor failed (high)
+        de: Tankdrucksensor defekt (Maximalwert)
+  repair:
+    difficulty: medium
+    diy_possible: true
+    estimated_cost_eur: [80, 400]
+    estimated_hours: [0.5, 2.5]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+  related_codes: [P0451]
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Onboard_refueling_vapor_recovery
+
+- code: P0480
+  scope: generic
+  category: powertrain
+  title:
+    en: Cooling Fan 1 Control Circuit
+    de: Kühlerlüfter 1 Steuerkreis
+  description:
+    en: An electrical fault in the cooling fan 1 control circuit (relay or PWM driver). May be set when the ECU detects an open, short, or unexpected current draw.
+    de: Elektrischer Fehler im Steuerkreis von Kühlerlüfter 1 (Relais oder PWM-Treiber). Wird gesetzt, wenn die Motorsteuerung einen offenen, kurzgeschlossenen oder unplausiblen Strom feststellt.
+  affected_components:
+    - cooling_fan_relay
+    - cooling_fan_motor
+    - fan_wiring
+  common_causes:
+    - id: fan_relay_failed
+      likelihood: high
+      label:
+        en: Fan relay failed
+        de: Lüfterrelais defekt
+    - id: fan_motor_failed
+      likelihood: medium
+      label:
+        en: Fan motor seized or open
+        de: Lüftermotor blockiert oder unterbrochen
+  repair:
+    difficulty: medium
+    diy_possible: true
+    estimated_cost_eur: [60, 600]
+    estimated_hours: [0.5, 3.0]
+  flags:
+    mil: true
+    emissions_relevant: false
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Engine_control_unit
+
+- code: P0481
+  scope: generic
+  category: powertrain
+  title:
+    en: Cooling Fan 2 Control Circuit
+    de: Kühlerlüfter 2 Steuerkreis
+  description:
+    en: Same fault as P0480 but for the second cooling fan control circuit.
+    de: Gleicher Fehler wie P0480, jedoch für den zweiten Kühlerlüfter-Steuerkreis.
+  affected_components:
+    - cooling_fan_relay
+    - cooling_fan_motor
+    - fan_wiring
+  common_causes:
+    - id: fan_relay_failed
+      likelihood: high
+      label:
+        en: Fan relay failed
+        de: Lüfterrelais defekt
+  repair:
+    difficulty: medium
+    diy_possible: true
+    estimated_cost_eur: [60, 600]
+    estimated_hours: [0.5, 3.0]
+  flags:
+    mil: true
+    emissions_relevant: false
+  related_codes: [P0480]
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Engine_control_unit
+
+- code: P0504
+  scope: generic
+  category: powertrain
+  title:
+    en: Brake Switch "A"/"B" Correlation
+    de: Bremslichtschalter "A"/"B" Korrelation
+  description:
+    en: Modern vehicles use two redundant brake switch signals (often one normally-open and one normally-closed). When the two signals disagree, this code is set; common causes include a misadjusted switch, internal switch failure, or wiring fault.
+    de: Moderne Fahrzeuge verwenden zwei redundante Bremslichtschalter-Signale (häufig je ein Schließer und ein Öffner). Stimmen die Signale nicht überein, wird dieser Code gesetzt; häufige Ursachen — falsch eingestellter Schalter, interner Schalterdefekt oder Verkabelungsfehler.
+  affected_components:
+    - brake_light_switch
+    - brake_switch_wiring
+  common_causes:
+    - id: brake_switch_misadjusted
+      likelihood: high
+      label:
+        en: Brake switch misadjusted
+        de: Bremslichtschalter falsch eingestellt
+    - id: brake_switch_failed
+      likelihood: medium
+      label:
+        en: Brake switch internal fault
+        de: Bremslichtschalter intern defekt
+  repair:
+    difficulty: easy
+    diy_possible: true
+    estimated_cost_eur: [30, 200]
+    estimated_hours: [0.2, 1.0]
+  flags:
+    mil: true
+    emissions_relevant: false
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/On-board_diagnostics
+
+- code: P0521
+  scope: generic
+  category: powertrain
+  title:
+    en: Engine Oil Pressure Sensor/Switch Range/Performance
+    de: Motoröldrucksensor/-schalter Funktionsbereich/Leistung
+  description:
+    en: The engine oil pressure sensor or switch reports values that are not plausible for current RPM, oil temperature, and engine load. Could indicate a sensor fault or genuinely abnormal pressure.
+    de: Der Motoröldrucksensor oder -schalter meldet Werte, die für aktuelle Drehzahl, Öltemperatur und Last nicht plausibel sind. Hinweis auf Sensorfehler oder tatsächlich anormalen Druck.
+  affected_components:
+    - oil_pressure_sensor
+    - sensor_wiring
+  common_causes:
+    - id: oil_pressure_sensor_failed
+      likelihood: high
+      label:
+        en: Oil pressure sensor failed
+        de: Öldrucksensor defekt
+    - id: oil_pump_worn
+      likelihood: low
+      label:
+        en: Oil pump or bearings worn
+        de: Ölpumpe oder Lager verschlissen
+  repair:
+    difficulty: medium
+    diy_possible: true
+    estimated_cost_eur: [60, 1500]
+    estimated_hours: [0.5, 6.0]
+  flags:
+    mil: true
+    emissions_relevant: false
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Engine_oil_pressure
+
+- code: P0522
+  scope: generic
+  category: powertrain
+  title:
+    en: Engine Oil Pressure Sensor/Switch Low Voltage
+    de: Motoröldrucksensor/-schalter Spannung zu niedrig
+  description:
+    en: The oil pressure sensor signal is below the expected minimum. Often points to an electrical fault — short to ground or failed sensor — but can also indicate genuinely low oil pressure.
+    de: Das Signal des Öldrucksensors liegt unter dem erwarteten Mindestwert. Hinweis meist auf elektrischen Fehler — Masseschluss oder defekter Sensor — kann aber auch tatsächlich niedrigen Öldruck bedeuten.
+  affected_components:
+    - oil_pressure_sensor
+    - sensor_wiring
+  common_causes:
+    - id: oil_pressure_sensor_failed_low
+      likelihood: high
+      label:
+        en: Sensor failed (low)
+        de: Sensor defekt (Minimalwert)
+    - id: signal_short_to_ground
+      likelihood: medium
+      label:
+        en: Signal shorted to ground
+        de: Signal gegen Masse kurzgeschlossen
+  repair:
+    difficulty: medium
+    diy_possible: true
+    estimated_cost_eur: [60, 1500]
+    estimated_hours: [0.5, 6.0]
+  flags:
+    mil: true
+    emissions_relevant: false
+  related_codes: [P0521]
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Engine_oil_pressure
+
+- code: P0524
+  scope: generic
+  category: powertrain
+  title:
+    en: Engine Oil Pressure Too Low
+    de: Motoröldruck zu niedrig
+  description:
+    en: The ECU has determined that engine oil pressure is below the safe operating threshold. Caused by low oil level, worn oil pump, severe engine wear, or a stuck pressure relief valve. Continued operation can rapidly destroy the engine.
+    de: Die Motorsteuerung erkennt einen Öldruck unter der sicheren Betriebsschwelle. Ursachen — zu niedriger Ölstand, verschlissene Ölpumpe, starker Motorverschleiß oder hängendes Druckbegrenzungsventil. Weiterbetrieb kann den Motor schnell zerstören.
+  affected_components:
+    - oil_pump
+    - engine_oil
+    - oil_pressure_relief_valve
+  common_causes:
+    - id: low_oil_level
+      likelihood: high
+      label:
+        en: Engine oil level too low
+        de: Motorölstand zu niedrig
+    - id: oil_pump_worn
+      likelihood: medium
+      label:
+        en: Oil pump worn
+        de: Ölpumpe verschlissen
+    - id: engine_bearings_worn
+      likelihood: low
+      label:
+        en: Engine bearings worn
+        de: Motorlager verschlissen
+  repair:
+    difficulty: hard
+    diy_possible: false
+    estimated_cost_eur: [100, 6000]
+    estimated_hours: [0.5, 20.0]
+  flags:
+    mil: true
+    emissions_relevant: false
+    limp_mode_possible: true
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Engine_oil_pressure
+
+- code: P0716
+  scope: generic
+  category: powertrain
+  title:
+    en: Input/Turbine Speed Sensor "A" Circuit Range/Performance
+    de: Eingangs-/Turbinendrehzahlsensor "A" Funktionsbereich/Leistung
+  description:
+    en: The transmission input/turbine speed sensor signal is implausible compared to engine RPM and current gear ratio. Often caused by a failing sensor, debris on the reluctor, or wiring noise.
+    de: Das Signal des Getriebe-Eingangs- bzw. Turbinendrehzahlsensors ist gegenüber Motordrehzahl und aktuellem Übersetzungsverhältnis unplausibel. Häufige Ursachen — defekter Sensor, Späne am Geberrad oder Leitungsstörungen.
+  affected_components:
+    - transmission_input_speed_sensor
+    - sensor_wiring
+  common_causes:
+    - id: input_speed_sensor_failed
+      likelihood: high
+      label:
+        en: Input speed sensor failed
+        de: Eingangsdrehzahlsensor defekt
+    - id: sensor_wiring_fault
+      likelihood: medium
+      label:
+        en: Wiring/connector fault
+        de: Kabel-/Steckerfehler
+  repair:
+    difficulty: medium
+    diy_possible: false
+    estimated_cost_eur: [150, 800]
+    estimated_hours: [1.0, 4.0]
+  flags:
+    mil: true
+    emissions_relevant: false
+    limp_mode_possible: true
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Automatic_transmission
+
+- code: P0721
+  scope: generic
+  category: powertrain
+  title:
+    en: Output Speed Sensor Circuit Range/Performance
+    de: Abtriebsdrehzahlsensor Funktionsbereich/Leistung
+  description:
+    en: The transmission output speed sensor signal is implausible compared to vehicle speed and gear ratio. Sometimes set together with VSS or input-speed-sensor codes.
+    de: Das Signal des Getriebeabtriebsdrehzahlsensors ist gegenüber Fahrzeuggeschwindigkeit und Übersetzungsverhältnis unplausibel. Wird teils gemeinsam mit Codes des VSS oder des Eingangsdrehzahlsensors gesetzt.
+  affected_components:
+    - transmission_output_speed_sensor
+    - sensor_wiring
+  common_causes:
+    - id: output_speed_sensor_failed
+      likelihood: high
+      label:
+        en: Output speed sensor failed
+        de: Abtriebsdrehzahlsensor defekt
+  repair:
+    difficulty: medium
+    diy_possible: false
+    estimated_cost_eur: [150, 800]
+    estimated_hours: [1.0, 4.0]
+  flags:
+    mil: true
+    emissions_relevant: false
+    limp_mode_possible: true
+  related_codes: [P0720]
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Automatic_transmission
+
+- code: P0742
+  scope: generic
+  category: powertrain
+  title:
+    en: Torque Converter Clutch Circuit Stuck On
+    de: Wandlerkupplung Stromkreis dauerhaft an
+  description:
+    en: The torque converter clutch (TCC) cannot disengage. Symptom is engine stalling when coming to a stop, because the engine is mechanically locked to the transmission output.
+    de: Die Wandlerkupplung (TCC) lässt sich nicht öffnen. Symptom — der Motor stirbt beim Anhalten ab, weil er mechanisch mit dem Getriebeausgang verbunden bleibt.
+  affected_components:
+    - torque_converter_clutch_solenoid
+    - transmission_valve_body
+  common_causes:
+    - id: tcc_solenoid_stuck
+      likelihood: high
+      label:
+        en: TCC solenoid stuck on
+        de: Wandlerkupplungs-Magnetventil hängend
+    - id: valve_body_contaminated
+      likelihood: medium
+      label:
+        en: Valve body contaminated
+        de: Schaltschieberkasten verunreinigt
+  repair:
+    difficulty: hard
+    diy_possible: false
+    estimated_cost_eur: [200, 2500]
+    estimated_hours: [1.5, 10.0]
+  flags:
+    mil: true
+    emissions_relevant: false
+    limp_mode_possible: true
+  related_codes: [P0740, P0741]
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Automatic_transmission
+
+- code: P0743
+  scope: generic
+  category: powertrain
+  title:
+    en: Torque Converter Clutch Circuit Electrical
+    de: Wandlerkupplung Stromkreis elektrisch
+  description:
+    en: An electrical fault in the torque converter clutch solenoid circuit — open, shorted, or out-of-range driver current. The transmission usually inhibits TCC apply when this code is active.
+    de: Elektrischer Fehler im Stromkreis des Wandlerkupplungs-Magnetventils — offen, kurzgeschlossen oder unplausibler Treiberstrom. Das Getriebe sperrt bei aktivem Code in der Regel die Wandlerkupplung.
+  affected_components:
+    - torque_converter_clutch_solenoid
+    - solenoid_wiring
+  common_causes:
+    - id: tcc_solenoid_failed
+      likelihood: high
+      label:
+        en: TCC solenoid electrically failed
+        de: TCC-Magnetventil elektrisch defekt
+    - id: solenoid_wiring_fault
+      likelihood: medium
+      label:
+        en: Wiring/connector fault
+        de: Kabel-/Steckerfehler
+  repair:
+    difficulty: hard
+    diy_possible: false
+    estimated_cost_eur: [200, 2000]
+    estimated_hours: [1.5, 10.0]
+  flags:
+    mil: true
+    emissions_relevant: false
+    limp_mode_possible: true
+  related_codes: [P0740, P0741, P0742]
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Automatic_transmission
+
+- code: P0760
+  scope: generic
+  category: powertrain
+  title:
+    en: Shift Solenoid "C" Malfunction
+    de: Schaltsolenoid "C" Fehlfunktion
+  description:
+    en: Same fault as P0750 but on shift solenoid C.
+    de: Gleicher Fehler wie P0750, jedoch am Schaltsolenoid C.
+  affected_components:
+    - shift_solenoid
+    - transmission_valve_body
+  common_causes:
+    - id: shift_solenoid_stuck
+      likelihood: high
+      label:
+        en: Solenoid stuck
+        de: Magnetventil hängend
+    - id: shift_solenoid_electrical
+      likelihood: medium
+      label:
+        en: Open or shorted winding
+        de: Wicklung offen oder kurzgeschlossen
+  repair:
+    difficulty: hard
+    diy_possible: false
+    estimated_cost_eur: [200, 1500]
+    estimated_hours: [1.5, 8.0]
+  flags:
+    mil: true
+    emissions_relevant: false
+    limp_mode_possible: true
+  related_codes: [P0750]
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Automatic_transmission
+
+- code: P0765
+  scope: generic
+  category: powertrain
+  title:
+    en: Shift Solenoid "D" Malfunction
+    de: Schaltsolenoid "D" Fehlfunktion
+  description:
+    en: Same fault as P0750 but on shift solenoid D.
+    de: Gleicher Fehler wie P0750, jedoch am Schaltsolenoid D.
+  affected_components:
+    - shift_solenoid
+    - transmission_valve_body
+  common_causes:
+    - id: shift_solenoid_stuck
+      likelihood: high
+      label:
+        en: Solenoid stuck
+        de: Magnetventil hängend
+    - id: shift_solenoid_electrical
+      likelihood: medium
+      label:
+        en: Open or shorted winding
+        de: Wicklung offen oder kurzgeschlossen
+  repair:
+    difficulty: hard
+    diy_possible: false
+    estimated_cost_eur: [200, 1500]
+    estimated_hours: [1.5, 8.0]
+  flags:
+    mil: true
+    emissions_relevant: false
+    limp_mode_possible: true
+  related_codes: [P0750]
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Automatic_transmission
