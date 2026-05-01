@@ -813,3 +813,1020 @@
     - sae:J2012
   sources:
     - https://en.wikipedia.org/wiki/On-board_diagnostics
+
+- code: B0090
+  scope: generic
+  category: body
+  title:
+    en: Driver Side Pretensioner Stage 2 Deployment Control
+    de: Fahrer-Gurtstraffer Stufe 2 Auslösekreis
+  description:
+    en: The SRS module has detected a fault in the second-stage circuit of the driver seat belt pretensioner. Multi-stage pretensioners use additional charges for severe crashes — this stage cannot be triggered reliably.
+    de: Das SRS-Steuergerät hat einen Fehler im Stufe-2-Stromkreis des Fahrer-Gurtstraffers erkannt. Mehrstufige Gurtstraffer nutzen zusätzliche Treibsätze bei schweren Unfällen — diese Stufe kann nicht zuverlässig ausgelöst werden.
+  affected_components:
+    - driver_pretensioner
+    - srs_control_module
+    - srs_wiring
+  common_causes:
+    - id: pretensioner_squib_circuit
+      likelihood: high
+      label:
+        en: Stage 2 squib circuit open or shorted
+        de: Stufe-2-Zündkreis unterbrochen oder kurzgeschlossen
+    - id: seat_harness_connector_fault
+      likelihood: medium
+      label:
+        en: Connector under driver seat damaged
+        de: Stecker unter dem Fahrersitz beschädigt
+    - id: srs_module_fault
+      likelihood: low
+      label:
+        en: SRS control module fault
+        de: Fehler im SRS-Steuergerät
+  repair:
+    difficulty: hard
+    diy_possible: false
+    estimated_cost_eur: [150, 1000]
+    estimated_hours: [0.5, 2.5]
+  flags:
+    mil: false
+    emissions_relevant: false
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Airbag
+
+- code: B0091
+  scope: generic
+  category: body
+  title:
+    en: Passenger Side Pretensioner Stage 2 Deployment Control
+    de: Beifahrer-Gurtstraffer Stufe 2 Auslösekreis
+  description:
+    en: Same fault as B0090 but for the passenger pretensioner stage 2. The high-severity stage cannot be reliably triggered on the passenger side.
+    de: Gleicher Fehler wie B0090, jedoch für die zweite Stufe des Beifahrer-Gurtstraffers. Die Hochlast-Stufe kann auf der Beifahrerseite nicht zuverlässig ausgelöst werden.
+  affected_components:
+    - passenger_pretensioner
+    - srs_control_module
+    - srs_wiring
+  common_causes:
+    - id: pretensioner_squib_circuit
+      likelihood: high
+      label:
+        en: Stage 2 squib circuit open or shorted
+        de: Stufe-2-Zündkreis unterbrochen oder kurzgeschlossen
+    - id: seat_harness_connector_fault
+      likelihood: medium
+      label:
+        en: Connector under passenger seat damaged
+        de: Stecker unter dem Beifahrersitz beschädigt
+    - id: srs_module_fault
+      likelihood: low
+      label:
+        en: SRS control module fault
+        de: Fehler im SRS-Steuergerät
+  repair:
+    difficulty: hard
+    diy_possible: false
+    estimated_cost_eur: [150, 1000]
+    estimated_hours: [0.5, 2.5]
+  flags:
+    mil: false
+    emissions_relevant: false
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Airbag
+
+- code: B0095
+  scope: generic
+  category: body
+  title:
+    en: Occupant Classification System Performance
+    de: Insassenerkennungssystem Funktionsbereich
+  description:
+    en: The SRS module reports that the occupant classification system (OCS) on the passenger seat does not behave plausibly. The OCS detects whether the seat is empty, occupied by a small person, or by an adult — and adapts airbag deployment accordingly.
+    de: Das SRS-Steuergerät meldet, dass das Insassenerkennungssystem (OCS) auf dem Beifahrersitz unplausibel arbeitet. Das OCS erkennt, ob der Sitz leer, von einer kleinen Person oder von einem Erwachsenen besetzt ist, und passt die Airbag-Auslösung an.
+  affected_components:
+    - occupant_classification_sensor
+    - srs_control_module
+    - passenger_seat_harness
+  common_causes:
+    - id: ocs_sensor_aged
+      likelihood: high
+      label:
+        en: OCS sensor mat aged or damaged
+        de: OCS-Sensormatte gealtert oder beschädigt
+    - id: ocs_calibration_lost
+      likelihood: medium
+      label:
+        en: OCS calibration lost — relearn required
+        de: OCS-Kalibrierung verloren — Anlernen erforderlich
+    - id: srs_module_fault
+      likelihood: low
+      label:
+        en: SRS control module fault
+        de: Fehler im SRS-Steuergerät
+  repair:
+    difficulty: hard
+    diy_possible: false
+    estimated_cost_eur: [200, 1500]
+    estimated_hours: [1.0, 4.0]
+  flags:
+    mil: false
+    emissions_relevant: false
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Airbag
+
+- code: B0098
+  scope: generic
+  category: body
+  title:
+    en: Occupant Detection Sensor
+    de: Insassenerkennungssensor
+  description:
+    en: The SRS module has detected a fault in the occupant detection sensor on the passenger seat. The sensor input is missing or out of range so passenger airbag enable/disable logic cannot be evaluated.
+    de: Das SRS-Steuergerät hat einen Fehler am Insassenerkennungssensor auf dem Beifahrersitz erkannt. Das Sensorsignal fehlt oder liegt außerhalb des Bereichs, sodass die Logik zur Aktivierung/Deaktivierung des Beifahrer-Airbags nicht ausgewertet werden kann.
+  affected_components:
+    - occupant_detection_sensor
+    - srs_control_module
+    - passenger_seat_harness
+  common_causes:
+    - id: occupant_sensor_failed
+      likelihood: high
+      label:
+        en: Occupant detection sensor failed
+        de: Insassenerkennungssensor defekt
+    - id: seat_harness_connector_fault
+      likelihood: medium
+      label:
+        en: Seat harness connector under passenger seat damaged
+        de: Sitzkabelbaum-Stecker unter dem Beifahrersitz beschädigt
+  repair:
+    difficulty: hard
+    diy_possible: false
+    estimated_cost_eur: [200, 1200]
+    estimated_hours: [1.0, 3.0]
+  flags:
+    mil: false
+    emissions_relevant: false
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Airbag
+
+- code: B0099
+  scope: generic
+  category: body
+  title:
+    en: Occupant Detection Module Internal Fault
+    de: Insassenerkennungs-Steuergerät interner Fehler
+  description:
+    en: The occupant detection module reports an internal fault detected by self-test. The module typically processes seat sensor data and reports occupancy status to the SRS module.
+    de: Das Insassenerkennungs-Steuergerät meldet einen durch den Selbsttest erkannten internen Fehler. Das Modul verarbeitet meist Sitzsensordaten und meldet den Belegungsstatus an das SRS-Steuergerät.
+  affected_components:
+    - occupant_detection_module
+    - srs_control_module
+  common_causes:
+    - id: occupant_module_internal
+      likelihood: high
+      label:
+        en: Occupant detection module internal fault
+        de: Insassenerkennungs-Steuergerät interner Fehler
+    - id: power_ground_fault
+      likelihood: medium
+      label:
+        en: Power supply or ground fault to module
+        de: Versorgungs- oder Massefehler am Steuergerät
+  repair:
+    difficulty: hard
+    diy_possible: false
+    estimated_cost_eur: [300, 1500]
+    estimated_hours: [1.0, 3.0]
+  flags:
+    mil: false
+    emissions_relevant: false
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Airbag
+
+- code: B0159
+  scope: generic
+  category: body
+  title:
+    en: Outside Temperature Sensor Range/Performance
+    de: Außentemperatursensor Bereich/Funktion
+  description:
+    en: The HVAC control module reports an out-of-range or implausible reading from the outside air temperature sensor. The displayed value may be stuck or impossibly high/low.
+    de: Das Klima-Steuergerät meldet einen Wert außerhalb des Bereichs oder unplausibel vom Außentemperatursensor. Die Anzeige kann eingefroren oder unrealistisch hoch/niedrig sein.
+  affected_components:
+    - outside_temperature_sensor
+    - hvac_control_module
+  common_causes:
+    - id: ambient_sensor_failed
+      likelihood: high
+      label:
+        en: Outside temperature sensor failed
+        de: Außentemperatursensor defekt
+    - id: ambient_sensor_wiring
+      likelihood: medium
+      label:
+        en: Wiring or connector fault
+        de: Verkabelungs- oder Steckerfehler
+  repair:
+    difficulty: easy
+    diy_possible: true
+    estimated_cost_eur: [30, 150]
+    estimated_hours: [0.3, 1.0]
+  flags:
+    mil: false
+    emissions_relevant: false
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Automotive_air_conditioning
+
+- code: B0160
+  scope: generic
+  category: body
+  title:
+    en: In-Vehicle Temperature Sensor Circuit
+    de: Innenraumtemperatursensor Schaltung
+  description:
+    en: The HVAC control module has detected an implausible signal from the in-vehicle temperature sensor — typically an aspirated sensor in the dashboard. Automatic climate control regulates cabin temperature using this signal.
+    de: Das Klima-Steuergerät hat ein unplausibles Signal vom Innenraumtemperatursensor erkannt — meist ein angesaugter Sensor im Armaturenbrett. Die Klimaautomatik regelt die Innenraumtemperatur anhand dieses Signals.
+  affected_components:
+    - in_vehicle_temperature_sensor
+    - hvac_control_module
+  common_causes:
+    - id: cabin_sensor_failed
+      likelihood: high
+      label:
+        en: In-vehicle temperature sensor failed
+        de: Innenraumtemperatursensor defekt
+    - id: aspirator_fan_blocked
+      likelihood: medium
+      label:
+        en: Aspirator fan or duct blocked
+        de: Ansaugventilator oder Kanal blockiert
+  repair:
+    difficulty: medium
+    diy_possible: true
+    estimated_cost_eur: [50, 300]
+    estimated_hours: [0.5, 2.0]
+  flags:
+    mil: false
+    emissions_relevant: false
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Automotive_air_conditioning
+
+- code: B0162
+  scope: generic
+  category: body
+  title:
+    en: Sun Load Sensor 2 Circuit
+    de: Sonneneinstrahlungssensor 2 Schaltung
+  description:
+    en: The HVAC control module has detected an implausible signal from the second sun load sensor. Dual-zone systems use two solar sensors to detect side-asymmetric sunlight and adjust left/right airflow temperature.
+    de: Das Klima-Steuergerät hat ein unplausibles Signal vom zweiten Sonneneinstrahlungssensor erkannt. Zwei-Zonen-Systeme nutzen zwei Sonnensensoren, um seitenabhängige Sonneneinstrahlung zu erkennen und die linke/rechte Luftauslasstemperatur anzupassen.
+  affected_components:
+    - sun_load_sensor_2
+    - hvac_control_module
+  common_causes:
+    - id: sun_load_sensor_failed
+      likelihood: high
+      label:
+        en: Sun load sensor 2 failed
+        de: Sonneneinstrahlungssensor 2 defekt
+    - id: sun_load_sensor_wiring
+      likelihood: medium
+      label:
+        en: Wiring or connector fault
+        de: Verkabelungs- oder Steckerfehler
+  repair:
+    difficulty: easy
+    diy_possible: true
+    estimated_cost_eur: [30, 200]
+    estimated_hours: [0.3, 1.5]
+  flags:
+    mil: false
+    emissions_relevant: false
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Automotive_air_conditioning
+
+- code: B0166
+  scope: generic
+  category: body
+  title:
+    en: HVAC Discharge Air Temperature Sensor
+    de: HVAC-Auslasslufttemperatursensor
+  description:
+    en: The HVAC control module reports an implausible signal from the discharge (vent outlet) air temperature sensor. This sensor verifies that the actual outlet air temperature matches the commanded value.
+    de: Das Klima-Steuergerät meldet ein unplausibles Signal vom Auslasslufttemperatursensor. Dieser Sensor prüft, ob die tatsächliche Ausströmtemperatur dem Sollwert entspricht.
+  affected_components:
+    - discharge_air_temp_sensor
+    - hvac_control_module
+  common_causes:
+    - id: discharge_sensor_failed
+      likelihood: high
+      label:
+        en: Discharge air temp sensor failed
+        de: Auslasslufttemperatursensor defekt
+    - id: discharge_sensor_wiring
+      likelihood: medium
+      label:
+        en: Wiring or connector fault
+        de: Verkabelungs- oder Steckerfehler
+  repair:
+    difficulty: medium
+    diy_possible: true
+    estimated_cost_eur: [50, 300]
+    estimated_hours: [0.5, 2.0]
+  flags:
+    mil: false
+    emissions_relevant: false
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Automotive_air_conditioning
+
+- code: B0168
+  scope: generic
+  category: body
+  title:
+    en: HVAC Air Mix Door Performance
+    de: HVAC-Mischklappe Funktionsbereich
+  description:
+    en: The HVAC control module has detected that the air mix (blend) door does not reach the commanded position within the expected time. The blend door regulates the ratio of air through the heater core versus around it.
+    de: Das Klima-Steuergerät hat erkannt, dass die Mischklappe (Blend Door) die angesteuerte Position nicht in der erwarteten Zeit erreicht. Die Klappe regelt den Anteil der Luft durch den Heizungswärmetauscher.
+  affected_components:
+    - air_mix_door_actuator
+    - hvac_control_module
+    - blend_door_linkage
+  common_causes:
+    - id: blend_door_actuator_failed
+      likelihood: high
+      label:
+        en: Blend door actuator motor failed
+        de: Mischklappen-Stellmotor defekt
+    - id: blend_door_binding
+      likelihood: medium
+      label:
+        en: Blend door mechanically binding or broken
+        de: Mischklappe schwergängig oder gebrochen
+  repair:
+    difficulty: medium
+    diy_possible: true
+    estimated_cost_eur: [80, 800]
+    estimated_hours: [0.5, 6.0]
+  flags:
+    mil: false
+    emissions_relevant: false
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Automotive_air_conditioning
+
+- code: B0170
+  scope: generic
+  category: body
+  title:
+    en: HVAC Mode Door Position Sensor
+    de: HVAC-Modusklappen Positionssensor
+  description:
+    en: The HVAC control module reports an implausible position signal from the mode (air distribution) door feedback sensor. Without valid feedback the actuator cannot be regulated to the correct position.
+    de: Das Klima-Steuergerät meldet ein unplausibles Positionssignal vom Rückmeldesensor der Modusklappe. Ohne gültige Rückmeldung kann der Stellmotor nicht korrekt geregelt werden.
+  affected_components:
+    - mode_door_position_sensor
+    - mode_door_actuator
+    - hvac_control_module
+  common_causes:
+    - id: mode_door_position_sensor_failed
+      likelihood: high
+      label:
+        en: Mode door position sensor failed
+        de: Positionssensor der Modusklappe defekt
+    - id: actuator_wiring
+      likelihood: medium
+      label:
+        en: Wiring or connector fault to actuator
+        de: Verkabelungs- oder Steckerfehler am Steller
+  repair:
+    difficulty: medium
+    diy_possible: true
+    estimated_cost_eur: [80, 600]
+    estimated_hours: [0.5, 4.0]
+  flags:
+    mil: false
+    emissions_relevant: false
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Automotive_air_conditioning
+
+- code: B0173
+  scope: generic
+  category: body
+  title:
+    en: HVAC Air Inlet Door
+    de: HVAC-Ansaugklappe
+  description:
+    en: The HVAC control module has detected a fault on the fresh-air/recirculation inlet door — typically a stuck actuator or position feedback out of range.
+    de: Das Klima-Steuergerät hat einen Fehler an der Frischluft/Umluft-Ansaugklappe erkannt — meist ein klemmender Stellmotor oder eine Rückmeldung außerhalb des Bereichs.
+  affected_components:
+    - air_inlet_door_actuator
+    - hvac_control_module
+  common_causes:
+    - id: inlet_actuator_failed
+      likelihood: high
+      label:
+        en: Inlet door actuator failed
+        de: Ansaugklappen-Stellmotor defekt
+    - id: inlet_door_binding
+      likelihood: medium
+      label:
+        en: Inlet door mechanically binding
+        de: Ansaugklappe schwergängig
+  repair:
+    difficulty: medium
+    diy_possible: true
+    estimated_cost_eur: [80, 500]
+    estimated_hours: [0.5, 3.0]
+  flags:
+    mil: false
+    emissions_relevant: false
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Automotive_air_conditioning
+
+- code: B0175
+  scope: generic
+  category: body
+  title:
+    en: HVAC Recirculation Door Performance
+    de: HVAC-Umluftklappe Funktionsbereich
+  description:
+    en: The HVAC control module has detected that the recirculation door does not reach the commanded position within the expected time. The recirc door switches between fresh air and recirculated cabin air.
+    de: Das Klima-Steuergerät hat erkannt, dass die Umluftklappe die angesteuerte Position nicht in der erwarteten Zeit erreicht. Die Klappe schaltet zwischen Frischluft und umgewälzter Innenraumluft.
+  affected_components:
+    - recirculation_door_actuator
+    - hvac_control_module
+  common_causes:
+    - id: recirc_actuator_failed
+      likelihood: high
+      label:
+        en: Recirculation door actuator failed
+        de: Umluftklappen-Stellmotor defekt
+    - id: recirc_door_binding
+      likelihood: medium
+      label:
+        en: Recirculation door mechanically binding
+        de: Umluftklappe schwergängig
+  repair:
+    difficulty: medium
+    diy_possible: true
+    estimated_cost_eur: [80, 500]
+    estimated_hours: [0.5, 3.0]
+  flags:
+    mil: false
+    emissions_relevant: false
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Automotive_air_conditioning
+
+- code: B0181
+  scope: generic
+  category: body
+  title:
+    en: Front Blower Motor Circuit Low
+    de: Vorderer Gebläsemotor Schaltung niedrig
+  description:
+    en: The HVAC control module has detected low voltage or a short to ground in the front blower motor circuit. The blower may run too slow or not at all.
+    de: Das Klima-Steuergerät hat eine zu niedrige Spannung oder einen Masseschluss im Stromkreis des vorderen Gebläsemotors erkannt. Das Gebläse läuft zu langsam oder gar nicht.
+  affected_components:
+    - front_blower_motor
+    - blower_resistor_or_module
+    - hvac_control_module
+  common_causes:
+    - id: blower_motor_worn
+      likelihood: high
+      label:
+        en: Blower motor worn or seized
+        de: Gebläsemotor verschlissen oder fest
+    - id: blower_resistor_failed
+      likelihood: medium
+      label:
+        en: Blower resistor or power module failed
+        de: Gebläsewiderstand oder Leistungsmodul defekt
+    - id: blower_wiring_short
+      likelihood: low
+      label:
+        en: Wiring shorted to ground
+        de: Verkabelung mit Masseschluss
+  repair:
+    difficulty: medium
+    diy_possible: true
+    estimated_cost_eur: [80, 500]
+    estimated_hours: [0.5, 2.5]
+  flags:
+    mil: false
+    emissions_relevant: false
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Automotive_air_conditioning
+
+- code: B0184
+  scope: generic
+  category: body
+  title:
+    en: Rear Blower Motor Circuit
+    de: Hinterer Gebläsemotor Schaltung
+  description:
+    en: The HVAC control module has detected a fault in the rear blower motor circuit, used in vehicles with separate rear climate zones. Symptoms include no rear airflow or rear blower stuck on.
+    de: Das Klima-Steuergerät hat einen Fehler im Stromkreis des hinteren Gebläsemotors erkannt — in Fahrzeugen mit separater Heckklima-Zone. Symptome sind fehlender Heckluftstrom oder dauerhaft laufendes Heckgebläse.
+  affected_components:
+    - rear_blower_motor
+    - rear_blower_resistor
+    - hvac_control_module
+  common_causes:
+    - id: rear_blower_motor_failed
+      likelihood: high
+      label:
+        en: Rear blower motor failed
+        de: Hinterer Gebläsemotor defekt
+    - id: rear_blower_resistor_failed
+      likelihood: medium
+      label:
+        en: Rear blower resistor failed
+        de: Hinterer Gebläsewiderstand defekt
+  repair:
+    difficulty: medium
+    diy_possible: true
+    estimated_cost_eur: [100, 600]
+    estimated_hours: [0.5, 3.0]
+  flags:
+    mil: false
+    emissions_relevant: false
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Automotive_air_conditioning
+
+- code: B0220
+  scope: generic
+  category: body
+  title:
+    en: Front Wiper Motor Speed Circuit
+    de: Vorderer Wischermotor Drehzahl Schaltung
+  description:
+    en: The body control module has detected that the front wiper motor speed feedback does not match the commanded speed. The motor may run only on one speed or not at all.
+    de: Das Karosserie-Steuergerät hat erkannt, dass die Drehzahlrückmeldung des vorderen Wischermotors nicht dem Sollwert entspricht. Der Motor läuft nur auf einer Stufe oder gar nicht.
+  affected_components:
+    - front_wiper_motor
+    - body_control_module
+    - wiper_relay
+  common_causes:
+    - id: wiper_motor_failed
+      likelihood: high
+      label:
+        en: Wiper motor brushes worn
+        de: Wischermotor-Kohlen verschlissen
+    - id: wiper_relay_failed
+      likelihood: medium
+      label:
+        en: Wiper relay failed
+        de: Wischerrelais defekt
+    - id: wiper_wiring
+      likelihood: low
+      label:
+        en: Wiring or connector fault
+        de: Verkabelungs- oder Steckerfehler
+  repair:
+    difficulty: medium
+    diy_possible: true
+    estimated_cost_eur: [80, 450]
+    estimated_hours: [0.5, 2.5]
+  flags:
+    mil: false
+    emissions_relevant: false
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/On-board_diagnostics
+
+- code: B0226
+  scope: generic
+  category: body
+  title:
+    en: Headlamp Auto-Leveling Front Sensor
+    de: Scheinwerfer-Leuchtweitenregulierung Sensor vorn
+  description:
+    en: The body control module reports an implausible signal from the front ride-height sensor used by the automatic headlamp leveling system. Without valid input, the headlamp pitch cannot be corrected for vehicle load.
+    de: Das Karosserie-Steuergerät meldet ein unplausibles Signal vom vorderen Niveausensor der automatischen Leuchtweitenregulierung. Ohne gültige Eingabe kann die Scheinwerferneigung nicht beladungsabhängig korrigiert werden.
+  affected_components:
+    - front_ride_height_sensor
+    - headlamp_leveling_module
+    - body_control_module
+  common_causes:
+    - id: ride_height_sensor_failed
+      likelihood: high
+      label:
+        en: Front ride height sensor failed
+        de: Vorderer Niveausensor defekt
+    - id: ride_height_linkage
+      likelihood: medium
+      label:
+        en: Sensor linkage broken or detached
+        de: Sensorhebel gebrochen oder abgefallen
+  repair:
+    difficulty: medium
+    diy_possible: true
+    estimated_cost_eur: [80, 400]
+    estimated_hours: [0.5, 2.0]
+  flags:
+    mil: false
+    emissions_relevant: false
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/On-board_diagnostics
+
+- code: B0228
+  scope: generic
+  category: body
+  title:
+    en: Front Fog Lamp Circuit
+    de: Nebelscheinwerfer Schaltung
+  description:
+    en: The body control module has detected a fault in the front fog lamp circuit — typically an open bulb, blown fuse, or wiring fault. One or both fog lamps may not work.
+    de: Das Karosserie-Steuergerät hat einen Fehler im Stromkreis der Nebelscheinwerfer erkannt — meist eine durchgebrannte Lampe, eine defekte Sicherung oder ein Verkabelungsfehler. Ein oder beide Nebelscheinwerfer arbeiten nicht.
+  affected_components:
+    - front_fog_lamp
+    - fog_lamp_relay
+    - body_control_module
+  common_causes:
+    - id: fog_lamp_bulb_blown
+      likelihood: high
+      label:
+        en: Fog lamp bulb blown
+        de: Nebelscheinwerferlampe durchgebrannt
+    - id: fog_lamp_fuse
+      likelihood: medium
+      label:
+        en: Fog lamp fuse blown
+        de: Sicherung Nebelscheinwerfer durchgebrannt
+    - id: fog_lamp_wiring
+      likelihood: low
+      label:
+        en: Wiring or connector fault
+        de: Verkabelungs- oder Steckerfehler
+  repair:
+    difficulty: easy
+    diy_possible: true
+    estimated_cost_eur: [20, 200]
+    estimated_hours: [0.2, 1.5]
+  flags:
+    mil: false
+    emissions_relevant: false
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/On-board_diagnostics
+
+- code: B0240
+  scope: generic
+  category: body
+  title:
+    en: Headlamp Switch Circuit
+    de: Lichtschalter Schaltung
+  description:
+    en: The body control module has detected an implausible state at the headlamp switch — for example simultaneous low and high beam request, or no signal at all. Lighting functions may be erratic.
+    de: Das Karosserie-Steuergerät hat einen unplausiblen Zustand am Lichtschalter erkannt — z. B. gleichzeitiges Abblend- und Fernlichtsignal oder kein Signal. Die Lichtfunktionen können unstetig sein.
+  affected_components:
+    - headlamp_switch
+    - body_control_module
+  common_causes:
+    - id: headlamp_switch_failed
+      likelihood: high
+      label:
+        en: Headlamp switch worn or failed
+        de: Lichtschalter verschlissen oder defekt
+    - id: switch_wiring
+      likelihood: medium
+      label:
+        en: Wiring or connector fault
+        de: Verkabelungs- oder Steckerfehler
+  repair:
+    difficulty: medium
+    diy_possible: true
+    estimated_cost_eur: [50, 400]
+    estimated_hours: [0.5, 2.0]
+  flags:
+    mil: false
+    emissions_relevant: false
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/On-board_diagnostics
+
+- code: B0265
+  scope: generic
+  category: body
+  title:
+    en: Driver Door Lock/Unlock Switch Circuit
+    de: Fahrertür Verriegelungs-/Entriegelungsschalter Schaltung
+  description:
+    en: The body control module has detected a fault in the driver door lock/unlock switch on the door panel. Pressing the switch may not lock or unlock the doors.
+    de: Das Karosserie-Steuergerät hat einen Fehler am Verriegelungs-/Entriegelungsschalter in der Fahrertürverkleidung erkannt. Das Drücken des Schalters verriegelt oder entriegelt die Türen nicht.
+  affected_components:
+    - door_lock_switch
+    - body_control_module
+    - door_harness
+  common_causes:
+    - id: lock_switch_failed
+      likelihood: high
+      label:
+        en: Lock/unlock switch failed
+        de: Verriegelungsschalter defekt
+    - id: door_harness_break
+      likelihood: medium
+      label:
+        en: Door harness broken in hinge area
+        de: Türkabelbaum im Scharnierbereich gebrochen
+  repair:
+    difficulty: medium
+    diy_possible: true
+    estimated_cost_eur: [50, 350]
+    estimated_hours: [0.5, 2.0]
+  flags:
+    mil: false
+    emissions_relevant: false
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Power_window
+
+- code: B0270
+  scope: generic
+  category: body
+  title:
+    en: Passenger Door Lock Switch Circuit
+    de: Beifahrertür Verriegelungsschalter Schaltung
+  description:
+    en: Same fault as B0265 but for the passenger door lock switch. Pressing the switch on the passenger door panel does not operate the central locking.
+    de: Gleicher Fehler wie B0265, jedoch für den Verriegelungsschalter der Beifahrertür. Das Drücken des Schalters in der Beifahrertürverkleidung steuert die Zentralverriegelung nicht.
+  affected_components:
+    - door_lock_switch
+    - body_control_module
+    - door_harness
+  common_causes:
+    - id: lock_switch_failed
+      likelihood: high
+      label:
+        en: Lock switch failed
+        de: Verriegelungsschalter defekt
+    - id: door_harness_break
+      likelihood: medium
+      label:
+        en: Door harness broken in hinge area
+        de: Türkabelbaum im Scharnierbereich gebrochen
+  repair:
+    difficulty: medium
+    diy_possible: true
+    estimated_cost_eur: [50, 350]
+    estimated_hours: [0.5, 2.0]
+  flags:
+    mil: false
+    emissions_relevant: false
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Power_window
+
+- code: B0290
+  scope: generic
+  category: body
+  title:
+    en: Rear Defrost Switch Circuit
+    de: Heckscheibenheizungsschalter Schaltung
+  description:
+    en: The body control module has detected a fault in the rear window defroster switch circuit. The switch may be stuck or its signal does not reach the module — the rear defroster cannot be activated.
+    de: Das Karosserie-Steuergerät hat einen Fehler im Stromkreis des Heckscheibenheizungsschalters erkannt. Der Schalter klemmt oder das Signal erreicht das Steuergerät nicht — die Heckscheibenheizung kann nicht aktiviert werden.
+  affected_components:
+    - rear_defrost_switch
+    - body_control_module
+  common_causes:
+    - id: defrost_switch_failed
+      likelihood: high
+      label:
+        en: Defrost switch failed
+        de: Heckscheibenheizungsschalter defekt
+    - id: switch_wiring
+      likelihood: medium
+      label:
+        en: Wiring or connector fault
+        de: Verkabelungs- oder Steckerfehler
+  repair:
+    difficulty: easy
+    diy_possible: true
+    estimated_cost_eur: [30, 200]
+    estimated_hours: [0.3, 1.5]
+  flags:
+    mil: false
+    emissions_relevant: false
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/On-board_diagnostics
+
+- code: B0310
+  scope: generic
+  category: body
+  title:
+    en: Driver Seat Position Sensor Circuit
+    de: Fahrersitz Positionssensor Schaltung
+  description:
+    en: The seat module has detected an implausible signal from the driver seat position sensor. The sensor reports the fore/aft position used for memory seat recall and for SRS occupant logic.
+    de: Das Sitzsteuergerät hat ein unplausibles Signal vom Positionssensor des Fahrersitzes erkannt. Der Sensor meldet die Längsposition für die Memory-Funktion und die SRS-Insassenlogik.
+  affected_components:
+    - seat_position_sensor
+    - seat_control_module
+    - seat_harness
+  common_causes:
+    - id: seat_position_sensor_failed
+      likelihood: high
+      label:
+        en: Seat position sensor failed
+        de: Sitzpositionssensor defekt
+    - id: seat_harness_connector_fault
+      likelihood: medium
+      label:
+        en: Seat harness connector damaged
+        de: Sitzkabelbaum-Stecker beschädigt
+  repair:
+    difficulty: medium
+    diy_possible: true
+    estimated_cost_eur: [80, 500]
+    estimated_hours: [0.5, 2.5]
+  flags:
+    mil: false
+    emissions_relevant: false
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Power_seat
+
+- code: B0312
+  scope: generic
+  category: body
+  title:
+    en: Driver Seat Forward/Back Switch Circuit
+    de: Fahrersitz Vor-/Rück-Schalter Schaltung
+  description:
+    en: The seat module has detected a fault in the fore/aft adjustment switch on the driver seat. Manual adjustment of the seat position may be limited or not work at all.
+    de: Das Sitzsteuergerät hat einen Fehler am Vor-/Rück-Verstellschalter des Fahrersitzes erkannt. Die manuelle Verstellung der Sitzposition kann eingeschränkt sein oder gar nicht funktionieren.
+  affected_components:
+    - seat_adjust_switch
+    - seat_control_module
+  common_causes:
+    - id: seat_switch_failed
+      likelihood: high
+      label:
+        en: Seat adjustment switch failed
+        de: Sitzverstellschalter defekt
+    - id: switch_wiring
+      likelihood: medium
+      label:
+        en: Wiring or connector fault
+        de: Verkabelungs- oder Steckerfehler
+  repair:
+    difficulty: medium
+    diy_possible: true
+    estimated_cost_eur: [50, 400]
+    estimated_hours: [0.5, 2.0]
+  flags:
+    mil: false
+    emissions_relevant: false
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Power_seat
+
+- code: B0320
+  scope: generic
+  category: body
+  title:
+    en: Passenger Seat Position Sensor Circuit
+    de: Beifahrersitz Positionssensor Schaltung
+  description:
+    en: Same fault as B0310 but for the passenger seat position sensor. The sensor signal is implausible — memory recall and occupant classification may be impaired.
+    de: Gleicher Fehler wie B0310, jedoch für den Positionssensor des Beifahrersitzes. Das Signal ist unplausibel — Memory-Funktion und Insassenerkennung können beeinträchtigt sein.
+  affected_components:
+    - seat_position_sensor
+    - seat_control_module
+    - seat_harness
+  common_causes:
+    - id: seat_position_sensor_failed
+      likelihood: high
+      label:
+        en: Seat position sensor failed
+        de: Sitzpositionssensor defekt
+    - id: seat_harness_connector_fault
+      likelihood: medium
+      label:
+        en: Seat harness connector damaged
+        de: Sitzkabelbaum-Stecker beschädigt
+  repair:
+    difficulty: medium
+    diy_possible: true
+    estimated_cost_eur: [80, 500]
+    estimated_hours: [0.5, 2.5]
+  flags:
+    mil: false
+    emissions_relevant: false
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Power_seat
+
+- code: B0420
+  scope: generic
+  category: body
+  title:
+    en: Audio System Internal Failure
+    de: Audiosystem interner Fehler
+  description:
+    en: The audio head unit reports an internal self-test failure. Symptoms include silent output, frozen display, or repeated reboots of the infotainment system.
+    de: Das Audio-Hauptgerät meldet einen Fehler im internen Selbsttest. Symptome sind stummer Ausgang, eingefrorenes Display oder wiederholte Neustarts des Infotainmentsystems.
+  affected_components:
+    - audio_head_unit
+    - infotainment_module
+  common_causes:
+    - id: head_unit_internal
+      likelihood: high
+      label:
+        en: Head unit internal fault
+        de: Hauptgerät interner Fehler
+    - id: software_update_required
+      likelihood: medium
+      label:
+        en: Software update required
+        de: Software-Update erforderlich
+  repair:
+    difficulty: medium
+    diy_possible: false
+    estimated_cost_eur: [200, 2000]
+    estimated_hours: [0.5, 3.0]
+  flags:
+    mil: false
+    emissions_relevant: false
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/On-board_diagnostics
+
+- code: B0455
+  scope: generic
+  category: body
+  title:
+    en: Display Module Internal Failure
+    de: Anzeigemodul interner Fehler
+  description:
+    en: The instrument cluster or central display module reports an internal self-test failure. Pixels may be missing, the screen may stay dark, or warning indicators may not display correctly.
+    de: Das Kombiinstrument oder zentrale Anzeigemodul meldet einen Fehler im internen Selbsttest. Pixel können fehlen, der Bildschirm bleibt dunkel oder Warnsymbole werden nicht korrekt angezeigt.
+  affected_components:
+    - display_module
+    - instrument_cluster
+  common_causes:
+    - id: display_internal
+      likelihood: high
+      label:
+        en: Display module internal fault
+        de: Anzeigemodul interner Fehler
+    - id: power_ground_fault
+      likelihood: medium
+      label:
+        en: Power supply or ground fault
+        de: Versorgungs- oder Massefehler
+  repair:
+    difficulty: medium
+    diy_possible: false
+    estimated_cost_eur: [200, 1500]
+    estimated_hours: [0.5, 2.5]
+  flags:
+    mil: false
+    emissions_relevant: false
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/On-board_diagnostics

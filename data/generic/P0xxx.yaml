@@ -6695,3 +6695,3177 @@
     - sae:J2012
   sources:
     - https://en.wikipedia.org/wiki/Automatic_transmission
+
+
+- code: P0026
+  scope: generic
+  category: powertrain
+  title:
+    en: Intake Valve Control Solenoid Circuit Range/Performance (Bank 1)
+    de: Einlassventil-Steuermagnetventil — Bereich/Leistung (Bank 1)
+  description:
+    en: The ECU detected that the bank 1 intake valve oil control solenoid does not respond as expected. Common causes are sludge in the oil passages, a sticking solenoid, or low oil pressure that prevents proper VVT phasing on the intake side.
+    de: Die Motorsteuerung erkennt, dass das Ölsteuerventil der Einlassnockenwelle Bank 1 nicht wie erwartet reagiert. Übliche Ursachen — Verschlammung der Ölkanäle, hängendes Magnetventil oder zu geringer Öldruck, der die Phasenverstellung der Einlassseite behindert.
+  affected_components:
+    - oil_control_valve
+    - camshaft_position_actuator
+    - engine_oil
+  common_causes:
+    - id: oil_control_valve_stuck
+      likelihood: high
+      label:
+        en: Oil control valve mechanically stuck
+        de: Ölsteuerventil mechanisch hängend
+    - id: oil_sludge
+      likelihood: medium
+      label:
+        en: Sludge or debris in oil passages
+        de: Verschlammung oder Späne in den Ölkanälen
+    - id: low_oil_pressure
+      likelihood: medium
+      label:
+        en: Low oil pressure or wrong oil viscosity
+        de: Niedriger Öldruck oder falsche Ölviskosität
+  repair:
+    difficulty: medium
+    diy_possible: true
+    estimated_cost_eur: [80, 600]
+    estimated_hours: [0.5, 3.0]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Variable_valve_timing
+
+- code: P0028
+  scope: generic
+  category: powertrain
+  title:
+    en: Intake Valve Control Solenoid Circuit Range/Performance (Bank 2)
+    de: Einlassventil-Steuermagnetventil — Bereich/Leistung (Bank 2)
+  description:
+    en: Same fault as P0026 but on bank 2 of the engine. Diagnosis is identical and on V-engines the bank with code P0028 is the side opposite cylinder 1.
+    de: Gleicher Fehler wie P0026, jedoch an Bank 2 des Motors. Diagnose entspricht P0026; bei V-Motoren ist Bank 2 die Bank gegenüber Zylinder 1.
+  affected_components:
+    - oil_control_valve
+    - camshaft_position_actuator
+    - engine_oil
+  common_causes:
+    - id: oil_control_valve_stuck
+      likelihood: high
+      label:
+        en: Oil control valve mechanically stuck
+        de: Ölsteuerventil mechanisch hängend
+    - id: oil_sludge
+      likelihood: medium
+      label:
+        en: Sludge or debris in oil passages
+        de: Verschlammung oder Späne in den Ölkanälen
+  repair:
+    difficulty: medium
+    diy_possible: true
+    estimated_cost_eur: [80, 600]
+    estimated_hours: [0.5, 3.0]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+  related_codes: [P0026]
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Variable_valve_timing
+
+- code: P0205
+  scope: generic
+  category: powertrain
+  title:
+    en: Injector Circuit Malfunction — Cylinder 5
+    de: Injektor Schaltung Fehlfunktion — Zylinder 5
+  description:
+    en: Same fault as P0201 but on cylinder 5.
+    de: Gleicher Fehler wie P0201, aber an Zylinder 5.
+  affected_components:
+    - fuel_injector
+    - injector_wiring
+  common_causes:
+    - id: injector_winding_open
+      likelihood: high
+      label:
+        en: Injector winding failed open
+        de: Injektorwicklung unterbrochen
+    - id: injector_wiring
+      likelihood: medium
+      label:
+        en: Wiring or connector fault
+        de: Kabel- oder Steckerfehler
+  repair:
+    difficulty: medium
+    diy_possible: true
+    estimated_cost_eur: [80, 600]
+    estimated_hours: [0.5, 3.5]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+  related_codes: [P0201]
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Fuel_injection
+
+- code: P0206
+  scope: generic
+  category: powertrain
+  title:
+    en: Injector Circuit Malfunction — Cylinder 6
+    de: Injektor Schaltung Fehlfunktion — Zylinder 6
+  description:
+    en: Same fault as P0201 but on cylinder 6.
+    de: Gleicher Fehler wie P0201, aber an Zylinder 6.
+  affected_components:
+    - fuel_injector
+    - injector_wiring
+  common_causes:
+    - id: injector_winding_open
+      likelihood: high
+      label:
+        en: Injector winding failed open
+        de: Injektorwicklung unterbrochen
+    - id: injector_wiring
+      likelihood: medium
+      label:
+        en: Wiring or connector fault
+        de: Kabel- oder Steckerfehler
+  repair:
+    difficulty: medium
+    diy_possible: true
+    estimated_cost_eur: [80, 600]
+    estimated_hours: [0.5, 3.5]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+  related_codes: [P0201]
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Fuel_injection
+
+- code: P0207
+  scope: generic
+  category: powertrain
+  title:
+    en: Injector Circuit Malfunction — Cylinder 7
+    de: Injektor Schaltung Fehlfunktion — Zylinder 7
+  description:
+    en: Same fault as P0201 but on cylinder 7.
+    de: Gleicher Fehler wie P0201, aber an Zylinder 7.
+  affected_components:
+    - fuel_injector
+    - injector_wiring
+  common_causes:
+    - id: injector_winding_open
+      likelihood: high
+      label:
+        en: Injector winding failed open
+        de: Injektorwicklung unterbrochen
+    - id: injector_wiring
+      likelihood: medium
+      label:
+        en: Wiring or connector fault
+        de: Kabel- oder Steckerfehler
+  repair:
+    difficulty: medium
+    diy_possible: true
+    estimated_cost_eur: [80, 600]
+    estimated_hours: [0.5, 3.5]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+  related_codes: [P0201]
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Fuel_injection
+
+- code: P0208
+  scope: generic
+  category: powertrain
+  title:
+    en: Injector Circuit Malfunction — Cylinder 8
+    de: Injektor Schaltung Fehlfunktion — Zylinder 8
+  description:
+    en: Same fault as P0201 but on cylinder 8.
+    de: Gleicher Fehler wie P0201, aber an Zylinder 8.
+  affected_components:
+    - fuel_injector
+    - injector_wiring
+  common_causes:
+    - id: injector_winding_open
+      likelihood: high
+      label:
+        en: Injector winding failed open
+        de: Injektorwicklung unterbrochen
+    - id: injector_wiring
+      likelihood: medium
+      label:
+        en: Wiring or connector fault
+        de: Kabel- oder Steckerfehler
+  repair:
+    difficulty: medium
+    diy_possible: true
+    estimated_cost_eur: [80, 600]
+    estimated_hours: [0.5, 3.5]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+  related_codes: [P0201]
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Fuel_injection
+
+- code: P0209
+  scope: generic
+  category: powertrain
+  title:
+    en: Injector Circuit Malfunction — Cylinder 9
+    de: Injektor Schaltung Fehlfunktion — Zylinder 9
+  description:
+    en: Same fault as P0201 but on cylinder 9 (V10/V12 engines).
+    de: Gleicher Fehler wie P0201, aber an Zylinder 9 (V10/V12 Motoren).
+  affected_components:
+    - fuel_injector
+    - injector_wiring
+  common_causes:
+    - id: injector_winding_open
+      likelihood: high
+      label:
+        en: Injector winding failed open
+        de: Injektorwicklung unterbrochen
+    - id: injector_wiring
+      likelihood: medium
+      label:
+        en: Wiring or connector fault
+        de: Kabel- oder Steckerfehler
+  repair:
+    difficulty: medium
+    diy_possible: true
+    estimated_cost_eur: [80, 600]
+    estimated_hours: [0.5, 3.5]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+  related_codes: [P0201]
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Fuel_injection
+
+- code: P0210
+  scope: generic
+  category: powertrain
+  title:
+    en: Injector Circuit Malfunction — Cylinder 10
+    de: Injektor Schaltung Fehlfunktion — Zylinder 10
+  description:
+    en: Same fault as P0201 but on cylinder 10 (V10/V12 engines).
+    de: Gleicher Fehler wie P0201, aber an Zylinder 10 (V10/V12 Motoren).
+  affected_components:
+    - fuel_injector
+    - injector_wiring
+  common_causes:
+    - id: injector_winding_open
+      likelihood: high
+      label:
+        en: Injector winding failed open
+        de: Injektorwicklung unterbrochen
+    - id: injector_wiring
+      likelihood: medium
+      label:
+        en: Wiring or connector fault
+        de: Kabel- oder Steckerfehler
+  repair:
+    difficulty: medium
+    diy_possible: true
+    estimated_cost_eur: [80, 600]
+    estimated_hours: [0.5, 3.5]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+  related_codes: [P0201]
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Fuel_injection
+
+- code: P0211
+  scope: generic
+  category: powertrain
+  title:
+    en: Injector Circuit Malfunction — Cylinder 11
+    de: Injektor Schaltung Fehlfunktion — Zylinder 11
+  description:
+    en: Same fault as P0201 but on cylinder 11 (V12 engines).
+    de: Gleicher Fehler wie P0201, aber an Zylinder 11 (V12 Motoren).
+  affected_components:
+    - fuel_injector
+    - injector_wiring
+  common_causes:
+    - id: injector_winding_open
+      likelihood: high
+      label:
+        en: Injector winding failed open
+        de: Injektorwicklung unterbrochen
+    - id: injector_wiring
+      likelihood: medium
+      label:
+        en: Wiring or connector fault
+        de: Kabel- oder Steckerfehler
+  repair:
+    difficulty: medium
+    diy_possible: true
+    estimated_cost_eur: [80, 600]
+    estimated_hours: [0.5, 3.5]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+  related_codes: [P0201]
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Fuel_injection
+
+- code: P0212
+  scope: generic
+  category: powertrain
+  title:
+    en: Injector Circuit Malfunction — Cylinder 12
+    de: Injektor Schaltung Fehlfunktion — Zylinder 12
+  description:
+    en: Same fault as P0201 but on cylinder 12 (V12 engines).
+    de: Gleicher Fehler wie P0201, aber an Zylinder 12 (V12 Motoren).
+  affected_components:
+    - fuel_injector
+    - injector_wiring
+  common_causes:
+    - id: injector_winding_open
+      likelihood: high
+      label:
+        en: Injector winding failed open
+        de: Injektorwicklung unterbrochen
+    - id: injector_wiring
+      likelihood: medium
+      label:
+        en: Wiring or connector fault
+        de: Kabel- oder Steckerfehler
+  repair:
+    difficulty: medium
+    diy_possible: true
+    estimated_cost_eur: [80, 600]
+    estimated_hours: [0.5, 3.5]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+  related_codes: [P0201]
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Fuel_injection
+
+- code: P0218
+  scope: generic
+  category: powertrain
+  title:
+    en: Transmission Fluid Over Temperature
+    de: Getriebeöl Übertemperatur
+  description:
+    en: The TCM/PCM detected that automatic transmission fluid temperature exceeded the safe operating threshold. Continued operation accelerates wear on clutches and friction surfaces; many vehicles will engage a fail-safe mode and limit gear selection.
+    de: Das TCM/PCM hat erkannt, dass die ATF-Temperatur den sicheren Betriebsbereich überschritten hat. Längerer Betrieb beschleunigt den Verschleiß von Kupplungen und Reibflächen; viele Fahrzeuge schalten in einen Notlauf und begrenzen die Gangwahl.
+  affected_components:
+    - transmission_fluid
+    - transmission_cooler
+    - transmission_temperature_sensor
+  common_causes:
+    - id: low_atf_or_old_atf
+      likelihood: high
+      label:
+        en: Low or degraded transmission fluid
+        de: Zu wenig oder verbrauchtes Getriebeöl
+    - id: cooler_blocked
+      likelihood: medium
+      label:
+        en: Transmission cooler blocked or restricted
+        de: Getriebeölkühler verstopft
+    - id: heavy_load_towing
+      likelihood: medium
+      label:
+        en: Sustained heavy load or towing
+        de: Dauerlast oder Anhängerbetrieb
+  repair:
+    difficulty: medium
+    diy_possible: true
+    estimated_cost_eur: [50, 800]
+    estimated_hours: [0.5, 4.0]
+  flags:
+    mil: true
+    emissions_relevant: false
+    limp_mode_possible: true
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Automatic_transmission
+
+- code: P0219
+  scope: generic
+  category: powertrain
+  title:
+    en: Engine Overspeed Condition
+    de: Motorüberdrehzahl
+  description:
+    en: The ECU recorded an engine speed above the manufacturer's redline limit. Typical causes are missed downshifts, mis-shifts on a manual gearbox, or runaway diesel events. The code is informational but may trigger fuel cut-off and protective derate.
+    de: Die Motorsteuerung hat eine Drehzahl oberhalb der Werks-Drehzahlgrenze gespeichert. Typische Ursachen — Fehlschaltung beim Schaltgetriebe, falsche Rückschaltung oder Diesel-Durchgehen. Der Code ist informativ, kann aber Kraftstoffabschaltung und Notlauf auslösen.
+  affected_components:
+    - engine
+    - crankshaft_position_sensor
+  common_causes:
+    - id: missed_downshift
+      likelihood: high
+      label:
+        en: Missed downshift on manual transmission
+        de: Fehlschaltung am Schaltgetriebe
+    - id: cps_signal_glitch
+      likelihood: low
+      label:
+        en: Crankshaft sensor signal spike
+        de: Signalspitze am Kurbelwellensensor
+  repair:
+    difficulty: easy
+    diy_possible: true
+    estimated_cost_eur: [0, 200]
+    estimated_hours: [0.0, 1.0]
+  flags:
+    mil: false
+    emissions_relevant: false
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Engine_control_unit
+
+- code: P0220
+  scope: generic
+  category: powertrain
+  title:
+    en: Throttle/Pedal Position Sensor/Switch "B" Circuit
+    de: Drosselklappen-/Pedalstellungssensor "B" Schaltung
+  description:
+    en: A general electrical fault was detected in the secondary (B) throttle or pedal position sensor circuit. Modern drive-by-wire systems use redundant TPS tracks; the ECU compares them and flags this code on the B channel when out of range.
+    de: Allgemeiner elektrischer Fehler im sekundären (B) Drosselklappen- oder Pedalstellungssensor-Stromkreis. Moderne E-Gas-Systeme nutzen redundante TPS-Spuren; die Motorsteuerung vergleicht sie und setzt diesen Code für den Kanal B bei Werten außerhalb des Bereichs.
+  affected_components:
+    - throttle_position_sensor_b
+    - pedal_position_sensor
+    - tps_wiring
+  common_causes:
+    - id: tps_b_failed
+      likelihood: high
+      label:
+        en: TPS B element failed
+        de: TPS-Spur B defekt
+    - id: tps_wiring_fault
+      likelihood: medium
+      label:
+        en: Wiring or connector fault
+        de: Kabel- oder Steckerfehler
+  repair:
+    difficulty: medium
+    diy_possible: true
+    estimated_cost_eur: [80, 500]
+    estimated_hours: [0.3, 2.0]
+  flags:
+    mil: true
+    emissions_relevant: true
+    limp_mode_possible: true
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Throttle_position_sensor
+
+- code: P0221
+  scope: generic
+  category: powertrain
+  title:
+    en: Throttle/Pedal Position Sensor/Switch "B" Range/Performance
+    de: Drosselklappen-/Pedalstellungssensor "B" Bereich/Leistung
+  description:
+    en: The B channel of the throttle or pedal position sensor reports values that do not correlate with the A channel or with engine load. Often caused by mechanical wear in the resistive track or by a sticking pedal/throttle plate.
+    de: Der Kanal B des Drosselklappen- oder Pedalstellungssensors meldet Werte, die nicht mit Kanal A oder der Motorlast übereinstimmen. Häufige Ursache — mechanischer Verschleiß der Widerstandsbahn oder hängendes Pedal/Drosselklappe.
+  affected_components:
+    - throttle_position_sensor_b
+    - throttle_body
+  common_causes:
+    - id: tps_track_worn
+      likelihood: high
+      label:
+        en: Resistive track worn
+        de: Widerstandsbahn verschlissen
+    - id: throttle_body_sticking
+      likelihood: medium
+      label:
+        en: Throttle plate sticking
+        de: Drosselklappe hängend
+  repair:
+    difficulty: medium
+    diy_possible: true
+    estimated_cost_eur: [80, 600]
+    estimated_hours: [0.3, 2.5]
+  flags:
+    mil: true
+    emissions_relevant: true
+    limp_mode_possible: true
+  related_codes: [P0220]
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Throttle_position_sensor
+
+- code: P0222
+  scope: generic
+  category: powertrain
+  title:
+    en: Throttle/Pedal Position Sensor/Switch "B" Circuit Low Input
+    de: Drosselklappen-/Pedalstellungssensor "B" Schaltung niedriger Eingang
+  description:
+    en: The B channel voltage is below the lower diagnostic threshold, suggesting an open circuit, short to ground, or sensor element failure on track B.
+    de: Die Spannung des Kanals B liegt unter dem unteren Diagnoseschwellwert — Hinweis auf Unterbrechung, Kurzschluss gegen Masse oder Defekt der Sensorbahn B.
+  affected_components:
+    - throttle_position_sensor_b
+    - tps_wiring
+  common_causes:
+    - id: tps_b_open
+      likelihood: high
+      label:
+        en: TPS B circuit open or shorted to ground
+        de: TPS-B Stromkreis offen oder Masseschluss
+    - id: tps_wiring_fault
+      likelihood: medium
+      label:
+        en: Wiring or connector fault
+        de: Kabel- oder Steckerfehler
+  repair:
+    difficulty: medium
+    diy_possible: true
+    estimated_cost_eur: [60, 400]
+    estimated_hours: [0.3, 2.0]
+  flags:
+    mil: true
+    emissions_relevant: true
+    limp_mode_possible: true
+  related_codes: [P0220]
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Throttle_position_sensor
+
+- code: P0223
+  scope: generic
+  category: powertrain
+  title:
+    en: Throttle/Pedal Position Sensor/Switch "B" Circuit High Input
+    de: Drosselklappen-/Pedalstellungssensor "B" Schaltung hoher Eingang
+  description:
+    en: The B channel voltage is above the upper diagnostic threshold, typically caused by a short to supply voltage or a defective sensor.
+    de: Die Spannung des Kanals B liegt über dem oberen Diagnoseschwellwert — typische Ursache ist ein Kurzschluss gegen Versorgung oder ein defekter Sensor.
+  affected_components:
+    - throttle_position_sensor_b
+    - tps_wiring
+  common_causes:
+    - id: tps_b_short_to_supply
+      likelihood: high
+      label:
+        en: TPS B circuit shorted to supply voltage
+        de: TPS-B Stromkreis Kurzschluss gegen Versorgung
+    - id: tps_b_failed
+      likelihood: medium
+      label:
+        en: TPS B element failed
+        de: TPS-Spur B defekt
+  repair:
+    difficulty: medium
+    diy_possible: true
+    estimated_cost_eur: [60, 400]
+    estimated_hours: [0.3, 2.0]
+  flags:
+    mil: true
+    emissions_relevant: true
+    limp_mode_possible: true
+  related_codes: [P0220]
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Throttle_position_sensor
+
+- code: P0235
+  scope: generic
+  category: powertrain
+  title:
+    en: Turbocharger/Supercharger Boost Sensor "A" Circuit
+    de: Lader-Ladedrucksensor "A" Schaltung
+  description:
+    en: The ECU detected an electrical fault in the primary (A) boost pressure sensor circuit. The signal does not match plausibility checks against MAP, RPM, and load. With no boost feedback, the ECU typically limits boost via the wastegate.
+    de: Die Motorsteuerung erkennt einen elektrischen Fehler am primären (A) Ladedrucksensor. Das Signal besteht die Plausibilitätsprüfung gegenüber MAP, Drehzahl und Last nicht. Ohne Ladedruck-Rückmeldung begrenzt die Steuerung üblicherweise den Ladedruck über das Wastegate.
+  affected_components:
+    - boost_pressure_sensor
+    - boost_sensor_wiring
+    - turbocharger
+  common_causes:
+    - id: boost_sensor_failed
+      likelihood: high
+      label:
+        en: Boost pressure sensor failed
+        de: Ladedrucksensor defekt
+    - id: sensor_wiring_fault
+      likelihood: medium
+      label:
+        en: Wiring or connector fault
+        de: Kabel- oder Steckerfehler
+  repair:
+    difficulty: medium
+    diy_possible: true
+    estimated_cost_eur: [80, 400]
+    estimated_hours: [0.3, 2.0]
+  flags:
+    mil: true
+    emissions_relevant: true
+    limp_mode_possible: true
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Turbocharger
+
+- code: P0236
+  scope: generic
+  category: powertrain
+  title:
+    en: Turbocharger/Supercharger Boost Sensor "A" Circuit Range/Performance
+    de: Lader-Ladedrucksensor "A" Bereich/Leistung
+  description:
+    en: The boost pressure A signal stays within electrical limits but does not match expected values for the current operating point. Typical causes are leaking charge piping, a stuck wastegate, or sensor drift.
+    de: Das Ladedrucksignal A bleibt elektrisch im gültigen Bereich, weicht aber von den erwarteten Werten für den aktuellen Betriebspunkt ab. Typische Ursachen — Ladeluftleitung undicht, hängendes Wastegate oder Sensordrift.
+  affected_components:
+    - boost_pressure_sensor
+    - charge_air_piping
+    - wastegate
+  common_causes:
+    - id: charge_pipe_leak
+      likelihood: high
+      label:
+        en: Charge air piping leaking
+        de: Ladeluftleitung undicht
+    - id: wastegate_stuck
+      likelihood: medium
+      label:
+        en: Wastegate stuck or seized
+        de: Wastegate hängend oder fest
+    - id: sensor_drift
+      likelihood: low
+      label:
+        en: Sensor drift
+        de: Sensordrift
+  repair:
+    difficulty: medium
+    diy_possible: true
+    estimated_cost_eur: [80, 800]
+    estimated_hours: [0.5, 3.5]
+  flags:
+    mil: true
+    emissions_relevant: true
+    limp_mode_possible: true
+  related_codes: [P0235]
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Turbocharger
+
+- code: P0237
+  scope: generic
+  category: powertrain
+  title:
+    en: Turbocharger/Supercharger Boost Sensor "A" Circuit Low
+    de: Lader-Ladedrucksensor "A" Schaltung niedrig
+  description:
+    en: The boost pressure A signal voltage is below the lower diagnostic threshold — open circuit, short to ground, or sensor element failure.
+    de: Die Spannung des Ladedrucksensors A liegt unter dem unteren Diagnoseschwellwert — Unterbrechung, Kurzschluss gegen Masse oder Sensordefekt.
+  affected_components:
+    - boost_pressure_sensor
+    - boost_sensor_wiring
+  common_causes:
+    - id: boost_sensor_short_ground
+      likelihood: high
+      label:
+        en: Sensor circuit shorted to ground or open
+        de: Sensorstromkreis Masseschluss oder Unterbrechung
+    - id: boost_sensor_failed
+      likelihood: medium
+      label:
+        en: Boost pressure sensor failed
+        de: Ladedrucksensor defekt
+  repair:
+    difficulty: medium
+    diy_possible: true
+    estimated_cost_eur: [60, 400]
+    estimated_hours: [0.3, 2.0]
+  flags:
+    mil: true
+    emissions_relevant: true
+    limp_mode_possible: true
+  related_codes: [P0235]
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Turbocharger
+
+- code: P0238
+  scope: generic
+  category: powertrain
+  title:
+    en: Turbocharger/Supercharger Boost Sensor "A" Circuit High
+    de: Lader-Ladedrucksensor "A" Schaltung hoch
+  description:
+    en: The boost pressure A signal voltage is above the upper diagnostic threshold — short to supply voltage or defective sensor.
+    de: Die Spannung des Ladedrucksensors A liegt über dem oberen Diagnoseschwellwert — Kurzschluss gegen Versorgung oder defekter Sensor.
+  affected_components:
+    - boost_pressure_sensor
+    - boost_sensor_wiring
+  common_causes:
+    - id: boost_sensor_short_supply
+      likelihood: high
+      label:
+        en: Sensor circuit shorted to supply voltage
+        de: Sensorstromkreis Kurzschluss gegen Versorgung
+    - id: boost_sensor_failed
+      likelihood: medium
+      label:
+        en: Boost pressure sensor failed
+        de: Ladedrucksensor defekt
+  repair:
+    difficulty: medium
+    diy_possible: true
+    estimated_cost_eur: [60, 400]
+    estimated_hours: [0.3, 2.0]
+  flags:
+    mil: true
+    emissions_relevant: true
+    limp_mode_possible: true
+  related_codes: [P0235]
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Turbocharger
+
+- code: P0245
+  scope: generic
+  category: powertrain
+  title:
+    en: Turbocharger/Supercharger Wastegate Solenoid "A" Low
+    de: Lader-Wastegate-Magnetventil "A" niedrig
+  description:
+    en: The ECU detected the wastegate control solenoid A circuit voltage below the lower threshold — typically open winding or short to ground. With the solenoid inactive, the wastegate either stays open (no boost) or fully closed (overboost), depending on system layout.
+    de: Die Motorsteuerung erkennt am Stellmagneten A des Wastegates eine Spannung unter dem unteren Schwellwert — meist offene Wicklung oder Masseschluss. Ohne Magnetventil bleibt das Wastegate offen (kein Ladedruck) oder ganz geschlossen (Überdruck), je nach Systemauslegung.
+  affected_components:
+    - wastegate_solenoid
+    - solenoid_wiring
+    - turbocharger
+  common_causes:
+    - id: wastegate_solenoid_open
+      likelihood: high
+      label:
+        en: Solenoid winding open
+        de: Magnetwicklung unterbrochen
+    - id: solenoid_wiring_fault
+      likelihood: medium
+      label:
+        en: Wiring or connector fault
+        de: Kabel- oder Steckerfehler
+  repair:
+    difficulty: medium
+    diy_possible: true
+    estimated_cost_eur: [80, 500]
+    estimated_hours: [0.3, 2.5]
+  flags:
+    mil: true
+    emissions_relevant: true
+    limp_mode_possible: true
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Turbocharger
+
+- code: P0246
+  scope: generic
+  category: powertrain
+  title:
+    en: Turbocharger/Supercharger Wastegate Solenoid "A" High
+    de: Lader-Wastegate-Magnetventil "A" hoch
+  description:
+    en: Same fault as P0245 but circuit voltage above upper threshold — short to supply or defective solenoid driver in the ECU.
+    de: Gleicher Fehler wie P0245, jedoch Spannung über dem oberen Schwellwert — Kurzschluss gegen Versorgung oder defekte Endstufe im Steuergerät.
+  affected_components:
+    - wastegate_solenoid
+    - solenoid_wiring
+  common_causes:
+    - id: wastegate_solenoid_short_supply
+      likelihood: high
+      label:
+        en: Solenoid circuit shorted to supply
+        de: Stromkreis Kurzschluss gegen Versorgung
+    - id: ecu_driver_failed
+      likelihood: low
+      label:
+        en: ECU driver damaged
+        de: Endstufe im Steuergerät beschädigt
+  repair:
+    difficulty: medium
+    diy_possible: true
+    estimated_cost_eur: [80, 500]
+    estimated_hours: [0.3, 2.5]
+  flags:
+    mil: true
+    emissions_relevant: true
+    limp_mode_possible: true
+  related_codes: [P0245]
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Turbocharger
+
+- code: P0261
+  scope: generic
+  category: powertrain
+  title:
+    en: Cylinder 1 Injector Circuit Low
+    de: Zylinder 1 Injektorstromkreis niedrig
+  description:
+    en: The cylinder 1 injector control circuit voltage is below the lower diagnostic threshold — open winding, short to ground, or wiring fault. The ECU disables the injector to protect the driver stage.
+    de: Die Spannung im Steuerkreis des Injektors Zylinder 1 liegt unter dem unteren Schwellwert — offene Wicklung, Masseschluss oder Kabelfehler. Die Motorsteuerung deaktiviert den Injektor zum Schutz der Endstufe.
+  affected_components:
+    - fuel_injector
+    - injector_wiring
+    - ecu_injector_driver
+  common_causes:
+    - id: injector_winding_open
+      likelihood: high
+      label:
+        en: Injector winding failed open
+        de: Injektorwicklung unterbrochen
+    - id: injector_wiring
+      likelihood: medium
+      label:
+        en: Wiring or connector fault
+        de: Kabel- oder Steckerfehler
+  repair:
+    difficulty: medium
+    diy_possible: true
+    estimated_cost_eur: [80, 500]
+    estimated_hours: [0.5, 3.0]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Fuel_injection
+
+- code: P0262
+  scope: generic
+  category: powertrain
+  title:
+    en: Cylinder 1 Injector Circuit High
+    de: Zylinder 1 Injektorstromkreis hoch
+  description:
+    en: Same fault as P0261 but circuit voltage above the upper diagnostic threshold — short to supply or defective driver.
+    de: Gleicher Fehler wie P0261, jedoch Spannung über dem oberen Schwellwert — Kurzschluss gegen Versorgung oder defekte Endstufe.
+  affected_components:
+    - fuel_injector
+    - injector_wiring
+  common_causes:
+    - id: injector_short_supply
+      likelihood: high
+      label:
+        en: Injector circuit shorted to supply
+        de: Stromkreis Kurzschluss gegen Versorgung
+    - id: injector_wiring
+      likelihood: medium
+      label:
+        en: Wiring or connector fault
+        de: Kabel- oder Steckerfehler
+  repair:
+    difficulty: medium
+    diy_possible: true
+    estimated_cost_eur: [80, 500]
+    estimated_hours: [0.5, 3.0]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+  related_codes: [P0261]
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Fuel_injection
+
+- code: P0263
+  scope: generic
+  category: powertrain
+  title:
+    en: Cylinder 1 Contribution/Balance Fault
+    de: Zylinder 1 Beitrag/Balance Fehler
+  description:
+    en: The ECU compares each cylinder's contribution to crankshaft speed (rough run analysis) and determined cylinder 1 contributes less or more than the average. This points to a mechanical or fuel delivery problem rather than a pure ignition fault.
+    de: Die Motorsteuerung vergleicht den Beitrag jedes Zylinders zur Kurbelwellendrehzahl (Laufruhenanalyse) und stellt fest, dass Zylinder 1 weniger oder mehr beiträgt als der Durchschnitt. Hinweis auf mechanisches Problem oder Kraftstoffversorgungsfehler statt reiner Zündungsfehler.
+  affected_components:
+    - fuel_injector
+    - cylinder_compression
+    - intake_valve
+  common_causes:
+    - id: injector_clogged
+      likelihood: high
+      label:
+        en: Injector clogged or worn
+        de: Injektor verstopft oder verschlissen
+    - id: low_compression
+      likelihood: medium
+      label:
+        en: Low compression on cylinder
+        de: Niedrige Kompression am Zylinder
+    - id: intake_leak_local
+      likelihood: low
+      label:
+        en: Localized intake leak
+        de: Örtliches Ansaugleck
+  repair:
+    difficulty: hard
+    diy_possible: false
+    estimated_cost_eur: [100, 1500]
+    estimated_hours: [1.0, 6.0]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Fuel_injection
+
+- code: P0264
+  scope: generic
+  category: powertrain
+  title:
+    en: Cylinder 2 Injector Circuit Low
+    de: Zylinder 2 Injektorstromkreis niedrig
+  description:
+    en: Same fault as P0261 but on cylinder 2.
+    de: Gleicher Fehler wie P0261, aber an Zylinder 2.
+  affected_components:
+    - fuel_injector
+    - injector_wiring
+  common_causes:
+    - id: injector_winding_open
+      likelihood: high
+      label:
+        en: Injector winding failed open
+        de: Injektorwicklung unterbrochen
+    - id: injector_wiring
+      likelihood: medium
+      label:
+        en: Wiring or connector fault
+        de: Kabel- oder Steckerfehler
+  repair:
+    difficulty: medium
+    diy_possible: true
+    estimated_cost_eur: [80, 500]
+    estimated_hours: [0.5, 3.0]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+  related_codes: [P0261]
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Fuel_injection
+
+- code: P0265
+  scope: generic
+  category: powertrain
+  title:
+    en: Cylinder 2 Injector Circuit High
+    de: Zylinder 2 Injektorstromkreis hoch
+  description:
+    en: Same fault as P0262 but on cylinder 2.
+    de: Gleicher Fehler wie P0262, aber an Zylinder 2.
+  affected_components:
+    - fuel_injector
+    - injector_wiring
+  common_causes:
+    - id: injector_short_supply
+      likelihood: high
+      label:
+        en: Injector circuit shorted to supply
+        de: Stromkreis Kurzschluss gegen Versorgung
+    - id: injector_wiring
+      likelihood: medium
+      label:
+        en: Wiring or connector fault
+        de: Kabel- oder Steckerfehler
+  repair:
+    difficulty: medium
+    diy_possible: true
+    estimated_cost_eur: [80, 500]
+    estimated_hours: [0.5, 3.0]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+  related_codes: [P0262]
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Fuel_injection
+
+- code: P0266
+  scope: generic
+  category: powertrain
+  title:
+    en: Cylinder 2 Contribution/Balance Fault
+    de: Zylinder 2 Beitrag/Balance Fehler
+  description:
+    en: Same fault as P0263 but on cylinder 2.
+    de: Gleicher Fehler wie P0263, aber an Zylinder 2.
+  affected_components:
+    - fuel_injector
+    - cylinder_compression
+  common_causes:
+    - id: injector_clogged
+      likelihood: high
+      label:
+        en: Injector clogged or worn
+        de: Injektor verstopft oder verschlissen
+    - id: low_compression
+      likelihood: medium
+      label:
+        en: Low compression on cylinder
+        de: Niedrige Kompression am Zylinder
+  repair:
+    difficulty: hard
+    diy_possible: false
+    estimated_cost_eur: [100, 1500]
+    estimated_hours: [1.0, 6.0]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+  related_codes: [P0263]
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Fuel_injection
+
+- code: P0267
+  scope: generic
+  category: powertrain
+  title:
+    en: Cylinder 3 Injector Circuit Low
+    de: Zylinder 3 Injektorstromkreis niedrig
+  description:
+    en: Same fault as P0261 but on cylinder 3.
+    de: Gleicher Fehler wie P0261, aber an Zylinder 3.
+  affected_components:
+    - fuel_injector
+    - injector_wiring
+  common_causes:
+    - id: injector_winding_open
+      likelihood: high
+      label:
+        en: Injector winding failed open
+        de: Injektorwicklung unterbrochen
+    - id: injector_wiring
+      likelihood: medium
+      label:
+        en: Wiring or connector fault
+        de: Kabel- oder Steckerfehler
+  repair:
+    difficulty: medium
+    diy_possible: true
+    estimated_cost_eur: [80, 500]
+    estimated_hours: [0.5, 3.0]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+  related_codes: [P0261]
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Fuel_injection
+
+- code: P0268
+  scope: generic
+  category: powertrain
+  title:
+    en: Cylinder 3 Injector Circuit High
+    de: Zylinder 3 Injektorstromkreis hoch
+  description:
+    en: Same fault as P0262 but on cylinder 3.
+    de: Gleicher Fehler wie P0262, aber an Zylinder 3.
+  affected_components:
+    - fuel_injector
+    - injector_wiring
+  common_causes:
+    - id: injector_short_supply
+      likelihood: high
+      label:
+        en: Injector circuit shorted to supply
+        de: Stromkreis Kurzschluss gegen Versorgung
+    - id: injector_wiring
+      likelihood: medium
+      label:
+        en: Wiring or connector fault
+        de: Kabel- oder Steckerfehler
+  repair:
+    difficulty: medium
+    diy_possible: true
+    estimated_cost_eur: [80, 500]
+    estimated_hours: [0.5, 3.0]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+  related_codes: [P0262]
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Fuel_injection
+
+- code: P0269
+  scope: generic
+  category: powertrain
+  title:
+    en: Cylinder 3 Contribution/Balance Fault
+    de: Zylinder 3 Beitrag/Balance Fehler
+  description:
+    en: Same fault as P0263 but on cylinder 3.
+    de: Gleicher Fehler wie P0263, aber an Zylinder 3.
+  affected_components:
+    - fuel_injector
+    - cylinder_compression
+  common_causes:
+    - id: injector_clogged
+      likelihood: high
+      label:
+        en: Injector clogged or worn
+        de: Injektor verstopft oder verschlissen
+    - id: low_compression
+      likelihood: medium
+      label:
+        en: Low compression on cylinder
+        de: Niedrige Kompression am Zylinder
+  repair:
+    difficulty: hard
+    diy_possible: false
+    estimated_cost_eur: [100, 1500]
+    estimated_hours: [1.0, 6.0]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+  related_codes: [P0263]
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Fuel_injection
+
+- code: P0270
+  scope: generic
+  category: powertrain
+  title:
+    en: Cylinder 4 Injector Circuit Low
+    de: Zylinder 4 Injektorstromkreis niedrig
+  description:
+    en: Same fault as P0261 but on cylinder 4.
+    de: Gleicher Fehler wie P0261, aber an Zylinder 4.
+  affected_components:
+    - fuel_injector
+    - injector_wiring
+  common_causes:
+    - id: injector_winding_open
+      likelihood: high
+      label:
+        en: Injector winding failed open
+        de: Injektorwicklung unterbrochen
+    - id: injector_wiring
+      likelihood: medium
+      label:
+        en: Wiring or connector fault
+        de: Kabel- oder Steckerfehler
+  repair:
+    difficulty: medium
+    diy_possible: true
+    estimated_cost_eur: [80, 500]
+    estimated_hours: [0.5, 3.0]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+  related_codes: [P0261]
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Fuel_injection
+
+- code: P0271
+  scope: generic
+  category: powertrain
+  title:
+    en: Cylinder 4 Injector Circuit High
+    de: Zylinder 4 Injektorstromkreis hoch
+  description:
+    en: Same fault as P0262 but on cylinder 4.
+    de: Gleicher Fehler wie P0262, aber an Zylinder 4.
+  affected_components:
+    - fuel_injector
+    - injector_wiring
+  common_causes:
+    - id: injector_short_supply
+      likelihood: high
+      label:
+        en: Injector circuit shorted to supply
+        de: Stromkreis Kurzschluss gegen Versorgung
+    - id: injector_wiring
+      likelihood: medium
+      label:
+        en: Wiring or connector fault
+        de: Kabel- oder Steckerfehler
+  repair:
+    difficulty: medium
+    diy_possible: true
+    estimated_cost_eur: [80, 500]
+    estimated_hours: [0.5, 3.0]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+  related_codes: [P0262]
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Fuel_injection
+
+- code: P0272
+  scope: generic
+  category: powertrain
+  title:
+    en: Cylinder 4 Contribution/Balance Fault
+    de: Zylinder 4 Beitrag/Balance Fehler
+  description:
+    en: Same fault as P0263 but on cylinder 4.
+    de: Gleicher Fehler wie P0263, aber an Zylinder 4.
+  affected_components:
+    - fuel_injector
+    - cylinder_compression
+  common_causes:
+    - id: injector_clogged
+      likelihood: high
+      label:
+        en: Injector clogged or worn
+        de: Injektor verstopft oder verschlissen
+    - id: low_compression
+      likelihood: medium
+      label:
+        en: Low compression on cylinder
+        de: Niedrige Kompression am Zylinder
+  repair:
+    difficulty: hard
+    diy_possible: false
+    estimated_cost_eur: [100, 1500]
+    estimated_hours: [1.0, 6.0]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+  related_codes: [P0263]
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Fuel_injection
+
+- code: P0381
+  scope: generic
+  category: powertrain
+  title:
+    en: Glow Plug/Heater Indicator Circuit Malfunction
+    de: Glühkerze/Heizung Anzeigeleuchte Schaltung Fehlfunktion
+  description:
+    en: Electrical fault in the glow plug indicator lamp or relay circuit. The ECU monitors driver feedback to ensure the dashboard indicator can be commanded; an open or shorted circuit triggers this code.
+    de: Elektrischer Fehler im Stromkreis der Glühkerzen-Anzeigelampe oder des zugehörigen Relais. Die Motorsteuerung überwacht die Endstufenrückmeldung, damit die Kontrolllampe ansteuerbar ist; ein offener oder kurzgeschlossener Stromkreis löst diesen Code aus.
+  affected_components:
+    - glow_plug_indicator
+    - indicator_wiring
+  common_causes:
+    - id: indicator_bulb_failed
+      likelihood: medium
+      label:
+        en: Indicator bulb or LED failed
+        de: Anzeigelampe oder LED defekt
+    - id: indicator_wiring_fault
+      likelihood: medium
+      label:
+        en: Wiring or connector fault
+        de: Kabel- oder Steckerfehler
+  repair:
+    difficulty: easy
+    diy_possible: true
+    estimated_cost_eur: [20, 200]
+    estimated_hours: [0.2, 1.5]
+  flags:
+    mil: true
+    emissions_relevant: false
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Glowplug
+
+- code: P0405
+  scope: generic
+  category: powertrain
+  title:
+    en: Exhaust Gas Recirculation Sensor "A" Circuit Low
+    de: Abgasrückführungssensor "A" Schaltung niedrig
+  description:
+    en: The EGR position sensor A signal voltage is below the lower diagnostic threshold — open circuit, short to ground, or sensor fault. With no valid feedback, the ECU disables EGR and may set additional EGR codes.
+    de: Die Spannung des EGR-Positionssensors A liegt unter dem unteren Schwellwert — Unterbrechung, Masseschluss oder Sensordefekt. Ohne gültige Rückmeldung deaktiviert die Motorsteuerung die AGR und setzt eventuell weitere EGR-Codes.
+  affected_components:
+    - egr_position_sensor
+    - egr_sensor_wiring
+  common_causes:
+    - id: egr_sensor_failed
+      likelihood: high
+      label:
+        en: EGR position sensor failed
+        de: EGR-Positionssensor defekt
+    - id: egr_wiring_fault
+      likelihood: medium
+      label:
+        en: Wiring or connector fault
+        de: Kabel- oder Steckerfehler
+  repair:
+    difficulty: medium
+    diy_possible: true
+    estimated_cost_eur: [60, 400]
+    estimated_hours: [0.3, 2.0]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Exhaust_gas_recirculation
+
+- code: P0406
+  scope: generic
+  category: powertrain
+  title:
+    en: Exhaust Gas Recirculation Sensor "A" Circuit High
+    de: Abgasrückführungssensor "A" Schaltung hoch
+  description:
+    en: Same fault as P0405 but signal voltage above upper threshold — short to supply or defective sensor.
+    de: Gleicher Fehler wie P0405, jedoch Signalspannung über dem oberen Schwellwert — Kurzschluss gegen Versorgung oder defekter Sensor.
+  affected_components:
+    - egr_position_sensor
+    - egr_sensor_wiring
+  common_causes:
+    - id: egr_sensor_short_supply
+      likelihood: high
+      label:
+        en: Sensor circuit shorted to supply
+        de: Sensorstromkreis Kurzschluss gegen Versorgung
+    - id: egr_sensor_failed
+      likelihood: medium
+      label:
+        en: EGR position sensor failed
+        de: EGR-Positionssensor defekt
+  repair:
+    difficulty: medium
+    diy_possible: true
+    estimated_cost_eur: [60, 400]
+    estimated_hours: [0.3, 2.0]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+  related_codes: [P0405]
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Exhaust_gas_recirculation
+
+- code: P0408
+  scope: generic
+  category: powertrain
+  title:
+    en: Exhaust Gas Recirculation Sensor "B" Circuit Low
+    de: Abgasrückführungssensor "B" Schaltung niedrig
+  description:
+    en: Same fault as P0405 but on the secondary EGR position sensor B (used on some dual-feedback EGR systems).
+    de: Gleicher Fehler wie P0405, jedoch am sekundären EGR-Positionssensor B (bei einigen AGR-Systemen mit doppelter Rückmeldung).
+  affected_components:
+    - egr_position_sensor
+    - egr_sensor_wiring
+  common_causes:
+    - id: egr_sensor_failed
+      likelihood: high
+      label:
+        en: EGR position sensor B failed
+        de: EGR-Positionssensor B defekt
+    - id: egr_wiring_fault
+      likelihood: medium
+      label:
+        en: Wiring or connector fault
+        de: Kabel- oder Steckerfehler
+  repair:
+    difficulty: medium
+    diy_possible: true
+    estimated_cost_eur: [60, 400]
+    estimated_hours: [0.3, 2.0]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+  related_codes: [P0405]
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Exhaust_gas_recirculation
+
+- code: P0409
+  scope: generic
+  category: powertrain
+  title:
+    en: Exhaust Gas Recirculation Sensor "B" Circuit High
+    de: Abgasrückführungssensor "B" Schaltung hoch
+  description:
+    en: Same fault as P0406 but on the secondary EGR position sensor B.
+    de: Gleicher Fehler wie P0406, jedoch am sekundären EGR-Positionssensor B.
+  affected_components:
+    - egr_position_sensor
+    - egr_sensor_wiring
+  common_causes:
+    - id: egr_sensor_short_supply
+      likelihood: high
+      label:
+        en: Sensor circuit shorted to supply
+        de: Sensorstromkreis Kurzschluss gegen Versorgung
+    - id: egr_sensor_failed
+      likelihood: medium
+      label:
+        en: EGR position sensor B failed
+        de: EGR-Positionssensor B defekt
+  repair:
+    difficulty: medium
+    diy_possible: true
+    estimated_cost_eur: [60, 400]
+    estimated_hours: [0.3, 2.0]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+  related_codes: [P0406]
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Exhaust_gas_recirculation
+
+- code: P0414
+  scope: generic
+  category: powertrain
+  title:
+    en: Secondary Air Injection System Switching Valve "A" Circuit Shorted
+    de: Sekundärluft-Einblassystem Umschaltventil "A" Schaltung Kurzschluss
+  description:
+    en: The ECU detected a short circuit in the secondary air injection switching valve A control circuit. With the valve unable to switch correctly, the cold-start emissions strategy fails and the catalyst takes longer to reach light-off.
+    de: Die Motorsteuerung erkennt einen Kurzschluss im Steuerstromkreis des Sekundärluft-Umschaltventils A. Bei fehlerhafter Umschaltung gelingt die Kaltstart-Emissionsstrategie nicht und der Katalysator erreicht später die Anspringtemperatur.
+  affected_components:
+    - secondary_air_valve
+    - secondary_air_wiring
+  common_causes:
+    - id: sec_air_valve_short
+      likelihood: high
+      label:
+        en: Switching valve circuit shorted
+        de: Umschaltventil Kurzschluss
+    - id: sec_air_wiring
+      likelihood: medium
+      label:
+        en: Wiring or connector fault
+        de: Kabel- oder Steckerfehler
+  repair:
+    difficulty: medium
+    diy_possible: true
+    estimated_cost_eur: [80, 500]
+    estimated_hours: [0.5, 2.5]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Secondary_air_injection
+
+- code: P0418
+  scope: generic
+  category: powertrain
+  title:
+    en: Secondary Air Injection System Relay "A" Circuit Malfunction
+    de: Sekundärluft-Einblassystem Relais "A" Schaltung Fehlfunktion
+  description:
+    en: General electrical fault in the secondary air injection pump relay A circuit. Without the relay, the air pump cannot be commanded and the system cannot complete its cold-start function.
+    de: Allgemeiner elektrischer Fehler im Stromkreis des Relais A für die Sekundärluftpumpe. Ohne Relais kann die Luftpumpe nicht angesteuert werden und die Kaltstart-Funktion läuft nicht.
+  affected_components:
+    - secondary_air_relay
+    - secondary_air_pump
+    - relay_wiring
+  common_causes:
+    - id: sec_air_relay_failed
+      likelihood: high
+      label:
+        en: Air pump relay failed
+        de: Luftpumpenrelais defekt
+    - id: relay_wiring_fault
+      likelihood: medium
+      label:
+        en: Wiring or connector fault
+        de: Kabel- oder Steckerfehler
+  repair:
+    difficulty: easy
+    diy_possible: true
+    estimated_cost_eur: [40, 300]
+    estimated_hours: [0.3, 1.5]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Secondary_air_injection
+
+- code: P0421
+  scope: generic
+  category: powertrain
+  title:
+    en: Warm Up Catalyst Efficiency Below Threshold (Bank 1)
+    de: Warmlauf-Katalysator Wirkungsgrad unter Schwellwert (Bank 1)
+  description:
+    en: The pre-cat (warm-up) catalyst on bank 1 has lost too much oxygen storage capacity. Its primary purpose — quickly reaching light-off after a cold start — is no longer met within the OBD limits.
+    de: Der Vorkatalysator (Warmlauf-Katalysator) auf Bank 1 hat zu viel Sauerstoffspeicherkapazität verloren. Seine Hauptaufgabe — schneller Light-off nach Kaltstart — wird innerhalb der OBD-Grenzen nicht mehr erreicht.
+  affected_components:
+    - warm_up_catalyst
+    - oxygen_sensor_upstream
+    - oxygen_sensor_downstream
+  common_causes:
+    - id: precat_aged
+      likelihood: high
+      label:
+        en: Pre-catalyst aged or damaged
+        de: Vorkatalysator gealtert oder beschädigt
+    - id: o2_sensor_drift
+      likelihood: medium
+      label:
+        en: Oxygen sensor drift
+        de: Lambdasonde driftet
+  repair:
+    difficulty: hard
+    diy_possible: false
+    estimated_cost_eur: [400, 1800]
+    estimated_hours: [1.0, 4.0]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+  related_codes: [P0420]
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Catalytic_converter
+
+- code: P0422
+  scope: generic
+  category: powertrain
+  title:
+    en: Main Catalyst Efficiency Below Threshold (Bank 1)
+    de: Hauptkatalysator Wirkungsgrad unter Schwellwert (Bank 1)
+  description:
+    en: Generic main catalyst efficiency code on bank 1 — used by some manufacturers in addition to or instead of P0420. Indicates the same root cause — degraded oxygen storage in the main catalyst.
+    de: Allgemeiner Wirkungsgrad-Code des Hauptkatalysators Bank 1 — von einigen Herstellern zusätzlich oder anstelle von P0420 verwendet. Gleiche Grundursache — verschlechterte Sauerstoffspeicherung im Hauptkatalysator.
+  affected_components:
+    - catalytic_converter
+    - oxygen_sensor_upstream
+    - oxygen_sensor_downstream
+  common_causes:
+    - id: catalyst_aged
+      likelihood: high
+      label:
+        en: Catalyst aged or contaminated
+        de: Katalysator gealtert oder vergiftet
+    - id: o2_sensor_drift
+      likelihood: medium
+      label:
+        en: Oxygen sensor drift
+        de: Lambdasonde driftet
+  repair:
+    difficulty: hard
+    diy_possible: false
+    estimated_cost_eur: [600, 2500]
+    estimated_hours: [1.5, 5.0]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+  related_codes: [P0420]
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Catalytic_converter
+
+- code: P0423
+  scope: generic
+  category: powertrain
+  title:
+    en: Heated Catalyst Efficiency Below Threshold (Bank 1)
+    de: Beheizter Katalysator Wirkungsgrad unter Schwellwert (Bank 1)
+  description:
+    en: Heated (electrically warmed) catalyst on bank 1 fails efficiency monitoring. In addition to standard catalyst aging, faults in the catalyst heater control or supply can cause this code.
+    de: Beheizter (elektrisch erwärmter) Katalysator Bank 1 besteht die Wirkungsgrad-Prüfung nicht. Neben üblicher Alterung können Fehler in der Heizungssteuerung oder -versorgung diesen Code auslösen.
+  affected_components:
+    - heated_catalyst
+    - catalyst_heater
+    - oxygen_sensor_downstream
+  common_causes:
+    - id: catalyst_aged
+      likelihood: high
+      label:
+        en: Catalyst aged or contaminated
+        de: Katalysator gealtert oder vergiftet
+    - id: heater_circuit_fault
+      likelihood: medium
+      label:
+        en: Catalyst heater circuit fault
+        de: Heizungsschaltkreis fehlerhaft
+  repair:
+    difficulty: hard
+    diy_possible: false
+    estimated_cost_eur: [600, 2500]
+    estimated_hours: [1.5, 5.0]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+  related_codes: [P0420]
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Catalytic_converter
+
+- code: P0424
+  scope: generic
+  category: powertrain
+  title:
+    en: Heated Catalyst Temperature Below Threshold (Bank 1)
+    de: Beheizter Katalysator Temperatur unter Schwellwert (Bank 1)
+  description:
+    en: The heated catalyst on bank 1 does not reach its target temperature within the expected time. Common causes are a defective heater element, supply fault, or a damaged temperature sensor.
+    de: Der beheizte Katalysator Bank 1 erreicht die Zieltemperatur nicht innerhalb der erwarteten Zeit. Häufige Ursachen — defektes Heizelement, Versorgungsfehler oder beschädigter Temperatursensor.
+  affected_components:
+    - heated_catalyst
+    - catalyst_heater
+    - cat_temperature_sensor
+  common_causes:
+    - id: heater_element_failed
+      likelihood: high
+      label:
+        en: Heater element open or shorted
+        de: Heizelement offen oder kurzgeschlossen
+    - id: cat_temp_sensor_failed
+      likelihood: medium
+      label:
+        en: Catalyst temperature sensor failed
+        de: Kat-Temperatursensor defekt
+  repair:
+    difficulty: hard
+    diy_possible: false
+    estimated_cost_eur: [400, 1800]
+    estimated_hours: [1.0, 4.0]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+  related_codes: [P0423]
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Catalytic_converter
+
+- code: P0425
+  scope: generic
+  category: powertrain
+  title:
+    en: Catalyst Temperature Sensor (Bank 1, Sensor 1)
+    de: Katalysator-Temperatursensor (Bank 1, Sensor 1)
+  description:
+    en: General electrical fault detected in the catalyst temperature sensor on bank 1 sensor position 1. The ECU uses this signal to manage heater control and protect the catalyst from overtemperature.
+    de: Allgemeiner elektrischer Fehler am Katalysator-Temperatursensor Bank 1, Sensorposition 1. Die Motorsteuerung nutzt dieses Signal zur Heizungsregelung und zum Schutz vor Übertemperatur.
+  affected_components:
+    - cat_temperature_sensor
+    - sensor_wiring
+  common_causes:
+    - id: cat_temp_sensor_failed
+      likelihood: high
+      label:
+        en: Cat temperature sensor failed
+        de: Kat-Temperatursensor defekt
+    - id: sensor_wiring_fault
+      likelihood: medium
+      label:
+        en: Wiring or connector fault
+        de: Kabel- oder Steckerfehler
+  repair:
+    difficulty: medium
+    diy_possible: true
+    estimated_cost_eur: [80, 400]
+    estimated_hours: [0.3, 2.0]
+  flags:
+    mil: true
+    emissions_relevant: true
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Catalytic_converter
+
+- code: P0431
+  scope: generic
+  category: powertrain
+  title:
+    en: Warm Up Catalyst Efficiency Below Threshold (Bank 2)
+    de: Warmlauf-Katalysator Wirkungsgrad unter Schwellwert (Bank 2)
+  description:
+    en: Same fault as P0421 but on bank 2.
+    de: Gleicher Fehler wie P0421, jedoch an Bank 2.
+  affected_components:
+    - warm_up_catalyst
+    - oxygen_sensor_upstream
+    - oxygen_sensor_downstream
+  common_causes:
+    - id: precat_aged
+      likelihood: high
+      label:
+        en: Pre-catalyst aged or damaged
+        de: Vorkatalysator gealtert oder beschädigt
+    - id: o2_sensor_drift
+      likelihood: medium
+      label:
+        en: Oxygen sensor drift
+        de: Lambdasonde driftet
+  repair:
+    difficulty: hard
+    diy_possible: false
+    estimated_cost_eur: [400, 1800]
+    estimated_hours: [1.0, 4.0]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+  related_codes: [P0421, P0430]
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Catalytic_converter
+
+- code: P0432
+  scope: generic
+  category: powertrain
+  title:
+    en: Main Catalyst Efficiency Below Threshold (Bank 2)
+    de: Hauptkatalysator Wirkungsgrad unter Schwellwert (Bank 2)
+  description:
+    en: Same fault as P0422 but on bank 2.
+    de: Gleicher Fehler wie P0422, jedoch an Bank 2.
+  affected_components:
+    - catalytic_converter
+    - oxygen_sensor_upstream
+    - oxygen_sensor_downstream
+  common_causes:
+    - id: catalyst_aged
+      likelihood: high
+      label:
+        en: Catalyst aged or contaminated
+        de: Katalysator gealtert oder vergiftet
+    - id: o2_sensor_drift
+      likelihood: medium
+      label:
+        en: Oxygen sensor drift
+        de: Lambdasonde driftet
+  repair:
+    difficulty: hard
+    diy_possible: false
+    estimated_cost_eur: [600, 2500]
+    estimated_hours: [1.5, 5.0]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+  related_codes: [P0422, P0430]
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Catalytic_converter
+
+- code: P0433
+  scope: generic
+  category: powertrain
+  title:
+    en: Heated Catalyst Efficiency Below Threshold (Bank 2)
+    de: Beheizter Katalysator Wirkungsgrad unter Schwellwert (Bank 2)
+  description:
+    en: Same fault as P0423 but on bank 2.
+    de: Gleicher Fehler wie P0423, jedoch an Bank 2.
+  affected_components:
+    - heated_catalyst
+    - catalyst_heater
+    - oxygen_sensor_downstream
+  common_causes:
+    - id: catalyst_aged
+      likelihood: high
+      label:
+        en: Catalyst aged or contaminated
+        de: Katalysator gealtert oder vergiftet
+    - id: heater_circuit_fault
+      likelihood: medium
+      label:
+        en: Catalyst heater circuit fault
+        de: Heizungsschaltkreis fehlerhaft
+  repair:
+    difficulty: hard
+    diy_possible: false
+    estimated_cost_eur: [600, 2500]
+    estimated_hours: [1.5, 5.0]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+  related_codes: [P0423, P0430]
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Catalytic_converter
+
+- code: P0445
+  scope: generic
+  category: powertrain
+  title:
+    en: Evaporative Emission System Purge Control Valve Circuit Shorted
+    de: Tankentlüftungs-System Aktivkohlefilter-Spülventil Schaltung Kurzschluss
+  description:
+    en: The ECU detected a short in the EVAP purge solenoid control circuit. With the valve permanently energized or shorted, the system can either over-purge causing rich running, or stay closed.
+    de: Die Motorsteuerung erkennt einen Kurzschluss im Steuerkreis des Tankentlüftungs-Spülventils. Bei dauerhaftem Bestromen oder Kurzschluss spült das System entweder zu stark (fettes Gemisch) oder bleibt geschlossen.
+  affected_components:
+    - evap_purge_valve
+    - purge_valve_wiring
+  common_causes:
+    - id: purge_valve_short
+      likelihood: high
+      label:
+        en: Purge valve circuit shorted
+        de: Spülventil-Stromkreis Kurzschluss
+    - id: purge_valve_wiring
+      likelihood: medium
+      label:
+        en: Wiring or connector fault
+        de: Kabel- oder Steckerfehler
+  repair:
+    difficulty: easy
+    diy_possible: true
+    estimated_cost_eur: [40, 300]
+    estimated_hours: [0.3, 1.5]
+  flags:
+    mil: true
+    emissions_relevant: true
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Onboard_refueling_vapor_recovery
+
+- code: P0447
+  scope: generic
+  category: powertrain
+  title:
+    en: Evaporative Emission System Vent Control Circuit Open
+    de: Tankentlüftungs-System Belüftungsventil Stromkreis offen
+  description:
+    en: The ECU detected an open circuit on the EVAP vent valve control. The vent valve is needed to seal the system for leak diagnostics; with the circuit open the leak test cannot complete.
+    de: Die Motorsteuerung erkennt einen offenen Stromkreis am Steuerausgang des Belüftungsventils. Das Belüftungsventil dichtet das EVAP-System für die Dichtheitsprüfung ab; bei offenem Stromkreis kann der Leck-Test nicht abgeschlossen werden.
+  affected_components:
+    - evap_vent_valve
+    - vent_valve_wiring
+  common_causes:
+    - id: vent_valve_open
+      likelihood: high
+      label:
+        en: Vent valve circuit open
+        de: Belüftungsventil-Stromkreis offen
+    - id: vent_valve_wiring
+      likelihood: medium
+      label:
+        en: Wiring or connector fault
+        de: Kabel- oder Steckerfehler
+  repair:
+    difficulty: easy
+    diy_possible: true
+    estimated_cost_eur: [40, 300]
+    estimated_hours: [0.3, 1.5]
+  flags:
+    mil: true
+    emissions_relevant: true
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Onboard_refueling_vapor_recovery
+
+- code: P0449
+  scope: generic
+  category: powertrain
+  title:
+    en: Evaporative Emission System Vent Valve/Solenoid Circuit Malfunction
+    de: Tankentlüftungs-System Belüftungsventil/Magnet Stromkreis Fehlfunktion
+  description:
+    en: A general electrical fault was detected in the EVAP vent valve/solenoid control circuit. Without a working vent valve the EVAP leak test cannot complete and the system may remain not-ready.
+    de: Allgemeiner elektrischer Fehler im Steuerkreis des Belüftungsventils/Magneten der Tankentlüftung. Ohne funktionierendes Ventil kann der EVAP-Dichtheitstest nicht abgeschlossen werden und das System bleibt eventuell not-ready.
+  affected_components:
+    - evap_vent_valve
+    - vent_valve_wiring
+  common_causes:
+    - id: vent_valve_failed
+      likelihood: high
+      label:
+        en: Vent valve electrically failed
+        de: Belüftungsventil elektrisch defekt
+    - id: vent_valve_wiring
+      likelihood: medium
+      label:
+        en: Wiring or connector fault
+        de: Kabel- oder Steckerfehler
+  repair:
+    difficulty: easy
+    diy_possible: true
+    estimated_cost_eur: [40, 300]
+    estimated_hours: [0.3, 1.5]
+  flags:
+    mil: true
+    emissions_relevant: true
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Onboard_refueling_vapor_recovery
+
+- code: P0457
+  scope: generic
+  category: powertrain
+  title:
+    en: Evaporative Emission System Leak Detected (Fuel Cap Loose/Off)
+    de: Tankentlüftungs-System Leck erkannt (Tankdeckel locker/offen)
+  description:
+    en: The EVAP system detected a large leak that strongly correlates with a missing or improperly closed fuel filler cap. After re-tightening the cap, the code clears once the readiness monitor completes.
+    de: Das EVAP-System hat ein großes Leck erkannt, das stark auf einen fehlenden oder nicht korrekt verschlossenen Tankdeckel hinweist. Nach festem Verschließen löscht der Code, sobald das Readiness-Monitor abgeschlossen ist.
+  affected_components:
+    - fuel_filler_cap
+    - evap_lines
+  common_causes:
+    - id: fuel_cap_loose
+      likelihood: high
+      label:
+        en: Fuel cap loose, missing, or worn seal
+        de: Tankdeckel locker, fehlt oder dichtet nicht
+    - id: filler_neck_damaged
+      likelihood: low
+      label:
+        en: Filler neck damaged
+        de: Einfüllstutzen beschädigt
+  repair:
+    difficulty: easy
+    diy_possible: true
+    estimated_cost_eur: [0, 80]
+    estimated_hours: [0.0, 0.5]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Onboard_refueling_vapor_recovery
+
+- code: P0482
+  scope: generic
+  category: powertrain
+  title:
+    en: Cooling Fan 3 Control Circuit Malfunction
+    de: Kühlerlüfter 3 Steuerkreis Fehlfunktion
+  description:
+    en: Electrical fault detected in the third cooling fan control circuit. With one stage of cooling lost, engine and A/C condenser cooling capacity is reduced, particularly at low vehicle speeds.
+    de: Elektrischer Fehler im Steuerkreis des dritten Kühlerlüfters. Bei Ausfall einer Lüfterstufe sinkt die Kühlleistung für Motor und Klimakondensator, insbesondere bei niedriger Fahrgeschwindigkeit.
+  affected_components:
+    - cooling_fan
+    - fan_relay
+    - fan_wiring
+  common_causes:
+    - id: fan_relay_failed
+      likelihood: high
+      label:
+        en: Fan relay failed
+        de: Lüfterrelais defekt
+    - id: fan_motor_failed
+      likelihood: medium
+      label:
+        en: Fan motor failed
+        de: Lüftermotor defekt
+  repair:
+    difficulty: medium
+    diy_possible: true
+    estimated_cost_eur: [60, 600]
+    estimated_hours: [0.3, 2.5]
+  flags:
+    mil: true
+    emissions_relevant: false
+  related_codes: [P0480, P0481]
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Engine_control_unit
+
+- code: P0496
+  scope: generic
+  category: powertrain
+  title:
+    en: Evaporative Emission System High Purge Flow
+    de: Tankentlüftungs-System hoher Spülstrom
+  description:
+    en: The ECU detected EVAP purge flow during a non-purge condition, or higher than commanded purge flow. Typical causes are a stuck-open purge valve or a damaged vent system that draws unmetered air.
+    de: Die Motorsteuerung erkennt einen EVAP-Spülstrom, obwohl keine Spülung angefordert ist, oder einen höheren Strom als angefordert. Typische Ursachen — offen hängendes Spülventil oder beschädigtes Belüftungssystem mit Falschluft.
+  affected_components:
+    - evap_purge_valve
+    - evap_lines
+  common_causes:
+    - id: purge_valve_stuck_open
+      likelihood: high
+      label:
+        en: Purge valve stuck open
+        de: Spülventil offen hängend
+    - id: evap_line_damaged
+      likelihood: medium
+      label:
+        en: EVAP line cracked or disconnected
+        de: EVAP-Leitung gerissen oder abgezogen
+  repair:
+    difficulty: medium
+    diy_possible: true
+    estimated_cost_eur: [40, 400]
+    estimated_hours: [0.3, 2.5]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Onboard_refueling_vapor_recovery
+
+- code: P0530
+  scope: generic
+  category: powertrain
+  title:
+    en: A/C Refrigerant Pressure Sensor "A" Circuit
+    de: Klima-Kältemitteldrucksensor "A" Schaltung
+  description:
+    en: General electrical fault on the A/C refrigerant pressure sensor circuit. The ECU uses this signal to enable the compressor and cooling fan; without it the A/C is typically disabled.
+    de: Allgemeiner elektrischer Fehler am Stromkreis des Klima-Kältemitteldrucksensors. Die Motorsteuerung nutzt dieses Signal zur Aktivierung von Kompressor und Lüfter; ohne Signal wird die Klimaanlage üblicherweise deaktiviert.
+  affected_components:
+    - ac_pressure_sensor
+    - ac_sensor_wiring
+  common_causes:
+    - id: ac_pressure_sensor_failed
+      likelihood: high
+      label:
+        en: A/C pressure sensor failed
+        de: Klima-Drucksensor defekt
+    - id: ac_sensor_wiring
+      likelihood: medium
+      label:
+        en: Wiring or connector fault
+        de: Kabel- oder Steckerfehler
+  repair:
+    difficulty: medium
+    diy_possible: true
+    estimated_cost_eur: [60, 400]
+    estimated_hours: [0.3, 2.0]
+  flags:
+    mil: true
+    emissions_relevant: false
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Air_conditioning
+
+- code: P0532
+  scope: generic
+  category: powertrain
+  title:
+    en: A/C Refrigerant Pressure Sensor "A" Circuit Low
+    de: Klima-Kältemitteldrucksensor "A" Schaltung niedrig
+  description:
+    en: A/C pressure sensor signal voltage below the lower threshold — open, short to ground, sensor fault, or a refrigerant charge so low that the pressure is genuinely low.
+    de: Die Signalspannung des Klima-Drucksensors liegt unter dem unteren Schwellwert — Unterbrechung, Masseschluss, Sensordefekt oder so niedrige Kältemittelfüllmenge, dass der Druck tatsächlich gering ist.
+  affected_components:
+    - ac_pressure_sensor
+    - ac_refrigerant
+  common_causes:
+    - id: refrigerant_low
+      likelihood: high
+      label:
+        en: Refrigerant charge low
+        de: Kältemittelfüllung zu gering
+    - id: ac_pressure_sensor_short
+      likelihood: medium
+      label:
+        en: Sensor circuit shorted to ground or open
+        de: Sensorkreis Masseschluss oder offen
+  repair:
+    difficulty: medium
+    diy_possible: false
+    estimated_cost_eur: [60, 400]
+    estimated_hours: [0.3, 2.0]
+  flags:
+    mil: true
+    emissions_relevant: false
+  related_codes: [P0530]
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Air_conditioning
+
+- code: P0533
+  scope: generic
+  category: powertrain
+  title:
+    en: A/C Refrigerant Pressure Sensor "A" Circuit High
+    de: Klima-Kältemitteldrucksensor "A" Schaltung hoch
+  description:
+    en: A/C pressure sensor signal voltage above the upper threshold — short to supply, defective sensor, or a system overcharge/blocked condenser causing genuine high pressure.
+    de: Die Signalspannung des Klima-Drucksensors liegt über dem oberen Schwellwert — Kurzschluss gegen Versorgung, defekter Sensor oder tatsächlich hoher Druck durch Überfüllung/blockierten Kondensator.
+  affected_components:
+    - ac_pressure_sensor
+    - ac_condenser
+  common_causes:
+    - id: condenser_blocked
+      likelihood: medium
+      label:
+        en: Condenser blocked or fan inoperative
+        de: Kondensator blockiert oder Lüfter ohne Funktion
+    - id: ac_pressure_sensor_short_supply
+      likelihood: medium
+      label:
+        en: Sensor circuit shorted to supply
+        de: Sensorkreis Kurzschluss gegen Versorgung
+  repair:
+    difficulty: medium
+    diy_possible: false
+    estimated_cost_eur: [60, 600]
+    estimated_hours: [0.3, 2.5]
+  flags:
+    mil: true
+    emissions_relevant: false
+  related_codes: [P0530]
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Air_conditioning
+
+- code: P0550
+  scope: generic
+  category: powertrain
+  title:
+    en: Power Steering Pressure Sensor Circuit
+    de: Servolenkungs-Drucksensor Schaltung
+  description:
+    en: General electrical fault on the power steering pressure sensor. The ECU uses this signal to compensate idle speed when the steering load increases; without it idle stability can suffer during parking maneuvers.
+    de: Allgemeiner elektrischer Fehler am Servolenkungs-Drucksensor. Die Motorsteuerung nutzt dieses Signal zur Leerlaufanhebung bei Lenkbelastung; ohne Signal kann der Leerlauf beim Rangieren instabil werden.
+  affected_components:
+    - power_steering_pressure_sensor
+    - ps_sensor_wiring
+  common_causes:
+    - id: ps_sensor_failed
+      likelihood: high
+      label:
+        en: Pressure sensor failed
+        de: Drucksensor defekt
+    - id: ps_sensor_wiring
+      likelihood: medium
+      label:
+        en: Wiring or connector fault
+        de: Kabel- oder Steckerfehler
+  repair:
+    difficulty: medium
+    diy_possible: true
+    estimated_cost_eur: [60, 400]
+    estimated_hours: [0.3, 2.0]
+  flags:
+    mil: true
+    emissions_relevant: false
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Power_steering
+
+- code: P0551
+  scope: generic
+  category: powertrain
+  title:
+    en: Power Steering Pressure Sensor Range/Performance
+    de: Servolenkungs-Drucksensor Bereich/Leistung
+  description:
+    en: The PS pressure sensor signal stays in electrical range but is implausible for the operating state, e.g. high pressure reported with the wheels straight.
+    de: Das Signal des Lenkungs-Drucksensors liegt elektrisch im Bereich, ist aber für den Betriebszustand unplausibel, z. B. hoher Druck bei Geradeausstellung.
+  affected_components:
+    - power_steering_pressure_sensor
+  common_causes:
+    - id: ps_sensor_drift
+      likelihood: high
+      label:
+        en: Sensor drift or contamination
+        de: Sensordrift oder Verschmutzung
+  repair:
+    difficulty: medium
+    diy_possible: true
+    estimated_cost_eur: [60, 400]
+    estimated_hours: [0.3, 2.0]
+  flags:
+    mil: true
+    emissions_relevant: false
+  related_codes: [P0550]
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Power_steering
+
+- code: P0552
+  scope: generic
+  category: powertrain
+  title:
+    en: Power Steering Pressure Sensor Circuit Low Input
+    de: Servolenkungs-Drucksensor Schaltung niedriger Eingang
+  description:
+    en: PS pressure sensor signal voltage below threshold — open, short to ground, or sensor failure.
+    de: Signalspannung des Lenkungs-Drucksensors unter dem Schwellwert — Unterbrechung, Masseschluss oder Sensordefekt.
+  affected_components:
+    - power_steering_pressure_sensor
+    - ps_sensor_wiring
+  common_causes:
+    - id: ps_sensor_short_ground
+      likelihood: high
+      label:
+        en: Sensor circuit shorted to ground or open
+        de: Sensorkreis Masseschluss oder offen
+  repair:
+    difficulty: medium
+    diy_possible: true
+    estimated_cost_eur: [60, 400]
+    estimated_hours: [0.3, 2.0]
+  flags:
+    mil: true
+    emissions_relevant: false
+  related_codes: [P0550]
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Power_steering
+
+- code: P0553
+  scope: generic
+  category: powertrain
+  title:
+    en: Power Steering Pressure Sensor Circuit High Input
+    de: Servolenkungs-Drucksensor Schaltung hoher Eingang
+  description:
+    en: PS pressure sensor signal voltage above threshold — short to supply or sensor failure.
+    de: Signalspannung des Lenkungs-Drucksensors über dem Schwellwert — Kurzschluss gegen Versorgung oder Sensordefekt.
+  affected_components:
+    - power_steering_pressure_sensor
+    - ps_sensor_wiring
+  common_causes:
+    - id: ps_sensor_short_supply
+      likelihood: high
+      label:
+        en: Sensor circuit shorted to supply
+        de: Sensorkreis Kurzschluss gegen Versorgung
+  repair:
+    difficulty: medium
+    diy_possible: true
+    estimated_cost_eur: [60, 400]
+    estimated_hours: [0.3, 2.0]
+  flags:
+    mil: true
+    emissions_relevant: false
+  related_codes: [P0550]
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Power_steering
+
+- code: P0570
+  scope: generic
+  category: powertrain
+  title:
+    en: Cruise Control Accel Signal Malfunction
+    de: Tempomat Beschleunigungssignal Fehlfunktion
+  description:
+    en: The cruise control accelerate input signal is implausible — switch contacts welded, wiring fault, or stalk defect. The ECU disables cruise control to prevent unintended acceleration.
+    de: Das Beschleunigungssignal des Tempomaten ist unplausibel — verschweißte Schalterkontakte, Kabelfehler oder defekter Lenkstockschalter. Die Motorsteuerung deaktiviert den Tempomat, um unbeabsichtigte Beschleunigung zu verhindern.
+  affected_components:
+    - cruise_control_switch
+    - cruise_wiring
+  common_causes:
+    - id: cruise_switch_failed
+      likelihood: high
+      label:
+        en: Cruise switch contacts faulty
+        de: Tempomatschalter defekt
+    - id: cruise_wiring
+      likelihood: medium
+      label:
+        en: Wiring or connector fault
+        de: Kabel- oder Steckerfehler
+  repair:
+    difficulty: medium
+    diy_possible: true
+    estimated_cost_eur: [60, 400]
+    estimated_hours: [0.3, 2.0]
+  flags:
+    mil: true
+    emissions_relevant: false
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Cruise_control
+
+- code: P0603
+  scope: generic
+  category: powertrain
+  title:
+    en: Internal Control Module Keep Alive Memory (KAM) Error
+    de: Steuergerät interner Keep-Alive-Speicher (KAM) Fehler
+  description:
+    en: The ECU detected a fault in its KAM (battery-backed memory used to store adaptations and DTCs). Often appears after battery disconnect or low battery; persistent codes indicate an internal ECU fault.
+    de: Die Motorsteuerung erkennt einen Fehler im KAM (batteriegestützter Speicher für Adaptionen und Fehlercodes). Tritt häufig nach Batterieabklemmen oder niedriger Batterie auf; dauerhafte Codes deuten auf einen Steuergeräte-Defekt hin.
+  affected_components:
+    - engine_control_unit
+    - vehicle_battery
+  common_causes:
+    - id: battery_low_or_disconnect
+      likelihood: high
+      label:
+        en: Battery disconnected or voltage too low
+        de: Batterie abgeklemmt oder Spannung zu niedrig
+    - id: ecu_internal_fault
+      likelihood: low
+      label:
+        en: ECU internal memory fault
+        de: ECU-interner Speicherfehler
+  repair:
+    difficulty: easy
+    diy_possible: true
+    estimated_cost_eur: [0, 800]
+    estimated_hours: [0.1, 4.0]
+  flags:
+    mil: true
+    emissions_relevant: false
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Engine_control_unit
+
+- code: P0604
+  scope: generic
+  category: powertrain
+  title:
+    en: Internal Control Module Random Access Memory (RAM) Error
+    de: Steuergerät interner Arbeitsspeicher (RAM) Fehler
+  description:
+    en: ECU self-test detected a RAM fault during runtime checks. This is an internal ECU defect; replacement or reflash with manufacturer support is generally required.
+    de: Selbsttest der Motorsteuerung erkennt einen RAM-Fehler während des Laufzeit-Checks. Interner ECU-Defekt; Ersatz oder Neuprogrammierung mit Herstellerunterstützung ist üblicherweise erforderlich.
+  affected_components:
+    - engine_control_unit
+  common_causes:
+    - id: ecu_internal_fault
+      likelihood: high
+      label:
+        en: ECU internal RAM fault
+        de: ECU-interner RAM-Defekt
+  repair:
+    difficulty: hard
+    diy_possible: false
+    estimated_cost_eur: [400, 2000]
+    estimated_hours: [1.0, 4.0]
+  flags:
+    mil: true
+    emissions_relevant: false
+    limp_mode_possible: true
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Engine_control_unit
+
+- code: P0605
+  scope: generic
+  category: powertrain
+  title:
+    en: Internal Control Module Read Only Memory (ROM) Error
+    de: Steuergerät interner Festwertspeicher (ROM) Fehler
+  description:
+    en: ECU self-test detected a ROM/checksum failure on the program memory. The control software cannot be trusted; vehicle typically defaults to limp-home with reduced function.
+    de: Selbsttest der Motorsteuerung erkennt einen ROM-/Prüfsummenfehler im Programmspeicher. Die Steuerungssoftware ist nicht vertrauenswürdig; üblicherweise Notlauf mit eingeschränkter Funktion.
+  affected_components:
+    - engine_control_unit
+  common_causes:
+    - id: ecu_internal_fault
+      likelihood: high
+      label:
+        en: ECU internal ROM fault
+        de: ECU-interner ROM-Defekt
+  repair:
+    difficulty: hard
+    diy_possible: false
+    estimated_cost_eur: [400, 2000]
+    estimated_hours: [1.0, 4.0]
+  flags:
+    mil: true
+    emissions_relevant: false
+    limp_mode_possible: true
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Engine_control_unit
+
+- code: P0610
+  scope: generic
+  category: powertrain
+  title:
+    en: Control Module Vehicle Options Error
+    de: Steuergerät Fahrzeug-Optionen Fehler
+  description:
+    en: The ECU's stored vehicle option configuration is invalid or does not match the connected hardware. Common after replacing or swapping a control module without proper coding/configuration.
+    de: Die im Steuergerät hinterlegte Fahrzeug-Optionskonfiguration ist ungültig oder passt nicht zur angeschlossenen Hardware. Häufig nach Tausch oder Austausch eines Steuergeräts ohne korrekte Codierung.
+  affected_components:
+    - engine_control_unit
+  common_causes:
+    - id: ecu_coding_invalid
+      likelihood: high
+      label:
+        en: ECU coding/configuration invalid
+        de: Steuergeräte-Codierung ungültig
+  repair:
+    difficulty: hard
+    diy_possible: false
+    estimated_cost_eur: [50, 500]
+    estimated_hours: [0.5, 2.0]
+  flags:
+    mil: true
+    emissions_relevant: false
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Engine_control_unit
+
+- code: P0615
+  scope: generic
+  category: powertrain
+  title:
+    en: Starter Relay Circuit
+    de: Anlasserrelais Stromkreis
+  description:
+    en: General electrical fault on the starter relay control circuit driven by the ECU/PCM. Typical symptom is a no-crank or intermittent crank condition.
+    de: Allgemeiner elektrischer Fehler im Steuerkreis des Anlasserrelais, das vom ECU/PCM angesteuert wird. Typisches Symptom — kein oder unregelmäßiger Anlassvorgang.
+  affected_components:
+    - starter_relay
+    - relay_wiring
+  common_causes:
+    - id: starter_relay_failed
+      likelihood: high
+      label:
+        en: Starter relay failed
+        de: Anlasserrelais defekt
+    - id: relay_wiring_fault
+      likelihood: medium
+      label:
+        en: Wiring or connector fault
+        de: Kabel- oder Steckerfehler
+  repair:
+    difficulty: easy
+    diy_possible: true
+    estimated_cost_eur: [30, 250]
+    estimated_hours: [0.2, 1.5]
+  flags:
+    mil: true
+    emissions_relevant: false
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Starter_solenoid
+
+- code: P0617
+  scope: generic
+  category: powertrain
+  title:
+    en: Starter Relay Circuit High
+    de: Anlasserrelais Stromkreis hoch
+  description:
+    en: The starter relay control circuit voltage is above the upper threshold — short to supply or stuck driver.
+    de: Die Spannung im Steuerkreis des Anlasserrelais liegt über dem oberen Schwellwert — Kurzschluss gegen Versorgung oder dauerhaft aktive Endstufe.
+  affected_components:
+    - starter_relay
+    - relay_wiring
+  common_causes:
+    - id: starter_relay_short_supply
+      likelihood: high
+      label:
+        en: Relay circuit shorted to supply
+        de: Stromkreis Kurzschluss gegen Versorgung
+  repair:
+    difficulty: easy
+    diy_possible: true
+    estimated_cost_eur: [30, 300]
+    estimated_hours: [0.2, 1.5]
+  flags:
+    mil: true
+    emissions_relevant: false
+  related_codes: [P0615]
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Starter_solenoid
+
+- code: P0620
+  scope: generic
+  category: powertrain
+  title:
+    en: Generator Control Circuit
+    de: Generator-Steuerkreis
+  description:
+    en: General electrical fault detected in the alternator/generator control circuit. The ECU regulates field excitation on most modern alternators; a fault here causes charging issues and may set additional battery voltage codes.
+    de: Allgemeiner elektrischer Fehler im Steuerkreis des Generators/der Lichtmaschine. Bei modernen Generatoren regelt die Motorsteuerung die Erregerspannung; ein Fehler hier führt zu Ladeproblemen und eventuell weiteren Spannungsfehlern.
+  affected_components:
+    - alternator
+    - alternator_wiring
+  common_causes:
+    - id: alternator_regulator_failed
+      likelihood: high
+      label:
+        en: Alternator regulator failed
+        de: Generatorregler defekt
+    - id: alternator_wiring_fault
+      likelihood: medium
+      label:
+        en: Wiring or connector fault
+        de: Kabel- oder Steckerfehler
+  repair:
+    difficulty: medium
+    diy_possible: true
+    estimated_cost_eur: [100, 800]
+    estimated_hours: [0.5, 3.5]
+  flags:
+    mil: true
+    emissions_relevant: false
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Alternator
+
+- code: P0625
+  scope: generic
+  category: powertrain
+  title:
+    en: Generator Field Terminal Circuit Low
+    de: Generator-Erregerklemme Stromkreis niedrig
+  description:
+    en: Voltage on the alternator F terminal (field excitation) is below threshold — open or short to ground in the excitation path.
+    de: Die Spannung an der Erregerklemme F des Generators liegt unter dem Schwellwert — Unterbrechung oder Masseschluss im Erregerpfad.
+  affected_components:
+    - alternator
+    - alternator_wiring
+  common_causes:
+    - id: field_circuit_open
+      likelihood: high
+      label:
+        en: Field circuit open or shorted to ground
+        de: Erregerstromkreis offen oder Masseschluss
+    - id: alternator_brushes_worn
+      likelihood: medium
+      label:
+        en: Alternator brushes worn
+        de: Generatorkohlen verschlissen
+  repair:
+    difficulty: medium
+    diy_possible: true
+    estimated_cost_eur: [80, 700]
+    estimated_hours: [0.5, 3.0]
+  flags:
+    mil: true
+    emissions_relevant: false
+  related_codes: [P0620]
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Alternator
+
+- code: P0627
+  scope: generic
+  category: powertrain
+  title:
+    en: Fuel Pump "A" Control Circuit Open
+    de: Kraftstoffpumpe "A" Steuerkreis offen
+  description:
+    en: The ECU detected an open circuit in the fuel pump A control output. With no pump operation the engine cannot run; this code is often paired with no-start and no fuel pressure.
+    de: Die Motorsteuerung erkennt einen offenen Stromkreis am Steuerausgang der Kraftstoffpumpe A. Ohne Pumpenbetrieb startet der Motor nicht; häufig zusammen mit Startverweigerung und fehlendem Kraftstoffdruck.
+  affected_components:
+    - fuel_pump
+    - fuel_pump_relay
+    - pump_wiring
+  common_causes:
+    - id: fuel_pump_relay_failed
+      likelihood: high
+      label:
+        en: Fuel pump relay failed
+        de: Kraftstoffpumpenrelais defekt
+    - id: pump_wiring_open
+      likelihood: medium
+      label:
+        en: Wiring open
+        de: Kabelunterbrechung
+  repair:
+    difficulty: medium
+    diy_possible: true
+    estimated_cost_eur: [60, 700]
+    estimated_hours: [0.3, 3.0]
+  flags:
+    mil: true
+    emissions_relevant: false
+    limp_mode_possible: true
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Fuel_pump
+
+- code: P0642
+  scope: generic
+  category: powertrain
+  title:
+    en: Sensor Reference Voltage "A" Circuit Low
+    de: Sensor-Referenzspannung "A" Stromkreis niedrig
+  description:
+    en: The 5 V reference voltage on the A circuit (used by multiple sensors) is below threshold — short to ground or excessive current draw by a single sensor pulling the rail down.
+    de: Die 5-V-Referenzspannung des Stromkreises A (genutzt von mehreren Sensoren) liegt unter dem Schwellwert — Masseschluss oder zu hohe Stromaufnahme eines Sensors, die die Schiene herunterzieht.
+  affected_components:
+    - sensor_reference_circuit
+    - ecu
+  common_causes:
+    - id: sensor_short_ground
+      likelihood: high
+      label:
+        en: Sensor or harness shorted to ground
+        de: Sensor oder Kabel Masseschluss
+    - id: ecu_reference_failed
+      likelihood: low
+      label:
+        en: ECU reference output damaged
+        de: ECU-Referenzausgang beschädigt
+  repair:
+    difficulty: hard
+    diy_possible: false
+    estimated_cost_eur: [80, 800]
+    estimated_hours: [0.5, 4.0]
+  flags:
+    mil: true
+    emissions_relevant: true
+    limp_mode_possible: true
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Engine_control_unit
+
+- code: P0643
+  scope: generic
+  category: powertrain
+  title:
+    en: Sensor Reference Voltage "A" Circuit High
+    de: Sensor-Referenzspannung "A" Stromkreis hoch
+  description:
+    en: 5 V reference rail A above threshold — short to a higher voltage source.
+    de: Die 5-V-Referenzschiene A liegt über dem Schwellwert — Kurzschluss gegen eine höhere Spannungsquelle.
+  affected_components:
+    - sensor_reference_circuit
+    - ecu
+  common_causes:
+    - id: sensor_short_supply
+      likelihood: high
+      label:
+        en: Sensor or harness shorted to higher voltage
+        de: Sensor oder Kabel Kurzschluss gegen höhere Spannung
+  repair:
+    difficulty: hard
+    diy_possible: false
+    estimated_cost_eur: [80, 800]
+    estimated_hours: [0.5, 4.0]
+  flags:
+    mil: true
+    emissions_relevant: true
+    limp_mode_possible: true
+  related_codes: [P0642]
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Engine_control_unit
+
+- code: P0712
+  scope: generic
+  category: powertrain
+  title:
+    en: Transmission Fluid Temperature Sensor Circuit Low
+    de: Getriebeöltemperatur-Sensor Stromkreis niedrig
+  description:
+    en: ATF temperature sensor signal voltage below the lower threshold — open, short to ground, or sensor fault.
+    de: Signalspannung des Getriebeöltemperatur-Sensors unter dem unteren Schwellwert — Unterbrechung, Masseschluss oder Sensordefekt.
+  affected_components:
+    - transmission_temperature_sensor
+    - sensor_wiring
+  common_causes:
+    - id: trans_temp_sensor_failed
+      likelihood: high
+      label:
+        en: Transmission temperature sensor failed
+        de: Getriebetemperatur-Sensor defekt
+    - id: sensor_wiring_fault
+      likelihood: medium
+      label:
+        en: Wiring or connector fault
+        de: Kabel- oder Steckerfehler
+  repair:
+    difficulty: hard
+    diy_possible: false
+    estimated_cost_eur: [80, 800]
+    estimated_hours: [0.5, 4.0]
+  flags:
+    mil: true
+    emissions_relevant: false
+    limp_mode_possible: true
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Automatic_transmission
+
+- code: P0713
+  scope: generic
+  category: powertrain
+  title:
+    en: Transmission Fluid Temperature Sensor Circuit High
+    de: Getriebeöltemperatur-Sensor Stromkreis hoch
+  description:
+    en: ATF temperature sensor signal voltage above the upper threshold — short to supply or sensor fault.
+    de: Signalspannung des Getriebeöltemperatur-Sensors über dem oberen Schwellwert — Kurzschluss gegen Versorgung oder Sensordefekt.
+  affected_components:
+    - transmission_temperature_sensor
+    - sensor_wiring
+  common_causes:
+    - id: trans_temp_sensor_short_supply
+      likelihood: high
+      label:
+        en: Sensor circuit shorted to supply
+        de: Sensorkreis Kurzschluss gegen Versorgung
+    - id: trans_temp_sensor_failed
+      likelihood: medium
+      label:
+        en: Transmission temperature sensor failed
+        de: Getriebetemperatur-Sensor defekt
+  repair:
+    difficulty: hard
+    diy_possible: false
+    estimated_cost_eur: [80, 800]
+    estimated_hours: [0.5, 4.0]
+  flags:
+    mil: true
+    emissions_relevant: false
+    limp_mode_possible: true
+  related_codes: [P0712]
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Automatic_transmission
+
+- code: P0717
+  scope: generic
+  category: powertrain
+  title:
+    en: Input/Turbine Speed Sensor Circuit No Signal
+    de: Eingangs-/Turbinendrehzahlsensor Stromkreis kein Signal
+  description:
+    en: TCM detects no signal from the input/turbine speed sensor while the engine is running and the transmission is in gear. Without this signal the TCM cannot compute slip, and the transmission usually enters limp mode.
+    de: Das TCM erhält bei laufendem Motor und eingelegtem Gang kein Signal vom Eingangs-/Turbinendrehzahlsensor. Ohne dieses Signal kann das TCM keinen Schlupf berechnen, das Getriebe geht üblicherweise in Notlauf.
+  affected_components:
+    - input_speed_sensor
+    - sensor_wiring
+  common_causes:
+    - id: input_speed_sensor_failed
+      likelihood: high
+      label:
+        en: Input speed sensor failed
+        de: Eingangsdrehzahlsensor defekt
+    - id: sensor_wiring_fault
+      likelihood: medium
+      label:
+        en: Wiring or connector fault
+        de: Kabel- oder Steckerfehler
+  repair:
+    difficulty: hard
+    diy_possible: false
+    estimated_cost_eur: [150, 900]
+    estimated_hours: [1.0, 5.0]
+  flags:
+    mil: true
+    emissions_relevant: false
+    limp_mode_possible: true
+  related_codes: [P0716]
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Automatic_transmission
+
+- code: P0722
+  scope: generic
+  category: powertrain
+  title:
+    en: Output Speed Sensor Circuit No Signal
+    de: Ausgangsdrehzahlsensor Stromkreis kein Signal
+  description:
+    en: TCM detects no output shaft speed signal while the vehicle is moving. Triggers shift abnormalities, speedometer issues, and limp-home mode.
+    de: Das TCM erhält im Fahrbetrieb kein Signal vom Ausgangswellensensor. Folge — abweichendes Schaltverhalten, fehlerhafter Tacho und Notlauf.
+  affected_components:
+    - output_speed_sensor
+    - sensor_wiring
+  common_causes:
+    - id: output_speed_sensor_failed
+      likelihood: high
+      label:
+        en: Output speed sensor failed
+        de: Ausgangsdrehzahlsensor defekt
+    - id: sensor_wiring_fault
+      likelihood: medium
+      label:
+        en: Wiring or connector fault
+        de: Kabel- oder Steckerfehler
+  repair:
+    difficulty: hard
+    diy_possible: false
+    estimated_cost_eur: [150, 900]
+    estimated_hours: [1.0, 5.0]
+  flags:
+    mil: true
+    emissions_relevant: false
+    limp_mode_possible: true
+  related_codes: [P0721]
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Automatic_transmission
+
+- code: P0729
+  scope: generic
+  category: powertrain
+  title:
+    en: Gear 6 Incorrect Ratio
+    de: 6. Gang falsche Übersetzung
+  description:
+    en: Same fault as P0731 but for sixth gear. The ratio between input and output shaft does not match the expected sixth-gear value.
+    de: Gleicher Fehler wie P0731, jedoch für den 6. Gang. Das Verhältnis zwischen Eingangs- und Ausgangswelle entspricht nicht dem erwarteten Wert.
+  affected_components:
+    - automatic_transmission
+    - shift_solenoid
+  common_causes:
+    - id: shift_solenoid_stuck
+      likelihood: high
+      label:
+        en: Shift solenoid stuck
+        de: Schaltsolenoid hängend
+    - id: clutch_pack_worn
+      likelihood: medium
+      label:
+        en: Clutch pack worn or slipping
+        de: Lamellenkupplung verschlissen oder rutschend
+  repair:
+    difficulty: hard
+    diy_possible: false
+    estimated_cost_eur: [200, 3000]
+    estimated_hours: [1.5, 12.0]
+  flags:
+    mil: true
+    emissions_relevant: false
+    limp_mode_possible: true
+  related_codes: [P0731]
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Automatic_transmission
+
+- code: P0736
+  scope: generic
+  category: powertrain
+  title:
+    en: Reverse Incorrect Ratio
+    de: Rückwärtsgang falsche Übersetzung
+  description:
+    en: The TCM detected a ratio mismatch in reverse — likely a stuck solenoid, slipping clutch, or worn band.
+    de: Das TCM erkennt eine falsche Übersetzung im Rückwärtsgang — wahrscheinlich hängendes Magnetventil, rutschende Kupplung oder verschlissenes Band.
+  affected_components:
+    - automatic_transmission
+    - shift_solenoid
+  common_causes:
+    - id: shift_solenoid_stuck
+      likelihood: high
+      label:
+        en: Shift solenoid stuck
+        de: Schaltsolenoid hängend
+    - id: reverse_band_worn
+      likelihood: medium
+      label:
+        en: Reverse clutch/band worn
+        de: Rückwärtskupplung/Band verschlissen
+  repair:
+    difficulty: hard
+    diy_possible: false
+    estimated_cost_eur: [200, 3000]
+    estimated_hours: [1.5, 12.0]
+  flags:
+    mil: true
+    emissions_relevant: false
+    limp_mode_possible: true
+  related_codes: [P0731]
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Automatic_transmission
+
+- code: P0744
+  scope: generic
+  category: powertrain
+  title:
+    en: Torque Converter Clutch Circuit Intermittent
+    de: Wandlerüberbrückungskupplung Stromkreis sporadisch
+  description:
+    en: The TCC circuit drops in and out — intermittent open or short. Symptoms include erratic shudder at lock-up speeds and intermittent engine stalls when stopping.
+    de: Der TCC-Stromkreis fällt sporadisch aus — wechselnde Unterbrechung oder Kurzschluss. Symptome — unregelmäßiges Rütteln beim Zuschalten und gelegentliches Abwürgen beim Anhalten.
+  affected_components:
+    - tcc_solenoid
+    - solenoid_wiring
+  common_causes:
+    - id: tcc_wiring_intermittent
+      likelihood: high
+      label:
+        en: Intermittent wiring fault
+        de: Sporadischer Kabelfehler
+    - id: tcc_solenoid_failing
+      likelihood: medium
+      label:
+        en: TCC solenoid failing
+        de: TCC-Magnet defekt
+  repair:
+    difficulty: hard
+    diy_possible: false
+    estimated_cost_eur: [200, 1500]
+    estimated_hours: [1.0, 8.0]
+  flags:
+    mil: true
+    emissions_relevant: false
+    limp_mode_possible: true
+  related_codes: [P0740, P0741]
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Automatic_transmission
+
+- code: P0758
+  scope: generic
+  category: powertrain
+  title:
+    en: Shift Solenoid "B" Electrical
+    de: Schaltsolenoid "B" Elektrisch
+  description:
+    en: Electrical fault on shift solenoid B circuit — open winding, short to ground, or short to supply.
+    de: Elektrischer Fehler im Stromkreis des Schaltsolenoids B — offene Wicklung, Masseschluss oder Kurzschluss gegen Versorgung.
+  affected_components:
+    - shift_solenoid
+    - solenoid_wiring
+  common_causes:
+    - id: shift_solenoid_electrical
+      likelihood: high
+      label:
+        en: Open or shorted winding
+        de: Wicklung offen oder kurzgeschlossen
+    - id: solenoid_wiring_fault
+      likelihood: medium
+      label:
+        en: Wiring or connector fault
+        de: Kabel- oder Steckerfehler
+  repair:
+    difficulty: hard
+    diy_possible: false
+    estimated_cost_eur: [200, 1500]
+    estimated_hours: [1.5, 8.0]
+  flags:
+    mil: true
+    emissions_relevant: false
+    limp_mode_possible: true
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Automatic_transmission
+
+- code: P0763
+  scope: generic
+  category: powertrain
+  title:
+    en: Shift Solenoid "C" Electrical
+    de: Schaltsolenoid "C" Elektrisch
+  description:
+    en: Same fault as P0758 but on shift solenoid C.
+    de: Gleicher Fehler wie P0758, jedoch am Schaltsolenoid C.
+  affected_components:
+    - shift_solenoid
+    - solenoid_wiring
+  common_causes:
+    - id: shift_solenoid_electrical
+      likelihood: high
+      label:
+        en: Open or shorted winding
+        de: Wicklung offen oder kurzgeschlossen
+    - id: solenoid_wiring_fault
+      likelihood: medium
+      label:
+        en: Wiring or connector fault
+        de: Kabel- oder Steckerfehler
+  repair:
+    difficulty: hard
+    diy_possible: false
+    estimated_cost_eur: [200, 1500]
+    estimated_hours: [1.5, 8.0]
+  flags:
+    mil: true
+    emissions_relevant: false
+    limp_mode_possible: true
+  related_codes: [P0758]
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Automatic_transmission
+
+- code: P0768
+  scope: generic
+  category: powertrain
+  title:
+    en: Shift Solenoid "D" Electrical
+    de: Schaltsolenoid "D" Elektrisch
+  description:
+    en: Same fault as P0758 but on shift solenoid D.
+    de: Gleicher Fehler wie P0758, jedoch am Schaltsolenoid D.
+  affected_components:
+    - shift_solenoid
+    - solenoid_wiring
+  common_causes:
+    - id: shift_solenoid_electrical
+      likelihood: high
+      label:
+        en: Open or shorted winding
+        de: Wicklung offen oder kurzgeschlossen
+    - id: solenoid_wiring_fault
+      likelihood: medium
+      label:
+        en: Wiring or connector fault
+        de: Kabel- oder Steckerfehler
+  repair:
+    difficulty: hard
+    diy_possible: false
+    estimated_cost_eur: [200, 1500]
+    estimated_hours: [1.5, 8.0]
+  flags:
+    mil: true
+    emissions_relevant: false
+    limp_mode_possible: true
+  related_codes: [P0758]
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Automatic_transmission
+
+- code: P0773
+  scope: generic
+  category: powertrain
+  title:
+    en: Shift Solenoid "E" Electrical
+    de: Schaltsolenoid "E" Elektrisch
+  description:
+    en: Same fault as P0758 but on shift solenoid E.
+    de: Gleicher Fehler wie P0758, jedoch am Schaltsolenoid E.
+  affected_components:
+    - shift_solenoid
+    - solenoid_wiring
+  common_causes:
+    - id: shift_solenoid_electrical
+      likelihood: high
+      label:
+        en: Open or shorted winding
+        de: Wicklung offen oder kurzgeschlossen
+    - id: solenoid_wiring_fault
+      likelihood: medium
+      label:
+        en: Wiring or connector fault
+        de: Kabel- oder Steckerfehler
+  repair:
+    difficulty: hard
+    diy_possible: false
+    estimated_cost_eur: [200, 1500]
+    estimated_hours: [1.5, 8.0]
+  flags:
+    mil: true
+    emissions_relevant: false
+    limp_mode_possible: true
+  related_codes: [P0758]
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Automatic_transmission

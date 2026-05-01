@@ -1545,3 +1545,1562 @@
     - sae:J2012
   sources:
     - https://en.wikipedia.org/wiki/Anti-lock_braking_system
+
+- code: U0106
+  scope: generic
+  category: network
+  title:
+    en: Lost Communication with Glow Plug Control Module
+    de: Kommunikation mit Glühkerzen-Steuergerät verloren
+  description:
+    en: Same as U0100 but for the glow plug control module on diesel engines. Cold-start preheat is no longer commanded — the engine cranks longer and may run rough until warm, and white smoke may appear at startup.
+    de: Wie U0100, aber für das Glühkerzen-Steuergerät bei Dieselmotoren. Das Kaltstart-Vorglühen wird nicht mehr angesteuert — der Motor orgelt länger und läuft eventuell rau, bis er warm ist, und beim Start kann weißer Rauch auftreten.
+  affected_components:
+    - glow_plug_control_module
+    - can_bus_wiring
+  common_causes:
+    - id: gpcm_unpowered
+      likelihood: high
+      label:
+        en: Glow plug module unpowered
+        de: Glühkerzen-Modul ohne Spannung
+    - id: can_wiring_to_gpcm
+      likelihood: medium
+      label:
+        en: CAN wiring to glow plug module broken
+        de: CAN-Leitung zum Glühkerzen-Modul unterbrochen
+  repair:
+    difficulty: hard
+    diy_possible: false
+    estimated_cost_eur: [80, 1200]
+    estimated_hours: [1.0, 4.0]
+  flags:
+    mil: true
+    emissions_relevant: true
+    limp_mode_possible: false
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Engine_control_unit
+
+- code: U0113
+  scope: generic
+  category: network
+  title:
+    en: Lost Communication with Battery Charger A Control Module
+    de: Kommunikation mit Batterieladegerät A Steuergerät verloren
+  description:
+    en: Same as U0100 but for the on-board battery charger module on hybrid and electric vehicles. AC charging is disabled and the dashboard typically shows a charging-system error.
+    de: Wie U0100, aber für das On-Board-Batterieladegerät bei Hybrid- und Elektrofahrzeugen. AC-Laden ist deaktiviert und im Kombiinstrument wird typischerweise ein Ladesystem-Fehler angezeigt.
+  affected_components:
+    - battery_charger_module
+    - can_bus_wiring
+  common_causes:
+    - id: charger_unpowered
+      likelihood: high
+      label:
+        en: Charger module unpowered
+        de: Ladegerät-Modul ohne Spannung
+    - id: can_wiring_to_charger
+      likelihood: medium
+      label:
+        en: CAN wiring to charger broken
+        de: CAN-Leitung zum Ladegerät unterbrochen
+  repair:
+    difficulty: hard
+    diy_possible: false
+    estimated_cost_eur: [200, 3500]
+    estimated_hours: [2.0, 8.0]
+  flags:
+    mil: true
+    emissions_relevant: false
+    limp_mode_possible: false
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/CAN_bus
+
+- code: U0115
+  scope: generic
+  category: network
+  title:
+    en: Lost Communication with ECM/PCM "B"
+    de: Kommunikation mit ECM/PCM "B" verloren
+  description:
+    en: Same as U0100 but for the secondary ECM/PCM. Found on engines with a master/slave ECU layout (e.g. some V8/V12 with bank-specific controllers); the engine usually drops to limp-home or refuses to start.
+    de: Wie U0100, aber für das sekundäre ECM/PCM. Tritt bei Motoren mit Master-/Slave-Steuergerät-Aufbau auf (z. B. einige V8/V12 mit bankspezifischen Steuergeräten); der Motor fällt meist in den Notlauf oder springt nicht an.
+  affected_components:
+    - engine_control_module
+    - can_bus_wiring
+  common_causes:
+    - id: ecm_b_unpowered
+      likelihood: high
+      label:
+        en: Secondary ECM unpowered
+        de: Sekundäres ECM ohne Spannung
+    - id: can_wiring_to_ecm_b
+      likelihood: medium
+      label:
+        en: CAN wiring to secondary ECM broken
+        de: CAN-Leitung zum sekundären ECM unterbrochen
+  repair:
+    difficulty: hard
+    diy_possible: false
+    estimated_cost_eur: [50, 2000]
+    estimated_hours: [0.5, 8.0]
+  flags:
+    mil: true
+    emissions_relevant: true
+    limp_mode_possible: true
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Engine_control_unit
+
+- code: U0116
+  scope: generic
+  category: network
+  title:
+    en: Lost Communication with Steering Effort Control Module
+    de: Kommunikation mit Lenkkraft-Steuergerät verloren
+  description:
+    en: Same as U0100 but for the steering effort (variable assist) control module. Steering may revert to a fixed assist level — typically heavier than expected at parking speeds.
+    de: Wie U0100, aber für das Lenkkraft- bzw. variable Servounterstützungs-Steuergerät. Die Lenkung fällt auf eine feste Unterstützungsstufe zurück — typischerweise schwerer als gewohnt bei Rangiergeschwindigkeit.
+  affected_components:
+    - steering_effort_module
+    - can_bus_wiring
+  common_causes:
+    - id: steering_effort_module_unpowered
+      likelihood: high
+      label:
+        en: Steering effort module unpowered
+        de: Lenkkraft-Modul ohne Spannung
+    - id: can_wiring_to_steering_effort
+      likelihood: medium
+      label:
+        en: CAN wiring to steering effort module broken
+        de: CAN-Leitung zum Lenkkraft-Modul unterbrochen
+  repair:
+    difficulty: hard
+    diy_possible: false
+    estimated_cost_eur: [100, 1800]
+    estimated_hours: [1.0, 5.0]
+  flags:
+    mil: true
+    emissions_relevant: false
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Power_steering
+
+- code: U0117
+  scope: generic
+  category: network
+  title:
+    en: Lost Communication with Drive Motor Control Module 2
+    de: Kommunikation mit Antriebsmotor-Steuergerät 2 verloren
+  description:
+    en: Same as U0100 but for the secondary drive motor control module on hybrid and electric vehicles with multiple traction motors (e.g. dual-motor AWD). Vehicle typically loses one axle of drive and falls into reduced power.
+    de: Wie U0100, aber für das sekundäre Antriebsmotor-Steuergerät bei Hybrid- und Elektrofahrzeugen mit mehreren Traktionsmotoren (z. B. Dual-Motor-AWD). Das Fahrzeug verliert typischerweise eine Antriebsachse und fällt in reduzierte Leistung.
+  affected_components:
+    - drive_motor_control_module
+    - can_bus_wiring
+  common_causes:
+    - id: drive_motor_2_unpowered
+      likelihood: high
+      label:
+        en: Secondary drive motor module unpowered
+        de: Sekundäres Antriebsmotor-Modul ohne Spannung
+    - id: can_wiring_to_drive_motor_2
+      likelihood: medium
+      label:
+        en: CAN wiring to secondary drive motor broken
+        de: CAN-Leitung zum sekundären Antriebsmotor unterbrochen
+  repair:
+    difficulty: hard
+    diy_possible: false
+    estimated_cost_eur: [200, 3500]
+    estimated_hours: [2.0, 10.0]
+  flags:
+    mil: true
+    emissions_relevant: false
+    limp_mode_possible: true
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/CAN_bus
+
+- code: U0119
+  scope: generic
+  category: network
+  title:
+    en: Lost Communication with Steering Column Control Module
+    de: Kommunikation mit Lenksäulen-Steuergerät verloren
+  description:
+    en: Same as U0100 but for the steering column module (typically housing the multifunction switches, clockspring, key sense and column lock). Multiple comfort functions on the column stalks fail at once.
+    de: Wie U0100, aber für das Lenksäulen-Steuergerät (das typischerweise Multifunktionsschalter, Wickelfeder, Zündschlüssel-Erkennung und Lenkradschloss enthält). Mehrere Komfortfunktionen an den Lenkstockhebeln fallen gleichzeitig aus.
+  affected_components:
+    - steering_column_module
+    - can_bus_wiring
+  common_causes:
+    - id: column_module_unpowered
+      likelihood: high
+      label:
+        en: Steering column module unpowered
+        de: Lenksäulen-Modul ohne Spannung
+    - id: clockspring_failed
+      likelihood: medium
+      label:
+        en: Clockspring failed inside steering column
+        de: Wickelfeder in der Lenksäule defekt
+  repair:
+    difficulty: hard
+    diy_possible: false
+    estimated_cost_eur: [100, 1500]
+    estimated_hours: [1.0, 5.0]
+  flags:
+    mil: true
+    emissions_relevant: false
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Power_steering
+
+- code: U0120
+  scope: generic
+  category: network
+  title:
+    en: Lost Communication with Starter/Generator Control Module
+    de: Kommunikation mit Starter-/Generator-Steuergerät verloren
+  description:
+    en: Same as U0100 but for the starter/generator control module on mild-hybrid (BSG/ISG) vehicles. Stop/start no longer works, regenerative braking is disabled and on some vehicles the engine cannot restart automatically.
+    de: Wie U0100, aber für das Starter-/Generator-Steuergerät bei Mild-Hybrid-Fahrzeugen (BSG/ISG). Start-Stopp funktioniert nicht mehr, die Rekuperation ist deaktiviert und bei manchen Fahrzeugen springt der Motor nicht mehr automatisch an.
+  affected_components:
+    - starter_generator_module
+    - can_bus_wiring
+  common_causes:
+    - id: starter_generator_unpowered
+      likelihood: high
+      label:
+        en: Starter/generator module unpowered
+        de: Starter-/Generator-Modul ohne Spannung
+    - id: can_wiring_to_starter_generator
+      likelihood: medium
+      label:
+        en: CAN wiring to starter/generator broken
+        de: CAN-Leitung zum Starter-/Generator-Modul unterbrochen
+  repair:
+    difficulty: hard
+    diy_possible: false
+    estimated_cost_eur: [150, 2500]
+    estimated_hours: [1.5, 6.0]
+  flags:
+    mil: true
+    emissions_relevant: true
+    limp_mode_possible: false
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Engine_control_unit
+
+- code: U0122
+  scope: generic
+  category: network
+  title:
+    en: Lost Communication with Vehicle Dynamics Control Module
+    de: Kommunikation mit Fahrdynamik-Steuergerät verloren
+  description:
+    en: Same as U0100 but for the vehicle dynamics control module (often a separate ESP/active-chassis controller). Active suspension, roll stabilization or rear-wheel steering deactivate.
+    de: Wie U0100, aber für das Fahrdynamik-Steuergerät (oft ein separates ESP- bzw. Aktiv-Fahrwerks-Steuergerät). Aktivfahrwerk, Wankstabilisierung oder Hinterachslenkung sind deaktiviert.
+  affected_components:
+    - vehicle_dynamics_module
+    - can_bus_wiring
+  common_causes:
+    - id: vdc_module_unpowered
+      likelihood: high
+      label:
+        en: Vehicle dynamics module unpowered
+        de: Fahrdynamik-Modul ohne Spannung
+    - id: can_wiring_to_vdc
+      likelihood: medium
+      label:
+        en: CAN wiring to dynamics module broken
+        de: CAN-Leitung zum Fahrdynamik-Modul unterbrochen
+  repair:
+    difficulty: hard
+    diy_possible: false
+    estimated_cost_eur: [100, 2000]
+    estimated_hours: [1.0, 6.0]
+  flags:
+    mil: true
+    emissions_relevant: false
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Anti-lock_braking_system
+
+- code: U0123
+  scope: generic
+  category: network
+  title:
+    en: Lost Communication with Yaw Rate Sensor Module
+    de: Kommunikation mit Gierratensensor-Modul verloren
+  description:
+    en: Same as U0100 but for the standalone yaw rate sensor module. ESP/ESC, rollover detection and on some vehicles the airbag system lose their reference and disable.
+    de: Wie U0100, aber für das eigenständige Gierratensensor-Modul. ESP/ESC, Überschlagserkennung und bei manchen Fahrzeugen das Airbag-System verlieren ihre Referenz und werden deaktiviert.
+  affected_components:
+    - yaw_rate_sensor
+    - can_bus_wiring
+  common_causes:
+    - id: yaw_sensor_unpowered
+      likelihood: high
+      label:
+        en: Yaw rate sensor unpowered
+        de: Gierratensensor ohne Spannung
+    - id: can_wiring_to_yaw_sensor
+      likelihood: medium
+      label:
+        en: CAN wiring to yaw rate sensor broken
+        de: CAN-Leitung zum Gierratensensor unterbrochen
+  repair:
+    difficulty: medium
+    diy_possible: false
+    estimated_cost_eur: [80, 900]
+    estimated_hours: [1.0, 3.0]
+  flags:
+    mil: true
+    emissions_relevant: false
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Anti-lock_braking_system
+
+- code: U0124
+  scope: generic
+  category: network
+  title:
+    en: Lost Communication with Lateral Acceleration Sensor Module
+    de: Kommunikation mit Querbeschleunigungs-Sensor-Modul verloren
+  description:
+    en: Same as U0100 but for the lateral acceleration sensor used by ESP/ESC. Stability control becomes inactive and warning lamps illuminate.
+    de: Wie U0100, aber für den Querbeschleunigungssensor von ESP/ESC. Die Stabilitätskontrolle ist deaktiviert und Warnleuchten leuchten.
+  affected_components:
+    - lateral_acceleration_sensor
+    - can_bus_wiring
+  common_causes:
+    - id: lat_accel_sensor_unpowered
+      likelihood: high
+      label:
+        en: Lateral acceleration sensor unpowered
+        de: Querbeschleunigungssensor ohne Spannung
+    - id: can_wiring_to_lat_accel
+      likelihood: medium
+      label:
+        en: CAN wiring to lateral accel sensor broken
+        de: CAN-Leitung zum Querbeschleunigungssensor unterbrochen
+  repair:
+    difficulty: medium
+    diy_possible: false
+    estimated_cost_eur: [80, 800]
+    estimated_hours: [1.0, 3.0]
+  flags:
+    mil: true
+    emissions_relevant: false
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Anti-lock_braking_system
+
+- code: U0127
+  scope: generic
+  category: network
+  title:
+    en: Lost Communication with Tire Pressure Monitor Module
+    de: Kommunikation mit Reifendruck-Kontrollmodul verloren
+  description:
+    en: Same as U0100 but for the tire pressure monitor (TPMS) module. Tire pressure warnings cannot be displayed and the TPMS warning lamp illuminates permanently.
+    de: Wie U0100, aber für das Reifendruck-Kontrollmodul (TPMS). Reifendruckwarnungen können nicht mehr angezeigt werden und die TPMS-Warnleuchte leuchtet dauerhaft.
+  affected_components:
+    - tpms_module
+    - can_bus_wiring
+  common_causes:
+    - id: tpms_module_unpowered
+      likelihood: high
+      label:
+        en: TPMS module unpowered
+        de: TPMS-Modul ohne Spannung
+    - id: can_wiring_to_tpms
+      likelihood: medium
+      label:
+        en: CAN wiring to TPMS broken
+        de: CAN-Leitung zum TPMS unterbrochen
+  repair:
+    difficulty: medium
+    diy_possible: false
+    estimated_cost_eur: [80, 700]
+    estimated_hours: [1.0, 3.0]
+  flags:
+    mil: false
+    emissions_relevant: false
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Tire-pressure_monitoring_system
+
+- code: U0130
+  scope: generic
+  category: network
+  title:
+    en: Lost Communication with Steering Effort Control Module B
+    de: Kommunikation mit Lenkkraft-Steuergerät B verloren
+  description:
+    en: Same as U0100 but for a secondary steering effort module (used on systems with redundant or split front/rear-wheel steering). Steering assist may revert to a single channel.
+    de: Wie U0100, aber für ein sekundäres Lenkkraft-Modul (bei Systemen mit redundanter oder getrennter Vorder-/Hinterachslenkung). Die Lenkunterstützung fällt eventuell auf einen einzelnen Kanal zurück.
+  affected_components:
+    - steering_effort_module
+    - can_bus_wiring
+  common_causes:
+    - id: steering_effort_b_unpowered
+      likelihood: high
+      label:
+        en: Secondary steering effort module unpowered
+        de: Sekundäres Lenkkraft-Modul ohne Spannung
+    - id: can_wiring_to_steering_effort_b
+      likelihood: medium
+      label:
+        en: CAN wiring to secondary steering effort broken
+        de: CAN-Leitung zum sekundären Lenkkraft-Modul unterbrochen
+  repair:
+    difficulty: hard
+    diy_possible: false
+    estimated_cost_eur: [100, 2000]
+    estimated_hours: [1.0, 6.0]
+  flags:
+    mil: true
+    emissions_relevant: false
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Power_steering
+
+- code: U0132
+  scope: generic
+  category: network
+  title:
+    en: Lost Communication with Ride Level Control Module
+    de: Kommunikation mit Niveauregulierungs-Steuergerät verloren
+  description:
+    en: Same as U0100 but for the ride level/air suspension control module. The vehicle may fall to its mechanical stops on a non-self-leveling axle and the suspension warning lamp illuminates.
+    de: Wie U0100, aber für das Niveauregulierungs- bzw. Luftfeder-Steuergerät. Das Fahrzeug kann auf seinen mechanischen Anschlag absinken und die Fahrwerks-Warnleuchte leuchtet.
+  affected_components:
+    - air_suspension_module
+    - can_bus_wiring
+  common_causes:
+    - id: air_suspension_unpowered
+      likelihood: high
+      label:
+        en: Air suspension module unpowered
+        de: Luftfeder-Modul ohne Spannung
+    - id: can_wiring_to_air_suspension
+      likelihood: medium
+      label:
+        en: CAN wiring to air suspension broken
+        de: CAN-Leitung zum Luftfeder-Modul unterbrochen
+  repair:
+    difficulty: hard
+    diy_possible: false
+    estimated_cost_eur: [150, 2500]
+    estimated_hours: [1.0, 6.0]
+  flags:
+    mil: true
+    emissions_relevant: false
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/CAN_bus
+
+- code: U0136
+  scope: generic
+  category: network
+  title:
+    en: Lost Communication with Park Brake Module B
+    de: Kommunikation mit Feststellbrems-Modul B verloren
+  description:
+    en: Same as U0100 but for a secondary electronic parking brake (EPB) module — typically on vehicles with one actuator per rear wheel. The EPB partially fails and warnings illuminate.
+    de: Wie U0100, aber für ein sekundäres EPB-Modul — typischerweise bei Fahrzeugen mit einem Aktuator pro Hinterrad. Die EPB fällt teilweise aus und Warnleuchten leuchten.
+  affected_components:
+    - parking_brake_module
+    - can_bus_wiring
+  common_causes:
+    - id: epb_b_unpowered
+      likelihood: high
+      label:
+        en: Secondary EPB module unpowered
+        de: Sekundäres EPB-Modul ohne Spannung
+    - id: can_wiring_to_epb_b
+      likelihood: medium
+      label:
+        en: CAN wiring to secondary EPB broken
+        de: CAN-Leitung zur sekundären EPB unterbrochen
+  repair:
+    difficulty: hard
+    diy_possible: false
+    estimated_cost_eur: [100, 1800]
+    estimated_hours: [1.0, 5.0]
+  flags:
+    mil: true
+    emissions_relevant: false
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Anti-lock_braking_system
+
+- code: U0142
+  scope: generic
+  category: network
+  title:
+    en: Lost Communication with Body Control Module B
+    de: Kommunikation mit Bordnetzsteuergerät B verloren
+  description:
+    en: Same as U0100 but for a secondary body control module (rear BCM, trunk module, or zone controller in modern E/E architectures). Comfort functions in the affected zone fail.
+    de: Wie U0100, aber für ein sekundäres Bordnetzsteuergerät (hinteres BCM, Heckmodul oder Zonen-Steuergerät bei modernen E/E-Architekturen). Komfortfunktionen in der betroffenen Zone fallen aus.
+  affected_components:
+    - body_control_module
+    - can_bus_wiring
+  common_causes:
+    - id: bcm_b_unpowered
+      likelihood: high
+      label:
+        en: Secondary BCM unpowered
+        de: Sekundäres BCM ohne Spannung
+    - id: water_in_bcm
+      likelihood: medium
+      label:
+        en: Water ingress into rear BCM
+        de: Wassereinbruch ins hintere BCM
+  repair:
+    difficulty: hard
+    diy_possible: false
+    estimated_cost_eur: [100, 1800]
+    estimated_hours: [1.0, 6.0]
+  flags:
+    mil: true
+    emissions_relevant: false
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Body_control_module
+
+- code: U0146
+  scope: generic
+  category: network
+  title:
+    en: Lost Communication with Gateway "A"
+    de: Kommunikation mit Gateway "A" verloren
+  description:
+    en: A control module has lost communication with the central gateway. The gateway routes messages between separate CAN/Ethernet segments — when it falls silent, large parts of the vehicle simultaneously go offline and many secondary DTCs are stored.
+    de: Ein Steuergerät hat die Kommunikation mit dem zentralen Gateway verloren. Das Gateway leitet Botschaften zwischen separaten CAN-/Ethernet-Segmenten weiter — fällt es aus, gehen große Teile des Fahrzeugs gleichzeitig offline und viele Folgefehler werden abgelegt.
+  affected_components:
+    - gateway_module
+    - can_bus_wiring
+  common_causes:
+    - id: gateway_unpowered
+      likelihood: high
+      label:
+        en: Gateway unpowered (often a fuse on the central electronics)
+        de: Gateway ohne Spannung (oft Sicherung an der Zentralelektronik)
+    - id: gateway_failed
+      likelihood: medium
+      label:
+        en: Gateway internally failed
+        de: Gateway intern defekt
+  repair:
+    difficulty: hard
+    diy_possible: false
+    estimated_cost_eur: [150, 2000]
+    estimated_hours: [1.0, 6.0]
+  flags:
+    mil: true
+    emissions_relevant: false
+    limp_mode_possible: true
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/CAN_bus
+
+- code: U0147
+  scope: generic
+  category: network
+  title:
+    en: Lost Communication with Gateway "B"
+    de: Kommunikation mit Gateway "B" verloren
+  description:
+    en: Same as U0146 but for a secondary gateway module. Found on architectures with split front/rear or powertrain/body gateways; the affected segment goes offline.
+    de: Wie U0146, aber für ein sekundäres Gateway-Modul. Tritt bei Architekturen mit getrennten Front-/Heck- oder Antrieb-/Karosserie-Gateways auf; das betroffene Segment ist offline.
+  affected_components:
+    - gateway_module
+    - can_bus_wiring
+  common_causes:
+    - id: gateway_b_unpowered
+      likelihood: high
+      label:
+        en: Secondary gateway unpowered
+        de: Sekundäres Gateway ohne Spannung
+    - id: gateway_b_failed
+      likelihood: medium
+      label:
+        en: Secondary gateway internally failed
+        de: Sekundäres Gateway intern defekt
+  repair:
+    difficulty: hard
+    diy_possible: false
+    estimated_cost_eur: [150, 2000]
+    estimated_hours: [1.0, 6.0]
+  flags:
+    mil: true
+    emissions_relevant: false
+    limp_mode_possible: true
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/CAN_bus
+
+- code: U0150
+  scope: generic
+  category: network
+  title:
+    en: Lost Communication with Side Object Detection Control Module Left
+    de: Kommunikation mit Seitenobjekterkennung links verloren
+  description:
+    en: Same as U0100 but for the left-side object detection module (blind-spot/lane-change radar). Blind-spot warning on the left disables and the warning lamp illuminates.
+    de: Wie U0100, aber für das linke Seitenobjekterkennungs-Modul (Toter-Winkel-/Spurwechsel-Radar). Die Toter-Winkel-Warnung links ist deaktiviert und die Warnleuchte leuchtet.
+  affected_components:
+    - side_object_detection_module_left
+    - can_bus_wiring
+  common_causes:
+    - id: side_radar_unpowered
+      likelihood: high
+      label:
+        en: Side radar module unpowered
+        de: Seitenradar-Modul ohne Spannung
+    - id: side_radar_blocked
+      likelihood: medium
+      label:
+        en: Side radar damaged or covered (rear bumper hit)
+        de: Seitenradar beschädigt oder verdeckt (Heckstoßstange)
+  repair:
+    difficulty: medium
+    diy_possible: false
+    estimated_cost_eur: [80, 1200]
+    estimated_hours: [1.0, 4.0]
+  flags:
+    mil: false
+    emissions_relevant: false
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/CAN_bus
+
+- code: U0153
+  scope: generic
+  category: network
+  title:
+    en: Lost Communication with Restraints Control Module B
+    de: Kommunikation mit Airbag-Steuergerät B verloren
+  description:
+    en: Same as U0100 but for a secondary restraints/airbag control module (often a satellite ECU for side or curtain airbags). The airbag warning lamp illuminates and partial SRS deployment is not guaranteed.
+    de: Wie U0100, aber für ein sekundäres Airbag-Steuergerät (oft ein Satelliten-Steuergerät für Seiten- oder Vorhang-Airbags). Die Airbag-Warnleuchte leuchtet und ein partielles SRS-Auslösen ist nicht sichergestellt.
+  affected_components:
+    - restraints_control_module
+    - can_bus_wiring
+  common_causes:
+    - id: srs_b_unpowered
+      likelihood: high
+      label:
+        en: Secondary SRS module unpowered
+        de: Sekundäres SRS-Modul ohne Spannung
+    - id: can_wiring_to_srs_b
+      likelihood: medium
+      label:
+        en: CAN wiring to secondary SRS broken
+        de: CAN-Leitung zum sekundären SRS unterbrochen
+  repair:
+    difficulty: hard
+    diy_possible: false
+    estimated_cost_eur: [150, 1800]
+    estimated_hours: [1.0, 4.0]
+  flags:
+    mil: true
+    emissions_relevant: false
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/CAN_bus
+
+- code: U0157
+  scope: generic
+  category: network
+  title:
+    en: Lost Communication with Personalization Control Module
+    de: Kommunikation mit Personalisierungs-Steuergerät verloren
+  description:
+    en: Same as U0100 but for the personalization module (memory seat, mirror and steering settings tied to driver profile). Stored profiles cannot be recalled and seat/mirror memory becomes inoperative.
+    de: Wie U0100, aber für das Personalisierungs-Modul (Memory-Sitze, Spiegel und Lenkradeinstellungen pro Fahrerprofil). Gespeicherte Profile können nicht mehr abgerufen werden und die Sitz-/Spiegel-Memory funktioniert nicht.
+  affected_components:
+    - personalization_module
+    - can_bus_wiring
+  common_causes:
+    - id: personalization_unpowered
+      likelihood: high
+      label:
+        en: Personalization module unpowered
+        de: Personalisierungs-Modul ohne Spannung
+    - id: can_wiring_to_personalization
+      likelihood: medium
+      label:
+        en: CAN wiring to personalization module broken
+        de: CAN-Leitung zum Personalisierungs-Modul unterbrochen
+  repair:
+    difficulty: medium
+    diy_possible: false
+    estimated_cost_eur: [80, 800]
+    estimated_hours: [1.0, 3.0]
+  flags:
+    mil: false
+    emissions_relevant: false
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Body_control_module
+
+- code: U0158
+  scope: generic
+  category: network
+  title:
+    en: Lost Communication with Head Up Display
+    de: Kommunikation mit Head-Up-Display verloren
+  description:
+    en: Same as U0100 but for the head-up display (HUD) module. The HUD goes blank or refuses to project — speed, navigation arrows and warning icons are missing from the windshield.
+    de: Wie U0100, aber für das Head-Up-Display-Modul (HUD). Das HUD bleibt schwarz oder projiziert nicht mehr — Geschwindigkeit, Navigationspfeile und Warnsymbole fehlen auf der Windschutzscheibe.
+  affected_components:
+    - head_up_display_module
+    - can_bus_wiring
+  common_causes:
+    - id: hud_unpowered
+      likelihood: high
+      label:
+        en: HUD module unpowered
+        de: HUD-Modul ohne Spannung
+    - id: can_wiring_to_hud
+      likelihood: medium
+      label:
+        en: CAN wiring to HUD broken
+        de: CAN-Leitung zum HUD unterbrochen
+  repair:
+    difficulty: medium
+    diy_possible: false
+    estimated_cost_eur: [80, 1500]
+    estimated_hours: [1.0, 4.0]
+  flags:
+    mil: false
+    emissions_relevant: false
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Heads-up_display
+
+- code: U0160
+  scope: generic
+  category: network
+  title:
+    en: Lost Communication with Audible Alert Control Module
+    de: Kommunikation mit Akustiksignal-Steuergerät verloren
+  description:
+    en: Same as U0100 but for the audible alert (chime/warning gong) module. Warning chimes — seatbelt, key-in-ignition, lights-on — fall silent even though the corresponding lamps still work.
+    de: Wie U0100, aber für das Akustiksignal-Modul (Warngong/Chime). Warntöne — Gurt, Schlüssel im Zündschloss, Licht an — verstummen, obwohl die zugehörigen Warnleuchten noch funktionieren.
+  affected_components:
+    - audible_alert_module
+    - can_bus_wiring
+  common_causes:
+    - id: chime_module_unpowered
+      likelihood: high
+      label:
+        en: Chime module unpowered
+        de: Chime-Modul ohne Spannung
+    - id: can_wiring_to_chime
+      likelihood: medium
+      label:
+        en: CAN wiring to chime module broken
+        de: CAN-Leitung zum Chime-Modul unterbrochen
+  repair:
+    difficulty: medium
+    diy_possible: false
+    estimated_cost_eur: [60, 600]
+    estimated_hours: [0.5, 2.5]
+  flags:
+    mil: false
+    emissions_relevant: false
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Body_control_module
+
+- code: U0161
+  scope: generic
+  category: network
+  title:
+    en: Lost Communication with Compass Module
+    de: Kommunikation mit Kompass-Modul verloren
+  description:
+    en: Same as U0100 but for the compass (electronic magnetometer) module. Compass heading in the cluster or rear-view mirror disappears or freezes.
+    de: Wie U0100, aber für das Kompass-Modul (elektronischer Magnetometer). Die Kompass-Anzeige im Kombiinstrument oder Innenspiegel verschwindet oder friert ein.
+  affected_components:
+    - compass_module
+    - can_bus_wiring
+  common_causes:
+    - id: compass_unpowered
+      likelihood: high
+      label:
+        en: Compass module unpowered
+        de: Kompass-Modul ohne Spannung
+    - id: can_wiring_to_compass
+      likelihood: medium
+      label:
+        en: CAN wiring to compass module broken
+        de: CAN-Leitung zum Kompass-Modul unterbrochen
+  repair:
+    difficulty: medium
+    diy_possible: false
+    estimated_cost_eur: [50, 500]
+    estimated_hours: [0.5, 2.0]
+  flags:
+    mil: false
+    emissions_relevant: false
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Automotive_navigation_system
+
+- code: U0162
+  scope: generic
+  category: network
+  title:
+    en: Lost Communication with Navigation Display Module
+    de: Kommunikation mit Navigations-Display-Modul verloren
+  description:
+    en: Same as U0100 but for the navigation display module. The map display goes blank or shows a communication error while the navigation computer may still operate in the background.
+    de: Wie U0100, aber für das Navigations-Display-Modul. Die Kartenanzeige bleibt schwarz oder zeigt einen Kommunikationsfehler, während der Navigationsrechner im Hintergrund eventuell noch arbeitet.
+  affected_components:
+    - navigation_display_module
+    - can_bus_wiring
+  common_causes:
+    - id: nav_display_unpowered
+      likelihood: high
+      label:
+        en: Navigation display unpowered
+        de: Navigations-Display ohne Spannung
+    - id: can_wiring_to_nav_display
+      likelihood: medium
+      label:
+        en: CAN wiring to navigation display broken
+        de: CAN-Leitung zum Navigations-Display unterbrochen
+  repair:
+    difficulty: medium
+    diy_possible: false
+    estimated_cost_eur: [80, 1500]
+    estimated_hours: [1.0, 4.0]
+  flags:
+    mil: false
+    emissions_relevant: false
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Automotive_navigation_system
+
+- code: U0163
+  scope: generic
+  category: network
+  title:
+    en: Lost Communication with Navigation Control Module
+    de: Kommunikation mit Navigations-Steuergerät verloren
+  description:
+    en: Same as U0100 but for the navigation control unit (the computer that calculates routes). Routing fails entirely — the display may still come up but cannot compute or guide.
+    de: Wie U0100, aber für das Navigations-Steuergerät (der Rechner, der Routen berechnet). Die Routenführung schlägt komplett fehl — das Display erscheint eventuell noch, kann aber weder berechnen noch führen.
+  affected_components:
+    - navigation_control_module
+    - can_bus_wiring
+  common_causes:
+    - id: nav_module_unpowered
+      likelihood: high
+      label:
+        en: Navigation module unpowered
+        de: Navigations-Modul ohne Spannung
+    - id: can_wiring_to_nav_module
+      likelihood: medium
+      label:
+        en: CAN wiring to navigation module broken
+        de: CAN-Leitung zum Navigations-Modul unterbrochen
+  repair:
+    difficulty: medium
+    diy_possible: false
+    estimated_cost_eur: [100, 2000]
+    estimated_hours: [1.0, 5.0]
+  flags:
+    mil: false
+    emissions_relevant: false
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Automotive_navigation_system
+
+- code: U0165
+  scope: generic
+  category: network
+  title:
+    en: Lost Communication with Auxiliary HVAC Control Module
+    de: Kommunikation mit Zusatz-Klima-Steuergerät verloren
+  description:
+    en: Same as U0100 but for a secondary/rear HVAC module (typically rear-zone climate or auxiliary heater on vans and SUVs). Rear climate functions become inoperative.
+    de: Wie U0100, aber für ein sekundäres Klima-Modul (typischerweise Heck-Klima oder Zusatzheizung bei Vans und SUVs). Hintere Klimafunktionen sind nicht mehr verfügbar.
+  affected_components:
+    - hvac_control_module
+    - can_bus_wiring
+  common_causes:
+    - id: aux_hvac_unpowered
+      likelihood: high
+      label:
+        en: Auxiliary HVAC module unpowered
+        de: Zusatz-Klima-Modul ohne Spannung
+    - id: can_wiring_to_aux_hvac
+      likelihood: medium
+      label:
+        en: CAN wiring to auxiliary HVAC broken
+        de: CAN-Leitung zum Zusatz-Klima-Modul unterbrochen
+  repair:
+    difficulty: medium
+    diy_possible: false
+    estimated_cost_eur: [80, 1000]
+    estimated_hours: [1.0, 4.0]
+  flags:
+    mil: false
+    emissions_relevant: false
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Air_conditioning
+
+- code: U0173
+  scope: generic
+  category: network
+  title:
+    en: Communication Bus "C" Off
+    de: Kommunikationsbus "C" abgeschaltet
+  description:
+    en: A control module has detected that bus C is non-functional and shut its bus C interface off. Bus C is typically a tertiary segment used for diagnostics or specialized subsystems; modules on the segment fall silent simultaneously.
+    de: Ein Steuergerät hat erkannt, dass Bus C nicht funktioniert, und seine Bus-C-Schnittstelle abgeschaltet. Bus C ist typischerweise ein tertiäres Segment für Diagnose oder spezialisierte Subsysteme; Steuergeräte am Segment werden gleichzeitig still.
+  affected_components:
+    - can_bus_wiring
+    - control_module
+  common_causes:
+    - id: bus_c_short
+      likelihood: high
+      label:
+        en: Bus C shorted to supply or ground
+        de: Bus C gegen Versorgung oder Masse kurzgeschlossen
+    - id: failing_module_pulling_bus_down
+      likelihood: medium
+      label:
+        en: One failing module pulling bus C down
+        de: Ein defektes Steuergerät zieht Bus C herunter
+  repair:
+    difficulty: hard
+    diy_possible: false
+    estimated_cost_eur: [80, 1500]
+    estimated_hours: [1.0, 8.0]
+  flags:
+    mil: true
+    emissions_relevant: false
+    limp_mode_possible: true
+  references:
+    - sae:J2012
+    - iso:11898
+  sources:
+    - https://en.wikipedia.org/wiki/CAN_bus
+
+- code: U0301
+  scope: generic
+  category: network
+  title:
+    en: Software Incompatibility with ECM/PCM
+    de: Software-Inkompatibilität mit ECM/PCM
+  description:
+    en: A control module has detected that its software/calibration is incompatible with the engine ECM/PCM. Typically appears after a partial flash, mismatched coding, or fitting a used ECM from a different vehicle.
+    de: Ein Steuergerät hat erkannt, dass seine Software/Kalibrierung mit dem Motor-ECM/PCM inkompatibel ist. Tritt typischerweise nach einem Teil-Flash, falscher Codierung oder dem Einbau eines gebrauchten ECM aus einem anderen Fahrzeug auf.
+  affected_components:
+    - engine_control_module
+    - control_module
+  common_causes:
+    - id: software_mismatch
+      likelihood: high
+      label:
+        en: Software/calibration mismatch with ECM
+        de: Software-/Kalibrierungs-Mismatch mit ECM
+    - id: used_module_fitted
+      likelihood: medium
+      label:
+        en: Used ECM from different vehicle fitted
+        de: Gebrauchtes ECM aus anderem Fahrzeug eingebaut
+  repair:
+    difficulty: hard
+    diy_possible: false
+    estimated_cost_eur: [80, 800]
+    estimated_hours: [0.5, 3.0]
+  flags:
+    mil: true
+    emissions_relevant: true
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Engine_control_unit
+
+- code: U0302
+  scope: generic
+  category: network
+  title:
+    en: Software Incompatibility with TCM
+    de: Software-Inkompatibilität mit TCM
+  description:
+    en: A control module has detected that its software/calibration is incompatible with the transmission control module. Often appears after a TCM swap or partial flash.
+    de: Ein Steuergerät hat erkannt, dass seine Software/Kalibrierung mit dem Getriebesteuergerät inkompatibel ist. Tritt häufig nach einem TCM-Tausch oder Teil-Flash auf.
+  affected_components:
+    - transmission_control_module
+    - control_module
+  common_causes:
+    - id: software_mismatch
+      likelihood: high
+      label:
+        en: Software/calibration mismatch with TCM
+        de: Software-/Kalibrierungs-Mismatch mit TCM
+    - id: used_module_fitted
+      likelihood: medium
+      label:
+        en: Used TCM from different vehicle fitted
+        de: Gebrauchtes TCM aus anderem Fahrzeug eingebaut
+  repair:
+    difficulty: hard
+    diy_possible: false
+    estimated_cost_eur: [80, 800]
+    estimated_hours: [0.5, 3.0]
+  flags:
+    mil: true
+    emissions_relevant: false
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/CAN_bus
+
+- code: U0303
+  scope: generic
+  category: network
+  title:
+    en: Software Incompatibility with Transfer Case Control Module
+    de: Software-Inkompatibilität mit Verteilergetriebe-Steuergerät
+  description:
+    en: A control module has detected that its software/calibration is incompatible with the transfer case control module. AWD/4WD modes may not work correctly until matching software is flashed.
+    de: Ein Steuergerät hat erkannt, dass seine Software/Kalibrierung mit dem Verteilergetriebe-Steuergerät inkompatibel ist. AWD-/4WD-Modi funktionieren eventuell nicht korrekt, bis passende Software geflasht wird.
+  affected_components:
+    - transfer_case_control_module
+    - control_module
+  common_causes:
+    - id: software_mismatch
+      likelihood: high
+      label:
+        en: Software/calibration mismatch with transfer case
+        de: Software-/Kalibrierungs-Mismatch mit Verteilergetriebe
+    - id: used_module_fitted
+      likelihood: medium
+      label:
+        en: Used transfer case module from different vehicle fitted
+        de: Gebrauchtes Verteilergetriebe-Modul aus anderem Fahrzeug eingebaut
+  repair:
+    difficulty: hard
+    diy_possible: false
+    estimated_cost_eur: [80, 800]
+    estimated_hours: [0.5, 3.0]
+  flags:
+    mil: true
+    emissions_relevant: false
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/CAN_bus
+
+- code: U0305
+  scope: generic
+  category: network
+  title:
+    en: Software Incompatibility with Cruise Control Module
+    de: Software-Inkompatibilität mit Tempomat-Steuergerät
+  description:
+    en: A control module has detected that its software/calibration is incompatible with the cruise control module. Cruise control may be disabled until matching software is flashed.
+    de: Ein Steuergerät hat erkannt, dass seine Software/Kalibrierung mit dem Tempomat-Steuergerät inkompatibel ist. Der Tempomat ist eventuell deaktiviert, bis passende Software geflasht wird.
+  affected_components:
+    - cruise_control_module
+    - control_module
+  common_causes:
+    - id: software_mismatch
+      likelihood: high
+      label:
+        en: Software/calibration mismatch with cruise module
+        de: Software-/Kalibrierungs-Mismatch mit Tempomat-Modul
+    - id: used_module_fitted
+      likelihood: medium
+      label:
+        en: Used cruise module from different vehicle fitted
+        de: Gebrauchtes Tempomat-Modul aus anderem Fahrzeug eingebaut
+  repair:
+    difficulty: medium
+    diy_possible: false
+    estimated_cost_eur: [80, 600]
+    estimated_hours: [0.5, 2.5]
+  flags:
+    mil: true
+    emissions_relevant: false
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/CAN_bus
+
+- code: U0315
+  scope: generic
+  category: network
+  title:
+    en: Software Incompatibility with ABS Control Module
+    de: Software-Inkompatibilität mit ABS-Steuergerät
+  description:
+    en: A control module has detected that its software/calibration is incompatible with the ABS module. ABS, ESP/ESC and traction control may be disabled until matching software is flashed.
+    de: Ein Steuergerät hat erkannt, dass seine Software/Kalibrierung mit dem ABS-Modul inkompatibel ist. ABS, ESP/ESC und Traktionskontrolle sind eventuell deaktiviert, bis passende Software geflasht wird.
+  affected_components:
+    - abs_control_module
+    - control_module
+  common_causes:
+    - id: software_mismatch
+      likelihood: high
+      label:
+        en: Software/calibration mismatch with ABS
+        de: Software-/Kalibrierungs-Mismatch mit ABS
+    - id: used_module_fitted
+      likelihood: medium
+      label:
+        en: Used ABS module from different vehicle fitted
+        de: Gebrauchtes ABS-Modul aus anderem Fahrzeug eingebaut
+  repair:
+    difficulty: hard
+    diy_possible: false
+    estimated_cost_eur: [80, 800]
+    estimated_hours: [0.5, 3.0]
+  flags:
+    mil: true
+    emissions_relevant: false
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Anti-lock_braking_system
+
+- code: U0403
+  scope: generic
+  category: network
+  title:
+    en: Invalid Data Received from Transfer Case Control Module
+    de: Ungültige Daten vom Verteilergetriebe-Steuergerät empfangen
+  description:
+    en: Same as U0401 but for the transfer case module. AWD/4WD modes may default to a fixed setting and warning lamps illuminate.
+    de: Wie U0401, aber für das Verteilergetriebe-Modul. AWD-/4WD-Modi fallen auf eine feste Einstellung zurück und Warnleuchten leuchten.
+  affected_components:
+    - transfer_case_control_module
+    - can_bus_wiring
+  common_causes:
+    - id: tccm_internal_fault
+      likelihood: medium
+      label:
+        en: Transfer case internal sensor or processing fault
+        de: Interner Sensor- oder Verarbeitungsfehler im Verteilergetriebe
+    - id: can_corruption
+      likelihood: medium
+      label:
+        en: CAN corruption causing checksum errors
+        de: CAN-Korruption mit Checksummen-Fehlern
+  repair:
+    difficulty: hard
+    diy_possible: false
+    estimated_cost_eur: [80, 1500]
+    estimated_hours: [1.0, 5.0]
+  flags:
+    mil: true
+    emissions_relevant: false
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/CAN_bus
+
+- code: U0404
+  scope: generic
+  category: network
+  title:
+    en: Invalid Data Received from Gear Shift Control Module
+    de: Ungültige Daten vom Schaltmodul empfangen
+  description:
+    en: Same as U0401 but for the gear shift module (shift-by-wire selector). The transmission may go to limp-home or refuse to leave Park.
+    de: Wie U0401, aber für das Schaltmodul (Shift-by-Wire-Wählhebel). Das Getriebe kann in den Notlauf gehen oder sich weigern, aus Parken zu schalten.
+  affected_components:
+    - gear_shift_module
+    - can_bus_wiring
+  common_causes:
+    - id: shift_module_internal_fault
+      likelihood: medium
+      label:
+        en: Shift module internal fault
+        de: Interner Fehler im Schaltmodul
+    - id: can_corruption
+      likelihood: medium
+      label:
+        en: CAN corruption causing checksum errors
+        de: CAN-Korruption mit Checksummen-Fehlern
+  repair:
+    difficulty: hard
+    diy_possible: false
+    estimated_cost_eur: [80, 1500]
+    estimated_hours: [1.0, 5.0]
+  flags:
+    mil: true
+    emissions_relevant: false
+    limp_mode_possible: true
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/CAN_bus
+
+- code: U0405
+  scope: generic
+  category: network
+  title:
+    en: Invalid Data Received from Cruise Control Module
+    de: Ungültige Daten vom Tempomat-Steuergerät empfangen
+  description:
+    en: Same as U0401 but for the cruise control module. Cruise control becomes inoperative until valid data is restored.
+    de: Wie U0401, aber für das Tempomat-Steuergerät. Der Tempomat ist nicht mehr verfügbar, bis wieder gültige Daten anliegen.
+  affected_components:
+    - cruise_control_module
+    - can_bus_wiring
+  common_causes:
+    - id: cruise_internal_fault
+      likelihood: medium
+      label:
+        en: Cruise module internal fault
+        de: Interner Fehler im Tempomat-Modul
+    - id: can_corruption
+      likelihood: medium
+      label:
+        en: CAN corruption causing checksum errors
+        de: CAN-Korruption mit Checksummen-Fehlern
+  repair:
+    difficulty: medium
+    diy_possible: false
+    estimated_cost_eur: [80, 1000]
+    estimated_hours: [1.0, 4.0]
+  flags:
+    mil: true
+    emissions_relevant: false
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/CAN_bus
+
+- code: U0414
+  scope: generic
+  category: network
+  title:
+    en: Invalid Data Received from 4WD Clutch Control Module
+    de: Ungültige Daten vom 4WD-Kupplungs-Steuergerät empfangen
+  description:
+    en: Same as U0401 but for the 4WD clutch control module (Haldex-type). AWD distribution defaults to FWD/RWD and warning lamps illuminate.
+    de: Wie U0401, aber für das 4WD-Kupplungs-Steuergerät (Haldex-Typ). Die AWD-Verteilung fällt auf reinen Front-/Heckantrieb zurück und Warnleuchten leuchten.
+  affected_components:
+    - awd_clutch_control_module
+    - can_bus_wiring
+  common_causes:
+    - id: awd_clutch_internal_fault
+      likelihood: medium
+      label:
+        en: AWD clutch internal fault
+        de: Interner Fehler in der AWD-Kupplung
+    - id: can_corruption
+      likelihood: medium
+      label:
+        en: CAN corruption causing checksum errors
+        de: CAN-Korruption mit Checksummen-Fehlern
+  repair:
+    difficulty: hard
+    diy_possible: false
+    estimated_cost_eur: [100, 1800]
+    estimated_hours: [1.0, 6.0]
+  flags:
+    mil: true
+    emissions_relevant: false
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/CAN_bus
+
+- code: U0416
+  scope: generic
+  category: network
+  title:
+    en: Invalid Data Received from Vehicle Dynamics Control Module
+    de: Ungültige Daten vom Fahrdynamik-Steuergerät empfangen
+  description:
+    en: Same as U0401 but for the vehicle dynamics module. Active suspension, roll stabilization or rear-wheel steering deactivate when implausible data is received.
+    de: Wie U0401, aber für das Fahrdynamik-Modul. Aktivfahrwerk, Wankstabilisierung oder Hinterachslenkung werden deaktiviert, wenn unplausible Daten empfangen werden.
+  affected_components:
+    - vehicle_dynamics_module
+    - can_bus_wiring
+  common_causes:
+    - id: vdc_internal_fault
+      likelihood: medium
+      label:
+        en: Vehicle dynamics internal fault
+        de: Interner Fehler in der Fahrdynamik
+    - id: can_corruption
+      likelihood: medium
+      label:
+        en: CAN corruption causing checksum errors
+        de: CAN-Korruption mit Checksummen-Fehlern
+  repair:
+    difficulty: hard
+    diy_possible: false
+    estimated_cost_eur: [100, 1800]
+    estimated_hours: [1.0, 6.0]
+  flags:
+    mil: true
+    emissions_relevant: false
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Anti-lock_braking_system
+
+- code: U0418
+  scope: generic
+  category: network
+  title:
+    en: Invalid Data Received from Brake System Control Module
+    de: Ungültige Daten vom Bremssystem-Steuergerät empfangen
+  description:
+    en: Same as U0401 but for the brake system module (often integrated brake booster on brake-by-wire vehicles). Brake assist functions deactivate and pedal feel may change.
+    de: Wie U0401, aber für das Bremssystem-Modul (oft integrierter Bremskraftverstärker bei Brake-by-Wire-Fahrzeugen). Bremsassistenzfunktionen werden deaktiviert und das Pedalgefühl kann sich ändern.
+  affected_components:
+    - brake_system_control_module
+    - can_bus_wiring
+  common_causes:
+    - id: brake_internal_fault
+      likelihood: medium
+      label:
+        en: Brake module internal fault
+        de: Interner Fehler im Brems-Modul
+    - id: can_corruption
+      likelihood: medium
+      label:
+        en: CAN corruption causing checksum errors
+        de: CAN-Korruption mit Checksummen-Fehlern
+  repair:
+    difficulty: hard
+    diy_possible: false
+    estimated_cost_eur: [100, 2000]
+    estimated_hours: [1.0, 6.0]
+  flags:
+    mil: true
+    emissions_relevant: false
+    limp_mode_possible: true
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Anti-lock_braking_system
+
+- code: U0420
+  scope: generic
+  category: network
+  title:
+    en: Invalid Data Received from Power Steering Control Module
+    de: Ungültige Daten vom Servolenkungs-Steuergerät empfangen
+  description:
+    en: Same as U0401 but for the electric power steering (EPS) module. Steering assist may revert to a default mode and the steering warning lamp illuminates.
+    de: Wie U0401, aber für das Servolenkungs-Steuergerät (EPS). Die Lenkunterstützung fällt eventuell auf einen Standardmodus zurück und die Lenkungs-Warnleuchte leuchtet.
+  affected_components:
+    - power_steering_module
+    - can_bus_wiring
+  common_causes:
+    - id: eps_internal_fault
+      likelihood: medium
+      label:
+        en: EPS module internal fault
+        de: Interner Fehler im EPS-Modul
+    - id: can_corruption
+      likelihood: medium
+      label:
+        en: CAN corruption causing checksum errors
+        de: CAN-Korruption mit Checksummen-Fehlern
+  repair:
+    difficulty: hard
+    diy_possible: false
+    estimated_cost_eur: [100, 2000]
+    estimated_hours: [1.0, 6.0]
+  flags:
+    mil: true
+    emissions_relevant: false
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Power_steering
+
+- code: U0422
+  scope: generic
+  category: network
+  title:
+    en: Invalid Data Received from Body Control Module
+    de: Ungültige Daten vom Bordnetzsteuergerät empfangen
+  description:
+    en: Same as U0401 but for the body control module (BCM). Affected functions are typically interior lights, wipers, central locking and immobiliser handshake.
+    de: Wie U0401, aber für das Bordnetzsteuergerät (BCM). Betroffen sind typischerweise Innenraumbeleuchtung, Scheibenwischer, Zentralverriegelung und Wegfahrsperren-Handshake.
+  affected_components:
+    - body_control_module
+    - can_bus_wiring
+  common_causes:
+    - id: bcm_internal_fault
+      likelihood: medium
+      label:
+        en: BCM internal fault
+        de: Interner Fehler im BCM
+    - id: can_corruption
+      likelihood: medium
+      label:
+        en: CAN corruption causing checksum errors
+        de: CAN-Korruption mit Checksummen-Fehlern
+  repair:
+    difficulty: hard
+    diy_possible: false
+    estimated_cost_eur: [100, 1800]
+    estimated_hours: [1.0, 6.0]
+  flags:
+    mil: true
+    emissions_relevant: false
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Body_control_module
+
+- code: U0423
+  scope: generic
+  category: network
+  title:
+    en: Invalid Data Received from Information Center
+    de: Ungültige Daten vom Informations-Center empfangen
+  description:
+    en: Same as U0401 but for the central information display/head unit. The display may show stale or wrong values, or the trip computer may freeze on certain readings.
+    de: Wie U0401, aber für das zentrale Informationsdisplay/Head-Unit. Das Display zeigt eventuell veraltete oder falsche Werte, oder der Bordcomputer friert bei bestimmten Anzeigen ein.
+  affected_components:
+    - information_display_module
+    - can_bus_wiring
+  common_causes:
+    - id: head_unit_internal_fault
+      likelihood: medium
+      label:
+        en: Head unit internal fault
+        de: Interner Fehler in der Head-Unit
+    - id: can_corruption
+      likelihood: medium
+      label:
+        en: CAN corruption causing checksum errors
+        de: CAN-Korruption mit Checksummen-Fehlern
+  repair:
+    difficulty: medium
+    diy_possible: false
+    estimated_cost_eur: [80, 1500]
+    estimated_hours: [1.0, 4.0]
+  flags:
+    mil: false
+    emissions_relevant: false
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/CAN_bus
+
+- code: U0424
+  scope: generic
+  category: network
+  title:
+    en: Invalid Data Received from HVAC Control Module
+    de: Ungültige Daten vom Klima-Steuergerät empfangen
+  description:
+    en: Same as U0401 but for the HVAC control module. Climate functions may behave erratically — wrong temperature, blower stuck on a step, defrost not engaging.
+    de: Wie U0401, aber für das Klima-Steuergerät. Klimafunktionen verhalten sich eventuell sprunghaft — falsche Temperatur, Gebläse hängt in einer Stufe, Defroster aktiviert nicht.
+  affected_components:
+    - hvac_control_module
+    - can_bus_wiring
+  common_causes:
+    - id: hvac_internal_fault
+      likelihood: medium
+      label:
+        en: HVAC module internal fault
+        de: Interner Fehler im Klima-Modul
+    - id: can_corruption
+      likelihood: medium
+      label:
+        en: CAN corruption causing checksum errors
+        de: CAN-Korruption mit Checksummen-Fehlern
+  repair:
+    difficulty: medium
+    diy_possible: false
+    estimated_cost_eur: [80, 1000]
+    estimated_hours: [1.0, 4.0]
+  flags:
+    mil: false
+    emissions_relevant: false
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Air_conditioning
+
+- code: U0426
+  scope: generic
+  category: network
+  title:
+    en: Invalid Data Received from Vehicle Immobiliser Control Module
+    de: Ungültige Daten vom Wegfahrsperren-Steuergerät empfangen
+  description:
+    en: Same as U0401 but for the immobiliser module. The cryptographic handshake may fail intermittently — typical symptom is engine refusing to start on some attempts but starting on others.
+    de: Wie U0401, aber für das Wegfahrsperren-Modul. Der kryptografische Handshake schlägt eventuell sporadisch fehl — typisches Symptom ist, dass der Motor manchmal nicht anspringt und beim nächsten Versuch wieder läuft.
+  affected_components:
+    - immobiliser_module
+    - can_bus_wiring
+  common_causes:
+    - id: immo_internal_fault
+      likelihood: medium
+      label:
+        en: Immobiliser internal fault
+        de: Interner Fehler in der Wegfahrsperre
+    - id: can_corruption
+      likelihood: medium
+      label:
+        en: CAN corruption causing checksum errors
+        de: CAN-Korruption mit Checksummen-Fehlern
+  repair:
+    difficulty: hard
+    diy_possible: false
+    estimated_cost_eur: [100, 1800]
+    estimated_hours: [1.0, 5.0]
+  flags:
+    mil: true
+    emissions_relevant: false
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Body_control_module

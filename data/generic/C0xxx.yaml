@@ -842,3 +842,1509 @@
   sources:
     - https://en.wikipedia.org/wiki/Power_steering
     - https://en.wikipedia.org/wiki/Electronic_stability_control
+
+- code: C0201
+  scope: generic
+  category: chassis
+  title:
+    en: Brake Fluid Level Switch Circuit
+    de: Bremsflüssigkeitsstand-Schalter Schaltung
+  description:
+    en: The ABS or brake control module has detected a fault in the brake fluid level switch circuit. A low fluid level indicates a potential leak in the hydraulic system and disables ABS while a separate brake warning lamp is illuminated.
+    de: Das ABS- oder Brems-Steuergerät hat einen Fehler im Stromkreis des Bremsflüssigkeitsstand-Schalters erkannt. Ein niedriger Flüssigkeitsstand weist auf ein mögliches Leck im Hydrauliksystem hin und deaktiviert ABS bei gleichzeitigem Aufleuchten der Brems-Warnleuchte.
+  affected_components:
+    - brake_fluid_level_switch
+    - brake_fluid_reservoir
+    - abs_control_module
+  common_causes:
+    - id: brake_fluid_low
+      likelihood: high
+      label:
+        en: Brake fluid level low (worn pads or hydraulic leak)
+        de: Bremsflüssigkeitsstand niedrig (verschlissene Beläge oder Leck)
+    - id: level_switch_failed
+      likelihood: medium
+      label:
+        en: Float switch in reservoir failed
+        de: Schwimmerschalter im Behälter defekt
+    - id: switch_wiring_fault
+      likelihood: low
+      label:
+        en: Wiring or connector fault
+        de: Verkabelungs- oder Steckerfehler
+  repair:
+    difficulty: easy
+    diy_possible: true
+    estimated_cost_eur: [40, 300]
+    estimated_hours: [0.3, 2.0]
+  flags:
+    mil: false
+    emissions_relevant: false
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Anti-lock_braking_system
+
+- code: C0202
+  scope: generic
+  category: chassis
+  title:
+    en: Brake Pedal Position Sensor
+    de: Bremspedalstellungssensor
+  description:
+    en: The chassis or brake control module has detected an implausible signal from the brake pedal position sensor. Modern brake systems use this sensor for brake assist, regenerative braking and adaptive cruise control functions.
+    de: Das Fahrwerks- oder Brems-Steuergerät hat ein unplausibles Signal vom Bremspedalstellungssensor erkannt. Moderne Bremssysteme nutzen diesen Sensor für Bremsassistent, Rekuperation und adaptive Geschwindigkeitsregelung.
+  affected_components:
+    - brake_pedal_position_sensor
+    - brake_control_module
+    - brake_pedal_assembly
+  common_causes:
+    - id: pedal_sensor_failed
+      likelihood: high
+      label:
+        en: Pedal position sensor failed
+        de: Pedalstellungssensor defekt
+    - id: pedal_sensor_calibration
+      likelihood: medium
+      label:
+        en: Sensor not calibrated after replacement
+        de: Sensor nach Tausch nicht kalibriert
+    - id: pedal_sensor_wiring
+      likelihood: low
+      label:
+        en: Wiring or connector fault
+        de: Verkabelungs- oder Steckerfehler
+  repair:
+    difficulty: medium
+    diy_possible: false
+    estimated_cost_eur: [100, 600]
+    estimated_hours: [0.5, 2.5]
+  flags:
+    mil: false
+    emissions_relevant: false
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Anti-lock_braking_system
+
+- code: C0205
+  scope: generic
+  category: chassis
+  title:
+    en: Stop Lamp Switch Circuit
+    de: Bremslichtschalter Schaltung
+  description:
+    en: The ABS or stability control module has detected a fault in the stop lamp switch circuit. The brake light switch tells the module whether the driver is braking and is used to coordinate ABS, traction control and cruise control.
+    de: Das ABS- oder ESP-Steuergerät hat einen Fehler im Stromkreis des Bremslichtschalters erkannt. Der Schalter meldet die Bremsbetätigung des Fahrers und dient der Koordination von ABS, ASR und Geschwindigkeitsregelung.
+  affected_components:
+    - stop_lamp_switch
+    - abs_control_module
+    - cruise_control_module
+  common_causes:
+    - id: stop_lamp_switch_failed
+      likelihood: high
+      label:
+        en: Stop lamp switch failed or misadjusted
+        de: Bremslichtschalter defekt oder falsch justiert
+    - id: stop_lamp_wiring
+      likelihood: medium
+      label:
+        en: Wiring or connector fault
+        de: Verkabelungs- oder Steckerfehler
+    - id: stop_lamp_fuse
+      likelihood: low
+      label:
+        en: Blown stop lamp fuse
+        de: Bremslicht-Sicherung defekt
+  repair:
+    difficulty: easy
+    diy_possible: true
+    estimated_cost_eur: [30, 200]
+    estimated_hours: [0.3, 1.0]
+  flags:
+    mil: false
+    emissions_relevant: false
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Anti-lock_braking_system
+
+- code: C0237
+  scope: generic
+  category: chassis
+  title:
+    en: Loss of Speed Sensor Signal Front Left
+    de: Verlust des Drehzahlsignals vorne links
+  description:
+    en: The ABS control module has lost the wheel speed signal from the front left wheel during driving. ABS and stability control are disabled because wheel-individual speed information is required for slip detection.
+    de: Das ABS-Steuergerät hat während der Fahrt das Raddrehzahlsignal des vorderen linken Rades verloren. ABS und Stabilitätsregelung werden deaktiviert, da radindividuelle Drehzahlinformationen für die Schlupferkennung erforderlich sind.
+  affected_components:
+    - wheel_speed_sensor
+    - tone_ring
+    - abs_control_module
+    - sensor_wiring
+  common_causes:
+    - id: wheel_speed_sensor_failed
+      likelihood: high
+      label:
+        en: Wheel speed sensor failed
+        de: Raddrehzahlsensor defekt
+    - id: sensor_wiring_break
+      likelihood: medium
+      label:
+        en: Wiring break at wheel arch
+        de: Kabelbruch im Radkasten
+    - id: tone_ring_damaged
+      likelihood: low
+      label:
+        en: Tone ring damaged
+        de: Polrad beschädigt
+  repair:
+    difficulty: medium
+    diy_possible: true
+    estimated_cost_eur: [80, 400]
+    estimated_hours: [0.5, 2.5]
+  flags:
+    mil: false
+    emissions_relevant: false
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Wheel_speed_sensor
+    - https://en.wikipedia.org/wiki/Anti-lock_braking_system
+
+- code: C0238
+  scope: generic
+  category: chassis
+  title:
+    en: Speed Wheel-to-Wheel Mismatch
+    de: Raddrehzahl Rad-zu-Rad Abweichung
+  description:
+    en: The ABS control module has detected an implausible speed difference between wheels that cannot be explained by cornering. This typically points to one suspect sensor, mismatched tyre sizes or a damaged tone ring.
+    de: Das ABS-Steuergerät hat eine unplausible Drehzahldifferenz zwischen Rädern erkannt, die sich nicht durch Kurvenfahrt erklären lässt. Üblicherweise weist dies auf einen verdächtigen Sensor, ungleiche Reifengrößen oder ein beschädigtes Polrad hin.
+  affected_components:
+    - wheel_speed_sensor
+    - tone_ring
+    - tires
+    - abs_control_module
+  common_causes:
+    - id: tire_size_mismatch
+      likelihood: high
+      label:
+        en: Tyre sizes or wear levels do not match across axles
+        de: Reifengrößen oder Verschleißgrade an den Achsen unterschiedlich
+    - id: tone_ring_damaged
+      likelihood: medium
+      label:
+        en: Tone ring missing teeth on one wheel
+        de: Polrad an einem Rad mit fehlenden Zähnen
+    - id: wheel_speed_sensor_failed
+      likelihood: low
+      label:
+        en: Wheel speed sensor degraded
+        de: Raddrehzahlsensor verschlissen
+  repair:
+    difficulty: medium
+    diy_possible: true
+    estimated_cost_eur: [80, 600]
+    estimated_hours: [0.5, 3.0]
+  flags:
+    mil: false
+    emissions_relevant: false
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Wheel_speed_sensor
+
+- code: C0240
+  scope: generic
+  category: chassis
+  title:
+    en: Brake Pressure Sensor
+    de: Bremsdrucksensor
+  description:
+    en: The ABS or stability control module has detected a fault in a brake pressure sensor. Pressure information is used by ESP and brake assist to determine driver intent and modulation pressure during regulation.
+    de: Das ABS- oder ESP-Steuergerät hat einen Fehler eines Bremsdrucksensors erkannt. Die Druckinformation wird von ESP und Bremsassistent genutzt, um die Fahrerabsicht und den Modulationsdruck während der Regelung zu bestimmen.
+  affected_components:
+    - brake_pressure_sensor
+    - abs_hydraulic_unit
+    - abs_control_module
+  common_causes:
+    - id: pressure_sensor_failed
+      likelihood: high
+      label:
+        en: Brake pressure sensor failed
+        de: Bremsdrucksensor defekt
+    - id: pressure_sensor_wiring
+      likelihood: medium
+      label:
+        en: Wiring or connector fault
+        de: Verkabelungs- oder Steckerfehler
+    - id: brake_fluid_air
+      likelihood: low
+      label:
+        en: Air in brake system
+        de: Luft im Bremssystem
+  repair:
+    difficulty: medium
+    diy_possible: false
+    estimated_cost_eur: [150, 800]
+    estimated_hours: [0.5, 3.0]
+  flags:
+    mil: false
+    emissions_relevant: false
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Anti-lock_braking_system
+
+- code: C0245
+  scope: generic
+  category: chassis
+  title:
+    en: Wheel Speed Sensor Frequency Mismatch
+    de: Raddrehzahlsensor Frequenzabweichung
+  description:
+    en: The ABS control module has detected that the frequency of one wheel speed sensor signal does not match the others under stable driving conditions. This often indicates a tone ring with extra or missing teeth or a sensor with degraded signal quality.
+    de: Das ABS-Steuergerät hat erkannt, dass die Frequenz eines Raddrehzahlsignals bei stabiler Fahrt von den anderen abweicht. Häufig deutet dies auf ein Polrad mit zusätzlichen oder fehlenden Zähnen oder einen Sensor mit eingeschränkter Signalqualität hin.
+  affected_components:
+    - wheel_speed_sensor
+    - tone_ring
+    - abs_control_module
+  common_causes:
+    - id: tone_ring_damaged
+      likelihood: high
+      label:
+        en: Tone ring damaged or contaminated
+        de: Polrad beschädigt oder verschmutzt
+    - id: wheel_speed_sensor_failed
+      likelihood: medium
+      label:
+        en: Wheel speed sensor degraded
+        de: Raddrehzahlsensor verschlissen
+    - id: tire_size_mismatch
+      likelihood: low
+      label:
+        en: Tyre size mismatch
+        de: Reifengrößen-Abweichung
+  repair:
+    difficulty: medium
+    diy_possible: true
+    estimated_cost_eur: [80, 500]
+    estimated_hours: [0.5, 3.0]
+  flags:
+    mil: false
+    emissions_relevant: false
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Wheel_speed_sensor
+
+- code: C0250
+  scope: generic
+  category: chassis
+  title:
+    en: Power Steering Pump Pressure
+    de: Servolenkungspumpe Druck
+  description:
+    en: The power steering control module has detected an implausible pressure or load signal from the steering pump. On hydraulic systems this may indicate low fluid or a worn pump; on electric systems it may indicate excessive motor load.
+    de: Das Lenkungs-Steuergerät hat ein unplausibles Druck- oder Lastsignal der Lenkpumpe erkannt. Bei hydraulischen Systemen kann dies auf niedrigen Flüssigkeitsstand oder eine verschlissene Pumpe hinweisen; bei elektrischen Systemen auf eine zu hohe Motorlast.
+  affected_components:
+    - power_steering_pump
+    - power_steering_module
+    - power_steering_pressure_sensor
+  common_causes:
+    - id: ps_fluid_low
+      likelihood: high
+      label:
+        en: Power steering fluid low or contaminated
+        de: Servoöl niedrig oder verschmutzt
+    - id: ps_pump_worn
+      likelihood: medium
+      label:
+        en: Power steering pump worn
+        de: Servolenkungspumpe verschlissen
+    - id: ps_pressure_sensor_failed
+      likelihood: low
+      label:
+        en: Pressure sensor failed
+        de: Drucksensor defekt
+  repair:
+    difficulty: medium
+    diy_possible: false
+    estimated_cost_eur: [100, 1200]
+    estimated_hours: [0.5, 4.0]
+  flags:
+    mil: false
+    emissions_relevant: false
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Power_steering
+
+- code: C0265
+  scope: generic
+  category: chassis
+  title:
+    en: EBCM Relay Circuit
+    de: EBCM-Relais Schaltung
+  description:
+    en: The Electronic Brake Control Module has detected a fault in its main supply relay circuit. Without proper relay supply the EBCM cannot operate the hydraulic unit and ABS as well as stability control are disabled.
+    de: Das elektronische Brems-Steuergerät (EBCM) hat einen Fehler im Stromkreis des Hauptversorgungs-Relais erkannt. Ohne Relaisversorgung kann das EBCM die Hydraulikeinheit nicht ansteuern, ABS und Stabilitätsregelung werden deaktiviert.
+  affected_components:
+    - ebcm_relay
+    - ebcm_module
+    - power_supply_wiring
+  common_causes:
+    - id: ebcm_relay_failed
+      likelihood: high
+      label:
+        en: EBCM relay failed
+        de: EBCM-Relais defekt
+    - id: ebcm_module_internal
+      likelihood: medium
+      label:
+        en: Internal EBCM fault (relay integrated)
+        de: Interner EBCM-Fehler (Relais integriert)
+    - id: ebcm_power_wiring
+      likelihood: low
+      label:
+        en: Power supply wiring or fuse fault
+        de: Versorgungsleitungs- oder Sicherungsfehler
+  repair:
+    difficulty: hard
+    diy_possible: false
+    estimated_cost_eur: [200, 1500]
+    estimated_hours: [0.5, 3.0]
+  flags:
+    mil: false
+    emissions_relevant: false
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Anti-lock_braking_system
+
+- code: C0266
+  scope: generic
+  category: chassis
+  title:
+    en: Active Brake Booster
+    de: Aktiver Bremskraftverstärker
+  description:
+    en: The brake control module has detected a fault in the active (electric or vacuum-controlled) brake booster. Active boosters are used by emergency brake assist and adaptive cruise control to autonomously build brake pressure.
+    de: Das Brems-Steuergerät hat einen Fehler am aktiven (elektrischen oder vakuumgesteuerten) Bremskraftverstärker erkannt. Aktive Verstärker werden von Notbremsassistent und adaptiver Geschwindigkeitsregelung zum eigenständigen Aufbau von Bremsdruck genutzt.
+  affected_components:
+    - active_brake_booster
+    - brake_control_module
+    - vacuum_pump
+  common_causes:
+    - id: active_booster_failed
+      likelihood: high
+      label:
+        en: Active booster motor or solenoid failed
+        de: Motor oder Magnetventil des aktiven Verstärkers defekt
+    - id: vacuum_pump_weak
+      likelihood: medium
+      label:
+        en: Vacuum supply weak (vacuum pump or hose fault)
+        de: Vakuumversorgung schwach (Vakuumpumpe oder Schlauchfehler)
+    - id: booster_wiring_fault
+      likelihood: low
+      label:
+        en: Wiring or connector fault
+        de: Verkabelungs- oder Steckerfehler
+  repair:
+    difficulty: hard
+    diy_possible: false
+    estimated_cost_eur: [400, 2500]
+    estimated_hours: [1.0, 5.0]
+  flags:
+    mil: false
+    emissions_relevant: false
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Anti-lock_braking_system
+
+- code: C0267
+  scope: generic
+  category: chassis
+  title:
+    en: Brake Pump Motor Circuit
+    de: Bremspumpenmotor Schaltung
+  description:
+    en: The ABS or brake control module has detected an electrical fault in the brake pump motor circuit. The pump is used to build brake pressure during ABS, ESP and brake-by-wire operations and a fault disables these functions.
+    de: Das ABS- oder Brems-Steuergerät hat einen elektrischen Fehler im Stromkreis des Bremspumpenmotors erkannt. Die Pumpe baut bei ABS-, ESP- und Brake-by-Wire-Funktionen Bremsdruck auf; ein Fehler deaktiviert diese Funktionen.
+  affected_components:
+    - brake_pump_motor
+    - abs_control_module
+    - power_supply_wiring
+  common_causes:
+    - id: brake_pump_motor_failed
+      likelihood: high
+      label:
+        en: Brake pump motor failed
+        de: Bremspumpenmotor defekt
+    - id: abs_relay_failed
+      likelihood: medium
+      label:
+        en: Pump motor relay failed
+        de: Pumpenrelais defekt
+    - id: abs_power_wiring
+      likelihood: low
+      label:
+        en: Power supply wiring fault
+        de: Versorgungsleitungs-Fehler
+  repair:
+    difficulty: hard
+    diy_possible: false
+    estimated_cost_eur: [300, 1500]
+    estimated_hours: [1.0, 4.0]
+  flags:
+    mil: false
+    emissions_relevant: false
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Anti-lock_braking_system
+
+- code: C0268
+  scope: generic
+  category: chassis
+  title:
+    en: Brake Pump Run Time Exceeded
+    de: Bremspumpe Laufzeit überschritten
+  description:
+    en: The brake control module has detected that the brake pump has run longer than the allowed maximum time. This typically indicates the pump cannot reach target pressure due to a hydraulic leak, air in the system or a worn pump.
+    de: Das Brems-Steuergerät hat erkannt, dass die Bremspumpe länger als die zulässige Maximalzeit gelaufen ist. Üblicherweise erreicht die Pumpe den Solldruck nicht — Ursache sind hydraulische Lecks, Luft im System oder eine verschlissene Pumpe.
+  affected_components:
+    - brake_pump_motor
+    - abs_hydraulic_unit
+    - brake_lines
+  common_causes:
+    - id: hydraulic_leak
+      likelihood: high
+      label:
+        en: Hydraulic leak in brake system
+        de: Hydraulisches Leck im Bremssystem
+    - id: brake_fluid_air
+      likelihood: medium
+      label:
+        en: Air in brake system
+        de: Luft im Bremssystem
+    - id: brake_pump_motor_failed
+      likelihood: low
+      label:
+        en: Brake pump worn or weak
+        de: Bremspumpe verschlissen oder schwach
+  repair:
+    difficulty: hard
+    diy_possible: false
+    estimated_cost_eur: [200, 1500]
+    estimated_hours: [1.0, 4.0]
+  flags:
+    mil: false
+    emissions_relevant: false
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Anti-lock_braking_system
+
+- code: C0269
+  scope: generic
+  category: chassis
+  title:
+    en: Brake Vacuum Sensor
+    de: Bremsvakuumsensor
+  description:
+    en: The brake control module has detected an implausible signal from the vacuum sensor on the brake booster. Modern systems monitor booster vacuum to ensure brake assist is available, especially with stop-start engines and electric vacuum pumps.
+    de: Das Brems-Steuergerät hat ein unplausibles Signal vom Vakuumsensor des Bremskraftverstärkers erkannt. Moderne Systeme überwachen das Vakuum, um die Bremsunterstützung sicherzustellen, besonders bei Start-Stopp-Motoren und elektrischen Vakuumpumpen.
+  affected_components:
+    - brake_vacuum_sensor
+    - brake_booster
+    - vacuum_pump
+  common_causes:
+    - id: vacuum_sensor_failed
+      likelihood: high
+      label:
+        en: Vacuum sensor failed
+        de: Vakuumsensor defekt
+    - id: vacuum_leak
+      likelihood: medium
+      label:
+        en: Leak in vacuum supply line
+        de: Leck in der Vakuumleitung
+    - id: vacuum_pump_weak
+      likelihood: low
+      label:
+        en: Vacuum pump weak
+        de: Vakuumpumpe schwach
+  repair:
+    difficulty: medium
+    diy_possible: false
+    estimated_cost_eur: [100, 800]
+    estimated_hours: [0.5, 3.0]
+  flags:
+    mil: false
+    emissions_relevant: false
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Anti-lock_braking_system
+
+- code: C0287
+  scope: generic
+  category: chassis
+  title:
+    en: ESP Performance
+    de: ESP Funktionsbereich
+  description:
+    en: The stability control module has detected that overall ESP performance is degraded — typically a plausibility check between yaw rate, lateral acceleration, steering angle and wheel speeds has failed. ESP is deactivated until the root cause is resolved.
+    de: Das ESP-Steuergerät hat eine eingeschränkte ESP-Funktion erkannt — meist hat eine Plausibilitätsprüfung zwischen Gierrate, Querbeschleunigung, Lenkwinkel und Raddrehzahlen versagt. ESP wird bis zur Behebung der Ursache deaktiviert.
+  affected_components:
+    - esp_control_module
+    - sensor_cluster
+    - yaw_rate_sensor
+    - lateral_acceleration_sensor
+  common_causes:
+    - id: sensor_calibration_required
+      likelihood: high
+      label:
+        en: Sensor calibration required after repair
+        de: Sensorkalibrierung nach Reparatur erforderlich
+    - id: sensor_cluster_mounting
+      likelihood: medium
+      label:
+        en: Sensor cluster loose or mounted incorrectly
+        de: Sensorblock lose oder falsch montiert
+    - id: secondary_fault_present
+      likelihood: low
+      label:
+        en: Secondary fault on individual sensor
+        de: Folgefehler eines einzelnen Sensors
+  repair:
+    difficulty: medium
+    diy_possible: false
+    estimated_cost_eur: [80, 1000]
+    estimated_hours: [0.5, 3.0]
+  flags:
+    mil: false
+    emissions_relevant: false
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Electronic_stability_control
+
+- code: C0288
+  scope: generic
+  category: chassis
+  title:
+    en: Yaw Rate Sensor Range
+    de: Gierratensensor Funktionsbereich
+  description:
+    en: The stability control module has detected that the yaw rate sensor signal is outside the plausible range during stable driving. This typically indicates a sensor offset, an incorrect mounting or a degraded sensor element.
+    de: Das ESP-Steuergerät hat erkannt, dass das Gierratensignal bei stabiler Fahrt außerhalb des plausiblen Bereichs liegt. Üblicherweise weist dies auf einen Sensoroffset, eine falsche Montage oder ein verschlissenes Sensorelement hin.
+  affected_components:
+    - yaw_rate_sensor
+    - sensor_cluster
+    - esp_control_module
+  common_causes:
+    - id: yaw_sensor_calibration
+      likelihood: high
+      label:
+        en: Sensor not calibrated
+        de: Sensor nicht kalibriert
+    - id: yaw_sensor_failed
+      likelihood: medium
+      label:
+        en: Yaw rate sensor failed
+        de: Gierratensensor defekt
+    - id: sensor_cluster_mounting
+      likelihood: low
+      label:
+        en: Sensor cluster mounted incorrectly
+        de: Sensorblock falsch montiert
+  repair:
+    difficulty: medium
+    diy_possible: false
+    estimated_cost_eur: [200, 900]
+    estimated_hours: [0.5, 2.5]
+  flags:
+    mil: false
+    emissions_relevant: false
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Electronic_stability_control
+
+- code: C0295
+  scope: generic
+  category: chassis
+  title:
+    en: Steering Sensor Indicates Bias
+    de: Lenkwinkelsensor zeigt Offset
+  description:
+    en: The stability control module has detected that the steering wheel position sensor reports a non-zero angle when the vehicle is driving straight. This bias makes ESP intervene incorrectly and the system requires recalibration.
+    de: Das ESP-Steuergerät hat erkannt, dass der Lenkwinkelsensor bei Geradeausfahrt einen Wert ungleich Null meldet. Dieser Offset führt zu fehlerhaften ESP-Eingriffen und das System muss neu kalibriert werden.
+  affected_components:
+    - steering_angle_sensor
+    - esp_control_module
+    - alignment_components
+  common_causes:
+    - id: steering_angle_calibration
+      likelihood: high
+      label:
+        en: Steering angle sensor calibration required
+        de: Kalibrierung des Lenkwinkelsensors erforderlich
+    - id: alignment_off
+      likelihood: medium
+      label:
+        en: Wheel alignment incorrect
+        de: Achsvermessung fehlerhaft
+    - id: steering_angle_sensor_failed
+      likelihood: low
+      label:
+        en: Steering angle sensor failed
+        de: Lenkwinkelsensor defekt
+  repair:
+    difficulty: medium
+    diy_possible: false
+    estimated_cost_eur: [60, 600]
+    estimated_hours: [0.3, 2.5]
+  flags:
+    mil: false
+    emissions_relevant: false
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Electronic_stability_control
+
+- code: C0700
+  scope: generic
+  category: chassis
+  title:
+    en: Active Steering Module Communication
+    de: Aktivlenkungs-Steuergerät Kommunikation
+  description:
+    en: A communication fault between the chassis control module and the active steering module has been detected. Active steering varies the steering ratio with speed, and a fault disables this assistance and may store secondary codes in other modules.
+    de: Es wurde ein Kommunikationsfehler zwischen Fahrwerks-Steuergerät und Aktivlenkungs-Steuergerät erkannt. Die Aktivlenkung variiert die Lenkübersetzung mit der Geschwindigkeit; ein Fehler deaktiviert diese Unterstützung und kann Folgefehler in anderen Steuergeräten erzeugen.
+  affected_components:
+    - active_steering_module
+    - communication_bus
+    - chassis_control_module
+  common_causes:
+    - id: communication_bus_fault
+      likelihood: high
+      label:
+        en: Communication bus fault
+        de: Kommunikationsbus-Fehler
+    - id: active_steering_module_failed
+      likelihood: medium
+      label:
+        en: Active steering module failed
+        de: Aktivlenkungs-Steuergerät defekt
+    - id: power_supply_module
+      likelihood: low
+      label:
+        en: Power supply or ground fault to module
+        de: Versorgungs- oder Masseschluss am Steuergerät
+  repair:
+    difficulty: hard
+    diy_possible: false
+    estimated_cost_eur: [200, 2000]
+    estimated_hours: [0.5, 4.0]
+  flags:
+    mil: false
+    emissions_relevant: false
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Power_steering
+    - https://en.wikipedia.org/wiki/On-board_diagnostics
+
+- code: C0800
+  scope: generic
+  category: chassis
+  title:
+    en: Drive System Voltage Low
+    de: Bordnetzspannung niedrig
+  description:
+    en: The chassis control module has detected that the supply voltage is below the operating threshold required for ABS, ESP or steering systems. Many chassis functions are limited or disabled until the voltage returns to a normal range.
+    de: Das Fahrwerks-Steuergerät hat erkannt, dass die Versorgungsspannung unter dem Betriebsschwellwert für ABS, ESP oder Lenkungsysteme liegt. Viele Fahrwerksfunktionen werden eingeschränkt oder deaktiviert, bis die Spannung wieder im Normalbereich liegt.
+  affected_components:
+    - battery
+    - alternator
+    - power_supply_wiring
+    - chassis_control_module
+  common_causes:
+    - id: battery_weak
+      likelihood: high
+      label:
+        en: Battery weak or discharged
+        de: Batterie schwach oder entladen
+    - id: alternator_fault
+      likelihood: medium
+      label:
+        en: Alternator output fault
+        de: Generator-Ladefehler
+    - id: high_resistance_connection
+      likelihood: low
+      label:
+        en: High-resistance ground or supply connection
+        de: Hochohmige Masse- oder Versorgungsverbindung
+  repair:
+    difficulty: medium
+    diy_possible: true
+    estimated_cost_eur: [50, 800]
+    estimated_hours: [0.3, 3.0]
+  flags:
+    mil: false
+    emissions_relevant: false
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/On-board_diagnostics
+
+- code: C0805
+  scope: generic
+  category: chassis
+  title:
+    en: Steering Angle Sensor Calibration
+    de: Lenkwinkelsensor Kalibrierung
+  description:
+    en: The chassis or stability control module reports that the steering angle sensor has not been calibrated or that the calibration data has been lost. ESP requires a calibrated zero position and is disabled until calibration is performed.
+    de: Das Fahrwerks- oder ESP-Steuergerät meldet, dass der Lenkwinkelsensor nicht kalibriert ist oder die Kalibrierdaten verloren wurden. ESP benötigt eine kalibrierte Nulllage und ist bis zur Kalibrierung deaktiviert.
+  affected_components:
+    - steering_angle_sensor
+    - esp_control_module
+  common_causes:
+    - id: steering_angle_calibration
+      likelihood: high
+      label:
+        en: Calibration required after battery disconnect or repair
+        de: Kalibrierung nach Batterietrennung oder Reparatur erforderlich
+    - id: steering_angle_sensor_failed
+      likelihood: medium
+      label:
+        en: Sensor lost calibration data
+        de: Sensor hat Kalibrierdaten verloren
+    - id: alignment_off
+      likelihood: low
+      label:
+        en: Wheel alignment incorrect, blocking calibration
+        de: Achsvermessung fehlerhaft, blockiert Kalibrierung
+  repair:
+    difficulty: easy
+    diy_possible: false
+    estimated_cost_eur: [40, 200]
+    estimated_hours: [0.2, 1.0]
+  flags:
+    mil: false
+    emissions_relevant: false
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Electronic_stability_control
+
+- code: C0301
+  scope: generic
+  category: chassis
+  title:
+    en: Air Suspension Compressor Relay
+    de: Luftfederkompressor-Relais
+  description:
+    en: The air suspension control module has detected a fault in the compressor relay circuit. The compressor cannot be energized which prevents the system from refilling the air struts and ride height drops over time.
+    de: Das Luftfederungs-Steuergerät hat einen Fehler im Stromkreis des Kompressor-Relais erkannt. Der Kompressor kann nicht angesteuert werden, das System kann die Luftfederbälge nicht befüllen und das Fahrzeugniveau sinkt mit der Zeit ab.
+  affected_components:
+    - compressor_relay
+    - air_compressor
+    - air_suspension_module
+  common_causes:
+    - id: compressor_relay_failed
+      likelihood: high
+      label:
+        en: Compressor relay failed
+        de: Kompressor-Relais defekt
+    - id: relay_wiring_fault
+      likelihood: medium
+      label:
+        en: Relay wiring or fuse fault
+        de: Relaisverkabelung oder Sicherung defekt
+    - id: air_suspension_module_internal
+      likelihood: low
+      label:
+        en: Internal module fault
+        de: Interner Steuergerät-Fehler
+  repair:
+    difficulty: medium
+    diy_possible: true
+    estimated_cost_eur: [60, 500]
+    estimated_hours: [0.3, 2.0]
+  flags:
+    mil: false
+    emissions_relevant: false
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Air_suspension
+
+- code: C0306
+  scope: generic
+  category: chassis
+  title:
+    en: Ride Height Sensor Front Left
+    de: Niveausensor vorne links
+  description:
+    en: The air suspension control module has detected a fault in the front left ride height sensor circuit. Without this signal the module cannot regulate suspension height and self-levelling is disabled.
+    de: Das Luftfederungs-Steuergerät hat einen Fehler im Stromkreis des Niveausensors vorne links erkannt. Ohne dieses Signal kann das Modul die Federungsniveaus nicht regeln und die Niveauregulierung wird deaktiviert.
+  affected_components:
+    - ride_height_sensor
+    - air_suspension_module
+    - sensor_linkage
+  common_causes:
+    - id: ride_height_sensor_failed
+      likelihood: high
+      label:
+        en: Ride height sensor failed
+        de: Niveausensor defekt
+    - id: sensor_linkage_broken
+      likelihood: medium
+      label:
+        en: Sensor linkage broken or detached
+        de: Sensorgestänge gebrochen oder gelöst
+    - id: sensor_wiring
+      likelihood: low
+      label:
+        en: Wiring or connector fault
+        de: Verkabelungs- oder Steckerfehler
+  repair:
+    difficulty: medium
+    diy_possible: true
+    estimated_cost_eur: [80, 500]
+    estimated_hours: [0.5, 2.5]
+  flags:
+    mil: false
+    emissions_relevant: false
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Air_suspension
+
+- code: C0308
+  scope: generic
+  category: chassis
+  title:
+    en: Ride Height Sensor Front Right
+    de: Niveausensor vorne rechts
+  description:
+    en: Same as C0306 but for the front right corner of the vehicle.
+    de: Gleicher Fehler wie C0306, jedoch für die vordere rechte Fahrzeugecke.
+  affected_components:
+    - ride_height_sensor
+    - air_suspension_module
+    - sensor_linkage
+  common_causes:
+    - id: ride_height_sensor_failed
+      likelihood: high
+      label:
+        en: Ride height sensor failed
+        de: Niveausensor defekt
+    - id: sensor_linkage_broken
+      likelihood: medium
+      label:
+        en: Sensor linkage broken or detached
+        de: Sensorgestänge gebrochen oder gelöst
+    - id: sensor_wiring
+      likelihood: low
+      label:
+        en: Wiring or connector fault
+        de: Verkabelungs- oder Steckerfehler
+  repair:
+    difficulty: medium
+    diy_possible: true
+    estimated_cost_eur: [80, 500]
+    estimated_hours: [0.5, 2.5]
+  flags:
+    mil: false
+    emissions_relevant: false
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Air_suspension
+
+- code: C0310
+  scope: generic
+  category: chassis
+  title:
+    en: Ride Height Sensor Rear Left
+    de: Niveausensor hinten links
+  description:
+    en: Same as C0306 but for the rear left corner of the vehicle.
+    de: Gleicher Fehler wie C0306, jedoch für die hintere linke Fahrzeugecke.
+  affected_components:
+    - ride_height_sensor
+    - air_suspension_module
+    - sensor_linkage
+  common_causes:
+    - id: ride_height_sensor_failed
+      likelihood: high
+      label:
+        en: Ride height sensor failed
+        de: Niveausensor defekt
+    - id: sensor_linkage_broken
+      likelihood: medium
+      label:
+        en: Sensor linkage broken or detached
+        de: Sensorgestänge gebrochen oder gelöst
+    - id: sensor_wiring
+      likelihood: low
+      label:
+        en: Wiring or connector fault
+        de: Verkabelungs- oder Steckerfehler
+  repair:
+    difficulty: medium
+    diy_possible: true
+    estimated_cost_eur: [80, 500]
+    estimated_hours: [0.5, 2.5]
+  flags:
+    mil: false
+    emissions_relevant: false
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Air_suspension
+
+- code: C0312
+  scope: generic
+  category: chassis
+  title:
+    en: Ride Height Sensor Rear Right
+    de: Niveausensor hinten rechts
+  description:
+    en: Same as C0306 but for the rear right corner of the vehicle.
+    de: Gleicher Fehler wie C0306, jedoch für die hintere rechte Fahrzeugecke.
+  affected_components:
+    - ride_height_sensor
+    - air_suspension_module
+    - sensor_linkage
+  common_causes:
+    - id: ride_height_sensor_failed
+      likelihood: high
+      label:
+        en: Ride height sensor failed
+        de: Niveausensor defekt
+    - id: sensor_linkage_broken
+      likelihood: medium
+      label:
+        en: Sensor linkage broken or detached
+        de: Sensorgestänge gebrochen oder gelöst
+    - id: sensor_wiring
+      likelihood: low
+      label:
+        en: Wiring or connector fault
+        de: Verkabelungs- oder Steckerfehler
+  repair:
+    difficulty: medium
+    diy_possible: true
+    estimated_cost_eur: [80, 500]
+    estimated_hours: [0.5, 2.5]
+  flags:
+    mil: false
+    emissions_relevant: false
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Air_suspension
+
+- code: C0317
+  scope: generic
+  category: chassis
+  title:
+    en: Compressor Relay Circuit
+    de: Kompressor-Relais Schaltung
+  description:
+    en: The air suspension control module has detected a circuit fault on the compressor relay output — typically open circuit, short to ground or short to power. Self-levelling is disabled and the vehicle may sit lower than normal.
+    de: Das Luftfederungs-Steuergerät hat einen Schaltungsfehler am Ausgang des Kompressor-Relais erkannt — meist Unterbrechung, Kurzschluss nach Masse oder Plus. Die Niveauregulierung wird deaktiviert und das Fahrzeug kann tiefer als normal stehen.
+  affected_components:
+    - compressor_relay
+    - air_compressor
+    - air_suspension_module
+    - relay_wiring
+  common_causes:
+    - id: compressor_relay_failed
+      likelihood: high
+      label:
+        en: Compressor relay failed (stuck or open)
+        de: Kompressor-Relais defekt (klebt oder unterbrochen)
+    - id: compressor_motor_shorted
+      likelihood: medium
+      label:
+        en: Compressor motor shorted, dragging supply down
+        de: Kompressormotor mit Kurzschluss, zieht Versorgung herunter
+    - id: relay_wiring_fault
+      likelihood: low
+      label:
+        en: Relay wiring or connector fault
+        de: Relaisverkabelung oder Stecker defekt
+  repair:
+    difficulty: medium
+    diy_possible: true
+    estimated_cost_eur: [80, 700]
+    estimated_hours: [0.5, 3.0]
+  flags:
+    mil: false
+    emissions_relevant: false
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Air_suspension
+
+- code: C0327
+  scope: generic
+  category: chassis
+  title:
+    en: Encoder Motor
+    de: Encoder-Motor
+  description:
+    en: The transfer case control module has detected a fault in the encoder motor used to shift between 2WD and 4WD ranges. A fault prevents range changes and may leave the transfer case in an undefined position.
+    de: Das Verteilergetriebe-Steuergerät hat einen Fehler am Encoder-Motor erkannt, der zwischen 2WD- und 4WD-Stufen schaltet. Ein Fehler verhindert das Umschalten und kann das Verteilergetriebe in einer undefinierten Stellung belassen.
+  affected_components:
+    - encoder_motor
+    - transfer_case_module
+    - encoder_position_switch
+  common_causes:
+    - id: encoder_motor_failed
+      likelihood: high
+      label:
+        en: Encoder motor failed (worn brushes or seized)
+        de: Encoder-Motor defekt (Bürstenverschleiß oder festgefressen)
+    - id: encoder_wiring_fault
+      likelihood: medium
+      label:
+        en: Wiring or connector fault
+        de: Verkabelungs- oder Steckerfehler
+    - id: transfer_case_module_internal
+      likelihood: low
+      label:
+        en: Internal control module fault
+        de: Interner Steuergerät-Fehler
+  repair:
+    difficulty: hard
+    diy_possible: false
+    estimated_cost_eur: [300, 1500]
+    estimated_hours: [1.0, 4.0]
+  flags:
+    mil: false
+    emissions_relevant: false
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Four-wheel_drive
+
+- code: C0374
+  scope: generic
+  category: chassis
+  title:
+    en: 4WD Drive Coupling
+    de: 4WD Antriebskupplung
+  description:
+    en: The 4WD or AWD control module has detected a fault on the electronic drive coupling that distributes torque between axles. Reduced torque transfer or a complete loss of all-wheel drive function may result.
+    de: Das 4WD- oder AWD-Steuergerät hat einen Fehler an der elektronischen Antriebskupplung erkannt, die das Drehmoment zwischen den Achsen verteilt. Eine reduzierte Drehmomentübertragung oder ein vollständiger Verlust der Allradfunktion können die Folge sein.
+  affected_components:
+    - awd_coupling
+    - awd_control_module
+    - coupling_actuator
+  common_causes:
+    - id: awd_coupling_actuator_failed
+      likelihood: high
+      label:
+        en: Coupling actuator failed
+        de: Kupplungsaktuator defekt
+    - id: awd_oil_temperature_high
+      likelihood: medium
+      label:
+        en: Coupling oil overheated
+        de: Kupplungsöl überhitzt
+    - id: awd_wiring_fault
+      likelihood: low
+      label:
+        en: Wiring or connector fault
+        de: Verkabelungs- oder Steckerfehler
+  repair:
+    difficulty: hard
+    diy_possible: false
+    estimated_cost_eur: [400, 3000]
+    estimated_hours: [1.5, 6.0]
+  flags:
+    mil: false
+    emissions_relevant: false
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Four-wheel_drive
+
+- code: C0376
+  scope: generic
+  category: chassis
+  title:
+    en: Front Axle Disconnect
+    de: Vorderachs-Abkopplung
+  description:
+    en: The 4WD control module has detected a fault on the front axle disconnect actuator. On part-time AWD vehicles this actuator decouples the front axle for fuel saving, and a fault prevents engagement or disengagement of front-wheel drive.
+    de: Das 4WD-Steuergerät hat einen Fehler am Aktuator der Vorderachs-Abkopplung erkannt. Bei zugeschalteten AWD-Fahrzeugen koppelt dieser Aktuator zur Kraftstoffersparnis die Vorderachse ab; ein Fehler verhindert das Zu- oder Abschalten des Vorderradantriebs.
+  affected_components:
+    - front_axle_disconnect_actuator
+    - awd_control_module
+    - axle_position_switch
+  common_causes:
+    - id: disconnect_actuator_failed
+      likelihood: high
+      label:
+        en: Disconnect actuator failed (motor or solenoid)
+        de: Abkopplungs-Aktuator defekt (Motor oder Magnetventil)
+    - id: actuator_wiring_fault
+      likelihood: medium
+      label:
+        en: Wiring or connector fault
+        de: Verkabelungs- oder Steckerfehler
+    - id: position_switch_failed
+      likelihood: low
+      label:
+        en: Axle position switch failed
+        de: Achsstellungsschalter defekt
+  repair:
+    difficulty: hard
+    diy_possible: false
+    estimated_cost_eur: [300, 1500]
+    estimated_hours: [1.0, 5.0]
+  flags:
+    mil: false
+    emissions_relevant: false
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Four-wheel_drive
+
+- code: C0387
+  scope: generic
+  category: chassis
+  title:
+    en: Transfer Case Position Sensor
+    de: Verteilergetriebe-Positionssensor
+  description:
+    en: The transfer case control module has detected an implausible signal from the position sensor that reports the current shift position (2HI, 4HI, 4LO, neutral). Without a valid position the system cannot complete a range change.
+    de: Das Verteilergetriebe-Steuergerät hat ein unplausibles Signal vom Positionssensor erkannt, der die aktuelle Schaltstellung (2HI, 4HI, 4LO, Neutral) meldet. Ohne gültige Position kann das System einen Stufenwechsel nicht abschließen.
+  affected_components:
+    - transfer_case_position_sensor
+    - transfer_case_module
+    - encoder_motor
+  common_causes:
+    - id: position_sensor_failed
+      likelihood: high
+      label:
+        en: Transfer case position sensor failed
+        de: Verteilergetriebe-Positionssensor defekt
+    - id: position_sensor_wiring
+      likelihood: medium
+      label:
+        en: Wiring or connector fault
+        de: Verkabelungs- oder Steckerfehler
+    - id: encoder_motor_failed
+      likelihood: low
+      label:
+        en: Encoder motor stuck between positions
+        de: Encoder-Motor zwischen Stellungen blockiert
+  repair:
+    difficulty: hard
+    diy_possible: false
+    estimated_cost_eur: [200, 1200]
+    estimated_hours: [0.8, 4.0]
+  flags:
+    mil: false
+    emissions_relevant: false
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Four-wheel_drive
+
+- code: C0550
+  scope: generic
+  category: chassis
+  title:
+    en: Encoder Position Switch Circuit
+    de: Encoder-Positionsschalter Schaltung
+  description:
+    en: The transfer case control module has detected a circuit fault on the encoder position switch — the contact pack reporting which range the encoder motor has reached. A fault disables 4WD shifting until the switch or wiring is repaired.
+    de: Das Verteilergetriebe-Steuergerät hat einen Schaltungsfehler am Encoder-Positionsschalter erkannt — dem Kontaktblock, der die erreichte Stellung des Encoder-Motors meldet. Ein Fehler deaktiviert das 4WD-Umschalten bis zur Reparatur von Schalter oder Verkabelung.
+  affected_components:
+    - encoder_position_switch
+    - encoder_motor
+    - transfer_case_module
+  common_causes:
+    - id: position_switch_failed
+      likelihood: high
+      label:
+        en: Encoder position switch contacts worn
+        de: Kontakte des Encoder-Positionsschalters verschlissen
+    - id: position_switch_wiring
+      likelihood: medium
+      label:
+        en: Wiring or connector fault
+        de: Verkabelungs- oder Steckerfehler
+    - id: transfer_case_module_internal
+      likelihood: low
+      label:
+        en: Internal control module fault
+        de: Interner Steuergerät-Fehler
+  repair:
+    difficulty: medium
+    diy_possible: false
+    estimated_cost_eur: [150, 900]
+    estimated_hours: [0.5, 3.0]
+  flags:
+    mil: false
+    emissions_relevant: false
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Four-wheel_drive
+
+- code: C0571
+  scope: generic
+  category: chassis
+  title:
+    en: Active Brake Assist Performance
+    de: Aktiver Bremsassistent Funktionsbereich
+  description:
+    en: The brake assist or driver assistance module has detected that brake assist performance is degraded. The system may fail to autonomously build pressure during emergency braking and emergency brake assist functions are limited.
+    de: Das Bremsassistent- oder Fahrerassistenz-Steuergerät hat eine eingeschränkte Bremsassistent-Funktion erkannt. Das System kann bei Notbremsungen den Druck nicht eigenständig aufbauen und Notbremsassistent-Funktionen sind eingeschränkt.
+  affected_components:
+    - active_brake_booster
+    - brake_assist_module
+    - brake_pressure_sensor
+  common_causes:
+    - id: active_booster_failed
+      likelihood: high
+      label:
+        en: Active booster slow or weak
+        de: Aktiver Verstärker langsam oder schwach
+    - id: secondary_fault_present
+      likelihood: medium
+      label:
+        en: Secondary fault on related sensor
+        de: Folgefehler an einem zugehörigen Sensor
+    - id: brake_assist_calibration
+      likelihood: low
+      label:
+        en: System calibration required after repair
+        de: Systemkalibrierung nach Reparatur erforderlich
+  repair:
+    difficulty: hard
+    diy_possible: false
+    estimated_cost_eur: [200, 2500]
+    estimated_hours: [1.0, 5.0]
+  flags:
+    mil: false
+    emissions_relevant: false
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Anti-lock_braking_system
+
+- code: C0594
+  scope: generic
+  category: chassis
+  title:
+    en: Brake Pedal Travel Sensor
+    de: Bremspedalweg-Sensor
+  description:
+    en: The brake control module has detected an implausible signal from the brake pedal travel sensor. Pedal travel is used by brake assist, regenerative braking and adaptive cruise control to estimate driver intent.
+    de: Das Brems-Steuergerät hat ein unplausibles Signal vom Bremspedalweg-Sensor erkannt. Der Pedalweg wird von Bremsassistent, Rekuperation und adaptiver Geschwindigkeitsregelung zur Bestimmung der Fahrerabsicht genutzt.
+  affected_components:
+    - brake_pedal_travel_sensor
+    - brake_control_module
+    - brake_pedal_assembly
+  common_causes:
+    - id: pedal_travel_sensor_failed
+      likelihood: high
+      label:
+        en: Pedal travel sensor failed
+        de: Pedalwegsensor defekt
+    - id: pedal_sensor_calibration
+      likelihood: medium
+      label:
+        en: Sensor not calibrated
+        de: Sensor nicht kalibriert
+    - id: pedal_sensor_wiring
+      likelihood: low
+      label:
+        en: Wiring or connector fault
+        de: Verkabelungs- oder Steckerfehler
+  repair:
+    difficulty: medium
+    diy_possible: false
+    estimated_cost_eur: [120, 700]
+    estimated_hours: [0.5, 2.5]
+  flags:
+    mil: false
+    emissions_relevant: false
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Anti-lock_braking_system
+
+- code: C0620
+  scope: generic
+  category: chassis
+  title:
+    en: Park Assist Module Communication
+    de: Park-Assistent Steuergerät Kommunikation
+  description:
+    en: The chassis control module has detected a communication fault with the park assist module. Parking sensors, surround view and automatic parking functions are unavailable until communication is restored.
+    de: Das Fahrwerks-Steuergerät hat einen Kommunikationsfehler mit dem Park-Assistent-Steuergerät erkannt. Einparksensoren, Umgebungssicht und automatisches Einparken stehen bis zur Wiederherstellung der Kommunikation nicht zur Verfügung.
+  affected_components:
+    - park_assist_module
+    - communication_bus
+    - chassis_control_module
+  common_causes:
+    - id: communication_bus_fault
+      likelihood: high
+      label:
+        en: Communication bus fault
+        de: Kommunikationsbus-Fehler
+    - id: park_assist_module_failed
+      likelihood: medium
+      label:
+        en: Park assist module failed
+        de: Park-Assistent-Steuergerät defekt
+    - id: power_supply_module
+      likelihood: low
+      label:
+        en: Power supply or ground fault to module
+        de: Versorgungs- oder Masseschluss am Steuergerät
+  repair:
+    difficulty: medium
+    diy_possible: false
+    estimated_cost_eur: [100, 1000]
+    estimated_hours: [0.5, 3.0]
+  flags:
+    mil: false
+    emissions_relevant: false
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/On-board_diagnostics
+
+- code: C0750
+  scope: generic
+  category: chassis
+  title:
+    en: Cruise Control Brake Switch
+    de: Tempomat-Bremsschalter
+  description:
+    en: The cruise control or chassis module has detected an implausible signal from the dedicated cruise control brake switch. This switch is independent from the stop lamp switch and disengages cruise control when the driver brakes.
+    de: Das Tempomat- oder Fahrwerks-Steuergerät hat ein unplausibles Signal vom dedizierten Tempomat-Bremsschalter erkannt. Dieser Schalter ist unabhängig vom Bremslichtschalter und deaktiviert die Geschwindigkeitsregelung beim Bremsen.
+  affected_components:
+    - cruise_brake_switch
+    - cruise_control_module
+    - brake_pedal_assembly
+  common_causes:
+    - id: cruise_brake_switch_failed
+      likelihood: high
+      label:
+        en: Cruise control brake switch failed or misadjusted
+        de: Tempomat-Bremsschalter defekt oder falsch justiert
+    - id: cruise_switch_wiring
+      likelihood: medium
+      label:
+        en: Wiring or connector fault
+        de: Verkabelungs- oder Steckerfehler
+    - id: cruise_module_internal
+      likelihood: low
+      label:
+        en: Internal cruise control module fault
+        de: Interner Tempomat-Steuergerät-Fehler
+  repair:
+    difficulty: easy
+    diy_possible: true
+    estimated_cost_eur: [30, 300]
+    estimated_hours: [0.3, 1.5]
+  flags:
+    mil: false
+    emissions_relevant: false
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/On-board_diagnostics
+
+- code: C0900
+  scope: generic
+  category: chassis
+  title:
+    en: TPMS Sensor 1 Battery
+    de: Reifendrucksensor 1 Batterie
+  description:
+    en: The tyre pressure monitoring system has detected that the battery in tyre pressure sensor 1 is low or depleted. TPMS sensors are battery-powered with a typical life of 5 to 10 years and must be replaced as a unit when the battery fails.
+    de: Das Reifendruckkontrollsystem hat erkannt, dass die Batterie des Reifendrucksensors 1 schwach oder leer ist. RDKS-Sensoren sind batteriebetrieben mit einer Lebensdauer von 5 bis 10 Jahren und müssen bei leerer Batterie als Einheit getauscht werden.
+  affected_components:
+    - tpms_sensor
+    - tpms_control_module
+  common_causes:
+    - id: tpms_sensor_battery_low
+      likelihood: high
+      label:
+        en: TPMS sensor battery depleted (end of life)
+        de: RDKS-Sensorbatterie am Lebensdauerende
+    - id: tpms_sensor_failed
+      likelihood: low
+      label:
+        en: Sensor electronics failed
+        de: Sensorelektronik defekt
+  repair:
+    difficulty: medium
+    diy_possible: false
+    estimated_cost_eur: [60, 250]
+    estimated_hours: [0.3, 1.0]
+  flags:
+    mil: false
+    emissions_relevant: false
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Tire-pressure_monitoring_system
+
+- code: C0902
+  scope: generic
+  category: chassis
+  title:
+    en: TPMS Sensor 2 Battery
+    de: Reifendrucksensor 2 Batterie
+  description:
+    en: Same as C0900 but for tyre pressure sensor 2 (typically front right or as defined by the position table of the TPMS module).
+    de: Gleicher Fehler wie C0900, jedoch für den Reifendrucksensor 2 (üblicherweise vorne rechts oder gemäß Positionstabelle des RDKS-Steuergeräts).
+  affected_components:
+    - tpms_sensor
+    - tpms_control_module
+  common_causes:
+    - id: tpms_sensor_battery_low
+      likelihood: high
+      label:
+        en: TPMS sensor battery depleted (end of life)
+        de: RDKS-Sensorbatterie am Lebensdauerende
+    - id: tpms_sensor_failed
+      likelihood: low
+      label:
+        en: Sensor electronics failed
+        de: Sensorelektronik defekt
+  repair:
+    difficulty: medium
+    diy_possible: false
+    estimated_cost_eur: [60, 250]
+    estimated_hours: [0.3, 1.0]
+  flags:
+    mil: false
+    emissions_relevant: false
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Tire-pressure_monitoring_system
