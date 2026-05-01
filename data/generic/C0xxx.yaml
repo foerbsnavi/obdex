@@ -2,7 +2,6 @@
 # Add entries here. See data/generic/P0xxx.yaml for the format.
 
 - code: C0035
-  scope: generic
   category: chassis
   title:
     en: Left Front Wheel Speed Sensor Circuit Malfunction
@@ -51,7 +50,6 @@
     - https://en.wikipedia.org/wiki/Anti-lock_braking_system
 
 - code: C0040
-  scope: generic
   category: chassis
   title:
     en: Right Front Wheel Speed Sensor Circuit Malfunction
@@ -100,7 +98,6 @@
     - https://en.wikipedia.org/wiki/Anti-lock_braking_system
 
 - code: C0045
-  scope: generic
   category: chassis
   title:
     en: Left Rear Wheel Speed Sensor Circuit Malfunction
@@ -149,7 +146,6 @@
     - https://en.wikipedia.org/wiki/Anti-lock_braking_system
 
 - code: C0050
-  scope: generic
   category: chassis
   title:
     en: Right Rear Wheel Speed Sensor Circuit Malfunction
@@ -198,7 +194,6 @@
     - https://en.wikipedia.org/wiki/Anti-lock_braking_system
 
 - code: C0051
-  scope: generic
   category: chassis
   title:
     en: Power Steering Position Sensor Performance
@@ -240,7 +235,6 @@
     - https://en.wikipedia.org/wiki/Power_steering
 
 - code: C0110
-  scope: generic
   category: chassis
   title:
     en: ABS Pump Motor Circuit Malfunction
@@ -283,7 +277,6 @@
     - https://en.wikipedia.org/wiki/Anti-lock_braking_system
 
 - code: C0121
-  scope: generic
   category: chassis
   title:
     en: Valve Relay Circuit Malfunction
@@ -325,7 +318,6 @@
     - https://en.wikipedia.org/wiki/Anti-lock_braking_system
 
 - code: C0131
-  scope: generic
   category: chassis
   title:
     en: Master Cylinder Pressure Sensor Range/Performance
@@ -367,7 +359,6 @@
     - https://en.wikipedia.org/wiki/Anti-lock_braking_system
 
 - code: C0141
-  scope: generic
   category: chassis
   title:
     en: Left Front ABS Inlet Solenoid Circuit
@@ -404,7 +395,6 @@
     - https://en.wikipedia.org/wiki/Anti-lock_braking_system
 
 - code: C0146
-  scope: generic
   category: chassis
   title:
     en: Left Front ABS Outlet Solenoid Circuit
@@ -441,7 +431,6 @@
     - https://en.wikipedia.org/wiki/Anti-lock_braking_system
 
 - code: C0151
-  scope: generic
   category: chassis
   title:
     en: Right Front ABS Inlet Solenoid Circuit
@@ -478,7 +467,6 @@
     - https://en.wikipedia.org/wiki/Anti-lock_braking_system
 
 - code: C0156
-  scope: generic
   category: chassis
   title:
     en: Right Front ABS Outlet Solenoid Circuit
@@ -515,7 +503,6 @@
     - https://en.wikipedia.org/wiki/Anti-lock_braking_system
 
 - code: C0161
-  scope: generic
   category: chassis
   title:
     en: ABS/TCS Brake Switch Circuit
@@ -552,7 +539,6 @@
     - https://en.wikipedia.org/wiki/Anti-lock_braking_system
 
 - code: C0186
-  scope: generic
   category: chassis
   title:
     en: Lateral Acceleration Sensor Circuit
@@ -594,7 +580,6 @@
     - https://en.wikipedia.org/wiki/Electronic_stability_control
 
 - code: C0196
-  scope: generic
   category: chassis
   title:
     en: Yaw Rate Sensor Circuit
@@ -636,7 +621,6 @@
     - https://en.wikipedia.org/wiki/Electronic_stability_control
 
 - code: C0234
-  scope: generic
   category: chassis
   title:
     en: Wheel Speed Sensor Frequency Error
@@ -678,7 +662,6 @@
     - https://en.wikipedia.org/wiki/Wheel_speed_sensor
 
 - code: C0235
-  scope: generic
   category: chassis
   title:
     en: Wheel Speed Sensor Signal Erratic
@@ -720,7 +703,6 @@
     - https://en.wikipedia.org/wiki/Wheel_speed_sensor
 
 - code: C0455
-  scope: generic
   category: chassis
   title:
     en: Steering Wheel Position Sensor Circuit
@@ -763,7 +745,6 @@
     - https://en.wikipedia.org/wiki/Electronic_stability_control
 
 - code: C0561
-  scope: generic
   category: chassis
   title:
     en: ABS Disabled Warning Indicator Request
@@ -800,7 +781,6 @@
     - https://en.wikipedia.org/wiki/Anti-lock_braking_system
 
 - code: C0710
-  scope: generic
   category: chassis
   title:
     en: Steering Position Signal Malfunction
@@ -844,7 +824,6 @@
     - https://en.wikipedia.org/wiki/Electronic_stability_control
 
 - code: C0201
-  scope: generic
   category: chassis
   title:
     en: Brake Fluid Level Switch Circuit
@@ -886,7 +865,6 @@
     - https://en.wikipedia.org/wiki/Anti-lock_braking_system
 
 - code: C0202
-  scope: generic
   category: chassis
   title:
     en: Brake Pedal Position Sensor
@@ -928,7 +906,6 @@
     - https://en.wikipedia.org/wiki/Anti-lock_braking_system
 
 - code: C0205
-  scope: generic
   category: chassis
   title:
     en: Stop Lamp Switch Circuit
@@ -970,7 +947,6 @@
     - https://en.wikipedia.org/wiki/Anti-lock_braking_system
 
 - code: C0237
-  scope: generic
   category: chassis
   title:
     en: Loss of Speed Sensor Signal Front Left
@@ -1014,7 +990,6 @@
     - https://en.wikipedia.org/wiki/Anti-lock_braking_system
 
 - code: C0238
-  scope: generic
   category: chassis
   title:
     en: Speed Wheel-to-Wheel Mismatch
@@ -1057,7 +1032,6 @@
     - https://en.wikipedia.org/wiki/Wheel_speed_sensor
 
 - code: C0240
-  scope: generic
   category: chassis
   title:
     en: Brake Pressure Sensor
@@ -1099,7 +1073,6 @@
     - https://en.wikipedia.org/wiki/Anti-lock_braking_system
 
 - code: C0245
-  scope: generic
   category: chassis
   title:
     en: Wheel Speed Sensor Frequency Mismatch
@@ -1141,7 +1114,6 @@
     - https://en.wikipedia.org/wiki/Wheel_speed_sensor
 
 - code: C0250
-  scope: generic
   category: chassis
   title:
     en: Power Steering Pump Pressure
@@ -1183,7 +1155,6 @@
     - https://en.wikipedia.org/wiki/Power_steering
 
 - code: C0265
-  scope: generic
   category: chassis
   title:
     en: EBCM Relay Circuit
@@ -1225,7 +1196,6 @@
     - https://en.wikipedia.org/wiki/Anti-lock_braking_system
 
 - code: C0266
-  scope: generic
   category: chassis
   title:
     en: Active Brake Booster
@@ -1267,7 +1237,6 @@
     - https://en.wikipedia.org/wiki/Anti-lock_braking_system
 
 - code: C0267
-  scope: generic
   category: chassis
   title:
     en: Brake Pump Motor Circuit
@@ -1309,7 +1278,6 @@
     - https://en.wikipedia.org/wiki/Anti-lock_braking_system
 
 - code: C0268
-  scope: generic
   category: chassis
   title:
     en: Brake Pump Run Time Exceeded
@@ -1351,7 +1319,6 @@
     - https://en.wikipedia.org/wiki/Anti-lock_braking_system
 
 - code: C0269
-  scope: generic
   category: chassis
   title:
     en: Brake Vacuum Sensor
@@ -1393,7 +1360,6 @@
     - https://en.wikipedia.org/wiki/Anti-lock_braking_system
 
 - code: C0287
-  scope: generic
   category: chassis
   title:
     en: ESP Performance
@@ -1436,7 +1402,6 @@
     - https://en.wikipedia.org/wiki/Electronic_stability_control
 
 - code: C0288
-  scope: generic
   category: chassis
   title:
     en: Yaw Rate Sensor Range
@@ -1478,7 +1443,6 @@
     - https://en.wikipedia.org/wiki/Electronic_stability_control
 
 - code: C0295
-  scope: generic
   category: chassis
   title:
     en: Steering Sensor Indicates Bias
@@ -1520,7 +1484,6 @@
     - https://en.wikipedia.org/wiki/Electronic_stability_control
 
 - code: C0700
-  scope: generic
   category: chassis
   title:
     en: Active Steering Module Communication
@@ -1563,7 +1526,6 @@
     - https://en.wikipedia.org/wiki/On-board_diagnostics
 
 - code: C0800
-  scope: generic
   category: chassis
   title:
     en: Drive System Voltage Low
@@ -1606,7 +1568,6 @@
     - https://en.wikipedia.org/wiki/On-board_diagnostics
 
 - code: C0805
-  scope: generic
   category: chassis
   title:
     en: Steering Angle Sensor Calibration
@@ -1647,7 +1608,6 @@
     - https://en.wikipedia.org/wiki/Electronic_stability_control
 
 - code: C0301
-  scope: generic
   category: chassis
   title:
     en: Air Suspension Compressor Relay
@@ -1689,7 +1649,6 @@
     - https://en.wikipedia.org/wiki/Air_suspension
 
 - code: C0306
-  scope: generic
   category: chassis
   title:
     en: Ride Height Sensor Front Left
@@ -1731,7 +1690,6 @@
     - https://en.wikipedia.org/wiki/Air_suspension
 
 - code: C0308
-  scope: generic
   category: chassis
   title:
     en: Ride Height Sensor Front Right
@@ -1773,7 +1731,6 @@
     - https://en.wikipedia.org/wiki/Air_suspension
 
 - code: C0310
-  scope: generic
   category: chassis
   title:
     en: Ride Height Sensor Rear Left
@@ -1815,7 +1772,6 @@
     - https://en.wikipedia.org/wiki/Air_suspension
 
 - code: C0312
-  scope: generic
   category: chassis
   title:
     en: Ride Height Sensor Rear Right
@@ -1857,7 +1813,6 @@
     - https://en.wikipedia.org/wiki/Air_suspension
 
 - code: C0317
-  scope: generic
   category: chassis
   title:
     en: Compressor Relay Circuit
@@ -1900,7 +1855,6 @@
     - https://en.wikipedia.org/wiki/Air_suspension
 
 - code: C0327
-  scope: generic
   category: chassis
   title:
     en: Encoder Motor
@@ -1942,7 +1896,6 @@
     - https://en.wikipedia.org/wiki/Four-wheel_drive
 
 - code: C0374
-  scope: generic
   category: chassis
   title:
     en: 4WD Drive Coupling
@@ -1984,7 +1937,6 @@
     - https://en.wikipedia.org/wiki/Four-wheel_drive
 
 - code: C0376
-  scope: generic
   category: chassis
   title:
     en: Front Axle Disconnect
@@ -2026,7 +1978,6 @@
     - https://en.wikipedia.org/wiki/Four-wheel_drive
 
 - code: C0387
-  scope: generic
   category: chassis
   title:
     en: Transfer Case Position Sensor
@@ -2068,7 +2019,6 @@
     - https://en.wikipedia.org/wiki/Four-wheel_drive
 
 - code: C0550
-  scope: generic
   category: chassis
   title:
     en: Encoder Position Switch Circuit
@@ -2110,7 +2060,6 @@
     - https://en.wikipedia.org/wiki/Four-wheel_drive
 
 - code: C0571
-  scope: generic
   category: chassis
   title:
     en: Active Brake Assist Performance
@@ -2152,7 +2101,6 @@
     - https://en.wikipedia.org/wiki/Anti-lock_braking_system
 
 - code: C0594
-  scope: generic
   category: chassis
   title:
     en: Brake Pedal Travel Sensor
@@ -2194,7 +2142,6 @@
     - https://en.wikipedia.org/wiki/Anti-lock_braking_system
 
 - code: C0620
-  scope: generic
   category: chassis
   title:
     en: Park Assist Module Communication
@@ -2236,7 +2183,6 @@
     - https://en.wikipedia.org/wiki/On-board_diagnostics
 
 - code: C0750
-  scope: generic
   category: chassis
   title:
     en: Cruise Control Brake Switch
@@ -2278,7 +2224,6 @@
     - https://en.wikipedia.org/wiki/On-board_diagnostics
 
 - code: C0900
-  scope: generic
   category: chassis
   title:
     en: TPMS Sensor 1 Battery
@@ -2314,7 +2259,6 @@
     - https://en.wikipedia.org/wiki/Tire-pressure_monitoring_system
 
 - code: C0902
-  scope: generic
   category: chassis
   title:
     en: TPMS Sensor 2 Battery
@@ -2350,7 +2294,6 @@
     - https://en.wikipedia.org/wiki/Tire-pressure_monitoring_system
 
 - code: C0148
-  scope: generic
   category: chassis
   title:
     en: Right Front ABS Outlet Solenoid B Circuit Malfunction
@@ -2387,7 +2330,6 @@
     - https://en.wikipedia.org/wiki/Anti-lock_braking_system
 
 - code: C0153
-  scope: generic
   category: chassis
   title:
     en: Right Front ABS Inlet Solenoid B Circuit Malfunction
@@ -2424,7 +2366,6 @@
     - https://en.wikipedia.org/wiki/Anti-lock_braking_system
 
 - code: C0158
-  scope: generic
   category: chassis
   title:
     en: Left Rear ABS Inlet Solenoid Circuit Malfunction
@@ -2461,7 +2402,6 @@
     - https://en.wikipedia.org/wiki/Anti-lock_braking_system
 
 - code: C0163
-  scope: generic
   category: chassis
   title:
     en: Left Rear ABS Outlet Solenoid Circuit Malfunction
@@ -2498,7 +2438,6 @@
     - https://en.wikipedia.org/wiki/Anti-lock_braking_system
 
 - code: C0168
-  scope: generic
   category: chassis
   title:
     en: Right Rear ABS Inlet Solenoid Circuit Malfunction
@@ -2535,7 +2474,6 @@
     - https://en.wikipedia.org/wiki/Anti-lock_braking_system
 
 - code: C0173
-  scope: generic
   category: chassis
   title:
     en: Right Rear ABS Outlet Solenoid Circuit Malfunction
@@ -2572,7 +2510,6 @@
     - https://en.wikipedia.org/wiki/Anti-lock_braking_system
 
 - code: C0185
-  scope: generic
   category: chassis
   title:
     en: Lateral Acceleration Sensor Range/Performance
@@ -2614,7 +2551,6 @@
     - https://en.wikipedia.org/wiki/Electronic_stability_control
 
 - code: C0273
-  scope: generic
   category: chassis
   title:
     en: Brake Booster Pressure Sensor Circuit Malfunction
@@ -2651,7 +2587,6 @@
     - https://en.wikipedia.org/wiki/Anti-lock_braking_system
 
 - code: C0277
-  scope: generic
   category: chassis
   title:
     en: Brake Booster Vacuum Sensor Circuit Malfunction
@@ -2688,7 +2623,6 @@
     - https://en.wikipedia.org/wiki/Anti-lock_braking_system
 
 - code: C0279
-  scope: generic
   category: chassis
   title:
     en: Brake Booster Boost Sensor Circuit Malfunction
@@ -2725,7 +2659,6 @@
     - https://en.wikipedia.org/wiki/Anti-lock_braking_system
 
 - code: C0290
-  scope: generic
   category: chassis
   title:
     en: Brake Pedal Stroke Sensor Circuit Malfunction
@@ -2762,7 +2695,6 @@
     - https://en.wikipedia.org/wiki/Anti-lock_braking_system
 
 - code: C0291
-  scope: generic
   category: chassis
   title:
     en: Brake Pedal Apply Sensor Circuit Malfunction
@@ -2799,7 +2731,6 @@
     - https://en.wikipedia.org/wiki/Anti-lock_braking_system
 
 - code: C0388
-  scope: generic
   category: chassis
   title:
     en: Transfer Case High Range Switch Circuit Malfunction
@@ -2836,7 +2767,6 @@
     - https://en.wikipedia.org/wiki/Four-wheel_drive
 
 - code: C0389
-  scope: generic
   category: chassis
   title:
     en: Transfer Case Low Range Switch Circuit Malfunction
@@ -2873,7 +2803,6 @@
     - https://en.wikipedia.org/wiki/Four-wheel_drive
 
 - code: C0399
-  scope: generic
   category: chassis
   title:
     en: 4WD Mode Switch Circuit Malfunction
@@ -2910,7 +2839,6 @@
     - https://en.wikipedia.org/wiki/Four-wheel_drive
 
 - code: C0410
-  scope: generic
   category: chassis
   title:
     en: Adaptive Cruise Control Sensor Circuit Malfunction
@@ -2952,7 +2880,6 @@
     - https://en.wikipedia.org/wiki/Adaptive_cruise_control
 
 - code: C0420
-  scope: generic
   category: chassis
   title:
     en: Adaptive Cruise Control Module Internal Performance
@@ -2994,7 +2921,6 @@
     - https://en.wikipedia.org/wiki/Adaptive_cruise_control
 
 - code: C0500
-  scope: generic
   category: chassis
   title:
     en: Anti-lock Brake System Disabled
@@ -3031,7 +2957,6 @@
     - https://en.wikipedia.org/wiki/Anti-lock_braking_system
 
 - code: C0510
-  scope: generic
   category: chassis
   title:
     en: Hill Hold Function Disabled
@@ -3068,7 +2993,6 @@
     - https://en.wikipedia.org/wiki/Anti-lock_braking_system
 
 - code: C0560
-  scope: generic
   category: chassis
   title:
     en: Calibration Required
@@ -3106,7 +3030,6 @@
     - https://en.wikipedia.org/wiki/Electronic_stability_control
 
 - code: C0563
-  scope: generic
   category: chassis
   title:
     en: Calibration Mismatch
@@ -3143,7 +3066,6 @@
     - https://en.wikipedia.org/wiki/Electronic_stability_control
 
 - code: C0573
-  scope: generic
   category: chassis
   title:
     en: Electric Park Brake Switch Circuit Malfunction
@@ -3180,7 +3102,6 @@
     - https://en.wikipedia.org/wiki/Electric_park_brake
 
 - code: C0575
-  scope: generic
   category: chassis
   title:
     en: Park Brake Actuator Position Signal Malfunction
@@ -3217,7 +3138,6 @@
     - https://en.wikipedia.org/wiki/Electric_park_brake
 
 - code: C0577
-  scope: generic
   category: chassis
   title:
     en: Park Brake Force Sensor Circuit Malfunction
@@ -3254,7 +3174,6 @@
     - https://en.wikipedia.org/wiki/Electric_park_brake
 
 - code: C0578
-  scope: generic
   category: chassis
   title:
     en: Park Brake Switch Stuck Open
@@ -3291,7 +3210,6 @@
     - https://en.wikipedia.org/wiki/Electric_park_brake
 
 - code: C0581
-  scope: generic
   category: chassis
   title:
     en: Park Brake Apply Performance
@@ -3334,7 +3252,6 @@
     - https://en.wikipedia.org/wiki/Electric_park_brake
 
 - code: C0583
-  scope: generic
   category: chassis
   title:
     en: Park Brake Release Performance
@@ -3377,7 +3294,6 @@
     - https://en.wikipedia.org/wiki/Electric_park_brake
 
 - code: C0712
-  scope: generic
   category: chassis
   title:
     en: Power Steering Position Sensor Range/Performance
@@ -3414,7 +3330,6 @@
     - https://en.wikipedia.org/wiki/Power_steering
 
 - code: C0715
-  scope: generic
   category: chassis
   title:
     en: Power Steering Pressure Sensor Range/Performance
@@ -3451,7 +3366,6 @@
     - https://en.wikipedia.org/wiki/Power_steering
 
 - code: C0727
-  scope: generic
   category: chassis
   title:
     en: Trailer Connector Circuit Malfunction
@@ -3488,7 +3402,6 @@
     - https://en.wikipedia.org/wiki/Anti-lock_braking_system
 
 - code: C0784
-  scope: generic
   category: chassis
   title:
     en: Trailer Brake Force Sensor Circuit Malfunction
@@ -3525,7 +3438,6 @@
     - https://en.wikipedia.org/wiki/Anti-lock_braking_system
 
 - code: C0825
-  scope: generic
   category: chassis
   title:
     en: Steering Effort Sensor Range/Performance
@@ -3562,7 +3474,6 @@
     - https://en.wikipedia.org/wiki/Power_steering
 
 - code: C0827
-  scope: generic
   category: chassis
   title:
     en: Steering Effort Sensor Stuck
@@ -3598,7 +3509,6 @@
     - https://en.wikipedia.org/wiki/Power_steering
 
 - code: C0830
-  scope: generic
   category: chassis
   title:
     en: Steering Wheel Angle Sensor Center Position Not Learned
@@ -3634,7 +3544,6 @@
     - https://en.wikipedia.org/wiki/Electronic_stability_control
 
 - code: C0901
-  scope: generic
   category: chassis
   title:
     en: TPMS Sensor 1 Position Performance
@@ -3670,7 +3579,6 @@
     - https://en.wikipedia.org/wiki/Tire-pressure_monitoring_system
 
 - code: C0903
-  scope: generic
   category: chassis
   title:
     en: TPMS Sensor 2 Position Performance
@@ -3706,7 +3614,6 @@
     - https://en.wikipedia.org/wiki/Tire-pressure_monitoring_system
 
 - code: C0905
-  scope: generic
   category: chassis
   title:
     en: TPMS Sensor 3 Battery Low
@@ -3742,7 +3649,6 @@
     - https://en.wikipedia.org/wiki/Tire-pressure_monitoring_system
 
 - code: C0907
-  scope: generic
   category: chassis
   title:
     en: TPMS Sensor 4 Battery Low
@@ -3778,7 +3684,6 @@
     - https://en.wikipedia.org/wiki/Tire-pressure_monitoring_system
 
 - code: C0910
-  scope: generic
   category: chassis
   title:
     en: TPMS Receiver Circuit Malfunction
@@ -3815,7 +3720,6 @@
     - https://en.wikipedia.org/wiki/Tire-pressure_monitoring_system
 
 - code: C0912
-  scope: generic
   category: chassis
   title:
     en: TPMS Initiator Front Circuit Malfunction

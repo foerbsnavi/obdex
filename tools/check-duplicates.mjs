@@ -1,5 +1,5 @@
 import { readFileSync, readdirSync } from "node:fs";
-import { join, basename } from "node:path";
+import { join } from "node:path";
 import { fileURLToPath } from "node:url";
 import { parse } from "yaml";
 
@@ -23,20 +23,13 @@ function loadArray(file) {
 const seen = new Map();
 const errors = [];
 
-const codeFiles = [
-  ...walk(join(root, "data/generic")),
-  ...walk(join(root, "data/manufacturers")).filter(f => !basename(f).startsWith("_"))
-];
-
-for (const file of codeFiles) {
+for (const file of walk(join(root, "data/generic"))) {
   for (const item of loadArray(file)) {
     if (!item.code) continue;
-    const scope = item.scope === "manufacturer" ? `manufacturer:${item.manufacturer}` : "generic";
-    const key = `${scope}:${item.code}`;
-    if (seen.has(key)) {
-      errors.push(`Duplicate ${key}: ${seen.get(key)} and ${file}`);
+    if (seen.has(item.code)) {
+      errors.push(`Duplicate ${item.code}: ${seen.get(item.code)} and ${file}`);
     } else {
-      seen.set(key, file);
+      seen.set(item.code, file);
     }
   }
 }

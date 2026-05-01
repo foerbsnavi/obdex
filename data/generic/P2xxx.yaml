@@ -1,5 +1,4 @@
 - code: P2002
-  scope: generic
   category: powertrain
   title:
     en: Diesel Particulate Filter Efficiency Below Threshold (Bank 1)
@@ -48,7 +47,6 @@
     - https://en.wikipedia.org/wiki/Diesel_particulate_filter
 
 - code: P2096
-  scope: generic
   category: powertrain
   title:
     en: Post Catalyst Fuel Trim System Too Lean (Bank 1)
@@ -91,7 +89,6 @@
     - https://en.wikipedia.org/wiki/Oxygen_sensor
 
 - code: P2138
-  scope: generic
   category: powertrain
   title:
     en: Throttle/Pedal Position Sensor "D"/"E" Voltage Correlation
@@ -129,7 +126,6 @@
     - https://en.wikipedia.org/wiki/Throttle_position_sensor
 
 - code: P2187
-  scope: generic
   category: powertrain
   title:
     en: System Too Lean at Idle (Bank 1)
@@ -169,7 +165,6 @@
     - https://en.wikipedia.org/wiki/Engine_control_unit
 
 - code: P2188
-  scope: generic
   category: powertrain
   title:
     en: System Too Rich at Idle (Bank 1)
@@ -208,7 +203,6 @@
     - https://en.wikipedia.org/wiki/Engine_control_unit
 
 - code: P2270
-  scope: generic
   category: powertrain
   title:
     en: O2 Sensor Signal Stuck Lean (Bank 1, Sensor 2)
@@ -245,7 +239,6 @@
     - https://en.wikipedia.org/wiki/Oxygen_sensor
 
 - code: P2279
-  scope: generic
   category: powertrain
   title:
     en: Intake Air System Leak
@@ -283,7 +276,6 @@
     - https://en.wikipedia.org/wiki/Inlet_manifold
 
 - code: P2003
-  scope: generic
   category: powertrain
   title:
     en: Diesel Particulate Filter Efficiency Below Threshold (Bank 2)
@@ -323,7 +315,6 @@
     - https://en.wikipedia.org/wiki/Diesel_particulate_filter
 
 - code: P2452
-  scope: generic
   category: powertrain
   title:
     en: Diesel Particulate Filter Pressure Sensor Circuit
@@ -360,7 +351,6 @@
     - https://en.wikipedia.org/wiki/Diesel_particulate_filter
 
 - code: P2453
-  scope: generic
   category: powertrain
   title:
     en: Diesel Particulate Filter Pressure Sensor Circuit Range/Performance
@@ -398,7 +388,6 @@
     - https://en.wikipedia.org/wiki/Diesel_particulate_filter
 
 - code: P2454
-  scope: generic
   category: powertrain
   title:
     en: Diesel Particulate Filter Pressure Sensor Circuit Low
@@ -436,7 +425,6 @@
     - https://en.wikipedia.org/wiki/Diesel_particulate_filter
 
 - code: P2455
-  scope: generic
   category: powertrain
   title:
     en: Diesel Particulate Filter Pressure Sensor Circuit High
@@ -474,7 +462,6 @@
     - https://en.wikipedia.org/wiki/Diesel_particulate_filter
 
 - code: P2459
-  scope: generic
   category: powertrain
   title:
     en: Diesel Particulate Filter Regeneration Frequency
@@ -517,7 +504,6 @@
     - https://en.wikipedia.org/wiki/Diesel_particulate_filter
 
 - code: P2463
-  scope: generic
   category: powertrain
   title:
     en: Diesel Particulate Filter Restriction — Soot Accumulation
@@ -561,7 +547,6 @@
     - https://en.wikipedia.org/wiki/Diesel_particulate_filter
 
 - code: P204F
-  scope: generic
   category: powertrain
   title:
     en: Reductant System Performance
@@ -607,7 +592,6 @@
     - https://en.wikipedia.org/wiki/Diesel_exhaust_fluid
 
 - code: P207F
-  scope: generic
   category: powertrain
   title:
     en: Reductant Quality Performance
@@ -646,7 +630,6 @@
     - https://en.wikipedia.org/wiki/Diesel_exhaust_fluid
 
 - code: P20E8
-  scope: generic
   category: powertrain
   title:
     en: Reductant Pressure Too Low
@@ -690,7 +673,6 @@
     - https://en.wikipedia.org/wiki/Selective_catalytic_reduction
 
 - code: P20EE
-  scope: generic
   category: powertrain
   title:
     en: NOx Catalyst Efficiency Below Threshold (Bank 1)
@@ -733,7 +715,6 @@
     - https://en.wikipedia.org/wiki/Selective_catalytic_reduction
 
 - code: P2BAA
-  scope: generic
   category: powertrain
   title:
     en: NOx Sensor Range/Performance (Bank 1, Sensor 1)
@@ -770,7 +751,6 @@
     - https://en.wikipedia.org/wiki/Selective_catalytic_reduction
 
 - code: P2100
-  scope: generic
   category: powertrain
   title:
     en: Throttle Actuator Control Motor Circuit Open
@@ -813,7 +793,6 @@
     - https://en.wikipedia.org/wiki/Throttle_position_sensor
 
 - code: P2101
-  scope: generic
   category: powertrain
   title:
     en: Throttle Actuator Control Motor Circuit Range/Performance
@@ -852,7 +831,6 @@
     - https://en.wikipedia.org/wiki/Throttle_position_sensor
 
 - code: P2102
-  scope: generic
   category: powertrain
   title:
     en: Throttle Actuator Control Motor Circuit Low
@@ -892,7 +870,6 @@
     - https://en.wikipedia.org/wiki/Throttle_position_sensor
 
 - code: P2103
-  scope: generic
   category: powertrain
   title:
     en: Throttle Actuator Control Motor Circuit High
@@ -932,7 +909,6 @@
     - https://en.wikipedia.org/wiki/Throttle_position_sensor
 
 - code: P2122
-  scope: generic
   category: powertrain
   title:
     en: Throttle/Pedal Position Sensor "D" Circuit Low
@@ -971,7 +947,6 @@
     - https://en.wikipedia.org/wiki/Throttle_position_sensor
 
 - code: P2123
-  scope: generic
   category: powertrain
   title:
     en: Throttle/Pedal Position Sensor "D" Circuit High
@@ -1010,7 +985,6 @@
     - https://en.wikipedia.org/wiki/Throttle_position_sensor
 
 - code: P2127
-  scope: generic
   category: powertrain
   title:
     en: Throttle/Pedal Position Sensor "E" Circuit Low
@@ -1049,7 +1023,6 @@
     - https://en.wikipedia.org/wiki/Throttle_position_sensor
 
 - code: P2128
-  scope: generic
   category: powertrain
   title:
     en: Throttle/Pedal Position Sensor "E" Circuit High
@@ -1088,7 +1061,6 @@
     - https://en.wikipedia.org/wiki/Throttle_position_sensor
 
 - code: P2135
-  scope: generic
   category: powertrain
   title:
     en: Throttle/Pedal Position Sensor "A"/"B" Voltage Correlation
@@ -1126,7 +1098,6 @@
     - https://en.wikipedia.org/wiki/Throttle_position_sensor
 
 - code: P2189
-  scope: generic
   category: powertrain
   title:
     en: System Too Lean at Idle (Bank 2)
@@ -1165,7 +1136,6 @@
     - https://en.wikipedia.org/wiki/Engine_control_unit
 
 - code: P2190
-  scope: generic
   category: powertrain
   title:
     en: System Too Rich at Idle (Bank 2)
@@ -1204,7 +1174,6 @@
     - https://en.wikipedia.org/wiki/Engine_control_unit
 
 - code: P2191
-  scope: generic
   category: powertrain
   title:
     en: System Too Lean at Higher Load (Bank 1)
@@ -1249,7 +1218,6 @@
     - https://en.wikipedia.org/wiki/Engine_control_unit
 
 - code: P2192
-  scope: generic
   category: powertrain
   title:
     en: System Too Rich at Higher Load (Bank 1)
@@ -1293,7 +1261,6 @@
     - https://en.wikipedia.org/wiki/Engine_control_unit
 
 - code: P2193
-  scope: generic
   category: powertrain
   title:
     en: System Too Lean at Higher Load (Bank 2)
@@ -1332,7 +1299,6 @@
     - https://en.wikipedia.org/wiki/Engine_control_unit
 
 - code: P2194
-  scope: generic
   category: powertrain
   title:
     en: System Too Rich at Higher Load (Bank 2)
@@ -1371,7 +1337,6 @@
     - https://en.wikipedia.org/wiki/Engine_control_unit
 
 - code: P2195
-  scope: generic
   category: powertrain
   title:
     en: O2 Sensor Signal Stuck Lean (Bank 1, Sensor 1)
@@ -1408,7 +1373,6 @@
     - https://en.wikipedia.org/wiki/Oxygen_sensor
 
 - code: P2196
-  scope: generic
   category: powertrain
   title:
     en: O2 Sensor Signal Stuck Rich (Bank 1, Sensor 1)
@@ -1444,7 +1408,6 @@
     - https://en.wikipedia.org/wiki/Oxygen_sensor
 
 - code: P2197
-  scope: generic
   category: powertrain
   title:
     en: O2 Sensor Signal Stuck Lean (Bank 2, Sensor 1)
@@ -1477,7 +1440,6 @@
     - https://en.wikipedia.org/wiki/Oxygen_sensor
 
 - code: P2198
-  scope: generic
   category: powertrain
   title:
     en: O2 Sensor Signal Stuck Rich (Bank 2, Sensor 1)
@@ -1509,7 +1471,6 @@
     - https://en.wikipedia.org/wiki/Oxygen_sensor
 
 - code: P2271
-  scope: generic
   category: powertrain
   title:
     en: O2 Sensor Signal Stuck Rich (Bank 1, Sensor 2)
@@ -1546,7 +1507,6 @@
     - https://en.wikipedia.org/wiki/Oxygen_sensor
 
 - code: P2272
-  scope: generic
   category: powertrain
   title:
     en: O2 Sensor Signal Stuck Lean (Bank 2, Sensor 2)
@@ -1584,7 +1544,6 @@
     - https://en.wikipedia.org/wiki/Oxygen_sensor
 
 - code: P2273
-  scope: generic
   category: powertrain
   title:
     en: O2 Sensor Signal Stuck Rich (Bank 2, Sensor 2)
@@ -1616,7 +1575,6 @@
     - https://en.wikipedia.org/wiki/Oxygen_sensor
 
 - code: P2228
-  scope: generic
   category: powertrain
   title:
     en: Barometric Pressure Sensor Circuit Low
@@ -1653,7 +1611,6 @@
     - https://en.wikipedia.org/wiki/On-board_diagnostics
 
 - code: P2229
-  scope: generic
   category: powertrain
   title:
     en: Barometric Pressure Sensor Circuit High
@@ -1691,7 +1648,6 @@
     - https://en.wikipedia.org/wiki/On-board_diagnostics
 
 - code: P2293
-  scope: generic
   category: powertrain
   title:
     en: Fuel Pressure Regulator 2 Performance
@@ -1735,7 +1691,6 @@
     - https://en.wikipedia.org/wiki/Fuel_injection
 
 - code: P2294
-  scope: generic
   category: powertrain
   title:
     en: Fuel Pressure Regulator 2 Control Circuit
@@ -1774,7 +1729,6 @@
     - https://en.wikipedia.org/wiki/Fuel_injection
 
 - code: P246F
-  scope: generic
   category: powertrain
   title:
     en: Reductant System Cold Start Performance
@@ -1812,7 +1766,6 @@
     - https://en.wikipedia.org/wiki/Selective_catalytic_reduction
 
 - code: P2400
-  scope: generic
   category: powertrain
   title:
     en: EVAP Leak Detection Pump Control Circuit Open
@@ -1849,7 +1802,6 @@
     - https://en.wikipedia.org/wiki/Onboard_refueling_vapor_recovery
 
 - code: P2401
-  scope: generic
   category: powertrain
   title:
     en: EVAP Leak Detection Pump Control Circuit Low
@@ -1887,7 +1839,6 @@
     - https://en.wikipedia.org/wiki/Onboard_refueling_vapor_recovery
 
 - code: P2402
-  scope: generic
   category: powertrain
   title:
     en: EVAP Leak Detection Pump Control Circuit High
@@ -1925,7 +1876,6 @@
     - https://en.wikipedia.org/wiki/Onboard_refueling_vapor_recovery
 
 - code: P2404
-  scope: generic
   category: powertrain
   title:
     en: EVAP Leak Detection Pump Sense Circuit Range/Performance
@@ -1963,7 +1913,6 @@
     - https://en.wikipedia.org/wiki/Onboard_refueling_vapor_recovery
 
 - code: P2440
-  scope: generic
   category: powertrain
   title:
     en: Secondary Air Injection System Switching Valve Stuck Open (Bank 1)
@@ -1995,7 +1944,6 @@
     - https://en.wikipedia.org/wiki/Secondary_air_injection
 
 - code: P2441
-  scope: generic
   category: powertrain
   title:
     en: Secondary Air Injection System Switching Valve Stuck Closed (Bank 1)
@@ -2033,7 +1981,6 @@
     - https://en.wikipedia.org/wiki/Secondary_air_injection
 
 - code: P2442
-  scope: generic
   category: powertrain
   title:
     en: Secondary Air Injection System Switching Valve Stuck Open (Bank 2)
@@ -2066,7 +2013,6 @@
     - https://en.wikipedia.org/wiki/Secondary_air_injection
 
 - code: P2443
-  scope: generic
   category: powertrain
   title:
     en: Secondary Air Injection System Switching Valve Stuck Closed (Bank 2)
@@ -2099,7 +2045,6 @@
     - https://en.wikipedia.org/wiki/Secondary_air_injection
 
 - code: P2444
-  scope: generic
   category: powertrain
   title:
     en: Secondary Air Injection System Pump Stuck Off (Bank 1)
@@ -2142,7 +2087,6 @@
     - https://en.wikipedia.org/wiki/Secondary_air_injection
 
 - code: P2445
-  scope: generic
   category: powertrain
   title:
     en: Secondary Air Injection System Pump Stuck On (Bank 1)
@@ -2180,7 +2124,6 @@
     - https://en.wikipedia.org/wiki/Secondary_air_injection
 
 - code: P2004
-  scope: generic
   category: powertrain
   title:
     en: Intake Manifold Runner Control Stuck Open (Bank 1)
@@ -2223,7 +2166,6 @@
     - https://en.wikipedia.org/wiki/Inlet_manifold
 
 - code: P2005
-  scope: generic
   category: powertrain
   title:
     en: Intake Manifold Runner Control Stuck Open (Bank 2)
@@ -2261,7 +2203,6 @@
     - https://en.wikipedia.org/wiki/Inlet_manifold
 
 - code: P2006
-  scope: generic
   category: powertrain
   title:
     en: Intake Manifold Runner Control Stuck Closed (Bank 1)
@@ -2299,7 +2240,6 @@
     - https://en.wikipedia.org/wiki/Inlet_manifold
 
 - code: P2007
-  scope: generic
   category: powertrain
   title:
     en: Intake Manifold Runner Control Stuck Closed (Bank 2)
@@ -2337,7 +2277,6 @@
     - https://en.wikipedia.org/wiki/Inlet_manifold
 
 - code: P2008
-  scope: generic
   category: powertrain
   title:
     en: Intake Manifold Runner Control Solenoid Circuit Open (Bank 1)
@@ -2375,7 +2314,6 @@
     - https://en.wikipedia.org/wiki/Inlet_manifold
 
 - code: P2009
-  scope: generic
   category: powertrain
   title:
     en: Intake Manifold Runner Control Solenoid Circuit Low (Bank 1)
@@ -2413,7 +2351,6 @@
     - https://en.wikipedia.org/wiki/Inlet_manifold
 
 - code: P2010
-  scope: generic
   category: powertrain
   title:
     en: Intake Manifold Runner Control Solenoid Circuit High (Bank 1)
@@ -2451,7 +2388,6 @@
     - https://en.wikipedia.org/wiki/Inlet_manifold
 
 - code: P2014
-  scope: generic
   category: powertrain
   title:
     en: Intake Manifold Runner Position Sensor/Switch Circuit (Bank 1)
@@ -2488,7 +2424,6 @@
     - https://en.wikipedia.org/wiki/Inlet_manifold
 
 - code: P2015
-  scope: generic
   category: powertrain
   title:
     en: Intake Manifold Runner Position Sensor/Switch Range/Performance (Bank 1)
@@ -2526,7 +2461,6 @@
     - https://en.wikipedia.org/wiki/Inlet_manifold
 
 - code: P2016
-  scope: generic
   category: powertrain
   title:
     en: Intake Manifold Runner Position Sensor/Switch Circuit Low (Bank 1)
@@ -2564,7 +2498,6 @@
     - https://en.wikipedia.org/wiki/Inlet_manifold
 
 - code: P2017
-  scope: generic
   category: powertrain
   title:
     en: Intake Manifold Runner Position Sensor/Switch Circuit High (Bank 1)
@@ -2602,7 +2535,6 @@
     - https://en.wikipedia.org/wiki/Inlet_manifold
 
 - code: P2031
-  scope: generic
   category: powertrain
   title:
     en: Exhaust Gas Temperature Sensor Circuit (Bank 1 Sensor 2)
@@ -2639,7 +2571,6 @@
     - https://en.wikipedia.org/wiki/Diesel_particulate_filter
 
 - code: P2032
-  scope: generic
   category: powertrain
   title:
     en: Exhaust Gas Temperature Sensor Circuit Low (Bank 1 Sensor 2)
@@ -2677,7 +2608,6 @@
     - https://en.wikipedia.org/wiki/Diesel_particulate_filter
 
 - code: P2033
-  scope: generic
   category: powertrain
   title:
     en: Exhaust Gas Temperature Sensor Circuit High (Bank 1 Sensor 2)
@@ -2716,7 +2646,6 @@
     - https://en.wikipedia.org/wiki/Diesel_particulate_filter
 
 - code: P2080
-  scope: generic
   category: powertrain
   title:
     en: Exhaust Gas Temperature Sensor Range/Performance (Bank 1 Sensor 1)
@@ -2752,7 +2681,6 @@
     - https://en.wikipedia.org/wiki/Diesel_particulate_filter
 
 - code: P2084
-  scope: generic
   category: powertrain
   title:
     en: Exhaust Gas Temperature Sensor Range/Performance (Bank 1 Sensor 2)
@@ -2789,7 +2717,6 @@
     - https://en.wikipedia.org/wiki/Diesel_particulate_filter
 
 - code: P2088
-  scope: generic
   category: powertrain
   title:
     en: Camshaft Position A Actuator Control Circuit Low (Bank 1)
@@ -2826,7 +2753,6 @@
     - https://en.wikipedia.org/wiki/Variable_valve_timing
 
 - code: P2089
-  scope: generic
   category: powertrain
   title:
     en: Camshaft Position A Actuator Control Circuit High (Bank 1)
@@ -2864,7 +2790,6 @@
     - https://en.wikipedia.org/wiki/Variable_valve_timing
 
 - code: P2090
-  scope: generic
   category: powertrain
   title:
     en: Camshaft Position B Actuator Control Circuit Low (Bank 1)
@@ -2902,7 +2827,6 @@
     - https://en.wikipedia.org/wiki/Variable_valve_timing
 
 - code: P2091
-  scope: generic
   category: powertrain
   title:
     en: Camshaft Position B Actuator Control Circuit High (Bank 1)
@@ -2940,7 +2864,6 @@
     - https://en.wikipedia.org/wiki/Variable_valve_timing
 
 - code: P2097
-  scope: generic
   category: powertrain
   title:
     en: Post Catalyst Fuel Trim System Too Rich (Bank 1)
@@ -2978,7 +2901,6 @@
     - https://en.wikipedia.org/wiki/Oxygen_sensor
 
 - code: P2098
-  scope: generic
   category: powertrain
   title:
     en: Post Catalyst Fuel Trim System Too Lean (Bank 2)
@@ -3016,7 +2938,6 @@
     - https://en.wikipedia.org/wiki/Oxygen_sensor
 
 - code: P2099
-  scope: generic
   category: powertrain
   title:
     en: Post Catalyst Fuel Trim System Too Rich (Bank 2)
@@ -3054,7 +2975,6 @@
     - https://en.wikipedia.org/wiki/Oxygen_sensor
 
 - code: P20BA
-  scope: generic
   category: powertrain
   title:
     en: Reductant Heater A Control Performance
@@ -3097,7 +3017,6 @@
     - https://en.wikipedia.org/wiki/Selective_catalytic_reduction
 
 - code: P20EA
-  scope: generic
   category: powertrain
   title:
     en: Reductant Pump Control Circuit Open
@@ -3134,7 +3053,6 @@
     - https://en.wikipedia.org/wiki/Selective_catalytic_reduction
 
 - code: P2104
-  scope: generic
   category: powertrain
   title:
     en: Throttle Actuator Control System — Forced Idle
@@ -3173,7 +3091,6 @@
     - https://en.wikipedia.org/wiki/Throttle_position_sensor
 
 - code: P2105
-  scope: generic
   category: powertrain
   title:
     en: Throttle Actuator Control System — Forced Engine Shutdown
@@ -3213,7 +3130,6 @@
     - https://en.wikipedia.org/wiki/Throttle_position_sensor
 
 - code: P2106
-  scope: generic
   category: powertrain
   title:
     en: Throttle Actuator Control System — Forced Limited Power
@@ -3252,7 +3168,6 @@
     - https://en.wikipedia.org/wiki/Throttle_position_sensor
 
 - code: P2107
-  scope: generic
   category: powertrain
   title:
     en: Throttle Actuator Control Module Internal Processor
@@ -3289,7 +3204,6 @@
     - https://en.wikipedia.org/wiki/Engine_control_unit
 
 - code: P2108
-  scope: generic
   category: powertrain
   title:
     en: Throttle Actuator Control Module Performance
@@ -3327,7 +3241,6 @@
     - https://en.wikipedia.org/wiki/Engine_control_unit
 
 - code: P2110
-  scope: generic
   category: powertrain
   title:
     en: Throttle Actuator Control System — Forced Limited RPM
@@ -3366,7 +3279,6 @@
     - https://en.wikipedia.org/wiki/Throttle_position_sensor
 
 - code: P2111
-  scope: generic
   category: powertrain
   title:
     en: Throttle Actuator Control System — Stuck Open
@@ -3406,7 +3318,6 @@
     - https://en.wikipedia.org/wiki/Throttle_position_sensor
 
 - code: P2112
-  scope: generic
   category: powertrain
   title:
     en: Throttle Actuator Control System — Stuck Closed
@@ -3445,7 +3356,6 @@
     - https://en.wikipedia.org/wiki/Throttle_position_sensor
 
 - code: P2118
-  scope: generic
   category: powertrain
   title:
     en: Throttle Actuator Control Motor Current Range/Performance
@@ -3484,7 +3394,6 @@
     - https://en.wikipedia.org/wiki/Throttle_position_sensor
 
 - code: P2119
-  scope: generic
   category: powertrain
   title:
     en: Throttle Closed Position Performance
@@ -3522,7 +3431,6 @@
     - https://en.wikipedia.org/wiki/Throttle_position_sensor
 
 - code: P2200
-  scope: generic
   category: powertrain
   title:
     en: NOx Sensor Circuit (Bank 1)
@@ -3559,7 +3467,6 @@
     - https://en.wikipedia.org/wiki/Selective_catalytic_reduction
 
 - code: P2201
-  scope: generic
   category: powertrain
   title:
     en: NOx Sensor Range/Performance (Bank 1)
@@ -3596,7 +3503,6 @@
     - https://en.wikipedia.org/wiki/Selective_catalytic_reduction
 
 - code: P2202
-  scope: generic
   category: powertrain
   title:
     en: NOx Sensor Circuit Low (Bank 1)
@@ -3634,7 +3540,6 @@
     - https://en.wikipedia.org/wiki/Selective_catalytic_reduction
 
 - code: P2203
-  scope: generic
   category: powertrain
   title:
     en: NOx Sensor Circuit High (Bank 1)
@@ -3672,7 +3577,6 @@
     - https://en.wikipedia.org/wiki/Selective_catalytic_reduction
 
 - code: P2204
-  scope: generic
   category: powertrain
   title:
     en: NOx Sensor Circuit Intermittent (Bank 1)
@@ -3710,7 +3614,6 @@
     - https://en.wikipedia.org/wiki/Selective_catalytic_reduction
 
 - code: P2205
-  scope: generic
   category: powertrain
   title:
     en: NOx Sensor Heater Control Circuit (Bank 1)
@@ -3748,7 +3651,6 @@
     - https://en.wikipedia.org/wiki/Selective_catalytic_reduction
 
 - code: P2237
-  scope: generic
   category: powertrain
   title:
     en: O2 Sensor Pumping Current Circuit (Bank 1 Sensor 1)
@@ -3785,7 +3687,6 @@
     - https://en.wikipedia.org/wiki/Oxygen_sensor
 
 - code: P2238
-  scope: generic
   category: powertrain
   title:
     en: O2 Sensor Pumping Current Circuit Low (Bank 1 Sensor 1)
@@ -3823,7 +3724,6 @@
     - https://en.wikipedia.org/wiki/Oxygen_sensor
 
 - code: P2239
-  scope: generic
   category: powertrain
   title:
     en: O2 Sensor Pumping Current Circuit High (Bank 1 Sensor 1)
@@ -3861,7 +3761,6 @@
     - https://en.wikipedia.org/wiki/Oxygen_sensor
 
 - code: P2240
-  scope: generic
   category: powertrain
   title:
     en: O2 Sensor Pumping Current Circuit (Bank 2 Sensor 1)
@@ -3899,7 +3798,6 @@
     - https://en.wikipedia.org/wiki/Oxygen_sensor
 
 - code: P2243
-  scope: generic
   category: powertrain
   title:
     en: O2 Sensor Reference Voltage Circuit (Bank 1 Sensor 1)
@@ -3937,7 +3835,6 @@
     - https://en.wikipedia.org/wiki/Oxygen_sensor
 
 - code: P2247
-  scope: generic
   category: powertrain
   title:
     en: O2 Sensor Reference Voltage Circuit (Bank 2 Sensor 1)
@@ -3975,7 +3872,6 @@
     - https://en.wikipedia.org/wiki/Oxygen_sensor
 
 - code: P2251
-  scope: generic
   category: powertrain
   title:
     en: O2 Sensor Negative Current Control Circuit (Bank 1 Sensor 1)
@@ -4013,7 +3909,6 @@
     - https://en.wikipedia.org/wiki/Oxygen_sensor
 
 - code: P2295
-  scope: generic
   category: powertrain
   title:
     en: Fuel Pressure Regulator 2 Control Circuit Low
@@ -4051,7 +3946,6 @@
     - https://en.wikipedia.org/wiki/Common_rail
 
 - code: P2296
-  scope: generic
   category: powertrain
   title:
     en: Fuel Pressure Regulator 2 Control Circuit High
@@ -4089,7 +3983,6 @@
     - https://en.wikipedia.org/wiki/Common_rail
 
 - code: P2299
-  scope: generic
   category: powertrain
   title:
     en: Brake Pedal Position / Accelerator Pedal Position Correlation
@@ -4127,7 +4020,6 @@
     - https://en.wikipedia.org/wiki/Throttle_position_sensor
 
 - code: P2336
-  scope: generic
   category: powertrain
   title:
     en: Cylinder 1 Above Knock Threshold
@@ -4169,7 +4061,6 @@
     - https://en.wikipedia.org/wiki/Misfire
 
 - code: P2337
-  scope: generic
   category: powertrain
   title:
     en: Cylinder 2 Above Knock Threshold
@@ -4207,7 +4098,6 @@
     - https://en.wikipedia.org/wiki/Misfire
 
 - code: P2338
-  scope: generic
   category: powertrain
   title:
     en: Cylinder 3 Above Knock Threshold
@@ -4245,7 +4135,6 @@
     - https://en.wikipedia.org/wiki/Misfire
 
 - code: P2339
-  scope: generic
   category: powertrain
   title:
     en: Cylinder 4 Above Knock Threshold
@@ -4283,7 +4172,6 @@
     - https://en.wikipedia.org/wiki/Misfire
 
 - code: P2418
-  scope: generic
   category: powertrain
   title:
     en: EVAP Switching Valve Control Circuit Performance
@@ -4320,7 +4208,6 @@
     - https://en.wikipedia.org/wiki/Onboard_refueling_vapor_recovery
 
 - code: P2419
-  scope: generic
   category: powertrain
   title:
     en: EVAP Switching Valve Stuck Open
@@ -4357,7 +4244,6 @@
     - https://en.wikipedia.org/wiki/Onboard_refueling_vapor_recovery
 
 - code: P2420
-  scope: generic
   category: powertrain
   title:
     en: EVAP Switching Valve Stuck Closed
@@ -4394,7 +4280,6 @@
     - https://en.wikipedia.org/wiki/Onboard_refueling_vapor_recovery
 
 - code: P2422
-  scope: generic
   category: powertrain
   title:
     en: EVAP Canister Vent Valve Stuck Closed
@@ -4430,7 +4315,6 @@
     - https://en.wikipedia.org/wiki/Onboard_refueling_vapor_recovery
 
 - code: P2500
-  scope: generic
   category: powertrain
   title:
     en: Generator Lamp/L-Terminal Circuit Low
@@ -4467,7 +4351,6 @@
     - https://en.wikipedia.org/wiki/Alternator
 
 - code: P2501
-  scope: generic
   category: powertrain
   title:
     en: Generator Lamp/L-Terminal Circuit High
@@ -4505,7 +4388,6 @@
     - https://en.wikipedia.org/wiki/Alternator
 
 - code: P2510
-  scope: generic
   category: powertrain
   title:
     en: ECM/PCM Power Relay Sense Circuit Range/Performance
@@ -4542,7 +4424,6 @@
     - https://en.wikipedia.org/wiki/Engine_control_unit
 
 - code: P2563
-  scope: generic
   category: powertrain
   title:
     en: Turbocharger Boost Control Position Sensor Circuit
@@ -4580,7 +4461,6 @@
     - https://en.wikipedia.org/wiki/Turbocharger
 
 - code: P2566
-  scope: generic
   category: powertrain
   title:
     en: Turbocharger Boost Control Position Sensor Range/Performance
@@ -4619,7 +4499,6 @@
     - https://en.wikipedia.org/wiki/Turbocharger
 
 - code: P2567
-  scope: generic
   category: powertrain
   title:
     en: Turbocharger Boost Control Position Sensor Circuit Low
@@ -4658,7 +4537,6 @@
     - https://en.wikipedia.org/wiki/Turbocharger
 
 - code: P2568
-  scope: generic
   category: powertrain
   title:
     en: Turbocharger Boost Control Position Sensor Circuit High
@@ -4697,7 +4575,6 @@
     - https://en.wikipedia.org/wiki/Turbocharger
 
 - code: P2610
-  scope: generic
   category: powertrain
   title:
     en: ECM/PCM Internal Engine Off Timer Performance
@@ -4733,7 +4610,6 @@
     - https://en.wikipedia.org/wiki/Engine_control_unit
 
 - code: P2700
-  scope: generic
   category: powertrain
   title:
     en: Transmission Friction Element A Apply Time Range/Performance
@@ -4777,7 +4653,6 @@
     - https://en.wikipedia.org/wiki/Automatic_transmission
 
 - code: P2241
-  scope: generic
   category: powertrain
   title:
     en: O2 Sensor Pumping Current Circuit Low (Bank 2 Sensor 1)
@@ -4815,7 +4690,6 @@
     - https://en.wikipedia.org/wiki/Oxygen_sensor
 
 - code: P2242
-  scope: generic
   category: powertrain
   title:
     en: O2 Sensor Pumping Current Circuit High (Bank 2 Sensor 1)
@@ -4853,7 +4727,6 @@
     - https://en.wikipedia.org/wiki/Oxygen_sensor
 
 - code: P2244
-  scope: generic
   category: powertrain
   title:
     en: O2 Sensor Reference Voltage Circuit Range/Performance (Bank 1 Sensor 1)
@@ -4891,7 +4764,6 @@
     - https://en.wikipedia.org/wiki/Oxygen_sensor
 
 - code: P2245
-  scope: generic
   category: powertrain
   title:
     en: O2 Sensor Reference Voltage Circuit Low (Bank 1 Sensor 1)
@@ -4929,7 +4801,6 @@
     - https://en.wikipedia.org/wiki/Oxygen_sensor
 
 - code: P2246
-  scope: generic
   category: powertrain
   title:
     en: O2 Sensor Reference Voltage Circuit High (Bank 1 Sensor 1)
@@ -4967,7 +4838,6 @@
     - https://en.wikipedia.org/wiki/Oxygen_sensor
 
 - code: P2248
-  scope: generic
   category: powertrain
   title:
     en: O2 Sensor Reference Voltage Circuit Range/Performance (Bank 2 Sensor 1)
@@ -5006,7 +4876,6 @@
     - https://en.wikipedia.org/wiki/Oxygen_sensor
 
 - code: P2249
-  scope: generic
   category: powertrain
   title:
     en: O2 Sensor Reference Voltage Circuit Low (Bank 2 Sensor 1)
@@ -5044,7 +4913,6 @@
     - https://en.wikipedia.org/wiki/Oxygen_sensor
 
 - code: P2250
-  scope: generic
   category: powertrain
   title:
     en: O2 Sensor Reference Voltage Circuit High (Bank 2 Sensor 1)
@@ -5082,7 +4950,6 @@
     - https://en.wikipedia.org/wiki/Oxygen_sensor
 
 - code: P2252
-  scope: generic
   category: powertrain
   title:
     en: O2 Sensor Negative Current Control Circuit Low (Bank 1 Sensor 1)
@@ -5119,7 +4986,6 @@
     - https://en.wikipedia.org/wiki/Oxygen_sensor
 
 - code: P2253
-  scope: generic
   category: powertrain
   title:
     en: O2 Sensor Negative Current Control Circuit High (Bank 1 Sensor 1)
@@ -5157,7 +5023,6 @@
     - https://en.wikipedia.org/wiki/Oxygen_sensor
 
 - code: P2254
-  scope: generic
   category: powertrain
   title:
     en: O2 Sensor Negative Current Control Circuit Low (Bank 2 Sensor 1)
@@ -5195,7 +5060,6 @@
     - https://en.wikipedia.org/wiki/Oxygen_sensor
 
 - code: P2255
-  scope: generic
   category: powertrain
   title:
     en: O2 Sensor Negative Current Control Circuit High (Bank 2 Sensor 1)
@@ -5233,7 +5097,6 @@
     - https://en.wikipedia.org/wiki/Oxygen_sensor
 
 - code: P2BA9
-  scope: generic
   category: powertrain
   title:
     en: NOx Exceedence — Insufficient Reagent
@@ -5277,7 +5140,6 @@
     - https://en.wikipedia.org/wiki/Diesel_exhaust_fluid
 
 - code: P2BAB
-  scope: generic
   category: powertrain
   title:
     en: NOx Exceedence — Reagent System Performance
@@ -5322,7 +5184,6 @@
     - https://en.wikipedia.org/wiki/Selective_catalytic_reduction
 
 - code: P20E1
-  scope: generic
   category: powertrain
   title:
     en: Reductant Pressure Too Low
@@ -5366,7 +5227,6 @@
     - https://en.wikipedia.org/wiki/Diesel_exhaust_fluid
 
 - code: P20E2
-  scope: generic
   category: powertrain
   title:
     en: Reductant Pressure Too High
@@ -5410,7 +5270,6 @@
     - https://en.wikipedia.org/wiki/Diesel_exhaust_fluid
 
 - code: P20E9
-  scope: generic
   category: powertrain
   title:
     en: Reductant Pressure Too High
@@ -5448,7 +5307,6 @@
     - https://en.wikipedia.org/wiki/Diesel_exhaust_fluid
 
 - code: P20EB
-  scope: generic
   category: powertrain
   title:
     en: Reductant Reservoir Heater "A" Control Circuit
@@ -5485,7 +5343,6 @@
     - https://en.wikipedia.org/wiki/Diesel_exhaust_fluid
 
 - code: P20EC
-  scope: generic
   category: powertrain
   title:
     en: Reductant Heater "A" Control Stuck Off
@@ -5523,7 +5380,6 @@
     - https://en.wikipedia.org/wiki/Diesel_exhaust_fluid
 
 - code: P20ED
-  scope: generic
   category: powertrain
   title:
     en: Reductant Heater "A" Control Stuck On
@@ -5561,7 +5417,6 @@
     - https://en.wikipedia.org/wiki/Diesel_exhaust_fluid
 
 - code: P2206
-  scope: generic
   category: powertrain
   title:
     en: NOx Sensor Circuit (Bank 2)
@@ -5598,7 +5453,6 @@
     - https://en.wikipedia.org/wiki/Selective_catalytic_reduction
 
 - code: P2207
-  scope: generic
   category: powertrain
   title:
     en: NOx Sensor Circuit Range/Performance (Bank 2)
@@ -5635,7 +5489,6 @@
     - https://en.wikipedia.org/wiki/Selective_catalytic_reduction
 
 - code: P2208
-  scope: generic
   category: powertrain
   title:
     en: NOx Sensor Heater Circuit (Bank 2)
@@ -5673,7 +5526,6 @@
     - https://en.wikipedia.org/wiki/Selective_catalytic_reduction
 
 - code: P2209
-  scope: generic
   category: powertrain
   title:
     en: NOx Sensor Heater Sense Circuit Range/Performance (Bank 2)
@@ -5711,7 +5563,6 @@
     - https://en.wikipedia.org/wiki/Selective_catalytic_reduction
 
 - code: P2210
-  scope: generic
   category: powertrain
   title:
     en: NOx Sensor Circuit Intermittent (Bank 2)
@@ -5749,7 +5600,6 @@
     - https://en.wikipedia.org/wiki/Selective_catalytic_reduction
 
 - code: P2211
-  scope: generic
   category: powertrain
   title:
     en: NOx Sensor Heater Sense Circuit Intermittent (Bank 2)
@@ -5787,7 +5637,6 @@
     - https://en.wikipedia.org/wiki/Selective_catalytic_reduction
 
 - code: P2113
-  scope: generic
   category: powertrain
   title:
     en: Throttle Actuator Control System Forced Limited RPM
@@ -5826,7 +5675,6 @@
     - https://en.wikipedia.org/wiki/Throttle_position_sensor
 
 - code: P2114
-  scope: generic
   category: powertrain
   title:
     en: Throttle Actuator Control System Forced Below Limit RPM
@@ -5865,7 +5713,6 @@
     - https://en.wikipedia.org/wiki/Throttle_position_sensor
 
 - code: P2120
-  scope: generic
   category: powertrain
   title:
     en: Throttle/Pedal Position Sensor "C" Circuit
@@ -5902,7 +5749,6 @@
     - https://en.wikipedia.org/wiki/Throttle_position_sensor
 
 - code: P2121
-  scope: generic
   category: powertrain
   title:
     en: Throttle/Pedal Position Sensor "C" Range/Performance
@@ -5939,7 +5785,6 @@
     - https://en.wikipedia.org/wiki/Throttle_position_sensor
 
 - code: P2124
-  scope: generic
   category: powertrain
   title:
     en: Throttle/Pedal Position Sensor "C" Circuit Low
@@ -5977,7 +5822,6 @@
     - https://en.wikipedia.org/wiki/Throttle_position_sensor
 
 - code: P2125
-  scope: generic
   category: powertrain
   title:
     en: Throttle/Pedal Position Sensor "C" Circuit High
@@ -6015,7 +5859,6 @@
     - https://en.wikipedia.org/wiki/Throttle_position_sensor
 
 - code: P2126
-  scope: generic
   category: powertrain
   title:
     en: Throttle/Pedal Position Sensor "C" Circuit Intermittent
@@ -6053,7 +5896,6 @@
     - https://en.wikipedia.org/wiki/Throttle_position_sensor
 
 - code: P2129
-  scope: generic
   category: powertrain
   title:
     en: Throttle/Pedal Position Sensor "D" Circuit Intermittent
@@ -6090,7 +5932,6 @@
     - https://en.wikipedia.org/wiki/Throttle_position_sensor
 
 - code: P2131
-  scope: generic
   category: powertrain
   title:
     en: Throttle/Pedal Position Sensor "E" Range/Performance
@@ -6126,7 +5967,6 @@
     - https://en.wikipedia.org/wiki/Throttle_position_sensor
 
 - code: P2132
-  scope: generic
   category: powertrain
   title:
     en: Throttle/Pedal Position Sensor "E" Circuit Low
@@ -6164,7 +6004,6 @@
     - https://en.wikipedia.org/wiki/Throttle_position_sensor
 
 - code: P2133
-  scope: generic
   category: powertrain
   title:
     en: Throttle/Pedal Position Sensor "E" Circuit High
@@ -6202,7 +6041,6 @@
     - https://en.wikipedia.org/wiki/Throttle_position_sensor
 
 - code: P2136
-  scope: generic
   category: powertrain
   title:
     en: Throttle/Pedal Position Sensor A/C Voltage Correlation
@@ -6240,7 +6078,6 @@
     - https://en.wikipedia.org/wiki/Throttle_position_sensor
 
 - code: P2137
-  scope: generic
   category: powertrain
   title:
     en: Throttle/Pedal Position Sensor B/C Voltage Correlation
@@ -6279,7 +6116,6 @@
     - https://en.wikipedia.org/wiki/Throttle_position_sensor
 
 - code: P2181
-  scope: generic
   category: powertrain
   title:
     en: Cooling System Performance
@@ -6322,7 +6158,6 @@
     - https://en.wikipedia.org/wiki/Engine_coolant_temperature_sensor
 
 - code: P2185
-  scope: generic
   category: powertrain
   title:
     en: Engine Coolant Temperature Sensor 2 Circuit High
@@ -6359,7 +6194,6 @@
     - https://en.wikipedia.org/wiki/Engine_coolant_temperature_sensor
 
 - code: P2186
-  scope: generic
   category: powertrain
   title:
     en: Engine Coolant Temperature Sensor 2 Circuit Low
@@ -6397,7 +6231,6 @@
     - https://en.wikipedia.org/wiki/Engine_coolant_temperature_sensor
 
 - code: P2340
-  scope: generic
   category: powertrain
   title:
     en: Cylinder 5 Above Knock Threshold
@@ -6439,7 +6272,6 @@
     - https://en.wikipedia.org/wiki/Misfire
 
 - code: P2341
-  scope: generic
   category: powertrain
   title:
     en: Cylinder 6 Above Knock Threshold
@@ -6477,7 +6309,6 @@
     - https://en.wikipedia.org/wiki/Misfire
 
 - code: P2342
-  scope: generic
   category: powertrain
   title:
     en: Cylinder 7 Above Knock Threshold
@@ -6515,7 +6346,6 @@
     - https://en.wikipedia.org/wiki/Misfire
 
 - code: P2343
-  scope: generic
   category: powertrain
   title:
     en: Cylinder 8 Above Knock Threshold
@@ -6553,7 +6383,6 @@
     - https://en.wikipedia.org/wiki/Misfire
 
 - code: P2407
-  scope: generic
   category: powertrain
   title:
     en: EVAP Leak Detection Pump Sense Circuit Range/Performance
@@ -6590,7 +6419,6 @@
     - https://en.wikipedia.org/wiki/Onboard_refueling_vapor_recovery
 
 - code: P2408
-  scope: generic
   category: powertrain
   title:
     en: Fuel Cap Sensor/Switch Circuit Range/Performance
@@ -6627,7 +6455,6 @@
     - https://en.wikipedia.org/wiki/Onboard_refueling_vapor_recovery
 
 - code: P2410
-  scope: generic
   category: powertrain
   title:
     en: Fuel Cap Sensor/Switch Stuck
@@ -6664,7 +6491,6 @@
     - https://en.wikipedia.org/wiki/Onboard_refueling_vapor_recovery
 
 - code: P2411
-  scope: generic
   category: powertrain
   title:
     en: Fuel Cap Sensor/Switch Circuit
@@ -6702,7 +6528,6 @@
     - https://en.wikipedia.org/wiki/Onboard_refueling_vapor_recovery
 
 - code: P2415
-  scope: generic
   category: powertrain
   title:
     en: EVAP Switching Valve Circuit Open
@@ -6739,7 +6564,6 @@
     - https://en.wikipedia.org/wiki/Onboard_refueling_vapor_recovery
 
 - code: P2416
-  scope: generic
   category: powertrain
   title:
     en: EVAP Switching Valve Performance
@@ -6776,7 +6600,6 @@
     - https://en.wikipedia.org/wiki/Onboard_refueling_vapor_recovery
 
 - code: P2417
-  scope: generic
   category: powertrain
   title:
     en: EVAP Switching Valve Stuck Closed
@@ -6813,7 +6636,6 @@
     - https://en.wikipedia.org/wiki/Onboard_refueling_vapor_recovery
 
 - code: P2446
-  scope: generic
   category: powertrain
   title:
     en: Secondary Air Injection Pump Stuck Off (Bank 2)
@@ -6850,7 +6672,6 @@
     - https://en.wikipedia.org/wiki/Secondary_air_injection
 
 - code: P2447
-  scope: generic
   category: powertrain
   title:
     en: Secondary Air Injection Pump Stuck On (Bank 2)
@@ -6888,7 +6709,6 @@
     - https://en.wikipedia.org/wiki/Secondary_air_injection
 
 - code: P2456
-  scope: generic
   category: powertrain
   title:
     en: DPF Differential Pressure Sensor Circuit Intermittent
@@ -6925,7 +6745,6 @@
     - https://en.wikipedia.org/wiki/Diesel_particulate_filter
 
 - code: P2457
-  scope: generic
   category: powertrain
   title:
     en: EGR Cooler Performance
@@ -6962,7 +6781,6 @@
     - https://en.wikipedia.org/wiki/Diesel_particulate_filter
 
 - code: P2458
-  scope: generic
   category: powertrain
   title:
     en: DPF Regeneration Duration
@@ -7001,7 +6819,6 @@
     - https://en.wikipedia.org/wiki/Diesel_particulate_filter
 
 - code: P2460
-  scope: generic
   category: powertrain
   title:
     en: DPF Restriction — Forced Limited Power
@@ -7039,7 +6856,6 @@
     - https://en.wikipedia.org/wiki/Diesel_particulate_filter
 
 - code: P2461
-  scope: generic
   category: powertrain
   title:
     en: DPF Restriction — Forced Limited
@@ -7078,7 +6894,6 @@
     - https://en.wikipedia.org/wiki/Diesel_particulate_filter
 
 - code: P2602
-  scope: generic
   category: powertrain
   title:
     en: Coolant Pump Control Circuit Open
@@ -7115,7 +6930,6 @@
     - https://en.wikipedia.org/wiki/Engine_coolant_temperature_sensor
 
 - code: P2603
-  scope: generic
   category: powertrain
   title:
     en: Coolant Pump Control Circuit Low
@@ -7153,7 +6967,6 @@
     - https://en.wikipedia.org/wiki/Engine_coolant_temperature_sensor
 
 - code: P2604
-  scope: generic
   category: powertrain
   title:
     en: Coolant Pump Control Circuit High
@@ -7191,7 +7004,6 @@
     - https://en.wikipedia.org/wiki/Engine_coolant_temperature_sensor
 
 - code: P2018
-  scope: generic
   category: powertrain
   title:
     en: Intake Manifold Runner Position Sensor/Switch Circuit Open (Bank 2)
@@ -7228,7 +7040,6 @@
     - https://en.wikipedia.org/wiki/Inlet_manifold
 
 - code: P2019
-  scope: generic
   category: powertrain
   title:
     en: Intake Manifold Runner Position Sensor/Switch Range/Performance (Bank 2)
@@ -7266,7 +7077,6 @@
     - https://en.wikipedia.org/wiki/Inlet_manifold
 
 - code: P2020
-  scope: generic
   category: powertrain
   title:
     en: Intake Manifold Runner Position Sensor/Switch Circuit Low (Bank 2)
@@ -7304,7 +7114,6 @@
     - https://en.wikipedia.org/wiki/Inlet_manifold
 
 - code: P2021
-  scope: generic
   category: powertrain
   title:
     en: Intake Manifold Runner Position Sensor/Switch Circuit High (Bank 2)
@@ -7342,7 +7151,6 @@
     - https://en.wikipedia.org/wiki/Inlet_manifold
 
 - code: P2620
-  scope: generic
   category: powertrain
   title:
     en: Throttle Position Output Circuit
@@ -7379,7 +7187,6 @@
     - https://en.wikipedia.org/wiki/Throttle_position_sensor
 
 - code: P2227
-  scope: generic
   category: powertrain
   title:
     en: Barometric Pressure Circuit Range/Performance

@@ -1,5 +1,4 @@
 - code: P0101
-  scope: generic
   category: powertrain
   title:
     en: Mass or Volume Air Flow Circuit Range/Performance
@@ -50,7 +49,6 @@
     - https://en.wikipedia.org/wiki/On-board_diagnostics
 
 - code: P0102
-  scope: generic
   category: powertrain
   title:
     en: Mass or Volume Air Flow Circuit Low Input
@@ -92,7 +90,6 @@
     - https://en.wikipedia.org/wiki/Mass_flow_sensor
 
 - code: P0103
-  scope: generic
   category: powertrain
   title:
     en: Mass or Volume Air Flow Circuit High Input
@@ -129,7 +126,6 @@
     - https://en.wikipedia.org/wiki/Mass_flow_sensor
 
 - code: P0106
-  scope: generic
   category: powertrain
   title:
     en: Manifold Absolute Pressure Sensor Range/Performance
@@ -172,7 +168,6 @@
     - https://en.wikipedia.org/wiki/MAP_sensor
 
 - code: P0107
-  scope: generic
   category: powertrain
   title:
     en: Manifold Absolute Pressure Sensor Low Input
@@ -214,7 +209,6 @@
     - https://en.wikipedia.org/wiki/MAP_sensor
 
 - code: P0108
-  scope: generic
   category: powertrain
   title:
     en: Manifold Absolute Pressure Sensor High Input
@@ -256,7 +250,6 @@
     - https://en.wikipedia.org/wiki/MAP_sensor
 
 - code: P0111
-  scope: generic
   category: powertrain
   title:
     en: Intake Air Temperature Sensor Range/Performance
@@ -293,7 +286,6 @@
     - https://en.wikipedia.org/wiki/Intake_air_temperature_sensor
 
 - code: P0112
-  scope: generic
   category: powertrain
   title:
     en: Intake Air Temperature Sensor Low Input
@@ -330,7 +322,6 @@
     - https://en.wikipedia.org/wiki/Intake_air_temperature_sensor
 
 - code: P0113
-  scope: generic
   category: powertrain
   title:
     en: Intake Air Temperature Sensor High Input
@@ -367,7 +358,6 @@
     - https://en.wikipedia.org/wiki/Intake_air_temperature_sensor
 
 - code: P0114
-  scope: generic
   category: powertrain
   title:
     en: Intake Air Temperature Sensor Intermittent
@@ -404,7 +394,6 @@
     - https://en.wikipedia.org/wiki/Intake_air_temperature_sensor
 
 - code: P0115
-  scope: generic
   category: powertrain
   title:
     en: Engine Coolant Temperature Sensor Circuit Malfunction
@@ -441,7 +430,6 @@
     - https://en.wikipedia.org/wiki/Engine_coolant_temperature_sensor
 
 - code: P0116
-  scope: generic
   category: powertrain
   title:
     en: Engine Coolant Temperature Sensor Range/Performance
@@ -478,7 +466,6 @@
     - https://en.wikipedia.org/wiki/Engine_coolant_temperature_sensor
 
 - code: P0117
-  scope: generic
   category: powertrain
   title:
     en: Engine Coolant Temperature Sensor Low Input
@@ -515,7 +502,6 @@
     - https://en.wikipedia.org/wiki/Engine_coolant_temperature_sensor
 
 - code: P0118
-  scope: generic
   category: powertrain
   title:
     en: Engine Coolant Temperature Sensor High Input
@@ -552,7 +538,6 @@
     - https://en.wikipedia.org/wiki/Engine_coolant_temperature_sensor
 
 - code: P0121
-  scope: generic
   category: powertrain
   title:
     en: Throttle/Pedal Position Sensor "A" Range/Performance
@@ -596,7 +581,6 @@
     - https://en.wikipedia.org/wiki/Throttle_position_sensor
 
 - code: P0122
-  scope: generic
   category: powertrain
   title:
     en: Throttle/Pedal Position Sensor "A" Low Input
@@ -639,7 +623,6 @@
     - https://en.wikipedia.org/wiki/Throttle_position_sensor
 
 - code: P0123
-  scope: generic
   category: powertrain
   title:
     en: Throttle/Pedal Position Sensor "A" High Input
@@ -682,7 +665,6 @@
     - https://en.wikipedia.org/wiki/Throttle_position_sensor
 
 - code: P0124
-  scope: generic
   category: powertrain
   title:
     en: Throttle/Pedal Position Sensor "A" Circuit Intermittent
@@ -719,7 +701,6 @@
     - https://en.wikipedia.org/wiki/Throttle_position_sensor
 
 - code: P0128
-  scope: generic
   category: powertrain
   title:
     en: Coolant Thermostat Below Regulating Temperature
@@ -756,7 +737,6 @@
     - https://en.wikipedia.org/wiki/Thermostat#Automotive_thermostats
 
 - code: P0130
-  scope: generic
   category: powertrain
   title:
     en: O2 Sensor Circuit Malfunction (Bank 1, Sensor 1)
@@ -798,7 +778,6 @@
     - https://en.wikipedia.org/wiki/Oxygen_sensor
 
 - code: P0131
-  scope: generic
   category: powertrain
   title:
     en: O2 Sensor Circuit Low Voltage (Bank 1, Sensor 1)
@@ -840,7 +819,6 @@
     - https://en.wikipedia.org/wiki/Oxygen_sensor
 
 - code: P0132
-  scope: generic
   category: powertrain
   title:
     en: O2 Sensor Circuit High Voltage (Bank 1, Sensor 1)
@@ -883,7 +861,6 @@
     - https://en.wikipedia.org/wiki/Oxygen_sensor
 
 - code: P0133
-  scope: generic
   category: powertrain
   title:
     en: O2 Sensor Slow Response (Bank 1, Sensor 1)
@@ -919,7 +896,6 @@
     - https://en.wikipedia.org/wiki/Oxygen_sensor
 
 - code: P0135
-  scope: generic
   category: powertrain
   title:
     en: O2 Sensor Heater Circuit Malfunction (Bank 1, Sensor 1)
@@ -962,7 +938,6 @@
     - https://en.wikipedia.org/wiki/Oxygen_sensor
 
 - code: P0136
-  scope: generic
   category: powertrain
   title:
     en: O2 Sensor Circuit Malfunction (Bank 1, Sensor 2)
@@ -999,7 +974,6 @@
     - https://en.wikipedia.org/wiki/Oxygen_sensor
 
 - code: P0137
-  scope: generic
   category: powertrain
   title:
     en: O2 Sensor Circuit Low Voltage (Bank 1, Sensor 2)
@@ -1041,7 +1015,6 @@
     - https://en.wikipedia.org/wiki/Oxygen_sensor
 
 - code: P0138
-  scope: generic
   category: powertrain
   title:
     en: O2 Sensor Circuit High Voltage (Bank 1, Sensor 2)
@@ -1078,7 +1051,6 @@
     - https://en.wikipedia.org/wiki/Oxygen_sensor
 
 - code: P0141
-  scope: generic
   category: powertrain
   title:
     en: O2 Sensor Heater Circuit Malfunction (Bank 1, Sensor 2)
@@ -1115,7 +1087,6 @@
     - https://en.wikipedia.org/wiki/Oxygen_sensor
 
 - code: P0150
-  scope: generic
   category: powertrain
   title:
     en: O2 Sensor Circuit Malfunction (Bank 2, Sensor 1)
@@ -1153,7 +1124,6 @@
     - https://en.wikipedia.org/wiki/Oxygen_sensor
 
 - code: P0151
-  scope: generic
   category: powertrain
   title:
     en: O2 Sensor Circuit Low Voltage (Bank 2, Sensor 1)
@@ -1191,7 +1161,6 @@
     - https://en.wikipedia.org/wiki/Oxygen_sensor
 
 - code: P0152
-  scope: generic
   category: powertrain
   title:
     en: O2 Sensor Circuit High Voltage (Bank 2, Sensor 1)
@@ -1229,7 +1198,6 @@
     - https://en.wikipedia.org/wiki/Oxygen_sensor
 
 - code: P0155
-  scope: generic
   category: powertrain
   title:
     en: O2 Sensor Heater Circuit Malfunction (Bank 2, Sensor 1)
@@ -1262,7 +1230,6 @@
     - https://en.wikipedia.org/wiki/Oxygen_sensor
 
 - code: P0156
-  scope: generic
   category: powertrain
   title:
     en: O2 Sensor Circuit Malfunction (Bank 2, Sensor 2)
@@ -1294,7 +1261,6 @@
     - https://en.wikipedia.org/wiki/Oxygen_sensor
 
 - code: P0161
-  scope: generic
   category: powertrain
   title:
     en: O2 Sensor Heater Circuit Malfunction (Bank 2, Sensor 2)
@@ -1327,7 +1293,6 @@
     - https://en.wikipedia.org/wiki/Oxygen_sensor
 
 - code: P0171
-  scope: generic
   category: powertrain
   title:
     en: System Too Lean (Bank 1)
@@ -1380,7 +1345,6 @@
     - https://en.wikipedia.org/wiki/On-board_diagnostics
 
 - code: P0172
-  scope: generic
   category: powertrain
   title:
     en: System Too Rich (Bank 1)
@@ -1431,7 +1395,6 @@
     - https://en.wikipedia.org/wiki/Engine_control_unit
 
 - code: P0174
-  scope: generic
   category: powertrain
   title:
     en: System Too Lean (Bank 2)
@@ -1476,7 +1439,6 @@
     - https://en.wikipedia.org/wiki/Engine_control_unit
 
 - code: P0175
-  scope: generic
   category: powertrain
   title:
     en: System Too Rich (Bank 2)
@@ -1515,7 +1477,6 @@
     - https://en.wikipedia.org/wiki/Engine_control_unit
 
 - code: P0201
-  scope: generic
   category: powertrain
   title:
     en: Injector Circuit Malfunction — Cylinder 1
@@ -1558,7 +1519,6 @@
     - https://en.wikipedia.org/wiki/Fuel_injection
 
 - code: P0202
-  scope: generic
   category: powertrain
   title:
     en: Injector Circuit Malfunction — Cylinder 2
@@ -1595,7 +1555,6 @@
     - https://en.wikipedia.org/wiki/Fuel_injection
 
 - code: P0203
-  scope: generic
   category: powertrain
   title:
     en: Injector Circuit Malfunction — Cylinder 3
@@ -1632,7 +1591,6 @@
     - https://en.wikipedia.org/wiki/Fuel_injection
 
 - code: P0204
-  scope: generic
   category: powertrain
   title:
     en: Injector Circuit Malfunction — Cylinder 4
@@ -1669,7 +1627,6 @@
     - https://en.wikipedia.org/wiki/Fuel_injection
 
 - code: P0234
-  scope: generic
   category: powertrain
   title:
     en: Turbocharger/Supercharger "A" Overboost Condition
@@ -1714,7 +1671,6 @@
     - https://en.wikipedia.org/wiki/Turbocharger
 
 - code: P0299
-  scope: generic
   category: powertrain
   title:
     en: Turbocharger/Supercharger "A" Underboost Condition
@@ -1765,7 +1721,6 @@
     - https://en.wikipedia.org/wiki/Turbocharger
 
 - code: P0300
-  scope: generic
   category: powertrain
   title:
     en: Random/Multiple Cylinder Misfire Detected
@@ -1816,7 +1771,6 @@
     - https://en.wikipedia.org/wiki/Misfire
 
 - code: P0301
-  scope: generic
   category: powertrain
   title:
     en: Cylinder 1 Misfire Detected
@@ -1864,7 +1818,6 @@
     - https://en.wikipedia.org/wiki/Misfire
 
 - code: P0302
-  scope: generic
   category: powertrain
   title:
     en: Cylinder 2 Misfire Detected
@@ -1907,7 +1860,6 @@
     - https://en.wikipedia.org/wiki/Misfire
 
 - code: P0303
-  scope: generic
   category: powertrain
   title:
     en: Cylinder 3 Misfire Detected
@@ -1950,7 +1902,6 @@
     - https://en.wikipedia.org/wiki/Misfire
 
 - code: P0304
-  scope: generic
   category: powertrain
   title:
     en: Cylinder 4 Misfire Detected
@@ -1993,7 +1944,6 @@
     - https://en.wikipedia.org/wiki/Misfire
 
 - code: P0305
-  scope: generic
   category: powertrain
   title:
     en: Cylinder 5 Misfire Detected
@@ -2031,7 +1981,6 @@
     - https://en.wikipedia.org/wiki/Misfire
 
 - code: P0306
-  scope: generic
   category: powertrain
   title:
     en: Cylinder 6 Misfire Detected
@@ -2069,7 +2018,6 @@
     - https://en.wikipedia.org/wiki/Misfire
 
 - code: P0316
-  scope: generic
   category: powertrain
   title:
     en: Engine Misfire Detected on Startup (First 1000 Revolutions)
@@ -2112,7 +2060,6 @@
     - https://en.wikipedia.org/wiki/Misfire
 
 - code: P0325
-  scope: generic
   category: powertrain
   title:
     en: Knock Sensor 1 Circuit Malfunction (Bank 1)
@@ -2154,7 +2101,6 @@
     - https://en.wikipedia.org/wiki/Knock_sensor
 
 - code: P0327
-  scope: generic
   category: powertrain
   title:
     en: Knock Sensor 1 Circuit Low Input (Bank 1)
@@ -2191,7 +2137,6 @@
     - https://en.wikipedia.org/wiki/Knock_sensor
 
 - code: P0328
-  scope: generic
   category: powertrain
   title:
     en: Knock Sensor 1 Circuit High Input (Bank 1)
@@ -2233,7 +2178,6 @@
     - https://en.wikipedia.org/wiki/Knock_sensor
 
 - code: P0335
-  scope: generic
   category: powertrain
   title:
     en: Crankshaft Position Sensor "A" Circuit Malfunction
@@ -2277,7 +2221,6 @@
     - https://en.wikipedia.org/wiki/Crank_sensor
 
 - code: P0336
-  scope: generic
   category: powertrain
   title:
     en: Crankshaft Position Sensor "A" Circuit Range/Performance
@@ -2319,7 +2262,6 @@
     - https://en.wikipedia.org/wiki/Crank_sensor
 
 - code: P0337
-  scope: generic
   category: powertrain
   title:
     en: Crankshaft Position Sensor "A" Circuit Low Input
@@ -2357,7 +2299,6 @@
     - https://en.wikipedia.org/wiki/Crank_sensor
 
 - code: P0338
-  scope: generic
   category: powertrain
   title:
     en: Crankshaft Position Sensor "A" Circuit High Input
@@ -2395,7 +2336,6 @@
     - https://en.wikipedia.org/wiki/Crank_sensor
 
 - code: P0340
-  scope: generic
   category: powertrain
   title:
     en: Camshaft Position Sensor "A" Circuit (Bank 1 or Single Sensor)
@@ -2438,7 +2378,6 @@
     - https://en.wikipedia.org/wiki/Camshaft_position_sensor
 
 - code: P0341
-  scope: generic
   category: powertrain
   title:
     en: Camshaft Position Sensor "A" Circuit Range/Performance (Bank 1)
@@ -2481,7 +2420,6 @@
     - https://en.wikipedia.org/wiki/Camshaft_position_sensor
 
 - code: P0342
-  scope: generic
   category: powertrain
   title:
     en: Camshaft Position Sensor "A" Circuit Low Input (Bank 1)
@@ -2519,7 +2457,6 @@
     - https://en.wikipedia.org/wiki/Camshaft_position_sensor
 
 - code: P0343
-  scope: generic
   category: powertrain
   title:
     en: Camshaft Position Sensor "A" Circuit High Input (Bank 1)
@@ -2557,7 +2494,6 @@
     - https://en.wikipedia.org/wiki/Camshaft_position_sensor
 
 - code: P0351
-  scope: generic
   category: powertrain
   title:
     en: Ignition Coil "A" Primary/Secondary Circuit Malfunction (Cylinder 1)
@@ -2596,7 +2532,6 @@
     - https://en.wikipedia.org/wiki/Ignition_coil
 
 - code: P0352
-  scope: generic
   category: powertrain
   title:
     en: Ignition Coil "B" Primary/Secondary Circuit Malfunction (Cylinder 2)
@@ -2634,7 +2569,6 @@
     - https://en.wikipedia.org/wiki/Ignition_coil
 
 - code: P0380
-  scope: generic
   category: powertrain
   title:
     en: Glow Plug/Heater Circuit "A" Malfunction
@@ -2676,7 +2610,6 @@
     - https://en.wikipedia.org/wiki/Glowplug
 
 - code: P0400
-  scope: generic
   category: powertrain
   title:
     en: Exhaust Gas Recirculation Flow Malfunction
@@ -2719,7 +2652,6 @@
     - https://en.wikipedia.org/wiki/Exhaust_gas_recirculation
 
 - code: P0401
-  scope: generic
   category: powertrain
   title:
     en: Exhaust Gas Recirculation Flow Insufficient Detected
@@ -2762,7 +2694,6 @@
     - https://en.wikipedia.org/wiki/Exhaust_gas_recirculation
 
 - code: P0402
-  scope: generic
   category: powertrain
   title:
     en: Exhaust Gas Recirculation Flow Excessive Detected
@@ -2798,7 +2729,6 @@
     - https://en.wikipedia.org/wiki/Exhaust_gas_recirculation
 
 - code: P0353
-  scope: generic
   category: powertrain
   title:
     en: Ignition Coil "C" Primary/Secondary Circuit Malfunction (Cylinder 3)
@@ -2836,7 +2766,6 @@
     - https://en.wikipedia.org/wiki/Ignition_coil
 
 - code: P0354
-  scope: generic
   category: powertrain
   title:
     en: Ignition Coil "D" Primary/Secondary Circuit Malfunction (Cylinder 4)
@@ -2874,7 +2803,6 @@
     - https://en.wikipedia.org/wiki/Ignition_coil
 
 - code: P0410
-  scope: generic
   category: powertrain
   title:
     en: Secondary Air Injection System Malfunction
@@ -2912,7 +2840,6 @@
     - https://en.wikipedia.org/wiki/Secondary_air_injection
 
 - code: P0411
-  scope: generic
   category: powertrain
   title:
     en: Secondary Air Injection System Incorrect Flow
@@ -2951,7 +2878,6 @@
     - https://en.wikipedia.org/wiki/Secondary_air_injection
 
 - code: P0420
-  scope: generic
   category: powertrain
   title:
     en: Catalyst System Efficiency Below Threshold (Bank 1)
@@ -3003,7 +2929,6 @@
     - https://en.wikipedia.org/wiki/On-board_diagnostics
 
 - code: P0430
-  scope: generic
   category: powertrain
   title:
     en: Catalyst System Efficiency Below Threshold (Bank 2)
@@ -3042,7 +2967,6 @@
     - https://en.wikipedia.org/wiki/Catalytic_converter
 
 - code: P0440
-  scope: generic
   category: powertrain
   title:
     en: Evaporative Emission Control System Malfunction
@@ -3086,7 +3010,6 @@
     - https://en.wikipedia.org/wiki/Onboard_refueling_vapor_recovery
 
 - code: P0442
-  scope: generic
   category: powertrain
   title:
     en: Evaporative Emission System Leak Detected (Small Leak)
@@ -3129,7 +3052,6 @@
     - https://en.wikipedia.org/wiki/Onboard_refueling_vapor_recovery
 
 - code: P0455
-  scope: generic
   category: powertrain
   title:
     en: Evaporative Emission System Leak Detected (Large Leak)
@@ -3172,7 +3094,6 @@
     - https://en.wikipedia.org/wiki/Onboard_refueling_vapor_recovery
 
 - code: P0456
-  scope: generic
   category: powertrain
   title:
     en: Evaporative Emission System Leak Detected (Very Small Leak)
@@ -3217,7 +3138,6 @@
     - https://en.wikipedia.org/wiki/Onboard_refueling_vapor_recovery
 
 - code: P0505
-  scope: generic
   category: powertrain
   title:
     en: Idle Air Control System Malfunction
@@ -3259,7 +3179,6 @@
     - https://en.wikipedia.org/wiki/Idle_air_control_actuator
 
 - code: P0506
-  scope: generic
   category: powertrain
   title:
     en: Idle Air Control System RPM Lower Than Expected
@@ -3296,7 +3215,6 @@
     - https://en.wikipedia.org/wiki/Idle_air_control_actuator
 
 - code: P0507
-  scope: generic
   category: powertrain
   title:
     en: Idle Air Control System RPM Higher Than Expected
@@ -3340,7 +3258,6 @@
     - https://en.wikipedia.org/wiki/Idle_air_control_actuator
 
 - code: P0562
-  scope: generic
   category: powertrain
   title:
     en: System Voltage Low
@@ -3383,7 +3300,6 @@
     - https://en.wikipedia.org/wiki/Automotive_battery
 
 - code: P0563
-  scope: generic
   category: powertrain
   title:
     en: System Voltage High
@@ -3419,7 +3335,6 @@
     - https://en.wikipedia.org/wiki/Alternator
 
 - code: P0700
-  scope: generic
   category: powertrain
   title:
     en: Transmission Control System Malfunction
@@ -3449,7 +3364,6 @@
     - https://en.wikipedia.org/wiki/Automatic_transmission
 
 - code: P0715
-  scope: generic
   category: powertrain
   title:
     en: Input/Turbine Speed Sensor "A" Circuit Malfunction
@@ -3486,7 +3400,6 @@
     - https://en.wikipedia.org/wiki/Automatic_transmission
 
 - code: P0720
-  scope: generic
   category: powertrain
   title:
     en: Output Speed Sensor Circuit Malfunction
@@ -3523,7 +3436,6 @@
     - https://en.wikipedia.org/wiki/Automatic_transmission
 
 - code: P0740
-  scope: generic
   category: powertrain
   title:
     en: Torque Converter Clutch Circuit Malfunction
@@ -3565,7 +3477,6 @@
     - https://en.wikipedia.org/wiki/Torque_converter
 
 - code: P0741
-  scope: generic
   category: powertrain
   title:
     en: Torque Converter Clutch Circuit Performance/Stuck Off
@@ -3608,7 +3519,6 @@
     - https://en.wikipedia.org/wiki/Torque_converter
 
 - code: P0441
-  scope: generic
   category: powertrain
   title:
     en: Evaporative Emission System Incorrect Purge Flow
@@ -3646,7 +3556,6 @@
     - https://en.wikipedia.org/wiki/Onboard_refueling_vapor_recovery
 
 - code: P0444
-  scope: generic
   category: powertrain
   title:
     en: Evaporative Emission Purge Control Valve Circuit Open
@@ -3683,7 +3592,6 @@
     - https://en.wikipedia.org/wiki/Onboard_refueling_vapor_recovery
 
 - code: P0446
-  scope: generic
   category: powertrain
   title:
     en: Evaporative Emission Vent Control Circuit Malfunction
@@ -3720,7 +3628,6 @@
     - https://en.wikipedia.org/wiki/Onboard_refueling_vapor_recovery
 
 - code: P0500
-  scope: generic
   category: powertrain
   title:
     en: Vehicle Speed Sensor "A" Malfunction
@@ -3757,7 +3664,6 @@
     - https://en.wikipedia.org/wiki/Speed_sensor
 
 - code: P0501
-  scope: generic
   category: powertrain
   title:
     en: Vehicle Speed Sensor "A" Range/Performance
@@ -3795,7 +3701,6 @@
     - https://en.wikipedia.org/wiki/Speed_sensor
 
 - code: P0560
-  scope: generic
   category: powertrain
   title:
     en: System Voltage Malfunction
@@ -3832,7 +3737,6 @@
     - https://en.wikipedia.org/wiki/Automotive_battery
 
 - code: P0571
-  scope: generic
   category: powertrain
   title:
     en: Brake Switch "A" Circuit Malfunction
@@ -3868,7 +3772,6 @@
     - https://en.wikipedia.org/wiki/Brake_switch
 
 - code: P0601
-  scope: generic
   category: powertrain
   title:
     en: Internal Control Module Memory Check Sum Error
@@ -3904,7 +3807,6 @@
     - https://en.wikipedia.org/wiki/Engine_control_unit
 
 - code: P0602
-  scope: generic
   category: powertrain
   title:
     en: Control Module Programming Error
@@ -3939,7 +3841,6 @@
     - https://en.wikipedia.org/wiki/Engine_control_unit
 
 - code: P0606
-  scope: generic
   category: powertrain
   title:
     en: ECM/PCM Processor Fault
@@ -3975,7 +3876,6 @@
     - https://en.wikipedia.org/wiki/Engine_control_unit
 
 - code: P0641
-  scope: generic
   category: powertrain
   title:
     en: Sensor Reference Voltage "A" Circuit Open
@@ -4012,7 +3912,6 @@
     - https://en.wikipedia.org/wiki/Engine_control_unit
 
 - code: P0650
-  scope: generic
   category: powertrain
   title:
     en: Malfunction Indicator Lamp Control Circuit Malfunction
@@ -4054,7 +3953,6 @@
     - https://en.wikipedia.org/wiki/Check_engine_light
 
 - code: P0701
-  scope: generic
   category: powertrain
   title:
     en: Transmission Control System Range/Performance
@@ -4092,7 +3990,6 @@
     - https://en.wikipedia.org/wiki/Automatic_transmission
 
 - code: P0705
-  scope: generic
   category: powertrain
   title:
     en: Transmission Range Sensor Circuit Malfunction
@@ -4129,7 +4026,6 @@
     - https://en.wikipedia.org/wiki/Automatic_transmission
 
 - code: P0731
-  scope: generic
   category: powertrain
   title:
     en: Gear 1 Incorrect Ratio
@@ -4167,7 +4063,6 @@
     - https://en.wikipedia.org/wiki/Automatic_transmission
 
 - code: P0732
-  scope: generic
   category: powertrain
   title:
     en: Gear 2 Incorrect Ratio
@@ -4205,7 +4100,6 @@
     - https://en.wikipedia.org/wiki/Automatic_transmission
 
 - code: P0733
-  scope: generic
   category: powertrain
   title:
     en: Gear 3 Incorrect Ratio
@@ -4238,7 +4132,6 @@
     - https://en.wikipedia.org/wiki/Automatic_transmission
 
 - code: P0734
-  scope: generic
   category: powertrain
   title:
     en: Gear 4 Incorrect Ratio
@@ -4271,7 +4164,6 @@
     - https://en.wikipedia.org/wiki/Automatic_transmission
 
 - code: P0735
-  scope: generic
   category: powertrain
   title:
     en: Gear 5 Incorrect Ratio
@@ -4303,7 +4195,6 @@
     - https://en.wikipedia.org/wiki/Automatic_transmission
 
 - code: P0750
-  scope: generic
   category: powertrain
   title:
     en: Shift Solenoid "A" Malfunction
@@ -4340,7 +4231,6 @@
     - https://en.wikipedia.org/wiki/Automatic_transmission
 
 - code: P0755
-  scope: generic
   category: powertrain
   title:
     en: Shift Solenoid "B" Malfunction
@@ -4378,7 +4268,6 @@
     - https://en.wikipedia.org/wiki/Automatic_transmission
 
 - code: P0010
-  scope: generic
   category: powertrain
   title:
     en: '"A" Camshaft Position Actuator Circuit (Bank 1)'
@@ -4416,7 +4305,6 @@
     - https://en.wikipedia.org/wiki/Variable_valve_timing
 
 - code: P0011
-  scope: generic
   category: powertrain
   title:
     en: '"A" Camshaft Position - Timing Over-Advanced or System Performance (Bank 1)'
@@ -4459,7 +4347,6 @@
     - https://en.wikipedia.org/wiki/Variable_valve_timing
 
 - code: P0012
-  scope: generic
   category: powertrain
   title:
     en: '"A" Camshaft Position - Timing Over-Retarded (Bank 1)'
@@ -4498,7 +4385,6 @@
     - https://en.wikipedia.org/wiki/Variable_valve_timing
 
 - code: P0013
-  scope: generic
   category: powertrain
   title:
     en: '"B" Camshaft Position Actuator Circuit (Bank 1)'
@@ -4536,7 +4422,6 @@
     - https://en.wikipedia.org/wiki/Variable_valve_timing
 
 - code: P0014
-  scope: generic
   category: powertrain
   title:
     en: '"B" Camshaft Position - Timing Over-Advanced (Bank 1)'
@@ -4575,7 +4460,6 @@
     - https://en.wikipedia.org/wiki/Variable_valve_timing
 
 - code: P0015
-  scope: generic
   category: powertrain
   title:
     en: '"B" Camshaft Position - Timing Over-Retarded (Bank 1)'
@@ -4614,7 +4498,6 @@
     - https://en.wikipedia.org/wiki/Variable_valve_timing
 
 - code: P0016
-  scope: generic
   category: powertrain
   title:
     en: Crankshaft Position - Camshaft Position Correlation (Bank 1 Sensor A)
@@ -4659,7 +4542,6 @@
     - https://en.wikipedia.org/wiki/Variable_valve_timing
 
 - code: P0017
-  scope: generic
   category: powertrain
   title:
     en: Crankshaft Position - Camshaft Position Correlation (Bank 1 Sensor B)
@@ -4698,7 +4580,6 @@
     - https://en.wikipedia.org/wiki/Camshaft_position_sensor
 
 - code: P0018
-  scope: generic
   category: powertrain
   title:
     en: Crankshaft Position - Camshaft Position Correlation (Bank 2 Sensor A)
@@ -4737,7 +4618,6 @@
     - https://en.wikipedia.org/wiki/Camshaft_position_sensor
 
 - code: P0019
-  scope: generic
   category: powertrain
   title:
     en: Crankshaft Position - Camshaft Position Correlation (Bank 2 Sensor B)
@@ -4771,7 +4651,6 @@
     - https://en.wikipedia.org/wiki/Camshaft_position_sensor
 
 - code: P0020
-  scope: generic
   category: powertrain
   title:
     en: '"A" Camshaft Position Actuator Circuit (Bank 2)'
@@ -4809,7 +4688,6 @@
     - https://en.wikipedia.org/wiki/Variable_valve_timing
 
 - code: P0021
-  scope: generic
   category: powertrain
   title:
     en: '"A" Camshaft Position - Timing Over-Advanced (Bank 2)'
@@ -4847,7 +4725,6 @@
     - https://en.wikipedia.org/wiki/Variable_valve_timing
 
 - code: P0022
-  scope: generic
   category: powertrain
   title:
     en: '"A" Camshaft Position - Timing Over-Retarded (Bank 2)'
@@ -4886,7 +4763,6 @@
     - https://en.wikipedia.org/wiki/Variable_valve_timing
 
 - code: P0023
-  scope: generic
   category: powertrain
   title:
     en: '"B" Camshaft Position Actuator Circuit (Bank 2)'
@@ -4919,7 +4795,6 @@
     - https://en.wikipedia.org/wiki/Variable_valve_timing
 
 - code: P0024
-  scope: generic
   category: powertrain
   title:
     en: '"B" Camshaft Position - Timing Over-Advanced (Bank 2)'
@@ -4952,7 +4827,6 @@
     - https://en.wikipedia.org/wiki/Variable_valve_timing
 
 - code: P0025
-  scope: generic
   category: powertrain
   title:
     en: '"B" Camshaft Position - Timing Over-Retarded (Bank 2)'
@@ -4986,7 +4860,6 @@
     - https://en.wikipedia.org/wiki/Variable_valve_timing
 
 - code: P0030
-  scope: generic
   category: powertrain
   title:
     en: HO2S Heater Control Circuit (Bank 1 Sensor 1)
@@ -5029,7 +4902,6 @@
     - https://en.wikipedia.org/wiki/Oxygen_sensor
 
 - code: P0031
-  scope: generic
   category: powertrain
   title:
     en: HO2S Heater Control Circuit Low (Bank 1 Sensor 1)
@@ -5067,7 +4939,6 @@
     - https://en.wikipedia.org/wiki/Oxygen_sensor
 
 - code: P0032
-  scope: generic
   category: powertrain
   title:
     en: HO2S Heater Control Circuit High (Bank 1 Sensor 1)
@@ -5100,7 +4971,6 @@
     - https://en.wikipedia.org/wiki/Oxygen_sensor
 
 - code: P0036
-  scope: generic
   category: powertrain
   title:
     en: HO2S Heater Control Circuit (Bank 1 Sensor 2)
@@ -5139,7 +5009,6 @@
     - https://en.wikipedia.org/wiki/Oxygen_sensor
 
 - code: P0037
-  scope: generic
   category: powertrain
   title:
     en: HO2S Heater Control Circuit Low (Bank 1 Sensor 2)
@@ -5172,7 +5041,6 @@
     - https://en.wikipedia.org/wiki/Oxygen_sensor
 
 - code: P0038
-  scope: generic
   category: powertrain
   title:
     en: HO2S Heater Control Circuit High (Bank 1 Sensor 2)
@@ -5205,7 +5073,6 @@
     - https://en.wikipedia.org/wiki/Oxygen_sensor
 
 - code: P0050
-  scope: generic
   category: powertrain
   title:
     en: HO2S Heater Control Circuit (Bank 2 Sensor 1)
@@ -5239,7 +5106,6 @@
     - https://en.wikipedia.org/wiki/Oxygen_sensor
 
 - code: P0051
-  scope: generic
   category: powertrain
   title:
     en: HO2S Heater Control Circuit Low (Bank 2 Sensor 1)
@@ -5272,7 +5138,6 @@
     - https://en.wikipedia.org/wiki/Oxygen_sensor
 
 - code: P0052
-  scope: generic
   category: powertrain
   title:
     en: HO2S Heater Control Circuit High (Bank 2 Sensor 1)
@@ -5305,7 +5170,6 @@
     - https://en.wikipedia.org/wiki/Oxygen_sensor
 
 - code: P0056
-  scope: generic
   category: powertrain
   title:
     en: HO2S Heater Control Circuit (Bank 2 Sensor 2)
@@ -5339,7 +5203,6 @@
     - https://en.wikipedia.org/wiki/Oxygen_sensor
 
 - code: P0057
-  scope: generic
   category: powertrain
   title:
     en: HO2S Heater Control Circuit Low (Bank 2 Sensor 2)
@@ -5372,7 +5235,6 @@
     - https://en.wikipedia.org/wiki/Oxygen_sensor
 
 - code: P0058
-  scope: generic
   category: powertrain
   title:
     en: HO2S Heater Control Circuit High (Bank 2 Sensor 2)
@@ -5405,7 +5267,6 @@
     - https://en.wikipedia.org/wiki/Oxygen_sensor
 
 - code: P0125
-  scope: generic
   category: powertrain
   title:
     en: Insufficient Coolant Temperature for Closed Loop Fuel Control
@@ -5442,7 +5303,6 @@
     - https://en.wikipedia.org/wiki/Engine_coolant_temperature_sensor
 
 - code: P0126
-  scope: generic
   category: powertrain
   title:
     en: Insufficient Coolant Temperature for Stable Operation
@@ -5475,7 +5335,6 @@
     - https://en.wikipedia.org/wiki/Engine_coolant_temperature_sensor
 
 - code: P0230
-  scope: generic
   category: powertrain
   title:
     en: Fuel Pump Primary Circuit Malfunction
@@ -5512,7 +5371,6 @@
     - https://en.wikipedia.org/wiki/Fuel_pump
 
 - code: P0231
-  scope: generic
   category: powertrain
   title:
     en: Fuel Pump Secondary Circuit Low
@@ -5549,7 +5407,6 @@
     - https://en.wikipedia.org/wiki/Fuel_pump
 
 - code: P0232
-  scope: generic
   category: powertrain
   title:
     en: Fuel Pump Secondary Circuit High
@@ -5586,7 +5443,6 @@
     - https://en.wikipedia.org/wiki/Fuel_pump
 
 - code: P0307
-  scope: generic
   category: powertrain
   title:
     en: Cylinder 7 Misfire Detected
@@ -5625,7 +5481,6 @@
     - https://en.wikipedia.org/wiki/Misfire
 
 - code: P0308
-  scope: generic
   category: powertrain
   title:
     en: Cylinder 8 Misfire Detected
@@ -5659,7 +5514,6 @@
     - https://en.wikipedia.org/wiki/Misfire
 
 - code: P0309
-  scope: generic
   category: powertrain
   title:
     en: Cylinder 9 Misfire Detected
@@ -5692,7 +5546,6 @@
     - https://en.wikipedia.org/wiki/Misfire
 
 - code: P0310
-  scope: generic
   category: powertrain
   title:
     en: Cylinder 10 Misfire Detected
@@ -5725,7 +5578,6 @@
     - https://en.wikipedia.org/wiki/Misfire
 
 - code: P0311
-  scope: generic
   category: powertrain
   title:
     en: Cylinder 11 Misfire Detected
@@ -5758,7 +5610,6 @@
     - https://en.wikipedia.org/wiki/Misfire
 
 - code: P0312
-  scope: generic
   category: powertrain
   title:
     en: Cylinder 12 Misfire Detected
@@ -5791,7 +5642,6 @@
     - https://en.wikipedia.org/wiki/Misfire
 
 - code: P0330
-  scope: generic
   category: powertrain
   title:
     en: Knock Sensor 2 Circuit (Bank 2)
@@ -5829,7 +5679,6 @@
     - https://en.wikipedia.org/wiki/Knock_sensor
 
 - code: P0332
-  scope: generic
   category: powertrain
   title:
     en: Knock Sensor 2 Circuit Low Input (Bank 2)
@@ -5867,7 +5716,6 @@
     - https://en.wikipedia.org/wiki/Knock_sensor
 
 - code: P0333
-  scope: generic
   category: powertrain
   title:
     en: Knock Sensor 2 Circuit High Input (Bank 2)
@@ -5905,7 +5753,6 @@
     - https://en.wikipedia.org/wiki/Knock_sensor
 
 - code: P0345
-  scope: generic
   category: powertrain
   title:
     en: Camshaft Position Sensor "A" Circuit (Bank 2)
@@ -5943,7 +5790,6 @@
     - https://en.wikipedia.org/wiki/Camshaft_position_sensor
 
 - code: P0346
-  scope: generic
   category: powertrain
   title:
     en: Camshaft Position Sensor "A" Circuit Range/Performance (Bank 2)
@@ -5981,7 +5827,6 @@
     - https://en.wikipedia.org/wiki/Camshaft_position_sensor
 
 - code: P0355
-  scope: generic
   category: powertrain
   title:
     en: Ignition Coil "E" Primary/Secondary Circuit
@@ -6019,7 +5864,6 @@
     - https://en.wikipedia.org/wiki/Ignition_coil
 
 - code: P0356
-  scope: generic
   category: powertrain
   title:
     en: Ignition Coil "F" Primary/Secondary Circuit
@@ -6052,7 +5896,6 @@
     - https://en.wikipedia.org/wiki/Ignition_coil
 
 - code: P0357
-  scope: generic
   category: powertrain
   title:
     en: Ignition Coil "G" Primary/Secondary Circuit
@@ -6085,7 +5928,6 @@
     - https://en.wikipedia.org/wiki/Ignition_coil
 
 - code: P0358
-  scope: generic
   category: powertrain
   title:
     en: Ignition Coil "H" Primary/Secondary Circuit
@@ -6118,7 +5960,6 @@
     - https://en.wikipedia.org/wiki/Ignition_coil
 
 - code: P0443
-  scope: generic
   category: powertrain
   title:
     en: Evaporative Emission System Purge Control Valve Circuit
@@ -6155,7 +5996,6 @@
     - https://en.wikipedia.org/wiki/Onboard_refueling_vapor_recovery
 
 - code: P0451
-  scope: generic
   category: powertrain
   title:
     en: Evaporative Emission System Pressure Sensor Range/Performance
@@ -6187,7 +6027,6 @@
     - https://en.wikipedia.org/wiki/Onboard_refueling_vapor_recovery
 
 - code: P0452
-  scope: generic
   category: powertrain
   title:
     en: Evaporative Emission System Pressure Sensor Low Input
@@ -6220,7 +6059,6 @@
     - https://en.wikipedia.org/wiki/Onboard_refueling_vapor_recovery
 
 - code: P0453
-  scope: generic
   category: powertrain
   title:
     en: Evaporative Emission System Pressure Sensor High Input
@@ -6253,7 +6091,6 @@
     - https://en.wikipedia.org/wiki/Onboard_refueling_vapor_recovery
 
 - code: P0480
-  scope: generic
   category: powertrain
   title:
     en: Cooling Fan 1 Control Circuit
@@ -6290,7 +6127,6 @@
     - https://en.wikipedia.org/wiki/Engine_control_unit
 
 - code: P0481
-  scope: generic
   category: powertrain
   title:
     en: Cooling Fan 2 Control Circuit
@@ -6323,7 +6159,6 @@
     - https://en.wikipedia.org/wiki/Engine_control_unit
 
 - code: P0504
-  scope: generic
   category: powertrain
   title:
     en: Brake Switch "A"/"B" Correlation
@@ -6359,7 +6194,6 @@
     - https://en.wikipedia.org/wiki/On-board_diagnostics
 
 - code: P0521
-  scope: generic
   category: powertrain
   title:
     en: Engine Oil Pressure Sensor/Switch Range/Performance
@@ -6395,7 +6229,6 @@
     - https://en.wikipedia.org/wiki/Engine_oil_pressure
 
 - code: P0522
-  scope: generic
   category: powertrain
   title:
     en: Engine Oil Pressure Sensor/Switch Low Voltage
@@ -6432,7 +6265,6 @@
     - https://en.wikipedia.org/wiki/Engine_oil_pressure
 
 - code: P0524
-  scope: generic
   category: powertrain
   title:
     en: Engine Oil Pressure Too Low
@@ -6475,7 +6307,6 @@
     - https://en.wikipedia.org/wiki/Engine_oil_pressure
 
 - code: P0716
-  scope: generic
   category: powertrain
   title:
     en: Input/Turbine Speed Sensor "A" Circuit Range/Performance
@@ -6512,7 +6343,6 @@
     - https://en.wikipedia.org/wiki/Automatic_transmission
 
 - code: P0721
-  scope: generic
   category: powertrain
   title:
     en: Output Speed Sensor Circuit Range/Performance
@@ -6545,7 +6375,6 @@
     - https://en.wikipedia.org/wiki/Automatic_transmission
 
 - code: P0742
-  scope: generic
   category: powertrain
   title:
     en: Torque Converter Clutch Circuit Stuck On
@@ -6583,7 +6412,6 @@
     - https://en.wikipedia.org/wiki/Automatic_transmission
 
 - code: P0743
-  scope: generic
   category: powertrain
   title:
     en: Torque Converter Clutch Circuit Electrical
@@ -6621,7 +6449,6 @@
     - https://en.wikipedia.org/wiki/Automatic_transmission
 
 - code: P0760
-  scope: generic
   category: powertrain
   title:
     en: Shift Solenoid "C" Malfunction
@@ -6659,7 +6486,6 @@
     - https://en.wikipedia.org/wiki/Automatic_transmission
 
 - code: P0765
-  scope: generic
   category: powertrain
   title:
     en: Shift Solenoid "D" Malfunction
@@ -6698,7 +6524,6 @@
 
 
 - code: P0026
-  scope: generic
   category: powertrain
   title:
     en: Intake Valve Control Solenoid Circuit Range/Performance (Bank 1)
@@ -6741,7 +6566,6 @@
     - https://en.wikipedia.org/wiki/Variable_valve_timing
 
 - code: P0028
-  scope: generic
   category: powertrain
   title:
     en: Intake Valve Control Solenoid Circuit Range/Performance (Bank 2)
@@ -6780,7 +6604,6 @@
     - https://en.wikipedia.org/wiki/Variable_valve_timing
 
 - code: P0205
-  scope: generic
   category: powertrain
   title:
     en: Injector Circuit Malfunction — Cylinder 5
@@ -6818,7 +6641,6 @@
     - https://en.wikipedia.org/wiki/Fuel_injection
 
 - code: P0206
-  scope: generic
   category: powertrain
   title:
     en: Injector Circuit Malfunction — Cylinder 6
@@ -6856,7 +6678,6 @@
     - https://en.wikipedia.org/wiki/Fuel_injection
 
 - code: P0207
-  scope: generic
   category: powertrain
   title:
     en: Injector Circuit Malfunction — Cylinder 7
@@ -6894,7 +6715,6 @@
     - https://en.wikipedia.org/wiki/Fuel_injection
 
 - code: P0208
-  scope: generic
   category: powertrain
   title:
     en: Injector Circuit Malfunction — Cylinder 8
@@ -6932,7 +6752,6 @@
     - https://en.wikipedia.org/wiki/Fuel_injection
 
 - code: P0209
-  scope: generic
   category: powertrain
   title:
     en: Injector Circuit Malfunction — Cylinder 9
@@ -6970,7 +6789,6 @@
     - https://en.wikipedia.org/wiki/Fuel_injection
 
 - code: P0210
-  scope: generic
   category: powertrain
   title:
     en: Injector Circuit Malfunction — Cylinder 10
@@ -7008,7 +6826,6 @@
     - https://en.wikipedia.org/wiki/Fuel_injection
 
 - code: P0211
-  scope: generic
   category: powertrain
   title:
     en: Injector Circuit Malfunction — Cylinder 11
@@ -7046,7 +6863,6 @@
     - https://en.wikipedia.org/wiki/Fuel_injection
 
 - code: P0212
-  scope: generic
   category: powertrain
   title:
     en: Injector Circuit Malfunction — Cylinder 12
@@ -7084,7 +6900,6 @@
     - https://en.wikipedia.org/wiki/Fuel_injection
 
 - code: P0218
-  scope: generic
   category: powertrain
   title:
     en: Transmission Fluid Over Temperature
@@ -7127,7 +6942,6 @@
     - https://en.wikipedia.org/wiki/Automatic_transmission
 
 - code: P0219
-  scope: generic
   category: powertrain
   title:
     en: Engine Overspeed Condition
@@ -7163,7 +6977,6 @@
     - https://en.wikipedia.org/wiki/Engine_control_unit
 
 - code: P0220
-  scope: generic
   category: powertrain
   title:
     en: Throttle/Pedal Position Sensor/Switch "B" Circuit
@@ -7201,7 +7014,6 @@
     - https://en.wikipedia.org/wiki/Throttle_position_sensor
 
 - code: P0221
-  scope: generic
   category: powertrain
   title:
     en: Throttle/Pedal Position Sensor/Switch "B" Range/Performance
@@ -7239,7 +7051,6 @@
     - https://en.wikipedia.org/wiki/Throttle_position_sensor
 
 - code: P0222
-  scope: generic
   category: powertrain
   title:
     en: Throttle/Pedal Position Sensor/Switch "B" Circuit Low Input
@@ -7277,7 +7088,6 @@
     - https://en.wikipedia.org/wiki/Throttle_position_sensor
 
 - code: P0223
-  scope: generic
   category: powertrain
   title:
     en: Throttle/Pedal Position Sensor/Switch "B" Circuit High Input
@@ -7315,7 +7125,6 @@
     - https://en.wikipedia.org/wiki/Throttle_position_sensor
 
 - code: P0235
-  scope: generic
   category: powertrain
   title:
     en: Turbocharger/Supercharger Boost Sensor "A" Circuit
@@ -7353,7 +7162,6 @@
     - https://en.wikipedia.org/wiki/Turbocharger
 
 - code: P0236
-  scope: generic
   category: powertrain
   title:
     en: Turbocharger/Supercharger Boost Sensor "A" Circuit Range/Performance
@@ -7397,7 +7205,6 @@
     - https://en.wikipedia.org/wiki/Turbocharger
 
 - code: P0237
-  scope: generic
   category: powertrain
   title:
     en: Turbocharger/Supercharger Boost Sensor "A" Circuit Low
@@ -7435,7 +7242,6 @@
     - https://en.wikipedia.org/wiki/Turbocharger
 
 - code: P0238
-  scope: generic
   category: powertrain
   title:
     en: Turbocharger/Supercharger Boost Sensor "A" Circuit High
@@ -7473,7 +7279,6 @@
     - https://en.wikipedia.org/wiki/Turbocharger
 
 - code: P0245
-  scope: generic
   category: powertrain
   title:
     en: Turbocharger/Supercharger Wastegate Solenoid "A" Low
@@ -7511,7 +7316,6 @@
     - https://en.wikipedia.org/wiki/Turbocharger
 
 - code: P0246
-  scope: generic
   category: powertrain
   title:
     en: Turbocharger/Supercharger Wastegate Solenoid "A" High
@@ -7549,7 +7353,6 @@
     - https://en.wikipedia.org/wiki/Turbocharger
 
 - code: P0261
-  scope: generic
   category: powertrain
   title:
     en: Cylinder 1 Injector Circuit Low
@@ -7587,7 +7390,6 @@
     - https://en.wikipedia.org/wiki/Fuel_injection
 
 - code: P0262
-  scope: generic
   category: powertrain
   title:
     en: Cylinder 1 Injector Circuit High
@@ -7625,7 +7427,6 @@
     - https://en.wikipedia.org/wiki/Fuel_injection
 
 - code: P0263
-  scope: generic
   category: powertrain
   title:
     en: Cylinder 1 Contribution/Balance Fault
@@ -7668,7 +7469,6 @@
     - https://en.wikipedia.org/wiki/Fuel_injection
 
 - code: P0264
-  scope: generic
   category: powertrain
   title:
     en: Cylinder 2 Injector Circuit Low
@@ -7706,7 +7506,6 @@
     - https://en.wikipedia.org/wiki/Fuel_injection
 
 - code: P0265
-  scope: generic
   category: powertrain
   title:
     en: Cylinder 2 Injector Circuit High
@@ -7744,7 +7543,6 @@
     - https://en.wikipedia.org/wiki/Fuel_injection
 
 - code: P0266
-  scope: generic
   category: powertrain
   title:
     en: Cylinder 2 Contribution/Balance Fault
@@ -7782,7 +7580,6 @@
     - https://en.wikipedia.org/wiki/Fuel_injection
 
 - code: P0267
-  scope: generic
   category: powertrain
   title:
     en: Cylinder 3 Injector Circuit Low
@@ -7820,7 +7617,6 @@
     - https://en.wikipedia.org/wiki/Fuel_injection
 
 - code: P0268
-  scope: generic
   category: powertrain
   title:
     en: Cylinder 3 Injector Circuit High
@@ -7858,7 +7654,6 @@
     - https://en.wikipedia.org/wiki/Fuel_injection
 
 - code: P0269
-  scope: generic
   category: powertrain
   title:
     en: Cylinder 3 Contribution/Balance Fault
@@ -7896,7 +7691,6 @@
     - https://en.wikipedia.org/wiki/Fuel_injection
 
 - code: P0270
-  scope: generic
   category: powertrain
   title:
     en: Cylinder 4 Injector Circuit Low
@@ -7934,7 +7728,6 @@
     - https://en.wikipedia.org/wiki/Fuel_injection
 
 - code: P0271
-  scope: generic
   category: powertrain
   title:
     en: Cylinder 4 Injector Circuit High
@@ -7972,7 +7765,6 @@
     - https://en.wikipedia.org/wiki/Fuel_injection
 
 - code: P0272
-  scope: generic
   category: powertrain
   title:
     en: Cylinder 4 Contribution/Balance Fault
@@ -8010,7 +7802,6 @@
     - https://en.wikipedia.org/wiki/Fuel_injection
 
 - code: P0381
-  scope: generic
   category: powertrain
   title:
     en: Glow Plug/Heater Indicator Circuit Malfunction
@@ -8046,7 +7837,6 @@
     - https://en.wikipedia.org/wiki/Glowplug
 
 - code: P0405
-  scope: generic
   category: powertrain
   title:
     en: Exhaust Gas Recirculation Sensor "A" Circuit Low
@@ -8083,7 +7873,6 @@
     - https://en.wikipedia.org/wiki/Exhaust_gas_recirculation
 
 - code: P0406
-  scope: generic
   category: powertrain
   title:
     en: Exhaust Gas Recirculation Sensor "A" Circuit High
@@ -8121,7 +7910,6 @@
     - https://en.wikipedia.org/wiki/Exhaust_gas_recirculation
 
 - code: P0408
-  scope: generic
   category: powertrain
   title:
     en: Exhaust Gas Recirculation Sensor "B" Circuit Low
@@ -8159,7 +7947,6 @@
     - https://en.wikipedia.org/wiki/Exhaust_gas_recirculation
 
 - code: P0409
-  scope: generic
   category: powertrain
   title:
     en: Exhaust Gas Recirculation Sensor "B" Circuit High
@@ -8197,7 +7984,6 @@
     - https://en.wikipedia.org/wiki/Exhaust_gas_recirculation
 
 - code: P0414
-  scope: generic
   category: powertrain
   title:
     en: Secondary Air Injection System Switching Valve "A" Circuit Shorted
@@ -8234,7 +8020,6 @@
     - https://en.wikipedia.org/wiki/Secondary_air_injection
 
 - code: P0418
-  scope: generic
   category: powertrain
   title:
     en: Secondary Air Injection System Relay "A" Circuit Malfunction
@@ -8272,7 +8057,6 @@
     - https://en.wikipedia.org/wiki/Secondary_air_injection
 
 - code: P0421
-  scope: generic
   category: powertrain
   title:
     en: Warm Up Catalyst Efficiency Below Threshold (Bank 1)
@@ -8311,7 +8095,6 @@
     - https://en.wikipedia.org/wiki/Catalytic_converter
 
 - code: P0422
-  scope: generic
   category: powertrain
   title:
     en: Main Catalyst Efficiency Below Threshold (Bank 1)
@@ -8350,7 +8133,6 @@
     - https://en.wikipedia.org/wiki/Catalytic_converter
 
 - code: P0423
-  scope: generic
   category: powertrain
   title:
     en: Heated Catalyst Efficiency Below Threshold (Bank 1)
@@ -8389,7 +8171,6 @@
     - https://en.wikipedia.org/wiki/Catalytic_converter
 
 - code: P0424
-  scope: generic
   category: powertrain
   title:
     en: Heated Catalyst Temperature Below Threshold (Bank 1)
@@ -8428,7 +8209,6 @@
     - https://en.wikipedia.org/wiki/Catalytic_converter
 
 - code: P0425
-  scope: generic
   category: powertrain
   title:
     en: Catalyst Temperature Sensor (Bank 1, Sensor 1)
@@ -8464,7 +8244,6 @@
     - https://en.wikipedia.org/wiki/Catalytic_converter
 
 - code: P0431
-  scope: generic
   category: powertrain
   title:
     en: Warm Up Catalyst Efficiency Below Threshold (Bank 2)
@@ -8503,7 +8282,6 @@
     - https://en.wikipedia.org/wiki/Catalytic_converter
 
 - code: P0432
-  scope: generic
   category: powertrain
   title:
     en: Main Catalyst Efficiency Below Threshold (Bank 2)
@@ -8542,7 +8320,6 @@
     - https://en.wikipedia.org/wiki/Catalytic_converter
 
 - code: P0433
-  scope: generic
   category: powertrain
   title:
     en: Heated Catalyst Efficiency Below Threshold (Bank 2)
@@ -8581,7 +8358,6 @@
     - https://en.wikipedia.org/wiki/Catalytic_converter
 
 - code: P0445
-  scope: generic
   category: powertrain
   title:
     en: Evaporative Emission System Purge Control Valve Circuit Shorted
@@ -8617,7 +8393,6 @@
     - https://en.wikipedia.org/wiki/Onboard_refueling_vapor_recovery
 
 - code: P0447
-  scope: generic
   category: powertrain
   title:
     en: Evaporative Emission System Vent Control Circuit Open
@@ -8653,7 +8428,6 @@
     - https://en.wikipedia.org/wiki/Onboard_refueling_vapor_recovery
 
 - code: P0449
-  scope: generic
   category: powertrain
   title:
     en: Evaporative Emission System Vent Valve/Solenoid Circuit Malfunction
@@ -8689,7 +8463,6 @@
     - https://en.wikipedia.org/wiki/Onboard_refueling_vapor_recovery
 
 - code: P0457
-  scope: generic
   category: powertrain
   title:
     en: Evaporative Emission System Leak Detected (Fuel Cap Loose/Off)
@@ -8726,7 +8499,6 @@
     - https://en.wikipedia.org/wiki/Onboard_refueling_vapor_recovery
 
 - code: P0482
-  scope: generic
   category: powertrain
   title:
     en: Cooling Fan 3 Control Circuit Malfunction
@@ -8764,7 +8536,6 @@
     - https://en.wikipedia.org/wiki/Engine_control_unit
 
 - code: P0496
-  scope: generic
   category: powertrain
   title:
     en: Evaporative Emission System High Purge Flow
@@ -8801,7 +8572,6 @@
     - https://en.wikipedia.org/wiki/Onboard_refueling_vapor_recovery
 
 - code: P0530
-  scope: generic
   category: powertrain
   title:
     en: A/C Refrigerant Pressure Sensor "A" Circuit
@@ -8837,7 +8607,6 @@
     - https://en.wikipedia.org/wiki/Air_conditioning
 
 - code: P0532
-  scope: generic
   category: powertrain
   title:
     en: A/C Refrigerant Pressure Sensor "A" Circuit Low
@@ -8874,7 +8643,6 @@
     - https://en.wikipedia.org/wiki/Air_conditioning
 
 - code: P0533
-  scope: generic
   category: powertrain
   title:
     en: A/C Refrigerant Pressure Sensor "A" Circuit High
@@ -8911,7 +8679,6 @@
     - https://en.wikipedia.org/wiki/Air_conditioning
 
 - code: P0550
-  scope: generic
   category: powertrain
   title:
     en: Power Steering Pressure Sensor Circuit
@@ -8947,7 +8714,6 @@
     - https://en.wikipedia.org/wiki/Power_steering
 
 - code: P0551
-  scope: generic
   category: powertrain
   title:
     en: Power Steering Pressure Sensor Range/Performance
@@ -8978,7 +8744,6 @@
     - https://en.wikipedia.org/wiki/Power_steering
 
 - code: P0552
-  scope: generic
   category: powertrain
   title:
     en: Power Steering Pressure Sensor Circuit Low Input
@@ -9010,7 +8775,6 @@
     - https://en.wikipedia.org/wiki/Power_steering
 
 - code: P0553
-  scope: generic
   category: powertrain
   title:
     en: Power Steering Pressure Sensor Circuit High Input
@@ -9042,7 +8806,6 @@
     - https://en.wikipedia.org/wiki/Power_steering
 
 - code: P0570
-  scope: generic
   category: powertrain
   title:
     en: Cruise Control Accel Signal Malfunction
@@ -9078,7 +8841,6 @@
     - https://en.wikipedia.org/wiki/Cruise_control
 
 - code: P0603
-  scope: generic
   category: powertrain
   title:
     en: Internal Control Module Keep Alive Memory (KAM) Error
@@ -9114,7 +8876,6 @@
     - https://en.wikipedia.org/wiki/Engine_control_unit
 
 - code: P0604
-  scope: generic
   category: powertrain
   title:
     en: Internal Control Module Random Access Memory (RAM) Error
@@ -9145,7 +8906,6 @@
     - https://en.wikipedia.org/wiki/Engine_control_unit
 
 - code: P0605
-  scope: generic
   category: powertrain
   title:
     en: Internal Control Module Read Only Memory (ROM) Error
@@ -9176,7 +8936,6 @@
     - https://en.wikipedia.org/wiki/Engine_control_unit
 
 - code: P0610
-  scope: generic
   category: powertrain
   title:
     en: Control Module Vehicle Options Error
@@ -9206,7 +8965,6 @@
     - https://en.wikipedia.org/wiki/Engine_control_unit
 
 - code: P0615
-  scope: generic
   category: powertrain
   title:
     en: Starter Relay Circuit
@@ -9242,7 +9000,6 @@
     - https://en.wikipedia.org/wiki/Starter_solenoid
 
 - code: P0617
-  scope: generic
   category: powertrain
   title:
     en: Starter Relay Circuit High
@@ -9274,7 +9031,6 @@
     - https://en.wikipedia.org/wiki/Starter_solenoid
 
 - code: P0620
-  scope: generic
   category: powertrain
   title:
     en: Generator Control Circuit
@@ -9310,7 +9066,6 @@
     - https://en.wikipedia.org/wiki/Alternator
 
 - code: P0625
-  scope: generic
   category: powertrain
   title:
     en: Generator Field Terminal Circuit Low
@@ -9347,7 +9102,6 @@
     - https://en.wikipedia.org/wiki/Alternator
 
 - code: P0627
-  scope: generic
   category: powertrain
   title:
     en: Fuel Pump "A" Control Circuit Open
@@ -9385,7 +9139,6 @@
     - https://en.wikipedia.org/wiki/Fuel_pump
 
 - code: P0642
-  scope: generic
   category: powertrain
   title:
     en: Sensor Reference Voltage "A" Circuit Low
@@ -9422,7 +9175,6 @@
     - https://en.wikipedia.org/wiki/Engine_control_unit
 
 - code: P0643
-  scope: generic
   category: powertrain
   title:
     en: Sensor Reference Voltage "A" Circuit High
@@ -9455,7 +9207,6 @@
     - https://en.wikipedia.org/wiki/Engine_control_unit
 
 - code: P0712
-  scope: generic
   category: powertrain
   title:
     en: Transmission Fluid Temperature Sensor Circuit Low
@@ -9492,7 +9243,6 @@
     - https://en.wikipedia.org/wiki/Automatic_transmission
 
 - code: P0713
-  scope: generic
   category: powertrain
   title:
     en: Transmission Fluid Temperature Sensor Circuit High
@@ -9530,7 +9280,6 @@
     - https://en.wikipedia.org/wiki/Automatic_transmission
 
 - code: P0717
-  scope: generic
   category: powertrain
   title:
     en: Input/Turbine Speed Sensor Circuit No Signal
@@ -9568,7 +9317,6 @@
     - https://en.wikipedia.org/wiki/Automatic_transmission
 
 - code: P0722
-  scope: generic
   category: powertrain
   title:
     en: Output Speed Sensor Circuit No Signal
@@ -9606,7 +9354,6 @@
     - https://en.wikipedia.org/wiki/Automatic_transmission
 
 - code: P0729
-  scope: generic
   category: powertrain
   title:
     en: Gear 6 Incorrect Ratio
@@ -9644,7 +9391,6 @@
     - https://en.wikipedia.org/wiki/Automatic_transmission
 
 - code: P0736
-  scope: generic
   category: powertrain
   title:
     en: Reverse Incorrect Ratio
@@ -9682,7 +9428,6 @@
     - https://en.wikipedia.org/wiki/Automatic_transmission
 
 - code: P0744
-  scope: generic
   category: powertrain
   title:
     en: Torque Converter Clutch Circuit Intermittent
@@ -9720,7 +9465,6 @@
     - https://en.wikipedia.org/wiki/Automatic_transmission
 
 - code: P0758
-  scope: generic
   category: powertrain
   title:
     en: Shift Solenoid "B" Electrical
@@ -9757,7 +9501,6 @@
     - https://en.wikipedia.org/wiki/Automatic_transmission
 
 - code: P0763
-  scope: generic
   category: powertrain
   title:
     en: Shift Solenoid "C" Electrical
@@ -9795,7 +9538,6 @@
     - https://en.wikipedia.org/wiki/Automatic_transmission
 
 - code: P0768
-  scope: generic
   category: powertrain
   title:
     en: Shift Solenoid "D" Electrical
@@ -9833,7 +9575,6 @@
     - https://en.wikipedia.org/wiki/Automatic_transmission
 
 - code: P0773
-  scope: generic
   category: powertrain
   title:
     en: Shift Solenoid "E" Electrical
@@ -9871,7 +9612,6 @@
     - https://en.wikipedia.org/wiki/Automatic_transmission
 
 - code: P0260
-  scope: generic
   category: powertrain
   title:
     en: Cylinder 1 Injector Circuit Performance
@@ -9915,7 +9655,6 @@
     - https://en.wikipedia.org/wiki/Fuel_injection
 
 - code: P0247
-  scope: generic
   category: powertrain
   title:
     en: Turbocharger Wastegate Solenoid B Low
@@ -9959,7 +9698,6 @@
     - https://en.wikipedia.org/wiki/Turbocharger
 
 - code: P0248
-  scope: generic
   category: powertrain
   title:
     en: Turbocharger Wastegate Solenoid B High
@@ -10003,7 +9741,6 @@
     - https://en.wikipedia.org/wiki/Turbocharger
 
 - code: P0313
-  scope: generic
   category: powertrain
   title:
     en: Misfire Detected with Low Fuel
@@ -10047,7 +9784,6 @@
     - https://en.wikipedia.org/wiki/Misfire
 
 - code: P0314
-  scope: generic
   category: powertrain
   title:
     en: Single Cylinder Misfire — Cylinder Not Specified
@@ -10092,7 +9828,6 @@
     - https://en.wikipedia.org/wiki/Misfire
 
 - code: P0403
-  scope: generic
   category: powertrain
   title:
     en: EGR Control Circuit
@@ -10135,7 +9870,6 @@
     - https://en.wikipedia.org/wiki/Exhaust_gas_recirculation
 
 - code: P0404
-  scope: generic
   category: powertrain
   title:
     en: EGR Range/Performance
@@ -10177,7 +9911,6 @@
     - https://en.wikipedia.org/wiki/Exhaust_gas_recirculation
 
 - code: P0407
-  scope: generic
   category: powertrain
   title:
     en: EGR Sensor B Circuit Low
@@ -10220,7 +9953,6 @@
     - https://en.wikipedia.org/wiki/Exhaust_gas_recirculation
 
 - code: P0483
-  scope: generic
   category: powertrain
   title:
     en: Cooling Fan Rationality Check
@@ -10264,7 +9996,6 @@
     - https://en.wikipedia.org/wiki/Engine_control_unit
 
 - code: P0484
-  scope: generic
   category: powertrain
   title:
     en: Cooling Fan Current Too High
@@ -10306,7 +10037,6 @@
     - https://en.wikipedia.org/wiki/Engine_control_unit
 
 - code: P0485
-  scope: generic
   category: powertrain
   title:
     en: Cooling Fan Power/Ground Circuit
@@ -10348,7 +10078,6 @@
     - https://en.wikipedia.org/wiki/Engine_control_unit
 
 - code: P0531
-  scope: generic
   category: powertrain
   title:
     en: A/C Refrigerant Pressure Sensor Range/Performance
@@ -10390,7 +10119,6 @@
     - https://en.wikipedia.org/wiki/Air_conditioning
 
 - code: P0534
-  scope: generic
   category: powertrain
   title:
     en: A/C Refrigerant Charge Loss
@@ -10432,7 +10160,6 @@
     - https://en.wikipedia.org/wiki/Air_conditioning
 
 - code: P0535
-  scope: generic
   category: powertrain
   title:
     en: A/C Evaporator Temperature Sensor Circuit
@@ -10469,7 +10196,6 @@
     - https://en.wikipedia.org/wiki/Air_conditioning
 
 - code: P0537
-  scope: generic
   category: powertrain
   title:
     en: A/C Evaporator Temperature Sensor Circuit Low
@@ -10506,7 +10232,6 @@
     - https://en.wikipedia.org/wiki/Air_conditioning
 
 - code: P0538
-  scope: generic
   category: powertrain
   title:
     en: A/C Evaporator Temperature Sensor Circuit High
@@ -10543,7 +10268,6 @@
     - https://en.wikipedia.org/wiki/Air_conditioning
 
 - code: P0540
-  scope: generic
   category: powertrain
   title:
     en: Intake Air Heater A Circuit
@@ -10586,7 +10310,6 @@
     - https://en.wikipedia.org/wiki/Glowplug
 
 - code: P0541
-  scope: generic
   category: powertrain
   title:
     en: Intake Air Heater A Circuit Low
@@ -10623,7 +10346,6 @@
     - https://en.wikipedia.org/wiki/Glowplug
 
 - code: P0542
-  scope: generic
   category: powertrain
   title:
     en: Intake Air Heater A Circuit High
@@ -10660,7 +10382,6 @@
     - https://en.wikipedia.org/wiki/Glowplug
 
 - code: P0545
-  scope: generic
   category: powertrain
   title:
     en: Exhaust Gas Temperature Sensor Bank 1 Sensor 1 Low
@@ -10697,7 +10418,6 @@
     - https://en.wikipedia.org/wiki/Catalytic_converter
 
 - code: P0546
-  scope: generic
   category: powertrain
   title:
     en: Exhaust Gas Temperature Sensor Bank 1 Sensor 1 High
@@ -10734,7 +10454,6 @@
     - https://en.wikipedia.org/wiki/Catalytic_converter
 
 - code: P0554
-  scope: generic
   category: powertrain
   title:
     en: Power Steering Pressure Sensor Intermittent
@@ -10771,7 +10490,6 @@
     - https://en.wikipedia.org/wiki/Power_steering
 
 - code: P0566
-  scope: generic
   category: powertrain
   title:
     en: Cruise Control Cancel Input Circuit
@@ -10808,7 +10526,6 @@
     - https://en.wikipedia.org/wiki/Cruise_control
 
 - code: P0567
-  scope: generic
   category: powertrain
   title:
     en: Cruise Control Resume Input Circuit
@@ -10840,7 +10557,6 @@
     - https://en.wikipedia.org/wiki/Cruise_control
 
 - code: P0568
-  scope: generic
   category: powertrain
   title:
     en: Cruise Control Set Input Circuit
@@ -10872,7 +10588,6 @@
     - https://en.wikipedia.org/wiki/Cruise_control
 
 - code: P0572
-  scope: generic
   category: powertrain
   title:
     en: Cruise Control/Brake Switch B Circuit Low
@@ -10909,7 +10624,6 @@
     - https://en.wikipedia.org/wiki/Cruise_control
 
 - code: P0573
-  scope: generic
   category: powertrain
   title:
     en: Cruise Control/Brake Switch B Circuit High
@@ -10946,7 +10660,6 @@
     - https://en.wikipedia.org/wiki/Cruise_control
 
 - code: P0607
-  scope: generic
   category: powertrain
   title:
     en: Control Module Performance
@@ -10983,7 +10696,6 @@
     - https://en.wikipedia.org/wiki/Engine_control_unit
 
 - code: P0608
-  scope: generic
   category: powertrain
   title:
     en: Control Module VSS Output A
@@ -11020,7 +10732,6 @@
     - https://en.wikipedia.org/wiki/Engine_control_unit
 
 - code: P0613
-  scope: generic
   category: powertrain
   title:
     en: TCM Processor
@@ -11057,7 +10768,6 @@
     - https://en.wikipedia.org/wiki/Automatic_transmission
 
 - code: P0621
-  scope: generic
   category: powertrain
   title:
     en: Generator Lamp L Control Circuit
@@ -11094,7 +10804,6 @@
     - https://en.wikipedia.org/wiki/Engine_control_unit
 
 - code: P0622
-  scope: generic
   category: powertrain
   title:
     en: Generator Field F Control Circuit
@@ -11131,7 +10840,6 @@
     - https://en.wikipedia.org/wiki/Engine_control_unit
 
 - code: P0623
-  scope: generic
   category: powertrain
   title:
     en: Generator Lamp Control Circuit
@@ -11163,7 +10871,6 @@
     - https://en.wikipedia.org/wiki/Engine_control_unit
 
 - code: P0624
-  scope: generic
   category: powertrain
   title:
     en: Fuel Cap Lamp Control Circuit
@@ -11200,7 +10907,6 @@
     - https://en.wikipedia.org/wiki/Onboard_refueling_vapor_recovery
 
 - code: P0626
-  scope: generic
   category: powertrain
   title:
     en: Generator Field/F Terminal Circuit Performance
@@ -11237,7 +10943,6 @@
     - https://en.wikipedia.org/wiki/Engine_control_unit
 
 - code: P0628
-  scope: generic
   category: powertrain
   title:
     en: Fuel Pump A Control Circuit Low
@@ -11276,7 +10981,6 @@
     - https://en.wikipedia.org/wiki/Fuel_injection
 
 - code: P0629
-  scope: generic
   category: powertrain
   title:
     en: Fuel Pump A Control Circuit High
@@ -11315,7 +11019,6 @@
     - https://en.wikipedia.org/wiki/Fuel_injection
 
 - code: P0633
-  scope: generic
   category: powertrain
   title:
     en: Immobiliser Key Not Programmed
@@ -11353,7 +11056,6 @@
     - https://en.wikipedia.org/wiki/Engine_control_unit
 
 - code: P0670
-  scope: generic
   category: powertrain
   title:
     en: Glow Plug Module Control Circuit
@@ -11390,7 +11092,6 @@
     - https://en.wikipedia.org/wiki/Glowplug
 
 - code: P0671
-  scope: generic
   category: powertrain
   title:
     en: Cylinder 1 Glow Plug Circuit
@@ -11427,7 +11128,6 @@
     - https://en.wikipedia.org/wiki/Glowplug
 
 - code: P0672
-  scope: generic
   category: powertrain
   title:
     en: Cylinder 2 Glow Plug Circuit
@@ -11459,7 +11159,6 @@
     - https://en.wikipedia.org/wiki/Glowplug
 
 - code: P0673
-  scope: generic
   category: powertrain
   title:
     en: Cylinder 3 Glow Plug Circuit
@@ -11491,7 +11190,6 @@
     - https://en.wikipedia.org/wiki/Glowplug
 
 - code: P0674
-  scope: generic
   category: powertrain
   title:
     en: Cylinder 4 Glow Plug Circuit
@@ -11523,7 +11221,6 @@
     - https://en.wikipedia.org/wiki/Glowplug
 
 - code: P0675
-  scope: generic
   category: powertrain
   title:
     en: Cylinder 5 Glow Plug Circuit
@@ -11555,7 +11252,6 @@
     - https://en.wikipedia.org/wiki/Glowplug
 
 - code: P0676
-  scope: generic
   category: powertrain
   title:
     en: Cylinder 6 Glow Plug Circuit
@@ -11587,7 +11283,6 @@
     - https://en.wikipedia.org/wiki/Glowplug
 
 - code: P0677
-  scope: generic
   category: powertrain
   title:
     en: Cylinder 7 Glow Plug Circuit
@@ -11619,7 +11314,6 @@
     - https://en.wikipedia.org/wiki/Glowplug
 
 - code: P0678
-  scope: generic
   category: powertrain
   title:
     en: Cylinder 8 Glow Plug Circuit
@@ -11651,7 +11345,6 @@
     - https://en.wikipedia.org/wiki/Glowplug
 
 - code: P0686
-  scope: generic
   category: powertrain
   title:
     en: ECM/PCM Power Relay Control Circuit Open
@@ -11689,7 +11382,6 @@
     - https://en.wikipedia.org/wiki/Engine_control_unit
 
 - code: P0687
-  scope: generic
   category: powertrain
   title:
     en: ECM/PCM Power Relay Sense Circuit Open
@@ -11726,7 +11418,6 @@
     - https://en.wikipedia.org/wiki/Engine_control_unit
 
 - code: P0688
-  scope: generic
   category: powertrain
   title:
     en: ECM/PCM Power Relay Sense Circuit High
@@ -11763,7 +11454,6 @@
     - https://en.wikipedia.org/wiki/Engine_control_unit
 
 - code: P0691
-  scope: generic
   category: powertrain
   title:
     en: Cooling Fan 1 Control Circuit Low
@@ -11800,7 +11490,6 @@
     - https://en.wikipedia.org/wiki/Engine_control_unit
 
 - code: P0692
-  scope: generic
   category: powertrain
   title:
     en: Cooling Fan 1 Control Circuit High
@@ -11837,7 +11526,6 @@
     - https://en.wikipedia.org/wiki/Engine_control_unit
 
 - code: P0693
-  scope: generic
   category: powertrain
   title:
     en: Cooling Fan 2 Control Circuit Low
@@ -11874,7 +11562,6 @@
     - https://en.wikipedia.org/wiki/Engine_control_unit
 
 - code: P0694
-  scope: generic
   category: powertrain
   title:
     en: Cooling Fan 2 Control Circuit High
@@ -11911,7 +11598,6 @@
     - https://en.wikipedia.org/wiki/Engine_control_unit
 
 - code: P0706
-  scope: generic
   category: powertrain
   title:
     en: Transmission Range Sensor Circuit Range/Performance
@@ -11949,7 +11635,6 @@
     - https://en.wikipedia.org/wiki/Automatic_transmission
 
 - code: P0710
-  scope: generic
   category: powertrain
   title:
     en: Transmission Fluid Temperature Sensor A Circuit
@@ -11986,7 +11671,6 @@
     - https://en.wikipedia.org/wiki/Automatic_transmission
 
 - code: P0719
-  scope: generic
   category: powertrain
   title:
     en: Brake Switch B Circuit Low
@@ -12023,7 +11707,6 @@
     - https://en.wikipedia.org/wiki/Automatic_transmission
 
 - code: P0724
-  scope: generic
   category: powertrain
   title:
     en: Brake Switch B Circuit High
@@ -12060,7 +11743,6 @@
     - https://en.wikipedia.org/wiki/Automatic_transmission
 
 - code: P0727
-  scope: generic
   category: powertrain
   title:
     en: Engine Speed Input Circuit No Signal
@@ -12099,7 +11781,6 @@
     - https://en.wikipedia.org/wiki/Automatic_transmission
 
 - code: P0730
-  scope: generic
   category: powertrain
   title:
     en: Incorrect Gear Ratio
@@ -12143,7 +11824,6 @@
     - https://en.wikipedia.org/wiki/Automatic_transmission
 
 - code: P0746
-  scope: generic
   category: powertrain
   title:
     en: Pressure Control Solenoid A Performance
@@ -12181,7 +11861,6 @@
     - https://en.wikipedia.org/wiki/Automatic_transmission
 
 - code: P0747
-  scope: generic
   category: powertrain
   title:
     en: Pressure Control Solenoid A Stuck On
@@ -12219,7 +11898,6 @@
     - https://en.wikipedia.org/wiki/Automatic_transmission
 
 - code: P0751
-  scope: generic
   category: powertrain
   title:
     en: Shift Solenoid A Performance
@@ -12257,7 +11935,6 @@
     - https://en.wikipedia.org/wiki/Automatic_transmission
 
 - code: P0756
-  scope: generic
   category: powertrain
   title:
     en: Shift Solenoid B Performance
@@ -12290,7 +11967,6 @@
     - https://en.wikipedia.org/wiki/Automatic_transmission
 
 - code: P0761
-  scope: generic
   category: powertrain
   title:
     en: Shift Solenoid C Performance
@@ -12323,7 +11999,6 @@
     - https://en.wikipedia.org/wiki/Automatic_transmission
 
 - code: P0766
-  scope: generic
   category: powertrain
   title:
     en: Shift Solenoid D Performance
@@ -12356,7 +12031,6 @@
     - https://en.wikipedia.org/wiki/Automatic_transmission
 
 - code: P0775
-  scope: generic
   category: powertrain
   title:
     en: Pressure Control Solenoid B
@@ -12394,7 +12068,6 @@
     - https://en.wikipedia.org/wiki/Automatic_transmission
 
 - code: P0776
-  scope: generic
   category: powertrain
   title:
     en: Pressure Control Solenoid B Performance
@@ -12427,7 +12100,6 @@
     - https://en.wikipedia.org/wiki/Automatic_transmission
 
 - code: P0796
-  scope: generic
   category: powertrain
   title:
     en: Pressure Control Solenoid C Performance
@@ -12460,7 +12132,6 @@
     - https://en.wikipedia.org/wiki/Automatic_transmission
 
 - code: P0A0F
-  scope: generic
   category: powertrain
   title:
     en: Hybrid Engine Failed to Start
@@ -12504,7 +12175,6 @@
     - https://en.wikipedia.org/wiki/Hybrid_vehicle_battery
 
 - code: P0A1F
-  scope: generic
   category: powertrain
   title:
     en: Battery Energy Control Module
@@ -12542,7 +12212,6 @@
     - https://en.wikipedia.org/wiki/Hybrid_vehicle_battery
 
 - code: P0A7F
-  scope: generic
   category: powertrain
   title:
     en: Hybrid Battery Pack Deterioration
@@ -12580,7 +12249,6 @@
     - https://en.wikipedia.org/wiki/Hybrid_vehicle_battery
 
 - code: P0A80
-  scope: generic
   category: powertrain
   title:
     en: Replace Hybrid Battery Pack

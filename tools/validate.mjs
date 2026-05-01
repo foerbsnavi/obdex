@@ -1,5 +1,5 @@
 import { readFileSync, readdirSync } from "node:fs";
-import { join, basename } from "node:path";
+import { join } from "node:path";
 import { fileURLToPath } from "node:url";
 import { parse } from "yaml";
 import Ajv from "ajv/dist/2020.js";
@@ -43,10 +43,7 @@ function validateFile(file, validator) {
   return count;
 }
 
-const codeFiles = [
-  ...walk(join(root, "data/generic")),
-  ...walk(join(root, "data/manufacturers")).filter(f => !basename(f).startsWith("_"))
-];
+const codeFiles = walk(join(root, "data/generic"));
 const pidFiles = walk(join(root, "data/pids"));
 
 let codes = 0, pids = 0;

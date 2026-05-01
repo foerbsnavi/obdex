@@ -1,5 +1,4 @@
 - code: P3400
-  scope: generic
   category: powertrain
   title:
     en: Cylinder Deactivation System Bank 1
@@ -43,7 +42,6 @@
     - https://en.wikipedia.org/wiki/Cylinder_deactivation
 
 - code: P3401
-  scope: generic
   category: powertrain
   title:
     en: Cylinder 1 Deactivation/Intake Valve Control Circuit Open
@@ -81,7 +79,6 @@
     - https://en.wikipedia.org/wiki/Cylinder_deactivation
 
 - code: P3402
-  scope: generic
   category: powertrain
   title:
     en: Cylinder 1 Deactivation Performance/Stuck Off
@@ -119,7 +116,6 @@
     - https://en.wikipedia.org/wiki/Cylinder_deactivation
 
 - code: P3403
-  scope: generic
   category: powertrain
   title:
     en: Cylinder 1 Deactivation Stuck On
@@ -156,7 +152,6 @@
     - https://en.wikipedia.org/wiki/Cylinder_deactivation
 
 - code: P3404
-  scope: generic
   category: powertrain
   title:
     en: Cylinder 1 Deactivation Circuit Low Voltage
@@ -193,7 +188,6 @@
     - https://en.wikipedia.org/wiki/Cylinder_deactivation
 
 - code: P3405
-  scope: generic
   category: powertrain
   title:
     en: Cylinder 1 Deactivation Circuit High Voltage
@@ -230,7 +224,6 @@
     - https://en.wikipedia.org/wiki/Cylinder_deactivation
 
 - code: P3425
-  scope: generic
   category: powertrain
   title:
     en: Cylinder 3 Deactivation/Intake Valve Control Circuit Open
@@ -267,7 +260,6 @@
     - https://en.wikipedia.org/wiki/Cylinder_deactivation
 
 - code: P3441
-  scope: generic
   category: powertrain
   title:
     en: Cylinder 5 Deactivation Performance
@@ -305,7 +297,6 @@
     - https://en.wikipedia.org/wiki/Cylinder_deactivation
 
 - code: P3449
-  scope: generic
   category: powertrain
   title:
     en: Cylinder 6 Deactivation Performance
@@ -343,7 +334,6 @@
     - https://en.wikipedia.org/wiki/Cylinder_deactivation
 
 - code: P3457
-  scope: generic
   category: powertrain
   title:
     en: Cylinder 7 Deactivation
@@ -381,7 +371,6 @@
     - https://en.wikipedia.org/wiki/Cylinder_deactivation
 
 - code: P3465
-  scope: generic
   category: powertrain
   title:
     en: Cylinder 8 Deactivation
@@ -419,7 +408,6 @@
     - https://en.wikipedia.org/wiki/Cylinder_deactivation
 
 - code: P3497
-  scope: generic
   category: powertrain
   title:
     en: Cylinder Deactivation System Bank 2
@@ -463,7 +451,6 @@
     - https://en.wikipedia.org/wiki/Cylinder_deactivation
 
 - code: P3406
-  scope: generic
   category: powertrain
   title:
     en: Cylinder 1 Deactivation Stuck Off
@@ -500,7 +487,6 @@
     - https://en.wikipedia.org/wiki/Cylinder_deactivation
 
 - code: P3407
-  scope: generic
   category: powertrain
   title:
     en: Cylinder 1 Deactivation Stuck On
@@ -537,7 +523,6 @@
     - https://en.wikipedia.org/wiki/Cylinder_deactivation
 
 - code: P3408
-  scope: generic
   category: powertrain
   title:
     en: Cylinder 1 Deactivation Circuit Low Voltage
@@ -574,7 +559,6 @@
     - https://en.wikipedia.org/wiki/Cylinder_deactivation
 
 - code: P3409
-  scope: generic
   category: powertrain
   title:
     en: Cylinder 1 Deactivation Circuit High Voltage
@@ -611,7 +595,6 @@
     - https://en.wikipedia.org/wiki/Cylinder_deactivation
 
 - code: P3411
-  scope: generic
   category: powertrain
   title:
     en: Cylinder 2 Deactivation Performance
@@ -649,7 +632,6 @@
     - https://en.wikipedia.org/wiki/Cylinder_deactivation
 
 - code: P3412
-  scope: generic
   category: powertrain
   title:
     en: Cylinder 2 Deactivation Stuck Off
@@ -686,7 +668,6 @@
     - https://en.wikipedia.org/wiki/Cylinder_deactivation
 
 - code: P3413
-  scope: generic
   category: powertrain
   title:
     en: Cylinder 2 Deactivation Stuck On
@@ -723,7 +704,6 @@
     - https://en.wikipedia.org/wiki/Cylinder_deactivation
 
 - code: P3433
-  scope: generic
   category: powertrain
   title:
     en: Cylinder 4 Deactivation Performance
@@ -761,7 +741,6 @@
     - https://en.wikipedia.org/wiki/Cylinder_deactivation
 
 - code: P3434
-  scope: generic
   category: powertrain
   title:
     en: Cylinder 4 Deactivation Stuck Off
@@ -798,7 +777,6 @@
     - https://en.wikipedia.org/wiki/Cylinder_deactivation
 
 - code: P3435
-  scope: generic
   category: powertrain
   title:
     en: Cylinder 4 Deactivation Stuck On
@@ -835,7 +813,6 @@
     - https://en.wikipedia.org/wiki/Cylinder_deactivation
 
 - code: P3473
-  scope: generic
   category: powertrain
   title:
     en: Cylinder 9 Deactivation
@@ -873,7 +850,6 @@
     - https://en.wikipedia.org/wiki/Cylinder_deactivation
 
 - code: P3481
-  scope: generic
   category: powertrain
   title:
     en: Cylinder 10 Deactivation
@@ -911,7 +887,6 @@
     - https://en.wikipedia.org/wiki/Cylinder_deactivation
 
 - code: P3489
-  scope: generic
   category: powertrain
   title:
     en: Cylinder 11 Deactivation
@@ -949,7 +924,6 @@
     - https://en.wikipedia.org/wiki/Cylinder_deactivation
 
 - code: P3496
-  scope: generic
   category: powertrain
   title:
     en: Cylinder 12 Deactivation

@@ -7,7 +7,6 @@ const root = fileURLToPath(new URL("..", import.meta.url));
 const dist = join(root, "dist");
 
 mkdirSync(dist, { recursive: true });
-mkdirSync(join(dist, "by-manufacturer"), { recursive: true });
 mkdirSync(join(dist, "pids"), { recursive: true });
 
 function walk(dir) {
@@ -28,49 +27,23 @@ function loadArray(file) {
 
 const generic = walk(join(root, "data/generic")).flatMap(loadArray);
 
-const manufacturerDir = join(root, "data/manufacturers");
-const manufacturers = {};
-const manufacturerMeta = [];
-for (const entry of readdirSync(manufacturerDir, { withFileTypes: true })) {
-  if (!entry.isDirectory()) continue;
-  manufacturers[entry.name] = walk(join(manufacturerDir, entry.name))
-    .filter(f => !basename(f).startsWith("_"))
-    .flatMap(loadArray);
-  const metaPath = join(manufacturerDir, entry.name, "_meta.yaml");
-  try {
-    const parsed = parse(readFileSync(metaPath, "utf8"));
-    if (parsed?.manufacturer) manufacturerMeta.push(parsed.manufacturer);
-  } catch {
-    // _meta.yaml is optional; missing file is not an error
-  }
-}
-
 const pidsRoot = join(root, "data/pids");
 const pidsByMode = {};
-const pidsByManufacturer = {};
 for (const f of walk(pidsRoot)) {
-  const rel = relative(pidsRoot, f).replace(/\\/g, "/");
   const key = basename(f, ".yaml");
-  if (rel.startsWith("manufacturers/")) {
-    pidsByManufacturer[key] = loadArray(f);
-  } else {
-    pidsByMode[key] = loadArray(f);
-  }
+  pidsByMode[key] = loadArray(f);
 }
 
 const all = {
   generic,
-  manufacturers,
-  pids: { ...pidsByMode, manufacturers: pidsByManufacturer }
+  pids: pidsByMode
 };
 
 const meta = {
   generated_at: new Date().toISOString(),
   counts: {
     generic: generic.length,
-    manufacturers: Object.fromEntries(Object.entries(manufacturers).map(([k, v]) => [k, v.length])),
-    pids: Object.fromEntries(Object.entries(pidsByMode).map(([k, v]) => [k, v.length])),
-    pids_manufacturers: Object.fromEntries(Object.entries(pidsByManufacturer).map(([k, v]) => [k, v.length]))
+    pids: Object.fromEntries(Object.entries(pidsByMode).map(([k, v]) => [k, v.length]))
   }
 };
 
@@ -81,31 +54,15 @@ function writePair(file, data) {
 
 writePair(join(dist, "all"), all);
 writePair(join(dist, "generic"), generic);
-writePair(join(dist, "manufacturers"), manufacturerMeta);
 writeFileSync(join(dist, "meta.json"), JSON.stringify(meta, null, 2));
-
-for (const [id, codes] of Object.entries(manufacturers)) {
-  writePair(join(dist, "by-manufacturer", id), codes);
-}
 
 for (const [mode, pids] of Object.entries(pidsByMode)) {
   writePair(join(dist, "pids", mode), pids);
 }
 
-if (Object.keys(pidsByManufacturer).length) {
-  mkdirSync(join(dist, "pids/manufacturers"), { recursive: true });
-  for (const [id, pids] of Object.entries(pidsByManufacturer)) {
-    writePair(join(dist, "pids/manufacturers", id), pids);
-  }
-}
+const totalCodes = generic.length;
+const totalPids = Object.values(pidsByMode).reduce((a, b) => a + b.length, 0);
 
-const totalCodes = generic.length + Object.values(manufacturers).reduce((a, b) => a + b.length, 0);
-const totalPids = Object.values(pidsByMode).reduce((a, b) => a + b.length, 0)
-  + Object.values(pidsByManufacturer).reduce((a, b) => a + b.length, 0);
-
-const manufacturerLinks = Object.keys(manufacturers).sort()
-  .map(id => `      <li><a href="by-manufacturer/${id}.json"><code>by-manufacturer/${id}.json</code></a> <span class="count">${manufacturers[id].length}</span></li>`)
-  .join("\n");
 const pidLinks = Object.keys(pidsByMode).sort()
   .map(mode => `      <li><a href="pids/${mode}.json"><code>pids/${mode}.json</code></a> <span class="count">${pidsByMode[mode].length}</span></li>`)
   .join("\n");
@@ -151,7 +108,7 @@ const indexHtml = `<!doctype html>
     .card { background: var(--card); border: 1px solid var(--border); border-radius: 10px; padding: 1.25rem 1.5rem; }
     .card-head { display: flex; align-items: baseline; gap: .75rem; flex-wrap: wrap; margin-bottom: .25rem; }
     .card-code { font: 600 1.4rem ui-monospace, "SF Mono", Consolas, monospace; letter-spacing: -0.01em; }
-    .card-scope { font-size: .8rem; color: var(--muted); text-transform: uppercase; letter-spacing: .05em; }
+    .card-cat { font-size: .8rem; color: var(--muted); text-transform: uppercase; letter-spacing: .05em; }
     .card-title { font-size: 1.05rem; font-weight: 500; margin: 0 0 .25rem; }
     .card-title-de { font-size: .98rem; color: var(--muted); margin: 0 0 1rem; }
     .card h3 { font-size: .82rem; text-transform: uppercase; letter-spacing: .05em; color: var(--muted); margin: 1.25rem 0 .4rem; font-weight: 600; }
@@ -187,7 +144,6 @@ const indexHtml = `<!doctype html>
   <div class="stats">
     <div class="stat"><strong>${totalCodes}</strong> codes</div>
     <div class="stat"><strong>${totalPids}</strong> PIDs</div>
-    <div class="stat"><strong>${Object.keys(manufacturers).length}</strong> manufacturers</div>
   </div>
 
   <div class="search">
@@ -202,15 +158,9 @@ const indexHtml = `<!doctype html>
     <li><a href="meta.json"><code>meta.json</code></a> <span class="count">counts &amp; build time</span></li>
   </ul>
 
-  <h2>By scope</h2>
+  <h2>Codes</h2>
   <ul>
     <li><a href="generic.json"><code>generic.json</code></a> <span class="count">${generic.length}</span></li>
-    <li><a href="manufacturers.json"><code>manufacturers.json</code></a> <span class="count">${Object.keys(manufacturers).length} entries</span></li>
-  </ul>
-
-  <h2>By manufacturer</h2>
-  <ul>
-${manufacturerLinks}
   </ul>
 
   <h2>PIDs</h2>
@@ -235,8 +185,7 @@ ${pidLinks}
   fetch('all.min.json')
     .then(r => r.json())
     .then(d => {
-      db = [...d.generic];
-      for (const codes of Object.values(d.manufacturers || {})) db.push(...codes);
+      db = [...(d.generic || [])];
       input.disabled = false;
       input.placeholder = 'Enter a code (e.g. P0420) or search by keyword…';
       input.focus();
@@ -258,7 +207,7 @@ ${pidLinks}
   }
 
   function renderCard(c) {
-    const scope = c.scope === 'manufacturer' ? esc(c.manufacturer || 'manufacturer') : 'generic';
+    const cat = c.category ? esc(c.category) : '';
     const titleEn = c.title?.en ? '<p class="card-title">' + esc(c.title.en) + '</p>' : '';
     const titleDe = c.title?.de ? '<p class="card-title-de">' + esc(c.title.de) + '</p>' : '';
     const descEn = c.description?.en ? '<p class="desc">' + esc(c.description.en) + '</p>' : '';
@@ -310,7 +259,7 @@ ${pidLinks}
     }
 
     return '<div class="card">' +
-      '<div class="card-head"><span class="card-code">' + esc(c.code) + '</span><span class="card-scope">' + scope + '</span></div>' +
+      '<div class="card-head"><span class="card-code">' + esc(c.code) + '</span><span class="card-cat">' + cat + '</span></div>' +
       titleEn + titleDe + descEn + descDe + flags + causes + repair + sources +
       '</div>';
   }

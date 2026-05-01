@@ -3,7 +3,6 @@
 # Format identisch zu C0xxx.yaml; siehe P0xxx.yaml fuer das Schema.
 
 - code: C0020
-  scope: generic
   category: chassis
   title:
     en: ABS Pump Motor Circuit
@@ -45,7 +44,6 @@
     - https://en.wikipedia.org/wiki/Anti-lock_braking_system
 
 - code: C0021
-  scope: generic
   category: chassis
   title:
     en: ABS Pump Motor Circuit Range/Performance
@@ -81,7 +79,6 @@
     - https://en.wikipedia.org/wiki/Anti-lock_braking_system
 
 - code: C0022
-  scope: generic
   category: chassis
   title:
     en: ABS Pump Motor Circuit Low
@@ -117,7 +114,6 @@
     - https://en.wikipedia.org/wiki/Anti-lock_braking_system
 
 - code: C0023
-  scope: generic
   category: chassis
   title:
     en: ABS Pump Motor Circuit High
@@ -153,7 +149,6 @@
     - https://en.wikipedia.org/wiki/Anti-lock_braking_system
 
 - code: C0025
-  scope: generic
   category: chassis
   title:
     en: ABS Pump Motor Stalled
@@ -188,7 +183,6 @@
     - https://en.wikipedia.org/wiki/Anti-lock_braking_system
 
 - code: C0030
-  scope: generic
   category: chassis
   title:
     en: Left Front Wheel Speed Sensor Circuit Range/Performance
@@ -229,7 +223,6 @@
     - https://en.wikipedia.org/wiki/Wheel_speed_sensor
 
 - code: C0031
-  scope: generic
   category: chassis
   title:
     en: Left Front Wheel Speed Sensor Circuit Low
@@ -265,7 +258,6 @@
     - https://en.wikipedia.org/wiki/Wheel_speed_sensor
 
 - code: C0032
-  scope: generic
   category: chassis
   title:
     en: Left Front Wheel Speed Sensor Circuit High
@@ -300,7 +292,6 @@
     - https://en.wikipedia.org/wiki/Wheel_speed_sensor
 
 - code: C0033
-  scope: generic
   category: chassis
   title:
     en: Left Front Wheel Speed Sensor Signal Erratic
@@ -336,7 +327,6 @@
     - https://en.wikipedia.org/wiki/Wheel_speed_sensor
 
 - code: C0034
-  scope: generic
   category: chassis
   title:
     en: Left Front Wheel Speed Sensor No Signal
@@ -372,7 +362,6 @@
     - https://en.wikipedia.org/wiki/Wheel_speed_sensor
 
 - code: C0036
-  scope: generic
   category: chassis
   title:
     en: Left Front Wheel Speed Sensor Circuit Intermittent
@@ -408,7 +397,6 @@
     - https://en.wikipedia.org/wiki/Wheel_speed_sensor
 
 - code: C0041
-  scope: generic
   category: chassis
   title:
     en: Right Front Wheel Speed Sensor Circuit Range/Performance
@@ -444,7 +432,6 @@
     - https://en.wikipedia.org/wiki/Wheel_speed_sensor
 
 - code: C0042
-  scope: generic
   category: chassis
   title:
     en: Right Front Wheel Speed Sensor Circuit Low
@@ -479,7 +466,6 @@
     - https://en.wikipedia.org/wiki/Wheel_speed_sensor
 
 - code: C0043
-  scope: generic
   category: chassis
   title:
     en: Right Front Wheel Speed Sensor Circuit High
@@ -514,7 +500,6 @@
     - https://en.wikipedia.org/wiki/Wheel_speed_sensor
 
 - code: C0044
-  scope: generic
   category: chassis
   title:
     en: Right Front Wheel Speed Sensor Signal Erratic
@@ -550,7 +535,6 @@
     - https://en.wikipedia.org/wiki/Wheel_speed_sensor
 
 - code: C0046
-  scope: generic
   category: chassis
   title:
     en: Right Front Wheel Speed Sensor Circuit Intermittent
@@ -585,7 +569,6 @@
     - https://en.wikipedia.org/wiki/Wheel_speed_sensor
 
 - code: C0052
-  scope: generic
   category: chassis
   title:
     en: Left Rear Wheel Speed Sensor Circuit Low
@@ -620,7 +603,6 @@
     - https://en.wikipedia.org/wiki/Wheel_speed_sensor
 
 - code: C0053
-  scope: generic
   category: chassis
   title:
     en: Left Rear Wheel Speed Sensor Circuit High
@@ -655,7 +637,6 @@
     - https://en.wikipedia.org/wiki/Wheel_speed_sensor
 
 - code: C0054
-  scope: generic
   category: chassis
   title:
     en: Left Rear Wheel Speed Sensor Signal Erratic
@@ -691,7 +672,6 @@
     - https://en.wikipedia.org/wiki/Wheel_speed_sensor
 
 - code: C0055
-  scope: generic
   category: chassis
   title:
     en: Left Rear Wheel Speed Sensor No Signal
@@ -727,7 +707,6 @@
     - https://en.wikipedia.org/wiki/Wheel_speed_sensor
 
 - code: C0056
-  scope: generic
   category: chassis
   title:
     en: Left Rear Wheel Speed Sensor Circuit Intermittent
@@ -762,7 +741,6 @@
     - https://en.wikipedia.org/wiki/Wheel_speed_sensor
 
 - code: C0060
-  scope: generic
   category: chassis
   title:
     en: Right Rear Wheel Speed Sensor Circuit
@@ -798,7 +776,6 @@
     - https://en.wikipedia.org/wiki/Wheel_speed_sensor
 
 - code: C0061
-  scope: generic
   category: chassis
   title:
     en: Right Rear Wheel Speed Sensor Circuit Range/Performance
@@ -834,7 +811,6 @@
     - https://en.wikipedia.org/wiki/Wheel_speed_sensor
 
 - code: C0062
-  scope: generic
   category: chassis
   title:
     en: Right Rear Wheel Speed Sensor Circuit Low
@@ -869,7 +845,6 @@
     - https://en.wikipedia.org/wiki/Wheel_speed_sensor
 
 - code: C0063
-  scope: generic
   category: chassis
   title:
     en: Right Rear Wheel Speed Sensor Circuit High
@@ -904,7 +879,6 @@
     - https://en.wikipedia.org/wiki/Wheel_speed_sensor
 
 - code: C0064
-  scope: generic
   category: chassis
   title:
     en: Right Rear Wheel Speed Sensor Signal Erratic
@@ -940,7 +914,6 @@
     - https://en.wikipedia.org/wiki/Wheel_speed_sensor
 
 - code: C0065
-  scope: generic
   category: chassis
   title:
     en: Right Rear Wheel Speed Sensor No Signal
@@ -976,7 +949,6 @@
     - https://en.wikipedia.org/wiki/Wheel_speed_sensor
 
 - code: C0066
-  scope: generic
   category: chassis
   title:
     en: Right Rear Wheel Speed Sensor Circuit Intermittent
@@ -1011,7 +983,6 @@
     - https://en.wikipedia.org/wiki/Wheel_speed_sensor
 
 - code: C0070
-  scope: generic
   category: chassis
   title:
     en: Vehicle Speed Sensor Circuit
@@ -1046,7 +1017,6 @@
     - https://en.wikipedia.org/wiki/Speed_sensor
 
 - code: C0080
-  scope: generic
   category: chassis
   title:
     en: Wheel Speed Mismatch (Front Axle)
@@ -1082,7 +1052,6 @@
     - https://en.wikipedia.org/wiki/Wheel_speed_sensor
 
 - code: C0081
-  scope: generic
   category: chassis
   title:
     en: Wheel Speed Mismatch (Rear Axle)
@@ -1118,7 +1087,6 @@
     - https://en.wikipedia.org/wiki/Wheel_speed_sensor
 
 - code: C0090
-  scope: generic
   category: chassis
   title:
     en: Hydraulic Brake Pressure Sensor Circuit
@@ -1154,7 +1122,6 @@
     - https://en.wikipedia.org/wiki/Anti-lock_braking_system
 
 - code: C0091
-  scope: generic
   category: chassis
   title:
     en: Hydraulic Brake Pressure Sensor Circuit Range/Performance
@@ -1189,7 +1156,6 @@
     - https://en.wikipedia.org/wiki/Anti-lock_braking_system
 
 - code: C0099
-  scope: generic
   category: chassis
   title:
     en: ABS Control Module Internal Fault
@@ -1223,7 +1189,6 @@
     - https://en.wikipedia.org/wiki/Anti-lock_braking_system
 
 - code: C0111
-  scope: generic
   category: chassis
   title:
     en: ABS Activation Excessively Long
@@ -1259,7 +1224,6 @@
     - https://en.wikipedia.org/wiki/Anti-lock_braking_system
 
 - code: C0112
-  scope: generic
   category: chassis
   title:
     en: ABS Activation Frequency Too High
@@ -1294,7 +1258,6 @@
     - https://en.wikipedia.org/wiki/Anti-lock_braking_system
 
 - code: C0128
-  scope: generic
   category: chassis
   title:
     en: Low Brake Fluid Indicated
@@ -1334,7 +1297,6 @@
     - https://en.wikipedia.org/wiki/Brake_fluid
 
 - code: C0136
-  scope: generic
   category: chassis
   title:
     en: Stop Lamp Switch Circuit
@@ -1370,7 +1332,6 @@
     - https://en.wikipedia.org/wiki/Brake_light_switch
 
 - code: C0200
-  scope: generic
   category: chassis
   title:
     en: ABS Solenoid Valve Front Left Circuit
@@ -1406,7 +1367,6 @@
     - https://en.wikipedia.org/wiki/Anti-lock_braking_system
 
 - code: C0203
-  scope: generic
   category: chassis
   title:
     en: ABS Solenoid Valve Front Right Circuit
@@ -1442,7 +1402,6 @@
     - https://en.wikipedia.org/wiki/Anti-lock_braking_system
 
 - code: C0206
-  scope: generic
   category: chassis
   title:
     en: ABS Solenoid Valve Rear Left Circuit
@@ -1478,7 +1437,6 @@
     - https://en.wikipedia.org/wiki/Anti-lock_braking_system
 
 - code: C0209
-  scope: generic
   category: chassis
   title:
     en: ABS Solenoid Valve Rear Right Circuit
@@ -1514,7 +1472,6 @@
     - https://en.wikipedia.org/wiki/Anti-lock_braking_system
 
 - code: C0220
-  scope: generic
   category: chassis
   title:
     en: ABS Valve Block Supply Voltage
@@ -1550,7 +1507,6 @@
     - https://en.wikipedia.org/wiki/Anti-lock_braking_system
 
 - code: C0225
-  scope: generic
   category: chassis
   title:
     en: ABS Valve Relay Circuit
@@ -1586,7 +1542,6 @@
     - https://en.wikipedia.org/wiki/Anti-lock_braking_system
 
 - code: C0230
-  scope: generic
   category: chassis
   title:
     en: Brake Pedal Position Sensor Circuit
@@ -1621,7 +1576,6 @@
     - https://en.wikipedia.org/wiki/Brake-by-wire
 
 - code: C0241
-  scope: generic
   category: chassis
   title:
     en: ABS Warning Lamp Control Circuit
@@ -1657,7 +1611,6 @@
     - https://en.wikipedia.org/wiki/Anti-lock_braking_system
 
 - code: C0242
-  scope: generic
   category: chassis
   title:
     en: PCM Indicated ABS Malfunction
@@ -1693,7 +1646,6 @@
     - https://en.wikipedia.org/wiki/Traction_control_system
 
 - code: C0244
-  scope: generic
   category: chassis
   title:
     en: PWM Brake Pressure Modulation Circuit
@@ -1723,7 +1675,6 @@
     - https://en.wikipedia.org/wiki/Anti-lock_braking_system
 
 - code: C0246
-  scope: generic
   category: chassis
   title:
     en: ABS/TCS Control Module Internal Performance
@@ -1752,7 +1703,6 @@
     - https://en.wikipedia.org/wiki/Anti-lock_braking_system
 
 - code: C0252
-  scope: generic
   category: chassis
   title:
     en: Pump Motor Ground Circuit Open
@@ -1787,7 +1737,6 @@
     - https://en.wikipedia.org/wiki/Anti-lock_braking_system
 
 - code: C0258
-  scope: generic
   category: chassis
   title:
     en: Brake Booster Vacuum Sensor Circuit
@@ -1822,7 +1771,6 @@
     - https://en.wikipedia.org/wiki/Vacuum_servo
 
 - code: C0300
-  scope: generic
   category: chassis
   title:
     en: Inlet Valve Front Left Performance
@@ -1857,7 +1805,6 @@
     - https://en.wikipedia.org/wiki/Anti-lock_braking_system
 
 - code: C0302
-  scope: generic
   category: chassis
   title:
     en: Outlet Valve Front Left Performance
@@ -1892,7 +1839,6 @@
     - https://en.wikipedia.org/wiki/Anti-lock_braking_system
 
 - code: C0303
-  scope: generic
   category: chassis
   title:
     en: Inlet Valve Front Right Performance
@@ -1927,7 +1873,6 @@
     - https://en.wikipedia.org/wiki/Anti-lock_braking_system
 
 - code: C0304
-  scope: generic
   category: chassis
   title:
     en: Outlet Valve Front Right Performance
@@ -1962,7 +1907,6 @@
     - https://en.wikipedia.org/wiki/Anti-lock_braking_system
 
 - code: C0305
-  scope: generic
   category: chassis
   title:
     en: Inlet Valve Rear Left Performance
@@ -1997,7 +1941,6 @@
     - https://en.wikipedia.org/wiki/Anti-lock_braking_system
 
 - code: C0307
-  scope: generic
   category: chassis
   title:
     en: Inlet Valve Rear Right Performance
@@ -2032,7 +1975,6 @@
     - https://en.wikipedia.org/wiki/Anti-lock_braking_system
 
 - code: C0309
-  scope: generic
   category: chassis
   title:
     en: Outlet Valve Rear Right Performance
@@ -2067,7 +2009,6 @@
     - https://en.wikipedia.org/wiki/Anti-lock_braking_system
 
 - code: C0400
-  scope: generic
   category: chassis
   title:
     en: Traction Control Solenoid Valve Circuit
@@ -2103,7 +2044,6 @@
     - https://en.wikipedia.org/wiki/Traction_control_system
 
 - code: C0401
-  scope: generic
   category: chassis
   title:
     en: Traction Control Switch Circuit
@@ -2138,7 +2078,6 @@
     - https://en.wikipedia.org/wiki/Traction_control_system
 
 - code: C0402
-  scope: generic
   category: chassis
   title:
     en: Traction Control Lamp Circuit
@@ -2173,7 +2112,6 @@
     - https://en.wikipedia.org/wiki/Traction_control_system
 
 - code: C0405
-  scope: generic
   category: chassis
   title:
     en: Traction Control Active Too Long
@@ -2208,7 +2146,6 @@
     - https://en.wikipedia.org/wiki/Traction_control_system
 
 - code: C0440
-  scope: generic
   category: chassis
   title:
     en: Steering Wheel Position Sensor Circuit
@@ -2244,7 +2181,6 @@
     - https://en.wikipedia.org/wiki/Steering_angle_sensor
 
 - code: C0445
-  scope: generic
   category: chassis
   title:
     en: Steering Wheel Position Sensor Calibration
@@ -2273,7 +2209,6 @@
     - https://en.wikipedia.org/wiki/Steering_angle_sensor
 
 - code: C0450
-  scope: generic
   category: chassis
   title:
     en: Rear Wheel Steering Position Sensor Circuit
@@ -2308,7 +2243,6 @@
     - https://en.wikipedia.org/wiki/Four-wheel_steering
 
 - code: C0460
-  scope: generic
   category: chassis
   title:
     en: Steering Position Signal Implausible
@@ -2344,7 +2278,6 @@
     - https://en.wikipedia.org/wiki/Electronic_stability_control
 
 - code: C0496
-  scope: generic
   category: chassis
   title:
     en: Yaw Rate Sensor Circuit
@@ -2380,7 +2313,6 @@
     - https://en.wikipedia.org/wiki/Electronic_stability_control
 
 - code: C0497
-  scope: generic
   category: chassis
   title:
     en: Yaw Rate Sensor Range/Performance
@@ -2416,7 +2348,6 @@
     - https://en.wikipedia.org/wiki/Electronic_stability_control
 
 - code: C0498
-  scope: generic
   category: chassis
   title:
     en: Lateral Acceleration Sensor Circuit
@@ -2452,7 +2383,6 @@
     - https://en.wikipedia.org/wiki/Electronic_stability_control
 
 - code: C0499
-  scope: generic
   category: chassis
   title:
     en: Lateral Acceleration Sensor Range/Performance
@@ -2487,7 +2417,6 @@
     - https://en.wikipedia.org/wiki/Electronic_stability_control
 
 - code: C0501
-  scope: generic
   category: chassis
   title:
     en: ESC Active Performance
@@ -2523,7 +2452,6 @@
     - https://en.wikipedia.org/wiki/Electronic_stability_control
 
 - code: C0505
-  scope: generic
   category: chassis
   title:
     en: ESC Switch Circuit
@@ -2558,7 +2486,6 @@
     - https://en.wikipedia.org/wiki/Electronic_stability_control
 
 - code: C0520
-  scope: generic
   category: chassis
   title:
     en: Brake Pedal Force Sensor Circuit
@@ -2593,7 +2520,6 @@
     - https://en.wikipedia.org/wiki/Brake-by-wire
 
 - code: C0540
-  scope: generic
   category: chassis
   title:
     en: Hill Hold Control Performance
@@ -2629,7 +2555,6 @@
     - https://en.wikipedia.org/wiki/Hill-holder
 
 - code: C0555
-  scope: generic
   category: chassis
   title:
     en: Lateral Accelerometer Voltage Out of Range
@@ -2664,7 +2589,6 @@
     - https://en.wikipedia.org/wiki/Electronic_stability_control
 
 - code: C0556
-  scope: generic
   category: chassis
   title:
     en: Brake Booster Pressure Sensor Performance
@@ -2699,7 +2623,6 @@
     - https://en.wikipedia.org/wiki/Vacuum_servo
 
 - code: C0600
-  scope: generic
   category: chassis
   title:
     en: Active Yaw Control System Failure
@@ -2735,7 +2658,6 @@
     - https://en.wikipedia.org/wiki/Electronic_stability_control
 
 - code: C0605
-  scope: generic
   category: chassis
   title:
     en: ESC Internal Performance
@@ -2764,7 +2686,6 @@
     - https://en.wikipedia.org/wiki/Electronic_stability_control
 
 - code: C0610
-  scope: generic
   category: chassis
   title:
     en: Vehicle Communication Bus E (Chassis Bus)
@@ -2800,7 +2721,6 @@
     - https://en.wikipedia.org/wiki/CAN_bus
 
 - code: C0615
-  scope: generic
   category: chassis
   title:
     en: ESC Calibration Required
@@ -2832,7 +2752,6 @@
     - https://en.wikipedia.org/wiki/Electronic_stability_control
 
 - code: C0660
-  scope: generic
   category: chassis
   title:
     en: Park Brake Switch Circuit
@@ -2867,7 +2786,6 @@
     - https://en.wikipedia.org/wiki/Electric_parking_brake
 
 - code: C0670
-  scope: generic
   category: chassis
   title:
     en: Electric Park Brake Actuator Left Circuit
@@ -2903,7 +2821,6 @@
     - https://en.wikipedia.org/wiki/Electric_parking_brake
 
 - code: C0671
-  scope: generic
   category: chassis
   title:
     en: Electric Park Brake Actuator Right Circuit
@@ -2939,7 +2856,6 @@
     - https://en.wikipedia.org/wiki/Electric_parking_brake
 
 - code: C0680
-  scope: generic
   category: chassis
   title:
     en: Electric Park Brake Module Internal Fault
@@ -2968,7 +2884,6 @@
     - https://en.wikipedia.org/wiki/Electric_parking_brake
 
 - code: C0720
-  scope: generic
   category: chassis
   title:
     en: Electric Power Steering Torque Sensor Circuit
@@ -3003,7 +2918,6 @@
     - https://en.wikipedia.org/wiki/Power_steering
 
 - code: C0725
-  scope: generic
   category: chassis
   title:
     en: Electric Power Steering Motor Circuit
@@ -3039,7 +2953,6 @@
     - https://en.wikipedia.org/wiki/Power_steering
 
 - code: C0730
-  scope: generic
   category: chassis
   title:
     en: Electric Power Steering Motor Position Sensor Circuit
@@ -3074,7 +2987,6 @@
     - https://en.wikipedia.org/wiki/Power_steering
 
 - code: C0735
-  scope: generic
   category: chassis
   title:
     en: Electric Power Steering Module Internal Fault
@@ -3108,7 +3020,6 @@
     - https://en.wikipedia.org/wiki/Power_steering
 
 - code: C0740
-  scope: generic
   category: chassis
   title:
     en: Electric Power Steering Voltage Supply
@@ -3144,7 +3055,6 @@
     - https://en.wikipedia.org/wiki/Power_steering
 
 - code: C0745
-  scope: generic
   category: chassis
   title:
     en: Electric Power Steering Overtemperature Protection
@@ -3179,7 +3089,6 @@
     - https://en.wikipedia.org/wiki/Power_steering
 
 - code: C0810
-  scope: generic
   category: chassis
   title:
     en: Air Suspension Compressor Circuit
@@ -3215,7 +3124,6 @@
     - https://en.wikipedia.org/wiki/Air_suspension
 
 - code: C0815
-  scope: generic
   category: chassis
   title:
     en: Air Suspension Compressor Overtemperature
@@ -3251,7 +3159,6 @@
     - https://en.wikipedia.org/wiki/Air_suspension
 
 - code: C0820
-  scope: generic
   category: chassis
   title:
     en: Air Suspension Height Sensor Front Left
@@ -3286,7 +3193,6 @@
     - https://en.wikipedia.org/wiki/Air_suspension
 
 - code: C0821
-  scope: generic
   category: chassis
   title:
     en: Air Suspension Height Sensor Front Right
@@ -3321,7 +3227,6 @@
     - https://en.wikipedia.org/wiki/Air_suspension
 
 - code: C0822
-  scope: generic
   category: chassis
   title:
     en: Air Suspension Height Sensor Rear Left
@@ -3356,7 +3261,6 @@
     - https://en.wikipedia.org/wiki/Air_suspension
 
 - code: C0823
-  scope: generic
   category: chassis
   title:
     en: Air Suspension Height Sensor Rear Right
@@ -3391,7 +3295,6 @@
     - https://en.wikipedia.org/wiki/Air_suspension
 
 - code: C0840
-  scope: generic
   category: chassis
   title:
     en: Air Suspension Solenoid Valve Circuit
@@ -3426,7 +3329,6 @@
     - https://en.wikipedia.org/wiki/Air_suspension
 
 - code: C0850
-  scope: generic
   category: chassis
   title:
     en: Active Damping Control Front Left
@@ -3462,7 +3364,6 @@
     - https://en.wikipedia.org/wiki/Active_suspension
 
 - code: C0851
-  scope: generic
   category: chassis
   title:
     en: Active Damping Control Front Right
@@ -3498,7 +3399,6 @@
     - https://en.wikipedia.org/wiki/Active_suspension
 
 - code: C0852
-  scope: generic
   category: chassis
   title:
     en: Active Damping Control Rear Left
@@ -3534,7 +3434,6 @@
     - https://en.wikipedia.org/wiki/Active_suspension
 
 - code: C0853
-  scope: generic
   category: chassis
   title:
     en: Active Damping Control Rear Right
@@ -3570,7 +3469,6 @@
     - https://en.wikipedia.org/wiki/Active_suspension
 
 - code: C0860
-  scope: generic
   category: chassis
   title:
     en: Trailer Stability Assist Performance
@@ -3606,7 +3504,6 @@
     - https://en.wikipedia.org/wiki/Trailer_stability_program
 
 - code: C0870
-  scope: generic
   category: chassis
   title:
     en: Adaptive Cruise Control Brake Request Performance
@@ -3642,7 +3539,6 @@
     - https://en.wikipedia.org/wiki/Adaptive_cruise_control
 
 - code: C0915
-  scope: generic
   category: chassis
   title:
     en: Active Roll Stabilisation Front Actuator Circuit
@@ -3677,7 +3573,6 @@
     - https://en.wikipedia.org/wiki/Active_suspension
 
 - code: C0916
-  scope: generic
   category: chassis
   title:
     en: Active Roll Stabilisation Rear Actuator Circuit
@@ -3712,7 +3607,6 @@
     - https://en.wikipedia.org/wiki/Active_suspension
 
 - code: C0920
-  scope: generic
   category: chassis
   title:
     en: Suspension Control Module Internal Fault
@@ -3741,7 +3635,6 @@
     - https://en.wikipedia.org/wiki/Active_suspension
 
 - code: C0950
-  scope: generic
   category: chassis
   title:
     en: Tire Pressure Monitoring Sensor Front Left
@@ -3776,7 +3669,6 @@
     - https://en.wikipedia.org/wiki/Tire-pressure_monitoring_system
 
 - code: C0951
-  scope: generic
   category: chassis
   title:
     en: Tire Pressure Monitoring Sensor Front Right
@@ -3811,7 +3703,6 @@
     - https://en.wikipedia.org/wiki/Tire-pressure_monitoring_system
 
 - code: C0952
-  scope: generic
   category: chassis
   title:
     en: Tire Pressure Monitoring Sensor Rear Left
@@ -3846,7 +3737,6 @@
     - https://en.wikipedia.org/wiki/Tire-pressure_monitoring_system
 
 - code: C0953
-  scope: generic
   category: chassis
   title:
     en: Tire Pressure Monitoring Sensor Rear Right
@@ -3881,7 +3771,6 @@
     - https://en.wikipedia.org/wiki/Tire-pressure_monitoring_system
 
 - code: C0960
-  scope: generic
   category: chassis
   title:
     en: Tire Pressure Monitoring Module Internal Fault

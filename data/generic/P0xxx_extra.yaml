@@ -1,5 +1,4 @@
 - code: P0027
-  scope: generic
   category: powertrain
   title:
     en: Exhaust Valve Control Solenoid Circuit Range/Performance Bank 1
@@ -43,7 +42,6 @@
     - https://en.wikipedia.org/wiki/Variable_valve_timing
 
 - code: P0029
-  scope: generic
   category: powertrain
   title:
     en: Exhaust Valve Control Solenoid Circuit Range/Performance Bank 2
@@ -87,7 +85,6 @@
     - https://en.wikipedia.org/wiki/Variable_valve_timing
 
 - code: P0033
-  scope: generic
   category: powertrain
   title:
     en: Turbocharger Bypass Valve Control Circuit
@@ -131,7 +128,6 @@
     - https://en.wikipedia.org/wiki/Turbocharger
 
 - code: P0034
-  scope: generic
   category: powertrain
   title:
     en: Turbocharger Bypass Valve Control Circuit Low
@@ -169,7 +165,6 @@
     - https://en.wikipedia.org/wiki/Turbocharger
 
 - code: P0035
-  scope: generic
   category: powertrain
   title:
     en: Turbocharger Bypass Valve Control Circuit High
@@ -207,7 +202,6 @@
     - https://en.wikipedia.org/wiki/Turbocharger
 
 - code: P0068
-  scope: generic
   category: powertrain
   title:
     en: MAP/MAF - Throttle Position Correlation
@@ -252,7 +246,6 @@
     - https://en.wikipedia.org/wiki/Throttle_position_sensor
 
 - code: P0069
-  scope: generic
   category: powertrain
   title:
     en: Manifold Absolute Pressure - Barometric Pressure Correlation
@@ -290,7 +283,6 @@
     - https://en.wikipedia.org/wiki/MAP_sensor
 
 - code: P0087
-  scope: generic
   category: powertrain
   title:
     en: Fuel Rail/System Pressure Too Low
@@ -341,7 +333,6 @@
     - https://en.wikipedia.org/wiki/Common_rail
 
 - code: P0088
-  scope: generic
   category: powertrain
   title:
     en: Fuel Rail/System Pressure Too High
@@ -380,7 +371,6 @@
     - https://en.wikipedia.org/wiki/Common_rail
 
 - code: P0089
-  scope: generic
   category: powertrain
   title:
     en: Fuel Pressure Regulator 1 Performance
@@ -418,7 +408,6 @@
     - https://en.wikipedia.org/wiki/Common_rail
 
 - code: P0190
-  scope: generic
   category: powertrain
   title:
     en: Fuel Rail Pressure Sensor Circuit
@@ -456,7 +445,6 @@
     - https://en.wikipedia.org/wiki/Common_rail
 
 - code: P0192
-  scope: generic
   category: powertrain
   title:
     en: Fuel Rail Pressure Sensor Circuit Low Input
@@ -493,7 +481,6 @@
     - https://en.wikipedia.org/wiki/Common_rail
 
 - code: P0193
-  scope: generic
   category: powertrain
   title:
     en: Fuel Rail Pressure Sensor Circuit High Input
@@ -530,7 +517,6 @@
     - https://en.wikipedia.org/wiki/Common_rail
 
 - code: P0226
-  scope: generic
   category: powertrain
   title:
     en: Throttle/Pedal Position Sensor C Circuit Range/Performance
@@ -567,7 +553,6 @@
     - https://en.wikipedia.org/wiki/Throttle_position_sensor
 
 - code: P0173
-  scope: generic
   category: powertrain
   title:
     en: Fuel Trim Malfunction Bank 2
@@ -606,7 +591,6 @@
     - https://en.wikipedia.org/wiki/Oxygen_sensor
 
 - code: P0273
-  scope: generic
   category: powertrain
   title:
     en: Cylinder 2 Contribution/Balance
@@ -645,7 +629,6 @@
     - https://en.wikipedia.org/wiki/Fuel_injection
 
 - code: P0780
-  scope: generic
   category: powertrain
   title:
     en: Shift Malfunction
@@ -690,7 +673,6 @@
     - https://en.wikipedia.org/wiki/Automatic_transmission
 
 - code: P0781
-  scope: generic
   category: powertrain
   title:
     en: 1-2 Shift Malfunction
@@ -728,7 +710,6 @@
     - https://en.wikipedia.org/wiki/Automatic_transmission
 
 - code: P0782
-  scope: generic
   category: powertrain
   title:
     en: 2-3 Shift Malfunction
@@ -766,7 +747,6 @@
     - https://en.wikipedia.org/wiki/Automatic_transmission
 
 - code: P0783
-  scope: generic
   category: powertrain
   title:
     en: 3-4 Shift Malfunction
@@ -804,7 +784,6 @@
     - https://en.wikipedia.org/wiki/Automatic_transmission
 
 - code: P0784
-  scope: generic
   category: powertrain
   title:
     en: 4-5 Shift Malfunction
@@ -842,7 +821,6 @@
     - https://en.wikipedia.org/wiki/Automatic_transmission
 
 - code: P0791
-  scope: generic
   category: powertrain
   title:
     en: Intermediate Shaft Speed Sensor A Circuit
@@ -879,7 +857,6 @@
     - https://en.wikipedia.org/wiki/Automatic_transmission
 
 - code: P0797
-  scope: generic
   category: powertrain
   title:
     en: Pressure Control Solenoid C Stuck On
@@ -917,7 +894,6 @@
     - https://en.wikipedia.org/wiki/Automatic_transmission
 
 - code: P0798
-  scope: generic
   category: powertrain
   title:
     en: Pressure Control Solenoid C Electrical
@@ -955,7 +931,6 @@
     - https://en.wikipedia.org/wiki/Solenoid
 
 - code: P0801
-  scope: generic
   category: powertrain
   title:
     en: Reverse Inhibit Control Circuit
@@ -993,7 +968,6 @@
     - https://en.wikipedia.org/wiki/Automatic_transmission
 
 - code: P0810
-  scope: generic
   category: powertrain
   title:
     en: Clutch Position Control Error
@@ -1032,7 +1006,6 @@
     - https://en.wikipedia.org/wiki/Dual-clutch_transmission
 
 - code: P0815
-  scope: generic
   category: powertrain
   title:
     en: Upshift Switch Circuit
@@ -1069,7 +1042,6 @@
     - https://en.wikipedia.org/wiki/Manumatic
 
 - code: P0816
-  scope: generic
   category: powertrain
   title:
     en: Downshift Switch Circuit
@@ -1106,7 +1078,6 @@
     - https://en.wikipedia.org/wiki/Manumatic
 
 - code: P0820
-  scope: generic
   category: powertrain
   title:
     en: Gear Lever X-Y Position Sensor Circuit
@@ -1144,7 +1115,6 @@
     - https://en.wikipedia.org/wiki/Shift-by-wire
 
 - code: P0826
-  scope: generic
   category: powertrain
   title:
     en: Up and Down Shift Switch Circuit
@@ -1181,7 +1151,6 @@
     - https://en.wikipedia.org/wiki/Manumatic
 
 - code: P0830
-  scope: generic
   category: powertrain
   title:
     en: Clutch Pedal Switch A Circuit
@@ -1218,7 +1187,6 @@
     - https://en.wikipedia.org/wiki/Manual_transmission
 
 - code: P0840
-  scope: generic
   category: powertrain
   title:
     en: Transmission Fluid Pressure Sensor/Switch A Circuit Range/Performance
@@ -1256,7 +1224,6 @@
     - https://en.wikipedia.org/wiki/Automatic_transmission
 
 - code: P0841
-  scope: generic
   category: powertrain
   title:
     en: Transmission Fluid Pressure Sensor/Switch A Circuit Range/Performance
@@ -1293,7 +1260,6 @@
     - https://en.wikipedia.org/wiki/Automatic_transmission
 
 - code: P0842
-  scope: generic
   category: powertrain
   title:
     en: Transmission Fluid Pressure Sensor/Switch A Circuit Low
@@ -1330,7 +1296,6 @@
     - https://en.wikipedia.org/wiki/Automatic_transmission
 
 - code: P0843
-  scope: generic
   category: powertrain
   title:
     en: Transmission Fluid Pressure Sensor/Switch A Circuit High
@@ -1367,7 +1332,6 @@
     - https://en.wikipedia.org/wiki/Automatic_transmission
 
 - code: P0845
-  scope: generic
   category: powertrain
   title:
     en: Transmission Fluid Pressure Sensor/Switch B Circuit
@@ -1404,7 +1368,6 @@
     - https://en.wikipedia.org/wiki/Automatic_transmission
 
 - code: P0850
-  scope: generic
   category: powertrain
   title:
     en: Park/Neutral Switch Input Circuit
@@ -1442,7 +1405,6 @@
     - https://en.wikipedia.org/wiki/Inhibitor_switch
 
 - code: P0868
-  scope: generic
   category: powertrain
   title:
     en: Transmission Fluid Pressure Low
@@ -1486,7 +1448,6 @@
     - https://en.wikipedia.org/wiki/Automatic_transmission
 
 - code: P0869
-  scope: generic
   category: powertrain
   title:
     en: Transmission Fluid Pressure High
@@ -1524,7 +1485,6 @@
     - https://en.wikipedia.org/wiki/Automatic_transmission
 
 - code: P0870
-  scope: generic
   category: powertrain
   title:
     en: Transmission Fluid Pressure Sensor/Switch C Circuit
@@ -1561,7 +1521,6 @@
     - https://en.wikipedia.org/wiki/Automatic_transmission
 
 - code: P0875
-  scope: generic
   category: powertrain
   title:
     en: Transmission Fluid Pressure Sensor/Switch D Circuit
@@ -1598,7 +1557,6 @@
     - https://en.wikipedia.org/wiki/Automatic_transmission
 
 - code: P0880
-  scope: generic
   category: powertrain
   title:
     en: TCM Power Input Signal
@@ -1637,7 +1595,6 @@
     - https://en.wikipedia.org/wiki/Transmission_control_unit
 
 - code: P0882
-  scope: generic
   category: powertrain
   title:
     en: TCM Power Input Signal Low
@@ -1675,7 +1632,6 @@
     - https://en.wikipedia.org/wiki/Transmission_control_unit
 
 - code: P0883
-  scope: generic
   category: powertrain
   title:
     en: TCM Power Input Signal High
@@ -1708,7 +1664,6 @@
     - https://en.wikipedia.org/wiki/Alternator
 
 - code: P0884
-  scope: generic
   category: powertrain
   title:
     en: TCM Power Input Signal Intermittent
@@ -1746,7 +1701,6 @@
     - https://en.wikipedia.org/wiki/Transmission_control_unit
 
 - code: P0890
-  scope: generic
   category: powertrain
   title:
     en: TCM Power Relay Sense Circuit Low
@@ -1784,7 +1738,6 @@
     - https://en.wikipedia.org/wiki/Relay
 
 - code: P0891
-  scope: generic
   category: powertrain
   title:
     en: TCM Power Relay Sense Circuit High
@@ -1821,7 +1774,6 @@
     - https://en.wikipedia.org/wiki/Relay
 
 - code: P0900
-  scope: generic
   category: powertrain
   title:
     en: Clutch Actuator Circuit/Open
@@ -1859,7 +1811,6 @@
     - https://en.wikipedia.org/wiki/Dual-clutch_transmission
 
 - code: P0901
-  scope: generic
   category: powertrain
   title:
     en: Clutch Actuator Circuit Range/Performance
@@ -1897,7 +1848,6 @@
     - https://en.wikipedia.org/wiki/Dual-clutch_transmission
 
 - code: P0902
-  scope: generic
   category: powertrain
   title:
     en: Clutch Actuator Circuit Low
@@ -1935,7 +1885,6 @@
     - https://en.wikipedia.org/wiki/Dual-clutch_transmission
 
 - code: P0903
-  scope: generic
   category: powertrain
   title:
     en: Clutch Actuator Circuit High
@@ -1973,7 +1922,6 @@
     - https://en.wikipedia.org/wiki/Dual-clutch_transmission
 
 - code: P0905
-  scope: generic
   category: powertrain
   title:
     en: Gate Select Position Circuit
@@ -2010,7 +1958,6 @@
     - https://en.wikipedia.org/wiki/Automated_manual_transmission
 
 - code: P0910
-  scope: generic
   category: powertrain
   title:
     en: Gate Select Actuator Circuit/Open
@@ -2048,7 +1995,6 @@
     - https://en.wikipedia.org/wiki/Automated_manual_transmission
 
 - code: P0915
-  scope: generic
   category: powertrain
   title:
     en: Gear Shift Position Circuit Range/Performance
@@ -2085,7 +2031,6 @@
     - https://en.wikipedia.org/wiki/Automated_manual_transmission
 
 - code: P0920
-  scope: generic
   category: powertrain
   title:
     en: Gear Shift Forward Actuator Circuit/Open
@@ -2122,7 +2067,6 @@
     - https://en.wikipedia.org/wiki/Automated_manual_transmission
 
 - code: P0925
-  scope: generic
   category: powertrain
   title:
     en: Gear Shift Reverse Actuator Circuit/Open
@@ -2159,7 +2103,6 @@
     - https://en.wikipedia.org/wiki/Automated_manual_transmission
 
 - code: P0930
-  scope: generic
   category: powertrain
   title:
     en: Gear Shift Lock Solenoid Control Circuit/Open
@@ -2196,7 +2139,6 @@
     - https://en.wikipedia.org/wiki/Brake_shift_interlock
 
 - code: P0935
-  scope: generic
   category: powertrain
   title:
     en: Hydraulic Pump Relay Circuit/Open
@@ -2234,7 +2176,6 @@
     - https://en.wikipedia.org/wiki/Hybrid_vehicle
 
 - code: P0944
-  scope: generic
   category: powertrain
   title:
     en: Hydraulic Pressure Unit Loss of Pressure
@@ -2273,7 +2214,6 @@
     - https://en.wikipedia.org/wiki/Automatic_transmission
 
 - code: P0960
-  scope: generic
   category: powertrain
   title:
     en: Pressure Control Solenoid A Control Circuit/Open
@@ -2311,7 +2251,6 @@
     - https://en.wikipedia.org/wiki/Solenoid
 
 - code: P0961
-  scope: generic
   category: powertrain
   title:
     en: Pressure Control Solenoid A Control Circuit Range/Performance
@@ -2348,7 +2287,6 @@
     - https://en.wikipedia.org/wiki/Automatic_transmission
 
 - code: P0962
-  scope: generic
   category: powertrain
   title:
     en: Pressure Control Solenoid A Control Circuit Low
@@ -2380,7 +2318,6 @@
     - https://en.wikipedia.org/wiki/Solenoid
 
 - code: P0963
-  scope: generic
   category: powertrain
   title:
     en: Pressure Control Solenoid A Control Circuit High
@@ -2412,7 +2349,6 @@
     - https://en.wikipedia.org/wiki/Solenoid
 
 - code: P0964
-  scope: generic
   category: powertrain
   title:
     en: Pressure Control Solenoid B Control Circuit/Open
@@ -2445,7 +2381,6 @@
     - https://en.wikipedia.org/wiki/Solenoid
 
 - code: P0965
-  scope: generic
   category: powertrain
   title:
     en: Pressure Control Solenoid B Control Circuit Range/Performance
@@ -2477,7 +2412,6 @@
     - https://en.wikipedia.org/wiki/Automatic_transmission
 
 - code: P0966
-  scope: generic
   category: powertrain
   title:
     en: Pressure Control Solenoid B Control Circuit Low
@@ -2509,7 +2443,6 @@
     - https://en.wikipedia.org/wiki/Solenoid
 
 - code: P0967
-  scope: generic
   category: powertrain
   title:
     en: Pressure Control Solenoid B Control Circuit High
@@ -2541,7 +2474,6 @@
     - https://en.wikipedia.org/wiki/Solenoid
 
 - code: P0968
-  scope: generic
   category: powertrain
   title:
     en: Pressure Control Solenoid C Control Circuit/Open
@@ -2573,7 +2505,6 @@
     - https://en.wikipedia.org/wiki/Solenoid
 
 - code: P0969
-  scope: generic
   category: powertrain
   title:
     en: Pressure Control Solenoid C Control Circuit Range/Performance
@@ -2605,7 +2536,6 @@
     - https://en.wikipedia.org/wiki/Automatic_transmission
 
 - code: P0973
-  scope: generic
   category: powertrain
   title:
     en: Shift Solenoid A Control Circuit Low
@@ -2638,7 +2568,6 @@
     - https://en.wikipedia.org/wiki/Solenoid
 
 - code: P0974
-  scope: generic
   category: powertrain
   title:
     en: Shift Solenoid A Control Circuit High
@@ -2670,7 +2599,6 @@
     - https://en.wikipedia.org/wiki/Solenoid
 
 - code: P0976
-  scope: generic
   category: powertrain
   title:
     en: Shift Solenoid B Control Circuit Low
@@ -2702,7 +2630,6 @@
     - https://en.wikipedia.org/wiki/Solenoid
 
 - code: P0977
-  scope: generic
   category: powertrain
   title:
     en: Shift Solenoid B Control Circuit High
@@ -2734,7 +2661,6 @@
     - https://en.wikipedia.org/wiki/Solenoid
 
 - code: P0979
-  scope: generic
   category: powertrain
   title:
     en: Shift Solenoid C Control Circuit Low
@@ -2766,7 +2692,6 @@
     - https://en.wikipedia.org/wiki/Solenoid
 
 - code: P0980
-  scope: generic
   category: powertrain
   title:
     en: Shift Solenoid C Control Circuit High
@@ -2798,7 +2723,6 @@
     - https://en.wikipedia.org/wiki/Solenoid
 
 - code: P0982
-  scope: generic
   category: powertrain
   title:
     en: Shift Solenoid D Control Circuit Low
@@ -2830,7 +2754,6 @@
     - https://en.wikipedia.org/wiki/Solenoid
 
 - code: P0983
-  scope: generic
   category: powertrain
   title:
     en: Shift Solenoid D Control Circuit High
@@ -2862,7 +2785,6 @@
     - https://en.wikipedia.org/wiki/Solenoid
 
 - code: P0985
-  scope: generic
   category: powertrain
   title:
     en: Shift Solenoid E Control Circuit Low
@@ -2894,7 +2816,6 @@
     - https://en.wikipedia.org/wiki/Solenoid
 
 - code: P0986
-  scope: generic
   category: powertrain
   title:
     en: Shift Solenoid E Control Circuit High
@@ -2926,7 +2847,6 @@
     - https://en.wikipedia.org/wiki/Solenoid
 
 - code: P0A00
-  scope: generic
   category: powertrain
   title:
     en: Motor Electronics Coolant Temperature Sensor Circuit
@@ -2964,7 +2884,6 @@
     - https://en.wikipedia.org/wiki/Hybrid_vehicle
 
 - code: P0A01
-  scope: generic
   category: powertrain
   title:
     en: Motor Electronics Coolant Temperature Sensor Range/Performance
@@ -3001,7 +2920,6 @@
     - https://en.wikipedia.org/wiki/Hybrid_vehicle
 
 - code: P0A02
-  scope: generic
   category: powertrain
   title:
     en: Motor Electronics Coolant Temperature Sensor Low Input
@@ -3033,7 +2951,6 @@
     - https://en.wikipedia.org/wiki/Hybrid_vehicle
 
 - code: P0A03
-  scope: generic
   category: powertrain
   title:
     en: Motor Electronics Coolant Temperature Sensor High Input
@@ -3065,7 +2982,6 @@
     - https://en.wikipedia.org/wiki/Hybrid_vehicle
 
 - code: P0A09
-  scope: generic
   category: powertrain
   title:
     en: DC/DC Converter Status Circuit
@@ -3104,7 +3020,6 @@
     - https://en.wikipedia.org/wiki/DC-to-DC_converter
 
 - code: P0A0A
-  scope: generic
   category: powertrain
   title:
     en: High Voltage System Interlock Circuit
@@ -3143,7 +3058,6 @@
     - https://en.wikipedia.org/wiki/Electrical_safety
 
 - code: P0A0C
-  scope: generic
   category: powertrain
   title:
     en: High Voltage System Interlock Circuit Low
@@ -3176,7 +3090,6 @@
     - https://en.wikipedia.org/wiki/Electrical_safety
 
 - code: P0A0D
-  scope: generic
   category: powertrain
   title:
     en: High Voltage System Interlock Circuit High
@@ -3208,7 +3121,6 @@
     - https://en.wikipedia.org/wiki/Electrical_safety
 
 - code: P0A10
-  scope: generic
   category: powertrain
   title:
     en: Hybrid Battery Voltage Sense Circuit
@@ -3247,7 +3159,6 @@
     - https://en.wikipedia.org/wiki/Battery_management_system
 
 - code: P0A12
-  scope: generic
   category: powertrain
   title:
     en: DC/DC Converter Communication
@@ -3285,7 +3196,6 @@
     - https://en.wikipedia.org/wiki/CAN_bus
 
 - code: P0A1C
-  scope: generic
   category: powertrain
   title:
     en: Drive Motor A Phase U Current Sensor Circuit
@@ -3324,7 +3234,6 @@
     - https://en.wikipedia.org/wiki/Vector_control_(motor)
 
 - code: P0A2A
-  scope: generic
   category: powertrain
   title:
     en: Drive Motor A Temperature Sensor Circuit
@@ -3362,7 +3271,6 @@
     - https://en.wikipedia.org/wiki/Electric_motor
 
 - code: P0A2B
-  scope: generic
   category: powertrain
   title:
     en: Drive Motor A Temperature Sensor Range/Performance
@@ -3394,7 +3302,6 @@
     - https://en.wikipedia.org/wiki/Electric_motor
 
 - code: P0A2C
-  scope: generic
   category: powertrain
   title:
     en: Drive Motor A Temperature Sensor Circuit Low
@@ -3426,7 +3333,6 @@
     - https://en.wikipedia.org/wiki/Electric_motor
 
 - code: P0A2D
-  scope: generic
   category: powertrain
   title:
     en: Drive Motor A Temperature Sensor Circuit High
@@ -3458,7 +3364,6 @@
     - https://en.wikipedia.org/wiki/Electric_motor
 
 - code: P0A3C
-  scope: generic
   category: powertrain
   title:
     en: Drive Motor A Inverter Performance
@@ -3497,7 +3402,6 @@
     - https://en.wikipedia.org/wiki/Power_inverter
 
 - code: P0A40
-  scope: generic
   category: powertrain
   title:
     en: Drive Motor A Position Sensor Circuit
@@ -3536,7 +3440,6 @@
     - https://en.wikipedia.org/wiki/Resolver_(electrical)
 
 - code: P0A41
-  scope: generic
   category: powertrain
   title:
     en: Drive Motor A Position Sensor Range/Performance
@@ -3568,7 +3471,6 @@
     - https://en.wikipedia.org/wiki/Resolver_(electrical)
 
 - code: P0A78
-  scope: generic
   category: powertrain
   title:
     en: Drive Motor A Inverter Performance
@@ -3606,7 +3508,6 @@
     - https://en.wikipedia.org/wiki/Power_inverter
 
 - code: P0A7A
-  scope: generic
   category: powertrain
   title:
     en: Hybrid Battery Pack Deterioration
@@ -3644,7 +3545,6 @@
     - https://en.wikipedia.org/wiki/Hybrid_vehicle_battery
 
 - code: P0A7B
-  scope: generic
   category: powertrain
   title:
     en: Hybrid Battery Pack State of Charge Low
@@ -3683,7 +3583,6 @@
     - https://en.wikipedia.org/wiki/State_of_charge
 
 - code: P0A7D
-  scope: generic
   category: powertrain
   title:
     en: Hybrid Battery Pack Low Voltage
@@ -3721,7 +3620,6 @@
     - https://en.wikipedia.org/wiki/Hybrid_vehicle_battery
 
 - code: P0A7E
-  scope: generic
   category: powertrain
   title:
     en: Hybrid Battery Pack Overtemperature
@@ -3760,7 +3658,6 @@
     - https://en.wikipedia.org/wiki/Hybrid_vehicle_battery
 
 - code: P0A81
-  scope: generic
   category: powertrain
   title:
     en: Hybrid Battery Pack Cooling Fan 1 Performance
@@ -3798,7 +3695,6 @@
     - https://en.wikipedia.org/wiki/Hybrid_vehicle_battery
 
 - code: P0A82
-  scope: generic
   category: powertrain
   title:
     en: Hybrid Battery Pack Cooling Fan 1 Circuit Low
@@ -3830,7 +3726,6 @@
     - https://en.wikipedia.org/wiki/Hybrid_vehicle_battery
 
 - code: P0A83
-  scope: generic
   category: powertrain
   title:
     en: Hybrid Battery Pack Cooling Fan 1 Circuit High
@@ -3862,7 +3757,6 @@
     - https://en.wikipedia.org/wiki/Hybrid_vehicle_battery
 
 - code: P0A84
-  scope: generic
   category: powertrain
   title:
     en: Hybrid Battery Pack Cooling Fan 2 Performance
@@ -3894,7 +3788,6 @@
     - https://en.wikipedia.org/wiki/Hybrid_vehicle_battery
 
 - code: P0A93
-  scope: generic
   category: powertrain
   title:
     en: Inverter A Cooling System Performance
@@ -3933,7 +3826,6 @@
     - https://en.wikipedia.org/wiki/Power_inverter
 
 - code: P0A94
-  scope: generic
   category: powertrain
   title:
     en: DC/DC Converter Performance
@@ -3965,7 +3857,6 @@
     - https://en.wikipedia.org/wiki/DC-to-DC_converter
 
 - code: P0A95
-  scope: generic
   category: powertrain
   title:
     en: High Voltage Fuse
@@ -3998,7 +3889,6 @@
     - https://en.wikipedia.org/wiki/Fuse_(electrical)
 
 - code: P0AA1
-  scope: generic
   category: powertrain
   title:
     en: Hybrid Battery Positive Contactor Circuit
@@ -4037,7 +3927,6 @@
     - https://en.wikipedia.org/wiki/Contactor
 
 - code: P0AA4
-  scope: generic
   category: powertrain
   title:
     en: Hybrid Battery Negative Contactor Circuit
@@ -4070,7 +3959,6 @@
     - https://en.wikipedia.org/wiki/Contactor
 
 - code: P0AA6
-  scope: generic
   category: powertrain
   title:
     en: Hybrid Battery Voltage System Isolation Fault
@@ -4115,7 +4003,6 @@
     - https://en.wikipedia.org/wiki/Insulation_monitoring_device
 
 - code: P0AC0
-  scope: generic
   category: powertrain
   title:
     en: Hybrid Battery Cooling System Performance
@@ -4154,7 +4041,6 @@
     - https://en.wikipedia.org/wiki/Hybrid_vehicle_battery
 
 - code: P0B22
-  scope: generic
   category: powertrain
   title:
     en: Generator Phase U Current Sensor Circuit
@@ -4188,7 +4074,6 @@
     - https://en.wikipedia.org/wiki/Hybrid_synergy_drive
 
 - code: P0BBD
-  scope: generic
   category: powertrain
   title:
     en: Hybrid Battery Voltage Sense Internal Module Performance
@@ -4226,7 +4111,6 @@
     - https://en.wikipedia.org/wiki/Battery_management_system
 
 - code: P0C00
-  scope: generic
   category: powertrain
   title:
     en: Drive Motor Coolant Pump Control Circuit
@@ -4265,7 +4149,6 @@
     - https://en.wikipedia.org/wiki/Electric_water_pump
 
 - code: P0C73
-  scope: generic
   category: powertrain
   title:
     en: Hybrid Battery Pack Cooling Pump Performance
@@ -4302,7 +4185,6 @@
     - https://en.wikipedia.org/wiki/Electric_water_pump
 
 - code: P0CB0
-  scope: generic
   category: powertrain
   title:
     en: DC/DC Converter Voltage Below Threshold
@@ -4335,7 +4217,6 @@
     - https://en.wikipedia.org/wiki/DC-to-DC_converter
 
 - code: P0CD0
-  scope: generic
   category: powertrain
   title:
     en: AC Plug Voltage Sense Circuit
@@ -4367,7 +4248,6 @@
     - https://en.wikipedia.org/wiki/Battery_charger
 
 - code: P0D02
-  scope: generic
   category: powertrain
   title:
     en: Hybrid/EV Charging System Voltage Out Of Range
@@ -4405,7 +4285,6 @@
     - https://en.wikipedia.org/wiki/Charging_station
 
 - code: P0D08
-  scope: generic
   category: powertrain
   title:
     en: Hybrid/EV Charge Cord Fault
@@ -4442,7 +4321,6 @@
     - https://en.wikipedia.org/wiki/SAE_J1772
 
 - code: P0EB6
-  scope: generic
   category: powertrain
   title:
     en: Hybrid/EV Battery Pack Voltage Sense Circuit Performance
@@ -4475,7 +4353,6 @@
     - https://en.wikipedia.org/wiki/Battery_management_system
 
 - code: P0FFF
-  scope: generic
   category: powertrain
   title:
     en: Reserved Powertrain Fault

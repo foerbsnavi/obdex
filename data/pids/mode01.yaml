@@ -5,7 +5,6 @@
   name:
     en: PIDs supported [01-20]
     de: Unterstützte PIDs [01-20]
-  scope: generic
 
 - pid: "04"
   mode: "01"
@@ -16,7 +15,6 @@
   name:
     en: Calculated engine load
     de: Berechnete Motorlast
-  scope: generic
 
 - pid: "05"
   mode: "01"
@@ -27,7 +25,6 @@
   name:
     en: Engine coolant temperature
     de: Kühlmitteltemperatur
-  scope: generic
 
 - pid: "0B"
   mode: "01"
@@ -38,7 +35,6 @@
   name:
     en: Intake manifold absolute pressure
     de: Saugrohrdruck absolut
-  scope: generic
 
 - pid: "0C"
   mode: "01"
@@ -49,7 +45,6 @@
   name:
     en: Engine RPM
     de: Motordrehzahl
-  scope: generic
 
 - pid: "0D"
   mode: "01"
@@ -60,7 +55,6 @@
   name:
     en: Vehicle speed
     de: Fahrzeuggeschwindigkeit
-  scope: generic
 
 - pid: "0F"
   mode: "01"
@@ -71,7 +65,6 @@
   name:
     en: Intake air temperature
     de: Ansauglufttemperatur
-  scope: generic
 
 - pid: "10"
   mode: "01"
@@ -82,7 +75,6 @@
   name:
     en: Mass air flow rate
     de: Luftmassenstrom
-  scope: generic
 
 - pid: "11"
   mode: "01"
@@ -93,7 +85,6 @@
   name:
     en: Throttle position
     de: Drosselklappenstellung
-  scope: generic
 
 - pid: "2F"
   mode: "01"
@@ -104,7 +95,6 @@
   name:
     en: Fuel tank level
     de: Tankfüllstand
-  scope: generic
 
 - pid: "5C"
   mode: "01"
@@ -115,4 +105,3 @@
   name:
     en: Engine oil temperature
     de: Motoröltemperatur
-  scope: generic

@@ -1,8 +1,0 @@
-manufacturer:
-  id: bmw
-  name: BMW Group
-  brands: [bmw, mini, rolls-royce]
-  iso_3779_wmi: [WBA, WBS, WBY, WMW]
-  notes: |
-    BMW also exposes a parallel proprietary fault code system via INPA/ISTA
-    (hex codes like 0x29CD). When known, add an alias under references.

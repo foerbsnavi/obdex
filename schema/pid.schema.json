@@ -39,13 +39,6 @@
       },
       "additionalProperties": false
     },
-    "scope": {
-      "enum": ["generic", "manufacturer"]
-    },
-    "manufacturer": {
-      "type": "string",
-      "pattern": "^[a-z][a-z0-9_-]+$"
-    },
     "sources": {
       "type": "array",
       "items": { "type": "string" },

@@ -2,7 +2,6 @@
 # Add entries here. See data/generic/P0xxx.yaml for the format.
 
 - code: B0001
-  scope: generic
   category: body
   title:
     en: Driver Frontal Stage 1 Deployment Control
@@ -45,7 +44,6 @@
     - https://en.wikipedia.org/wiki/Airbag
 
 - code: B0002
-  scope: generic
   category: body
   title:
     en: Driver Frontal Stage 2 Deployment Control
@@ -88,7 +86,6 @@
     - https://en.wikipedia.org/wiki/Airbag
 
 - code: B0010
-  scope: generic
   category: body
   title:
     en: Right Front/Passenger Frontal Deployment Control
@@ -130,7 +127,6 @@
     - https://en.wikipedia.org/wiki/Airbag
 
 - code: B0011
-  scope: generic
   category: body
   title:
     en: Right Front/Passenger Frontal Stage 2 Deployment Control
@@ -172,7 +168,6 @@
     - https://en.wikipedia.org/wiki/Airbag
 
 - code: B0020
-  scope: generic
   category: body
   title:
     en: Left Side Deployment Control
@@ -215,7 +210,6 @@
     - https://en.wikipedia.org/wiki/Airbag
 
 - code: B0024
-  scope: generic
   category: body
   title:
     en: Right Side Deployment Control
@@ -258,7 +252,6 @@
     - https://en.wikipedia.org/wiki/Airbag
 
 - code: B0028
-  scope: generic
   category: body
   title:
     en: Driver Side Curtain Air Bag Deployment Control
@@ -300,7 +293,6 @@
     - https://en.wikipedia.org/wiki/Airbag
 
 - code: B0029
-  scope: generic
   category: body
   title:
     en: Right Side Curtain Air Bag Deployment Control
@@ -342,7 +334,6 @@
     - https://en.wikipedia.org/wiki/Airbag
 
 - code: B0040
-  scope: generic
   category: body
   title:
     en: Outside Temperature Sensor Circuit
@@ -379,7 +370,6 @@
     - https://en.wikipedia.org/wiki/Automotive_air_conditioning
 
 - code: B0050
-  scope: generic
   category: body
   title:
     en: Driver Pretensioner Deployment Control
@@ -421,7 +411,6 @@
     - https://en.wikipedia.org/wiki/Airbag
 
 - code: B0051
-  scope: generic
   category: body
   title:
     en: Driver Frontal Deployment Control Open
@@ -464,7 +453,6 @@
     - https://en.wikipedia.org/wiki/Airbag
 
 - code: B0053
-  scope: generic
   category: body
   title:
     en: Passenger Pretensioner Deployment Control
@@ -506,7 +494,6 @@
     - https://en.wikipedia.org/wiki/Airbag
 
 - code: B0064
-  scope: generic
   category: body
   title:
     en: Driver Seat Belt Tension Sensor
@@ -543,7 +530,6 @@
     - https://en.wikipedia.org/wiki/Airbag
 
 - code: B0070
-  scope: generic
   category: body
   title:
     en: Vehicle Rollover Sensor
@@ -585,7 +571,6 @@
     - https://en.wikipedia.org/wiki/Airbag
 
 - code: B0081
-  scope: generic
   category: body
   title:
     en: Front Passenger Belt Switch Circuit
@@ -622,7 +607,6 @@
     - https://en.wikipedia.org/wiki/Airbag
 
 - code: B0100
-  scope: generic
   category: body
   title:
     en: Driver Door Lock Cylinder Switch Circuit
@@ -659,7 +643,6 @@
     - https://en.wikipedia.org/wiki/On-board_diagnostics
 
 - code: B0150
-  scope: generic
   category: body
   title:
     en: HVAC Mode Door Range/Performance
@@ -701,7 +684,6 @@
     - https://en.wikipedia.org/wiki/Automotive_air_conditioning
 
 - code: B0156
-  scope: generic
   category: body
   title:
     en: Sun Load Sensor Circuit
@@ -737,7 +719,6 @@
     - https://en.wikipedia.org/wiki/Automotive_air_conditioning
 
 - code: B0158
-  scope: generic
   category: body
   title:
     en: Ambient Air Temperature Sensor Circuit
@@ -773,7 +754,6 @@
     - https://en.wikipedia.org/wiki/Automotive_air_conditioning
 
 - code: B0188
-  scope: generic
   category: body
   title:
     en: Rear Wiper Motor Circuit
@@ -815,7 +795,6 @@
     - https://en.wikipedia.org/wiki/On-board_diagnostics
 
 - code: B0090
-  scope: generic
   category: body
   title:
     en: Driver Side Pretensioner Stage 2 Deployment Control
@@ -857,7 +836,6 @@
     - https://en.wikipedia.org/wiki/Airbag
 
 - code: B0091
-  scope: generic
   category: body
   title:
     en: Passenger Side Pretensioner Stage 2 Deployment Control
@@ -899,7 +877,6 @@
     - https://en.wikipedia.org/wiki/Airbag
 
 - code: B0095
-  scope: generic
   category: body
   title:
     en: Occupant Classification System Performance
@@ -941,7 +918,6 @@
     - https://en.wikipedia.org/wiki/Airbag
 
 - code: B0098
-  scope: generic
   category: body
   title:
     en: Occupant Detection Sensor
@@ -978,7 +954,6 @@
     - https://en.wikipedia.org/wiki/Airbag
 
 - code: B0099
-  scope: generic
   category: body
   title:
     en: Occupant Detection Module Internal Fault
@@ -1014,7 +989,6 @@
     - https://en.wikipedia.org/wiki/Airbag
 
 - code: B0159
-  scope: generic
   category: body
   title:
     en: Outside Temperature Sensor Range/Performance
@@ -1050,7 +1024,6 @@
     - https://en.wikipedia.org/wiki/Automotive_air_conditioning
 
 - code: B0160
-  scope: generic
   category: body
   title:
     en: In-Vehicle Temperature Sensor Circuit
@@ -1086,7 +1059,6 @@
     - https://en.wikipedia.org/wiki/Automotive_air_conditioning
 
 - code: B0162
-  scope: generic
   category: body
   title:
     en: Sun Load Sensor 2 Circuit
@@ -1122,7 +1094,6 @@
     - https://en.wikipedia.org/wiki/Automotive_air_conditioning
 
 - code: B0166
-  scope: generic
   category: body
   title:
     en: HVAC Discharge Air Temperature Sensor
@@ -1158,7 +1129,6 @@
     - https://en.wikipedia.org/wiki/Automotive_air_conditioning
 
 - code: B0168
-  scope: generic
   category: body
   title:
     en: HVAC Air Mix Door Performance
@@ -1195,7 +1165,6 @@
     - https://en.wikipedia.org/wiki/Automotive_air_conditioning
 
 - code: B0170
-  scope: generic
   category: body
   title:
     en: HVAC Mode Door Position Sensor
@@ -1232,7 +1201,6 @@
     - https://en.wikipedia.org/wiki/Automotive_air_conditioning
 
 - code: B0173
-  scope: generic
   category: body
   title:
     en: HVAC Air Inlet Door
@@ -1268,7 +1236,6 @@
     - https://en.wikipedia.org/wiki/Automotive_air_conditioning
 
 - code: B0175
-  scope: generic
   category: body
   title:
     en: HVAC Recirculation Door Performance
@@ -1304,7 +1271,6 @@
     - https://en.wikipedia.org/wiki/Automotive_air_conditioning
 
 - code: B0181
-  scope: generic
   category: body
   title:
     en: Front Blower Motor Circuit Low
@@ -1346,7 +1312,6 @@
     - https://en.wikipedia.org/wiki/Automotive_air_conditioning
 
 - code: B0184
-  scope: generic
   category: body
   title:
     en: Rear Blower Motor Circuit
@@ -1383,7 +1348,6 @@
     - https://en.wikipedia.org/wiki/Automotive_air_conditioning
 
 - code: B0220
-  scope: generic
   category: body
   title:
     en: Front Wiper Motor Speed Circuit
@@ -1425,7 +1389,6 @@
     - https://en.wikipedia.org/wiki/On-board_diagnostics
 
 - code: B0226
-  scope: generic
   category: body
   title:
     en: Headlamp Auto-Leveling Front Sensor
@@ -1462,7 +1425,6 @@
     - https://en.wikipedia.org/wiki/On-board_diagnostics
 
 - code: B0228
-  scope: generic
   category: body
   title:
     en: Front Fog Lamp Circuit
@@ -1504,7 +1466,6 @@
     - https://en.wikipedia.org/wiki/On-board_diagnostics
 
 - code: B0240
-  scope: generic
   category: body
   title:
     en: Headlamp Switch Circuit
@@ -1540,7 +1501,6 @@
     - https://en.wikipedia.org/wiki/On-board_diagnostics
 
 - code: B0265
-  scope: generic
   category: body
   title:
     en: Driver Door Lock/Unlock Switch Circuit
@@ -1577,7 +1537,6 @@
     - https://en.wikipedia.org/wiki/Power_window
 
 - code: B0270
-  scope: generic
   category: body
   title:
     en: Passenger Door Lock Switch Circuit
@@ -1614,7 +1573,6 @@
     - https://en.wikipedia.org/wiki/Power_window
 
 - code: B0290
-  scope: generic
   category: body
   title:
     en: Rear Defrost Switch Circuit
@@ -1650,7 +1608,6 @@
     - https://en.wikipedia.org/wiki/On-board_diagnostics
 
 - code: B0310
-  scope: generic
   category: body
   title:
     en: Driver Seat Position Sensor Circuit
@@ -1687,7 +1644,6 @@
     - https://en.wikipedia.org/wiki/Power_seat
 
 - code: B0312
-  scope: generic
   category: body
   title:
     en: Driver Seat Forward/Back Switch Circuit
@@ -1723,7 +1679,6 @@
     - https://en.wikipedia.org/wiki/Power_seat
 
 - code: B0320
-  scope: generic
   category: body
   title:
     en: Passenger Seat Position Sensor Circuit
@@ -1760,7 +1715,6 @@
     - https://en.wikipedia.org/wiki/Power_seat
 
 - code: B0420
-  scope: generic
   category: body
   title:
     en: Audio System Internal Failure
@@ -1796,7 +1750,6 @@
     - https://en.wikipedia.org/wiki/On-board_diagnostics
 
 - code: B0455
-  scope: generic
   category: body
   title:
     en: Display Module Internal Failure
@@ -1832,7 +1785,6 @@
     - https://en.wikipedia.org/wiki/On-board_diagnostics
 
 - code: B0102
-  scope: generic
   category: body
   title:
     en: Power Mirror Switch Circuit
@@ -1869,7 +1821,6 @@
     - https://en.wikipedia.org/wiki/Wing_mirror
 
 - code: B0104
-  scope: generic
   category: body
   title:
     en: Driver Mirror Adjust Switch Circuit
@@ -1905,7 +1856,6 @@
     - https://en.wikipedia.org/wiki/Wing_mirror
 
 - code: B0106
-  scope: generic
   category: body
   title:
     en: Passenger Mirror Adjust Switch Circuit
@@ -1941,7 +1891,6 @@
     - https://en.wikipedia.org/wiki/Wing_mirror
 
 - code: B0108
-  scope: generic
   category: body
   title:
     en: Mirror Folder Switch Circuit
@@ -1977,7 +1926,6 @@
     - https://en.wikipedia.org/wiki/Wing_mirror
 
 - code: B0125
-  scope: generic
   category: body
   title:
     en: Driver Side Mirror Position Sensor
@@ -2013,7 +1961,6 @@
     - https://en.wikipedia.org/wiki/Wing_mirror
 
 - code: B0126
-  scope: generic
   category: body
   title:
     en: Passenger Side Mirror Position Sensor
@@ -2049,7 +1996,6 @@
     - https://en.wikipedia.org/wiki/Wing_mirror
 
 - code: B0190
-  scope: generic
   category: body
   title:
     en: Front Wiper Park Switch Circuit
@@ -2086,7 +2032,6 @@
     - https://en.wikipedia.org/wiki/Windscreen_wiper
 
 - code: B0192
-  scope: generic
   category: body
   title:
     en: Front Wiper Speed Performance
@@ -2122,7 +2067,6 @@
     - https://en.wikipedia.org/wiki/Windscreen_wiper
 
 - code: B0210
-  scope: generic
   category: body
   title:
     en: Rain Sensor Module
@@ -2159,7 +2103,6 @@
     - https://en.wikipedia.org/wiki/Windscreen_wiper
 
 - code: B0245
-  scope: generic
   category: body
   title:
     en: Driver Window Switch Circuit
@@ -2196,7 +2139,6 @@
     - https://en.wikipedia.org/wiki/Power_window
 
 - code: B0247
-  scope: generic
   category: body
   title:
     en: Passenger Window Switch Circuit
@@ -2232,7 +2174,6 @@
     - https://en.wikipedia.org/wiki/Power_window
 
 - code: B0252
-  scope: generic
   category: body
   title:
     en: Driver Window Motor Down Circuit
@@ -2268,7 +2209,6 @@
     - https://en.wikipedia.org/wiki/Power_window
 
 - code: B0272
-  scope: generic
   category: body
   title:
     en: Power Door Lock Switch Circuit
@@ -2305,7 +2245,6 @@
     - https://en.wikipedia.org/wiki/Power_door_lock
 
 - code: B0274
-  scope: generic
   category: body
   title:
     en: Trunk Lid Release Switch Circuit
@@ -2341,7 +2280,6 @@
     - https://en.wikipedia.org/wiki/Power_door_lock
 
 - code: B0322
-  scope: generic
   category: body
   title:
     en: Driver Seat Tilt Position Sensor
@@ -2377,7 +2315,6 @@
     - https://en.wikipedia.org/wiki/Power_seat
 
 - code: B0325
-  scope: generic
   category: body
   title:
     en: Driver Seat Memory Set Switch
@@ -2413,7 +2350,6 @@
     - https://en.wikipedia.org/wiki/Power_seat
 
 - code: B0327
-  scope: generic
   category: body
   title:
     en: Passenger Seat Position Memory
@@ -2449,7 +2385,6 @@
     - https://en.wikipedia.org/wiki/Power_seat
 
 - code: B0335
-  scope: generic
   category: body
   title:
     en: Driver Seat Heater Circuit
@@ -2485,7 +2420,6 @@
     - https://en.wikipedia.org/wiki/Power_seat
 
 - code: B0337
-  scope: generic
   category: body
   title:
     en: Passenger Seat Heater Circuit
@@ -2521,7 +2455,6 @@
     - https://en.wikipedia.org/wiki/Power_seat
 
 - code: B0339
-  scope: generic
   category: body
   title:
     en: Rear Seat Heater Circuit
@@ -2557,7 +2490,6 @@
     - https://en.wikipedia.org/wiki/Power_seat
 
 - code: B0186
-  scope: generic
   category: body
   title:
     en: Front Blower Motor Speed Performance
@@ -2594,7 +2526,6 @@
     - https://en.wikipedia.org/wiki/Automotive_air_conditioning
 
 - code: B0205
-  scope: generic
   category: body
   title:
     en: HVAC Defroster Door Position
@@ -2630,7 +2561,6 @@
     - https://en.wikipedia.org/wiki/Automotive_air_conditioning
 
 - code: B0231
-  scope: generic
   category: body
   title:
     en: Front Marker Lamp Circuit
@@ -2666,7 +2596,6 @@
     - https://en.wikipedia.org/wiki/Headlamp
 
 - code: B0233
-  scope: generic
   category: body
   title:
     en: Rear Tail Lamp Circuit
@@ -2702,7 +2631,6 @@
     - https://en.wikipedia.org/wiki/Headlamp
 
 - code: B0235
-  scope: generic
   category: body
   title:
     en: Brake Lamp Circuit
@@ -2739,7 +2667,6 @@
     - https://en.wikipedia.org/wiki/Headlamp
 
 - code: B0237
-  scope: generic
   category: body
   title:
     en: Backup Lamp Circuit
@@ -2776,7 +2703,6 @@
     - https://en.wikipedia.org/wiki/Headlamp
 
 - code: B0239
-  scope: generic
   category: body
   title:
     en: License Plate Lamp Circuit
@@ -2812,7 +2738,6 @@
     - https://en.wikipedia.org/wiki/Headlamp
 
 - code: B0260
-  scope: generic
   category: body
   title:
     en: Interior Light Circuit
@@ -2849,7 +2774,6 @@
     - https://en.wikipedia.org/wiki/Headlamp
 
 - code: B0425
-  scope: generic
   category: body
   title:
     en: Audio Amplifier Internal Failure
@@ -2885,7 +2809,6 @@
     - https://en.wikipedia.org/wiki/On-board_diagnostics
 
 - code: B0440
-  scope: generic
   category: body
   title:
     en: Bluetooth Module Fault
@@ -2922,7 +2845,6 @@
     - https://en.wikipedia.org/wiki/Bluetooth
 
 - code: B0445
-  scope: generic
   category: body
   title:
     en: USB Hub Fault
@@ -2958,7 +2880,6 @@
     - https://en.wikipedia.org/wiki/On-board_diagnostics
 
 - code: B0450
-  scope: generic
   category: body
   title:
     en: Microphone Circuit
@@ -2994,7 +2915,6 @@
     - https://en.wikipedia.org/wiki/Bluetooth
 
 - code: B0460
-  scope: generic
   category: body
   title:
     en: Bluetooth Antenna Circuit
@@ -3030,7 +2950,6 @@
     - https://en.wikipedia.org/wiki/Bluetooth
 
 - code: B0490
-  scope: generic
   category: body
   title:
     en: Display Backlight Circuit
@@ -3066,7 +2985,6 @@
     - https://en.wikipedia.org/wiki/On-board_diagnostics
 
 - code: B0014
-  scope: generic
   category: body
   title:
     en: Driver Knee Airbag Deployment Control
@@ -3103,7 +3021,6 @@
     - https://en.wikipedia.org/wiki/Airbag
 
 - code: B0015
-  scope: generic
   category: body
   title:
     en: Passenger Knee Airbag Deployment Control
@@ -3140,7 +3057,6 @@
     - https://en.wikipedia.org/wiki/Airbag
 
 - code: B0030
-  scope: generic
   category: body
   title:
     en: Driver Side Curtain Airbag Stage 2
@@ -3177,7 +3093,6 @@
     - https://en.wikipedia.org/wiki/Airbag
 
 - code: B0031
-  scope: generic
   category: body
   title:
     en: Passenger Side Curtain Airbag Stage 2
@@ -3214,7 +3129,6 @@
     - https://en.wikipedia.org/wiki/Airbag
 
 - code: B0084
-  scope: generic
   category: body
   title:
     en: Driver Belt Buckle Switch Circuit
@@ -3251,7 +3165,6 @@
     - https://en.wikipedia.org/wiki/Airbag
 
 - code: B0085
-  scope: generic
   category: body
   title:
     en: Passenger Belt Buckle Switch Circuit
@@ -3288,7 +3201,6 @@
     - https://en.wikipedia.org/wiki/Airbag
 
 - code: B0510
-  scope: generic
   category: body
   title:
     en: Driver Door Open Switch
@@ -3325,7 +3237,6 @@
     - https://en.wikipedia.org/wiki/Power_door_lock
 
 - code: B0520
-  scope: generic
   category: body
   title:
     en: Passenger Door Open Switch

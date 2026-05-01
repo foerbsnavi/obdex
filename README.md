@@ -4,13 +4,13 @@
 [![data: CC0-1.0](https://img.shields.io/badge/data-CC0--1.0-blue.svg)](LICENSE-DATA)
 [![code: MIT](https://img.shields.io/badge/code-MIT-green.svg)](LICENSE-CODE)
 
-Open, machine-readable database of OBD-II diagnostic trouble codes (DTCs) and PIDs.
+Open, machine-readable database of generic OBD-II diagnostic trouble codes (DTCs) and PIDs.
 
-Generic codes follow the publicly known SAE J2012 identifier scheme. Manufacturer-specific codes are contributed by the community based on service literature, reproducible diagnostics, and shared experience.
+Codes follow the publicly known SAE J2012 identifier scheme and ISO 15031-6. The project deliberately limits itself to the generic, standard-defined layer — manufacturer-specific codes are out of scope.
 
 ## Why
 
-Workshop databases like Autodata, Haynes Pro, or Bosch ESI cost thousands per year. The codes themselves are public knowledge — only their structured aggregation is locked behind paywalls. obdex closes that gap.
+Workshop databases like Autodata, Haynes Pro, or Bosch ESI cost thousands per year. The codes themselves are public knowledge — only their structured aggregation is locked behind paywalls. obdex closes that gap for the generic layer that every OBD-II tool needs.
 
 ## Use
 
@@ -19,9 +19,8 @@ Direct JSON, served via GitHub Pages from `dist/`:
 ```
 https://foerbsnavi.github.io/obdex/all.json
 https://foerbsnavi.github.io/obdex/generic.json
-https://foerbsnavi.github.io/obdex/manufacturers.json
-https://foerbsnavi.github.io/obdex/by-manufacturer/vag.json
 https://foerbsnavi.github.io/obdex/pids/mode01.json
+https://foerbsnavi.github.io/obdex/pids/mode09.json
 https://foerbsnavi.github.io/obdex/meta.json
 ```
 
@@ -49,24 +48,14 @@ Requires Node.js ≥ 20.
 
 ```
 data/
-├── generic/              SAE-defined codes, valid for all OBD-II vehicles
-├── manufacturers/        Vendor-specific extensions
-│   ├── vag/              Volkswagen, Audi, Skoda, Seat, Cupra
-│   ├── bmw/
-│   ├── mercedes/
-│   ├── stellantis/       Fiat, Peugeot, Citroën, Opel, Jeep, …
-│   ├── ford/
-│   └── toyota/
+├── generic/              SAE J2012 codes, valid for all OBD-II vehicles
 └── pids/                 Live data parameter IDs (Mode 01, 09, …)
-    └── manufacturers/    Vendor-specific PIDs
 
 schema/                   JSON Schema (Draft 2020-12)
 tools/                    Node.js validation + build scripts
 ```
 
 ## Status
-
-Early release — generic coverage is being built up; manufacturer-specific codes are community-driven.
 
 | Scope         | Codes | Coverage |
 | ------------- | ----: | -------- |
@@ -76,12 +65,6 @@ Early release — generic coverage is being built up; manufacturer-specific code
 | Generic U0    |   227 | extensive|
 | Generic B0    |   200 | extensive|
 | Generic C0    |   207 | extensive|
-| VAG           |     1 | seed     |
-| BMW           |     0 | wanted   |
-| Mercedes      |     0 | wanted   |
-| Stellantis    |     0 | wanted   |
-| Ford          |     0 | wanted   |
-| Toyota        |     0 | wanted   |
 | PIDs Mode 01  |    11 | seed     |
 | PIDs Mode 09  |     4 | seed     |
 
@@ -107,13 +90,7 @@ See [CONTRIBUTING.md](CONTRIBUTING.md). Short version: one PR per code or cohere
 - Data: [CC0-1.0](LICENSE-DATA) — public domain dedication.
 - Code: [MIT](LICENSE-CODE).
 
-SAE J2012 itself remains copyrighted. This repository contains independently authored descriptions referencing the publicly known code identifiers, not the SAE document text.
-
-Manufacturer service manuals are also copyrighted. Contributors must write their own descriptions in their own words — identifiers and bit-level facts are not copyrightable, but verbatim manual text is. See [CONTRIBUTING.md](CONTRIBUTING.md) for details.
-
-## Trademarks
-
-All manufacturer names, brand names, and model designations are trademarks of their respective owners. Their use in this repository is purely descriptive — to identify which vehicles a particular code applies to. obdex is an independent community project and is not affiliated with, endorsed by, or sponsored by any vehicle manufacturer, SAE International, ISO, or any commercial diagnostic database.
+SAE J2012 itself remains copyrighted. This repository contains independently authored descriptions referencing the publicly known code identifiers, not the SAE document text. Contributors must write their own descriptions in their own words — identifiers and bit-level facts are not copyrightable, but verbatim text from any service document is.
 
 ## Disclaimer
 

@@ -8,7 +8,6 @@
 
 - [ ] New code(s)
 - [ ] Correction to existing code
-- [ ] New manufacturer
 - [ ] PID(s) added
 - [ ] Tooling / schema / documentation
 

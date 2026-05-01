@@ -3,7 +3,7 @@
   "$id": "https://raw.githubusercontent.com/foerbsnavi/obdex/main/schema/code.schema.json",
   "title": "OBD-II Diagnostic Trouble Code",
   "type": "object",
-  "required": ["code", "scope", "category", "title", "sources"],
+  "required": ["code", "category", "title", "sources"],
   "additionalProperties": false,
   "properties": {
     "code": {
@@ -13,13 +13,6 @@
     },
     "category": {
       "enum": ["powertrain", "body", "chassis", "network"]
-    },
-    "scope": {
-      "enum": ["generic", "manufacturer"]
-    },
-    "manufacturer": {
-      "type": "string",
-      "pattern": "^[a-z][a-z0-9_-]+$"
     },
     "applies_to": {
       "type": "object",
@@ -105,11 +98,6 @@
         "limp_mode_possible": { "type": "boolean" }
       }
     },
-    "related_generic": {
-      "type": "array",
-      "items": { "type": "string", "pattern": "^[PBCU][0-3][0-9A-F]{3}$" },
-      "uniqueItems": true
-    },
     "related_codes": {
       "type": "array",
       "items": { "type": "string", "pattern": "^[PBCU][0-3][0-9A-F]{3}$" },
@@ -124,15 +112,5 @@
       "items": { "type": "string" },
       "minItems": 1
     }
-  },
-  "allOf": [
-    {
-      "if": { "properties": { "scope": { "const": "manufacturer" } }, "required": ["scope"] },
-      "then": { "required": ["manufacturer"] }
-    },
-    {
-      "if": { "properties": { "scope": { "const": "generic" } }, "required": ["scope"] },
-      "then": { "properties": { "manufacturer": false } }
-    }
-  ]
+  }
 }

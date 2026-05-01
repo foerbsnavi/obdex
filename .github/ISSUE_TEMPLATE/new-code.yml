@@ -8,31 +8,20 @@ body:
     attributes:
       label: Code
       placeholder: P0420
-      description: Uppercase identifier, e.g. P0420 or P1136.
+      description: Uppercase identifier, e.g. P0420.
     validations:
       required: true
   - type: dropdown
-    id: scope
+    id: category
     attributes:
-      label: Scope
+      label: Category
       options:
-        - generic
-        - manufacturer
+        - powertrain
+        - body
+        - chassis
+        - network
     validations:
       required: true
-  - type: dropdown
-    id: manufacturer
-    attributes:
-      label: Manufacturer (only if scope = manufacturer)
-      options:
-        - (not applicable)
-        - vag
-        - bmw
-        - mercedes
-        - stellantis
-        - ford
-        - toyota
-        - other (mention in description)
   - type: input
     id: title_en
     attributes:

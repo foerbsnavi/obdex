@@ -5,7 +5,6 @@
   name:
     en: Vehicle Identification Number (VIN)
     de: Fahrzeug-Identifizierungsnummer (FIN)
-  scope: generic
 
 - pid: "04"
   mode: "09"
@@ -14,7 +13,6 @@
   name:
     en: Calibration ID
     de: Kalibrierungs-ID
-  scope: generic
 
 - pid: "06"
   mode: "09"
@@ -23,7 +21,6 @@
   name:
     en: Calibration Verification Number (CVN)
     de: Kalibrierungs-Prüfnummer
-  scope: generic
 
 - pid: "0A"
   mode: "09"
@@ -32,4 +29,3 @@
   name:
     en: ECU name
     de: Steuergerätbezeichnung
-  scope: generic

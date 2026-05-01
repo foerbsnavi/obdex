@@ -1,5 +1,4 @@
 - code: P3410
-  scope: generic
   category: powertrain
   title:
     en: Cylinder Deactivation System Bank 2
@@ -43,7 +42,6 @@
     - https://en.wikipedia.org/wiki/Cylinder_deactivation
 
 - code: P3414
-  scope: generic
   category: powertrain
   title:
     en: Cylinder 2 Exhaust Valve Control Circuit/Open
@@ -81,7 +79,6 @@
     - https://en.wikipedia.org/wiki/Cylinder_deactivation
 
 - code: P3415
-  scope: generic
   category: powertrain
   title:
     en: Cylinder 2 Exhaust Valve Control Circuit Low
@@ -119,7 +116,6 @@
     - https://en.wikipedia.org/wiki/Cylinder_deactivation
 
 - code: P3416
-  scope: generic
   category: powertrain
   title:
     en: Cylinder 2 Exhaust Valve Control Circuit High
@@ -157,7 +153,6 @@
     - https://en.wikipedia.org/wiki/Cylinder_deactivation
 
 - code: P3417
-  scope: generic
   category: powertrain
   title:
     en: Cylinder 3 Deactivation/Intake Valve Control Circuit/Open
@@ -195,7 +190,6 @@
     - https://en.wikipedia.org/wiki/Cylinder_deactivation
 
 - code: P3418
-  scope: generic
   category: powertrain
   title:
     en: Cylinder 3 Deactivation/Intake Valve Control Performance
@@ -238,7 +232,6 @@
     - https://en.wikipedia.org/wiki/Cylinder_deactivation
 
 - code: P3419
-  scope: generic
   category: powertrain
   title:
     en: Cylinder 3 Deactivation/Intake Valve Control Circuit Low
@@ -276,7 +269,6 @@
     - https://en.wikipedia.org/wiki/Cylinder_deactivation
 
 - code: P3420
-  scope: generic
   category: powertrain
   title:
     en: Cylinder 3 Deactivation/Intake Valve Control Circuit High
@@ -314,7 +306,6 @@
     - https://en.wikipedia.org/wiki/Cylinder_deactivation
 
 - code: P3421
-  scope: generic
   category: powertrain
   title:
     en: Cylinder 3 Exhaust Valve Control Circuit/Open
@@ -352,7 +343,6 @@
     - https://en.wikipedia.org/wiki/Cylinder_deactivation
 
 - code: P3422
-  scope: generic
   category: powertrain
   title:
     en: Cylinder 3 Exhaust Valve Control Performance
@@ -390,7 +380,6 @@
     - https://en.wikipedia.org/wiki/Cylinder_deactivation
 
 - code: P3423
-  scope: generic
   category: powertrain
   title:
     en: Cylinder 3 Exhaust Valve Control Circuit Low
@@ -428,7 +417,6 @@
     - https://en.wikipedia.org/wiki/Cylinder_deactivation
 
 - code: P3424
-  scope: generic
   category: powertrain
   title:
     en: Cylinder 3 Exhaust Valve Control Circuit High
@@ -466,7 +454,6 @@
     - https://en.wikipedia.org/wiki/Cylinder_deactivation
 
 - code: P3426
-  scope: generic
   category: powertrain
   title:
     en: Cylinder 4 Deactivation/Intake Valve Control Performance
@@ -504,7 +491,6 @@
     - https://en.wikipedia.org/wiki/Cylinder_deactivation
 
 - code: P3427
-  scope: generic
   category: powertrain
   title:
     en: Cylinder 4 Deactivation/Intake Valve Control Circuit Low
@@ -542,7 +528,6 @@
     - https://en.wikipedia.org/wiki/Cylinder_deactivation
 
 - code: P3428
-  scope: generic
   category: powertrain
   title:
     en: Cylinder 4 Deactivation/Intake Valve Control Circuit High
@@ -580,7 +565,6 @@
     - https://en.wikipedia.org/wiki/Cylinder_deactivation
 
 - code: P3429
-  scope: generic
   category: powertrain
   title:
     en: Cylinder 4 Exhaust Valve Control Circuit/Open
@@ -618,7 +602,6 @@
     - https://en.wikipedia.org/wiki/Cylinder_deactivation
 
 - code: P3430
-  scope: generic
   category: powertrain
   title:
     en: Cylinder 4 Exhaust Valve Control Performance
@@ -656,7 +639,6 @@
     - https://en.wikipedia.org/wiki/Cylinder_deactivation
 
 - code: P3431
-  scope: generic
   category: powertrain
   title:
     en: Cylinder 4 Exhaust Valve Control Circuit Low
@@ -694,7 +676,6 @@
     - https://en.wikipedia.org/wiki/Cylinder_deactivation
 
 - code: P3432
-  scope: generic
   category: powertrain
   title:
     en: Cylinder 4 Exhaust Valve Control Circuit High
@@ -732,7 +713,6 @@
     - https://en.wikipedia.org/wiki/Cylinder_deactivation
 
 - code: P3436
-  scope: generic
   category: powertrain
   title:
     en: Cylinder 5 Exhaust Valve Control Circuit/Open
@@ -770,7 +750,6 @@
     - https://en.wikipedia.org/wiki/Cylinder_deactivation
 
 - code: P3437
-  scope: generic
   category: powertrain
   title:
     en: Cylinder 5 Exhaust Valve Control Performance
@@ -808,7 +787,6 @@
     - https://en.wikipedia.org/wiki/Cylinder_deactivation
 
 - code: P3438
-  scope: generic
   category: powertrain
   title:
     en: Cylinder 5 Exhaust Valve Control Circuit Low
@@ -846,7 +824,6 @@
     - https://en.wikipedia.org/wiki/Cylinder_deactivation
 
 - code: P3439
-  scope: generic
   category: powertrain
   title:
     en: Cylinder 5 Exhaust Valve Control Circuit High
@@ -884,7 +861,6 @@
     - https://en.wikipedia.org/wiki/Cylinder_deactivation
 
 - code: P3440
-  scope: generic
   category: powertrain
   title:
     en: Cylinder 6 Deactivation/Intake Valve Control Circuit/Open
@@ -922,7 +898,6 @@
     - https://en.wikipedia.org/wiki/Cylinder_deactivation
 
 - code: P3442
-  scope: generic
   category: powertrain
   title:
     en: Cylinder 6 Deactivation/Intake Valve Control Circuit Low
@@ -960,7 +935,6 @@
     - https://en.wikipedia.org/wiki/Cylinder_deactivation
 
 - code: P3443
-  scope: generic
   category: powertrain
   title:
     en: Cylinder 6 Deactivation/Intake Valve Control Circuit High
@@ -998,7 +972,6 @@
     - https://en.wikipedia.org/wiki/Cylinder_deactivation
 
 - code: P3444
-  scope: generic
   category: powertrain
   title:
     en: Cylinder 6 Exhaust Valve Control Circuit/Open
@@ -1036,7 +1009,6 @@
     - https://en.wikipedia.org/wiki/Cylinder_deactivation
 
 - code: P3445
-  scope: generic
   category: powertrain
   title:
     en: Cylinder 6 Exhaust Valve Control Performance
@@ -1074,7 +1046,6 @@
     - https://en.wikipedia.org/wiki/Cylinder_deactivation
 
 - code: P3446
-  scope: generic
   category: powertrain
   title:
     en: Cylinder 6 Exhaust Valve Control Circuit Low
@@ -1112,7 +1083,6 @@
     - https://en.wikipedia.org/wiki/Cylinder_deactivation
 
 - code: P3447
-  scope: generic
   category: powertrain
   title:
     en: Cylinder 6 Exhaust Valve Control Circuit High
@@ -1150,7 +1120,6 @@
     - https://en.wikipedia.org/wiki/Cylinder_deactivation
 
 - code: P3448
-  scope: generic
   category: powertrain
   title:
     en: Cylinder 7 Deactivation/Intake Valve Control Circuit/Open
@@ -1188,7 +1157,6 @@
     - https://en.wikipedia.org/wiki/Cylinder_deactivation
 
 - code: P3450
-  scope: generic
   category: powertrain
   title:
     en: Cylinder 7 Deactivation/Intake Valve Control Circuit Low
@@ -1226,7 +1194,6 @@
     - https://en.wikipedia.org/wiki/Cylinder_deactivation
 
 - code: P3451
-  scope: generic
   category: powertrain
   title:
     en: Cylinder 7 Deactivation/Intake Valve Control Circuit High
@@ -1264,7 +1231,6 @@
     - https://en.wikipedia.org/wiki/Cylinder_deactivation
 
 - code: P3452
-  scope: generic
   category: powertrain
   title:
     en: Cylinder 7 Exhaust Valve Control Circuit/Open
@@ -1302,7 +1268,6 @@
     - https://en.wikipedia.org/wiki/Cylinder_deactivation
 
 - code: P3456
-  scope: generic
   category: powertrain
   title:
     en: Cylinder 8 Deactivation/Intake Valve Control Circuit/Open
@@ -1340,7 +1305,6 @@
     - https://en.wikipedia.org/wiki/Cylinder_deactivation
 
 - code: P3458
-  scope: generic
   category: powertrain
   title:
     en: Cylinder 8 Deactivation/Intake Valve Control Circuit Low
@@ -1378,7 +1342,6 @@
     - https://en.wikipedia.org/wiki/Cylinder_deactivation
 
 - code: P3459
-  scope: generic
   category: powertrain
   title:
     en: Cylinder 8 Deactivation/Intake Valve Control Circuit High
@@ -1416,7 +1379,6 @@
     - https://en.wikipedia.org/wiki/Cylinder_deactivation
 
 - code: P3460
-  scope: generic
   category: powertrain
   title:
     en: Cylinder 8 Exhaust Valve Control Circuit/Open
@@ -1454,7 +1416,6 @@
     - https://en.wikipedia.org/wiki/Cylinder_deactivation
 
 - code: P3461
-  scope: generic
   category: powertrain
   title:
     en: Cylinder 8 Exhaust Valve Control Performance
@@ -1492,7 +1453,6 @@
     - https://en.wikipedia.org/wiki/Cylinder_deactivation
 
 - code: P3462
-  scope: generic
   category: powertrain
   title:
     en: Cylinder 8 Exhaust Valve Control Circuit Low
@@ -1530,7 +1490,6 @@
     - https://en.wikipedia.org/wiki/Cylinder_deactivation
 
 - code: P3463
-  scope: generic
   category: powertrain
   title:
     en: Cylinder 8 Exhaust Valve Control Circuit High

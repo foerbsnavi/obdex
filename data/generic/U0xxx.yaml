@@ -1,5 +1,4 @@
 - code: U0073
-  scope: generic
   category: network
   title:
     en: Control Module Communication Bus "A" Off
@@ -43,7 +42,6 @@
     - https://en.wikipedia.org/wiki/CAN_bus
 
 - code: U0100
-  scope: generic
   category: network
   title:
     en: Lost Communication with ECM/PCM "A"
@@ -85,7 +83,6 @@
     - https://en.wikipedia.org/wiki/CAN_bus
 
 - code: U0101
-  scope: generic
   category: network
   title:
     en: Lost Communication with TCM
@@ -122,7 +119,6 @@
     - https://en.wikipedia.org/wiki/CAN_bus
 
 - code: U0121
-  scope: generic
   category: network
   title:
     en: Lost Communication with ABS Control Module
@@ -163,7 +159,6 @@
     - https://en.wikipedia.org/wiki/Anti-lock_braking_system
 
 - code: U0140
-  scope: generic
   category: network
   title:
     en: Lost Communication with Body Control Module
@@ -199,7 +194,6 @@
     - https://en.wikipedia.org/wiki/Body_control_module
 
 - code: U0155
-  scope: generic
   category: network
   title:
     en: Lost Communication with Instrument Panel Cluster
@@ -235,7 +229,6 @@
     - https://en.wikipedia.org/wiki/Instrument_cluster
 
 - code: U0001
-  scope: generic
   category: network
   title:
     en: High Speed CAN Communication Bus
@@ -279,7 +272,6 @@
     - https://en.wikipedia.org/wiki/CAN_bus
 
 - code: U0002
-  scope: generic
   category: network
   title:
     en: High Speed CAN Communication Bus Performance
@@ -321,7 +313,6 @@
     - https://en.wikipedia.org/wiki/CAN_bus
 
 - code: U0010
-  scope: generic
   category: network
   title:
     en: Medium Speed CAN Communication Bus
@@ -358,7 +349,6 @@
     - https://en.wikipedia.org/wiki/CAN_bus
 
 - code: U0011
-  scope: generic
   category: network
   title:
     en: Medium Speed CAN Communication Bus Performance
@@ -395,7 +385,6 @@
     - https://en.wikipedia.org/wiki/CAN_bus
 
 - code: U0074
-  scope: generic
   category: network
   title:
     en: Control Module Communication Bus "B" Off
@@ -434,7 +423,6 @@
     - https://en.wikipedia.org/wiki/CAN_bus
 
 - code: U0075
-  scope: generic
   category: network
   title:
     en: Control Module Communication Bus "B" Performance
@@ -471,7 +459,6 @@
     - https://en.wikipedia.org/wiki/CAN_bus
 
 - code: U0076
-  scope: generic
   category: network
   title:
     en: Control Module Communication Bus "C" Off
@@ -509,7 +496,6 @@
     - https://en.wikipedia.org/wiki/CAN_bus
 
 - code: U0102
-  scope: generic
   category: network
   title:
     en: Lost Communication with Transfer Case Control Module
@@ -546,7 +532,6 @@
     - https://en.wikipedia.org/wiki/CAN_bus
 
 - code: U0103
-  scope: generic
   category: network
   title:
     en: Lost Communication with Gear Shift Module
@@ -583,7 +568,6 @@
     - https://en.wikipedia.org/wiki/CAN_bus
 
 - code: U0104
-  scope: generic
   category: network
   title:
     en: Lost Communication with Cruise Control Module
@@ -619,7 +603,6 @@
     - https://en.wikipedia.org/wiki/CAN_bus
 
 - code: U0105
-  scope: generic
   category: network
   title:
     en: Lost Communication with Fuel Injector Control Module
@@ -656,7 +639,6 @@
     - https://en.wikipedia.org/wiki/Engine_control_unit
 
 - code: U0107
-  scope: generic
   category: network
   title:
     en: Lost Communication with Throttle Actuator Control Module
@@ -693,7 +675,6 @@
     - https://en.wikipedia.org/wiki/Engine_control_unit
 
 - code: U0109
-  scope: generic
   category: network
   title:
     en: Lost Communication with Fuel Pump Control Module
@@ -730,7 +711,6 @@
     - https://en.wikipedia.org/wiki/Engine_control_unit
 
 - code: U0110
-  scope: generic
   category: network
   title:
     en: Lost Communication with Drive Motor Control Module
@@ -767,7 +747,6 @@
     - https://en.wikipedia.org/wiki/CAN_bus
 
 - code: U0111
-  scope: generic
   category: network
   title:
     en: Lost Communication with Battery Energy Control Module
@@ -804,7 +783,6 @@
     - https://en.wikipedia.org/wiki/CAN_bus
 
 - code: U0114
-  scope: generic
   category: network
   title:
     en: Lost Communication with 4WD Clutch Control Module
@@ -840,7 +818,6 @@
     - https://en.wikipedia.org/wiki/CAN_bus
 
 - code: U0125
-  scope: generic
   category: network
   title:
     en: Lost Communication with Multi-axis Acceleration Sensor
@@ -876,7 +853,6 @@
     - https://en.wikipedia.org/wiki/Anti-lock_braking_system
 
 - code: U0126
-  scope: generic
   category: network
   title:
     en: Lost Communication with Steering Angle Sensor Module
@@ -912,7 +888,6 @@
     - https://en.wikipedia.org/wiki/Anti-lock_braking_system
 
 - code: U0128
-  scope: generic
   category: network
   title:
     en: Lost Communication with Park Brake Control Module
@@ -948,7 +923,6 @@
     - https://en.wikipedia.org/wiki/Anti-lock_braking_system
 
 - code: U0129
-  scope: generic
   category: network
   title:
     en: Lost Communication with Brake System Control Module
@@ -985,7 +959,6 @@
     - https://en.wikipedia.org/wiki/Anti-lock_braking_system
 
 - code: U0131
-  scope: generic
   category: network
   title:
     en: Lost Communication with Power Steering Control Module
@@ -1021,7 +994,6 @@
     - https://en.wikipedia.org/wiki/CAN_bus
 
 - code: U0151
-  scope: generic
   category: network
   title:
     en: Lost Communication with Restraints Control Module
@@ -1057,7 +1029,6 @@
     - https://en.wikipedia.org/wiki/CAN_bus
 
 - code: U0152
-  scope: generic
   category: network
   title:
     en: Lost Communication with Side Restraints Control Module Left
@@ -1093,7 +1064,6 @@
     - https://en.wikipedia.org/wiki/CAN_bus
 
 - code: U0154
-  scope: generic
   category: network
   title:
     en: Lost Communication with Restraints Occupant Sensing Module
@@ -1129,7 +1099,6 @@
     - https://en.wikipedia.org/wiki/CAN_bus
 
 - code: U0156
-  scope: generic
   category: network
   title:
     en: Lost Communication with Information Center "A"
@@ -1165,7 +1134,6 @@
     - https://en.wikipedia.org/wiki/CAN_bus
 
 - code: U0159
-  scope: generic
   category: network
   title:
     en: Lost Communication with Parking Assist Module
@@ -1201,7 +1169,6 @@
     - https://en.wikipedia.org/wiki/CAN_bus
 
 - code: U0164
-  scope: generic
   category: network
   title:
     en: Lost Communication with HVAC Control Module
@@ -1237,7 +1204,6 @@
     - https://en.wikipedia.org/wiki/Air_conditioning
 
 - code: U0167
-  scope: generic
   category: network
   title:
     en: Lost Communication with Vehicle Immobiliser Control Module
@@ -1273,7 +1239,6 @@
     - https://en.wikipedia.org/wiki/Body_control_module
 
 - code: U0184
-  scope: generic
   category: network
   title:
     en: Lost Communication with Radio
@@ -1309,7 +1274,6 @@
     - https://en.wikipedia.org/wiki/CAN_bus
 
 - code: U0186
-  scope: generic
   category: network
   title:
     en: Lost Communication with Audio Amplifier
@@ -1345,7 +1309,6 @@
     - https://en.wikipedia.org/wiki/CAN_bus
 
 - code: U0199
-  scope: generic
   category: network
   title:
     en: Lost Communication with Door Control Module
@@ -1381,7 +1344,6 @@
     - https://en.wikipedia.org/wiki/Body_control_module
 
 - code: U0300
-  scope: generic
   category: network
   title:
     en: Internal Control Module Software Incompatibility
@@ -1421,7 +1383,6 @@
     - https://en.wikipedia.org/wiki/CAN_bus
 
 - code: U0401
-  scope: generic
   category: network
   title:
     en: Invalid Data Received from ECM/PCM
@@ -1463,7 +1424,6 @@
     - https://en.wikipedia.org/wiki/Engine_control_unit
 
 - code: U0402
-  scope: generic
   category: network
   title:
     en: Invalid Data Received from TCM
@@ -1505,7 +1465,6 @@
     - https://en.wikipedia.org/wiki/CAN_bus
 
 - code: U0415
-  scope: generic
   category: network
   title:
     en: Invalid Data Received from ABS Control Module
@@ -1547,7 +1506,6 @@
     - https://en.wikipedia.org/wiki/Anti-lock_braking_system
 
 - code: U0106
-  scope: generic
   category: network
   title:
     en: Lost Communication with Glow Plug Control Module
@@ -1584,7 +1542,6 @@
     - https://en.wikipedia.org/wiki/Engine_control_unit
 
 - code: U0113
-  scope: generic
   category: network
   title:
     en: Lost Communication with Battery Charger A Control Module
@@ -1621,7 +1578,6 @@
     - https://en.wikipedia.org/wiki/CAN_bus
 
 - code: U0115
-  scope: generic
   category: network
   title:
     en: Lost Communication with ECM/PCM "B"
@@ -1658,7 +1614,6 @@
     - https://en.wikipedia.org/wiki/Engine_control_unit
 
 - code: U0116
-  scope: generic
   category: network
   title:
     en: Lost Communication with Steering Effort Control Module
@@ -1694,7 +1649,6 @@
     - https://en.wikipedia.org/wiki/Power_steering
 
 - code: U0117
-  scope: generic
   category: network
   title:
     en: Lost Communication with Drive Motor Control Module 2
@@ -1731,7 +1685,6 @@
     - https://en.wikipedia.org/wiki/CAN_bus
 
 - code: U0119
-  scope: generic
   category: network
   title:
     en: Lost Communication with Steering Column Control Module
@@ -1767,7 +1720,6 @@
     - https://en.wikipedia.org/wiki/Power_steering
 
 - code: U0120
-  scope: generic
   category: network
   title:
     en: Lost Communication with Starter/Generator Control Module
@@ -1804,7 +1756,6 @@
     - https://en.wikipedia.org/wiki/Engine_control_unit
 
 - code: U0122
-  scope: generic
   category: network
   title:
     en: Lost Communication with Vehicle Dynamics Control Module
@@ -1840,7 +1791,6 @@
     - https://en.wikipedia.org/wiki/Anti-lock_braking_system
 
 - code: U0123
-  scope: generic
   category: network
   title:
     en: Lost Communication with Yaw Rate Sensor Module
@@ -1876,7 +1826,6 @@
     - https://en.wikipedia.org/wiki/Anti-lock_braking_system
 
 - code: U0124
-  scope: generic
   category: network
   title:
     en: Lost Communication with Lateral Acceleration Sensor Module
@@ -1912,7 +1861,6 @@
     - https://en.wikipedia.org/wiki/Anti-lock_braking_system
 
 - code: U0127
-  scope: generic
   category: network
   title:
     en: Lost Communication with Tire Pressure Monitor Module
@@ -1948,7 +1896,6 @@
     - https://en.wikipedia.org/wiki/Tire-pressure_monitoring_system
 
 - code: U0130
-  scope: generic
   category: network
   title:
     en: Lost Communication with Steering Effort Control Module B
@@ -1984,7 +1931,6 @@
     - https://en.wikipedia.org/wiki/Power_steering
 
 - code: U0132
-  scope: generic
   category: network
   title:
     en: Lost Communication with Ride Level Control Module
@@ -2020,7 +1966,6 @@
     - https://en.wikipedia.org/wiki/CAN_bus
 
 - code: U0136
-  scope: generic
   category: network
   title:
     en: Lost Communication with Park Brake Module B
@@ -2056,7 +2001,6 @@
     - https://en.wikipedia.org/wiki/Anti-lock_braking_system
 
 - code: U0142
-  scope: generic
   category: network
   title:
     en: Lost Communication with Body Control Module B
@@ -2092,7 +2036,6 @@
     - https://en.wikipedia.org/wiki/Body_control_module
 
 - code: U0146
-  scope: generic
   category: network
   title:
     en: Lost Communication with Gateway "A"
@@ -2129,7 +2072,6 @@
     - https://en.wikipedia.org/wiki/CAN_bus
 
 - code: U0147
-  scope: generic
   category: network
   title:
     en: Lost Communication with Gateway "B"
@@ -2166,7 +2108,6 @@
     - https://en.wikipedia.org/wiki/CAN_bus
 
 - code: U0150
-  scope: generic
   category: network
   title:
     en: Lost Communication with Side Object Detection Control Module Left
@@ -2202,7 +2143,6 @@
     - https://en.wikipedia.org/wiki/CAN_bus
 
 - code: U0153
-  scope: generic
   category: network
   title:
     en: Lost Communication with Restraints Control Module B
@@ -2238,7 +2178,6 @@
     - https://en.wikipedia.org/wiki/CAN_bus
 
 - code: U0157
-  scope: generic
   category: network
   title:
     en: Lost Communication with Personalization Control Module
@@ -2274,7 +2213,6 @@
     - https://en.wikipedia.org/wiki/Body_control_module
 
 - code: U0158
-  scope: generic
   category: network
   title:
     en: Lost Communication with Head Up Display
@@ -2310,7 +2248,6 @@
     - https://en.wikipedia.org/wiki/Heads-up_display
 
 - code: U0160
-  scope: generic
   category: network
   title:
     en: Lost Communication with Audible Alert Control Module
@@ -2346,7 +2283,6 @@
     - https://en.wikipedia.org/wiki/Body_control_module
 
 - code: U0161
-  scope: generic
   category: network
   title:
     en: Lost Communication with Compass Module
@@ -2382,7 +2318,6 @@
     - https://en.wikipedia.org/wiki/Automotive_navigation_system
 
 - code: U0162
-  scope: generic
   category: network
   title:
     en: Lost Communication with Navigation Display Module
@@ -2418,7 +2353,6 @@
     - https://en.wikipedia.org/wiki/Automotive_navigation_system
 
 - code: U0163
-  scope: generic
   category: network
   title:
     en: Lost Communication with Navigation Control Module
@@ -2454,7 +2388,6 @@
     - https://en.wikipedia.org/wiki/Automotive_navigation_system
 
 - code: U0165
-  scope: generic
   category: network
   title:
     en: Lost Communication with Auxiliary HVAC Control Module
@@ -2490,7 +2423,6 @@
     - https://en.wikipedia.org/wiki/Air_conditioning
 
 - code: U0173
-  scope: generic
   category: network
   title:
     en: Communication Bus "C" Off
@@ -2528,7 +2460,6 @@
     - https://en.wikipedia.org/wiki/CAN_bus
 
 - code: U0301
-  scope: generic
   category: network
   title:
     en: Software Incompatibility with ECM/PCM
@@ -2564,7 +2495,6 @@
     - https://en.wikipedia.org/wiki/Engine_control_unit
 
 - code: U0302
-  scope: generic
   category: network
   title:
     en: Software Incompatibility with TCM
@@ -2600,7 +2530,6 @@
     - https://en.wikipedia.org/wiki/CAN_bus
 
 - code: U0303
-  scope: generic
   category: network
   title:
     en: Software Incompatibility with Transfer Case Control Module
@@ -2636,7 +2565,6 @@
     - https://en.wikipedia.org/wiki/CAN_bus
 
 - code: U0305
-  scope: generic
   category: network
   title:
     en: Software Incompatibility with Cruise Control Module
@@ -2672,7 +2600,6 @@
     - https://en.wikipedia.org/wiki/CAN_bus
 
 - code: U0315
-  scope: generic
   category: network
   title:
     en: Software Incompatibility with ABS Control Module
@@ -2708,7 +2635,6 @@
     - https://en.wikipedia.org/wiki/Anti-lock_braking_system
 
 - code: U0403
-  scope: generic
   category: network
   title:
     en: Invalid Data Received from Transfer Case Control Module
@@ -2744,7 +2670,6 @@
     - https://en.wikipedia.org/wiki/CAN_bus
 
 - code: U0404
-  scope: generic
   category: network
   title:
     en: Invalid Data Received from Gear Shift Control Module
@@ -2781,7 +2706,6 @@
     - https://en.wikipedia.org/wiki/CAN_bus
 
 - code: U0405
-  scope: generic
   category: network
   title:
     en: Invalid Data Received from Cruise Control Module
@@ -2817,7 +2741,6 @@
     - https://en.wikipedia.org/wiki/CAN_bus
 
 - code: U0414
-  scope: generic
   category: network
   title:
     en: Invalid Data Received from 4WD Clutch Control Module
@@ -2853,7 +2776,6 @@
     - https://en.wikipedia.org/wiki/CAN_bus
 
 - code: U0416
-  scope: generic
   category: network
   title:
     en: Invalid Data Received from Vehicle Dynamics Control Module
@@ -2889,7 +2811,6 @@
     - https://en.wikipedia.org/wiki/Anti-lock_braking_system
 
 - code: U0418
-  scope: generic
   category: network
   title:
     en: Invalid Data Received from Brake System Control Module
@@ -2926,7 +2847,6 @@
     - https://en.wikipedia.org/wiki/Anti-lock_braking_system
 
 - code: U0420
-  scope: generic
   category: network
   title:
     en: Invalid Data Received from Power Steering Control Module
@@ -2962,7 +2882,6 @@
     - https://en.wikipedia.org/wiki/Power_steering
 
 - code: U0422
-  scope: generic
   category: network
   title:
     en: Invalid Data Received from Body Control Module
@@ -2998,7 +2917,6 @@
     - https://en.wikipedia.org/wiki/Body_control_module
 
 - code: U0423
-  scope: generic
   category: network
   title:
     en: Invalid Data Received from Information Center
@@ -3034,7 +2952,6 @@
     - https://en.wikipedia.org/wiki/CAN_bus
 
 - code: U0424
-  scope: generic
   category: network
   title:
     en: Invalid Data Received from HVAC Control Module
@@ -3070,7 +2987,6 @@
     - https://en.wikipedia.org/wiki/Air_conditioning
 
 - code: U0426
-  scope: generic
   category: network
   title:
     en: Invalid Data Received from Vehicle Immobiliser Control Module
@@ -3106,7 +3022,6 @@
     - https://en.wikipedia.org/wiki/Body_control_module
 
 - code: U0030
-  scope: generic
   category: network
   title:
     en: Powertrain Sensor Data Bus
@@ -3143,7 +3058,6 @@
     - https://en.wikipedia.org/wiki/CAN_bus
 
 - code: U0040
-  scope: generic
   category: network
   title:
     en: Communication Bus Off
@@ -3181,7 +3095,6 @@
     - https://en.wikipedia.org/wiki/CAN_bus
 
 - code: U0070
-  scope: generic
   category: network
   title:
     en: Communication Bus "B" Performance
@@ -3217,7 +3130,6 @@
     - https://en.wikipedia.org/wiki/CAN_bus
 
 - code: U0091
-  scope: generic
   category: network
   title:
     en: CAN Communication Bus "C" Off
@@ -3255,7 +3167,6 @@
     - https://en.wikipedia.org/wiki/CAN_bus
 
 - code: U0092
-  scope: generic
   category: network
   title:
     en: CAN Communication Bus "C" Performance
@@ -3290,7 +3201,6 @@
     - https://en.wikipedia.org/wiki/CAN_bus
 
 - code: U0112
-  scope: generic
   category: network
   title:
     en: Lost Communication with Battery Energy Control Module "B"
@@ -3327,7 +3237,6 @@
     - https://en.wikipedia.org/wiki/CAN_bus
 
 - code: U0118
-  scope: generic
   category: network
   title:
     en: Lost Communication with Cabin Air Quality Sensor Module
@@ -3363,7 +3272,6 @@
     - https://en.wikipedia.org/wiki/Air_conditioning
 
 - code: U0144
-  scope: generic
   category: network
   title:
     en: Lost Communication with Personalization Module "B"
@@ -3399,7 +3307,6 @@
     - https://en.wikipedia.org/wiki/Body_control_module
 
 - code: U0148
-  scope: generic
   category: network
   title:
     en: Lost Communication with Body Control Module "C"
@@ -3435,7 +3342,6 @@
     - https://en.wikipedia.org/wiki/Body_control_module
 
 - code: U0149
-  scope: generic
   category: network
   title:
     en: Lost Communication with Door Driver Module
@@ -3471,7 +3377,6 @@
     - https://en.wikipedia.org/wiki/Power_window
 
 - code: U0166
-  scope: generic
   category: network
   title:
     en: Lost Communication with Auxiliary Heater Control Module
@@ -3507,7 +3412,6 @@
     - https://en.wikipedia.org/wiki/Air_conditioning
 
 - code: U0169
-  scope: generic
   category: network
   title:
     en: Lost Communication with Sun Roof Control Module
@@ -3543,7 +3447,6 @@
     - https://en.wikipedia.org/wiki/Body_control_module
 
 - code: U0170
-  scope: generic
   category: network
   title:
     en: Lost Communication with Restraints Front Sensor "B"
@@ -3579,7 +3482,6 @@
     - https://en.wikipedia.org/wiki/CAN_bus
 
 - code: U0171
-  scope: generic
   category: network
   title:
     en: Lost Communication with Restraints Rear Sensor "A"
@@ -3615,7 +3517,6 @@
     - https://en.wikipedia.org/wiki/CAN_bus
 
 - code: U0172
-  scope: generic
   category: network
   title:
     en: Lost Communication with Restraints Rear Sensor "B"
@@ -3651,7 +3552,6 @@
     - https://en.wikipedia.org/wiki/CAN_bus
 
 - code: U0177
-  scope: generic
   category: network
   title:
     en: Lost Communication with Mirror Memory Module
@@ -3687,7 +3587,6 @@
     - https://en.wikipedia.org/wiki/Power_seat
 
 - code: U0179
-  scope: generic
   category: network
   title:
     en: Lost Communication with Power Liftgate Control Module
@@ -3723,7 +3622,6 @@
     - https://en.wikipedia.org/wiki/Body_control_module
 
 - code: U0180
-  scope: generic
   category: network
   title:
     en: Lost Communication with Automatic Lighting Control Module
@@ -3759,7 +3657,6 @@
     - https://en.wikipedia.org/wiki/Body_control_module
 
 - code: U0181
-  scope: generic
   category: network
   title:
     en: Lost Communication with Auto Park Brake Module
@@ -3795,7 +3692,6 @@
     - https://en.wikipedia.org/wiki/Anti-lock_braking_system
 
 - code: U0187
-  scope: generic
   category: network
   title:
     en: Lost Communication with Disc Player Module
@@ -3831,7 +3727,6 @@
     - https://en.wikipedia.org/wiki/CAN_bus
 
 - code: U0188
-  scope: generic
   category: network
   title:
     en: Lost Communication with Audio Rear Control Module
@@ -3867,7 +3762,6 @@
     - https://en.wikipedia.org/wiki/CAN_bus
 
 - code: U0190
-  scope: generic
   category: network
   title:
     en: Lost Communication with Subwoofer Amplifier Module
@@ -3903,7 +3797,6 @@
     - https://en.wikipedia.org/wiki/CAN_bus
 
 - code: U0191
-  scope: generic
   category: network
   title:
     en: Lost Communication with Television Tuner Module
@@ -3939,7 +3832,6 @@
     - https://en.wikipedia.org/wiki/CAN_bus
 
 - code: U0193
-  scope: generic
   category: network
   title:
     en: Lost Communication with Mobile Phone Module
@@ -3975,7 +3867,6 @@
     - https://en.wikipedia.org/wiki/CAN_bus
 
 - code: U0195
-  scope: generic
   category: network
   title:
     en: Lost Communication with Satellite Radio Receiver Module
@@ -4011,7 +3902,6 @@
     - https://en.wikipedia.org/wiki/CAN_bus
 
 - code: U0196
-  scope: generic
   category: network
   title:
     en: Lost Communication with Rear Seat Entertainment Control Module
@@ -4047,7 +3937,6 @@
     - https://en.wikipedia.org/wiki/CAN_bus
 
 - code: U0316
-  scope: generic
   category: network
   title:
     en: Software Incompatibility with Park Brake Control Module
@@ -4083,7 +3972,6 @@
     - https://en.wikipedia.org/wiki/Anti-lock_braking_system
 
 - code: U0317
-  scope: generic
   category: network
   title:
     en: Software Incompatibility with Brake System Control Module
@@ -4119,7 +4007,6 @@
     - https://en.wikipedia.org/wiki/Anti-lock_braking_system
 
 - code: U0318
-  scope: generic
   category: network
   title:
     en: Software Incompatibility with Power Steering Control Module
@@ -4155,7 +4042,6 @@
     - https://en.wikipedia.org/wiki/Power_steering
 
 - code: U0327
-  scope: generic
   category: network
   title:
     en: Software Incompatibility with Powertrain Control Module
@@ -4192,7 +4078,6 @@
     - https://en.wikipedia.org/wiki/Engine_control_unit
 
 - code: U0419
-  scope: generic
   category: network
   title:
     en: Invalid Data Received from Brake System Control Module
@@ -4228,7 +4113,6 @@
     - https://en.wikipedia.org/wiki/Anti-lock_braking_system
 
 - code: U0428
-  scope: generic
   category: network
   title:
     en: Invalid Data Received from Steering Angle Sensor Module
@@ -4264,7 +4148,6 @@
     - https://en.wikipedia.org/wiki/Power_steering
 
 - code: U0429
-  scope: generic
   category: network
   title:
     en: Invalid Data Received from Steering Wheel Angle Sensor
@@ -4300,7 +4183,6 @@
     - https://en.wikipedia.org/wiki/Power_steering
 
 - code: U0430
-  scope: generic
   category: network
   title:
     en: Invalid Data Received from Tire Pressure Monitoring Sensor
@@ -4336,7 +4218,6 @@
     - https://en.wikipedia.org/wiki/Tire-pressure_monitoring_system
 
 - code: U0438
-  scope: generic
   category: network
   title:
     en: Invalid Data Received from Park Brake Control Module
@@ -4372,7 +4253,6 @@
     - https://en.wikipedia.org/wiki/Anti-lock_braking_system
 
 - code: U0440
-  scope: generic
   category: network
   title:
     en: Invalid Data Received from Drive Motor Control Module
@@ -4409,7 +4289,6 @@
     - https://en.wikipedia.org/wiki/CAN_bus
 
 - code: U0476
-  scope: generic
   category: network
   title:
     en: Invalid Data Received from Driver Assistance System
@@ -4445,7 +4324,6 @@
     - https://en.wikipedia.org/wiki/Automotive_navigation_system
 
 - code: U0500
-  scope: generic
   category: network
   title:
     en: Invalid Data Received from Communication Module
@@ -4481,7 +4359,6 @@
     - https://en.wikipedia.org/wiki/CAN_bus
 
 - code: U0600
-  scope: generic
   category: network
   title:
     en: Internal Control Module Memory Reset
@@ -4516,7 +4393,6 @@
     - https://en.wikipedia.org/wiki/CAN_bus
 
 - code: U0601
-  scope: generic
   category: network
   title:
     en: Internal Control Module Software Incompatibility
