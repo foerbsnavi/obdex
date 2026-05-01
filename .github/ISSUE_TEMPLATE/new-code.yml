@@ -1,0 +1,73 @@
+name: New code
+description: Propose a new DTC entry
+title: "[code] CODE — short title"
+labels: [new-code]
+body:
+  - type: input
+    id: code
+    attributes:
+      label: Code
+      placeholder: P0420
+      description: Uppercase identifier, e.g. P0420 or P1136.
+    validations:
+      required: true
+  - type: dropdown
+    id: scope
+    attributes:
+      label: Scope
+      options:
+        - generic
+        - manufacturer
+    validations:
+      required: true
+  - type: dropdown
+    id: manufacturer
+    attributes:
+      label: Manufacturer (only if scope = manufacturer)
+      options:
+        - (not applicable)
+        - vag
+        - bmw
+        - mercedes
+        - stellantis
+        - ford
+        - toyota
+        - other (mention in description)
+  - type: input
+    id: title_en
+    attributes:
+      label: Title (English)
+    validations:
+      required: true
+  - type: input
+    id: title_de
+    attributes:
+      label: Title (German, optional)
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: What does this code mean technically? Write your own words — do not paste manual text.
+  - type: textarea
+    id: causes
+    attributes:
+      label: Common causes
+      description: One per line, with rough likelihood (high/medium/low).
+      placeholder: |
+        high — MAF sensor contaminated
+        medium — Vacuum leak
+        low — Fuel pump weak
+  - type: textarea
+    id: sources
+    attributes:
+      label: Sources
+      description: At least one URL or document reference. Forum posts only as supplement, never sole source.
+    validations:
+      required: true
+  - type: checkboxes
+    id: license
+    attributes:
+      label: License
+      options:
+        - label: I agree to dedicate this contribution to the public domain under CC0-1.0.
+          required: true

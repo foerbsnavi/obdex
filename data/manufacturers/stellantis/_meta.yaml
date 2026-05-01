@@ -1,0 +1,9 @@
+manufacturer:
+  id: stellantis
+  name: Stellantis
+  brands: [fiat, peugeot, citroen, opel, jeep, chrysler, alfa-romeo, lancia, ds]
+  iso_3779_wmi: [VF7, VF3, ZFA, W0L, 1C4, ZAR]
+  notes: |
+    Stellantis brands historically used different code conventions
+    (PSA vs FCA). Newer platforms converge but legacy codes remain
+    brand-specific. Mark applies_to.models when in doubt.

@@ -1,0 +1,9 @@
+manufacturer:
+  id: vag
+  name: Volkswagen Audi Group
+  brands: [vw, audi, skoda, seat, cupra]
+  iso_3779_wmi: [WVW, WAU, TMB, VSS, VSE]
+  notes: |
+    VAG diagnostic codes are largely shared across brands within the group
+    for engines and transmissions of the same generation. Body and comfort
+    codes are more brand- and platform-specific.

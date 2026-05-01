@@ -1,0 +1,138 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/foerbsnavi/obdex/main/schema/code.schema.json",
+  "title": "OBD-II Diagnostic Trouble Code",
+  "type": "object",
+  "required": ["code", "scope", "category", "title", "sources"],
+  "additionalProperties": false,
+  "properties": {
+    "code": {
+      "type": "string",
+      "pattern": "^[PBCU][0-3][0-9A-F]{3}$",
+      "description": "DTC identifier, uppercase, e.g. P0420"
+    },
+    "category": {
+      "enum": ["powertrain", "body", "chassis", "network"]
+    },
+    "scope": {
+      "enum": ["generic", "manufacturer"]
+    },
+    "manufacturer": {
+      "type": "string",
+      "pattern": "^[a-z][a-z0-9_-]+$"
+    },
+    "applies_to": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "engines": { "type": "array", "items": { "type": "string" } },
+        "models": { "type": "array", "items": { "type": "string" } },
+        "years": {
+          "type": "array",
+          "items": { "type": "integer", "minimum": 1980, "maximum": 2100 },
+          "minItems": 2,
+          "maxItems": 2
+        }
+      }
+    },
+    "title": {
+      "type": "object",
+      "required": ["en"],
+      "patternProperties": {
+        "^[a-z]{2}$": { "type": "string", "minLength": 3, "maxLength": 200 }
+      },
+      "additionalProperties": false
+    },
+    "description": {
+      "type": "object",
+      "patternProperties": {
+        "^[a-z]{2}$": { "type": "string", "minLength": 10, "maxLength": 2000 }
+      },
+      "additionalProperties": false
+    },
+    "affected_components": {
+      "type": "array",
+      "items": { "type": "string", "pattern": "^[a-z][a-z0-9_]+$" },
+      "uniqueItems": true
+    },
+    "common_causes": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "likelihood", "label"],
+        "additionalProperties": false,
+        "properties": {
+          "id": { "type": "string", "pattern": "^[a-z][a-z0-9_]+$" },
+          "likelihood": { "enum": ["low", "medium", "high"] },
+          "label": {
+            "type": "object",
+            "required": ["en"],
+            "patternProperties": {
+              "^[a-z]{2}$": { "type": "string", "minLength": 3 }
+            },
+            "additionalProperties": false
+          }
+        }
+      }
+    },
+    "repair": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "difficulty": { "enum": ["easy", "medium", "hard", "shop_only"] },
+        "diy_possible": { "type": "boolean" },
+        "estimated_cost_eur": {
+          "type": "array",
+          "items": { "type": "number", "minimum": 0 },
+          "minItems": 2,
+          "maxItems": 2
+        },
+        "estimated_hours": {
+          "type": "array",
+          "items": { "type": "number", "minimum": 0 },
+          "minItems": 2,
+          "maxItems": 2
+        }
+      }
+    },
+    "flags": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "mil": { "type": "boolean" },
+        "emissions_relevant": { "type": "boolean" },
+        "drive_cycle_required": { "type": "boolean" },
+        "limp_mode_possible": { "type": "boolean" }
+      }
+    },
+    "related_generic": {
+      "type": "array",
+      "items": { "type": "string", "pattern": "^[PBCU][0-3][0-9A-F]{3}$" },
+      "uniqueItems": true
+    },
+    "related_codes": {
+      "type": "array",
+      "items": { "type": "string", "pattern": "^[PBCU][0-3][0-9A-F]{3}$" },
+      "uniqueItems": true
+    },
+    "references": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "sources": {
+      "type": "array",
+      "items": { "type": "string" },
+      "minItems": 1
+    }
+  },
+  "allOf": [
+    {
+      "if": { "properties": { "scope": { "const": "manufacturer" } }, "required": ["scope"] },
+      "then": { "required": ["manufacturer"] }
+    },
+    {
+      "if": { "properties": { "scope": { "const": "generic" } }, "required": ["scope"] },
+      "then": { "properties": { "manufacturer": false } }
+    }
+  ]
+}

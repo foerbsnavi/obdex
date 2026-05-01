@@ -1,0 +1,41 @@
+{
+  "name": "obdex",
+  "version": "0.1.0",
+  "description": "Open machine-readable database of OBD-II diagnostic codes and PIDs",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "validate": "node tools/validate.mjs",
+    "duplicates": "node tools/check-duplicates.mjs",
+    "build": "node tools/build.mjs",
+    "check": "npm run validate && npm run duplicates"
+  },
+  "devDependencies": {
+    "ajv": "^8.17.1",
+    "yaml": "^2.6.0"
+  },
+  "license": "SEE LICENSE-CODE AND LICENSE-DATA",
+  "engines": {
+    "node": ">=20"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/foerbsnavi/obdex.git"
+  },
+  "homepage": "https://github.com/foerbsnavi/obdex#readme",
+  "bugs": {
+    "url": "https://github.com/foerbsnavi/obdex/issues"
+  },
+  "keywords": [
+    "obd2",
+    "obd-ii",
+    "dtc",
+    "diagnostic-trouble-codes",
+    "automotive",
+    "diagnostics",
+    "open-data",
+    "cc0",
+    "yaml",
+    "json-schema"
+  ]
+}

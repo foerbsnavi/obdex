@@ -1,0 +1,37 @@
+name: Correction
+description: Report a wrong or imprecise entry
+title: "[fix] CODE — what is wrong"
+labels: [correction]
+body:
+  - type: input
+    id: code
+    attributes:
+      label: Code affected
+      placeholder: P0420
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: What is wrong?
+      description: Be specific — which field, which value, which language.
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed correction
+  - type: textarea
+    id: sources
+    attributes:
+      label: Sources
+      description: Evidence for the correction. URL, document reference, or reproducible diagnostic procedure.
+    validations:
+      required: true
+  - type: checkboxes
+    id: license
+    attributes:
+      label: License
+      options:
+        - label: I agree that any text I provide here is dedicated to the public domain under CC0-1.0.
+          required: true

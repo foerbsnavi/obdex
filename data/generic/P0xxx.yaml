@@ -1,0 +1,47 @@
+- code: P0420
+  category: powertrain
+  scope: generic
+  title:
+    en: Catalyst System Efficiency Below Threshold (Bank 1)
+    de: Katalysatorwirkungsgrad unter Schwellwert (Bank 1)
+  description:
+    en: The oxygen storage capacity of the main catalytic converter on bank 1 has degraded below the OBD threshold. The downstream oxygen sensor signal increasingly mirrors the upstream sensor, indicating reduced conversion efficiency.
+    de: Die Sauerstoffspeicherfähigkeit des Hauptkatalysators auf Bank 1 liegt unter dem OBD-Grenzwert. Das Signal der nachgeschalteten Lambdasonde folgt zunehmend dem der vorgeschalteten Sonde, was auf reduzierte Wirkung hinweist.
+  affected_components:
+    - catalytic_converter
+    - oxygen_sensor_upstream
+    - oxygen_sensor_downstream
+  common_causes:
+    - id: catalyst_aged
+      likelihood: high
+      label:
+        en: Catalyst aged or contaminated
+        de: Katalysator gealtert oder vergiftet
+    - id: o2_sensor_downstream_drift
+      likelihood: medium
+      label:
+        en: Downstream oxygen sensor drift
+        de: Nachgeschaltete Lambdasonde driftet
+    - id: exhaust_leak_pre_cat
+      likelihood: low
+      label:
+        en: Exhaust leak before catalyst
+        de: Abgasleck vor Katalysator
+    - id: engine_misfire_history
+      likelihood: low
+      label:
+        en: Long-term misfire damage
+        de: Langzeitschäden durch Verbrennungsaussetzer
+  repair:
+    difficulty: medium
+    diy_possible: false
+    estimated_cost_eur: [600, 2500]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+    limp_mode_possible: false
+  references:
+    - sae:J2012
+  sources:
+    - https://www.iso.org/standard/52072.html

@@ -1,0 +1,55 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/foerbsnavi/obdex/main/schema/pid.schema.json",
+  "title": "OBD-II Parameter ID",
+  "type": "object",
+  "required": ["pid", "mode", "bytes", "name"],
+  "additionalProperties": false,
+  "properties": {
+    "pid": {
+      "type": "string",
+      "pattern": "^[0-9A-F]{2,4}$"
+    },
+    "mode": {
+      "type": "string",
+      "pattern": "^[0-9A-F]{2}$"
+    },
+    "bytes": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 64
+    },
+    "formula": {
+      "type": "string"
+    },
+    "unit": {
+      "type": "string"
+    },
+    "range": {
+      "type": "array",
+      "items": { "type": "number" },
+      "minItems": 2,
+      "maxItems": 2
+    },
+    "name": {
+      "type": "object",
+      "required": ["en"],
+      "patternProperties": {
+        "^[a-z]{2}$": { "type": "string", "minLength": 2 }
+      },
+      "additionalProperties": false
+    },
+    "scope": {
+      "enum": ["generic", "manufacturer"]
+    },
+    "manufacturer": {
+      "type": "string",
+      "pattern": "^[a-z][a-z0-9_-]+$"
+    },
+    "sources": {
+      "type": "array",
+      "items": { "type": "string" },
+      "minItems": 1
+    }
+  }
+}

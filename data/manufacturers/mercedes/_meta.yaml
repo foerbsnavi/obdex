@@ -1,0 +1,11 @@
+manufacturer:
+  id: mercedes
+  name: Mercedes-Benz Group
+  brands: [mercedes-benz, smart, amg]
+  iso_3779_wmi: [WDD, WDB, WDC, WMX]
+  notes: |
+    Mercedes uses an internal control-unit-specific fault code system in
+    XENTRY/STAR Diagnosis (e.g. P200115). Generic OBD-II codes are also
+    reported but are often a downstream symptom of the control-unit-specific
+    code. When known, link both via related_codes.
+

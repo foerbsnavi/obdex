@@ -1,0 +1,11 @@
+manufacturer:
+  id: toyota
+  name: Toyota Motor Corporation
+  brands: [toyota, lexus, daihatsu]
+  iso_3779_wmi: [JTD, JT2, JT3, JT4, JT6, JT8, JTH]
+  notes: |
+    Toyota and Lexus generally share DTC definitions on common platforms.
+    Hybrid-specific codes (P0Axx, P3xxx) require the Hybrid Vehicle ECU
+    and may not appear via generic OBD-II readers. TechStream is the
+    canonical diagnostic source.
+
