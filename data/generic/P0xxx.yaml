@@ -91,6 +91,43 @@
   sources:
     - https://en.wikipedia.org/wiki/Mass_flow_sensor
 
+- code: P0103
+  scope: generic
+  category: powertrain
+  title:
+    en: Mass or Volume Air Flow Circuit High Input
+    de: Luftmassenmesser Eingangssignal zu hoch
+  description:
+    en: The MAF sensor reports an air flow value above the plausible maximum for current engine speed and load. Often indicates a sensor that is failing in a way that produces excess output, or a short to supply voltage in the signal path.
+    de: Der Luftmassenmesser meldet einen Wert oberhalb des plausiblen Maximums für die aktuelle Drehzahl und Last. Hinweis auf einen Sensor, der zu hohe Werte ausgibt, oder einen Kurzschluss der Signalleitung gegen Versorgungsspannung.
+  affected_components:
+    - mass_air_flow_sensor
+    - mass_air_flow_sensor_wiring
+  common_causes:
+    - id: maf_failed_high
+      likelihood: high
+      label:
+        en: MAF sensor failed
+        de: Luftmassenmesser defekt
+    - id: maf_signal_short_to_voltage
+      likelihood: medium
+      label:
+        en: Signal wire shorted to supply voltage
+        de: Signalleitung gegen Versorgungsspannung kurzgeschlossen
+  repair:
+    difficulty: easy
+    diy_possible: true
+    estimated_cost_eur: [80, 300]
+    estimated_hours: [0.3, 1.5]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Mass_flow_sensor
+
 - code: P0106
   scope: generic
   category: powertrain
@@ -175,6 +212,196 @@
     - sae:J2012
   sources:
     - https://en.wikipedia.org/wiki/MAP_sensor
+
+- code: P0108
+  scope: generic
+  category: powertrain
+  title:
+    en: Manifold Absolute Pressure Sensor High Input
+    de: Saugrohrdrucksensor Eingangssignal zu hoch
+  description:
+    en: The MAP sensor reports a pressure above the upper threshold the ECU expects in any engine state. Typically caused by a short in the signal circuit or a sensor that has failed producing a fixed high output.
+    de: Der MAP-Sensor meldet einen Druck über dem oberen Schwellwert, den die Motorsteuerung in keinem Betriebszustand erwartet. Typischerweise durch einen Kurzschluss im Signalkreis oder einen Sensor verursacht, der einen konstant hohen Wert abgibt.
+  affected_components:
+    - map_sensor
+    - map_sensor_wiring
+  common_causes:
+    - id: map_signal_short_to_voltage
+      likelihood: high
+      label:
+        en: Signal wire shorted to supply voltage
+        de: Signalleitung gegen Versorgungsspannung kurzgeschlossen
+    - id: map_failed_high
+      likelihood: medium
+      label:
+        en: MAP sensor failed
+        de: MAP-Sensor defekt
+    - id: map_ground_open
+      likelihood: low
+      label:
+        en: Sensor ground broken
+        de: Sensor-Masseleitung unterbrochen
+  repair:
+    difficulty: easy
+    diy_possible: true
+    estimated_cost_eur: [40, 200]
+    estimated_hours: [0.3, 2.0]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/MAP_sensor
+
+- code: P0111
+  scope: generic
+  category: powertrain
+  title:
+    en: Intake Air Temperature Sensor Range/Performance
+    de: Ansauglufttemperatursensor Funktionsbereich/Leistung
+  description:
+    en: The intake air temperature (IAT) sensor reading does not change plausibly with engine warm-up or after driving begins. Many vehicles share the IAT into the MAF housing; on those, MAF replacement also replaces IAT.
+    de: Das Signal des Ansauglufttemperatursensors (IAT) ändert sich nicht plausibel beim Warmlaufen oder beim Anfahren. Bei vielen Fahrzeugen ist der IAT im Luftmassenmesser integriert; ein LMM-Tausch ersetzt damit auch den IAT.
+  affected_components:
+    - intake_air_temperature_sensor
+    - mass_air_flow_sensor
+  common_causes:
+    - id: iat_drift
+      likelihood: high
+      label:
+        en: Sensor drifting outside specification
+        de: Sensor driftet aus der Spezifikation
+    - id: iat_contamination
+      likelihood: medium
+      label:
+        en: Sensor element coated with oil or dirt
+        de: Sensorelement mit Öl oder Schmutz belegt
+  repair:
+    difficulty: easy
+    diy_possible: true
+    estimated_cost_eur: [30, 200]
+    estimated_hours: [0.2, 1.0]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Intake_air_temperature_sensor
+
+- code: P0112
+  scope: generic
+  category: powertrain
+  title:
+    en: Intake Air Temperature Sensor Low Input
+    de: Ansauglufttemperatursensor Eingangssignal zu niedrig
+  description:
+    en: The IAT signal voltage is below threshold, which the ECU interprets as an implausibly hot intake (low NTC resistance). Usually a wiring short to ground or a failed sensor.
+    de: Die Signalspannung des IAT liegt unter dem Schwellwert. Die Motorsteuerung interpretiert das als unplausibel heiße Ansaugluft (niedriger NTC-Widerstand). Meist ein Massenschluss oder defekter Sensor.
+  affected_components:
+    - intake_air_temperature_sensor
+    - intake_air_temperature_sensor_wiring
+  common_causes:
+    - id: iat_signal_short_to_ground
+      likelihood: high
+      label:
+        en: Signal wire shorted to ground
+        de: Signalleitung gegen Masse kurzgeschlossen
+    - id: iat_sensor_failed_short
+      likelihood: medium
+      label:
+        en: Sensor failed shorted internally
+        de: Sensor intern kurzgeschlossen
+  repair:
+    difficulty: easy
+    diy_possible: true
+    estimated_cost_eur: [30, 200]
+    estimated_hours: [0.2, 1.0]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Intake_air_temperature_sensor
+
+- code: P0113
+  scope: generic
+  category: powertrain
+  title:
+    en: Intake Air Temperature Sensor High Input
+    de: Ansauglufttemperatursensor Eingangssignal zu hoch
+  description:
+    en: The IAT signal voltage is above threshold, which the ECU interprets as an implausibly cold intake (open-circuit-like behaviour). Usually open wiring or a sensor that has failed open.
+    de: Die Signalspannung des IAT liegt über dem Schwellwert. Die Motorsteuerung interpretiert das als unplausibel kalte Ansaugluft (Verhalten wie offener Stromkreis). Meist offene Verkabelung oder Sensor, der intern unterbrochen ist.
+  affected_components:
+    - intake_air_temperature_sensor
+    - intake_air_temperature_sensor_wiring
+  common_causes:
+    - id: iat_open_circuit
+      likelihood: high
+      label:
+        en: Open circuit in sensor or wiring
+        de: Offener Stromkreis im Sensor oder Verkabelung
+    - id: iat_connector_corrosion
+      likelihood: medium
+      label:
+        en: Corroded sensor connector
+        de: Korrodierter Sensorstecker
+  repair:
+    difficulty: easy
+    diy_possible: true
+    estimated_cost_eur: [30, 200]
+    estimated_hours: [0.2, 1.0]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Intake_air_temperature_sensor
+
+- code: P0114
+  scope: generic
+  category: powertrain
+  title:
+    en: Intake Air Temperature Sensor Intermittent
+    de: Ansauglufttemperatursensor sporadisch
+  description:
+    en: The IAT signal shows intermittent dropouts or jumps that fall outside slope expectations but do not stay above or below threshold long enough to trigger P0112/P0113. Usually a wiring or connector issue.
+    de: Das IAT-Signal zeigt sporadische Aussetzer oder Sprünge außerhalb erwarteter Verläufe, bleibt aber nicht lange genug über oder unter dem Schwellwert, um P0112/P0113 auszulösen. Meist ein Verkabelungs- oder Steckerfehler.
+  affected_components:
+    - intake_air_temperature_sensor
+    - intake_air_temperature_sensor_wiring
+  common_causes:
+    - id: iat_intermittent_connector
+      likelihood: high
+      label:
+        en: Loose or oxidised connector
+        de: Lockerer oder oxidierter Stecker
+    - id: iat_wiring_chafe
+      likelihood: medium
+      label:
+        en: Wiring chafed against engine
+        de: Kabel am Motor durchgescheuert
+  repair:
+    difficulty: medium
+    diy_possible: true
+    estimated_cost_eur: [30, 250]
+    estimated_hours: [0.3, 2.0]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Intake_air_temperature_sensor
 
 - code: P0115
   scope: generic
@@ -454,6 +681,43 @@
   sources:
     - https://en.wikipedia.org/wiki/Throttle_position_sensor
 
+- code: P0124
+  scope: generic
+  category: powertrain
+  title:
+    en: Throttle/Pedal Position Sensor "A" Circuit Intermittent
+    de: Drosselklappen-/Pedalstellungssensor "A" sporadisch
+  description:
+    en: The TPS signal shows intermittent dropouts that do not stay outside threshold long enough to trigger P0122/P0123. Drive-by-wire systems are sensitive to this and may briefly enter limp-home mode each time.
+    de: Das TPS-Signal zeigt sporadische Aussetzer, die nicht lange genug außerhalb des Schwellwerts bleiben, um P0122/P0123 auszulösen. E-Gas-Systeme reagieren empfindlich und gehen mitunter kurz in den Notlauf.
+  affected_components:
+    - throttle_position_sensor
+    - throttle_position_sensor_wiring
+  common_causes:
+    - id: tps_connector_intermittent
+      likelihood: high
+      label:
+        en: Loose or oxidised connector
+        de: Lockerer oder oxidierter Stecker
+    - id: tps_track_worn_spot
+      likelihood: medium
+      label:
+        en: Sensor track worn at one spot (older potentiometer-type)
+        de: Sensorbahn an einer Stelle verschlissen (ältere Potentiometer-Typen)
+  repair:
+    difficulty: medium
+    diy_possible: true
+    estimated_cost_eur: [80, 400]
+    estimated_hours: [0.5, 2.5]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Throttle_position_sensor
+
 - code: P0128
   scope: generic
   category: powertrain
@@ -697,6 +961,371 @@
   sources:
     - https://en.wikipedia.org/wiki/Oxygen_sensor
 
+- code: P0136
+  scope: generic
+  category: powertrain
+  title:
+    en: O2 Sensor Circuit Malfunction (Bank 1, Sensor 2)
+    de: Lambdasonde Schaltung Fehlfunktion (Bank 1, Sonde 2)
+  description:
+    en: A general fault has been detected in the downstream (post-catalyst) oxygen sensor on bank 1. The downstream sensor monitors catalyst efficiency rather than fuel mixture; with no signal, the catalyst monitor cannot run.
+    de: In der Schaltung der nachgeschalteten (Nachkatalysator-)Lambdasonde auf Bank 1 wurde ein allgemeiner Fehler erkannt. Die nachgeschaltete Sonde überwacht den Katalysatorwirkungsgrad statt des Gemisches; ohne Signal kann die Katalysator-Diagnose nicht laufen.
+  affected_components:
+    - oxygen_sensor_downstream
+    - oxygen_sensor_wiring
+  common_causes:
+    - id: o2_downstream_aged
+      likelihood: high
+      label:
+        en: Downstream sensor aged
+        de: Nachgeschaltete Sonde gealtert
+    - id: o2_downstream_wiring
+      likelihood: medium
+      label:
+        en: Wiring chafed against exhaust
+        de: Sondenkabel an Abgasanlage durchgescheuert
+  repair:
+    difficulty: easy
+    diy_possible: true
+    estimated_cost_eur: [60, 250]
+    estimated_hours: [0.3, 1.5]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Oxygen_sensor
+
+- code: P0137
+  scope: generic
+  category: powertrain
+  title:
+    en: O2 Sensor Circuit Low Voltage (Bank 1, Sensor 2)
+    de: Lambdasonde Schaltung Spannung zu niedrig (Bank 1, Sonde 2)
+  description:
+    en: The downstream oxygen sensor signal is fixed at a low voltage. Either the catalyst is letting unburned oxygen through (sensor sees lean), the sensor itself is shorted to ground, or the catalyst is so degraded that the downstream signal mirrors a lean upstream condition.
+    de: Das Signal der nachgeschalteten Lambdasonde verharrt bei niedriger Spannung. Entweder lässt der Katalysator unverbrannten Sauerstoff durch (Sonde sieht mager), die Sonde ist gegen Masse kurzgeschlossen, oder der Katalysator ist so stark degradiert, dass das Nachsignal ein mageres Vorsignal abbildet.
+  affected_components:
+    - oxygen_sensor_downstream
+    - catalytic_converter
+  common_causes:
+    - id: o2_downstream_short_to_ground
+      likelihood: medium
+      label:
+        en: Signal wire shorted to ground
+        de: Signalleitung gegen Masse kurzgeschlossen
+    - id: catalyst_degraded_pre_p0420
+      likelihood: medium
+      label:
+        en: Catalyst degraded (often appears before P0420)
+        de: Katalysator degradiert (oft vor P0420)
+    - id: exhaust_leak_pre_downstream
+      likelihood: low
+      label:
+        en: Exhaust leak between catalyst and downstream sensor
+        de: Abgasleck zwischen Katalysator und Nachsonde
+  repair:
+    difficulty: medium
+    diy_possible: true
+    estimated_cost_eur: [60, 800]
+    estimated_hours: [0.3, 4.0]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Oxygen_sensor
+
+- code: P0138
+  scope: generic
+  category: powertrain
+  title:
+    en: O2 Sensor Circuit High Voltage (Bank 1, Sensor 2)
+    de: Lambdasonde Schaltung Spannung zu hoch (Bank 1, Sonde 2)
+  description:
+    en: The downstream oxygen sensor signal is fixed at a high voltage, indicating either a continuously rich downstream reading (less common, since post-cat exhaust should be more stable) or a short to supply voltage in the signal circuit.
+    de: Das Signal der nachgeschalteten Lambdasonde verharrt bei hoher Spannung. Hinweis entweder auf dauerhaft fettes Nachsignal (selten, weil das Nachkat-Signal stabiler sein sollte) oder Kurzschluss gegen Versorgungsspannung.
+  affected_components:
+    - oxygen_sensor_downstream
+    - oxygen_sensor_wiring
+  common_causes:
+    - id: o2_downstream_short_to_voltage
+      likelihood: high
+      label:
+        en: Signal wire shorted to supply voltage
+        de: Signalleitung gegen Versorgungsspannung kurzgeschlossen
+    - id: o2_downstream_failed
+      likelihood: medium
+      label:
+        en: Downstream sensor failed
+        de: Nachsonde defekt
+  repair:
+    difficulty: easy
+    diy_possible: true
+    estimated_cost_eur: [60, 250]
+    estimated_hours: [0.3, 1.5]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Oxygen_sensor
+
+- code: P0141
+  scope: generic
+  category: powertrain
+  title:
+    en: O2 Sensor Heater Circuit Malfunction (Bank 1, Sensor 2)
+    de: Lambdasonden-Heizung Schaltung Fehlfunktion (Bank 1, Sonde 2)
+  description:
+    en: The heating element inside the downstream oxygen sensor on bank 1 is open-circuit, drawing no current, or drawing too much. Without heater, the sensor takes much longer to reach operating temperature, delaying catalyst diagnosis.
+    de: Das Heizelement der nachgeschalteten Lambdasonde auf Bank 1 ist unterbrochen, nimmt keinen Strom auf oder zieht zu viel. Ohne Heizung erreicht die Sonde die Betriebstemperatur deutlich langsamer, die Katalysatordiagnose verzögert sich.
+  affected_components:
+    - oxygen_sensor_downstream
+    - o2_heater_relay
+  common_causes:
+    - id: o2_heater_burnt
+      likelihood: high
+      label:
+        en: Heater element open-circuit
+        de: Heizelement unterbrochen
+    - id: o2_heater_fuse_blown
+      likelihood: medium
+      label:
+        en: Heater fuse blown
+        de: Heizungs-Sicherung durchgebrannt
+  repair:
+    difficulty: easy
+    diy_possible: true
+    estimated_cost_eur: [60, 250]
+    estimated_hours: [0.3, 1.5]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Oxygen_sensor
+
+- code: P0150
+  scope: generic
+  category: powertrain
+  title:
+    en: O2 Sensor Circuit Malfunction (Bank 2, Sensor 1)
+    de: Lambdasonde Schaltung Fehlfunktion (Bank 2, Sonde 1)
+  description:
+    en: Same condition as P0130 but on bank 2 of a multi-bank engine. Closed-loop fuel control on bank 2 is disabled while this fault is active.
+    de: Gleiche Bedingung wie P0130, aber auf Bank 2 eines Mehrbank-Motors. Die Gemischregelung im geschlossenen Regelkreis auf Bank 2 ist bei aktivem Fehler deaktiviert.
+  affected_components:
+    - oxygen_sensor_upstream
+    - oxygen_sensor_wiring
+  common_causes:
+    - id: o2_sensor_aged
+      likelihood: high
+      label:
+        en: Oxygen sensor aged
+        de: Lambdasonde gealtert
+    - id: o2_wiring_chafed
+      likelihood: medium
+      label:
+        en: Sensor harness chafed
+        de: Sondenkabel durchgescheuert
+  repair:
+    difficulty: easy
+    diy_possible: true
+    estimated_cost_eur: [60, 250]
+    estimated_hours: [0.3, 1.5]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+  related_codes: [P0130]
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Oxygen_sensor
+
+- code: P0151
+  scope: generic
+  category: powertrain
+  title:
+    en: O2 Sensor Circuit Low Voltage (Bank 2, Sensor 1)
+    de: Lambdasonde Schaltung Spannung zu niedrig (Bank 2, Sonde 1)
+  description:
+    en: Same condition as P0131 but on bank 2. The upstream sensor sees a continuously lean exhaust on bank 2 or has a signal short to ground.
+    de: Gleiche Bedingung wie P0131, aber auf Bank 2. Die vorgeschaltete Sonde sieht dauerhaft mageres Abgas auf Bank 2 oder die Signalleitung ist gegen Masse kurzgeschlossen.
+  affected_components:
+    - oxygen_sensor_upstream
+    - exhaust_pipe_pre_cat
+  common_causes:
+    - id: exhaust_leak_pre_sensor
+      likelihood: high
+      label:
+        en: Exhaust leak upstream of the sensor
+        de: Abgasleck vor der Sonde
+    - id: lean_running_condition_b2
+      likelihood: medium
+      label:
+        en: Bank 2 running lean (vacuum leak, fuel pressure)
+        de: Bank 2 mager (Falschluft, Kraftstoffdruck)
+  repair:
+    difficulty: medium
+    diy_possible: true
+    estimated_cost_eur: [60, 400]
+    estimated_hours: [0.5, 3.0]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+  related_codes: [P0131]
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Oxygen_sensor
+
+- code: P0152
+  scope: generic
+  category: powertrain
+  title:
+    en: O2 Sensor Circuit High Voltage (Bank 2, Sensor 1)
+    de: Lambdasonde Schaltung Spannung zu hoch (Bank 2, Sonde 1)
+  description:
+    en: Same condition as P0132 but on bank 2. The upstream sensor reports a continuously rich condition or has a short to supply voltage.
+    de: Gleiche Bedingung wie P0132, aber auf Bank 2. Die vorgeschaltete Sonde meldet dauerhaft fett oder ist gegen Versorgungsspannung kurzgeschlossen.
+  affected_components:
+    - oxygen_sensor_upstream
+    - fuel_injector
+  common_causes:
+    - id: rich_running_b2
+      likelihood: high
+      label:
+        en: Bank 2 running rich (leaking injector, high fuel pressure)
+        de: Bank 2 fett (undichter Injektor, hoher Kraftstoffdruck)
+    - id: o2_signal_short_to_voltage
+      likelihood: medium
+      label:
+        en: Signal wire shorted to supply voltage
+        de: Signalleitung gegen Versorgungsspannung kurzgeschlossen
+  repair:
+    difficulty: medium
+    diy_possible: true
+    estimated_cost_eur: [60, 400]
+    estimated_hours: [0.5, 3.0]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+  related_codes: [P0132]
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Oxygen_sensor
+
+- code: P0155
+  scope: generic
+  category: powertrain
+  title:
+    en: O2 Sensor Heater Circuit Malfunction (Bank 2, Sensor 1)
+    de: Lambdasonden-Heizung Schaltung Fehlfunktion (Bank 2, Sonde 1)
+  description:
+    en: Same condition as P0135 but on the upstream sensor of bank 2.
+    de: Gleiche Bedingung wie P0135, aber an der vorgeschalteten Sonde auf Bank 2.
+  affected_components:
+    - oxygen_sensor_upstream
+    - o2_heater_relay
+  common_causes:
+    - id: o2_heater_burnt
+      likelihood: high
+      label:
+        en: Heater element open-circuit
+        de: Heizelement unterbrochen
+  repair:
+    difficulty: easy
+    diy_possible: true
+    estimated_cost_eur: [60, 250]
+    estimated_hours: [0.3, 1.5]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+  related_codes: [P0135]
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Oxygen_sensor
+
+- code: P0156
+  scope: generic
+  category: powertrain
+  title:
+    en: O2 Sensor Circuit Malfunction (Bank 2, Sensor 2)
+    de: Lambdasonde Schaltung Fehlfunktion (Bank 2, Sonde 2)
+  description:
+    en: Same condition as P0136 but on the downstream sensor of bank 2. The catalyst efficiency monitor for bank 2 cannot run while this fault is active.
+    de: Gleiche Bedingung wie P0136, aber an der nachgeschalteten Sonde auf Bank 2. Die Katalysator-Diagnose für Bank 2 kann bei aktivem Fehler nicht laufen.
+  affected_components:
+    - oxygen_sensor_downstream
+  common_causes:
+    - id: o2_downstream_aged
+      likelihood: high
+      label:
+        en: Downstream sensor aged
+        de: Nachgeschaltete Sonde gealtert
+  repair:
+    difficulty: easy
+    diy_possible: true
+    estimated_cost_eur: [60, 250]
+    estimated_hours: [0.3, 1.5]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+  related_codes: [P0136]
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Oxygen_sensor
+
+- code: P0161
+  scope: generic
+  category: powertrain
+  title:
+    en: O2 Sensor Heater Circuit Malfunction (Bank 2, Sensor 2)
+    de: Lambdasonden-Heizung Schaltung Fehlfunktion (Bank 2, Sonde 2)
+  description:
+    en: Same condition as P0141 but on the downstream sensor of bank 2.
+    de: Gleiche Bedingung wie P0141, aber an der nachgeschalteten Sonde auf Bank 2.
+  affected_components:
+    - oxygen_sensor_downstream
+    - o2_heater_relay
+  common_causes:
+    - id: o2_heater_burnt
+      likelihood: high
+      label:
+        en: Heater element open-circuit
+        de: Heizelement unterbrochen
+  repair:
+    difficulty: easy
+    diy_possible: true
+    estimated_cost_eur: [60, 250]
+    estimated_hours: [0.3, 1.5]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+  related_codes: [P0141]
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Oxygen_sensor
+
 - code: P0171
   scope: generic
   category: powertrain
@@ -884,6 +1513,256 @@
     - sae:J2012
   sources:
     - https://en.wikipedia.org/wiki/Engine_control_unit
+
+- code: P0201
+  scope: generic
+  category: powertrain
+  title:
+    en: Injector Circuit Malfunction — Cylinder 1
+    de: Injektor Schaltung Fehlfunktion — Zylinder 1
+  description:
+    en: An electrical fault has been detected in the cylinder 1 injector circuit — open winding, short to ground or short to supply. This typically disables that injector to protect the driver stage in the ECU; the cylinder runs without fuel and triggers a misfire code as well.
+    de: Im Steuerkreis des Injektors für Zylinder 1 wurde ein elektrischer Fehler erkannt — offene Wicklung, Kurzschluss gegen Masse oder gegen Versorgungsspannung. Die Motorsteuerung deaktiviert den Injektor üblicherweise, um die Endstufe zu schützen; der Zylinder läuft ohne Kraftstoff und löst zusätzlich einen Aussetzer-Code aus.
+  affected_components:
+    - fuel_injector
+    - injector_wiring
+    - ecu_injector_driver
+  common_causes:
+    - id: injector_winding_open
+      likelihood: high
+      label:
+        en: Injector winding failed open
+        de: Injektorwicklung unterbrochen
+    - id: injector_wiring
+      likelihood: medium
+      label:
+        en: Wiring or connector fault
+        de: Kabel- oder Steckerfehler
+    - id: ecu_driver_failed
+      likelihood: low
+      label:
+        en: ECU injector driver damaged
+        de: Endstufe im Steuergerät beschädigt
+  repair:
+    difficulty: medium
+    diy_possible: true
+    estimated_cost_eur: [80, 600]
+    estimated_hours: [0.5, 3.5]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Fuel_injection
+
+- code: P0202
+  scope: generic
+  category: powertrain
+  title:
+    en: Injector Circuit Malfunction — Cylinder 2
+    de: Injektor Schaltung Fehlfunktion — Zylinder 2
+  description:
+    en: Same fault as P0201 but on cylinder 2. Diagnostic procedure is identical; swap the connector or the injector itself with a known-good cylinder to confirm whether the fault follows.
+    de: Gleicher Fehler wie P0201, aber an Zylinder 2. Diagnose entspricht P0201; Stecker oder Injektor mit einem nachweislich funktionierenden Zylinder tauschen, um zu prüfen, ob der Fehler mitwandert.
+  affected_components:
+    - fuel_injector
+    - injector_wiring
+  common_causes:
+    - id: injector_winding_open
+      likelihood: high
+      label:
+        en: Injector winding failed open
+        de: Injektorwicklung unterbrochen
+    - id: injector_wiring
+      likelihood: medium
+      label:
+        en: Wiring or connector fault
+        de: Kabel- oder Steckerfehler
+  repair:
+    difficulty: medium
+    diy_possible: true
+    estimated_cost_eur: [80, 600]
+    estimated_hours: [0.5, 3.5]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Fuel_injection
+
+- code: P0203
+  scope: generic
+  category: powertrain
+  title:
+    en: Injector Circuit Malfunction — Cylinder 3
+    de: Injektor Schaltung Fehlfunktion — Zylinder 3
+  description:
+    en: Same fault as P0201 but on cylinder 3.
+    de: Gleicher Fehler wie P0201, aber an Zylinder 3.
+  affected_components:
+    - fuel_injector
+    - injector_wiring
+  common_causes:
+    - id: injector_winding_open
+      likelihood: high
+      label:
+        en: Injector winding failed open
+        de: Injektorwicklung unterbrochen
+    - id: injector_wiring
+      likelihood: medium
+      label:
+        en: Wiring or connector fault
+        de: Kabel- oder Steckerfehler
+  repair:
+    difficulty: medium
+    diy_possible: true
+    estimated_cost_eur: [80, 600]
+    estimated_hours: [0.5, 3.5]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Fuel_injection
+
+- code: P0204
+  scope: generic
+  category: powertrain
+  title:
+    en: Injector Circuit Malfunction — Cylinder 4
+    de: Injektor Schaltung Fehlfunktion — Zylinder 4
+  description:
+    en: Same fault as P0201 but on cylinder 4.
+    de: Gleicher Fehler wie P0201, aber an Zylinder 4.
+  affected_components:
+    - fuel_injector
+    - injector_wiring
+  common_causes:
+    - id: injector_winding_open
+      likelihood: high
+      label:
+        en: Injector winding failed open
+        de: Injektorwicklung unterbrochen
+    - id: injector_wiring
+      likelihood: medium
+      label:
+        en: Wiring or connector fault
+        de: Kabel- oder Steckerfehler
+  repair:
+    difficulty: medium
+    diy_possible: true
+    estimated_cost_eur: [80, 600]
+    estimated_hours: [0.5, 3.5]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Fuel_injection
+
+- code: P0234
+  scope: generic
+  category: powertrain
+  title:
+    en: Turbocharger/Supercharger "A" Overboost Condition
+    de: Turbolader/Kompressor "A" Überdruck
+  description:
+    en: Boost pressure exceeded the upper limit during commanded full load. The ECU usually drops fuel and ignition or commands the wastegate fully open to protect the engine; persistent overboost can crack pistons or rings.
+    de: Der Ladedruck hat die obere Grenze unter Volllast überschritten. Die Motorsteuerung nimmt Einspritzung und Zündung zurück oder öffnet das Wastegate vollständig, um den Motor zu schützen; anhaltender Überdruck kann Kolben oder Kolbenringe beschädigen.
+  affected_components:
+    - turbocharger
+    - wastegate_actuator
+    - boost_pressure_sensor
+    - vacuum_lines
+  common_causes:
+    - id: wastegate_stuck_closed
+      likelihood: high
+      label:
+        en: Wastegate stuck closed (carbon, broken linkage)
+        de: Wastegate hängt geschlossen (Verkokung, gebrochenes Gestänge)
+    - id: boost_solenoid_failed
+      likelihood: medium
+      label:
+        en: Boost control solenoid failed
+        de: Ladedruck-Magnetventil defekt
+    - id: vacuum_line_leak
+      likelihood: medium
+      label:
+        en: Vacuum/pressure line cracked
+        de: Unterdruck-/Druckleitung rissig
+  repair:
+    difficulty: hard
+    diy_possible: false
+    estimated_cost_eur: [200, 2500]
+    estimated_hours: [1.5, 8.0]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+    limp_mode_possible: true
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Turbocharger
+
+- code: P0299
+  scope: generic
+  category: powertrain
+  title:
+    en: Turbocharger/Supercharger "A" Underboost Condition
+    de: Turbolader/Kompressor "A" Unterdruck
+  description:
+    en: Boost pressure under load is below the commanded value. Very common on turbodiesel and direct-injection turbo gasoline engines as the turbo system ages — typically a leaking boost pipe, a sticky variable-geometry vane assembly, or a wastegate that no longer holds.
+    de: Der Ladedruck unter Last bleibt unter dem Sollwert. Sehr häufig bei Turbodiesel und direkteinspritzenden Turbo-Benzinern mit zunehmendem Alter — meist ein undichtes Ladeluftrohr, festsitzende variable Turbinengeometrie oder ein Wastegate, das nicht mehr dichthält.
+  affected_components:
+    - turbocharger
+    - intercooler
+    - intercooler_pipe
+    - wastegate_actuator
+    - vgt_actuator
+  common_causes:
+    - id: boost_leak
+      likelihood: high
+      label:
+        en: Leak in intercooler pipe or hose
+        de: Leck in Ladeluftrohr oder -schlauch
+    - id: vgt_sticking
+      likelihood: high
+      label:
+        en: VGT vanes stuck (diesel, soot buildup)
+        de: VTG-Leitschaufeln festgesetzt (Diesel, Russ)
+    - id: wastegate_stuck_open
+      likelihood: medium
+      label:
+        en: Wastegate stuck open or weak spring
+        de: Wastegate hängt offen oder Feder zu schwach
+    - id: turbo_bearing_worn
+      likelihood: low
+      label:
+        en: Turbo bearing worn (preceded by oil consumption / smoke)
+        de: Turbolader-Lager verschlissen (vorab Ölverbrauch / Rauch)
+  repair:
+    difficulty: hard
+    diy_possible: false
+    estimated_cost_eur: [80, 3000]
+    estimated_hours: [0.5, 10.0]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+    limp_mode_possible: true
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Turbocharger
 
 - code: P0300
   scope: generic
@@ -1113,6 +1992,125 @@
   sources:
     - https://en.wikipedia.org/wiki/Misfire
 
+- code: P0305
+  scope: generic
+  category: powertrain
+  title:
+    en: Cylinder 5 Misfire Detected
+    de: Verbrennungsaussetzer Zylinder 5 erkannt
+  description:
+    en: Misfires concentrated on cylinder 5 (only present on engines with 5+ cylinders). Same diagnostic approach as P0301 — swap the suspect coil/plug with another cylinder.
+    de: Verbrennungsaussetzer konzentriert auf Zylinder 5 (nur auf Motoren mit 5+ Zylindern). Diagnose wie bei P0301 — Zündspule/Kerze mit einem anderen Zylinder tauschen.
+  affected_components:
+    - ignition_coil
+    - spark_plug
+    - fuel_injector
+  common_causes:
+    - id: ignition_coil_failed
+      likelihood: high
+      label:
+        en: Ignition coil for cylinder 5 failed
+        de: Zündspule Zylinder 5 defekt
+    - id: spark_plug_failed
+      likelihood: high
+      label:
+        en: Spark plug worn or fouled
+        de: Zündkerze verschlissen oder verölt
+  repair:
+    difficulty: easy
+    diy_possible: true
+    estimated_cost_eur: [40, 800]
+    estimated_hours: [0.3, 4.0]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Misfire
+
+- code: P0306
+  scope: generic
+  category: powertrain
+  title:
+    en: Cylinder 6 Misfire Detected
+    de: Verbrennungsaussetzer Zylinder 6 erkannt
+  description:
+    en: Misfires concentrated on cylinder 6 (V6, inline-6, V8). Same diagnostic approach as P0301.
+    de: Verbrennungsaussetzer konzentriert auf Zylinder 6 (V6, R6, V8). Diagnose wie bei P0301.
+  affected_components:
+    - ignition_coil
+    - spark_plug
+    - fuel_injector
+  common_causes:
+    - id: ignition_coil_failed
+      likelihood: high
+      label:
+        en: Ignition coil for cylinder 6 failed
+        de: Zündspule Zylinder 6 defekt
+    - id: spark_plug_failed
+      likelihood: high
+      label:
+        en: Spark plug worn or fouled
+        de: Zündkerze verschlissen oder verölt
+  repair:
+    difficulty: easy
+    diy_possible: true
+    estimated_cost_eur: [40, 800]
+    estimated_hours: [0.3, 4.0]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Misfire
+
+- code: P0316
+  scope: generic
+  category: powertrain
+  title:
+    en: Engine Misfire Detected on Startup (First 1000 Revolutions)
+    de: Verbrennungsaussetzer beim Startvorgang erkannt (erste 1000 Umdrehungen)
+  description:
+    en: The misfire monitor detected misfires during the first 1000 revolutions after startup but the engine then settled. Often caused by fouled spark plugs that warm up clean, weak ignition coils, or a borderline cold-start fuel mixture.
+    de: Die Aussetzererkennung hat während der ersten 1000 Umdrehungen nach dem Start Aussetzer erkannt, danach lief der Motor wieder normal. Häufig durch verölte Zündkerzen, die sich freibrennen, schwache Zündspulen oder ein grenzwertig fettes Kaltstartgemisch.
+  affected_components:
+    - spark_plug
+    - ignition_coil
+    - fuel_injector
+  common_causes:
+    - id: spark_plug_fouled_cold
+      likelihood: high
+      label:
+        en: Spark plugs fouled when cold
+        de: Zündkerzen kalt verölt
+    - id: ignition_coil_weak_cold
+      likelihood: medium
+      label:
+        en: Ignition coil weak below operating temperature
+        de: Zündspule unterhalb Betriebstemperatur schwach
+    - id: cold_start_mixture
+      likelihood: medium
+      label:
+        en: Cold-start mixture too lean (fuel pressure, leaking injectors at rest)
+        de: Kaltstartgemisch zu mager (Kraftstoffdruck, undichte Injektoren bei Stand)
+  repair:
+    difficulty: easy
+    diy_possible: true
+    estimated_cost_eur: [40, 600]
+    estimated_hours: [0.3, 3.0]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Misfire
+
 - code: P0325
   scope: generic
   category: powertrain
@@ -1320,6 +2318,82 @@
   sources:
     - https://en.wikipedia.org/wiki/Crank_sensor
 
+- code: P0337
+  scope: generic
+  category: powertrain
+  title:
+    en: Crankshaft Position Sensor "A" Circuit Low Input
+    de: Kurbelwellensensor "A" Eingangssignal zu niedrig
+  description:
+    en: The CKP signal voltage is below the lower threshold. Usually a sensor whose internal coil has degraded, or a wiring short to ground.
+    de: Die Signalspannung des CKP liegt unter dem unteren Schwellwert. Meist ein Sensor, dessen interne Wicklung degradiert ist, oder ein Massenschluss in der Verkabelung.
+  affected_components:
+    - crankshaft_position_sensor
+    - crankshaft_position_sensor_wiring
+  common_causes:
+    - id: ckp_failed_low
+      likelihood: high
+      label:
+        en: Sensor failed (output too low)
+        de: Sensor defekt (Ausgang zu niedrig)
+    - id: ckp_short_to_ground
+      likelihood: medium
+      label:
+        en: Signal shorted to ground
+        de: Signalleitung gegen Masse kurzgeschlossen
+  repair:
+    difficulty: medium
+    diy_possible: true
+    estimated_cost_eur: [80, 500]
+    estimated_hours: [0.5, 4.0]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+  related_codes: [P0335]
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Crank_sensor
+
+- code: P0338
+  scope: generic
+  category: powertrain
+  title:
+    en: Crankshaft Position Sensor "A" Circuit High Input
+    de: Kurbelwellensensor "A" Eingangssignal zu hoch
+  description:
+    en: The CKP signal voltage is above the upper threshold. Either a sensor producing excess output or a short to supply voltage.
+    de: Die Signalspannung des CKP überschreitet den oberen Schwellwert. Entweder ein Sensor mit zu hohem Ausgang oder ein Kurzschluss gegen Versorgungsspannung.
+  affected_components:
+    - crankshaft_position_sensor
+    - crankshaft_position_sensor_wiring
+  common_causes:
+    - id: ckp_signal_short_to_voltage
+      likelihood: high
+      label:
+        en: Signal wire shorted to supply voltage
+        de: Signalleitung gegen Versorgungsspannung kurzgeschlossen
+    - id: ckp_failed_high
+      likelihood: medium
+      label:
+        en: Sensor failed
+        de: Sensor defekt
+  repair:
+    difficulty: medium
+    diy_possible: true
+    estimated_cost_eur: [80, 500]
+    estimated_hours: [0.5, 4.0]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+  related_codes: [P0335]
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Crank_sensor
+
 - code: P0340
   scope: generic
   category: powertrain
@@ -1405,6 +2479,159 @@
     - sae:J2012
   sources:
     - https://en.wikipedia.org/wiki/Camshaft_position_sensor
+
+- code: P0342
+  scope: generic
+  category: powertrain
+  title:
+    en: Camshaft Position Sensor "A" Circuit Low Input (Bank 1)
+    de: Nockenwellensensor "A" Eingangssignal zu niedrig (Bank 1)
+  description:
+    en: The CMP signal voltage is below the lower threshold. Most often a sensor with degraded internal output or a short to ground.
+    de: Die Signalspannung des CMP liegt unter dem unteren Schwellwert. Meist ein Sensor mit reduzierter Ausgangsleistung oder ein Massenschluss.
+  affected_components:
+    - camshaft_position_sensor
+    - camshaft_position_sensor_wiring
+  common_causes:
+    - id: cmp_failed_low
+      likelihood: high
+      label:
+        en: Sensor failed
+        de: Sensor defekt
+    - id: cmp_signal_short_to_ground
+      likelihood: medium
+      label:
+        en: Signal shorted to ground
+        de: Signalleitung gegen Masse kurzgeschlossen
+  repair:
+    difficulty: medium
+    diy_possible: true
+    estimated_cost_eur: [80, 600]
+    estimated_hours: [0.5, 4.0]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+  related_codes: [P0340]
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Camshaft_position_sensor
+
+- code: P0343
+  scope: generic
+  category: powertrain
+  title:
+    en: Camshaft Position Sensor "A" Circuit High Input (Bank 1)
+    de: Nockenwellensensor "A" Eingangssignal zu hoch (Bank 1)
+  description:
+    en: The CMP signal voltage is above the upper threshold. Either excessive sensor output or a short to supply voltage.
+    de: Die Signalspannung des CMP überschreitet den oberen Schwellwert. Entweder ein zu hoher Sensorausgang oder ein Kurzschluss gegen Versorgungsspannung.
+  affected_components:
+    - camshaft_position_sensor
+    - camshaft_position_sensor_wiring
+  common_causes:
+    - id: cmp_signal_short_to_voltage
+      likelihood: high
+      label:
+        en: Signal wire shorted to supply voltage
+        de: Signalleitung gegen Versorgungsspannung kurzgeschlossen
+    - id: cmp_failed_high
+      likelihood: medium
+      label:
+        en: Sensor failed
+        de: Sensor defekt
+  repair:
+    difficulty: medium
+    diy_possible: true
+    estimated_cost_eur: [80, 600]
+    estimated_hours: [0.5, 4.0]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+  related_codes: [P0340]
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Camshaft_position_sensor
+
+- code: P0351
+  scope: generic
+  category: powertrain
+  title:
+    en: Ignition Coil "A" Primary/Secondary Circuit Malfunction (Cylinder 1)
+    de: Zündspule "A" Primär-/Sekundärkreis Fehlfunktion (Zylinder 1)
+  description:
+    en: An electrical fault has been detected in the ignition coil circuit for cylinder 1 — open primary winding, short to ground, or short to supply. The ECU disables the coil to protect its driver and the cylinder misfires.
+    de: Im Steuerkreis der Zündspule für Zylinder 1 wurde ein elektrischer Fehler erkannt — offene Primärwicklung, Kurzschluss gegen Masse oder gegen Versorgung. Die Motorsteuerung deaktiviert die Spule zum Schutz der Endstufe; der Zylinder hat Aussetzer.
+  affected_components:
+    - ignition_coil
+    - ignition_coil_wiring
+    - ecu_ignition_driver
+  common_causes:
+    - id: ignition_coil_failed_electrical
+      likelihood: high
+      label:
+        en: Coil primary winding open or shorted
+        de: Primärwicklung offen oder kurzgeschlossen
+    - id: ignition_coil_wiring
+      likelihood: medium
+      label:
+        en: Wiring or connector fault
+        de: Kabel- oder Steckerfehler
+  repair:
+    difficulty: easy
+    diy_possible: true
+    estimated_cost_eur: [40, 300]
+    estimated_hours: [0.2, 1.5]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+  related_codes: [P0301]
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Ignition_coil
+
+- code: P0352
+  scope: generic
+  category: powertrain
+  title:
+    en: Ignition Coil "B" Primary/Secondary Circuit Malfunction (Cylinder 2)
+    de: Zündspule "B" Primär-/Sekundärkreis Fehlfunktion (Zylinder 2)
+  description:
+    en: Same fault as P0351 but on the cylinder 2 coil.
+    de: Gleicher Fehler wie P0351, aber an der Spule von Zylinder 2.
+  affected_components:
+    - ignition_coil
+    - ignition_coil_wiring
+  common_causes:
+    - id: ignition_coil_failed_electrical
+      likelihood: high
+      label:
+        en: Coil primary winding open or shorted
+        de: Primärwicklung offen oder kurzgeschlossen
+    - id: ignition_coil_wiring
+      likelihood: medium
+      label:
+        en: Wiring or connector fault
+        de: Kabel- oder Steckerfehler
+  repair:
+    difficulty: easy
+    diy_possible: true
+    estimated_cost_eur: [40, 300]
+    estimated_hours: [0.2, 1.5]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+  related_codes: [P0302]
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Ignition_coil
 
 - code: P0380
   scope: generic
