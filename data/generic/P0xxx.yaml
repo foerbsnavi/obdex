@@ -176,6 +176,154 @@
   sources:
     - https://en.wikipedia.org/wiki/MAP_sensor
 
+- code: P0115
+  scope: generic
+  category: powertrain
+  title:
+    en: Engine Coolant Temperature Sensor Circuit Malfunction
+    de: Kühlmitteltemperatursensor Schaltung Fehlfunktion
+  description:
+    en: A general fault has been detected in the engine coolant temperature (ECT) sensor circuit. The ECU uses ECT for fuel enrichment during cold start, fan control, and closed-loop entry timing.
+    de: In der Schaltung des Kühlmitteltemperatursensors (ECT) wurde eine allgemeine Störung erkannt. Die Motorsteuerung nutzt den ECT-Wert für die Anreicherung im Kaltstart, die Lüftersteuerung und den Eintritt in den geschlossenen Regelkreis.
+  affected_components:
+    - coolant_temperature_sensor
+    - coolant_temperature_sensor_wiring
+  common_causes:
+    - id: ect_sensor_failed
+      likelihood: high
+      label:
+        en: Coolant temperature sensor failed
+        de: Kühlmitteltemperatursensor defekt
+    - id: ect_wiring
+      likelihood: medium
+      label:
+        en: Wiring or connector fault
+        de: Kabel- oder Steckerfehler
+  repair:
+    difficulty: easy
+    diy_possible: true
+    estimated_cost_eur: [30, 200]
+    estimated_hours: [0.3, 1.5]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Engine_coolant_temperature_sensor
+
+- code: P0116
+  scope: generic
+  category: powertrain
+  title:
+    en: Engine Coolant Temperature Sensor Range/Performance
+    de: Kühlmitteltemperatursensor Funktionsbereich/Leistung
+  description:
+    en: The coolant temperature sensor reading does not change plausibly during warm-up, or its value disagrees with the intake air temperature when the engine has been off long enough that they should match. Often caused by a sensor that reports near a fixed value despite engine warm-up.
+    de: Der Kühlmitteltemperatursensor liefert während des Warmlaufs keinen plausiblen Anstieg oder weicht nach längerer Standzeit von der Ansauglufttemperatur ab, wenn beide Werte gleich sein sollten. Häufig hängt der Sensor auf einem festen Wert.
+  affected_components:
+    - coolant_temperature_sensor
+    - thermostat
+  common_causes:
+    - id: ect_sensor_drift
+      likelihood: high
+      label:
+        en: Sensor drifting outside specification
+        de: Sensor driftet aus der Spezifikation
+    - id: thermostat_stuck_open
+      likelihood: medium
+      label:
+        en: Thermostat stuck open (engine never reaches operating temperature)
+        de: Thermostat hängt offen (Motor erreicht keine Betriebstemperatur)
+  repair:
+    difficulty: easy
+    diy_possible: true
+    estimated_cost_eur: [30, 250]
+    estimated_hours: [0.3, 2.0]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Engine_coolant_temperature_sensor
+
+- code: P0117
+  scope: generic
+  category: powertrain
+  title:
+    en: Engine Coolant Temperature Sensor Low Input
+    de: Kühlmitteltemperatursensor Eingangssignal zu niedrig
+  description:
+    en: The ECT signal voltage is below threshold, which the ECU interprets as an implausibly hot coolant temperature (typical NTC sensor characteristic — low resistance at high temperature).
+    de: Die Signalspannung des ECT liegt unter dem Schwellwert. Die Motorsteuerung interpretiert das als unplausibel hohe Kühlmitteltemperatur (typische NTC-Sensor-Kennlinie — niedriger Widerstand bei hoher Temperatur).
+  affected_components:
+    - coolant_temperature_sensor
+    - coolant_temperature_sensor_wiring
+  common_causes:
+    - id: ect_signal_short_to_ground
+      likelihood: high
+      label:
+        en: Signal wire shorted to ground
+        de: Signalleitung gegen Masse kurzgeschlossen
+    - id: ect_sensor_failed_short
+      likelihood: medium
+      label:
+        en: Sensor failed shorted internally
+        de: Sensor intern kurzgeschlossen
+  repair:
+    difficulty: easy
+    diy_possible: true
+    estimated_cost_eur: [30, 200]
+    estimated_hours: [0.3, 1.5]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Engine_coolant_temperature_sensor
+
+- code: P0118
+  scope: generic
+  category: powertrain
+  title:
+    en: Engine Coolant Temperature Sensor High Input
+    de: Kühlmitteltemperatursensor Eingangssignal zu hoch
+  description:
+    en: The ECT signal voltage is above threshold, which the ECU interprets as an implausibly cold temperature (open-circuit-like behaviour). When this code is active, the ECU runs a default cold-start enrichment that wastes fuel and may cause black smoke.
+    de: Die Signalspannung des ECT liegt über dem Schwellwert. Die Motorsteuerung interpretiert das als unplausibel kalte Temperatur (verhalten wie offener Stromkreis). Bei aktivem Fehler nutzt die Motorsteuerung eine Default-Kaltstartanreicherung, die Kraftstoff verschwendet und schwarzen Rauch verursachen kann.
+  affected_components:
+    - coolant_temperature_sensor
+    - coolant_temperature_sensor_wiring
+  common_causes:
+    - id: ect_open_circuit
+      likelihood: high
+      label:
+        en: Open circuit in sensor or wiring
+        de: Offener Stromkreis im Sensor oder Verkabelung
+    - id: ect_connector_corrosion
+      likelihood: medium
+      label:
+        en: Corroded sensor connector
+        de: Korrodierter Sensorstecker
+  repair:
+    difficulty: easy
+    diy_possible: true
+    estimated_cost_eur: [30, 200]
+    estimated_hours: [0.3, 1.5]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Engine_coolant_temperature_sensor
+
 - code: P0121
   scope: generic
   category: powertrain
@@ -305,6 +453,43 @@
     - sae:J2012
   sources:
     - https://en.wikipedia.org/wiki/Throttle_position_sensor
+
+- code: P0128
+  scope: generic
+  category: powertrain
+  title:
+    en: Coolant Thermostat Below Regulating Temperature
+    de: Thermostat unter Regeltemperatur
+  description:
+    en: The engine has been running long enough to reach operating temperature, but coolant temperature stayed below the thermostat's regulating value. Almost always caused by a thermostat stuck open. Costs fuel economy and increases cold-engine emissions.
+    de: Der Motor lief lange genug für Betriebstemperatur, das Kühlmittel hat aber den Regelbereich des Thermostats nicht erreicht. Fast immer durch einen offen hängenden Thermostat verursacht. Erhöht den Verbrauch und die Kaltlaufemissionen.
+  affected_components:
+    - thermostat
+    - coolant_temperature_sensor
+  common_causes:
+    - id: thermostat_stuck_open
+      likelihood: high
+      label:
+        en: Thermostat stuck open
+        de: Thermostat hängt offen
+    - id: ect_sensor_low_reading
+      likelihood: low
+      label:
+        en: Coolant sensor reading low
+        de: Kühlmittelsensor liest zu niedrig
+  repair:
+    difficulty: medium
+    diy_possible: true
+    estimated_cost_eur: [50, 350]
+    estimated_hours: [0.7, 3.0]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Thermostat#Automotive_thermostats
 
 - code: P0130
   scope: generic
@@ -928,6 +1113,299 @@
   sources:
     - https://en.wikipedia.org/wiki/Misfire
 
+- code: P0325
+  scope: generic
+  category: powertrain
+  title:
+    en: Knock Sensor 1 Circuit Malfunction (Bank 1)
+    de: Klopfsensor 1 Schaltung Fehlfunktion (Bank 1)
+  description:
+    en: A general fault has been detected in the bank 1 knock sensor circuit. The ECU uses the knock sensor to detect pre-ignition and retards ignition timing when knock occurs; with no signal, the ECU runs conservative timing and loses power.
+    de: In der Schaltung des Klopfsensors auf Bank 1 wurde eine allgemeine Störung erkannt. Die Motorsteuerung nutzt den Klopfsensor, um Vorzündung zu erkennen und den Zündzeitpunkt zurückzunehmen; ohne Signal arbeitet die Steuerung mit konservativem Zündwinkel und verliert Leistung.
+  affected_components:
+    - knock_sensor
+    - knock_sensor_wiring
+  common_causes:
+    - id: knock_sensor_failed
+      likelihood: high
+      label:
+        en: Knock sensor failed
+        de: Klopfsensor defekt
+    - id: knock_sensor_loose
+      likelihood: medium
+      label:
+        en: Sensor mounting bolt loose (sensor must be torqued correctly)
+        de: Befestigungsschraube lose (Sensor muss korrekt angezogen sein)
+    - id: knock_sensor_wiring
+      likelihood: low
+      label:
+        en: Wiring fault
+        de: Verkabelungsfehler
+  repair:
+    difficulty: hard
+    diy_possible: false
+    estimated_cost_eur: [200, 800]
+    estimated_hours: [1.5, 6.0]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Knock_sensor
+
+- code: P0327
+  scope: generic
+  category: powertrain
+  title:
+    en: Knock Sensor 1 Circuit Low Input (Bank 1)
+    de: Klopfsensor 1 Eingangssignal zu niedrig (Bank 1)
+  description:
+    en: The knock sensor signal voltage is below the expected range. Usually points to a piezoelectric sensor that has lost its output, or a short to ground in the signal line.
+    de: Die Signalspannung des Klopfsensors liegt unter dem erwarteten Bereich. Hinweis auf einen piezoelektrischen Sensor, der seinen Ausgang verloren hat, oder einen Massenschluss in der Signalleitung.
+  affected_components:
+    - knock_sensor
+    - knock_sensor_wiring
+  common_causes:
+    - id: knock_sensor_failed
+      likelihood: high
+      label:
+        en: Knock sensor failed
+        de: Klopfsensor defekt
+    - id: knock_signal_short_to_ground
+      likelihood: medium
+      label:
+        en: Signal wire shorted to ground
+        de: Signalleitung gegen Masse kurzgeschlossen
+  repair:
+    difficulty: hard
+    diy_possible: false
+    estimated_cost_eur: [200, 800]
+    estimated_hours: [1.5, 6.0]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Knock_sensor
+
+- code: P0328
+  scope: generic
+  category: powertrain
+  title:
+    en: Knock Sensor 1 Circuit High Input (Bank 1)
+    de: Klopfsensor 1 Eingangssignal zu hoch (Bank 1)
+  description:
+    en: The knock sensor signal voltage is above the expected range. Often caused by a sensor producing excess output due to mechanical noise (loose mounting, accessory drive vibration) rather than a sensor fault.
+    de: Die Signalspannung des Klopfsensors überschreitet den erwarteten Bereich. Häufig durch einen Sensor verursacht, der wegen mechanischer Störungen (lose Befestigung, Vibrationen vom Nebenaggregatsantrieb) zu hohe Werte abgibt — nicht zwingend ein Sensordefekt.
+  affected_components:
+    - knock_sensor
+    - knock_sensor_wiring
+  common_causes:
+    - id: mechanical_noise
+      likelihood: medium
+      label:
+        en: Mechanical noise picked up by sensor (loose accessory)
+        de: Mechanische Störung am Sensor (loses Nebenaggregat)
+    - id: knock_signal_short_to_voltage
+      likelihood: medium
+      label:
+        en: Signal wire shorted to supply voltage
+        de: Signalleitung gegen Versorgungsspannung kurzgeschlossen
+    - id: knock_sensor_failed
+      likelihood: low
+      label:
+        en: Sensor failed
+        de: Sensor defekt
+  repair:
+    difficulty: hard
+    diy_possible: false
+    estimated_cost_eur: [200, 800]
+    estimated_hours: [1.5, 6.0]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Knock_sensor
+
+- code: P0335
+  scope: generic
+  category: powertrain
+  title:
+    en: Crankshaft Position Sensor "A" Circuit Malfunction
+    de: Kurbelwellensensor "A" Schaltung Fehlfunktion
+  description:
+    en: The crankshaft position (CKP) sensor signal is missing or implausible. The CKP is essential — without it the ECU cannot synchronise injection or ignition, and the engine will not start or will stall.
+    de: Das Signal des Kurbelwellensensors (CKP) fehlt oder ist unplausibel. Der CKP ist essentiell — ohne ihn kann die Motorsteuerung weder Einspritzung noch Zündung synchronisieren, der Motor startet nicht oder geht aus.
+  affected_components:
+    - crankshaft_position_sensor
+    - reluctor_ring
+    - crankshaft_position_sensor_wiring
+  common_causes:
+    - id: ckp_failed
+      likelihood: high
+      label:
+        en: Sensor failed (heat damage common)
+        de: Sensor defekt (häufig durch Wärmeschäden)
+    - id: reluctor_damage
+      likelihood: low
+      label:
+        en: Reluctor ring damaged or contaminated with metal debris
+        de: Geberrad beschädigt oder durch Metallspäne verschmutzt
+    - id: ckp_wiring
+      likelihood: medium
+      label:
+        en: Wiring or connector fault
+        de: Kabel- oder Steckerfehler
+  repair:
+    difficulty: medium
+    diy_possible: true
+    estimated_cost_eur: [80, 500]
+    estimated_hours: [0.5, 4.0]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+    limp_mode_possible: true
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Crank_sensor
+
+- code: P0336
+  scope: generic
+  category: powertrain
+  title:
+    en: Crankshaft Position Sensor "A" Circuit Range/Performance
+    de: Kurbelwellensensor "A" Funktionsbereich/Leistung
+  description:
+    en: The CKP signal is present but inconsistent with engine RPM, or pulse counts deviate from the reluctor's expected pattern. Often points to a damaged tooth on the reluctor or an air gap that has changed.
+    de: Das CKP-Signal ist vorhanden, passt aber nicht zur Motordrehzahl, oder die Pulszahl weicht vom erwarteten Muster des Geberrads ab. Häufig weist das auf einen beschädigten Zahn am Geberrad oder einen veränderten Luftspalt hin.
+  affected_components:
+    - crankshaft_position_sensor
+    - reluctor_ring
+  common_causes:
+    - id: reluctor_tooth_damaged
+      likelihood: medium
+      label:
+        en: Reluctor tooth damaged
+        de: Zahn am Geberrad beschädigt
+    - id: ckp_air_gap
+      likelihood: medium
+      label:
+        en: Sensor air gap incorrect
+        de: Luftspalt am Sensor stimmt nicht
+    - id: ckp_intermittent
+      likelihood: high
+      label:
+        en: Sensor intermittent (often heat-related)
+        de: Sensor sporadisch (oft temperaturabhängig)
+  repair:
+    difficulty: medium
+    diy_possible: true
+    estimated_cost_eur: [80, 500]
+    estimated_hours: [0.5, 4.0]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Crank_sensor
+
+- code: P0340
+  scope: generic
+  category: powertrain
+  title:
+    en: Camshaft Position Sensor "A" Circuit (Bank 1 or Single Sensor)
+    de: Nockenwellensensor "A" Schaltung (Bank 1 oder Einzelsensor)
+  description:
+    en: The camshaft position (CMP) sensor signal is missing or implausible. The ECU uses CMP together with CKP to identify cylinder phase for sequential injection and coil-on-plug ignition; without CMP the engine may run on group injection or fail to start.
+    de: Das Signal des Nockenwellensensors (CMP) fehlt oder ist unplausibel. Die Motorsteuerung nutzt CMP zusammen mit CKP, um die Zylinderphase für sequentielle Einspritzung und Einzelfunkenzündung zu erkennen; ohne CMP kann der Motor in den Gruppen-Einspritzmodus fallen oder nicht starten.
+  affected_components:
+    - camshaft_position_sensor
+    - timing_chain
+    - timing_belt
+  common_causes:
+    - id: cmp_failed
+      likelihood: high
+      label:
+        en: Sensor failed
+        de: Sensor defekt
+    - id: timing_chain_stretched
+      likelihood: medium
+      label:
+        en: Timing chain stretched, throwing off sensor timing
+        de: Steuerkette gelängt, verschiebt das Sensorsignal
+    - id: cmp_wiring
+      likelihood: low
+      label:
+        en: Wiring fault
+        de: Verkabelungsfehler
+  repair:
+    difficulty: medium
+    diy_possible: true
+    estimated_cost_eur: [80, 600]
+    estimated_hours: [0.5, 4.0]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Camshaft_position_sensor
+
+- code: P0341
+  scope: generic
+  category: powertrain
+  title:
+    en: Camshaft Position Sensor "A" Circuit Range/Performance (Bank 1)
+    de: Nockenwellensensor "A" Funktionsbereich/Leistung (Bank 1)
+  description:
+    en: The CMP signal is present but its phase relative to the crankshaft is outside tolerance. On engines with variable valve timing, this code often appears together with VVT solenoid faults.
+    de: Das CMP-Signal ist vorhanden, seine Phase zum Kurbelwellensignal liegt aber außerhalb der Toleranz. Auf Motoren mit variabler Ventilsteuerung tritt dieser Code häufig zusammen mit Fehlern am VVT-Magnetventil auf.
+  affected_components:
+    - camshaft_position_sensor
+    - vvt_solenoid
+    - timing_chain
+  common_causes:
+    - id: vvt_solenoid_stuck
+      likelihood: medium
+      label:
+        en: VVT solenoid stuck or oil-starved
+        de: VVT-Magnetventil hängend oder ohne Öldruck
+    - id: timing_chain_stretched
+      likelihood: high
+      label:
+        en: Timing chain stretched
+        de: Steuerkette gelängt
+    - id: cmp_drift
+      likelihood: low
+      label:
+        en: Sensor drifting
+        de: Sensor driftet
+  repair:
+    difficulty: hard
+    diy_possible: false
+    estimated_cost_eur: [200, 1500]
+    estimated_hours: [1.5, 8.0]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Camshaft_position_sensor
+
 - code: P0380
   scope: generic
   category: powertrain
@@ -969,6 +1447,128 @@
     - sae:J2012
   sources:
     - https://en.wikipedia.org/wiki/Glowplug
+
+- code: P0400
+  scope: generic
+  category: powertrain
+  title:
+    en: Exhaust Gas Recirculation Flow Malfunction
+    de: Abgasrückführung Durchfluss Fehlfunktion
+  description:
+    en: A general fault has been detected in the exhaust gas recirculation (EGR) system. EGR routes a portion of exhaust back into the intake to reduce combustion temperature and NOx emissions. Most EGR codes today are caused by carbon buildup blocking the valve.
+    de: Im Abgasrückführungssystem (AGR) wurde eine allgemeine Störung erkannt. Die AGR leitet einen Teil des Abgases zurück in den Ansaugtrakt, um die Verbrennungstemperatur und damit die NOx-Emissionen zu senken. Die meisten AGR-Fehler heute sind auf Verkokung am Ventil zurückzuführen.
+  affected_components:
+    - egr_valve
+    - egr_cooler
+    - dpfe_sensor
+  common_causes:
+    - id: egr_valve_carboned
+      likelihood: high
+      label:
+        en: EGR valve clogged with carbon
+        de: AGR-Ventil mit Ruß zugesetzt
+    - id: egr_passages_blocked
+      likelihood: medium
+      label:
+        en: Intake EGR passages blocked
+        de: AGR-Kanäle im Ansaugtrakt verstopft
+    - id: dpfe_sensor_failed
+      likelihood: low
+      label:
+        en: DPFE / EGR position sensor failed
+        de: DPFE-/AGR-Positionssensor defekt
+  repair:
+    difficulty: medium
+    diy_possible: true
+    estimated_cost_eur: [60, 800]
+    estimated_hours: [1.0, 5.0]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Exhaust_gas_recirculation
+
+- code: P0401
+  scope: generic
+  category: powertrain
+  title:
+    en: Exhaust Gas Recirculation Flow Insufficient Detected
+    de: Abgasrückführung zu geringer Durchfluss erkannt
+  description:
+    en: When the ECU commands EGR open, the actual flow measured by the DPFE sensor or the resulting MAP/MAF change is below threshold. By far the most common cause is a carboned-up EGR valve or blocked intake passages.
+    de: Wenn die Motorsteuerung das AGR-Ventil öffnet, ist der vom DPFE-Sensor gemessene Durchfluss oder die erwartete MAP/MAF-Änderung zu gering. Mit Abstand häufigste Ursache ist ein verkoktes AGR-Ventil oder verstopfte Ansaugkanäle.
+  affected_components:
+    - egr_valve
+    - egr_passages
+    - dpfe_sensor
+  common_causes:
+    - id: egr_valve_carboned
+      likelihood: high
+      label:
+        en: EGR valve clogged or stuck closed
+        de: AGR-Ventil verkokt oder hängt geschlossen
+    - id: egr_passages_blocked
+      likelihood: high
+      label:
+        en: Intake EGR passages blocked with carbon
+        de: AGR-Kanäle im Ansaugtrakt mit Ruß verstopft
+    - id: vacuum_supply_to_egr
+      likelihood: medium
+      label:
+        en: Vacuum line to EGR (vacuum-actuated valves) cracked
+        de: Unterdruckleitung zum AGR-Ventil (bei Unterdruck-Ventilen) rissig
+  repair:
+    difficulty: medium
+    diy_possible: true
+    estimated_cost_eur: [60, 700]
+    estimated_hours: [1.0, 5.0]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Exhaust_gas_recirculation
+
+- code: P0402
+  scope: generic
+  category: powertrain
+  title:
+    en: Exhaust Gas Recirculation Flow Excessive Detected
+    de: Abgasrückführung zu hoher Durchfluss erkannt
+  description:
+    en: EGR flow is higher than expected when the valve should be closed, or higher than commanded when partially open. Typically a valve that has stuck open due to carbon, causing rough idle and stalling.
+    de: Der AGR-Durchfluss ist höher als erwartet, wenn das Ventil geschlossen sein sollte, oder höher als angefordert bei teilweiser Öffnung. Typischerweise ein Ventil, das durch Verkokung offen hängt — das verursacht Leerlaufunruhe und Absterben des Motors.
+  affected_components:
+    - egr_valve
+  common_causes:
+    - id: egr_valve_stuck_open
+      likelihood: high
+      label:
+        en: EGR valve stuck open
+        de: AGR-Ventil hängt offen
+    - id: egr_valve_seat_eroded
+      likelihood: medium
+      label:
+        en: Valve seat eroded — does not seal
+        de: Ventilsitz erodiert — dichtet nicht
+  repair:
+    difficulty: medium
+    diy_possible: true
+    estimated_cost_eur: [60, 700]
+    estimated_hours: [1.0, 5.0]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Exhaust_gas_recirculation
 
 - code: P0420
   scope: generic
@@ -1235,3 +1835,394 @@
     - sae:J2012
   sources:
     - https://en.wikipedia.org/wiki/Onboard_refueling_vapor_recovery
+
+- code: P0505
+  scope: generic
+  category: powertrain
+  title:
+    en: Idle Air Control System Malfunction
+    de: Leerlaufregelsystem Fehlfunktion
+  description:
+    en: A general fault has been detected in the idle air control (IAC) system. On older vehicles with a separate IAC valve, this means the valve cannot maintain commanded idle RPM; on drive-by-wire systems, the equivalent fault is in the throttle body's idle adaptation.
+    de: Im Leerlaufregelsystem (IAC) wurde eine allgemeine Störung erkannt. Bei älteren Fahrzeugen mit separatem IAC-Ventil bedeutet das, dass das Ventil die angeforderte Leerlaufdrehzahl nicht halten kann; bei elektronischen Drosselklappen tritt der äquivalente Fehler in der Leerlaufanpassung auf.
+  affected_components:
+    - idle_air_control_valve
+    - throttle_body
+  common_causes:
+    - id: iac_carboned
+      likelihood: high
+      label:
+        en: IAC valve carboned, sticky
+        de: IAC-Ventil verkokt, hängend
+    - id: throttle_body_dirty
+      likelihood: medium
+      label:
+        en: Throttle body dirty (drive-by-wire)
+        de: Drosselklappe verschmutzt (E-Gas)
+    - id: vacuum_leak_idle
+      likelihood: medium
+      label:
+        en: Vacuum leak affecting idle
+        de: Falschluft, die den Leerlauf beeinflusst
+  repair:
+    difficulty: easy
+    diy_possible: true
+    estimated_cost_eur: [30, 400]
+    estimated_hours: [0.3, 2.5]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Idle_air_control_actuator
+
+- code: P0506
+  scope: generic
+  category: powertrain
+  title:
+    en: Idle Air Control System RPM Lower Than Expected
+    de: Leerlaufregelsystem Drehzahl niedriger als erwartet
+  description:
+    en: The engine idles below the target RPM despite the IAC opening fully. Indicates restricted air path past the IAC — typically a heavily fouled throttle body or stuck IAC valve.
+    de: Der Motor läuft im Leerlauf unter Solldrehzahl, obwohl das IAC-Ventil vollständig öffnet. Hinweis auf einen eingeschränkten Luftweg am IAC vorbei — typischerweise stark verschmutzte Drosselklappe oder festgesetztes IAC-Ventil.
+  affected_components:
+    - idle_air_control_valve
+    - throttle_body
+  common_causes:
+    - id: throttle_body_dirty
+      likelihood: high
+      label:
+        en: Throttle body or idle bypass passage clogged
+        de: Drosselklappe oder Leerlauf-Bypasskanal verstopft
+    - id: iac_stuck_closed
+      likelihood: medium
+      label:
+        en: IAC valve stuck mostly closed
+        de: IAC-Ventil hängt überwiegend geschlossen
+  repair:
+    difficulty: easy
+    diy_possible: true
+    estimated_cost_eur: [20, 350]
+    estimated_hours: [0.3, 2.0]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Idle_air_control_actuator
+
+- code: P0507
+  scope: generic
+  category: powertrain
+  title:
+    en: Idle Air Control System RPM Higher Than Expected
+    de: Leerlaufregelsystem Drehzahl höher als erwartet
+  description:
+    en: Idle RPM exceeds the target despite the IAC commanded fully closed. Almost always caused by a vacuum leak that lets air bypass the IAC — torn intake hose, leaking PCV, brake booster, or intake manifold gasket.
+    de: Die Leerlaufdrehzahl übersteigt den Sollwert, obwohl das IAC-Ventil vollständig geschlossen wird. Fast immer durch Falschluft verursacht, die das IAC umgeht — gerissener Ansaugschlauch, undichter PCV, Bremskraftverstärker oder Saugrohrdichtung.
+  affected_components:
+    - intake_manifold
+    - pcv_valve
+    - brake_booster
+    - vacuum_hose
+  common_causes:
+    - id: intake_vacuum_leak
+      likelihood: high
+      label:
+        en: Vacuum leak bypassing IAC
+        de: Falschluft umgeht IAC
+    - id: pcv_stuck_open
+      likelihood: medium
+      label:
+        en: PCV valve stuck open
+        de: PCV-Ventil hängt offen
+    - id: brake_booster_leak
+      likelihood: medium
+      label:
+        en: Brake booster diaphragm leaking
+        de: Membran des Bremskraftverstärkers undicht
+  repair:
+    difficulty: medium
+    diy_possible: true
+    estimated_cost_eur: [20, 600]
+    estimated_hours: [0.3, 4.0]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Idle_air_control_actuator
+
+- code: P0562
+  scope: generic
+  category: powertrain
+  title:
+    en: System Voltage Low
+    de: Bordnetzspannung zu niedrig
+  description:
+    en: Battery / charging system voltage seen by the ECU has dropped below the lower threshold (typically around 10.5 V). Modern ECUs are sensitive to under-voltage and may set this code briefly during cranking on a weak battery.
+    de: Die von der Motorsteuerung gemessene Spannung von Batterie/Lichtmaschine ist unter den Schwellwert gefallen (typisch um 10,5 V). Moderne Steuergeräte reagieren empfindlich auf Unterspannung und setzen diesen Code mitunter schon kurz beim Anlassen mit schwacher Batterie.
+  affected_components:
+    - battery
+    - alternator
+    - alternator_belt
+    - battery_cables
+  common_causes:
+    - id: battery_aged
+      likelihood: high
+      label:
+        en: Battery aged or weak
+        de: Batterie gealtert oder schwach
+    - id: alternator_undercharging
+      likelihood: medium
+      label:
+        en: Alternator undercharging
+        de: Lichtmaschine lädt zu schwach
+    - id: battery_terminal_corrosion
+      likelihood: medium
+      label:
+        en: Corroded battery terminals or ground strap
+        de: Korrodierte Batteriepole oder Massekabel
+  repair:
+    difficulty: easy
+    diy_possible: true
+    estimated_cost_eur: [80, 600]
+    estimated_hours: [0.3, 2.5]
+  flags:
+    mil: true
+    emissions_relevant: false
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Automotive_battery
+
+- code: P0563
+  scope: generic
+  category: powertrain
+  title:
+    en: System Voltage High
+    de: Bordnetzspannung zu hoch
+  description:
+    en: Battery / charging system voltage seen by the ECU exceeds the upper threshold (typically around 16 V). Caused by a failing voltage regulator inside the alternator. Sustained over-voltage can damage other electronics.
+    de: Die von der Motorsteuerung gemessene Spannung von Batterie/Lichtmaschine überschreitet den oberen Schwellwert (typisch um 16 V). Verursacht durch einen defekten Spannungsregler in der Lichtmaschine. Anhaltende Überspannung kann weitere Elektronik beschädigen.
+  affected_components:
+    - alternator
+    - voltage_regulator
+  common_causes:
+    - id: voltage_regulator_failed
+      likelihood: high
+      label:
+        en: Voltage regulator failed
+        de: Spannungsregler defekt
+    - id: alternator_failed
+      likelihood: medium
+      label:
+        en: Alternator overcharging
+        de: Lichtmaschine lädt zu stark
+  repair:
+    difficulty: medium
+    diy_possible: true
+    estimated_cost_eur: [120, 800]
+    estimated_hours: [0.5, 3.0]
+  flags:
+    mil: true
+    emissions_relevant: false
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Alternator
+
+- code: P0700
+  scope: generic
+  category: powertrain
+  title:
+    en: Transmission Control System Malfunction
+    de: Getriebesteuerung Fehlfunktion
+  description:
+    en: A request from the transmission control module (TCM) to illuminate the MIL. P0700 itself carries no specific information — it is a wrapper that tells the engine ECU "the TCM has a code". Read the TCM directly to find the actual transmission DTC.
+    de: Eine Anforderung des Getriebesteuergeräts (TCM), die MIL einzuschalten. P0700 selbst trägt keine spezifische Information — es ist ein Wrapper, der dem Motorsteuergerät meldet "das TCM hat einen Code". Das TCM direkt auslesen, um den eigentlichen Getriebe-Code zu finden.
+  affected_components:
+    - transmission_control_module
+  common_causes:
+    - id: tcm_subcode
+      likelihood: high
+      label:
+        en: TCM has a sub-code that needs to be read separately
+        de: TCM hat einen Untercode, der separat ausgelesen werden muss
+  repair:
+    difficulty: medium
+    diy_possible: false
+    estimated_cost_eur: [80, 3000]
+    estimated_hours: [0.5, 12.0]
+  flags:
+    mil: true
+    emissions_relevant: false
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Automatic_transmission
+
+- code: P0715
+  scope: generic
+  category: powertrain
+  title:
+    en: Input/Turbine Speed Sensor "A" Circuit Malfunction
+    de: Eingangs-/Turbinendrehzahlsensor "A" Schaltung Fehlfunktion
+  description:
+    en: The transmission input speed (turbine) sensor signal is missing or implausible. Without this signal, the TCM cannot detect torque converter slip or calculate gear ratio in real time, and shifts become harsh.
+    de: Das Signal des Getriebeeingangs-(Turbinen-)drehzahlsensors fehlt oder ist unplausibel. Ohne dieses Signal kann das TCM weder Schlupf am Drehmomentwandler erkennen noch die Übersetzung in Echtzeit berechnen — die Schaltvorgänge werden hart.
+  affected_components:
+    - transmission_input_speed_sensor
+    - transmission_input_speed_sensor_wiring
+  common_causes:
+    - id: input_speed_sensor_failed
+      likelihood: high
+      label:
+        en: Input speed sensor failed
+        de: Eingangsdrehzahlsensor defekt
+    - id: speed_sensor_wiring
+      likelihood: medium
+      label:
+        en: Wiring or connector fault
+        de: Kabel- oder Steckerfehler
+  repair:
+    difficulty: hard
+    diy_possible: false
+    estimated_cost_eur: [200, 900]
+    estimated_hours: [1.5, 6.0]
+  flags:
+    mil: true
+    emissions_relevant: false
+    limp_mode_possible: true
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Automatic_transmission
+
+- code: P0720
+  scope: generic
+  category: powertrain
+  title:
+    en: Output Speed Sensor Circuit Malfunction
+    de: Ausgangsdrehzahlsensor Schaltung Fehlfunktion
+  description:
+    en: The transmission output speed sensor signal is missing or implausible. The TCM uses this signal together with input speed to determine actual gear ratio; many vehicles also use it as a backup vehicle speed signal for the cluster and ECU.
+    de: Das Signal des Ausgangsdrehzahlsensors fehlt oder ist unplausibel. Das TCM nutzt es zusammen mit der Eingangsdrehzahl, um die tatsächliche Übersetzung zu bestimmen; viele Fahrzeuge nutzen es zudem als Backup-Geschwindigkeitssignal für Tacho und Motorsteuerung.
+  affected_components:
+    - transmission_output_speed_sensor
+    - transmission_output_speed_sensor_wiring
+  common_causes:
+    - id: output_speed_sensor_failed
+      likelihood: high
+      label:
+        en: Output speed sensor failed
+        de: Ausgangsdrehzahlsensor defekt
+    - id: speed_sensor_wiring
+      likelihood: medium
+      label:
+        en: Wiring or connector fault
+        de: Kabel- oder Steckerfehler
+  repair:
+    difficulty: hard
+    diy_possible: false
+    estimated_cost_eur: [200, 900]
+    estimated_hours: [1.5, 6.0]
+  flags:
+    mil: true
+    emissions_relevant: false
+    limp_mode_possible: true
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Automatic_transmission
+
+- code: P0740
+  scope: generic
+  category: powertrain
+  title:
+    en: Torque Converter Clutch Circuit Malfunction
+    de: Wandlerüberbrückungskupplung Schaltung Fehlfunktion
+  description:
+    en: A general fault has been detected in the torque converter clutch (TCC) lockup circuit. The TCC mechanically links the engine to the transmission input shaft above a certain speed to eliminate slip and improve fuel economy.
+    de: Im Steuerkreis der Wandlerüberbrückungskupplung (TCC) wurde eine allgemeine Störung erkannt. Die TCC verbindet Motor und Getriebeeingangswelle oberhalb einer bestimmten Geschwindigkeit mechanisch, um Schlupf zu eliminieren und den Verbrauch zu senken.
+  affected_components:
+    - torque_converter
+    - tcc_solenoid
+    - transmission_fluid
+  common_causes:
+    - id: tcc_solenoid_failed
+      likelihood: high
+      label:
+        en: TCC solenoid failed
+        de: TCC-Magnetventil defekt
+    - id: transmission_fluid_low_or_burnt
+      likelihood: medium
+      label:
+        en: Transmission fluid low or burnt
+        de: Getriebeöl niedrig oder verbrannt
+    - id: tcc_solenoid_wiring
+      likelihood: low
+      label:
+        en: Wiring fault to solenoid
+        de: Verkabelungsfehler zum Magnetventil
+  repair:
+    difficulty: hard
+    diy_possible: false
+    estimated_cost_eur: [300, 2500]
+    estimated_hours: [2.0, 10.0]
+  flags:
+    mil: true
+    emissions_relevant: false
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Torque_converter
+
+- code: P0741
+  scope: generic
+  category: powertrain
+  title:
+    en: Torque Converter Clutch Circuit Performance/Stuck Off
+    de: Wandlerüberbrückungskupplung Funktion/hängt offen
+  description:
+    en: When the TCM commands torque converter lockup, the actual slip stays above threshold — the clutch is not engaging. Often signals worn TCC friction material; transmission fluid analysis usually shows debris.
+    de: Wenn das TCM die Wandlerüberbrückung aktiviert, bleibt der gemessene Schlupf über dem Schwellwert — die Kupplung greift nicht. Hinweis auf verschlissenes TCC-Reibmaterial; eine Analyse des Getriebeöls zeigt meist Abrieb.
+  affected_components:
+    - torque_converter
+    - tcc_solenoid
+    - transmission_valve_body
+  common_causes:
+    - id: tcc_friction_worn
+      likelihood: high
+      label:
+        en: TCC friction material worn
+        de: TCC-Reibbelag verschlissen
+    - id: tcc_solenoid_stuck
+      likelihood: medium
+      label:
+        en: TCC solenoid stuck or slow to react
+        de: TCC-Magnetventil hängt oder reagiert träge
+    - id: valve_body_wear
+      likelihood: medium
+      label:
+        en: Valve body wear (loss of clamping pressure)
+        de: Verschleiß im Schaltschieberkasten (Verlust des Anpressdrucks)
+  repair:
+    difficulty: hard
+    diy_possible: false
+    estimated_cost_eur: [400, 3500]
+    estimated_hours: [3.0, 12.0]
+  flags:
+    mil: true
+    emissions_relevant: false
+  related_codes: [P0740]
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Torque_converter
