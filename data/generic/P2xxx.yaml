@@ -1,3 +1,283 @@
-# Generic Powertrain codes (SAE J2012, P2xxx range).
-# Add entries here. See data/generic/P0xxx.yaml for the format.
-[]
+- code: P2002
+  scope: generic
+  category: powertrain
+  title:
+    en: Diesel Particulate Filter Efficiency Below Threshold (Bank 1)
+    de: Dieselpartikelfilter Wirkungsgrad unter Schwellwert (Bank 1)
+  description:
+    en: The differential pressure sensor or temperature monitor across the diesel particulate filter (DPF) reports that filtration efficiency has dropped below the legal threshold. Common after a damaged filter substrate, blocked passages from failed regenerations, or a leak around the housing.
+    de: Der Differenzdrucksensor oder die Temperaturüberwachung am Dieselpartikelfilter (DPF) meldet, dass die Filtrationswirkung unter den gesetzlichen Schwellwert gefallen ist. Häufig nach beschädigtem Filtermaterial, durch fehlgeschlagene Regenerationen verstopft oder bei einer Undichtigkeit am Gehäuse.
+  affected_components:
+    - diesel_particulate_filter
+    - dpf_differential_pressure_sensor
+    - dpf_temperature_sensor
+  common_causes:
+    - id: dpf_loaded_failed_regen
+      likelihood: high
+      label:
+        en: DPF heavily loaded — repeated short trips prevent regeneration
+        de: DPF stark beladen — viele Kurzstrecken verhindern die Regeneration
+    - id: dpf_substrate_damaged
+      likelihood: medium
+      label:
+        en: Filter substrate cracked or melted from runaway regeneration
+        de: Filtermaterial gerissen oder geschmolzen durch unkontrollierte Regeneration
+    - id: dpf_pressure_sensor_drift
+      likelihood: medium
+      label:
+        en: Differential pressure sensor drift
+        de: Differenzdrucksensor driftet
+    - id: dpf_housing_leak
+      likelihood: low
+      label:
+        en: Leak around DPF housing
+        de: Undichtigkeit am DPF-Gehäuse
+  repair:
+    difficulty: hard
+    diy_possible: false
+    estimated_cost_eur: [400, 4000]
+    estimated_hours: [2.0, 8.0]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+    limp_mode_possible: true
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Diesel_particulate_filter
+
+- code: P2096
+  scope: generic
+  category: powertrain
+  title:
+    en: Post Catalyst Fuel Trim System Too Lean (Bank 1)
+    de: Nachkat-Kraftstofftrim System zu mager (Bank 1)
+  description:
+    en: Long-term fuel trim derived from the downstream oxygen sensor on bank 1 has reached the lean limit. The downstream-trim correction is a fine adjustment that runs after the main trim from the upstream sensor; persistent excursion suggests a degraded catalyst, an exhaust leak after the catalyst, or a drifting downstream sensor.
+    de: Die aus der nachgeschalteten Lambdasonde auf Bank 1 abgeleitete Langzeit-Kraftstofftrimmung hat ihren mageren Anschlag erreicht. Diese Nach-Kat-Trimmung ist eine Feinkorrektur, die zusätzlich zur Haupttrimmung der Vorsonde läuft; ein dauerhaft mageres Auslenken weist auf einen degradierten Katalysator, ein Abgasleck nach dem Katalysator oder eine driftende Nachsonde hin.
+  affected_components:
+    - oxygen_sensor_downstream
+    - catalytic_converter
+    - exhaust_pipe_post_cat
+  common_causes:
+    - id: exhaust_leak_post_cat
+      likelihood: high
+      label:
+        en: Exhaust leak after catalyst (post-cat sensor sees ambient air)
+        de: Abgasleck nach Katalysator (Nach-Sonde sieht Umgebungsluft)
+    - id: o2_downstream_drift
+      likelihood: medium
+      label:
+        en: Downstream sensor drifting
+        de: Nachsonde driftet
+    - id: catalyst_degraded
+      likelihood: low
+      label:
+        en: Catalyst lightly degraded
+        de: Katalysator leicht degradiert
+  repair:
+    difficulty: medium
+    diy_possible: true
+    estimated_cost_eur: [60, 700]
+    estimated_hours: [0.5, 4.0]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Oxygen_sensor
+
+- code: P2138
+  scope: generic
+  category: powertrain
+  title:
+    en: Throttle/Pedal Position Sensor "D"/"E" Voltage Correlation
+    de: Drosselklappen-/Pedalstellungssensor "D"/"E" Spannungs-Plausibilität
+  description:
+    en: The two redundant accelerator pedal position sensors disagree by more than the allowed tolerance. The ECU cannot trust either signal and switches to limp-home with very limited torque. Often appears intermittently with a worn pedal sensor before failing outright.
+    de: Die beiden redundanten Pedalwertgeber zeigen eine Abweichung über der zulässigen Toleranz. Die Motorsteuerung kann keinem der beiden Signale trauen und schaltet in den Notlauf mit stark begrenztem Drehmoment. Tritt oft sporadisch auf, bevor ein verschlissener Pedalwertgeber endgültig ausfällt.
+  affected_components:
+    - accelerator_pedal_sensor
+    - accelerator_pedal_wiring
+  common_causes:
+    - id: pedal_sensor_worn
+      likelihood: high
+      label:
+        en: Pedal position sensor worn or contaminated
+        de: Pedalwertgeber verschlissen oder verschmutzt
+    - id: pedal_connector_corrosion
+      likelihood: medium
+      label:
+        en: Corroded pedal connector
+        de: Korrodierter Pedalstecker
+  repair:
+    difficulty: easy
+    diy_possible: true
+    estimated_cost_eur: [80, 400]
+    estimated_hours: [0.3, 1.5]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+    limp_mode_possible: true
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Throttle_position_sensor
+
+- code: P2187
+  scope: generic
+  category: powertrain
+  title:
+    en: System Too Lean at Idle (Bank 1)
+    de: System zu mager im Leerlauf (Bank 1)
+  description:
+    en: Fuel trim on bank 1 hits the lean limit only at idle, while trim returns to normal at higher load. This pattern strongly indicates a vacuum leak — leaks become a larger fraction of total airflow at idle and so dominate the trim, but disappear into background noise above idle.
+    de: Die Kraftstofftrimmung auf Bank 1 erreicht nur im Leerlauf den mageren Anschlag, bei höherer Last normalisiert sie sich. Dieses Muster weist sehr stark auf Falschluft hin — Lecks machen im Leerlauf einen großen Anteil am Gesamtluftstrom aus und prägen die Trimmung, oberhalb des Leerlaufs gehen sie im Rauschen unter.
+  affected_components:
+    - intake_manifold
+    - pcv_valve
+    - brake_booster
+    - vacuum_hose
+  common_causes:
+    - id: intake_vacuum_leak_idle
+      likelihood: high
+      label:
+        en: Vacuum leak (intake gasket, brake booster, hoses)
+        de: Falschluft (Saugrohrdichtung, Bremskraftverstärker, Schläuche)
+    - id: pcv_stuck_open
+      likelihood: medium
+      label:
+        en: PCV valve stuck open
+        de: PCV-Ventil hängt offen
+  repair:
+    difficulty: medium
+    diy_possible: true
+    estimated_cost_eur: [20, 600]
+    estimated_hours: [0.3, 4.0]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+  related_codes: [P0171]
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Engine_control_unit
+
+- code: P2188
+  scope: generic
+  category: powertrain
+  title:
+    en: System Too Rich at Idle (Bank 1)
+    de: System zu fett im Leerlauf (Bank 1)
+  description:
+    en: Fuel trim on bank 1 hits the rich limit only at idle. Often a leaking injector dribbling fuel at low load, a sticky purge valve dumping fuel vapour, or fuel pressure regulator that fails to relieve pressure when intake vacuum is high.
+    de: Die Kraftstofftrimmung auf Bank 1 erreicht nur im Leerlauf den fetten Anschlag. Häufig ein undichter Injektor, der bei geringer Last Kraftstoff abgibt, ein hängendes Tankentlüftungsventil, das Benzindämpfe einleitet, oder ein Kraftstoffdruckregler, der bei hohem Saugrohrunterdruck den Druck nicht abbaut.
+  affected_components:
+    - fuel_injector
+    - evap_purge_valve
+    - fuel_pressure_regulator
+  common_causes:
+    - id: injector_leaking_idle
+      likelihood: high
+      label:
+        en: Leaking injector at idle
+        de: Undichter Injektor im Leerlauf
+    - id: purge_valve_stuck_open
+      likelihood: medium
+      label:
+        en: Purge valve stuck open
+        de: Tankentlüftungsventil hängt offen
+  repair:
+    difficulty: medium
+    diy_possible: true
+    estimated_cost_eur: [40, 500]
+    estimated_hours: [0.5, 3.5]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+  related_codes: [P0172]
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Engine_control_unit
+
+- code: P2270
+  scope: generic
+  category: powertrain
+  title:
+    en: O2 Sensor Signal Stuck Lean (Bank 1, Sensor 2)
+    de: Lambdasonde Signal hängt mager (Bank 1, Sonde 2)
+  description:
+    en: The downstream oxygen sensor on bank 1 reports a constant lean signal during a forced-rich command from the ECU. Suggests either a sensor that has lost its rich-side response, or a catalyst that is so degraded that no rich exhaust reaches the downstream sensor (cross-check P0420).
+    de: Die nachgeschaltete Lambdasonde auf Bank 1 meldet während einer angeforderten Anfettung dauerhaft mager. Hinweis entweder auf eine Sonde, die das fette Spektrum nicht mehr abbildet, oder auf einen so stark degradierten Katalysator, dass kein fettes Abgas zur Nachsonde durchkommt (mit P0420 abgleichen).
+  affected_components:
+    - oxygen_sensor_downstream
+    - catalytic_converter
+  common_causes:
+    - id: o2_downstream_failed_lean
+      likelihood: high
+      label:
+        en: Downstream sensor failed stuck lean
+        de: Nachsonde defekt, hängt mager
+    - id: exhaust_leak_post_cat
+      likelihood: medium
+      label:
+        en: Exhaust leak after catalyst
+        de: Abgasleck nach Katalysator
+  repair:
+    difficulty: medium
+    diy_possible: true
+    estimated_cost_eur: [60, 800]
+    estimated_hours: [0.3, 4.0]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Oxygen_sensor
+
+- code: P2279
+  scope: generic
+  category: powertrain
+  title:
+    en: Intake Air System Leak
+    de: Leck im Ansaugsystem
+  description:
+    en: The ECU has detected a discrepancy between commanded throttle/intake conditions and the resulting MAP/MAF that points to unmetered air entering after the throttle body. On turbocharged engines this often means a cracked or disconnected boost pipe between turbo and intake; on naturally aspirated engines, a hole in the intake manifold or hose.
+    de: Die Motorsteuerung erkennt eine Differenz zwischen angeforderter Drosselklappenstellung und dem resultierenden MAP/MAF, die auf ungemessene Luft hinter der Drosselklappe hindeutet. Auf aufgeladenen Motoren häufig ein gerissenes oder abgefallenes Ladeluftrohr zwischen Turbolader und Ansaugtrakt; auf Saugmotoren ein Loch im Saugrohr oder Schlauch.
+  affected_components:
+    - intake_manifold
+    - intercooler_pipe
+    - throttle_body
+  common_causes:
+    - id: boost_pipe_disconnected
+      likelihood: high
+      label:
+        en: Boost pipe disconnected or cracked
+        de: Ladeluftrohr abgefallen oder rissig
+    - id: intake_hose_split
+      likelihood: high
+      label:
+        en: Intake hose split
+        de: Ansaugschlauch eingerissen
+  repair:
+    difficulty: easy
+    diy_possible: true
+    estimated_cost_eur: [20, 400]
+    estimated_hours: [0.3, 2.5]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Inlet_manifold
