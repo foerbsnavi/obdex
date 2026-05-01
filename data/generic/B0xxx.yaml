@@ -1830,3 +1830,1533 @@
     - sae:J2012
   sources:
     - https://en.wikipedia.org/wiki/On-board_diagnostics
+
+- code: B0102
+  scope: generic
+  category: body
+  title:
+    en: Power Mirror Switch Circuit
+    de: Außenspiegel-Verstellschalter Stromkreis
+  description:
+    en: The body control module has detected a fault in the power mirror switch circuit. The switch input does not match a valid pattern — mirror adjustment may be inoperative.
+    de: Das Karosserie-Steuergerät hat einen Fehler im Stromkreis des Außenspiegel-Verstellschalters erkannt. Das Schaltersignal entspricht keinem gültigen Muster — die Spiegelverstellung kann ausfallen.
+  affected_components:
+    - mirror_switch
+    - door_wiring_harness
+    - body_control_module
+  common_causes:
+    - id: switch_failed
+      likelihood: high
+      label:
+        en: Mirror switch failed
+        de: Spiegelverstellschalter defekt
+    - id: wiring_open
+      likelihood: medium
+      label:
+        en: Wiring or connector open
+        de: Verkabelung oder Stecker unterbrochen
+  repair:
+    difficulty: easy
+    diy_possible: true
+    estimated_cost_eur: [30, 200]
+    estimated_hours: [0.5, 1.5]
+  flags:
+    mil: false
+    emissions_relevant: false
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Wing_mirror
+
+- code: B0104
+  scope: generic
+  category: body
+  title:
+    en: Driver Mirror Adjust Switch Circuit
+    de: Fahrer-Außenspiegelverstellschalter Stromkreis
+  description:
+    en: The body control module has detected a fault in the driver-side mirror adjust switch circuit. The mirror cannot be moved via the switch on the driver door.
+    de: Das Karosserie-Steuergerät hat einen Fehler im Stromkreis des fahrerseitigen Spiegelverstellschalters erkannt. Der Spiegel kann über den Schalter in der Fahrertür nicht bewegt werden.
+  affected_components:
+    - mirror_switch
+    - door_wiring_harness
+  common_causes:
+    - id: switch_failed
+      likelihood: high
+      label:
+        en: Driver mirror switch failed
+        de: Fahrerseitiger Spiegelschalter defekt
+    - id: wiring_open
+      likelihood: medium
+      label:
+        en: Wiring open or shorted
+        de: Verkabelung unterbrochen oder kurzgeschlossen
+  repair:
+    difficulty: easy
+    diy_possible: true
+    estimated_cost_eur: [30, 200]
+    estimated_hours: [0.5, 1.5]
+  flags:
+    mil: false
+    emissions_relevant: false
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Wing_mirror
+
+- code: B0106
+  scope: generic
+  category: body
+  title:
+    en: Passenger Mirror Adjust Switch Circuit
+    de: Beifahrer-Außenspiegelverstellschalter Stromkreis
+  description:
+    en: The body control module has detected a fault in the passenger-side mirror adjust switch circuit. Same fault profile as B0104 but for the passenger mirror.
+    de: Das Karosserie-Steuergerät hat einen Fehler im Stromkreis des beifahrerseitigen Spiegelverstellschalters erkannt. Gleiches Fehlerbild wie B0104, jedoch für den Beifahrerspiegel.
+  affected_components:
+    - mirror_switch
+    - door_wiring_harness
+  common_causes:
+    - id: switch_failed
+      likelihood: high
+      label:
+        en: Passenger mirror switch failed
+        de: Beifahrerseitiger Spiegelschalter defekt
+    - id: wiring_open
+      likelihood: medium
+      label:
+        en: Wiring open or shorted
+        de: Verkabelung unterbrochen oder kurzgeschlossen
+  repair:
+    difficulty: easy
+    diy_possible: true
+    estimated_cost_eur: [30, 200]
+    estimated_hours: [0.5, 1.5]
+  flags:
+    mil: false
+    emissions_relevant: false
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Wing_mirror
+
+- code: B0108
+  scope: generic
+  category: body
+  title:
+    en: Mirror Folder Switch Circuit
+    de: Spiegelanklappschalter Stromkreis
+  description:
+    en: The body control module has detected a fault in the mirror folder switch circuit. Power-folding mirrors cannot be folded or unfolded via the switch.
+    de: Das Karosserie-Steuergerät hat einen Fehler im Stromkreis des Spiegelanklappschalters erkannt. Elektrisch anklappbare Spiegel können über den Schalter nicht angeklappt oder ausgeklappt werden.
+  affected_components:
+    - mirror_folder_switch
+    - door_wiring_harness
+  common_causes:
+    - id: switch_failed
+      likelihood: high
+      label:
+        en: Folder switch failed
+        de: Anklappschalter defekt
+    - id: wiring_open
+      likelihood: medium
+      label:
+        en: Wiring open
+        de: Verkabelung unterbrochen
+  repair:
+    difficulty: easy
+    diy_possible: true
+    estimated_cost_eur: [30, 200]
+    estimated_hours: [0.5, 1.5]
+  flags:
+    mil: false
+    emissions_relevant: false
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Wing_mirror
+
+- code: B0125
+  scope: generic
+  category: body
+  title:
+    en: Driver Side Mirror Position Sensor
+    de: Fahrer-Außenspiegel Positionssensor
+  description:
+    en: The body control module has detected a fault in the driver-side mirror position sensor. Memory mirror positions cannot be saved or restored reliably.
+    de: Das Karosserie-Steuergerät hat einen Fehler im Positionssensor des Fahrer-Außenspiegels erkannt. Memory-Spiegelpositionen können nicht zuverlässig gespeichert oder abgerufen werden.
+  affected_components:
+    - mirror_position_sensor
+    - mirror_motor_assembly
+  common_causes:
+    - id: sensor_failed
+      likelihood: high
+      label:
+        en: Position sensor or potentiometer failed
+        de: Positionssensor oder Potentiometer defekt
+    - id: mirror_assembly_water_ingress
+      likelihood: medium
+      label:
+        en: Water ingress into mirror assembly
+        de: Wassereintritt in das Spiegelgehäuse
+  repair:
+    difficulty: medium
+    diy_possible: false
+    estimated_cost_eur: [80, 400]
+    estimated_hours: [0.5, 2.0]
+  flags:
+    mil: false
+    emissions_relevant: false
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Wing_mirror
+
+- code: B0126
+  scope: generic
+  category: body
+  title:
+    en: Passenger Side Mirror Position Sensor
+    de: Beifahrer-Außenspiegel Positionssensor
+  description:
+    en: The body control module has detected a fault in the passenger-side mirror position sensor. Same fault profile as B0125 but for the passenger mirror.
+    de: Das Karosserie-Steuergerät hat einen Fehler im Positionssensor des Beifahrer-Außenspiegels erkannt. Gleiches Fehlerbild wie B0125, jedoch für den Beifahrerspiegel.
+  affected_components:
+    - mirror_position_sensor
+    - mirror_motor_assembly
+  common_causes:
+    - id: sensor_failed
+      likelihood: high
+      label:
+        en: Position sensor failed
+        de: Positionssensor defekt
+    - id: mirror_assembly_water_ingress
+      likelihood: medium
+      label:
+        en: Water ingress into mirror assembly
+        de: Wassereintritt in das Spiegelgehäuse
+  repair:
+    difficulty: medium
+    diy_possible: false
+    estimated_cost_eur: [80, 400]
+    estimated_hours: [0.5, 2.0]
+  flags:
+    mil: false
+    emissions_relevant: false
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Wing_mirror
+
+- code: B0190
+  scope: generic
+  category: body
+  title:
+    en: Front Wiper Park Switch Circuit
+    de: Frontwischer Parkschalter Stromkreis
+  description:
+    en: The body control module has detected a fault in the front wiper park switch circuit. The wipers may not return to the park position when switched off.
+    de: Das Karosserie-Steuergerät hat einen Fehler im Stromkreis des Frontwischer-Parkschalters erkannt. Die Wischer kehren beim Ausschalten möglicherweise nicht in die Parkposition zurück.
+  affected_components:
+    - wiper_motor
+    - wiper_park_switch
+    - body_control_module
+  common_causes:
+    - id: park_switch_failed
+      likelihood: high
+      label:
+        en: Park switch in wiper motor failed
+        de: Parkschalter im Wischermotor defekt
+    - id: wiring_open
+      likelihood: medium
+      label:
+        en: Wiring open or corroded
+        de: Verkabelung unterbrochen oder korrodiert
+  repair:
+    difficulty: medium
+    diy_possible: true
+    estimated_cost_eur: [80, 400]
+    estimated_hours: [0.5, 2.0]
+  flags:
+    mil: false
+    emissions_relevant: false
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Windscreen_wiper
+
+- code: B0192
+  scope: generic
+  category: body
+  title:
+    en: Front Wiper Speed Performance
+    de: Frontwischer Geschwindigkeit Funktionsbereich
+  description:
+    en: The body control module has detected that the front wiper does not run at the commanded speed. Possible causes include a worn motor, binding linkage, or excessive load.
+    de: Das Karosserie-Steuergerät hat erkannt, dass der Frontwischer nicht mit der angeforderten Geschwindigkeit läuft. Mögliche Ursachen sind ein verschlissener Motor, schwergängiges Gestänge oder zu hohe Last.
+  affected_components:
+    - wiper_motor
+    - wiper_linkage
+  common_causes:
+    - id: wiper_motor_worn
+      likelihood: high
+      label:
+        en: Wiper motor worn
+        de: Wischermotor verschlissen
+    - id: linkage_binding
+      likelihood: medium
+      label:
+        en: Wiper linkage binding or seized
+        de: Wischergestänge schwergängig oder fest
+  repair:
+    difficulty: medium
+    diy_possible: true
+    estimated_cost_eur: [80, 500]
+    estimated_hours: [0.5, 2.5]
+  flags:
+    mil: false
+    emissions_relevant: false
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Windscreen_wiper
+
+- code: B0210
+  scope: generic
+  category: body
+  title:
+    en: Rain Sensor Module
+    de: Regensensor-Modul
+  description:
+    en: The body control module has detected a fault in the rain sensor module on the windshield. Automatic wiper activation based on moisture detection is no longer available.
+    de: Das Karosserie-Steuergerät hat einen Fehler im Regensensor-Modul an der Windschutzscheibe erkannt. Die automatische Wischeraktivierung anhand der Feuchtigkeitserkennung ist nicht mehr verfügbar.
+  affected_components:
+    - rain_sensor
+    - body_control_module
+    - windshield
+  common_causes:
+    - id: rain_sensor_failed
+      likelihood: high
+      label:
+        en: Rain sensor failed or detached
+        de: Regensensor defekt oder gelöst
+    - id: windshield_replaced_uncoded
+      likelihood: medium
+      label:
+        en: Windshield replaced without sensor recoding
+        de: Windschutzscheibe ohne Sensor-Codierung getauscht
+  repair:
+    difficulty: medium
+    diy_possible: false
+    estimated_cost_eur: [80, 400]
+    estimated_hours: [0.3, 1.5]
+  flags:
+    mil: false
+    emissions_relevant: false
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Windscreen_wiper
+
+- code: B0245
+  scope: generic
+  category: body
+  title:
+    en: Driver Window Switch Circuit
+    de: Fahrer-Fensterheberschalter Stromkreis
+  description:
+    en: The body control module has detected a fault in the driver window switch circuit. The window may not respond to the switch in the driver door.
+    de: Das Karosserie-Steuergerät hat einen Fehler im Stromkreis des Fahrer-Fensterheberschalters erkannt. Das Fenster reagiert möglicherweise nicht auf den Schalter in der Fahrertür.
+  affected_components:
+    - window_switch
+    - door_wiring_harness
+    - body_control_module
+  common_causes:
+    - id: switch_failed
+      likelihood: high
+      label:
+        en: Window switch failed
+        de: Fensterheberschalter defekt
+    - id: wiring_open
+      likelihood: medium
+      label:
+        en: Wiring open or shorted
+        de: Verkabelung unterbrochen oder kurzgeschlossen
+  repair:
+    difficulty: easy
+    diy_possible: true
+    estimated_cost_eur: [30, 250]
+    estimated_hours: [0.5, 1.5]
+  flags:
+    mil: false
+    emissions_relevant: false
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Power_window
+
+- code: B0247
+  scope: generic
+  category: body
+  title:
+    en: Passenger Window Switch Circuit
+    de: Beifahrer-Fensterheberschalter Stromkreis
+  description:
+    en: The body control module has detected a fault in the passenger window switch circuit. Same fault profile as B0245 but for the passenger window.
+    de: Das Karosserie-Steuergerät hat einen Fehler im Stromkreis des Beifahrer-Fensterheberschalters erkannt. Gleiches Fehlerbild wie B0245, jedoch für das Beifahrerfenster.
+  affected_components:
+    - window_switch
+    - door_wiring_harness
+  common_causes:
+    - id: switch_failed
+      likelihood: high
+      label:
+        en: Window switch failed
+        de: Fensterheberschalter defekt
+    - id: wiring_open
+      likelihood: medium
+      label:
+        en: Wiring open or shorted
+        de: Verkabelung unterbrochen oder kurzgeschlossen
+  repair:
+    difficulty: easy
+    diy_possible: true
+    estimated_cost_eur: [30, 250]
+    estimated_hours: [0.5, 1.5]
+  flags:
+    mil: false
+    emissions_relevant: false
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Power_window
+
+- code: B0252
+  scope: generic
+  category: body
+  title:
+    en: Driver Window Motor Down Circuit
+    de: Fahrer-Fensterhebermotor Ab-Kreis
+  description:
+    en: The body control module has detected a fault in the driver window motor down-direction control circuit. The window may not lower correctly.
+    de: Das Karosserie-Steuergerät hat einen Fehler im Steuerkreis des Fahrer-Fensterhebermotors für die Ab-Richtung erkannt. Das Fenster lässt sich möglicherweise nicht korrekt absenken.
+  affected_components:
+    - window_motor
+    - door_wiring_harness
+  common_causes:
+    - id: motor_failed
+      likelihood: high
+      label:
+        en: Window motor failed or seized
+        de: Fensterhebermotor defekt oder fest
+    - id: wiring_short
+      likelihood: medium
+      label:
+        en: Wiring shorted or open
+        de: Verkabelung kurzgeschlossen oder unterbrochen
+  repair:
+    difficulty: medium
+    diy_possible: true
+    estimated_cost_eur: [80, 500]
+    estimated_hours: [0.5, 2.5]
+  flags:
+    mil: false
+    emissions_relevant: false
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Power_window
+
+- code: B0272
+  scope: generic
+  category: body
+  title:
+    en: Power Door Lock Switch Circuit
+    de: Zentralverriegelungs-Schalter Stromkreis
+  description:
+    en: The body control module has detected a fault in the power door lock switch circuit. Central locking may not respond to the door switch.
+    de: Das Karosserie-Steuergerät hat einen Fehler im Stromkreis des Zentralverriegelungs-Schalters erkannt. Die Zentralverriegelung reagiert möglicherweise nicht auf den Türschalter.
+  affected_components:
+    - door_lock_switch
+    - door_wiring_harness
+    - body_control_module
+  common_causes:
+    - id: switch_failed
+      likelihood: high
+      label:
+        en: Lock switch failed
+        de: Verriegelungsschalter defekt
+    - id: wiring_open
+      likelihood: medium
+      label:
+        en: Wiring open or shorted
+        de: Verkabelung unterbrochen oder kurzgeschlossen
+  repair:
+    difficulty: easy
+    diy_possible: true
+    estimated_cost_eur: [30, 200]
+    estimated_hours: [0.5, 1.5]
+  flags:
+    mil: false
+    emissions_relevant: false
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Power_door_lock
+
+- code: B0274
+  scope: generic
+  category: body
+  title:
+    en: Trunk Lid Release Switch Circuit
+    de: Kofferraumdeckel-Entriegelungsschalter Stromkreis
+  description:
+    en: The body control module has detected a fault in the trunk lid release switch circuit. The trunk may not open via the interior or remote release.
+    de: Das Karosserie-Steuergerät hat einen Fehler im Stromkreis des Kofferraumdeckel-Entriegelungsschalters erkannt. Der Kofferraum lässt sich möglicherweise nicht über den Innen- oder Fernentriegelungstaster öffnen.
+  affected_components:
+    - trunk_release_switch
+    - body_wiring_harness
+  common_causes:
+    - id: switch_failed
+      likelihood: high
+      label:
+        en: Release switch failed
+        de: Entriegelungsschalter defekt
+    - id: wiring_open
+      likelihood: medium
+      label:
+        en: Wiring open
+        de: Verkabelung unterbrochen
+  repair:
+    difficulty: easy
+    diy_possible: true
+    estimated_cost_eur: [30, 200]
+    estimated_hours: [0.3, 1.5]
+  flags:
+    mil: false
+    emissions_relevant: false
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Power_door_lock
+
+- code: B0322
+  scope: generic
+  category: body
+  title:
+    en: Driver Seat Tilt Position Sensor
+    de: Fahrersitz Neigungs-Positionssensor
+  description:
+    en: The body control module has detected a fault in the driver seat tilt position sensor. Memory positions for seat back tilt cannot be reliably stored.
+    de: Das Karosserie-Steuergerät hat einen Fehler im Neigungs-Positionssensor des Fahrersitzes erkannt. Memory-Positionen für die Sitzlehnenneigung können nicht zuverlässig gespeichert werden.
+  affected_components:
+    - seat_position_sensor
+    - seat_module
+  common_causes:
+    - id: sensor_failed
+      likelihood: high
+      label:
+        en: Tilt position sensor failed
+        de: Neigungs-Positionssensor defekt
+    - id: wiring_open
+      likelihood: medium
+      label:
+        en: Wiring open under seat
+        de: Verkabelung unter dem Sitz unterbrochen
+  repair:
+    difficulty: medium
+    diy_possible: false
+    estimated_cost_eur: [80, 500]
+    estimated_hours: [0.5, 2.5]
+  flags:
+    mil: false
+    emissions_relevant: false
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Power_seat
+
+- code: B0325
+  scope: generic
+  category: body
+  title:
+    en: Driver Seat Memory Set Switch
+    de: Fahrersitz Memory-Speichertaste
+  description:
+    en: The body control module has detected a fault in the driver seat memory set switch circuit. Seat positions cannot be saved to memory presets.
+    de: Das Karosserie-Steuergerät hat einen Fehler im Stromkreis der Memory-Speichertaste des Fahrersitzes erkannt. Sitzpositionen können nicht in den Memory-Speicher abgelegt werden.
+  affected_components:
+    - memory_switch
+    - seat_module
+  common_causes:
+    - id: switch_failed
+      likelihood: high
+      label:
+        en: Memory set switch failed
+        de: Memory-Speichertaste defekt
+    - id: wiring_open
+      likelihood: medium
+      label:
+        en: Wiring open or shorted
+        de: Verkabelung unterbrochen oder kurzgeschlossen
+  repair:
+    difficulty: easy
+    diy_possible: true
+    estimated_cost_eur: [40, 250]
+    estimated_hours: [0.3, 1.5]
+  flags:
+    mil: false
+    emissions_relevant: false
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Power_seat
+
+- code: B0327
+  scope: generic
+  category: body
+  title:
+    en: Passenger Seat Position Memory
+    de: Beifahrersitz Positions-Memory
+  description:
+    en: The body control module has detected a fault in the passenger seat position memory function. Saved positions cannot be reliably restored.
+    de: Das Karosserie-Steuergerät hat einen Fehler in der Positions-Memory-Funktion des Beifahrersitzes erkannt. Gespeicherte Positionen können nicht zuverlässig wiederhergestellt werden.
+  affected_components:
+    - seat_module
+    - seat_position_sensor
+  common_causes:
+    - id: sensor_failed
+      likelihood: high
+      label:
+        en: Position sensor failed
+        de: Positionssensor defekt
+    - id: seat_module_fault
+      likelihood: medium
+      label:
+        en: Seat module internal fault
+        de: Sitzmodul interner Fehler
+  repair:
+    difficulty: medium
+    diy_possible: false
+    estimated_cost_eur: [80, 500]
+    estimated_hours: [0.5, 2.5]
+  flags:
+    mil: false
+    emissions_relevant: false
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Power_seat
+
+- code: B0335
+  scope: generic
+  category: body
+  title:
+    en: Driver Seat Heater Circuit
+    de: Fahrersitzheizung Stromkreis
+  description:
+    en: The body control module has detected a fault in the driver seat heater circuit. The heating element or wiring is open or shorted — the seat does not heat.
+    de: Das Karosserie-Steuergerät hat einen Fehler im Stromkreis der Fahrersitzheizung erkannt. Das Heizelement oder die Verkabelung ist unterbrochen oder kurzgeschlossen — der Sitz heizt nicht.
+  affected_components:
+    - seat_heater_element
+    - seat_wiring_harness
+  common_causes:
+    - id: heater_element_open
+      likelihood: high
+      label:
+        en: Heater element broken
+        de: Heizmatte gebrochen
+    - id: connector_corroded
+      likelihood: medium
+      label:
+        en: Seat connector corroded
+        de: Sitzstecker korrodiert
+  repair:
+    difficulty: medium
+    diy_possible: false
+    estimated_cost_eur: [150, 800]
+    estimated_hours: [1.0, 4.0]
+  flags:
+    mil: false
+    emissions_relevant: false
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Power_seat
+
+- code: B0337
+  scope: generic
+  category: body
+  title:
+    en: Passenger Seat Heater Circuit
+    de: Beifahrersitzheizung Stromkreis
+  description:
+    en: The body control module has detected a fault in the passenger seat heater circuit. Same fault profile as B0335 but for the passenger seat.
+    de: Das Karosserie-Steuergerät hat einen Fehler im Stromkreis der Beifahrersitzheizung erkannt. Gleiches Fehlerbild wie B0335, jedoch für den Beifahrersitz.
+  affected_components:
+    - seat_heater_element
+    - seat_wiring_harness
+  common_causes:
+    - id: heater_element_open
+      likelihood: high
+      label:
+        en: Heater element broken
+        de: Heizmatte gebrochen
+    - id: connector_corroded
+      likelihood: medium
+      label:
+        en: Seat connector corroded
+        de: Sitzstecker korrodiert
+  repair:
+    difficulty: medium
+    diy_possible: false
+    estimated_cost_eur: [150, 800]
+    estimated_hours: [1.0, 4.0]
+  flags:
+    mil: false
+    emissions_relevant: false
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Power_seat
+
+- code: B0339
+  scope: generic
+  category: body
+  title:
+    en: Rear Seat Heater Circuit
+    de: Rücksitzheizung Stromkreis
+  description:
+    en: The body control module has detected a fault in the rear seat heater circuit. The rear heating elements are open or shorted.
+    de: Das Karosserie-Steuergerät hat einen Fehler im Stromkreis der Rücksitzheizung erkannt. Die hinteren Heizelemente sind unterbrochen oder kurzgeschlossen.
+  affected_components:
+    - seat_heater_element
+    - rear_seat_wiring
+  common_causes:
+    - id: heater_element_open
+      likelihood: high
+      label:
+        en: Heater element broken
+        de: Heizmatte gebrochen
+    - id: wiring_open
+      likelihood: medium
+      label:
+        en: Wiring open under seat
+        de: Verkabelung unter dem Sitz unterbrochen
+  repair:
+    difficulty: medium
+    diy_possible: false
+    estimated_cost_eur: [150, 800]
+    estimated_hours: [1.0, 4.0]
+  flags:
+    mil: false
+    emissions_relevant: false
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Power_seat
+
+- code: B0186
+  scope: generic
+  category: body
+  title:
+    en: Front Blower Motor Speed Performance
+    de: Frontgebläsemotor Drehzahl Funktionsbereich
+  description:
+    en: The HVAC control module has detected that the front blower motor does not run at the commanded speed. Possible causes include a worn motor, blocked airway, or driver module fault.
+    de: Das Klima-Steuergerät hat erkannt, dass der Frontgebläsemotor nicht mit der angeforderten Drehzahl läuft. Mögliche Ursachen sind ein verschlissener Motor, ein verstopfter Luftpfad oder ein Fehler im Endstufenmodul.
+  affected_components:
+    - blower_motor
+    - blower_resistor
+    - cabin_air_filter
+  common_causes:
+    - id: blower_motor_worn
+      likelihood: high
+      label:
+        en: Blower motor worn or seized
+        de: Gebläsemotor verschlissen oder fest
+    - id: cabin_filter_blocked
+      likelihood: medium
+      label:
+        en: Cabin filter heavily blocked
+        de: Innenraumfilter stark verstopft
+  repair:
+    difficulty: medium
+    diy_possible: true
+    estimated_cost_eur: [80, 500]
+    estimated_hours: [0.5, 2.5]
+  flags:
+    mil: false
+    emissions_relevant: false
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Automotive_air_conditioning
+
+- code: B0205
+  scope: generic
+  category: body
+  title:
+    en: HVAC Defroster Door Position
+    de: HVAC Defroster-Klappe Position
+  description:
+    en: The HVAC control module has detected that the defroster door (windshield air outlet flap) does not reach the commanded position. Defrosting performance may be reduced.
+    de: Das Klima-Steuergerät hat erkannt, dass die Defroster-Klappe (Windschutzscheiben-Luftauslass) die angeforderte Position nicht erreicht. Die Entfrostungsleistung kann eingeschränkt sein.
+  affected_components:
+    - blend_door_actuator
+    - hvac_control_module
+  common_causes:
+    - id: actuator_failed
+      likelihood: high
+      label:
+        en: Door actuator motor failed or stripped
+        de: Klappenmotor defekt oder ausgeschlagen
+    - id: linkage_broken
+      likelihood: medium
+      label:
+        en: Door linkage broken
+        de: Klappengestänge gebrochen
+  repair:
+    difficulty: hard
+    diy_possible: false
+    estimated_cost_eur: [200, 1500]
+    estimated_hours: [1.5, 8.0]
+  flags:
+    mil: false
+    emissions_relevant: false
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Automotive_air_conditioning
+
+- code: B0231
+  scope: generic
+  category: body
+  title:
+    en: Front Marker Lamp Circuit
+    de: Vordere Begrenzungsleuchte Stromkreis
+  description:
+    en: The body control module has detected a fault in the front side marker lamp circuit. The lamp does not match the commanded state — the bulb may be burned out or the wiring is open.
+    de: Das Karosserie-Steuergerät hat einen Fehler im Stromkreis der vorderen Begrenzungsleuchte erkannt. Die Leuchte entspricht nicht dem Sollzustand — die Lampe kann durchgebrannt oder die Verkabelung unterbrochen sein.
+  affected_components:
+    - marker_lamp
+    - body_wiring_harness
+  common_causes:
+    - id: bulb_burned
+      likelihood: high
+      label:
+        en: Bulb burned out
+        de: Leuchtmittel durchgebrannt
+    - id: wiring_open
+      likelihood: medium
+      label:
+        en: Wiring open or socket corroded
+        de: Verkabelung unterbrochen oder Sockel korrodiert
+  repair:
+    difficulty: easy
+    diy_possible: true
+    estimated_cost_eur: [10, 100]
+    estimated_hours: [0.2, 1.0]
+  flags:
+    mil: false
+    emissions_relevant: false
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Headlamp
+
+- code: B0233
+  scope: generic
+  category: body
+  title:
+    en: Rear Tail Lamp Circuit
+    de: Rückleuchte Stromkreis
+  description:
+    en: The body control module has detected a fault in the rear tail lamp circuit. The lamp does not match the commanded state.
+    de: Das Karosserie-Steuergerät hat einen Fehler im Stromkreis der Rückleuchte erkannt. Die Leuchte entspricht nicht dem Sollzustand.
+  affected_components:
+    - tail_lamp
+    - body_wiring_harness
+  common_causes:
+    - id: bulb_burned
+      likelihood: high
+      label:
+        en: Bulb burned out
+        de: Leuchtmittel durchgebrannt
+    - id: wiring_open
+      likelihood: medium
+      label:
+        en: Wiring open or socket corroded
+        de: Verkabelung unterbrochen oder Sockel korrodiert
+  repair:
+    difficulty: easy
+    diy_possible: true
+    estimated_cost_eur: [10, 100]
+    estimated_hours: [0.2, 1.0]
+  flags:
+    mil: false
+    emissions_relevant: false
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Headlamp
+
+- code: B0235
+  scope: generic
+  category: body
+  title:
+    en: Brake Lamp Circuit
+    de: Bremsleuchte Stromkreis
+  description:
+    en: The body control module has detected a fault in the brake lamp circuit. One or more brake lamps do not match the commanded state — a safety-relevant fault.
+    de: Das Karosserie-Steuergerät hat einen Fehler im Stromkreis der Bremsleuchte erkannt. Eine oder mehrere Bremsleuchten entsprechen nicht dem Sollzustand — ein sicherheitsrelevanter Fehler.
+  affected_components:
+    - brake_lamp
+    - brake_light_switch
+    - body_wiring_harness
+  common_causes:
+    - id: bulb_burned
+      likelihood: high
+      label:
+        en: Bulb burned out
+        de: Leuchtmittel durchgebrannt
+    - id: brake_switch_failed
+      likelihood: medium
+      label:
+        en: Brake light switch failed
+        de: Bremslichtschalter defekt
+  repair:
+    difficulty: easy
+    diy_possible: true
+    estimated_cost_eur: [10, 150]
+    estimated_hours: [0.2, 1.0]
+  flags:
+    mil: false
+    emissions_relevant: false
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Headlamp
+
+- code: B0237
+  scope: generic
+  category: body
+  title:
+    en: Backup Lamp Circuit
+    de: Rückfahrleuchte Stromkreis
+  description:
+    en: The body control module has detected a fault in the backup (reverse) lamp circuit. The lamp does not match the commanded state when reverse gear is engaged.
+    de: Das Karosserie-Steuergerät hat einen Fehler im Stromkreis der Rückfahrleuchte erkannt. Die Leuchte entspricht beim Einlegen des Rückwärtsgangs nicht dem Sollzustand.
+  affected_components:
+    - backup_lamp
+    - reverse_switch
+    - body_wiring_harness
+  common_causes:
+    - id: bulb_burned
+      likelihood: high
+      label:
+        en: Bulb burned out
+        de: Leuchtmittel durchgebrannt
+    - id: reverse_switch_failed
+      likelihood: medium
+      label:
+        en: Reverse switch failed
+        de: Rückfahrschalter defekt
+  repair:
+    difficulty: easy
+    diy_possible: true
+    estimated_cost_eur: [10, 150]
+    estimated_hours: [0.2, 1.0]
+  flags:
+    mil: false
+    emissions_relevant: false
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Headlamp
+
+- code: B0239
+  scope: generic
+  category: body
+  title:
+    en: License Plate Lamp Circuit
+    de: Kennzeichenleuchte Stromkreis
+  description:
+    en: The body control module has detected a fault in the license plate lamp circuit. The lamp does not match the commanded state.
+    de: Das Karosserie-Steuergerät hat einen Fehler im Stromkreis der Kennzeichenleuchte erkannt. Die Leuchte entspricht nicht dem Sollzustand.
+  affected_components:
+    - license_plate_lamp
+    - body_wiring_harness
+  common_causes:
+    - id: bulb_burned
+      likelihood: high
+      label:
+        en: Bulb burned out
+        de: Leuchtmittel durchgebrannt
+    - id: wiring_open
+      likelihood: medium
+      label:
+        en: Wiring open or socket corroded
+        de: Verkabelung unterbrochen oder Sockel korrodiert
+  repair:
+    difficulty: easy
+    diy_possible: true
+    estimated_cost_eur: [10, 100]
+    estimated_hours: [0.2, 1.0]
+  flags:
+    mil: false
+    emissions_relevant: false
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Headlamp
+
+- code: B0260
+  scope: generic
+  category: body
+  title:
+    en: Interior Light Circuit
+    de: Innenraumbeleuchtung Stromkreis
+  description:
+    en: The body control module has detected a fault in the interior light circuit. The lamp does not match the commanded state — common cause is a stuck door switch causing battery drain.
+    de: Das Karosserie-Steuergerät hat einen Fehler im Stromkreis der Innenraumbeleuchtung erkannt. Die Leuchte entspricht nicht dem Sollzustand — häufige Ursache ist ein klemmender Türkontaktschalter mit Batterieentladung.
+  affected_components:
+    - interior_lamp
+    - door_jamb_switch
+    - body_wiring_harness
+  common_causes:
+    - id: door_switch_stuck
+      likelihood: high
+      label:
+        en: Door jamb switch stuck
+        de: Türkontaktschalter klemmt
+    - id: bulb_burned
+      likelihood: medium
+      label:
+        en: Bulb burned out
+        de: Leuchtmittel durchgebrannt
+  repair:
+    difficulty: easy
+    diy_possible: true
+    estimated_cost_eur: [10, 150]
+    estimated_hours: [0.2, 1.5]
+  flags:
+    mil: false
+    emissions_relevant: false
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Headlamp
+
+- code: B0425
+  scope: generic
+  category: body
+  title:
+    en: Audio Amplifier Internal Failure
+    de: Audio-Verstärker interner Fehler
+  description:
+    en: The audio amplifier reports an internal self-test failure. Sound output may be distorted, missing on some channels, or the amplifier enters a protection mode.
+    de: Der Audio-Verstärker meldet einen Fehler im internen Selbsttest. Der Klang kann verzerrt sein, einzelne Kanäle ausfallen oder der Verstärker geht in den Schutzmodus.
+  affected_components:
+    - audio_amplifier
+    - infotainment_module
+  common_causes:
+    - id: amplifier_internal
+      likelihood: high
+      label:
+        en: Amplifier internal fault
+        de: Verstärker interner Fehler
+    - id: power_ground_fault
+      likelihood: medium
+      label:
+        en: Power supply or ground fault
+        de: Versorgungs- oder Massefehler
+  repair:
+    difficulty: medium
+    diy_possible: false
+    estimated_cost_eur: [200, 1500]
+    estimated_hours: [0.5, 2.5]
+  flags:
+    mil: false
+    emissions_relevant: false
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/On-board_diagnostics
+
+- code: B0440
+  scope: generic
+  category: body
+  title:
+    en: Bluetooth Module Fault
+    de: Bluetooth-Modul Fehler
+  description:
+    en: The infotainment system has detected a fault in the Bluetooth module. Pairing with phones may fail or audio streaming drops out.
+    de: Das Infotainment-System hat einen Fehler im Bluetooth-Modul erkannt. Die Kopplung mit Telefonen kann fehlschlagen oder Audio-Streaming bricht ab.
+  affected_components:
+    - bluetooth_module
+    - infotainment_module
+    - bluetooth_antenna
+  common_causes:
+    - id: module_internal
+      likelihood: high
+      label:
+        en: Bluetooth module internal fault
+        de: Bluetooth-Modul interner Fehler
+    - id: antenna_disconnected
+      likelihood: medium
+      label:
+        en: Antenna cable loose or disconnected
+        de: Antennenkabel lose oder nicht verbunden
+  repair:
+    difficulty: medium
+    diy_possible: false
+    estimated_cost_eur: [100, 800]
+    estimated_hours: [0.5, 2.5]
+  flags:
+    mil: false
+    emissions_relevant: false
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Bluetooth
+
+- code: B0445
+  scope: generic
+  category: body
+  title:
+    en: USB Hub Fault
+    de: USB-Hub Fehler
+  description:
+    en: The infotainment system has detected a fault in the internal USB hub. USB ports may not detect connected devices reliably.
+    de: Das Infotainment-System hat einen Fehler im internen USB-Hub erkannt. USB-Anschlüsse erkennen angeschlossene Geräte möglicherweise nicht zuverlässig.
+  affected_components:
+    - usb_hub
+    - infotainment_module
+  common_causes:
+    - id: hub_internal
+      likelihood: high
+      label:
+        en: USB hub internal fault
+        de: USB-Hub interner Fehler
+    - id: usb_port_damaged
+      likelihood: medium
+      label:
+        en: USB port physically damaged
+        de: USB-Anschluss mechanisch beschädigt
+  repair:
+    difficulty: medium
+    diy_possible: false
+    estimated_cost_eur: [80, 600]
+    estimated_hours: [0.5, 2.0]
+  flags:
+    mil: false
+    emissions_relevant: false
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/On-board_diagnostics
+
+- code: B0450
+  scope: generic
+  category: body
+  title:
+    en: Microphone Circuit
+    de: Mikrofon Stromkreis
+  description:
+    en: The infotainment system has detected a fault in the hands-free microphone circuit. Voice commands and phone calls may have poor audio quality.
+    de: Das Infotainment-System hat einen Fehler im Stromkreis des Freisprech-Mikrofons erkannt. Sprachbefehle und Telefongespräche können schlechte Audioqualität haben.
+  affected_components:
+    - microphone
+    - infotainment_module
+  common_causes:
+    - id: microphone_failed
+      likelihood: high
+      label:
+        en: Microphone failed
+        de: Mikrofon defekt
+    - id: wiring_open
+      likelihood: medium
+      label:
+        en: Wiring open or shorted
+        de: Verkabelung unterbrochen oder kurzgeschlossen
+  repair:
+    difficulty: easy
+    diy_possible: true
+    estimated_cost_eur: [40, 250]
+    estimated_hours: [0.3, 1.5]
+  flags:
+    mil: false
+    emissions_relevant: false
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Bluetooth
+
+- code: B0460
+  scope: generic
+  category: body
+  title:
+    en: Bluetooth Antenna Circuit
+    de: Bluetooth-Antenne Stromkreis
+  description:
+    en: The infotainment system has detected a fault in the Bluetooth antenna circuit. Range and connection stability may be reduced.
+    de: Das Infotainment-System hat einen Fehler im Stromkreis der Bluetooth-Antenne erkannt. Reichweite und Verbindungsstabilität können eingeschränkt sein.
+  affected_components:
+    - bluetooth_antenna
+    - infotainment_module
+  common_causes:
+    - id: antenna_disconnected
+      likelihood: high
+      label:
+        en: Antenna cable disconnected
+        de: Antennenkabel nicht verbunden
+    - id: antenna_damaged
+      likelihood: medium
+      label:
+        en: Antenna damaged
+        de: Antenne beschädigt
+  repair:
+    difficulty: easy
+    diy_possible: true
+    estimated_cost_eur: [30, 200]
+    estimated_hours: [0.3, 1.5]
+  flags:
+    mil: false
+    emissions_relevant: false
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Bluetooth
+
+- code: B0490
+  scope: generic
+  category: body
+  title:
+    en: Display Backlight Circuit
+    de: Display-Hintergrundbeleuchtung Stromkreis
+  description:
+    en: The infotainment or instrument cluster module has detected a fault in the display backlight circuit. The display may stay dark or be unreadable in low light.
+    de: Das Infotainment- oder Kombiinstrumentmodul hat einen Fehler im Stromkreis der Display-Hintergrundbeleuchtung erkannt. Das Display kann dunkel bleiben oder bei wenig Licht unlesbar sein.
+  affected_components:
+    - display_module
+    - backlight_circuit
+  common_causes:
+    - id: backlight_failed
+      likelihood: high
+      label:
+        en: Backlight LEDs or inverter failed
+        de: Hintergrundbeleuchtung-LEDs oder Inverter defekt
+    - id: display_internal
+      likelihood: medium
+      label:
+        en: Display module internal fault
+        de: Anzeigemodul interner Fehler
+  repair:
+    difficulty: medium
+    diy_possible: false
+    estimated_cost_eur: [150, 1200]
+    estimated_hours: [0.5, 3.0]
+  flags:
+    mil: false
+    emissions_relevant: false
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/On-board_diagnostics
+
+- code: B0014
+  scope: generic
+  category: body
+  title:
+    en: Driver Knee Airbag Deployment Control
+    de: Fahrer-Knieairbag Auslösekreis
+  description:
+    en: The SRS module has detected a fault in the driver knee airbag deployment control circuit. The knee airbag may not deploy in a crash event.
+    de: Das SRS-Steuergerät hat einen Fehler im Auslösekreis des Fahrer-Knieairbags erkannt. Der Knieairbag löst im Crashfall möglicherweise nicht aus.
+  affected_components:
+    - knee_airbag_module
+    - srs_control_module
+    - srs_wiring
+  common_causes:
+    - id: airbag_squib_circuit
+      likelihood: high
+      label:
+        en: Squib circuit open or shorted
+        de: Zündkreis unterbrochen oder kurzgeschlossen
+    - id: connector_loose
+      likelihood: medium
+      label:
+        en: Airbag connector loose
+        de: Airbag-Stecker lose
+  repair:
+    difficulty: hard
+    diy_possible: false
+    estimated_cost_eur: [200, 1500]
+    estimated_hours: [1.0, 4.0]
+  flags:
+    mil: false
+    emissions_relevant: false
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Airbag
+
+- code: B0015
+  scope: generic
+  category: body
+  title:
+    en: Passenger Knee Airbag Deployment Control
+    de: Beifahrer-Knieairbag Auslösekreis
+  description:
+    en: The SRS module has detected a fault in the passenger knee airbag deployment control circuit. Same fault profile as B0014 but for the passenger side.
+    de: Das SRS-Steuergerät hat einen Fehler im Auslösekreis des Beifahrer-Knieairbags erkannt. Gleiches Fehlerbild wie B0014, jedoch für die Beifahrerseite.
+  affected_components:
+    - knee_airbag_module
+    - srs_control_module
+    - srs_wiring
+  common_causes:
+    - id: airbag_squib_circuit
+      likelihood: high
+      label:
+        en: Squib circuit open or shorted
+        de: Zündkreis unterbrochen oder kurzgeschlossen
+    - id: connector_loose
+      likelihood: medium
+      label:
+        en: Airbag connector loose
+        de: Airbag-Stecker lose
+  repair:
+    difficulty: hard
+    diy_possible: false
+    estimated_cost_eur: [200, 1500]
+    estimated_hours: [1.0, 4.0]
+  flags:
+    mil: false
+    emissions_relevant: false
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Airbag
+
+- code: B0030
+  scope: generic
+  category: body
+  title:
+    en: Driver Side Curtain Airbag Stage 2
+    de: Fahrer-Kopfairbag Stufe 2
+  description:
+    en: The SRS module has detected a fault in the driver-side curtain airbag stage 2 deployment circuit. Two-stage curtain airbags use a second charge for severe lateral impacts.
+    de: Das SRS-Steuergerät hat einen Fehler im Auslösekreis der zweiten Stufe des Fahrer-Kopfairbags erkannt. Zweistufige Kopfairbags nutzen einen zweiten Treibsatz für schwere Seitenaufpralle.
+  affected_components:
+    - curtain_airbag_module
+    - srs_control_module
+    - srs_wiring
+  common_causes:
+    - id: airbag_squib_circuit
+      likelihood: high
+      label:
+        en: Stage 2 squib circuit open or shorted
+        de: Stufe-2-Zündkreis unterbrochen oder kurzgeschlossen
+    - id: connector_loose
+      likelihood: medium
+      label:
+        en: Roof rail connector loose
+        de: Dachrahmen-Stecker lose
+  repair:
+    difficulty: hard
+    diy_possible: false
+    estimated_cost_eur: [300, 2000]
+    estimated_hours: [1.0, 5.0]
+  flags:
+    mil: false
+    emissions_relevant: false
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Airbag
+
+- code: B0031
+  scope: generic
+  category: body
+  title:
+    en: Passenger Side Curtain Airbag Stage 2
+    de: Beifahrer-Kopfairbag Stufe 2
+  description:
+    en: The SRS module has detected a fault in the passenger-side curtain airbag stage 2 deployment circuit. Same fault profile as B0030 but for the passenger side.
+    de: Das SRS-Steuergerät hat einen Fehler im Auslösekreis der zweiten Stufe des Beifahrer-Kopfairbags erkannt. Gleiches Fehlerbild wie B0030, jedoch für die Beifahrerseite.
+  affected_components:
+    - curtain_airbag_module
+    - srs_control_module
+    - srs_wiring
+  common_causes:
+    - id: airbag_squib_circuit
+      likelihood: high
+      label:
+        en: Stage 2 squib circuit open or shorted
+        de: Stufe-2-Zündkreis unterbrochen oder kurzgeschlossen
+    - id: connector_loose
+      likelihood: medium
+      label:
+        en: Roof rail connector loose
+        de: Dachrahmen-Stecker lose
+  repair:
+    difficulty: hard
+    diy_possible: false
+    estimated_cost_eur: [300, 2000]
+    estimated_hours: [1.0, 5.0]
+  flags:
+    mil: false
+    emissions_relevant: false
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Airbag
+
+- code: B0084
+  scope: generic
+  category: body
+  title:
+    en: Driver Belt Buckle Switch Circuit
+    de: Fahrer-Gurtschloss Schalter Stromkreis
+  description:
+    en: The SRS module has detected a fault in the driver belt buckle switch circuit. The fastened-state of the seat belt cannot be reliably read — affects belt warning and airbag deployment logic.
+    de: Das SRS-Steuergerät hat einen Fehler im Stromkreis des Fahrer-Gurtschlossschalters erkannt. Der Anschnallzustand des Gurts kann nicht zuverlässig erkannt werden — betrifft Gurtwarnung und Airbag-Auslöselogik.
+  affected_components:
+    - seat_belt_buckle_switch
+    - srs_control_module
+    - srs_wiring
+  common_causes:
+    - id: buckle_switch_failed
+      likelihood: high
+      label:
+        en: Buckle switch failed
+        de: Gurtschlossschalter defekt
+    - id: wiring_open
+      likelihood: medium
+      label:
+        en: Wiring under seat open
+        de: Verkabelung unter dem Sitz unterbrochen
+  repair:
+    difficulty: medium
+    diy_possible: false
+    estimated_cost_eur: [100, 600]
+    estimated_hours: [0.5, 2.5]
+  flags:
+    mil: false
+    emissions_relevant: false
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Airbag
+
+- code: B0085
+  scope: generic
+  category: body
+  title:
+    en: Passenger Belt Buckle Switch Circuit
+    de: Beifahrer-Gurtschloss Schalter Stromkreis
+  description:
+    en: The SRS module has detected a fault in the passenger belt buckle switch circuit. Same fault profile as B0084 but for the passenger side.
+    de: Das SRS-Steuergerät hat einen Fehler im Stromkreis des Beifahrer-Gurtschlossschalters erkannt. Gleiches Fehlerbild wie B0084, jedoch für die Beifahrerseite.
+  affected_components:
+    - seat_belt_buckle_switch
+    - srs_control_module
+    - srs_wiring
+  common_causes:
+    - id: buckle_switch_failed
+      likelihood: high
+      label:
+        en: Buckle switch failed
+        de: Gurtschlossschalter defekt
+    - id: wiring_open
+      likelihood: medium
+      label:
+        en: Wiring under seat open
+        de: Verkabelung unter dem Sitz unterbrochen
+  repair:
+    difficulty: medium
+    diy_possible: false
+    estimated_cost_eur: [100, 600]
+    estimated_hours: [0.5, 2.5]
+  flags:
+    mil: false
+    emissions_relevant: false
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Airbag
+
+- code: B0510
+  scope: generic
+  category: body
+  title:
+    en: Driver Door Open Switch
+    de: Fahrertür-Kontaktschalter
+  description:
+    en: The body control module has detected a fault in the driver door open (jamb) switch. The door open state cannot be reliably read — affects interior light, seat belt warning, and remote start interlocks.
+    de: Das Karosserie-Steuergerät hat einen Fehler im Fahrertür-Kontaktschalter erkannt. Der Türöffnungs-Zustand kann nicht zuverlässig gelesen werden — betrifft Innenraumbeleuchtung, Gurtwarnung und Fernstart-Sperren.
+  affected_components:
+    - door_jamb_switch
+    - door_wiring_harness
+    - body_control_module
+  common_causes:
+    - id: switch_stuck
+      likelihood: high
+      label:
+        en: Door jamb switch stuck or corroded
+        de: Türkontaktschalter klemmt oder korrodiert
+    - id: wiring_open
+      likelihood: medium
+      label:
+        en: Wiring open in door hinge
+        de: Verkabelung im Türscharnier unterbrochen
+  repair:
+    difficulty: easy
+    diy_possible: true
+    estimated_cost_eur: [20, 200]
+    estimated_hours: [0.3, 1.5]
+  flags:
+    mil: false
+    emissions_relevant: false
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Power_door_lock
+
+- code: B0520
+  scope: generic
+  category: body
+  title:
+    en: Passenger Door Open Switch
+    de: Beifahrertür-Kontaktschalter
+  description:
+    en: The body control module has detected a fault in the passenger door open (jamb) switch. Same fault profile as B0510 but for the passenger door.
+    de: Das Karosserie-Steuergerät hat einen Fehler im Beifahrertür-Kontaktschalter erkannt. Gleiches Fehlerbild wie B0510, jedoch für die Beifahrertür.
+  affected_components:
+    - door_jamb_switch
+    - door_wiring_harness
+    - body_control_module
+  common_causes:
+    - id: switch_stuck
+      likelihood: high
+      label:
+        en: Door jamb switch stuck or corroded
+        de: Türkontaktschalter klemmt oder korrodiert
+    - id: wiring_open
+      likelihood: medium
+      label:
+        en: Wiring open in door hinge
+        de: Verkabelung im Türscharnier unterbrochen
+  repair:
+    difficulty: easy
+    diy_possible: true
+    estimated_cost_eur: [20, 200]
+    estimated_hours: [0.3, 1.5]
+  flags:
+    mil: false
+    emissions_relevant: false
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Power_door_lock

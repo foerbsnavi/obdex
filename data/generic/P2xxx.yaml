@@ -4775,3 +4775,2643 @@
     - sae:J2012
   sources:
     - https://en.wikipedia.org/wiki/Automatic_transmission
+
+- code: P2241
+  scope: generic
+  category: powertrain
+  title:
+    en: O2 Sensor Pumping Current Circuit Low (Bank 2 Sensor 1)
+    de: Lambdasonde Pumpstrom Stromkreis Signal zu niedrig (Bank 2 Sonde 1)
+  description:
+    en: The pumping-current line of the wide-band oxygen sensor on bank 2, sensor 1 is below the lower threshold. Wide-band sensors use a small pumping current to keep their measuring cell at lambda 1; a low value usually means an open or shorted pump cell.
+    de: Die Pumpstromleitung der Breitband-Lambdasonde an Bank 2, Sonde 1 liegt unter dem unteren Schwellwert. Breitbandsonden halten ihre Messzelle über einen kleinen Pumpstrom auf Lambda 1; ein niedriger Wert deutet meist auf eine unterbrochene oder kurzgeschlossene Pumpzelle hin.
+  affected_components:
+    - oxygen_sensor_upstream_b2
+    - o2_sensor_wiring
+  common_causes:
+    - id: o2_pump_cell_open
+      likelihood: high
+      label:
+        en: Pump cell open or sensor failed
+        de: Pumpzelle unterbrochen oder Sonde defekt
+    - id: o2_wiring_short_to_ground
+      likelihood: medium
+      label:
+        en: Pumping current line shorted to ground
+        de: Pumpstromleitung gegen Masse kurzgeschlossen
+  repair:
+    difficulty: medium
+    diy_possible: true
+    estimated_cost_eur: [150, 500]
+    estimated_hours: [0.5, 2.0]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+  related_codes: [P2237, P2240]
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Oxygen_sensor
+
+- code: P2242
+  scope: generic
+  category: powertrain
+  title:
+    en: O2 Sensor Pumping Current Circuit High (Bank 2 Sensor 1)
+    de: Lambdasonde Pumpstrom Stromkreis Signal zu hoch (Bank 2 Sonde 1)
+  description:
+    en: The pumping-current line of the bank 2, sensor 1 wide-band oxygen sensor reads above the upper threshold. Common with a short to a positive supply or a damaged sensor amplifier in the ECU.
+    de: Die Pumpstromleitung der Breitbandsonde an Bank 2, Sonde 1 liegt über dem oberen Schwellwert. Häufig bei Kurzschluss nach Versorgungsspannung oder defektem Sondenverstärker im Steuergerät.
+  affected_components:
+    - oxygen_sensor_upstream_b2
+    - o2_sensor_wiring
+  common_causes:
+    - id: o2_wiring_short_to_power
+      likelihood: high
+      label:
+        en: Pumping current line shorted to positive
+        de: Pumpstromleitung nach Plus kurzgeschlossen
+    - id: o2_sensor_internal_short
+      likelihood: medium
+      label:
+        en: Sensor internally shorted
+        de: Sonde mit internem Kurzschluss
+  repair:
+    difficulty: medium
+    diy_possible: true
+    estimated_cost_eur: [150, 500]
+    estimated_hours: [0.5, 2.0]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+  related_codes: [P2241]
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Oxygen_sensor
+
+- code: P2244
+  scope: generic
+  category: powertrain
+  title:
+    en: O2 Sensor Reference Voltage Circuit Range/Performance (Bank 1 Sensor 1)
+    de: Lambdasonde Referenzspannung Stromkreis Bereich/Plausibilität (Bank 1 Sonde 1)
+  description:
+    en: The reference voltage that the ECU supplies to the wide-band oxygen sensor on bank 1, sensor 1 drifts outside the expected range. The reference is the baseline against which the cell voltages are measured; a drift falsifies every lambda calculation.
+    de: Die vom Steuergerät an die Breitband-Lambdasonde an Bank 1, Sonde 1 gelieferte Referenzspannung driftet aus dem erwarteten Bereich. Die Referenz ist die Grundlinie für alle Zellenspannungen; eine Drift verfälscht jede Lambda-Berechnung.
+  affected_components:
+    - oxygen_sensor_upstream
+    - o2_sensor_wiring
+    - engine_control_unit
+  common_causes:
+    - id: o2_reference_drift
+      likelihood: high
+      label:
+        en: Reference circuit drift in ECU
+        de: Referenzkreis im Steuergerät driftet
+    - id: o2_wiring_high_resistance
+      likelihood: medium
+      label:
+        en: High resistance in reference wiring
+        de: Erhöhter Widerstand in der Referenzleitung
+  repair:
+    difficulty: medium
+    diy_possible: true
+    estimated_cost_eur: [120, 600]
+    estimated_hours: [0.5, 2.0]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Oxygen_sensor
+
+- code: P2245
+  scope: generic
+  category: powertrain
+  title:
+    en: O2 Sensor Reference Voltage Circuit Low (Bank 1 Sensor 1)
+    de: Lambdasonde Referenzspannung Stromkreis Signal zu niedrig (Bank 1 Sonde 1)
+  description:
+    en: The reference voltage feeding the bank 1, sensor 1 wide-band oxygen sensor is below the lower threshold. Often a short to ground in the wiring or a failed reference output stage.
+    de: Die Referenzspannung der Breitband-Lambdasonde an Bank 1, Sonde 1 liegt unter dem unteren Schwellwert. Häufig ein Massekurzschluss in der Leitung oder eine defekte Referenz-Endstufe.
+  affected_components:
+    - oxygen_sensor_upstream
+    - o2_sensor_wiring
+  common_causes:
+    - id: signal_short_to_ground
+      likelihood: high
+      label:
+        en: Reference line shorted to ground
+        de: Referenzleitung gegen Masse kurzgeschlossen
+    - id: ecu_reference_failed
+      likelihood: low
+      label:
+        en: ECU reference output failed
+        de: Referenzausgang im Steuergerät defekt
+  repair:
+    difficulty: medium
+    diy_possible: true
+    estimated_cost_eur: [120, 500]
+    estimated_hours: [0.5, 2.0]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+  related_codes: [P2244, P2246]
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Oxygen_sensor
+
+- code: P2246
+  scope: generic
+  category: powertrain
+  title:
+    en: O2 Sensor Reference Voltage Circuit High (Bank 1 Sensor 1)
+    de: Lambdasonde Referenzspannung Stromkreis Signal zu hoch (Bank 1 Sonde 1)
+  description:
+    en: The reference voltage on the bank 1, sensor 1 wide-band oxygen sensor reads above the upper threshold. Common with a short to a positive supply or a corroded connector with leakage current.
+    de: Die Referenzspannung an der Breitbandsonde Bank 1, Sonde 1 liegt über dem oberen Schwellwert. Häufig durch Kurzschluss nach Plus oder durch korrodierte Stecker mit Kriechstrom.
+  affected_components:
+    - oxygen_sensor_upstream
+    - o2_sensor_wiring
+  common_causes:
+    - id: signal_short_to_power
+      likelihood: high
+      label:
+        en: Reference line shorted to positive
+        de: Referenzleitung nach Plus kurzgeschlossen
+    - id: connector_corrosion
+      likelihood: medium
+      label:
+        en: Connector corroded with leakage
+        de: Stecker korrodiert mit Kriechstrom
+  repair:
+    difficulty: medium
+    diy_possible: true
+    estimated_cost_eur: [120, 500]
+    estimated_hours: [0.5, 2.0]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+  related_codes: [P2245]
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Oxygen_sensor
+
+- code: P2248
+  scope: generic
+  category: powertrain
+  title:
+    en: O2 Sensor Reference Voltage Circuit Range/Performance (Bank 2 Sensor 1)
+    de: Lambdasonde Referenzspannung Stromkreis Bereich/Plausibilität (Bank 2 Sonde 1)
+  description:
+    en: Bank 2 counterpart to P2244. The reference voltage at the wide-band oxygen sensor on bank 2, sensor 1 is outside its expected range and falsifies the lambda calculation.
+    de: Bank-2-Pendant zu P2244. Die Referenzspannung der Breitbandsonde an Bank 2, Sonde 1 liegt ausserhalb des Erwartungsbereichs und verfälscht die Lambda-Berechnung.
+  affected_components:
+    - oxygen_sensor_upstream_b2
+    - o2_sensor_wiring
+    - engine_control_unit
+  common_causes:
+    - id: o2_reference_drift
+      likelihood: high
+      label:
+        en: Reference circuit drift in ECU
+        de: Referenzkreis im Steuergerät driftet
+    - id: o2_wiring_high_resistance
+      likelihood: medium
+      label:
+        en: High resistance in reference wiring
+        de: Erhöhter Widerstand in der Referenzleitung
+  repair:
+    difficulty: medium
+    diy_possible: true
+    estimated_cost_eur: [120, 600]
+    estimated_hours: [0.5, 2.0]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+  related_codes: [P2244]
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Oxygen_sensor
+
+- code: P2249
+  scope: generic
+  category: powertrain
+  title:
+    en: O2 Sensor Reference Voltage Circuit Low (Bank 2 Sensor 1)
+    de: Lambdasonde Referenzspannung Stromkreis Signal zu niedrig (Bank 2 Sonde 1)
+  description:
+    en: Bank 2 counterpart to P2245. The reference voltage on bank 2, sensor 1 is below the lower threshold — typically a short to ground or failed ECU output.
+    de: Bank-2-Pendant zu P2245. Die Referenzspannung an Bank 2, Sonde 1 liegt unter dem unteren Schwellwert — meist Massekurzschluss oder defekter Steuergeräteausgang.
+  affected_components:
+    - oxygen_sensor_upstream_b2
+    - o2_sensor_wiring
+  common_causes:
+    - id: signal_short_to_ground
+      likelihood: high
+      label:
+        en: Reference line shorted to ground
+        de: Referenzleitung gegen Masse kurzgeschlossen
+    - id: ecu_reference_failed
+      likelihood: low
+      label:
+        en: ECU reference output failed
+        de: Referenzausgang im Steuergerät defekt
+  repair:
+    difficulty: medium
+    diy_possible: true
+    estimated_cost_eur: [120, 500]
+    estimated_hours: [0.5, 2.0]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+  related_codes: [P2245, P2248, P2250]
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Oxygen_sensor
+
+- code: P2250
+  scope: generic
+  category: powertrain
+  title:
+    en: O2 Sensor Reference Voltage Circuit High (Bank 2 Sensor 1)
+    de: Lambdasonde Referenzspannung Stromkreis Signal zu hoch (Bank 2 Sonde 1)
+  description:
+    en: Bank 2 counterpart to P2246. The reference voltage at bank 2, sensor 1 is above the upper threshold, usually due to a short to positive or connector leakage.
+    de: Bank-2-Pendant zu P2246. Die Referenzspannung an Bank 2, Sonde 1 liegt über dem oberen Schwellwert, meist durch Kurzschluss nach Plus oder Steckerkriechstrom.
+  affected_components:
+    - oxygen_sensor_upstream_b2
+    - o2_sensor_wiring
+  common_causes:
+    - id: signal_short_to_power
+      likelihood: high
+      label:
+        en: Reference line shorted to positive
+        de: Referenzleitung nach Plus kurzgeschlossen
+    - id: connector_corrosion
+      likelihood: medium
+      label:
+        en: Connector corroded with leakage
+        de: Stecker korrodiert mit Kriechstrom
+  repair:
+    difficulty: medium
+    diy_possible: true
+    estimated_cost_eur: [120, 500]
+    estimated_hours: [0.5, 2.0]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+  related_codes: [P2246, P2249]
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Oxygen_sensor
+
+- code: P2252
+  scope: generic
+  category: powertrain
+  title:
+    en: O2 Sensor Negative Current Control Circuit Low (Bank 1 Sensor 1)
+    de: Lambdasonde Negativstrom-Steuerkreis Signal zu niedrig (Bank 1 Sonde 1)
+  description:
+    en: The negative-current (Vs negative) line on the bank 1, sensor 1 wide-band oxygen sensor is below the lower threshold. This line is the return path for the Nernst cell; loss of the signal blocks the lambda calculation.
+    de: Die Negativstromleitung (Vs negativ) der Breitband-Lambdasonde an Bank 1, Sonde 1 liegt unter dem unteren Schwellwert. Diese Leitung ist der Rückweg der Nernst-Zelle; ein Signalverlust verhindert die Lambda-Berechnung.
+  affected_components:
+    - oxygen_sensor_upstream
+    - o2_sensor_wiring
+  common_causes:
+    - id: signal_short_to_ground
+      likelihood: high
+      label:
+        en: Vs negative line shorted to ground
+        de: Vs-Negativ-Leitung gegen Masse kurzgeschlossen
+    - id: o2_sensor_internal_open
+      likelihood: medium
+      label:
+        en: Nernst cell return open inside sensor
+        de: Nernst-Zellenrückführung in der Sonde unterbrochen
+  repair:
+    difficulty: medium
+    diy_possible: true
+    estimated_cost_eur: [150, 500]
+    estimated_hours: [0.5, 2.0]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Oxygen_sensor
+
+- code: P2253
+  scope: generic
+  category: powertrain
+  title:
+    en: O2 Sensor Negative Current Control Circuit High (Bank 1 Sensor 1)
+    de: Lambdasonde Negativstrom-Steuerkreis Signal zu hoch (Bank 1 Sonde 1)
+  description:
+    en: The Vs negative line on bank 1, sensor 1 reads above the upper threshold. Often a short to positive or a damaged ECU sensor amplifier.
+    de: Die Vs-Negativ-Leitung an Bank 1, Sonde 1 liegt über dem oberen Schwellwert. Häufig Kurzschluss nach Plus oder defekter Sondenverstärker im Steuergerät.
+  affected_components:
+    - oxygen_sensor_upstream
+    - o2_sensor_wiring
+  common_causes:
+    - id: signal_short_to_power
+      likelihood: high
+      label:
+        en: Vs negative line shorted to positive
+        de: Vs-Negativ-Leitung nach Plus kurzgeschlossen
+    - id: o2_sensor_internal_short
+      likelihood: medium
+      label:
+        en: Internal short in sensor
+        de: Interner Kurzschluss in der Sonde
+  repair:
+    difficulty: medium
+    diy_possible: true
+    estimated_cost_eur: [150, 500]
+    estimated_hours: [0.5, 2.0]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+  related_codes: [P2252]
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Oxygen_sensor
+
+- code: P2254
+  scope: generic
+  category: powertrain
+  title:
+    en: O2 Sensor Negative Current Control Circuit Low (Bank 2 Sensor 1)
+    de: Lambdasonde Negativstrom-Steuerkreis Signal zu niedrig (Bank 2 Sonde 1)
+  description:
+    en: Bank 2 counterpart to P2252. The Vs negative line on the wide-band oxygen sensor at bank 2, sensor 1 is below the lower threshold.
+    de: Bank-2-Pendant zu P2252. Die Vs-Negativ-Leitung der Breitbandsonde an Bank 2, Sonde 1 liegt unter dem unteren Schwellwert.
+  affected_components:
+    - oxygen_sensor_upstream_b2
+    - o2_sensor_wiring
+  common_causes:
+    - id: signal_short_to_ground
+      likelihood: high
+      label:
+        en: Vs negative line shorted to ground
+        de: Vs-Negativ-Leitung gegen Masse kurzgeschlossen
+    - id: o2_sensor_internal_open
+      likelihood: medium
+      label:
+        en: Nernst cell return open inside sensor
+        de: Nernst-Zellenrückführung in der Sonde unterbrochen
+  repair:
+    difficulty: medium
+    diy_possible: true
+    estimated_cost_eur: [150, 500]
+    estimated_hours: [0.5, 2.0]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+  related_codes: [P2252]
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Oxygen_sensor
+
+- code: P2255
+  scope: generic
+  category: powertrain
+  title:
+    en: O2 Sensor Negative Current Control Circuit High (Bank 2 Sensor 1)
+    de: Lambdasonde Negativstrom-Steuerkreis Signal zu hoch (Bank 2 Sonde 1)
+  description:
+    en: Bank 2 counterpart to P2253. The Vs negative line on bank 2, sensor 1 reads above the upper threshold.
+    de: Bank-2-Pendant zu P2253. Die Vs-Negativ-Leitung an Bank 2, Sonde 1 liegt über dem oberen Schwellwert.
+  affected_components:
+    - oxygen_sensor_upstream_b2
+    - o2_sensor_wiring
+  common_causes:
+    - id: signal_short_to_power
+      likelihood: high
+      label:
+        en: Vs negative line shorted to positive
+        de: Vs-Negativ-Leitung nach Plus kurzgeschlossen
+    - id: o2_sensor_internal_short
+      likelihood: medium
+      label:
+        en: Internal short in sensor
+        de: Interner Kurzschluss in der Sonde
+  repair:
+    difficulty: medium
+    diy_possible: true
+    estimated_cost_eur: [150, 500]
+    estimated_hours: [0.5, 2.0]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+  related_codes: [P2253, P2254]
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Oxygen_sensor
+
+- code: P2BA9
+  scope: generic
+  category: powertrain
+  title:
+    en: NOx Exceedence — Insufficient Reagent
+    de: NOx-Überschreitung — zu wenig Reagenz
+  description:
+    en: The SCR system has detected that NOx emissions exceed the legal limit and the cause is traced to insufficient AdBlue/DEF dosing. Modern emission regulations require this fault to be reported separately so that operator-induced misuse (running an empty tank, diluting the fluid) is recorded.
+    de: Das SCR-System hat festgestellt, dass die NOx-Emissionen über dem gesetzlichen Grenzwert liegen, und führt das auf eine ungenügende AdBlue/DEF-Dosierung zurück. Moderne Abgasvorschriften verlangen die getrennte Meldung dieses Fehlers, damit Manipulationen wie das Fahren mit leerem Tank oder verdünnte Flüssigkeit dokumentiert werden.
+  affected_components:
+    - reductant_dosing_unit
+    - reductant_tank
+    - scr_catalyst
+  common_causes:
+    - id: def_tank_low_or_empty
+      likelihood: high
+      label:
+        en: DEF tank repeatedly run empty
+        de: DEF-Tank wiederholt leer gefahren
+    - id: def_quality_poor
+      likelihood: medium
+      label:
+        en: Diluted or contaminated DEF
+        de: DEF verdünnt oder verunreinigt
+    - id: dosing_pump_underperforming
+      likelihood: medium
+      label:
+        en: Dosing pump output below spec
+        de: Dosierpumpe fördert zu wenig
+  repair:
+    difficulty: medium
+    diy_possible: false
+    estimated_cost_eur: [200, 1500]
+    estimated_hours: [1.0, 4.0]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+    limp_mode_possible: true
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Diesel_exhaust_fluid
+
+- code: P2BAB
+  scope: generic
+  category: powertrain
+  title:
+    en: NOx Exceedence — Reagent System Performance
+    de: NOx-Überschreitung — Reagenzsystem-Leistung
+  description:
+    en: The SCR system has detected that NOx emissions exceed the legal limit and the cause is traced to a performance fault in the reagent dosing system — for example a slow dosing pump, a clogged injector, or a frozen line that is not yet caught by another DTC.
+    de: Das SCR-System hat festgestellt, dass die NOx-Emissionen über dem gesetzlichen Grenzwert liegen, und führt das auf einen Leistungsfehler im Dosiersystem zurück — etwa eine träge Dosierpumpe, einen verstopften Injektor oder eine vereiste Leitung, die noch nicht durch einen anderen DTC erfasst wurde.
+  affected_components:
+    - reductant_dosing_unit
+    - reductant_injector
+    - reductant_pump
+  common_causes:
+    - id: dosing_injector_clogged
+      likelihood: high
+      label:
+        en: Reductant injector clogged with crystals
+        de: Reagenzinjektor mit Kristallen verstopft
+    - id: dosing_pump_underperforming
+      likelihood: medium
+      label:
+        en: Dosing pump output below spec
+        de: Dosierpumpe fördert zu wenig
+    - id: reductant_line_blocked
+      likelihood: medium
+      label:
+        en: Reagent supply line blocked
+        de: Reagenzleitung blockiert
+  repair:
+    difficulty: medium
+    diy_possible: false
+    estimated_cost_eur: [200, 1500]
+    estimated_hours: [1.0, 5.0]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+    limp_mode_possible: true
+  related_codes: [P2BA9]
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Selective_catalytic_reduction
+
+- code: P20E1
+  scope: generic
+  category: powertrain
+  title:
+    en: Reductant Pressure Too Low
+    de: Reagenzdruck zu niedrig
+  description:
+    en: The reductant (AdBlue/DEF) line pressure stays below the demanded value during dosing. The dosing system needs a stable supply pressure to inject metered amounts; without it the system cannot meet NOx targets.
+    de: Der Leitungsdruck des Reagenzmittels (AdBlue/DEF) bleibt während der Dosierung unter dem geforderten Wert. Das System benötigt einen stabilen Versorgungsdruck zum Einspritzen definierter Mengen; ohne ihn werden die NOx-Vorgaben verfehlt.
+  affected_components:
+    - reductant_pump
+    - reductant_pressure_sensor
+    - reductant_lines
+  common_causes:
+    - id: reductant_pump_weak
+      likelihood: high
+      label:
+        en: Reductant pump worn or weak
+        de: Reagenzpumpe verschlissen oder schwach
+    - id: reductant_line_leak
+      likelihood: medium
+      label:
+        en: Leak in pressure line
+        de: Undichtigkeit in der Druckleitung
+    - id: reductant_filter_clogged
+      likelihood: medium
+      label:
+        en: Inline filter clogged
+        de: Vorfilter verstopft
+  repair:
+    difficulty: medium
+    diy_possible: false
+    estimated_cost_eur: [250, 1500]
+    estimated_hours: [1.0, 4.0]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+    limp_mode_possible: true
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Diesel_exhaust_fluid
+
+- code: P20E2
+  scope: generic
+  category: powertrain
+  title:
+    en: Reductant Pressure Too High
+    de: Reagenzdruck zu hoch
+  description:
+    en: The reductant line pressure exceeds the upper limit. A blocked return path, a stuck pump or a faulty pressure sensor are common causes; over-pressure can damage the dosing valve and the pump head.
+    de: Der Reagenzleitungsdruck überschreitet den oberen Grenzwert. Häufig durch blockierte Rücklaufleitung, hängende Pumpe oder fehlerhaften Drucksensor; zu hoher Druck kann Dosierventil und Pumpenkopf beschädigen.
+  affected_components:
+    - reductant_pump
+    - reductant_pressure_sensor
+    - reductant_lines
+  common_causes:
+    - id: reductant_return_blocked
+      likelihood: high
+      label:
+        en: Return line blocked or frozen
+        de: Rücklaufleitung blockiert oder vereist
+    - id: reductant_pressure_sensor_drift
+      likelihood: medium
+      label:
+        en: Pressure sensor reads high
+        de: Drucksensor liest zu hoch
+    - id: dosing_valve_stuck_closed
+      likelihood: medium
+      label:
+        en: Dosing valve stuck closed
+        de: Dosierventil hängt geschlossen
+  repair:
+    difficulty: medium
+    diy_possible: false
+    estimated_cost_eur: [250, 1500]
+    estimated_hours: [1.0, 4.0]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+  related_codes: [P20E1]
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Diesel_exhaust_fluid
+
+- code: P20E9
+  scope: generic
+  category: powertrain
+  title:
+    en: Reductant Pressure Too High
+    de: Reagenzdruck zu hoch
+  description:
+    en: Manufacturer-specific variant of the reductant over-pressure condition. The pressure exceeds the upper threshold during a defined operating window; on some platforms used in addition to P20E2 to flag a different test path.
+    de: Herstellerspezifische Variante der Überdruckbedingung im Reagenzsystem. Der Druck überschreitet in einem definierten Betriebsfenster den oberen Schwellwert; auf manchen Plattformen ergänzend zu P20E2 für einen anderen Prüfpfad gesetzt.
+  affected_components:
+    - reductant_pump
+    - reductant_pressure_sensor
+  common_causes:
+    - id: reductant_return_blocked
+      likelihood: high
+      label:
+        en: Return line blocked or frozen
+        de: Rücklaufleitung blockiert oder vereist
+    - id: reductant_pressure_sensor_drift
+      likelihood: medium
+      label:
+        en: Pressure sensor reads high
+        de: Drucksensor liest zu hoch
+  repair:
+    difficulty: medium
+    diy_possible: false
+    estimated_cost_eur: [250, 1500]
+    estimated_hours: [1.0, 4.0]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+  related_codes: [P20E2]
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Diesel_exhaust_fluid
+
+- code: P20EB
+  scope: generic
+  category: powertrain
+  title:
+    en: Reductant Reservoir Heater "A" Control Circuit
+    de: Reagenztank-Heizung "A" Steuerkreis
+  description:
+    en: A general electrical fault on the reductant tank heater "A" control circuit. AdBlue freezes at -11 C, so the tank heater must work for cold-start dosing.
+    de: Allgemeiner elektrischer Fehler im Steuerkreis der Reagenztankheizung "A". AdBlue gefriert bei -11 C, deshalb muss die Tankheizung für die Dosierung beim Kaltstart funktionieren.
+  affected_components:
+    - reductant_tank_heater
+    - reductant_heater_wiring
+  common_causes:
+    - id: heater_element_failed
+      likelihood: high
+      label:
+        en: Heater element failed
+        de: Heizelement defekt
+    - id: heater_wiring_open
+      likelihood: medium
+      label:
+        en: Wiring open or connector loose
+        de: Leitung unterbrochen oder Stecker locker
+  repair:
+    difficulty: medium
+    diy_possible: false
+    estimated_cost_eur: [200, 1200]
+    estimated_hours: [1.0, 4.0]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Diesel_exhaust_fluid
+
+- code: P20EC
+  scope: generic
+  category: powertrain
+  title:
+    en: Reductant Heater "A" Control Stuck Off
+    de: Reagenzheizung "A" hängt aus
+  description:
+    en: The reductant tank heater "A" does not heat when commanded on. Either a failed element or a stuck-off driver in the dosing module.
+    de: Die Reagenztankheizung "A" heizt nicht, obwohl angefordert. Entweder ein defektes Heizelement oder eine hängende Endstufe im Dosiermodul.
+  affected_components:
+    - reductant_tank_heater
+    - reductant_dosing_unit
+  common_causes:
+    - id: heater_element_open
+      likelihood: high
+      label:
+        en: Heater element open
+        de: Heizelement unterbrochen
+    - id: heater_driver_stuck_off
+      likelihood: medium
+      label:
+        en: Heater driver stuck off
+        de: Heizungs-Endstufe hängt aus
+  repair:
+    difficulty: medium
+    diy_possible: false
+    estimated_cost_eur: [200, 1200]
+    estimated_hours: [1.0, 4.0]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+  related_codes: [P20EB, P20ED]
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Diesel_exhaust_fluid
+
+- code: P20ED
+  scope: generic
+  category: powertrain
+  title:
+    en: Reductant Heater "A" Control Stuck On
+    de: Reagenzheizung "A" hängt ein
+  description:
+    en: The reductant tank heater "A" stays energised even when not commanded — usually a shorted driver stage. Continuous heating wastes current and can overheat the heater element.
+    de: Die Reagenztankheizung "A" bleibt eingeschaltet, obwohl nicht angefordert — meist eine durchlegierte Endstufe. Dauerheizen verschwendet Strom und kann das Heizelement überlasten.
+  affected_components:
+    - reductant_tank_heater
+    - reductant_dosing_unit
+  common_causes:
+    - id: heater_driver_shorted
+      likelihood: high
+      label:
+        en: Heater driver shorted on
+        de: Heizungs-Endstufe durchlegiert
+    - id: heater_wiring_short_to_power
+      likelihood: medium
+      label:
+        en: Heater line shorted to positive
+        de: Heizungsleitung nach Plus kurzgeschlossen
+  repair:
+    difficulty: medium
+    diy_possible: false
+    estimated_cost_eur: [200, 1200]
+    estimated_hours: [1.0, 4.0]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+  related_codes: [P20EB, P20EC]
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Diesel_exhaust_fluid
+
+- code: P2206
+  scope: generic
+  category: powertrain
+  title:
+    en: NOx Sensor Circuit (Bank 2)
+    de: NOx-Sensor Stromkreis (Bank 2)
+  description:
+    en: A general electrical fault on the bank 2 NOx sensor circuit. NOx sensors are smart sensors with a CAN/LIN interface; this code typically indicates that the sensor module no longer responds.
+    de: Allgemeiner elektrischer Fehler im Stromkreis des NOx-Sensors auf Bank 2. NOx-Sensoren sind intelligente Sensoren mit CAN-/LIN-Schnittstelle; dieser Code wird gesetzt, wenn das Sensormodul nicht mehr antwortet.
+  affected_components:
+    - nox_sensor_b2
+    - nox_sensor_wiring
+  common_causes:
+    - id: nox_sensor_failed
+      likelihood: high
+      label:
+        en: NOx sensor module failed
+        de: NOx-Sensormodul defekt
+    - id: nox_sensor_wiring_open
+      likelihood: medium
+      label:
+        en: Wiring open or connector loose
+        de: Leitung unterbrochen oder Stecker locker
+  repair:
+    difficulty: medium
+    diy_possible: true
+    estimated_cost_eur: [300, 1000]
+    estimated_hours: [0.5, 2.0]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Selective_catalytic_reduction
+
+- code: P2207
+  scope: generic
+  category: powertrain
+  title:
+    en: NOx Sensor Circuit Range/Performance (Bank 2)
+    de: NOx-Sensor Stromkreis Bereich/Plausibilität (Bank 2)
+  description:
+    en: The bank 2 NOx sensor returns values outside the expected range for the operating point — for example a non-zero reading at engine off or unchanged values during load changes.
+    de: Der NOx-Sensor auf Bank 2 liefert Werte ausserhalb des erwarteten Bereichs für den Betriebspunkt — etwa Werte ungleich null bei Motor aus oder unveränderte Werte trotz Lastwechsel.
+  affected_components:
+    - nox_sensor_b2
+  common_causes:
+    - id: nox_sensor_drift
+      likelihood: high
+      label:
+        en: Sensor drift due to ageing
+        de: Sensordrift durch Alterung
+    - id: nox_sensor_contaminated
+      likelihood: medium
+      label:
+        en: Sensor contaminated with soot or condensate
+        de: Sensor mit Ruß oder Kondensat verunreinigt
+  repair:
+    difficulty: medium
+    diy_possible: true
+    estimated_cost_eur: [300, 1000]
+    estimated_hours: [0.5, 2.0]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+  related_codes: [P2206]
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Selective_catalytic_reduction
+
+- code: P2208
+  scope: generic
+  category: powertrain
+  title:
+    en: NOx Sensor Heater Circuit (Bank 2)
+    de: NOx-Sensorheizung Stromkreis (Bank 2)
+  description:
+    en: A general electrical fault on the heater of the bank 2 NOx sensor. NOx sensors must reach roughly 800 C to measure correctly; without heater current the sensor never enters its operating range.
+    de: Allgemeiner elektrischer Fehler an der Heizung des NOx-Sensors auf Bank 2. NOx-Sensoren müssen rund 800 C erreichen, um korrekt zu messen; ohne Heizstrom kommt der Sensor nicht in seinen Arbeitsbereich.
+  affected_components:
+    - nox_sensor_b2
+    - nox_sensor_heater
+  common_causes:
+    - id: heater_element_failed
+      likelihood: high
+      label:
+        en: Heater element failed
+        de: Heizelement defekt
+    - id: heater_wiring_open
+      likelihood: medium
+      label:
+        en: Heater wiring open or connector loose
+        de: Heizungsleitung unterbrochen oder Stecker locker
+  repair:
+    difficulty: medium
+    diy_possible: true
+    estimated_cost_eur: [300, 1000]
+    estimated_hours: [0.5, 2.0]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+  related_codes: [P2206, P2211]
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Selective_catalytic_reduction
+
+- code: P2209
+  scope: generic
+  category: powertrain
+  title:
+    en: NOx Sensor Heater Sense Circuit Range/Performance (Bank 2)
+    de: NOx-Sensorheizung Diagnose-Stromkreis Bereich/Plausibilität (Bank 2)
+  description:
+    en: The heater feedback (sense) line on the bank 2 NOx sensor reports values outside the expected window — heating is happening but the temperature does not match the model.
+    de: Die Heizungsrückmeldung (Sense-Leitung) am NOx-Sensor Bank 2 liefert Werte ausserhalb des Erwartungsfensters — die Heizung arbeitet, aber die Temperatur passt nicht zum Modell.
+  affected_components:
+    - nox_sensor_b2
+    - nox_sensor_heater
+  common_causes:
+    - id: heater_element_aged
+      likelihood: high
+      label:
+        en: Heater element ageing, resistance drift
+        de: Heizelement gealtert, Widerstand driftet
+    - id: nox_sensor_failed
+      likelihood: medium
+      label:
+        en: Sensor module failed
+        de: Sensormodul defekt
+  repair:
+    difficulty: medium
+    diy_possible: true
+    estimated_cost_eur: [300, 1000]
+    estimated_hours: [0.5, 2.0]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+  related_codes: [P2208]
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Selective_catalytic_reduction
+
+- code: P2210
+  scope: generic
+  category: powertrain
+  title:
+    en: NOx Sensor Circuit Intermittent (Bank 2)
+    de: NOx-Sensor Stromkreis sporadisch (Bank 2)
+  description:
+    en: The bank 2 NOx sensor reports correctly some of the time but intermittently drops out. Often a marginal connector, a wiring chafe or a sensor that fails when warm.
+    de: Der NOx-Sensor auf Bank 2 meldet zeitweise korrekt, fällt aber sporadisch aus. Häufig ein grenzwertiger Stecker, eine gescheuerte Leitung oder ein Sensor, der erst im warmen Zustand ausfällt.
+  affected_components:
+    - nox_sensor_b2
+    - nox_sensor_wiring
+  common_causes:
+    - id: connector_intermittent
+      likelihood: high
+      label:
+        en: Connector intermittent
+        de: Stecker mit Wackelkontakt
+    - id: nox_sensor_thermal_fault
+      likelihood: medium
+      label:
+        en: Sensor fails when hot
+        de: Sensor fällt bei Hitze aus
+  repair:
+    difficulty: medium
+    diy_possible: true
+    estimated_cost_eur: [300, 1000]
+    estimated_hours: [0.5, 2.0]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+  related_codes: [P2206]
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Selective_catalytic_reduction
+
+- code: P2211
+  scope: generic
+  category: powertrain
+  title:
+    en: NOx Sensor Heater Sense Circuit Intermittent (Bank 2)
+    de: NOx-Sensorheizung Diagnose-Stromkreis sporadisch (Bank 2)
+  description:
+    en: The heater sense line on the bank 2 NOx sensor produces intermittent readings. Often a thermal fault inside the sensor or a connector under temperature cycling.
+    de: Die Heizungs-Sense-Leitung am NOx-Sensor Bank 2 liefert sporadische Messwerte. Häufig ein thermischer Fehler im Sensor oder ein Stecker unter Temperaturwechsel.
+  affected_components:
+    - nox_sensor_b2
+    - nox_sensor_heater
+  common_causes:
+    - id: connector_intermittent
+      likelihood: high
+      label:
+        en: Connector intermittent under temperature
+        de: Stecker mit Wackelkontakt unter Temperatur
+    - id: nox_sensor_thermal_fault
+      likelihood: medium
+      label:
+        en: Sensor heater intermittent when hot
+        de: Sensorheizung sporadisch im Heisszustand
+  repair:
+    difficulty: medium
+    diy_possible: true
+    estimated_cost_eur: [300, 1000]
+    estimated_hours: [0.5, 2.0]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+  related_codes: [P2208]
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Selective_catalytic_reduction
+
+- code: P2113
+  scope: generic
+  category: powertrain
+  title:
+    en: Throttle Actuator Control System Forced Limited RPM
+    de: Drosselklappensteller System auf Drehzahl-Notlauf begrenzt
+  description:
+    en: The throttle actuator control has detected a fault and limits engine speed to a defined emergency value. The vehicle stays drivable but with severely reduced power until the underlying fault is cleared.
+    de: Die Drosselklappenregelung hat einen Fehler erkannt und begrenzt die Motordrehzahl auf einen definierten Notwert. Das Fahrzeug bleibt fahrbar, aber mit stark reduzierter Leistung, bis der zugrundeliegende Fehler behoben ist.
+  affected_components:
+    - throttle_actuator_motor
+    - throttle_position_sensor
+    - engine_control_unit
+  common_causes:
+    - id: throttle_actuator_fault
+      likelihood: high
+      label:
+        en: Underlying throttle actuator fault
+        de: Zugrundeliegender Fehler am Drosselklappensteller
+    - id: tps_correlation_fault
+      likelihood: medium
+      label:
+        en: Pedal/throttle correlation fault
+        de: Pedal/Drosselklappen-Plausibilitätsfehler
+  repair:
+    difficulty: medium
+    diy_possible: true
+    estimated_cost_eur: [120, 700]
+    estimated_hours: [0.5, 3.0]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+    limp_mode_possible: true
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Throttle_position_sensor
+
+- code: P2114
+  scope: generic
+  category: powertrain
+  title:
+    en: Throttle Actuator Control System Forced Below Limit RPM
+    de: Drosselklappensteller System unter Notlauf-Drehzahl begrenzt
+  description:
+    en: The throttle actuator system has dropped engine speed below the normal limp limit because of a more serious fault. The engine may run only at idle or stall.
+    de: Das Drosselklappenregelsystem hat die Motordrehzahl wegen eines schwerwiegenderen Fehlers unter den üblichen Notlauf-Grenzwert abgesenkt. Der Motor läuft eventuell nur im Leerlauf oder geht aus.
+  affected_components:
+    - throttle_actuator_motor
+    - throttle_position_sensor
+  common_causes:
+    - id: throttle_actuator_fault
+      likelihood: high
+      label:
+        en: Severe throttle actuator fault
+        de: Schwerer Fehler am Drosselklappensteller
+    - id: tps_signal_lost
+      likelihood: medium
+      label:
+        en: TPS signal lost
+        de: TPS-Signal verloren
+  repair:
+    difficulty: medium
+    diy_possible: true
+    estimated_cost_eur: [120, 700]
+    estimated_hours: [0.5, 3.0]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+    limp_mode_possible: true
+  related_codes: [P2113]
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Throttle_position_sensor
+
+- code: P2120
+  scope: generic
+  category: powertrain
+  title:
+    en: Throttle/Pedal Position Sensor "C" Circuit
+    de: Drosselklappen-/Pedalstellungssensor "C" Stromkreis
+  description:
+    en: A general electrical fault on the "C" channel of the throttle or pedal position sensor. Drive-by-wire pedals carry two or three redundant tracks; "C" is the third channel.
+    de: Allgemeiner elektrischer Fehler am Kanal "C" des Drosselklappen- oder Pedalstellungssensors. E-Gas-Pedale haben zwei oder drei redundante Spuren; "C" ist die dritte Spur.
+  affected_components:
+    - accelerator_pedal_sensor
+    - pedal_sensor_wiring
+  common_causes:
+    - id: tps_sensor_failed
+      likelihood: high
+      label:
+        en: Pedal sensor track C failed
+        de: Pedalsensor-Spur C defekt
+    - id: signal_wire_open
+      likelihood: medium
+      label:
+        en: Signal wire open
+        de: Signalleitung unterbrochen
+  repair:
+    difficulty: easy
+    diy_possible: true
+    estimated_cost_eur: [80, 400]
+    estimated_hours: [0.3, 1.5]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Throttle_position_sensor
+
+- code: P2121
+  scope: generic
+  category: powertrain
+  title:
+    en: Throttle/Pedal Position Sensor "C" Range/Performance
+    de: Drosselklappen-/Pedalstellungssensor "C" Bereich/Plausibilität
+  description:
+    en: The "C" channel of the throttle or pedal sensor produces an electrically valid signal that does not match the other channels or the operating point.
+    de: Der Kanal "C" des Drosselklappen- oder Pedalsensors liefert ein elektrisch gültiges Signal, das nicht zu den anderen Kanälen oder zum Betriebspunkt passt.
+  affected_components:
+    - accelerator_pedal_sensor
+  common_causes:
+    - id: tps_track_worn
+      likelihood: high
+      label:
+        en: Sensor track C worn
+        de: Sensorspur C verschlissen
+    - id: tps_correlation_fault
+      likelihood: medium
+      label:
+        en: Correlation with tracks A/B lost
+        de: Plausibilität zu Spur A/B verloren
+  repair:
+    difficulty: easy
+    diy_possible: true
+    estimated_cost_eur: [80, 400]
+    estimated_hours: [0.3, 1.5]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+  related_codes: [P2120]
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Throttle_position_sensor
+
+- code: P2124
+  scope: generic
+  category: powertrain
+  title:
+    en: Throttle/Pedal Position Sensor "C" Circuit Low
+    de: Drosselklappen-/Pedalstellungssensor "C" Signal zu niedrig
+  description:
+    en: The "C" channel signal is below the lower threshold — usually a short to ground or an open signal wire.
+    de: Das Signal des Kanals "C" liegt unter dem unteren Schwellwert — meist Massekurzschluss oder unterbrochene Signalleitung.
+  affected_components:
+    - accelerator_pedal_sensor
+    - pedal_sensor_wiring
+  common_causes:
+    - id: signal_short_to_ground
+      likelihood: high
+      label:
+        en: Signal shorted to ground
+        de: Signal gegen Masse kurzgeschlossen
+    - id: signal_wire_open
+      likelihood: medium
+      label:
+        en: Signal wire open
+        de: Signalleitung unterbrochen
+  repair:
+    difficulty: easy
+    diy_possible: true
+    estimated_cost_eur: [80, 400]
+    estimated_hours: [0.3, 1.5]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+  related_codes: [P2120]
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Throttle_position_sensor
+
+- code: P2125
+  scope: generic
+  category: powertrain
+  title:
+    en: Throttle/Pedal Position Sensor "C" Circuit High
+    de: Drosselklappen-/Pedalstellungssensor "C" Signal zu hoch
+  description:
+    en: The "C" channel signal is above the upper threshold — typically a short to positive or an open ground.
+    de: Das Signal des Kanals "C" liegt über dem oberen Schwellwert — typischerweise Kurzschluss nach Plus oder unterbrochene Masse.
+  affected_components:
+    - accelerator_pedal_sensor
+    - pedal_sensor_wiring
+  common_causes:
+    - id: signal_short_to_power
+      likelihood: high
+      label:
+        en: Signal shorted to positive
+        de: Signal nach Plus kurzgeschlossen
+    - id: ground_open
+      likelihood: medium
+      label:
+        en: Sensor ground open
+        de: Sensormasse unterbrochen
+  repair:
+    difficulty: easy
+    diy_possible: true
+    estimated_cost_eur: [80, 400]
+    estimated_hours: [0.3, 1.5]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+  related_codes: [P2120, P2124]
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Throttle_position_sensor
+
+- code: P2126
+  scope: generic
+  category: powertrain
+  title:
+    en: Throttle/Pedal Position Sensor "C" Circuit Intermittent
+    de: Drosselklappen-/Pedalstellungssensor "C" Stromkreis sporadisch
+  description:
+    en: The "C" channel produces an intermittent signal — usually a marginal connector or a worn track inside the pedal sensor.
+    de: Der Kanal "C" liefert ein sporadisches Signal — meist ein grenzwertiger Stecker oder eine verschlissene Spur im Pedalsensor.
+  affected_components:
+    - accelerator_pedal_sensor
+    - pedal_sensor_wiring
+  common_causes:
+    - id: connector_intermittent
+      likelihood: high
+      label:
+        en: Connector intermittent
+        de: Stecker mit Wackelkontakt
+    - id: tps_track_worn
+      likelihood: medium
+      label:
+        en: Track C worn at common pedal angle
+        de: Spur C im üblichen Pedalwinkel verschlissen
+  repair:
+    difficulty: easy
+    diy_possible: true
+    estimated_cost_eur: [80, 400]
+    estimated_hours: [0.3, 1.5]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+  related_codes: [P2120]
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Throttle_position_sensor
+
+- code: P2129
+  scope: generic
+  category: powertrain
+  title:
+    en: Throttle/Pedal Position Sensor "D" Circuit Intermittent
+    de: Drosselklappen-/Pedalstellungssensor "D" Stromkreis sporadisch
+  description:
+    en: The "D" channel of the throttle or pedal sensor produces an intermittent signal — typically marginal connector contacts.
+    de: Der Kanal "D" des Drosselklappen- oder Pedalsensors liefert ein sporadisches Signal — typischerweise grenzwertige Steckkontakte.
+  affected_components:
+    - accelerator_pedal_sensor
+    - pedal_sensor_wiring
+  common_causes:
+    - id: connector_intermittent
+      likelihood: high
+      label:
+        en: Connector intermittent
+        de: Stecker mit Wackelkontakt
+    - id: tps_track_worn
+      likelihood: medium
+      label:
+        en: Track D worn
+        de: Spur D verschlissen
+  repair:
+    difficulty: easy
+    diy_possible: true
+    estimated_cost_eur: [80, 400]
+    estimated_hours: [0.3, 1.5]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Throttle_position_sensor
+
+- code: P2131
+  scope: generic
+  category: powertrain
+  title:
+    en: Throttle/Pedal Position Sensor "E" Range/Performance
+    de: Drosselklappen-/Pedalstellungssensor "E" Bereich/Plausibilität
+  description:
+    en: The "E" channel of the pedal/throttle sensor produces electrically valid values that do not match other channels or the operating window.
+    de: Der Kanal "E" des Pedal-/Drosselklappensensors liefert elektrisch gültige Werte, die nicht zu den anderen Kanälen oder zum Betriebsfenster passen.
+  affected_components:
+    - accelerator_pedal_sensor
+  common_causes:
+    - id: tps_correlation_fault
+      likelihood: high
+      label:
+        en: Correlation with tracks D/F lost
+        de: Plausibilität zu Spur D/F verloren
+    - id: tps_track_worn
+      likelihood: medium
+      label:
+        en: Track E worn at common angle
+        de: Spur E im üblichen Winkel verschlissen
+  repair:
+    difficulty: easy
+    diy_possible: true
+    estimated_cost_eur: [80, 400]
+    estimated_hours: [0.3, 1.5]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Throttle_position_sensor
+
+- code: P2132
+  scope: generic
+  category: powertrain
+  title:
+    en: Throttle/Pedal Position Sensor "E" Circuit Low
+    de: Drosselklappen-/Pedalstellungssensor "E" Signal zu niedrig
+  description:
+    en: The "E" channel signal is below the lower threshold — typically a short to ground or an open signal wire.
+    de: Das Signal des Kanals "E" liegt unter dem unteren Schwellwert — typischerweise Massekurzschluss oder unterbrochene Signalleitung.
+  affected_components:
+    - accelerator_pedal_sensor
+    - pedal_sensor_wiring
+  common_causes:
+    - id: signal_short_to_ground
+      likelihood: high
+      label:
+        en: Signal shorted to ground
+        de: Signal gegen Masse kurzgeschlossen
+    - id: signal_wire_open
+      likelihood: medium
+      label:
+        en: Signal wire open
+        de: Signalleitung unterbrochen
+  repair:
+    difficulty: easy
+    diy_possible: true
+    estimated_cost_eur: [80, 400]
+    estimated_hours: [0.3, 1.5]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+  related_codes: [P2131]
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Throttle_position_sensor
+
+- code: P2133
+  scope: generic
+  category: powertrain
+  title:
+    en: Throttle/Pedal Position Sensor "E" Circuit High
+    de: Drosselklappen-/Pedalstellungssensor "E" Signal zu hoch
+  description:
+    en: The "E" channel signal is above the upper threshold — usually a short to positive or an open ground.
+    de: Das Signal des Kanals "E" liegt über dem oberen Schwellwert — meist Kurzschluss nach Plus oder unterbrochene Masse.
+  affected_components:
+    - accelerator_pedal_sensor
+    - pedal_sensor_wiring
+  common_causes:
+    - id: signal_short_to_power
+      likelihood: high
+      label:
+        en: Signal shorted to positive
+        de: Signal nach Plus kurzgeschlossen
+    - id: ground_open
+      likelihood: medium
+      label:
+        en: Sensor ground open
+        de: Sensormasse unterbrochen
+  repair:
+    difficulty: easy
+    diy_possible: true
+    estimated_cost_eur: [80, 400]
+    estimated_hours: [0.3, 1.5]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+  related_codes: [P2131, P2132]
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Throttle_position_sensor
+
+- code: P2136
+  scope: generic
+  category: powertrain
+  title:
+    en: Throttle/Pedal Position Sensor A/C Voltage Correlation
+    de: Drosselklappen-/Pedalstellungssensor A/C Spannungs-Plausibilität
+  description:
+    en: The "A" and "C" channels of the throttle or pedal sensor disagree by more than the allowed tolerance. The ECU cannot trust either reading and forces limp-home with reduced torque.
+    de: Die Kanäle "A" und "C" des Drosselklappen- oder Pedalsensors weichen über die zulässige Toleranz hinaus voneinander ab. Die Motorsteuerung verwirft beide Werte und erzwingt einen Notlauf mit reduziertem Moment.
+  affected_components:
+    - accelerator_pedal_sensor
+    - pedal_sensor_wiring
+  common_causes:
+    - id: tps_track_worn
+      likelihood: high
+      label:
+        en: One sensor track worn
+        de: Eine Sensorspur verschlissen
+    - id: connector_corrosion
+      likelihood: medium
+      label:
+        en: Connector corroded with leakage
+        de: Stecker korrodiert mit Kriechstrom
+  repair:
+    difficulty: easy
+    diy_possible: true
+    estimated_cost_eur: [80, 400]
+    estimated_hours: [0.3, 1.5]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+    limp_mode_possible: true
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Throttle_position_sensor
+
+- code: P2137
+  scope: generic
+  category: powertrain
+  title:
+    en: Throttle/Pedal Position Sensor B/C Voltage Correlation
+    de: Drosselklappen-/Pedalstellungssensor B/C Spannungs-Plausibilität
+  description:
+    en: The "B" and "C" channels of the throttle or pedal sensor disagree beyond tolerance — the ECU cannot trust either signal and reverts to limp-home.
+    de: Die Kanäle "B" und "C" des Drosselklappen- oder Pedalsensors weichen über die Toleranz hinaus ab — die Motorsteuerung verwirft beide Signale und schaltet in den Notlauf.
+  affected_components:
+    - accelerator_pedal_sensor
+    - pedal_sensor_wiring
+  common_causes:
+    - id: tps_track_worn
+      likelihood: high
+      label:
+        en: Track B or C worn
+        de: Spur B oder C verschlissen
+    - id: connector_corrosion
+      likelihood: medium
+      label:
+        en: Connector corroded with leakage
+        de: Stecker korrodiert mit Kriechstrom
+  repair:
+    difficulty: easy
+    diy_possible: true
+    estimated_cost_eur: [80, 400]
+    estimated_hours: [0.3, 1.5]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+    limp_mode_possible: true
+  related_codes: [P2136]
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Throttle_position_sensor
+
+- code: P2181
+  scope: generic
+  category: powertrain
+  title:
+    en: Cooling System Performance
+    de: Kühlsystem Leistung
+  description:
+    en: The engine cooling system does not reach or maintain the expected temperature within the diagnostic window — usually a stuck-open thermostat, but also a low coolant level or a stuck cooling fan that overcools the engine.
+    de: Das Motorkühlsystem erreicht oder hält die erwartete Temperatur im Diagnosefenster nicht — meist ein offen hängender Thermostat, aber auch zu niedriger Kühlmittelstand oder ein klemmender Lüfter, der den Motor zu stark kühlt.
+  affected_components:
+    - thermostat
+    - coolant_temperature_sensor
+    - cooling_fan
+  common_causes:
+    - id: thermostat_stuck_open
+      likelihood: high
+      label:
+        en: Thermostat stuck open
+        de: Thermostat hängt offen
+    - id: coolant_level_low
+      likelihood: medium
+      label:
+        en: Coolant level low
+        de: Kühlmittelstand zu niedrig
+    - id: cooling_fan_stuck_on
+      likelihood: low
+      label:
+        en: Cooling fan stuck on
+        de: Lüfter hängt eingeschaltet
+  repair:
+    difficulty: medium
+    diy_possible: true
+    estimated_cost_eur: [80, 400]
+    estimated_hours: [0.5, 2.5]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Engine_coolant_temperature_sensor
+
+- code: P2185
+  scope: generic
+  category: powertrain
+  title:
+    en: Engine Coolant Temperature Sensor 2 Circuit High
+    de: Kühlmitteltemperatursensor 2 Stromkreis Signal zu hoch
+  description:
+    en: The second coolant temperature sensor (often radiator-outlet or cylinder-head bank) reports a voltage above the upper threshold — typically an open signal wire or a sensor with infinite resistance.
+    de: Der zweite Kühlmitteltemperatursensor (oft am Kühlerausgang oder am Zylinderkopf einer Bank) meldet eine Spannung über dem oberen Schwellwert — typischerweise eine unterbrochene Signalleitung oder ein Sensor mit unendlichem Widerstand.
+  affected_components:
+    - coolant_temperature_sensor_2
+    - sensor_wiring
+  common_causes:
+    - id: ect_sensor_open
+      likelihood: high
+      label:
+        en: Sensor element open
+        de: Sensorelement unterbrochen
+    - id: signal_wire_open
+      likelihood: medium
+      label:
+        en: Signal wire open
+        de: Signalleitung unterbrochen
+  repair:
+    difficulty: easy
+    diy_possible: true
+    estimated_cost_eur: [40, 200]
+    estimated_hours: [0.3, 1.0]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Engine_coolant_temperature_sensor
+
+- code: P2186
+  scope: generic
+  category: powertrain
+  title:
+    en: Engine Coolant Temperature Sensor 2 Circuit Low
+    de: Kühlmitteltemperatursensor 2 Stromkreis Signal zu niedrig
+  description:
+    en: The second coolant temperature sensor reports a voltage below the lower threshold — typically a short to ground or a sensor with very low resistance.
+    de: Der zweite Kühlmitteltemperatursensor meldet eine Spannung unter dem unteren Schwellwert — typischerweise ein Massekurzschluss oder ein Sensor mit sehr niedrigem Widerstand.
+  affected_components:
+    - coolant_temperature_sensor_2
+    - sensor_wiring
+  common_causes:
+    - id: signal_short_to_ground
+      likelihood: high
+      label:
+        en: Signal shorted to ground
+        de: Signal gegen Masse kurzgeschlossen
+    - id: ect_sensor_short
+      likelihood: medium
+      label:
+        en: Sensor element shorted
+        de: Sensorelement durchlegiert
+  repair:
+    difficulty: easy
+    diy_possible: true
+    estimated_cost_eur: [40, 200]
+    estimated_hours: [0.3, 1.0]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+  related_codes: [P2185]
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Engine_coolant_temperature_sensor
+
+- code: P2340
+  scope: generic
+  category: powertrain
+  title:
+    en: Cylinder 5 Above Knock Threshold
+    de: Zylinder 5 über Klopfschwelle
+  description:
+    en: The knock-sensor evaluation reports cylinder 5 above the knock threshold over a sustained window. The ECU retards ignition for that cylinder; persistent knock indicates poor fuel quality, carbon deposits or cooling issues.
+    de: Die Klopfsensorauswertung meldet Zylinder 5 über einen längeren Zeitraum oberhalb der Klopfschwelle. Die Motorsteuerung verzögert die Zündung an diesem Zylinder; dauerhaftes Klopfen weist auf schlechte Kraftstoffqualität, Verkokung oder Kühlprobleme hin.
+  affected_components:
+    - knock_sensor
+    - cylinder_5
+  common_causes:
+    - id: fuel_quality_poor
+      likelihood: high
+      label:
+        en: Low octane or contaminated fuel
+        de: Zu niedrige Oktanzahl oder verunreinigter Kraftstoff
+    - id: carbon_deposits
+      likelihood: medium
+      label:
+        en: Carbon deposits raise compression locally
+        de: Verkokung erhöht lokal die Verdichtung
+    - id: cooling_local
+      likelihood: low
+      label:
+        en: Local cooling issue at cylinder 5
+        de: Örtliches Kühlproblem an Zylinder 5
+  repair:
+    difficulty: medium
+    diy_possible: true
+    estimated_cost_eur: [50, 600]
+    estimated_hours: [0.5, 4.0]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Misfire
+
+- code: P2341
+  scope: generic
+  category: powertrain
+  title:
+    en: Cylinder 6 Above Knock Threshold
+    de: Zylinder 6 über Klopfschwelle
+  description:
+    en: Same condition as P2340 but on cylinder 6 — sustained knock above the threshold with retarded ignition correction.
+    de: Gleicher Zustand wie bei P2340, aber an Zylinder 6 — anhaltendes Klopfen oberhalb der Schwelle mit Spätverstellung der Zündung.
+  affected_components:
+    - knock_sensor
+    - cylinder_6
+  common_causes:
+    - id: fuel_quality_poor
+      likelihood: high
+      label:
+        en: Low octane or contaminated fuel
+        de: Zu niedrige Oktanzahl oder verunreinigter Kraftstoff
+    - id: carbon_deposits
+      likelihood: medium
+      label:
+        en: Carbon deposits raise compression locally
+        de: Verkokung erhöht lokal die Verdichtung
+  repair:
+    difficulty: medium
+    diy_possible: true
+    estimated_cost_eur: [50, 600]
+    estimated_hours: [0.5, 4.0]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+  related_codes: [P2340]
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Misfire
+
+- code: P2342
+  scope: generic
+  category: powertrain
+  title:
+    en: Cylinder 7 Above Knock Threshold
+    de: Zylinder 7 über Klopfschwelle
+  description:
+    en: Sustained knock above the threshold on cylinder 7 — usual causes are fuel quality, carbon deposits, or cooling issues at this cylinder.
+    de: Anhaltendes Klopfen oberhalb der Schwelle an Zylinder 7 — übliche Ursachen sind Kraftstoffqualität, Verkokung oder Kühlprobleme an diesem Zylinder.
+  affected_components:
+    - knock_sensor
+    - cylinder_7
+  common_causes:
+    - id: fuel_quality_poor
+      likelihood: high
+      label:
+        en: Low octane or contaminated fuel
+        de: Zu niedrige Oktanzahl oder verunreinigter Kraftstoff
+    - id: carbon_deposits
+      likelihood: medium
+      label:
+        en: Carbon deposits raise compression locally
+        de: Verkokung erhöht lokal die Verdichtung
+  repair:
+    difficulty: medium
+    diy_possible: true
+    estimated_cost_eur: [50, 600]
+    estimated_hours: [0.5, 4.0]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+  related_codes: [P2340]
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Misfire
+
+- code: P2343
+  scope: generic
+  category: powertrain
+  title:
+    en: Cylinder 8 Above Knock Threshold
+    de: Zylinder 8 über Klopfschwelle
+  description:
+    en: Sustained knock above the threshold on cylinder 8 — typical on V8 engines under load with poor fuel.
+    de: Anhaltendes Klopfen oberhalb der Schwelle an Zylinder 8 — typisch bei V8-Motoren unter Last mit schlechtem Kraftstoff.
+  affected_components:
+    - knock_sensor
+    - cylinder_8
+  common_causes:
+    - id: fuel_quality_poor
+      likelihood: high
+      label:
+        en: Low octane or contaminated fuel
+        de: Zu niedrige Oktanzahl oder verunreinigter Kraftstoff
+    - id: carbon_deposits
+      likelihood: medium
+      label:
+        en: Carbon deposits raise compression locally
+        de: Verkokung erhöht lokal die Verdichtung
+  repair:
+    difficulty: medium
+    diy_possible: true
+    estimated_cost_eur: [50, 600]
+    estimated_hours: [0.5, 4.0]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+  related_codes: [P2340]
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Misfire
+
+- code: P2407
+  scope: generic
+  category: powertrain
+  title:
+    en: EVAP Leak Detection Pump Sense Circuit Range/Performance
+    de: EVAP Lecksuchpumpe Sense-Stromkreis Bereich/Plausibilität
+  description:
+    en: The leak detection pump returns a sense signal that is electrically valid but does not match the expected response during the pump's self-test or pressure cycle.
+    de: Die Lecksuchpumpe liefert ein elektrisch gültiges Sense-Signal, das jedoch nicht zur erwarteten Antwort beim Selbsttest oder Druckaufbau passt.
+  affected_components:
+    - evap_leak_detection_pump
+    - evap_pump_wiring
+  common_causes:
+    - id: ldp_diaphragm_aged
+      likelihood: high
+      label:
+        en: Pump diaphragm worn
+        de: Pumpenmembran verschlissen
+    - id: ldp_sense_wiring_resistance
+      likelihood: medium
+      label:
+        en: Sense wiring high resistance
+        de: Erhöhter Widerstand in der Sense-Leitung
+  repair:
+    difficulty: medium
+    diy_possible: true
+    estimated_cost_eur: [120, 600]
+    estimated_hours: [0.5, 2.0]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Onboard_refueling_vapor_recovery
+
+- code: P2408
+  scope: generic
+  category: powertrain
+  title:
+    en: Fuel Cap Sensor/Switch Circuit Range/Performance
+    de: Tankdeckelsensor/-schalter Stromkreis Bereich/Plausibilität
+  description:
+    en: On vehicles with a sensed fuel cap, the cap-status signal is electrically valid but does not change as expected when the cap is opened or closed.
+    de: Bei Fahrzeugen mit Tankdeckelüberwachung ist das Tankdeckelsignal elektrisch gültig, ändert sich aber nicht wie erwartet beim Öffnen oder Schliessen.
+  affected_components:
+    - fuel_cap_sensor
+    - sensor_wiring
+  common_causes:
+    - id: cap_switch_worn
+      likelihood: high
+      label:
+        en: Cap switch worn
+        de: Tankdeckelschalter verschlissen
+    - id: cap_seal_aged
+      likelihood: medium
+      label:
+        en: Cap seal aged, switch never seats
+        de: Tankdeckeldichtung gealtert, Schalter zieht nicht
+  repair:
+    difficulty: easy
+    diy_possible: true
+    estimated_cost_eur: [30, 150]
+    estimated_hours: [0.2, 0.8]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Onboard_refueling_vapor_recovery
+
+- code: P2410
+  scope: generic
+  category: powertrain
+  title:
+    en: Fuel Cap Sensor/Switch Stuck
+    de: Tankdeckelsensor/-schalter hängt
+  description:
+    en: The fuel cap status switch is stuck in one position — the ECU never sees the expected transition between open and closed.
+    de: Der Tankdeckel-Statusschalter hängt in einer Stellung — die Motorsteuerung erkennt den erwarteten Wechsel zwischen offen und geschlossen nicht.
+  affected_components:
+    - fuel_cap_sensor
+  common_causes:
+    - id: cap_switch_stuck
+      likelihood: high
+      label:
+        en: Cap switch stuck mechanically
+        de: Tankdeckelschalter mechanisch verklemmt
+    - id: connector_corrosion
+      likelihood: medium
+      label:
+        en: Connector corroded
+        de: Stecker korrodiert
+  repair:
+    difficulty: easy
+    diy_possible: true
+    estimated_cost_eur: [30, 150]
+    estimated_hours: [0.2, 0.8]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+  related_codes: [P2408]
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Onboard_refueling_vapor_recovery
+
+- code: P2411
+  scope: generic
+  category: powertrain
+  title:
+    en: Fuel Cap Sensor/Switch Circuit
+    de: Tankdeckelsensor/-schalter Stromkreis
+  description:
+    en: A general electrical fault on the fuel cap sensor/switch circuit — open or short.
+    de: Allgemeiner elektrischer Fehler im Stromkreis des Tankdeckelsensors/-schalters — Unterbrechung oder Kurzschluss.
+  affected_components:
+    - fuel_cap_sensor
+    - sensor_wiring
+  common_causes:
+    - id: signal_wire_open
+      likelihood: high
+      label:
+        en: Signal wire open
+        de: Signalleitung unterbrochen
+    - id: cap_switch_failed
+      likelihood: medium
+      label:
+        en: Cap switch failed
+        de: Tankdeckelschalter defekt
+  repair:
+    difficulty: easy
+    diy_possible: true
+    estimated_cost_eur: [30, 150]
+    estimated_hours: [0.2, 0.8]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+  related_codes: [P2408, P2410]
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Onboard_refueling_vapor_recovery
+
+- code: P2415
+  scope: generic
+  category: powertrain
+  title:
+    en: EVAP Switching Valve Circuit Open
+    de: EVAP Schaltventil Stromkreis offen
+  description:
+    en: The ECU detects an open circuit on the EVAP switching valve drive line. The valve cannot be commanded between its purge and isolation positions.
+    de: Die Motorsteuerung erkennt eine Unterbrechung im Steuerkreis des EVAP-Schaltventils. Das Ventil lässt sich nicht zwischen Spül- und Sperrstellung umschalten.
+  affected_components:
+    - evap_switching_valve
+    - evap_wiring
+  common_causes:
+    - id: evap_valve_coil_open
+      likelihood: high
+      label:
+        en: Valve coil open
+        de: Ventilspule unterbrochen
+    - id: evap_wiring_open
+      likelihood: medium
+      label:
+        en: Drive line open
+        de: Ansteuerleitung unterbrochen
+  repair:
+    difficulty: easy
+    diy_possible: true
+    estimated_cost_eur: [60, 250]
+    estimated_hours: [0.3, 1.2]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Onboard_refueling_vapor_recovery
+
+- code: P2416
+  scope: generic
+  category: powertrain
+  title:
+    en: EVAP Switching Valve Performance
+    de: EVAP Schaltventil Plausibilität
+  description:
+    en: The EVAP switching valve responds electrically but does not produce the expected pressure change. Often a stuck valve seat or a torn diaphragm.
+    de: Das EVAP-Schaltventil reagiert elektrisch, erzeugt aber nicht die erwartete Druckänderung. Häufig ein verklebter Ventilsitz oder eine gerissene Membran.
+  affected_components:
+    - evap_switching_valve
+  common_causes:
+    - id: evap_valve_seat_stuck
+      likelihood: high
+      label:
+        en: Valve seat stuck
+        de: Ventilsitz verklebt
+    - id: evap_valve_diaphragm_torn
+      likelihood: medium
+      label:
+        en: Diaphragm torn
+        de: Ventilmembran gerissen
+  repair:
+    difficulty: easy
+    diy_possible: true
+    estimated_cost_eur: [60, 250]
+    estimated_hours: [0.3, 1.2]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+  related_codes: [P2415]
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Onboard_refueling_vapor_recovery
+
+- code: P2417
+  scope: generic
+  category: powertrain
+  title:
+    en: EVAP Switching Valve Stuck Closed
+    de: EVAP Schaltventil hängt geschlossen
+  description:
+    en: The EVAP switching valve cannot reach the open position. Purge flow is blocked and the EVAP system cannot vent the canister.
+    de: Das EVAP-Schaltventil erreicht die offene Stellung nicht. Der Spülfluss ist blockiert und das EVAP-System kann den Aktivkohlefilter nicht entlüften.
+  affected_components:
+    - evap_switching_valve
+  common_causes:
+    - id: evap_valve_seat_stuck
+      likelihood: high
+      label:
+        en: Valve seat stuck closed
+        de: Ventilsitz hängt geschlossen
+    - id: evap_valve_corroded
+      likelihood: medium
+      label:
+        en: Valve internals corroded
+        de: Ventilinnenleben korrodiert
+  repair:
+    difficulty: easy
+    diy_possible: true
+    estimated_cost_eur: [60, 250]
+    estimated_hours: [0.3, 1.2]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+  related_codes: [P2416]
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Onboard_refueling_vapor_recovery
+
+- code: P2446
+  scope: generic
+  category: powertrain
+  title:
+    en: Secondary Air Injection Pump Stuck Off (Bank 2)
+    de: Sekundärluftpumpe hängt aus (Bank 2)
+  description:
+    en: Bank 2 secondary air pump does not deliver air when commanded. The catalyst light-off process is delayed and cold-start emissions rise.
+    de: Die Sekundärluftpumpe an Bank 2 fördert bei Anforderung keine Luft. Der Katalysator-Lightoff verzögert sich und die Kaltstartemissionen steigen.
+  affected_components:
+    - secondary_air_pump_b2
+    - secondary_air_relay
+  common_causes:
+    - id: sai_pump_seized
+      likelihood: high
+      label:
+        en: Pump seized from condensate corrosion
+        de: Pumpe durch Kondensatkorrosion fest
+    - id: sai_relay_failed_open
+      likelihood: medium
+      label:
+        en: Relay failed open
+        de: Relais defekt offen
+  repair:
+    difficulty: medium
+    diy_possible: true
+    estimated_cost_eur: [200, 900]
+    estimated_hours: [0.8, 3.0]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Secondary_air_injection
+
+- code: P2447
+  scope: generic
+  category: powertrain
+  title:
+    en: Secondary Air Injection Pump Stuck On (Bank 2)
+    de: Sekundärluftpumpe hängt ein (Bank 2)
+  description:
+    en: Bank 2 secondary air pump runs continuously. Either a stuck-on relay or a shorted control output keeps the pump powered when it should be off.
+    de: Die Sekundärluftpumpe an Bank 2 läuft dauerhaft. Entweder ein hängendes Relais oder eine durchlegierte Endstufe hält die Pumpe in Betrieb, obwohl sie aus sein sollte.
+  affected_components:
+    - secondary_air_pump_b2
+    - secondary_air_relay
+  common_causes:
+    - id: sai_relay_stuck_closed
+      likelihood: high
+      label:
+        en: Relay stuck closed
+        de: Relais hängt geschlossen
+    - id: sai_driver_shorted
+      likelihood: medium
+      label:
+        en: Driver stage shorted on
+        de: Endstufe durchlegiert
+  repair:
+    difficulty: medium
+    diy_possible: true
+    estimated_cost_eur: [80, 600]
+    estimated_hours: [0.5, 2.0]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+  related_codes: [P2446]
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Secondary_air_injection
+
+- code: P2456
+  scope: generic
+  category: powertrain
+  title:
+    en: DPF Differential Pressure Sensor Circuit Intermittent
+    de: DPF Differenzdrucksensor Stromkreis sporadisch
+  description:
+    en: The DPF differential-pressure sensor delivers an intermittent signal — usually a marginal connector or a chafed wiring section that breaks contact during temperature or vibration.
+    de: Der DPF-Differenzdrucksensor liefert ein sporadisches Signal — meist ein grenzwertiger Stecker oder eine gescheuerte Leitung, die unter Temperatur oder Vibration Kontakt verliert.
+  affected_components:
+    - dpf_differential_pressure_sensor
+    - dpf_pressure_sensor_wiring
+  common_causes:
+    - id: connector_intermittent
+      likelihood: high
+      label:
+        en: Connector intermittent
+        de: Stecker mit Wackelkontakt
+    - id: wiring_chafe
+      likelihood: medium
+      label:
+        en: Wiring chafed against bracket
+        de: Leitung an Halter gescheuert
+  repair:
+    difficulty: easy
+    diy_possible: true
+    estimated_cost_eur: [50, 250]
+    estimated_hours: [0.3, 1.2]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Diesel_particulate_filter
+
+- code: P2457
+  scope: generic
+  category: powertrain
+  title:
+    en: EGR Cooler Performance
+    de: AGR-Kühler Leistung
+  description:
+    en: The EGR cooler does not lower exhaust gas temperature as expected — typically internal coolant fouling, a partial blockage, or a cracked cooler that mixes coolant with exhaust gas.
+    de: Der AGR-Kühler senkt die Abgastemperatur nicht wie erwartet — typisch bei innerer Kühlmittelversottung, Teilverstopfung oder einem gerissenen Kühler, der Kühlmittel mit Abgas vermischt.
+  affected_components:
+    - egr_cooler
+    - egr_temperature_sensor
+  common_causes:
+    - id: egr_cooler_clogged
+      likelihood: high
+      label:
+        en: Cooler internally clogged with soot
+        de: Kühler innen mit Ruß verstopft
+    - id: egr_cooler_cracked
+      likelihood: medium
+      label:
+        en: Cooler cracked, coolant entering exhaust
+        de: Kühler gerissen, Kühlmittel gelangt ins Abgas
+  repair:
+    difficulty: hard
+    diy_possible: false
+    estimated_cost_eur: [400, 2500]
+    estimated_hours: [2.0, 8.0]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Diesel_particulate_filter
+
+- code: P2458
+  scope: generic
+  category: powertrain
+  title:
+    en: DPF Regeneration Duration
+    de: DPF-Regeneration Dauer
+  description:
+    en: The DPF regeneration cycle takes longer than the calibrated maximum. The ECU sets this code when the soot load is not being burned off within the expected window — common after many short trips or with degraded post-injection.
+    de: Der DPF-Regenerationszyklus dauert länger als das kalibrierte Maximum. Die Motorsteuerung setzt diesen Code, wenn die Rußbeladung nicht im erwarteten Zeitfenster abgebrannt wird — häufig nach vielen Kurzstrecken oder bei schwacher Nacheinspritzung.
+  affected_components:
+    - diesel_particulate_filter
+    - dpf_temperature_sensor
+    - fuel_injectors
+  common_causes:
+    - id: dpf_loaded_failed_regen
+      likelihood: high
+      label:
+        en: Heavy soot load, short trips
+        de: Hohe Russbeladung, Kurzstrecken
+    - id: post_injection_weak
+      likelihood: medium
+      label:
+        en: Post-injection insufficient
+        de: Nacheinspritzung zu schwach
+  repair:
+    difficulty: medium
+    diy_possible: false
+    estimated_cost_eur: [150, 1500]
+    estimated_hours: [0.5, 4.0]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+    limp_mode_possible: true
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Diesel_particulate_filter
+
+- code: P2460
+  scope: generic
+  category: powertrain
+  title:
+    en: DPF Restriction — Forced Limited Power
+    de: DPF Verstopfung — Leistung notbegrenzt
+  description:
+    en: The DPF restriction has reached a level that forces the ECU to limit engine power. The driver must allow a forced regeneration or have the filter serviced before normal power is restored.
+    de: Die DPF-Verstopfung hat einen Wert erreicht, bei dem die Motorsteuerung die Leistung notbegrenzt. Vor Wiederherstellung der vollen Leistung muss eine Zwangsregeneration oder eine Filterwartung erfolgen.
+  affected_components:
+    - diesel_particulate_filter
+    - dpf_differential_pressure_sensor
+  common_causes:
+    - id: dpf_loaded_failed_regen
+      likelihood: high
+      label:
+        en: Heavy soot load, regenerations skipped
+        de: Hohe Russbeladung, Regenerationen ausgefallen
+    - id: dpf_ash_loaded
+      likelihood: medium
+      label:
+        en: Ash loaded near service interval
+        de: Aschebeladung nahe Wartungsintervall
+  repair:
+    difficulty: hard
+    diy_possible: false
+    estimated_cost_eur: [200, 3500]
+    estimated_hours: [1.0, 6.0]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+    limp_mode_possible: true
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Diesel_particulate_filter
+
+- code: P2461
+  scope: generic
+  category: powertrain
+  title:
+    en: DPF Restriction — Forced Limited
+    de: DPF Verstopfung — Notbegrenzung
+  description:
+    en: The DPF restriction has reached the limit defined for forced limited operation. Vehicle behaviour depends on the manufacturer — usually a hard torque cap with a service warning.
+    de: Die DPF-Verstopfung hat den Grenzwert für die Notbegrenzung erreicht. Das Fahrverhalten hängt vom Hersteller ab — meist ein hartes Drehmomentlimit mit Wartungshinweis.
+  affected_components:
+    - diesel_particulate_filter
+    - dpf_differential_pressure_sensor
+  common_causes:
+    - id: dpf_loaded_failed_regen
+      likelihood: high
+      label:
+        en: Heavy soot load, regenerations skipped
+        de: Hohe Russbeladung, Regenerationen ausgefallen
+    - id: dpf_ash_loaded
+      likelihood: medium
+      label:
+        en: Ash loaded near service interval
+        de: Aschebeladung nahe Wartungsintervall
+  repair:
+    difficulty: hard
+    diy_possible: false
+    estimated_cost_eur: [200, 3500]
+    estimated_hours: [1.0, 6.0]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+    limp_mode_possible: true
+  related_codes: [P2460]
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Diesel_particulate_filter
+
+- code: P2602
+  scope: generic
+  category: powertrain
+  title:
+    en: Coolant Pump Control Circuit Open
+    de: Kühlmittelpumpe Steuerkreis offen
+  description:
+    en: The ECU detects an open circuit on the electric coolant pump control line. Without pump control the engine cannot actively manage warm-up and cool-down phases.
+    de: Die Motorsteuerung erkennt eine Unterbrechung im Steuerkreis der elektrischen Kühlmittelpumpe. Ohne Pumpenansteuerung kann der Motor Aufwärm- und Abkühlphasen nicht aktiv regeln.
+  affected_components:
+    - electric_coolant_pump
+    - coolant_pump_wiring
+  common_causes:
+    - id: coolant_pump_coil_open
+      likelihood: high
+      label:
+        en: Pump motor open
+        de: Pumpenmotor unterbrochen
+    - id: signal_wire_open
+      likelihood: medium
+      label:
+        en: Drive line open
+        de: Ansteuerleitung unterbrochen
+  repair:
+    difficulty: medium
+    diy_possible: true
+    estimated_cost_eur: [120, 700]
+    estimated_hours: [0.5, 2.5]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Engine_coolant_temperature_sensor
+
+- code: P2603
+  scope: generic
+  category: powertrain
+  title:
+    en: Coolant Pump Control Circuit Low
+    de: Kühlmittelpumpe Steuerkreis Signal zu niedrig
+  description:
+    en: The electric coolant pump drive line reads below the lower threshold — typically a short to ground or a failed driver stage.
+    de: Die Ansteuerleitung der elektrischen Kühlmittelpumpe liegt unter dem unteren Schwellwert — typischerweise Massekurzschluss oder defekte Endstufe.
+  affected_components:
+    - electric_coolant_pump
+    - coolant_pump_wiring
+  common_causes:
+    - id: signal_short_to_ground
+      likelihood: high
+      label:
+        en: Drive line shorted to ground
+        de: Ansteuerleitung gegen Masse kurzgeschlossen
+    - id: driver_stage_failed
+      likelihood: medium
+      label:
+        en: Driver stage failed
+        de: Endstufe defekt
+  repair:
+    difficulty: medium
+    diy_possible: true
+    estimated_cost_eur: [120, 700]
+    estimated_hours: [0.5, 2.5]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+  related_codes: [P2602]
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Engine_coolant_temperature_sensor
+
+- code: P2604
+  scope: generic
+  category: powertrain
+  title:
+    en: Coolant Pump Control Circuit High
+    de: Kühlmittelpumpe Steuerkreis Signal zu hoch
+  description:
+    en: The electric coolant pump drive line reads above the upper threshold — usually a short to positive or a stuck-on driver stage.
+    de: Die Ansteuerleitung der elektrischen Kühlmittelpumpe liegt über dem oberen Schwellwert — meist Kurzschluss nach Plus oder eine durchlegierte Endstufe.
+  affected_components:
+    - electric_coolant_pump
+    - coolant_pump_wiring
+  common_causes:
+    - id: signal_short_to_power
+      likelihood: high
+      label:
+        en: Drive line shorted to positive
+        de: Ansteuerleitung nach Plus kurzgeschlossen
+    - id: driver_stage_shorted
+      likelihood: medium
+      label:
+        en: Driver stage shorted on
+        de: Endstufe durchlegiert
+  repair:
+    difficulty: medium
+    diy_possible: true
+    estimated_cost_eur: [120, 700]
+    estimated_hours: [0.5, 2.5]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+  related_codes: [P2602, P2603]
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Engine_coolant_temperature_sensor
+
+- code: P2018
+  scope: generic
+  category: powertrain
+  title:
+    en: Intake Manifold Runner Position Sensor/Switch Circuit Open (Bank 2)
+    de: Saugrohrumschaltung Positionssensor/-schalter Stromkreis offen (Bank 2)
+  description:
+    en: The ECU detects an open circuit on the IMRC position sensor on bank 2. Without position feedback the ECU cannot confirm runner switching and falls back to a default mode.
+    de: Die Motorsteuerung erkennt eine Unterbrechung im Stromkreis des IMRC-Positionssensors auf Bank 2. Ohne Positionsrückmeldung kann das Steuergerät die Klappenumschaltung nicht bestätigen und schaltet in einen Standardmodus.
+  affected_components:
+    - imrc_position_sensor_b2
+    - imrc_wiring
+  common_causes:
+    - id: imrc_sensor_open
+      likelihood: high
+      label:
+        en: Sensor element open
+        de: Sensorelement unterbrochen
+    - id: signal_wire_open
+      likelihood: medium
+      label:
+        en: Signal wire open
+        de: Signalleitung unterbrochen
+  repair:
+    difficulty: medium
+    diy_possible: true
+    estimated_cost_eur: [80, 400]
+    estimated_hours: [0.5, 2.0]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Inlet_manifold
+
+- code: P2019
+  scope: generic
+  category: powertrain
+  title:
+    en: Intake Manifold Runner Position Sensor/Switch Range/Performance (Bank 2)
+    de: Saugrohrumschaltung Positionssensor/-schalter Bereich/Plausibilität (Bank 2)
+  description:
+    en: The IMRC position sensor on bank 2 produces an electrically valid signal that does not match the commanded runner state — typically a sensor drift or sticking flap.
+    de: Der IMRC-Positionssensor auf Bank 2 liefert ein elektrisch gültiges Signal, das nicht zum kommandierten Klappenzustand passt — typischerweise Sensordrift oder hängende Klappe.
+  affected_components:
+    - imrc_position_sensor_b2
+    - intake_manifold_runner
+  common_causes:
+    - id: imrc_sensor_drift
+      likelihood: high
+      label:
+        en: Position sensor drift
+        de: Positionssensor driftet
+    - id: imrc_carbon_buildup
+      likelihood: medium
+      label:
+        en: Carbon buildup blocks flap travel
+        de: Verkokung blockiert Klappenweg
+  repair:
+    difficulty: medium
+    diy_possible: true
+    estimated_cost_eur: [80, 600]
+    estimated_hours: [0.5, 3.0]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+  related_codes: [P2018]
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Inlet_manifold
+
+- code: P2020
+  scope: generic
+  category: powertrain
+  title:
+    en: Intake Manifold Runner Position Sensor/Switch Circuit Low (Bank 2)
+    de: Saugrohrumschaltung Positionssensor/-schalter Signal zu niedrig (Bank 2)
+  description:
+    en: The IMRC position sensor on bank 2 reports a voltage below the lower threshold — typically a short to ground or a sensor with very low resistance.
+    de: Der IMRC-Positionssensor auf Bank 2 meldet eine Spannung unter dem unteren Schwellwert — typischerweise Massekurzschluss oder Sensor mit sehr niedrigem Widerstand.
+  affected_components:
+    - imrc_position_sensor_b2
+    - imrc_wiring
+  common_causes:
+    - id: signal_short_to_ground
+      likelihood: high
+      label:
+        en: Signal shorted to ground
+        de: Signal gegen Masse kurzgeschlossen
+    - id: imrc_sensor_short
+      likelihood: medium
+      label:
+        en: Sensor element shorted
+        de: Sensorelement durchlegiert
+  repair:
+    difficulty: medium
+    diy_possible: true
+    estimated_cost_eur: [80, 400]
+    estimated_hours: [0.5, 2.0]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+  related_codes: [P2018]
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Inlet_manifold
+
+- code: P2021
+  scope: generic
+  category: powertrain
+  title:
+    en: Intake Manifold Runner Position Sensor/Switch Circuit High (Bank 2)
+    de: Saugrohrumschaltung Positionssensor/-schalter Signal zu hoch (Bank 2)
+  description:
+    en: The IMRC position sensor on bank 2 reports a voltage above the upper threshold — usually a short to positive or an open ground.
+    de: Der IMRC-Positionssensor auf Bank 2 meldet eine Spannung über dem oberen Schwellwert — meist Kurzschluss nach Plus oder unterbrochene Masse.
+  affected_components:
+    - imrc_position_sensor_b2
+    - imrc_wiring
+  common_causes:
+    - id: signal_short_to_power
+      likelihood: high
+      label:
+        en: Signal shorted to positive
+        de: Signal nach Plus kurzgeschlossen
+    - id: ground_open
+      likelihood: medium
+      label:
+        en: Sensor ground open
+        de: Sensormasse unterbrochen
+  repair:
+    difficulty: medium
+    diy_possible: true
+    estimated_cost_eur: [80, 400]
+    estimated_hours: [0.5, 2.0]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+  related_codes: [P2018, P2020]
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Inlet_manifold
+
+- code: P2620
+  scope: generic
+  category: powertrain
+  title:
+    en: Throttle Position Output Circuit
+    de: Drosselklappenposition Ausgangsstromkreis
+  description:
+    en: A general electrical fault on the ECU output that broadcasts the throttle position signal to other modules — for example to the transmission control or hybrid drive controller.
+    de: Allgemeiner elektrischer Fehler am Steuergeräteausgang, der die Drosselklappenstellung an andere Module sendet — etwa an die Getriebesteuerung oder den Hybridantriebsregler.
+  affected_components:
+    - engine_control_unit
+    - vehicle_data_bus
+  common_causes:
+    - id: signal_wire_open
+      likelihood: high
+      label:
+        en: Output wire open or shorted
+        de: Ausgangsleitung unterbrochen oder kurzgeschlossen
+    - id: ecu_output_failed
+      likelihood: medium
+      label:
+        en: ECU output stage failed
+        de: Steuergerät-Endstufe defekt
+  repair:
+    difficulty: medium
+    diy_possible: false
+    estimated_cost_eur: [120, 800]
+    estimated_hours: [0.5, 3.0]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Throttle_position_sensor
+
+- code: P2227
+  scope: generic
+  category: powertrain
+  title:
+    en: Barometric Pressure Circuit Range/Performance
+    de: Umgebungsdrucksensor Stromkreis Bereich/Plausibilität
+  description:
+    en: The barometric pressure sensor delivers an electrically valid signal that does not match the operating point — for example pressure jumps that do not match altitude changes, or values stuck near full scale.
+    de: Der Umgebungsdrucksensor liefert ein elektrisch gültiges Signal, das nicht zum Betriebspunkt passt — etwa Drucksprünge ohne Höhenänderung oder am Vollausschlag hängende Werte.
+  affected_components:
+    - barometric_pressure_sensor
+    - sensor_wiring
+  common_causes:
+    - id: baro_sensor_drift
+      likelihood: high
+      label:
+        en: Sensor drift
+        de: Sensor driftet
+    - id: connector_corrosion
+      likelihood: medium
+      label:
+        en: Connector corroded
+        de: Stecker korrodiert
+  repair:
+    difficulty: easy
+    diy_possible: true
+    estimated_cost_eur: [60, 250]
+    estimated_hours: [0.3, 1.2]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+  related_codes: [P2228, P2229]
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Throttle_position_sensor

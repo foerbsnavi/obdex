@@ -70,12 +70,12 @@ Early release — generic coverage is being built up; manufacturer-specific code
 
 | Scope         | Codes | Coverage |
 | ------------- | ----: | -------- |
-| Generic P0    |   259 | broad    |
-| Generic P2    |   124 | broad    |
-| Generic P3    |    12 | seed     |
-| Generic U0    |    84 | broad    |
-| Generic B0    |    47 | growing  |
-| Generic C0    |    56 | growing  |
+| Generic P0    |   332 | extensive|
+| Generic P2    |   193 | extensive|
+| Generic P3    |    26 | growing  |
+| Generic U0    |   124 | extensive|
+| Generic B0    |    89 | broad    |
+| Generic C0    |    96 | broad    |
 | VAG           |     1 | seed     |
 | BMW           |     0 | wanted   |
 | Mercedes      |     0 | wanted   |

@@ -461,3 +461,527 @@
   sources:
     - https://en.wikipedia.org/wiki/Variable_displacement
     - https://en.wikipedia.org/wiki/Cylinder_deactivation
+
+- code: P3406
+  scope: generic
+  category: powertrain
+  title:
+    en: Cylinder 1 Deactivation Stuck Off
+    de: Zylinder 1 Abschaltung dauerhaft aus
+  description:
+    en: The engine control module has detected that cylinder 1 deactivation hardware is stuck in the off state. The deactivation cannot be released when full-cylinder operation is commanded.
+    de: Das Motorsteuergerät hat erkannt, dass die Abschalt-Hardware von Zylinder 1 dauerhaft im Aus-Zustand steht. Die Abschaltung kann bei angeforderter Vollzylinderbetrieb nicht aufgehoben werden.
+  affected_components:
+    - cylinder_deactivation_solenoid
+    - lifter
+  common_causes:
+    - id: lifter_stuck_collapsed
+      likelihood: high
+      label:
+        en: Lifter stuck collapsed
+        de: Schaltstößel im eingefahrenen Zustand fest
+    - id: solenoid_stuck
+      likelihood: medium
+      label:
+        en: Solenoid stuck
+        de: Magnetventil klemmt
+  repair:
+    difficulty: hard
+    diy_possible: false
+    estimated_cost_eur: [300, 2000]
+    estimated_hours: [2.0, 10.0]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Cylinder_deactivation
+
+- code: P3407
+  scope: generic
+  category: powertrain
+  title:
+    en: Cylinder 1 Deactivation Stuck On
+    de: Zylinder 1 Abschaltung dauerhaft aktiv
+  description:
+    en: The engine control module has detected that cylinder 1 deactivation hardware is stuck in the active state. Cylinder 1 stays deactivated when full-cylinder operation is commanded.
+    de: Das Motorsteuergerät hat erkannt, dass die Abschalt-Hardware von Zylinder 1 dauerhaft im Aktiv-Zustand steht. Zylinder 1 bleibt abgeschaltet, obwohl Vollzylinderbetrieb angefordert wird.
+  affected_components:
+    - cylinder_deactivation_solenoid
+    - lifter
+  common_causes:
+    - id: solenoid_stuck_open
+      likelihood: high
+      label:
+        en: Solenoid stuck in deactivation position
+        de: Magnetventil in Abschaltposition fest
+    - id: lifter_stuck_collapsed
+      likelihood: medium
+      label:
+        en: Lifter stuck collapsed
+        de: Schaltstößel im eingefahrenen Zustand fest
+  repair:
+    difficulty: hard
+    diy_possible: false
+    estimated_cost_eur: [300, 2000]
+    estimated_hours: [2.0, 10.0]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Cylinder_deactivation
+
+- code: P3408
+  scope: generic
+  category: powertrain
+  title:
+    en: Cylinder 1 Deactivation Circuit Low Voltage
+    de: Zylinder 1 Abschaltkreis niedrige Spannung (Variante)
+  description:
+    en: The engine control module has detected low voltage on the cylinder 1 deactivation control circuit. Variant of P3404 reported on platforms with separate diagnostic ranges.
+    de: Das Motorsteuergerät hat eine niedrige Spannung im Steuerkreis der Zylinder-1-Abschaltung erkannt. Variante zu P3404 bei Plattformen mit getrennten Diagnosebereichen.
+  affected_components:
+    - cylinder_deactivation_solenoid
+    - engine_wiring_harness
+  common_causes:
+    - id: wiring_short_to_ground
+      likelihood: high
+      label:
+        en: Wiring shorted to ground
+        de: Verkabelung mit Masseschluss
+    - id: solenoid_internal_short
+      likelihood: medium
+      label:
+        en: Solenoid internally shorted
+        de: Magnetventil interner Kurzschluss
+  repair:
+    difficulty: medium
+    diy_possible: false
+    estimated_cost_eur: [150, 800]
+    estimated_hours: [1.0, 4.0]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Cylinder_deactivation
+
+- code: P3409
+  scope: generic
+  category: powertrain
+  title:
+    en: Cylinder 1 Deactivation Circuit High Voltage
+    de: Zylinder 1 Abschaltkreis hohe Spannung (Variante)
+  description:
+    en: The engine control module has detected high voltage on the cylinder 1 deactivation control circuit. Variant of P3405 reported on platforms with separate diagnostic ranges.
+    de: Das Motorsteuergerät hat eine hohe Spannung im Steuerkreis der Zylinder-1-Abschaltung erkannt. Variante zu P3405 bei Plattformen mit getrennten Diagnosebereichen.
+  affected_components:
+    - cylinder_deactivation_solenoid
+    - engine_wiring_harness
+  common_causes:
+    - id: wiring_short_to_power
+      likelihood: high
+      label:
+        en: Wiring shorted to power
+        de: Verkabelung mit Plus-Schluss
+    - id: solenoid_open
+      likelihood: medium
+      label:
+        en: Solenoid open circuit
+        de: Magnetventil offener Stromkreis
+  repair:
+    difficulty: medium
+    diy_possible: false
+    estimated_cost_eur: [150, 800]
+    estimated_hours: [1.0, 4.0]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Cylinder_deactivation
+
+- code: P3411
+  scope: generic
+  category: powertrain
+  title:
+    en: Cylinder 2 Deactivation Performance
+    de: Zylinder 2 Abschaltung Funktionsbereich
+  description:
+    en: The engine control module has detected that cylinder 2 deactivation does not perform as expected — the actual cylinder behavior does not match the commanded state.
+    de: Das Motorsteuergerät hat erkannt, dass die Zylinder-2-Abschaltung nicht wie erwartet arbeitet — das tatsächliche Zylinderverhalten weicht vom angesteuerten Zustand ab.
+  affected_components:
+    - cylinder_deactivation_solenoid
+    - lifter
+    - oil_control_valve
+  common_causes:
+    - id: lifter_stuck
+      likelihood: high
+      label:
+        en: Lifter stuck
+        de: Schaltstößel klemmt
+    - id: deactivation_solenoid_failed
+      likelihood: medium
+      label:
+        en: Deactivation solenoid failed
+        de: Abschalt-Magnetventil defekt
+  repair:
+    difficulty: hard
+    diy_possible: false
+    estimated_cost_eur: [300, 2000]
+    estimated_hours: [2.0, 10.0]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Cylinder_deactivation
+
+- code: P3412
+  scope: generic
+  category: powertrain
+  title:
+    en: Cylinder 2 Deactivation Stuck Off
+    de: Zylinder 2 Abschaltung dauerhaft aus
+  description:
+    en: The engine control module has detected that cylinder 2 deactivation hardware is stuck in the off state. The deactivation cannot be released when full-cylinder operation is commanded.
+    de: Das Motorsteuergerät hat erkannt, dass die Abschalt-Hardware von Zylinder 2 dauerhaft im Aus-Zustand steht. Die Abschaltung kann bei angeforderter Vollzylinderbetrieb nicht aufgehoben werden.
+  affected_components:
+    - cylinder_deactivation_solenoid
+    - lifter
+  common_causes:
+    - id: lifter_stuck_collapsed
+      likelihood: high
+      label:
+        en: Lifter stuck collapsed
+        de: Schaltstößel im eingefahrenen Zustand fest
+    - id: solenoid_stuck
+      likelihood: medium
+      label:
+        en: Solenoid stuck
+        de: Magnetventil klemmt
+  repair:
+    difficulty: hard
+    diy_possible: false
+    estimated_cost_eur: [300, 2000]
+    estimated_hours: [2.0, 10.0]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Cylinder_deactivation
+
+- code: P3413
+  scope: generic
+  category: powertrain
+  title:
+    en: Cylinder 2 Deactivation Stuck On
+    de: Zylinder 2 Abschaltung dauerhaft aktiv
+  description:
+    en: The engine control module has detected that cylinder 2 deactivation hardware is stuck in the active state. Cylinder 2 stays deactivated when full-cylinder operation is commanded.
+    de: Das Motorsteuergerät hat erkannt, dass die Abschalt-Hardware von Zylinder 2 dauerhaft im Aktiv-Zustand steht. Zylinder 2 bleibt abgeschaltet, obwohl Vollzylinderbetrieb angefordert wird.
+  affected_components:
+    - cylinder_deactivation_solenoid
+    - lifter
+  common_causes:
+    - id: solenoid_stuck_open
+      likelihood: high
+      label:
+        en: Solenoid stuck in deactivation position
+        de: Magnetventil in Abschaltposition fest
+    - id: lifter_stuck_collapsed
+      likelihood: medium
+      label:
+        en: Lifter stuck collapsed
+        de: Schaltstößel im eingefahrenen Zustand fest
+  repair:
+    difficulty: hard
+    diy_possible: false
+    estimated_cost_eur: [300, 2000]
+    estimated_hours: [2.0, 10.0]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Cylinder_deactivation
+
+- code: P3433
+  scope: generic
+  category: powertrain
+  title:
+    en: Cylinder 4 Deactivation Performance
+    de: Zylinder 4 Abschaltung Funktionsbereich
+  description:
+    en: The engine control module has detected that cylinder 4 deactivation does not perform as expected — the actual cylinder behavior does not match the commanded state.
+    de: Das Motorsteuergerät hat erkannt, dass die Zylinder-4-Abschaltung nicht wie erwartet arbeitet — das tatsächliche Zylinderverhalten weicht vom angesteuerten Zustand ab.
+  affected_components:
+    - cylinder_deactivation_solenoid
+    - lifter
+    - oil_control_valve
+  common_causes:
+    - id: lifter_stuck
+      likelihood: high
+      label:
+        en: Lifter stuck
+        de: Schaltstößel klemmt
+    - id: deactivation_solenoid_failed
+      likelihood: medium
+      label:
+        en: Deactivation solenoid failed
+        de: Abschalt-Magnetventil defekt
+  repair:
+    difficulty: hard
+    diy_possible: false
+    estimated_cost_eur: [300, 2000]
+    estimated_hours: [2.0, 10.0]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Cylinder_deactivation
+
+- code: P3434
+  scope: generic
+  category: powertrain
+  title:
+    en: Cylinder 4 Deactivation Stuck Off
+    de: Zylinder 4 Abschaltung dauerhaft aus
+  description:
+    en: The engine control module has detected that cylinder 4 deactivation hardware is stuck in the off state. The deactivation cannot be released when full-cylinder operation is commanded.
+    de: Das Motorsteuergerät hat erkannt, dass die Abschalt-Hardware von Zylinder 4 dauerhaft im Aus-Zustand steht. Die Abschaltung kann bei angeforderter Vollzylinderbetrieb nicht aufgehoben werden.
+  affected_components:
+    - cylinder_deactivation_solenoid
+    - lifter
+  common_causes:
+    - id: lifter_stuck_collapsed
+      likelihood: high
+      label:
+        en: Lifter stuck collapsed
+        de: Schaltstößel im eingefahrenen Zustand fest
+    - id: solenoid_stuck
+      likelihood: medium
+      label:
+        en: Solenoid stuck
+        de: Magnetventil klemmt
+  repair:
+    difficulty: hard
+    diy_possible: false
+    estimated_cost_eur: [300, 2000]
+    estimated_hours: [2.0, 10.0]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Cylinder_deactivation
+
+- code: P3435
+  scope: generic
+  category: powertrain
+  title:
+    en: Cylinder 4 Deactivation Stuck On
+    de: Zylinder 4 Abschaltung dauerhaft aktiv
+  description:
+    en: The engine control module has detected that cylinder 4 deactivation hardware is stuck in the active state. Cylinder 4 stays deactivated when full-cylinder operation is commanded.
+    de: Das Motorsteuergerät hat erkannt, dass die Abschalt-Hardware von Zylinder 4 dauerhaft im Aktiv-Zustand steht. Zylinder 4 bleibt abgeschaltet, obwohl Vollzylinderbetrieb angefordert wird.
+  affected_components:
+    - cylinder_deactivation_solenoid
+    - lifter
+  common_causes:
+    - id: solenoid_stuck_open
+      likelihood: high
+      label:
+        en: Solenoid stuck in deactivation position
+        de: Magnetventil in Abschaltposition fest
+    - id: lifter_stuck_collapsed
+      likelihood: medium
+      label:
+        en: Lifter stuck collapsed
+        de: Schaltstößel im eingefahrenen Zustand fest
+  repair:
+    difficulty: hard
+    diy_possible: false
+    estimated_cost_eur: [300, 2000]
+    estimated_hours: [2.0, 10.0]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Cylinder_deactivation
+
+- code: P3473
+  scope: generic
+  category: powertrain
+  title:
+    en: Cylinder 9 Deactivation
+    de: Zylinder 9 Abschaltung
+  description:
+    en: The engine control module has detected a fault in the cylinder 9 deactivation system. Found on V10/V12 engines with cylinder deactivation — cylinder 9 cannot reliably switch state.
+    de: Das Motorsteuergerät hat einen Fehler im Abschaltsystem von Zylinder 9 erkannt. Tritt bei V10/V12-Motoren mit Zylinderabschaltung auf — Zylinder 9 kann nicht zuverlässig den Zustand wechseln.
+  affected_components:
+    - cylinder_deactivation_solenoid
+    - lifter
+    - engine_wiring_harness
+  common_causes:
+    - id: deactivation_solenoid_failed
+      likelihood: high
+      label:
+        en: Deactivation solenoid failed
+        de: Abschalt-Magnetventil defekt
+    - id: lifter_stuck
+      likelihood: medium
+      label:
+        en: Lifter stuck
+        de: Schaltstößel klemmt
+  repair:
+    difficulty: hard
+    diy_possible: false
+    estimated_cost_eur: [300, 2000]
+    estimated_hours: [2.0, 10.0]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Cylinder_deactivation
+
+- code: P3481
+  scope: generic
+  category: powertrain
+  title:
+    en: Cylinder 10 Deactivation
+    de: Zylinder 10 Abschaltung
+  description:
+    en: The engine control module has detected a fault in the cylinder 10 deactivation system. Found on V10/V12 engines — cylinder 10 cannot reliably switch state.
+    de: Das Motorsteuergerät hat einen Fehler im Abschaltsystem von Zylinder 10 erkannt. Tritt bei V10/V12-Motoren auf — Zylinder 10 kann nicht zuverlässig den Zustand wechseln.
+  affected_components:
+    - cylinder_deactivation_solenoid
+    - lifter
+    - engine_wiring_harness
+  common_causes:
+    - id: deactivation_solenoid_failed
+      likelihood: high
+      label:
+        en: Deactivation solenoid failed
+        de: Abschalt-Magnetventil defekt
+    - id: lifter_stuck
+      likelihood: medium
+      label:
+        en: Lifter stuck
+        de: Schaltstößel klemmt
+  repair:
+    difficulty: hard
+    diy_possible: false
+    estimated_cost_eur: [300, 2000]
+    estimated_hours: [2.0, 10.0]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Cylinder_deactivation
+
+- code: P3489
+  scope: generic
+  category: powertrain
+  title:
+    en: Cylinder 11 Deactivation
+    de: Zylinder 11 Abschaltung
+  description:
+    en: The engine control module has detected a fault in the cylinder 11 deactivation system. Found on V12 engines with cylinder deactivation.
+    de: Das Motorsteuergerät hat einen Fehler im Abschaltsystem von Zylinder 11 erkannt. Tritt bei V12-Motoren mit Zylinderabschaltung auf.
+  affected_components:
+    - cylinder_deactivation_solenoid
+    - lifter
+    - engine_wiring_harness
+  common_causes:
+    - id: deactivation_solenoid_failed
+      likelihood: high
+      label:
+        en: Deactivation solenoid failed
+        de: Abschalt-Magnetventil defekt
+    - id: lifter_stuck
+      likelihood: medium
+      label:
+        en: Lifter stuck
+        de: Schaltstößel klemmt
+  repair:
+    difficulty: hard
+    diy_possible: false
+    estimated_cost_eur: [300, 2000]
+    estimated_hours: [2.0, 10.0]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Cylinder_deactivation
+
+- code: P3496
+  scope: generic
+  category: powertrain
+  title:
+    en: Cylinder 12 Deactivation
+    de: Zylinder 12 Abschaltung
+  description:
+    en: The engine control module has detected a fault in the cylinder 12 deactivation system. Found on V12 engines with cylinder deactivation.
+    de: Das Motorsteuergerät hat einen Fehler im Abschaltsystem von Zylinder 12 erkannt. Tritt bei V12-Motoren mit Zylinderabschaltung auf.
+  affected_components:
+    - cylinder_deactivation_solenoid
+    - lifter
+    - engine_wiring_harness
+  common_causes:
+    - id: deactivation_solenoid_failed
+      likelihood: high
+      label:
+        en: Deactivation solenoid failed
+        de: Abschalt-Magnetventil defekt
+    - id: lifter_stuck
+      likelihood: medium
+      label:
+        en: Lifter stuck
+        de: Schaltstößel klemmt
+  repair:
+    difficulty: hard
+    diy_possible: false
+    estimated_cost_eur: [300, 2000]
+    estimated_hours: [2.0, 10.0]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Cylinder_deactivation
