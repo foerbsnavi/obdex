@@ -61,7 +61,7 @@ tools/                    Node.js validation + build scripts
 | ------------- | ----: | -------- |
 | Generic P0    |   455 | extensive|
 | Generic P2    |   293 | extensive|
-| Generic P3    |    67 | broad    |
+| Generic P3    |    97 | extensive|
 | Generic U0    |   227 | extensive|
 | Generic B0    |   200 | extensive|
 | Generic C0    |   207 | extensive|
