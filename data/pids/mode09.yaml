@@ -29,3 +29,101 @@
   name:
     en: ECU name
     de: Steuergerätbezeichnung
+
+- pid: "00"
+  mode: "09"
+  bytes: 4
+  unit: bitmap
+  name:
+    en: Mode 9 PIDs supported [01-20]
+    de: Unterstützte Mode-9-PIDs [01-20]
+  sources:
+    - https://en.wikipedia.org/wiki/OBD-II_PIDs
+
+- pid: "01"
+  mode: "09"
+  bytes: 1
+  formula: "A"
+  unit: count
+  range: [0, 255]
+  name:
+    en: VIN message count (for protocols requiring multi-message VIN)
+    de: VIN-Nachrichtenzähler (für Multi-Message-Protokolle)
+  sources:
+    - https://en.wikipedia.org/wiki/OBD-II_PIDs
+
+- pid: "03"
+  mode: "09"
+  bytes: 1
+  formula: "A"
+  unit: count
+  range: [0, 255]
+  name:
+    en: Calibration ID message count
+    de: Kalibrierungs-ID-Nachrichtenzähler
+  sources:
+    - https://en.wikipedia.org/wiki/OBD-II_PIDs
+
+- pid: "05"
+  mode: "09"
+  bytes: 1
+  formula: "A"
+  unit: count
+  range: [0, 255]
+  name:
+    en: Calibration verification number (CVN) message count
+    de: CVN-Nachrichtenzähler
+  sources:
+    - https://en.wikipedia.org/wiki/OBD-II_PIDs
+
+- pid: "07"
+  mode: "09"
+  bytes: 1
+  formula: "A"
+  unit: count
+  range: [0, 255]
+  name:
+    en: In-use performance tracking message count
+    de: Nachrichtenzähler für Nutzungs-Performance-Daten (IPT)
+  sources:
+    - https://en.wikipedia.org/wiki/OBD-II_PIDs
+
+- pid: "08"
+  mode: "09"
+  bytes: 32
+  unit: encoded
+  name:
+    en: In-use performance tracking for spark ignition vehicles (16 counter pairs)
+    de: Nutzungs-Performance-Daten für Otto-Motoren (16 Zähler-Paare)
+  sources:
+    - https://en.wikipedia.org/wiki/OBD-II_PIDs
+
+- pid: "0B"
+  mode: "09"
+  bytes: 32
+  unit: encoded
+  name:
+    en: In-use performance tracking for compression ignition (diesel) vehicles
+    de: Nutzungs-Performance-Daten für Selbstzünder (Diesel)
+  sources:
+    - https://en.wikipedia.org/wiki/OBD-II_PIDs
+
+- pid: "0D"
+  mode: "09"
+  bytes: 32
+  unit: ascii
+  name:
+    en: Engine serial number (ESN)
+    de: Motor-Seriennummer (ESN)
+  sources:
+    - https://en.wikipedia.org/wiki/OBD-II_PIDs
+
+- pid: "0E"
+  mode: "09"
+  bytes: 32
+  unit: ascii
+  name:
+    en: Exhaust regulation / type approval number
+    de: Abgas-Typgenehmigungsnummer
+  sources:
+    - https://en.wikipedia.org/wiki/OBD-II_PIDs

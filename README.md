@@ -65,8 +65,8 @@ tools/                    Node.js validation + build scripts
 | Generic U0    |   227 | extensive|
 | Generic B0    |   200 | extensive|
 | Generic C0    |   207 | extensive|
-| PIDs Mode 01  |    11 | seed     |
-| PIDs Mode 09  |     4 | seed     |
+| PIDs Mode 01  |   119 | extensive|
+| PIDs Mode 09  |    13 | extensive|
 
 Live counts: see [`meta.json`](https://foerbsnavi.github.io/obdex/meta.json).
 

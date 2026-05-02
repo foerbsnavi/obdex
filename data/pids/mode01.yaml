@@ -105,3 +105,1253 @@
   name:
     en: Engine oil temperature
     de: Motoröltemperatur
+
+- pid: "01"
+  mode: "01"
+  bytes: 4
+  unit: bitmap
+  name:
+    en: Monitor status since DTCs cleared
+    de: Monitorstatus seit Löschen der DTCs
+  sources:
+    - https://en.wikipedia.org/wiki/OBD-II_PIDs
+
+- pid: "02"
+  mode: "01"
+  bytes: 2
+  unit: dtc
+  name:
+    en: Freeze DTC (DTC that triggered freeze frame)
+    de: Eingefrorener DTC (auslösender Code des Freeze Frames)
+  sources:
+    - https://en.wikipedia.org/wiki/OBD-II_PIDs
+
+- pid: "03"
+  mode: "01"
+  bytes: 2
+  unit: encoded
+  name:
+    en: Fuel system status (system 1 and system 2)
+    de: Kraftstoffsystem-Status (System 1 und System 2)
+  sources:
+    - https://en.wikipedia.org/wiki/OBD-II_PIDs
+
+- pid: "06"
+  mode: "01"
+  bytes: 1
+  formula: "100/128 * A - 100"
+  unit: "%"
+  range: [-100, 99.2]
+  name:
+    en: Short term fuel trim — Bank 1
+    de: Kurzzeit-Gemischadaption Bank 1
+  sources:
+    - https://en.wikipedia.org/wiki/OBD-II_PIDs
+
+- pid: "07"
+  mode: "01"
+  bytes: 1
+  formula: "100/128 * A - 100"
+  unit: "%"
+  range: [-100, 99.2]
+  name:
+    en: Long term fuel trim — Bank 1
+    de: Langzeit-Gemischadaption Bank 1
+  sources:
+    - https://en.wikipedia.org/wiki/OBD-II_PIDs
+
+- pid: "08"
+  mode: "01"
+  bytes: 1
+  formula: "100/128 * A - 100"
+  unit: "%"
+  range: [-100, 99.2]
+  name:
+    en: Short term fuel trim — Bank 2
+    de: Kurzzeit-Gemischadaption Bank 2
+  sources:
+    - https://en.wikipedia.org/wiki/OBD-II_PIDs
+
+- pid: "09"
+  mode: "01"
+  bytes: 1
+  formula: "100/128 * A - 100"
+  unit: "%"
+  range: [-100, 99.2]
+  name:
+    en: Long term fuel trim — Bank 2
+    de: Langzeit-Gemischadaption Bank 2
+  sources:
+    - https://en.wikipedia.org/wiki/OBD-II_PIDs
+
+- pid: "0A"
+  mode: "01"
+  bytes: 1
+  formula: "3 * A"
+  unit: kPa
+  range: [0, 765]
+  name:
+    en: Fuel pressure (gauge pressure)
+    de: Kraftstoffdruck (Relativdruck)
+  sources:
+    - https://en.wikipedia.org/wiki/OBD-II_PIDs
+
+- pid: "0E"
+  mode: "01"
+  bytes: 1
+  formula: "A/2 - 64"
+  unit: "° before TDC"
+  range: [-64, 63.5]
+  name:
+    en: Timing advance (cylinder 1)
+    de: Zündzeitpunkt (Zylinder 1, vor OT)
+  sources:
+    - https://en.wikipedia.org/wiki/OBD-II_PIDs
+
+- pid: "12"
+  mode: "01"
+  bytes: 1
+  unit: encoded
+  name:
+    en: Commanded secondary air status
+    de: Sekundärluft-Status (angefordert)
+  sources:
+    - https://en.wikipedia.org/wiki/OBD-II_PIDs
+
+- pid: "13"
+  mode: "01"
+  bytes: 1
+  unit: bitmap
+  name:
+    en: Oxygen sensors present (in 2 banks)
+    de: Vorhandene Lambdasonden (2 Bänke)
+  sources:
+    - https://en.wikipedia.org/wiki/OBD-II_PIDs
+
+- pid: "14"
+  mode: "01"
+  bytes: 2
+  formula: "A/200 (voltage); 100/128 * B - 100 (trim)"
+  unit: "V; %"
+  range: [0, 1.275]
+  name:
+    en: Oxygen sensor 1 (Bank 1 Sensor 1) — voltage and short term fuel trim
+    de: Lambdasonde 1 (Bank 1 Sensor 1) — Spannung und Kurzzeit-Gemischadaption
+  sources:
+    - https://en.wikipedia.org/wiki/OBD-II_PIDs
+
+- pid: "15"
+  mode: "01"
+  bytes: 2
+  formula: "A/200 (voltage); 100/128 * B - 100 (trim)"
+  unit: "V; %"
+  range: [0, 1.275]
+  name:
+    en: Oxygen sensor 2 (Bank 1 Sensor 2) — voltage and short term fuel trim
+    de: Lambdasonde 2 (Bank 1 Sensor 2) — Spannung und Kurzzeit-Gemischadaption
+  sources:
+    - https://en.wikipedia.org/wiki/OBD-II_PIDs
+
+- pid: "16"
+  mode: "01"
+  bytes: 2
+  formula: "A/200 (voltage); 100/128 * B - 100 (trim)"
+  unit: "V; %"
+  range: [0, 1.275]
+  name:
+    en: Oxygen sensor 3 (Bank 1 Sensor 3) — voltage and short term fuel trim
+    de: Lambdasonde 3 (Bank 1 Sensor 3) — Spannung und Kurzzeit-Gemischadaption
+  sources:
+    - https://en.wikipedia.org/wiki/OBD-II_PIDs
+
+- pid: "17"
+  mode: "01"
+  bytes: 2
+  formula: "A/200 (voltage); 100/128 * B - 100 (trim)"
+  unit: "V; %"
+  range: [0, 1.275]
+  name:
+    en: Oxygen sensor 4 (Bank 1 Sensor 4) — voltage and short term fuel trim
+    de: Lambdasonde 4 (Bank 1 Sensor 4) — Spannung und Kurzzeit-Gemischadaption
+  sources:
+    - https://en.wikipedia.org/wiki/OBD-II_PIDs
+
+- pid: "18"
+  mode: "01"
+  bytes: 2
+  formula: "A/200 (voltage); 100/128 * B - 100 (trim)"
+  unit: "V; %"
+  range: [0, 1.275]
+  name:
+    en: Oxygen sensor 5 (Bank 2 Sensor 1) — voltage and short term fuel trim
+    de: Lambdasonde 5 (Bank 2 Sensor 1) — Spannung und Kurzzeit-Gemischadaption
+  sources:
+    - https://en.wikipedia.org/wiki/OBD-II_PIDs
+
+- pid: "19"
+  mode: "01"
+  bytes: 2
+  formula: "A/200 (voltage); 100/128 * B - 100 (trim)"
+  unit: "V; %"
+  range: [0, 1.275]
+  name:
+    en: Oxygen sensor 6 (Bank 2 Sensor 2) — voltage and short term fuel trim
+    de: Lambdasonde 6 (Bank 2 Sensor 2) — Spannung und Kurzzeit-Gemischadaption
+  sources:
+    - https://en.wikipedia.org/wiki/OBD-II_PIDs
+
+- pid: "1A"
+  mode: "01"
+  bytes: 2
+  formula: "A/200 (voltage); 100/128 * B - 100 (trim)"
+  unit: "V; %"
+  range: [0, 1.275]
+  name:
+    en: Oxygen sensor 7 (Bank 2 Sensor 3) — voltage and short term fuel trim
+    de: Lambdasonde 7 (Bank 2 Sensor 3) — Spannung und Kurzzeit-Gemischadaption
+  sources:
+    - https://en.wikipedia.org/wiki/OBD-II_PIDs
+
+- pid: "1B"
+  mode: "01"
+  bytes: 2
+  formula: "A/200 (voltage); 100/128 * B - 100 (trim)"
+  unit: "V; %"
+  range: [0, 1.275]
+  name:
+    en: Oxygen sensor 8 (Bank 2 Sensor 4) — voltage and short term fuel trim
+    de: Lambdasonde 8 (Bank 2 Sensor 4) — Spannung und Kurzzeit-Gemischadaption
+  sources:
+    - https://en.wikipedia.org/wiki/OBD-II_PIDs
+
+- pid: "1C"
+  mode: "01"
+  bytes: 1
+  unit: encoded
+  name:
+    en: OBD standards this vehicle conforms to
+    de: OBD-Standards, die das Fahrzeug erfüllt
+  sources:
+    - https://en.wikipedia.org/wiki/OBD-II_PIDs
+
+- pid: "1D"
+  mode: "01"
+  bytes: 1
+  unit: bitmap
+  name:
+    en: Oxygen sensors present (in 4 banks, 2 bits per bank)
+    de: Vorhandene Lambdasonden (4 Bänke, 2 Bit pro Bank)
+  sources:
+    - https://en.wikipedia.org/wiki/OBD-II_PIDs
+
+- pid: "1E"
+  mode: "01"
+  bytes: 1
+  unit: bitmap
+  name:
+    en: Auxiliary input status (PTO)
+    de: Hilfseingangs-Status (Nebenabtrieb PTO)
+  sources:
+    - https://en.wikipedia.org/wiki/OBD-II_PIDs
+
+- pid: "1F"
+  mode: "01"
+  bytes: 2
+  formula: "256 * A + B"
+  unit: s
+  range: [0, 65535]
+  name:
+    en: Run time since engine start
+    de: Laufzeit seit Motorstart
+  sources:
+    - https://en.wikipedia.org/wiki/OBD-II_PIDs
+
+- pid: "20"
+  mode: "01"
+  bytes: 4
+  unit: bitmap
+  name:
+    en: PIDs supported [21-40]
+    de: Unterstützte PIDs [21-40]
+  sources:
+    - https://en.wikipedia.org/wiki/OBD-II_PIDs
+
+- pid: "21"
+  mode: "01"
+  bytes: 2
+  formula: "256 * A + B"
+  unit: km
+  range: [0, 65535]
+  name:
+    en: Distance traveled with malfunction indicator lamp (MIL) on
+    de: Strecke mit eingeschalteter Motorkontrollleuchte
+  sources:
+    - https://en.wikipedia.org/wiki/OBD-II_PIDs
+
+- pid: "22"
+  mode: "01"
+  bytes: 2
+  formula: "0.079 * (256 * A + B)"
+  unit: kPa
+  range: [0, 5177.265]
+  name:
+    en: Fuel rail pressure (relative to manifold vacuum)
+    de: Kraftstoff-Raildruck (relativ zum Saugrohrdruck)
+  sources:
+    - https://en.wikipedia.org/wiki/OBD-II_PIDs
+
+- pid: "23"
+  mode: "01"
+  bytes: 2
+  formula: "10 * (256 * A + B)"
+  unit: kPa
+  range: [0, 655350]
+  name:
+    en: Fuel rail gauge pressure (diesel or petrol direct injection)
+    de: Kraftstoff-Raildruck (Diesel oder Direkteinspritzer-Benzin)
+  sources:
+    - https://en.wikipedia.org/wiki/OBD-II_PIDs
+
+- pid: "24"
+  mode: "01"
+  bytes: 4
+  formula: "(2/65536) * (256*A + B) (lambda); (8/65536) * (256*C + D) (voltage)"
+  unit: "ratio; V"
+  range: [0, 2]
+  name:
+    en: Oxygen sensor 1 (Bank 1 Sensor 1) — air-fuel equivalence ratio (lambda) and voltage
+    de: Lambdasonde 1 (Bank 1 Sensor 1) — Luftverhältnis (Lambda) und Spannung
+  sources:
+    - https://en.wikipedia.org/wiki/OBD-II_PIDs
+
+- pid: "25"
+  mode: "01"
+  bytes: 4
+  formula: "(2/65536) * (256*A + B) (lambda); (8/65536) * (256*C + D) (voltage)"
+  unit: "ratio; V"
+  range: [0, 2]
+  name:
+    en: Oxygen sensor 2 (Bank 1 Sensor 2) — air-fuel equivalence ratio and voltage
+    de: Lambdasonde 2 (Bank 1 Sensor 2) — Luftverhältnis und Spannung
+  sources:
+    - https://en.wikipedia.org/wiki/OBD-II_PIDs
+
+- pid: "26"
+  mode: "01"
+  bytes: 4
+  formula: "(2/65536) * (256*A + B) (lambda); (8/65536) * (256*C + D) (voltage)"
+  unit: "ratio; V"
+  range: [0, 2]
+  name:
+    en: Oxygen sensor 3 (Bank 1 Sensor 3) — air-fuel equivalence ratio and voltage
+    de: Lambdasonde 3 (Bank 1 Sensor 3) — Luftverhältnis und Spannung
+  sources:
+    - https://en.wikipedia.org/wiki/OBD-II_PIDs
+
+- pid: "27"
+  mode: "01"
+  bytes: 4
+  formula: "(2/65536) * (256*A + B) (lambda); (8/65536) * (256*C + D) (voltage)"
+  unit: "ratio; V"
+  range: [0, 2]
+  name:
+    en: Oxygen sensor 4 (Bank 1 Sensor 4) — air-fuel equivalence ratio and voltage
+    de: Lambdasonde 4 (Bank 1 Sensor 4) — Luftverhältnis und Spannung
+  sources:
+    - https://en.wikipedia.org/wiki/OBD-II_PIDs
+
+- pid: "28"
+  mode: "01"
+  bytes: 4
+  formula: "(2/65536) * (256*A + B) (lambda); (8/65536) * (256*C + D) (voltage)"
+  unit: "ratio; V"
+  range: [0, 2]
+  name:
+    en: Oxygen sensor 5 (Bank 2 Sensor 1) — air-fuel equivalence ratio and voltage
+    de: Lambdasonde 5 (Bank 2 Sensor 1) — Luftverhältnis und Spannung
+  sources:
+    - https://en.wikipedia.org/wiki/OBD-II_PIDs
+
+- pid: "29"
+  mode: "01"
+  bytes: 4
+  formula: "(2/65536) * (256*A + B) (lambda); (8/65536) * (256*C + D) (voltage)"
+  unit: "ratio; V"
+  range: [0, 2]
+  name:
+    en: Oxygen sensor 6 (Bank 2 Sensor 2) — air-fuel equivalence ratio and voltage
+    de: Lambdasonde 6 (Bank 2 Sensor 2) — Luftverhältnis und Spannung
+  sources:
+    - https://en.wikipedia.org/wiki/OBD-II_PIDs
+
+- pid: "2A"
+  mode: "01"
+  bytes: 4
+  formula: "(2/65536) * (256*A + B) (lambda); (8/65536) * (256*C + D) (voltage)"
+  unit: "ratio; V"
+  range: [0, 2]
+  name:
+    en: Oxygen sensor 7 (Bank 2 Sensor 3) — air-fuel equivalence ratio and voltage
+    de: Lambdasonde 7 (Bank 2 Sensor 3) — Luftverhältnis und Spannung
+  sources:
+    - https://en.wikipedia.org/wiki/OBD-II_PIDs
+
+- pid: "2B"
+  mode: "01"
+  bytes: 4
+  formula: "(2/65536) * (256*A + B) (lambda); (8/65536) * (256*C + D) (voltage)"
+  unit: "ratio; V"
+  range: [0, 2]
+  name:
+    en: Oxygen sensor 8 (Bank 2 Sensor 4) — air-fuel equivalence ratio and voltage
+    de: Lambdasonde 8 (Bank 2 Sensor 4) — Luftverhältnis und Spannung
+  sources:
+    - https://en.wikipedia.org/wiki/OBD-II_PIDs
+
+- pid: "2C"
+  mode: "01"
+  bytes: 1
+  formula: "100/255 * A"
+  unit: "%"
+  range: [0, 100]
+  name:
+    en: Commanded EGR
+    de: Angesteuerte Abgasrückführung (AGR)
+  sources:
+    - https://en.wikipedia.org/wiki/OBD-II_PIDs
+
+- pid: "2D"
+  mode: "01"
+  bytes: 1
+  formula: "100/128 * A - 100"
+  unit: "%"
+  range: [-100, 99.2]
+  name:
+    en: EGR Error
+    de: AGR-Regelabweichung
+  sources:
+    - https://en.wikipedia.org/wiki/OBD-II_PIDs
+
+- pid: "2E"
+  mode: "01"
+  bytes: 1
+  formula: "100/255 * A"
+  unit: "%"
+  range: [0, 100]
+  name:
+    en: Commanded evaporative purge
+    de: Angesteuerte Tankentlüftungs-Spülung
+  sources:
+    - https://en.wikipedia.org/wiki/OBD-II_PIDs
+
+- pid: "30"
+  mode: "01"
+  bytes: 1
+  formula: "A"
+  unit: count
+  range: [0, 255]
+  name:
+    en: Warm-ups since codes cleared
+    de: Warmlauf-Zyklen seit Löschen der Codes
+  sources:
+    - https://en.wikipedia.org/wiki/OBD-II_PIDs
+
+- pid: "31"
+  mode: "01"
+  bytes: 2
+  formula: "256 * A + B"
+  unit: km
+  range: [0, 65535]
+  name:
+    en: Distance traveled since codes cleared
+    de: Strecke seit Löschen der Codes
+  sources:
+    - https://en.wikipedia.org/wiki/OBD-II_PIDs
+
+- pid: "32"
+  mode: "01"
+  bytes: 2
+  formula: "((256*A + B) / 4) - 8192"
+  unit: Pa
+  range: [-8192, 8191.75]
+  name:
+    en: Evaporative system vapor pressure
+    de: Tankentlüftungs-Dampfdruck
+  sources:
+    - https://en.wikipedia.org/wiki/OBD-II_PIDs
+
+- pid: "33"
+  mode: "01"
+  bytes: 1
+  formula: "A"
+  unit: kPa
+  range: [0, 255]
+  name:
+    en: Absolute barometric pressure
+    de: Absoluter Barometerdruck
+  sources:
+    - https://en.wikipedia.org/wiki/OBD-II_PIDs
+
+- pid: "34"
+  mode: "01"
+  bytes: 4
+  formula: "(2/65536) * (256*A + B) (lambda); (256*C + D)/256 - 128 (current, mA)"
+  unit: "ratio; mA"
+  range: [-128, 128]
+  name:
+    en: Oxygen sensor 1 (Bank 1 Sensor 1) — air-fuel equivalence ratio and current
+    de: Lambdasonde 1 (Bank 1 Sensor 1) — Luftverhältnis und Strom
+  sources:
+    - https://en.wikipedia.org/wiki/OBD-II_PIDs
+
+- pid: "35"
+  mode: "01"
+  bytes: 4
+  formula: "(2/65536) * (256*A + B) (lambda); (256*C + D)/256 - 128 (current, mA)"
+  unit: "ratio; mA"
+  range: [-128, 128]
+  name:
+    en: Oxygen sensor 2 (Bank 1 Sensor 2) — air-fuel equivalence ratio and current
+    de: Lambdasonde 2 (Bank 1 Sensor 2) — Luftverhältnis und Strom
+  sources:
+    - https://en.wikipedia.org/wiki/OBD-II_PIDs
+
+- pid: "36"
+  mode: "01"
+  bytes: 4
+  formula: "(2/65536) * (256*A + B) (lambda); (256*C + D)/256 - 128 (current, mA)"
+  unit: "ratio; mA"
+  range: [-128, 128]
+  name:
+    en: Oxygen sensor 3 (Bank 1 Sensor 3) — air-fuel equivalence ratio and current
+    de: Lambdasonde 3 (Bank 1 Sensor 3) — Luftverhältnis und Strom
+  sources:
+    - https://en.wikipedia.org/wiki/OBD-II_PIDs
+
+- pid: "37"
+  mode: "01"
+  bytes: 4
+  formula: "(2/65536) * (256*A + B) (lambda); (256*C + D)/256 - 128 (current, mA)"
+  unit: "ratio; mA"
+  range: [-128, 128]
+  name:
+    en: Oxygen sensor 4 (Bank 1 Sensor 4) — air-fuel equivalence ratio and current
+    de: Lambdasonde 4 (Bank 1 Sensor 4) — Luftverhältnis und Strom
+  sources:
+    - https://en.wikipedia.org/wiki/OBD-II_PIDs
+
+- pid: "38"
+  mode: "01"
+  bytes: 4
+  formula: "(2/65536) * (256*A + B) (lambda); (256*C + D)/256 - 128 (current, mA)"
+  unit: "ratio; mA"
+  range: [-128, 128]
+  name:
+    en: Oxygen sensor 5 (Bank 2 Sensor 1) — air-fuel equivalence ratio and current
+    de: Lambdasonde 5 (Bank 2 Sensor 1) — Luftverhältnis und Strom
+  sources:
+    - https://en.wikipedia.org/wiki/OBD-II_PIDs
+
+- pid: "39"
+  mode: "01"
+  bytes: 4
+  formula: "(2/65536) * (256*A + B) (lambda); (256*C + D)/256 - 128 (current, mA)"
+  unit: "ratio; mA"
+  range: [-128, 128]
+  name:
+    en: Oxygen sensor 6 (Bank 2 Sensor 2) — air-fuel equivalence ratio and current
+    de: Lambdasonde 6 (Bank 2 Sensor 2) — Luftverhältnis und Strom
+  sources:
+    - https://en.wikipedia.org/wiki/OBD-II_PIDs
+
+- pid: "3A"
+  mode: "01"
+  bytes: 4
+  formula: "(2/65536) * (256*A + B) (lambda); (256*C + D)/256 - 128 (current, mA)"
+  unit: "ratio; mA"
+  range: [-128, 128]
+  name:
+    en: Oxygen sensor 7 (Bank 2 Sensor 3) — air-fuel equivalence ratio and current
+    de: Lambdasonde 7 (Bank 2 Sensor 3) — Luftverhältnis und Strom
+  sources:
+    - https://en.wikipedia.org/wiki/OBD-II_PIDs
+
+- pid: "3B"
+  mode: "01"
+  bytes: 4
+  formula: "(2/65536) * (256*A + B) (lambda); (256*C + D)/256 - 128 (current, mA)"
+  unit: "ratio; mA"
+  range: [-128, 128]
+  name:
+    en: Oxygen sensor 8 (Bank 2 Sensor 4) — air-fuel equivalence ratio and current
+    de: Lambdasonde 8 (Bank 2 Sensor 4) — Luftverhältnis und Strom
+  sources:
+    - https://en.wikipedia.org/wiki/OBD-II_PIDs
+
+- pid: "3C"
+  mode: "01"
+  bytes: 2
+  formula: "(256*A + B) / 10 - 40"
+  unit: "°C"
+  range: [-40, 6513.5]
+  name:
+    en: Catalyst temperature — Bank 1, Sensor 1
+    de: Katalysatortemperatur Bank 1 Sensor 1
+  sources:
+    - https://en.wikipedia.org/wiki/OBD-II_PIDs
+
+- pid: "3D"
+  mode: "01"
+  bytes: 2
+  formula: "(256*A + B) / 10 - 40"
+  unit: "°C"
+  range: [-40, 6513.5]
+  name:
+    en: Catalyst temperature — Bank 2, Sensor 1
+    de: Katalysatortemperatur Bank 2 Sensor 1
+  sources:
+    - https://en.wikipedia.org/wiki/OBD-II_PIDs
+
+- pid: "3E"
+  mode: "01"
+  bytes: 2
+  formula: "(256*A + B) / 10 - 40"
+  unit: "°C"
+  range: [-40, 6513.5]
+  name:
+    en: Catalyst temperature — Bank 1, Sensor 2
+    de: Katalysatortemperatur Bank 1 Sensor 2
+  sources:
+    - https://en.wikipedia.org/wiki/OBD-II_PIDs
+
+- pid: "3F"
+  mode: "01"
+  bytes: 2
+  formula: "(256*A + B) / 10 - 40"
+  unit: "°C"
+  range: [-40, 6513.5]
+  name:
+    en: Catalyst temperature — Bank 2, Sensor 2
+    de: Katalysatortemperatur Bank 2 Sensor 2
+  sources:
+    - https://en.wikipedia.org/wiki/OBD-II_PIDs
+
+- pid: "40"
+  mode: "01"
+  bytes: 4
+  unit: bitmap
+  name:
+    en: PIDs supported [41-60]
+    de: Unterstützte PIDs [41-60]
+  sources:
+    - https://en.wikipedia.org/wiki/OBD-II_PIDs
+
+- pid: "41"
+  mode: "01"
+  bytes: 4
+  unit: bitmap
+  name:
+    en: Monitor status this drive cycle
+    de: Monitorstatus im aktuellen Fahrzyklus
+  sources:
+    - https://en.wikipedia.org/wiki/OBD-II_PIDs
+
+- pid: "42"
+  mode: "01"
+  bytes: 2
+  formula: "(256*A + B) / 1000"
+  unit: V
+  range: [0, 65.535]
+  name:
+    en: Control module voltage
+    de: Steuergeräte-Versorgungsspannung
+  sources:
+    - https://en.wikipedia.org/wiki/OBD-II_PIDs
+
+- pid: "43"
+  mode: "01"
+  bytes: 2
+  formula: "100/255 * (256*A + B)"
+  unit: "%"
+  range: [0, 25700]
+  name:
+    en: Absolute load value
+    de: Absolute Motorlast
+  sources:
+    - https://en.wikipedia.org/wiki/OBD-II_PIDs
+
+- pid: "44"
+  mode: "01"
+  bytes: 2
+  formula: "(2 / 65536) * (256*A + B)"
+  unit: ratio
+  range: [0, 1.999]
+  name:
+    en: Commanded air-fuel equivalence ratio (lambda)
+    de: Angesteuertes Luft-Kraftstoff-Verhältnis (Lambda)
+  sources:
+    - https://en.wikipedia.org/wiki/OBD-II_PIDs
+
+- pid: "45"
+  mode: "01"
+  bytes: 1
+  formula: "100/255 * A"
+  unit: "%"
+  range: [0, 100]
+  name:
+    en: Relative throttle position
+    de: Relative Drosselklappenstellung
+  sources:
+    - https://en.wikipedia.org/wiki/OBD-II_PIDs
+
+- pid: "46"
+  mode: "01"
+  bytes: 1
+  formula: "A - 40"
+  unit: "°C"
+  range: [-40, 215]
+  name:
+    en: Ambient air temperature
+    de: Außentemperatur
+  sources:
+    - https://en.wikipedia.org/wiki/OBD-II_PIDs
+
+- pid: "47"
+  mode: "01"
+  bytes: 1
+  formula: "100/255 * A"
+  unit: "%"
+  range: [0, 100]
+  name:
+    en: Absolute throttle position B
+    de: Absolute Drosselklappenstellung B
+  sources:
+    - https://en.wikipedia.org/wiki/OBD-II_PIDs
+
+- pid: "48"
+  mode: "01"
+  bytes: 1
+  formula: "100/255 * A"
+  unit: "%"
+  range: [0, 100]
+  name:
+    en: Absolute throttle position C
+    de: Absolute Drosselklappenstellung C
+  sources:
+    - https://en.wikipedia.org/wiki/OBD-II_PIDs
+
+- pid: "49"
+  mode: "01"
+  bytes: 1
+  formula: "100/255 * A"
+  unit: "%"
+  range: [0, 100]
+  name:
+    en: Accelerator pedal position D
+    de: Gaspedalstellung D
+  sources:
+    - https://en.wikipedia.org/wiki/OBD-II_PIDs
+
+- pid: "4A"
+  mode: "01"
+  bytes: 1
+  formula: "100/255 * A"
+  unit: "%"
+  range: [0, 100]
+  name:
+    en: Accelerator pedal position E
+    de: Gaspedalstellung E
+  sources:
+    - https://en.wikipedia.org/wiki/OBD-II_PIDs
+
+- pid: "4B"
+  mode: "01"
+  bytes: 1
+  formula: "100/255 * A"
+  unit: "%"
+  range: [0, 100]
+  name:
+    en: Accelerator pedal position F
+    de: Gaspedalstellung F
+  sources:
+    - https://en.wikipedia.org/wiki/OBD-II_PIDs
+
+- pid: "4C"
+  mode: "01"
+  bytes: 1
+  formula: "100/255 * A"
+  unit: "%"
+  range: [0, 100]
+  name:
+    en: Commanded throttle actuator
+    de: Angesteuerter Drosselklappensteller
+  sources:
+    - https://en.wikipedia.org/wiki/OBD-II_PIDs
+
+- pid: "4D"
+  mode: "01"
+  bytes: 2
+  formula: "256*A + B"
+  unit: min
+  range: [0, 65535]
+  name:
+    en: Time run with MIL on
+    de: Laufzeit mit eingeschalteter Motorkontrollleuchte
+  sources:
+    - https://en.wikipedia.org/wiki/OBD-II_PIDs
+
+- pid: "4E"
+  mode: "01"
+  bytes: 2
+  formula: "256*A + B"
+  unit: min
+  range: [0, 65535]
+  name:
+    en: Time since trouble codes cleared
+    de: Zeit seit Löschen der Fehlercodes
+  sources:
+    - https://en.wikipedia.org/wiki/OBD-II_PIDs
+
+- pid: "4F"
+  mode: "01"
+  bytes: 4
+  unit: encoded
+  name:
+    en: Maximum value for fuel-air equivalence ratio, oxygen sensor voltage, oxygen sensor current, intake manifold absolute pressure
+    de: Maximalwerte für Lambda, Sondenspannung, Sondenstrom, Saugrohrdruck
+  sources:
+    - https://en.wikipedia.org/wiki/OBD-II_PIDs
+
+- pid: "50"
+  mode: "01"
+  bytes: 4
+  formula: "A * 10"
+  unit: g/s
+  range: [0, 2550]
+  name:
+    en: Maximum value for air flow rate from mass air flow sensor (only A used; B, C, D reserved)
+    de: Maximalwert für Luftmassenstrom (nur A verwendet; B, C, D reserviert)
+  sources:
+    - https://en.wikipedia.org/wiki/OBD-II_PIDs
+
+- pid: "51"
+  mode: "01"
+  bytes: 1
+  unit: encoded
+  name:
+    en: Fuel type
+    de: Kraftstoffart
+  sources:
+    - https://en.wikipedia.org/wiki/OBD-II_PIDs
+
+- pid: "52"
+  mode: "01"
+  bytes: 1
+  formula: "100/255 * A"
+  unit: "%"
+  range: [0, 100]
+  name:
+    en: Ethanol fuel percentage
+    de: Ethanol-Anteil im Kraftstoff
+  sources:
+    - https://en.wikipedia.org/wiki/OBD-II_PIDs
+
+- pid: "53"
+  mode: "01"
+  bytes: 2
+  formula: "(256*A + B) / 200"
+  unit: kPa
+  range: [0, 327.675]
+  name:
+    en: Absolute evaporative system vapor pressure
+    de: Absoluter Tankentlüftungs-Dampfdruck
+  sources:
+    - https://en.wikipedia.org/wiki/OBD-II_PIDs
+
+- pid: "54"
+  mode: "01"
+  bytes: 2
+  formula: "(256*A + B) - 32767"
+  unit: Pa
+  range: [-32767, 32768]
+  name:
+    en: Evaporative system vapor pressure (signed)
+    de: Tankentlüftungs-Dampfdruck (vorzeichenbehaftet)
+  sources:
+    - https://en.wikipedia.org/wiki/OBD-II_PIDs
+
+- pid: "55"
+  mode: "01"
+  bytes: 2
+  formula: "100/128 * A - 100 (Bank 1); 100/128 * B - 100 (Bank 3)"
+  unit: "%"
+  range: [-100, 99.2]
+  name:
+    en: Short term secondary oxygen sensor trim — Bank 1 (A) and Bank 3 (B)
+    de: Kurzzeit-Sekundär-Gemischadaption Bank 1 (A) und Bank 3 (B)
+  sources:
+    - https://en.wikipedia.org/wiki/OBD-II_PIDs
+
+- pid: "56"
+  mode: "01"
+  bytes: 2
+  formula: "100/128 * A - 100 (Bank 1); 100/128 * B - 100 (Bank 3)"
+  unit: "%"
+  range: [-100, 99.2]
+  name:
+    en: Long term secondary oxygen sensor trim — Bank 1 (A) and Bank 3 (B)
+    de: Langzeit-Sekundär-Gemischadaption Bank 1 (A) und Bank 3 (B)
+  sources:
+    - https://en.wikipedia.org/wiki/OBD-II_PIDs
+
+- pid: "57"
+  mode: "01"
+  bytes: 2
+  formula: "100/128 * A - 100 (Bank 2); 100/128 * B - 100 (Bank 4)"
+  unit: "%"
+  range: [-100, 99.2]
+  name:
+    en: Short term secondary oxygen sensor trim — Bank 2 (A) and Bank 4 (B)
+    de: Kurzzeit-Sekundär-Gemischadaption Bank 2 (A) und Bank 4 (B)
+  sources:
+    - https://en.wikipedia.org/wiki/OBD-II_PIDs
+
+- pid: "58"
+  mode: "01"
+  bytes: 2
+  formula: "100/128 * A - 100 (Bank 2); 100/128 * B - 100 (Bank 4)"
+  unit: "%"
+  range: [-100, 99.2]
+  name:
+    en: Long term secondary oxygen sensor trim — Bank 2 (A) and Bank 4 (B)
+    de: Langzeit-Sekundär-Gemischadaption Bank 2 (A) und Bank 4 (B)
+  sources:
+    - https://en.wikipedia.org/wiki/OBD-II_PIDs
+
+- pid: "59"
+  mode: "01"
+  bytes: 2
+  formula: "10 * (256*A + B)"
+  unit: kPa
+  range: [0, 655350]
+  name:
+    en: Fuel rail absolute pressure
+    de: Kraftstoff-Raildruck (absolut)
+  sources:
+    - https://en.wikipedia.org/wiki/OBD-II_PIDs
+
+- pid: "5A"
+  mode: "01"
+  bytes: 1
+  formula: "100/255 * A"
+  unit: "%"
+  range: [0, 100]
+  name:
+    en: Relative accelerator pedal position
+    de: Relative Gaspedalstellung
+  sources:
+    - https://en.wikipedia.org/wiki/OBD-II_PIDs
+
+- pid: "5B"
+  mode: "01"
+  bytes: 1
+  formula: "100/255 * A"
+  unit: "%"
+  range: [0, 100]
+  name:
+    en: Hybrid battery pack remaining life
+    de: Hybridbatterie-Restkapazität
+  sources:
+    - https://en.wikipedia.org/wiki/OBD-II_PIDs
+
+- pid: "5D"
+  mode: "01"
+  bytes: 2
+  formula: "((256*A + B) - 26880) / 128"
+  unit: "°"
+  range: [-210, 301.99]
+  name:
+    en: Fuel injection timing
+    de: Einspritz-Zeitpunkt
+  sources:
+    - https://en.wikipedia.org/wiki/OBD-II_PIDs
+
+- pid: "5E"
+  mode: "01"
+  bytes: 2
+  formula: "(256*A + B) / 20"
+  unit: L/h
+  range: [0, 3212.75]
+  name:
+    en: Engine fuel rate
+    de: Kraftstoffverbrauchsrate des Motors
+  sources:
+    - https://en.wikipedia.org/wiki/OBD-II_PIDs
+
+- pid: "5F"
+  mode: "01"
+  bytes: 1
+  unit: encoded
+  name:
+    en: Emission requirements to which vehicle is designed
+    de: Emissionsanforderung, für die das Fahrzeug ausgelegt ist
+  sources:
+    - https://en.wikipedia.org/wiki/OBD-II_PIDs
+
+- pid: "60"
+  mode: "01"
+  bytes: 4
+  unit: bitmap
+  name:
+    en: PIDs supported [61-80]
+    de: Unterstützte PIDs [61-80]
+  sources:
+    - https://en.wikipedia.org/wiki/OBD-II_PIDs
+
+- pid: "61"
+  mode: "01"
+  bytes: 1
+  formula: "A - 125"
+  unit: "%"
+  range: [-125, 130]
+  name:
+    en: Driver's demand engine percent torque
+    de: Fahrerwunsch-Drehmoment des Motors (%)
+  sources:
+    - https://en.wikipedia.org/wiki/OBD-II_PIDs
+
+- pid: "62"
+  mode: "01"
+  bytes: 1
+  formula: "A - 125"
+  unit: "%"
+  range: [-125, 130]
+  name:
+    en: Actual engine percent torque
+    de: Tatsächliches Motordrehmoment (%)
+  sources:
+    - https://en.wikipedia.org/wiki/OBD-II_PIDs
+
+- pid: "63"
+  mode: "01"
+  bytes: 2
+  formula: "256*A + B"
+  unit: Nm
+  range: [0, 65535]
+  name:
+    en: Engine reference torque
+    de: Referenz-Motordrehmoment
+  sources:
+    - https://en.wikipedia.org/wiki/OBD-II_PIDs
+
+- pid: "64"
+  mode: "01"
+  bytes: 5
+  formula: "A - 125 (idle); B - 125 (point2); C - 125 (point3); D - 125 (point4); E - 125 (point5)"
+  unit: "%"
+  range: [-125, 130]
+  name:
+    en: Engine percent torque at five engine points (idle, peak, reference points)
+    de: Motordrehmoment an fünf Motorpunkten (Leerlauf, Spitze, Referenzpunkte)
+  sources:
+    - https://en.wikipedia.org/wiki/OBD-II_PIDs
+
+- pid: "65"
+  mode: "01"
+  bytes: 2
+  unit: bitmap
+  name:
+    en: Auxiliary input/output supported
+    de: Unterstützte Hilfs-Ein-/Ausgänge
+  sources:
+    - https://en.wikipedia.org/wiki/OBD-II_PIDs
+
+- pid: "66"
+  mode: "01"
+  bytes: 5
+  formula: "((256*B + C) / 32) (sensor A); ((256*D + E) / 32) (sensor B)"
+  unit: g/s
+  range: [0, 2047.96875]
+  name:
+    en: Mass air flow sensor (A and B)
+    de: Luftmassenmesser (Sensor A und B)
+  sources:
+    - https://en.wikipedia.org/wiki/OBD-II_PIDs
+
+- pid: "67"
+  mode: "01"
+  bytes: 3
+  formula: "B - 40 (sensor 1); C - 40 (sensor 2)"
+  unit: "°C"
+  range: [-40, 215]
+  name:
+    en: Engine coolant temperature (sensor 1 and sensor 2)
+    de: Kühlmitteltemperatur (Sensor 1 und Sensor 2)
+  sources:
+    - https://en.wikipedia.org/wiki/OBD-II_PIDs
+
+- pid: "68"
+  mode: "01"
+  bytes: 7
+  unit: encoded
+  name:
+    en: Intake air temperature sensor (multiple, with bitfield support indicator)
+    de: Ansauglufttemperatursensoren (mehrere, mit Unterstützungs-Bitfeld)
+  sources:
+    - https://en.wikipedia.org/wiki/OBD-II_PIDs
+
+- pid: "78"
+  mode: "01"
+  bytes: 9
+  formula: "((256*B + C)/10) - 40 (sensor 1); ((256*D + E)/10) - 40 (sensor 2); ((256*F + G)/10) - 40 (sensor 3); ((256*H + I)/10) - 40 (sensor 4)"
+  unit: "°C"
+  range: [-40, 6513.5]
+  name:
+    en: Exhaust gas temperature (EGT) — Bank 1, sensors 1-4
+    de: Abgastemperatur (EGT) Bank 1, Sensoren 1-4
+  sources:
+    - https://en.wikipedia.org/wiki/OBD-II_PIDs
+
+- pid: "79"
+  mode: "01"
+  bytes: 9
+  formula: "((256*B + C)/10) - 40 (sensor 1); ((256*D + E)/10) - 40 (sensor 2); ((256*F + G)/10) - 40 (sensor 3); ((256*H + I)/10) - 40 (sensor 4)"
+  unit: "°C"
+  range: [-40, 6513.5]
+  name:
+    en: Exhaust gas temperature (EGT) — Bank 2, sensors 1-4
+    de: Abgastemperatur (EGT) Bank 2, Sensoren 1-4
+  sources:
+    - https://en.wikipedia.org/wiki/OBD-II_PIDs
+
+- pid: "7C"
+  mode: "01"
+  bytes: 9
+  unit: encoded
+  name:
+    en: Diesel particulate filter (DPF) temperature
+    de: Dieselpartikelfilter-Temperatur (DPF)
+  sources:
+    - https://en.wikipedia.org/wiki/OBD-II_PIDs
+
+- pid: "7D"
+  mode: "01"
+  bytes: 1
+  unit: encoded
+  name:
+    en: NOx NTE (Not-To-Exceed) control area status
+    de: NOx-NTE-Bereichsstatus (Not-To-Exceed)
+  sources:
+    - https://en.wikipedia.org/wiki/OBD-II_PIDs
+
+- pid: "7E"
+  mode: "01"
+  bytes: 1
+  unit: encoded
+  name:
+    en: PM NTE (Not-To-Exceed) control area status
+    de: Partikel-NTE-Bereichsstatus (Not-To-Exceed)
+  sources:
+    - https://en.wikipedia.org/wiki/OBD-II_PIDs
+
+- pid: "80"
+  mode: "01"
+  bytes: 4
+  unit: bitmap
+  name:
+    en: PIDs supported [81-A0]
+    de: Unterstützte PIDs [81-A0]
+  sources:
+    - https://en.wikipedia.org/wiki/OBD-II_PIDs
+
+- pid: "83"
+  mode: "01"
+  bytes: 5
+  unit: encoded
+  name:
+    en: NOx sensor (concentration, supported sensors)
+    de: NOx-Sensor (Konzentration, unterstützte Sensoren)
+  sources:
+    - https://en.wikipedia.org/wiki/OBD-II_PIDs
+
+- pid: "84"
+  mode: "01"
+  bytes: 1
+  formula: "A - 40"
+  unit: "°C"
+  range: [-40, 215]
+  name:
+    en: Manifold surface temperature
+    de: Saugrohr-Oberflächentemperatur
+  sources:
+    - https://en.wikipedia.org/wiki/OBD-II_PIDs
+
+- pid: "8E"
+  mode: "01"
+  bytes: 1
+  formula: "A - 125"
+  unit: "%"
+  range: [-125, 130]
+  name:
+    en: Engine friction percent torque
+    de: Reibungs-Drehmoment des Motors (%)
+  sources:
+    - https://en.wikipedia.org/wiki/OBD-II_PIDs
+
+- pid: "9D"
+  mode: "01"
+  bytes: 4
+  formula: "(256*A + B) / 50 (engine fuel rate); (256*C + D) / 50 (vehicle fuel rate)"
+  unit: g/s
+  range: [0, 1310.7]
+  name:
+    en: Engine fuel rate (engine and vehicle, in g/s)
+    de: Kraftstoffverbrauchsrate (Motor und Fahrzeug, in g/s)
+  sources:
+    - https://en.wikipedia.org/wiki/OBD-II_PIDs
+
+- pid: "9E"
+  mode: "01"
+  bytes: 2
+  formula: "(256*A + B) / 5"
+  unit: g/s
+  range: [0, 13107]
+  name:
+    en: Engine exhaust flow rate
+    de: Abgasdurchflussrate
+  sources:
+    - https://en.wikipedia.org/wiki/OBD-II_PIDs
+
+- pid: "A0"
+  mode: "01"
+  bytes: 4
+  unit: bitmap
+  name:
+    en: PIDs supported [A1-C0]
+    de: Unterstützte PIDs [A1-C0]
+  sources:
+    - https://en.wikipedia.org/wiki/OBD-II_PIDs
+
+- pid: "A2"
+  mode: "01"
+  bytes: 2
+  formula: "(256*A + B) / 32"
+  unit: mg/stroke
+  range: [0, 2047.96875]
+  name:
+    en: Cylinder fuel rate
+    de: Zylinder-Einspritzmenge pro Hub
+  sources:
+    - https://en.wikipedia.org/wiki/OBD-II_PIDs
+
+- pid: "A6"
+  mode: "01"
+  bytes: 4
+  formula: "((A * 16777216) + (B * 65536) + (C * 256) + D) / 10"
+  unit: km
+  range: [0, 429496729.5]
+  name:
+    en: Odometer
+    de: Gesamtkilometerstand
+  sources:
+    - https://en.wikipedia.org/wiki/OBD-II_PIDs
