@@ -130,10 +130,18 @@ const indexHtml = `<!doctype html>
     .sources { padding: 0; margin: 0; }
     .sources li { display: block; padding: .15rem 0; border: none; word-break: break-all; }
     .matches { padding: 0; margin: 0; }
-    .matches li { padding: .5rem 0; display: grid; grid-template-columns: auto 1fr; gap: .75rem; cursor: pointer; }
+    .matches li { padding: .5rem 0; display: grid; grid-template-columns: auto auto 1fr; gap: .75rem; cursor: pointer; align-items: baseline; }
     .matches li:hover { color: var(--accent); }
     .matches code { background: transparent; font-weight: 600; }
+    .matches .kind { font-size: .7rem; padding: .1rem .45rem; border-radius: 999px; background: var(--code-bg); color: var(--muted); border: 1px solid var(--border); text-transform: uppercase; letter-spacing: .05em; }
     .empty { color: var(--muted); padding: 1rem; text-align: center; }
+    .hint { color: var(--muted); font-size: .85rem; margin: .5rem 0 0; }
+    .hint code { font-size: .9em; }
+    .pid-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: .75rem 1.5rem; margin: .75rem 0; }
+    .pid-grid div { display: flex; flex-direction: column; }
+    .pid-grid .label { font-size: .75rem; color: var(--muted); text-transform: uppercase; letter-spacing: .04em; }
+    .pid-grid .value { font-weight: 500; word-break: break-word; }
+    .pid-grid .value.mono { font-family: ui-monospace, "SF Mono", Consolas, monospace; font-size: .9em; }
   </style>
 </head>
 <body>
@@ -147,8 +155,9 @@ const indexHtml = `<!doctype html>
   </div>
 
   <div class="search">
-    <input id="q" type="search" autocomplete="off" autocapitalize="characters" spellcheck="false" placeholder="Loading database…" disabled>
+    <input id="q" type="search" autocomplete="off" autocapitalize="off" spellcheck="false" placeholder="Loading database…" disabled>
   </div>
+  <p class="hint">Examples: <code>P0420</code>, <code>oxygen sensor</code>, <code>Lambdasonde</code>, <code>0C</code> (PID), <code>01:0C</code> (Mode 01 PID 0C)</p>
   <div id="result"></div>
 
   <h2>Bundle</h2>
@@ -185,9 +194,22 @@ ${pidLinks}
   fetch('all.min.json')
     .then(r => r.json())
     .then(d => {
-      db = [...(d.generic || [])];
+      const dtcs = (d.generic || []).map(c => Object.assign({ _kind: 'dtc', _key: c.code }, c));
+      const pids = [];
+      for (const [modeKey, list] of Object.entries(d.pids || {})) {
+        const modeNum = modeKey.replace(/^mode/, '').toUpperCase();
+        for (const p of list) {
+          pids.push(Object.assign({
+            _kind: 'pid',
+            _key: modeNum + ':' + p.pid,
+            _mode: modeNum,
+            _label: 'Mode ' + modeNum + ' PID ' + p.pid
+          }, p));
+        }
+      }
+      db = [...dtcs, ...pids];
       input.disabled = false;
-      input.placeholder = 'Enter a code (e.g. P0420) or search by keyword…';
+      input.placeholder = 'Search by code (P0420), keyword (oxygen, Lambda) or PID (0C, 01:0C)…';
       input.focus();
       handleHash();
     })
@@ -206,7 +228,17 @@ ${pidLinks}
     return '<span class="flag' + (on ? ' on' : '') + '">' + esc(label) + '</span>';
   }
 
-  function renderCard(c) {
+  function renderSources(arr) {
+    if (!Array.isArray(arr) || !arr.length) return '';
+    return '<h3>Sources</h3><ul class="sources">' +
+      arr.map(s => /^https?:\\/\\//.test(s)
+        ? '<li><a href="' + esc(s) + '" target="_blank" rel="noopener">' + esc(s) + '</a></li>'
+        : '<li>' + esc(s) + '</li>'
+      ).join('') +
+      '</ul>';
+  }
+
+  function renderDtcCard(c) {
     const cat = c.category ? esc(c.category) : '';
     const titleEn = c.title?.en ? '<p class="card-title">' + esc(c.title.en) + '</p>' : '';
     const titleDe = c.title?.de ? '<p class="card-title-de">' + esc(c.title.de) + '</p>' : '';
@@ -248,72 +280,148 @@ ${pidLinks}
       if (out.length) flags = '<div class="flags">' + out.join('') + '</div>';
     }
 
-    let sources = '';
-    if (Array.isArray(c.sources) && c.sources.length) {
-      sources = '<h3>Sources</h3><ul class="sources">' +
-        c.sources.map(s => /^https?:\\/\\//.test(s)
-          ? '<li><a href="' + esc(s) + '" target="_blank" rel="noopener">' + esc(s) + '</a></li>'
-          : '<li>' + esc(s) + '</li>'
-        ).join('') +
-        '</ul>';
-    }
-
     return '<div class="card">' +
       '<div class="card-head"><span class="card-code">' + esc(c.code) + '</span><span class="card-cat">' + cat + '</span></div>' +
-      titleEn + titleDe + descEn + descDe + flags + causes + repair + sources +
+      titleEn + titleDe + descEn + descDe + flags + causes + repair + renderSources(c.sources) +
       '</div>';
   }
 
-  function renderMatches(list) {
-    return '<h3>' + list.length + ' matches</h3><ul class="matches">' +
-      list.map(c => '<li data-code="' + esc(c.code) + '"><code>' + esc(c.code) + '</code><span>' + esc(c.title?.en || '') + '</span></li>').join('') +
+  function renderPidCard(p) {
+    const nameEn = p.name?.en ? '<p class="card-title">' + esc(p.name.en) + '</p>' : '';
+    const nameDe = p.name?.de ? '<p class="card-title-de">' + esc(p.name.de) + '</p>' : '';
+
+    const fields = [];
+    fields.push('<div><span class="label">Mode</span><span class="value mono">' + esc(p._mode) + '</span></div>');
+    fields.push('<div><span class="label">PID</span><span class="value mono">' + esc(p.pid) + '</span></div>');
+    if (typeof p.bytes === 'number') fields.push('<div><span class="label">Bytes</span><span class="value mono">' + p.bytes + '</span></div>');
+    if (p.unit) fields.push('<div><span class="label">Unit</span><span class="value mono">' + esc(p.unit) + '</span></div>');
+    const range = fmtRange(p.range, p.unit || '');
+    if (range) fields.push('<div><span class="label">Range</span><span class="value mono">' + esc(range) + '</span></div>');
+    const grid = '<div class="pid-grid">' + fields.join('') + '</div>';
+
+    let formula = '';
+    if (p.formula) {
+      formula = '<h3>Formula</h3><div class="pid-grid"><div><span class="label">Decoded value</span><span class="value mono">' + esc(p.formula) + '</span></div></div>';
+    }
+
+    return '<div class="card">' +
+      '<div class="card-head"><span class="card-code">' + esc(p._label) + '</span><span class="card-cat">parameter id</span></div>' +
+      nameEn + nameDe + grid + formula + renderSources(p.sources) +
+      '</div>';
+  }
+
+  function renderCard(item) {
+    return item._kind === 'pid' ? renderPidCard(item) : renderDtcCard(item);
+  }
+
+  function matchLabel(item) {
+    if (item._kind === 'pid') return item.name?.en || '';
+    return item.title?.en || '';
+  }
+
+  function renderMatchList(items) {
+    return '<ul class="matches">' +
+      items.map(item => {
+        const kind = item._kind === 'pid' ? 'PID' : 'DTC';
+        return '<li data-key="' + esc(item._key) + '"><span class="kind">' + kind + '</span><code>' + esc(item._key) + '</code><span>' + esc(matchLabel(item)) + '</span></li>';
+      }).join('') +
       '</ul>';
+  }
+
+  function renderGroupedMatches(pids, dtcs) {
+    let out = '';
+    if (pids.length) {
+      out += '<h3>' + pids.length + (pids.length === 1 ? ' parameter ID' : ' parameter IDs') + '</h3>' + renderMatchList(pids);
+    }
+    if (dtcs.length) {
+      out += '<h3>' + dtcs.length + (dtcs.length === 1 ? ' trouble code' : ' trouble codes') + '</h3>' + renderMatchList(dtcs);
+    }
+    return out;
+  }
+
+  function findByKey(key) {
+    return db.find(item => item._key.toUpperCase() === key.toUpperCase());
   }
 
   function search(q) {
     if (!db) return;
-    q = q.trim().toUpperCase();
+    q = q.trim();
     if (!q) { result.innerHTML = ''; history.replaceState(null, '', location.pathname); return; }
 
-    const exact = db.find(c => c.code === q);
+    const upper = q.toUpperCase();
+
+    // Exact match by composite key (DTC code or "MM:PP")
+    const exact = findByKey(upper);
     if (exact) {
       result.innerHTML = renderCard(exact);
-      history.replaceState(null, '', '#' + exact.code);
+      history.replaceState(null, '', '#' + exact._key);
       return;
     }
 
-    const codeMatches = db.filter(c => c.code.startsWith(q));
-    const textMatches = q.length >= 3 ? db.filter(c =>
-      !c.code.startsWith(q) && (
-        (c.title?.en || '').toUpperCase().includes(q) ||
-        (c.title?.de || '').toUpperCase().includes(q)
-      )
-    ) : [];
-    const all = [...codeMatches, ...textMatches].slice(0, 25);
+    // PID-style query with explicit mode prefix "01:0C"
+    if (/^[0-9A-F]{2}:[0-9A-F]{2,4}$/.test(upper)) {
+      // already handled by exact above; if not found, fall through to fuzzy
+    }
 
-    if (all.length === 0) {
-      result.innerHTML = '<p class="empty">No code or title matches "' + esc(q) + '".</p>';
+    // Bare 2-4 hex digits — match PID exactly, also DTCs that start with these chars
+    if (/^[0-9A-F]{2,4}$/.test(upper)) {
+      const pidMatches = db.filter(item => item._kind === 'pid' && item.pid.toUpperCase() === upper);
+      const dtcStarts = db.filter(item => item._kind === 'dtc' && item.code.toUpperCase().startsWith(upper));
+      if (pidMatches.length === 1 && dtcStarts.length === 0) {
+        result.innerHTML = renderCard(pidMatches[0]);
+        history.replaceState(null, '', '#' + pidMatches[0]._key);
+        return;
+      }
+      if (pidMatches.length || dtcStarts.length) {
+        result.innerHTML = renderGroupedMatches(pidMatches, dtcStarts.slice(0, 20));
+        return;
+      }
+    }
+
+    // Code prefix match (P04, U00, etc.)
+    const codeMatches = db.filter(item => item._kind === 'dtc' && item.code.toUpperCase().startsWith(upper));
+
+    // Text search across DTC titles and PID names (en + de)
+    let pidText = [], dtcText = [];
+    if (q.length >= 3) {
+      for (const item of db) {
+        if (item._kind === 'dtc' && item.code.toUpperCase().startsWith(upper)) continue;
+        const blob = item._kind === 'pid'
+          ? ((item.name?.en || '') + ' ' + (item.name?.de || ''))
+          : ((item.title?.en || '') + ' ' + (item.title?.de || ''));
+        if (!blob.toUpperCase().includes(upper)) continue;
+        (item._kind === 'pid' ? pidText : dtcText).push(item);
+      }
+    }
+
+    const totalMatches = pidText.length + codeMatches.length + dtcText.length;
+    if (totalMatches === 0) {
+      result.innerHTML = '<p class="empty">No code, PID or title matches "' + esc(q) + '".</p>';
       return;
     }
-    if (all.length === 1) {
-      result.innerHTML = renderCard(all[0]);
-      history.replaceState(null, '', '#' + all[0].code);
-    } else {
-      result.innerHTML = renderMatches(all);
+    if (totalMatches === 1) {
+      const single = pidText[0] || codeMatches[0] || dtcText[0];
+      result.innerHTML = renderCard(single);
+      history.replaceState(null, '', '#' + single._key);
+      return;
     }
+    // Grouped output: PIDs (capped at 15) and DTCs (codeMatches first, then text matches, capped at 25)
+    const pids = pidText.slice(0, 15);
+    const dtcs = [...codeMatches, ...dtcText].slice(0, 25);
+    result.innerHTML = renderGroupedMatches(pids, dtcs);
   }
 
   input.addEventListener('input', () => search(input.value));
 
   result.addEventListener('click', e => {
-    const li = e.target.closest('li[data-code]');
+    const li = e.target.closest('li[data-key]');
     if (!li) return;
-    input.value = li.dataset.code;
+    input.value = li.dataset.key;
     search(input.value);
   });
 
   function handleHash() {
-    const h = location.hash.replace('#', '');
+    const h = decodeURIComponent(location.hash.replace('#', ''));
     if (h) { input.value = h; search(h); }
   }
   window.addEventListener('hashchange', handleHash);
