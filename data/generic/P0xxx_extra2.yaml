@@ -1,0 +1,1885 @@
+- code: P0100
+  category: powertrain
+  title:
+    en: Mass or Volume Air Flow Circuit Malfunction
+    de: Luftmassenmesser-Schaltkreis fehlerhaft
+  description:
+    en: The ECU detects a general electrical malfunction in the mass air flow (MAF) sensor circuit. The signal is missing, out of plausible range, or the wiring shows continuity issues. Used as a generic fault when no more specific MAF code applies.
+    de: Die Motorsteuerung erkennt einen generellen elektrischen Fehler im Schaltkreis des Luftmassenmessers (LMM). Das Signal fehlt, liegt außerhalb des plausiblen Bereichs oder die Verkabelung zeigt Durchgangsprobleme. Ein Sammelcode, wenn kein spezifischerer LMM-Fehler greift.
+  affected_components:
+    - mass_air_flow_sensor
+    - maf_wiring
+    - maf_connector
+    - intake_duct
+  common_causes:
+    - id: maf_contamination
+      likelihood: high
+      label:
+        en: MAF sensor element contaminated (oil, dust)
+        de: Hitzdraht des LMM verschmutzt (Öl, Staub)
+    - id: maf_wiring_fault
+      likelihood: medium
+      label:
+        en: MAF wiring or connector damaged
+        de: LMM-Verkabelung oder Stecker beschädigt
+    - id: maf_failure
+      likelihood: medium
+      label:
+        en: Mass air flow sensor failed
+        de: Luftmassenmesser defekt
+  repair:
+    difficulty: easy
+    diy_possible: true
+    estimated_cost_eur: [50, 350]
+    estimated_hours: [0.3, 1.5]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Mass_flow_sensor
+
+- code: P0104
+  category: powertrain
+  title:
+    en: Mass or Volume Air Flow Circuit Intermittent
+    de: Luftmassenmesser-Schaltkreis sporadisch unterbrochen
+  description:
+    en: The ECU detects intermittent signal dropouts or noise on the mass air flow (MAF) sensor circuit. The fault is not constantly present, suggesting a loose connection, intermittent wiring break, or a failing sensor under specific conditions (vibration, temperature).
+    de: Die Motorsteuerung erkennt sporadische Signalaussetzer oder Störungen im Schaltkreis des Luftmassenmessers. Der Fehler tritt nicht dauerhaft auf, was auf einen Wackelkontakt, eine sporadische Leitungsunterbrechung oder einen unter bestimmten Bedingungen (Vibration, Temperatur) versagenden Sensor hindeutet.
+  affected_components:
+    - mass_air_flow_sensor
+    - maf_connector
+    - maf_wiring
+  common_causes:
+    - id: loose_connector
+      likelihood: high
+      label:
+        en: MAF connector loose or corroded
+        de: LMM-Stecker locker oder korrodiert
+    - id: chafed_wiring
+      likelihood: medium
+      label:
+        en: Wiring chafed against engine components
+        de: Verkabelung an Motorbauteilen aufgescheuert
+    - id: maf_intermittent_failure
+      likelihood: medium
+      label:
+        en: MAF sensor failing intermittently
+        de: LMM versagt sporadisch
+  repair:
+    difficulty: medium
+    diy_possible: true
+    estimated_cost_eur: [40, 350]
+    estimated_hours: [0.5, 2.0]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Mass_flow_sensor
+
+- code: P0105
+  category: powertrain
+  title:
+    en: Manifold Absolute Pressure / Barometric Pressure Circuit Malfunction
+    de: Saugrohrdrucksensor / Barometerdrucksensor-Schaltkreis fehlerhaft
+  description:
+    en: The ECU detects a general electrical malfunction in the manifold absolute pressure (MAP) or barometric pressure sensor circuit. Signal missing, implausible, or wiring broken. Generic fault when no more specific MAP code applies.
+    de: Die Motorsteuerung erkennt einen generellen elektrischen Fehler im Schaltkreis des Saugrohrdruck- (MAP) oder Barometerdrucksensors. Signal fehlt, ist unplausibel oder die Verkabelung ist unterbrochen. Sammelcode, wenn kein spezifischerer MAP-Fehler greift.
+  affected_components:
+    - map_sensor
+    - barometric_pressure_sensor
+    - map_wiring
+    - vacuum_hose
+  common_causes:
+    - id: map_failure
+      likelihood: high
+      label:
+        en: MAP sensor failed
+        de: MAP-Sensor defekt
+    - id: vacuum_leak
+      likelihood: medium
+      label:
+        en: Vacuum hose to MAP sensor cracked or disconnected
+        de: Unterdruckschlauch zum MAP-Sensor gerissen oder abgezogen
+    - id: map_wiring
+      likelihood: medium
+      label:
+        en: MAP wiring or connector fault
+        de: MAP-Verkabelung oder Stecker fehlerhaft
+  repair:
+    difficulty: easy
+    diy_possible: true
+    estimated_cost_eur: [40, 200]
+    estimated_hours: [0.3, 1.0]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/MAP_sensor
+
+- code: P0109
+  category: powertrain
+  title:
+    en: Manifold Absolute Pressure / Barometric Pressure Circuit Intermittent
+    de: Saugrohrdruck- / Barometerdrucksensor-Schaltkreis sporadisch
+  description:
+    en: The ECU detects intermittent signal dropouts on the MAP/BARO sensor circuit. Fault is not constantly present — typically caused by loose connectors, chafed wiring, or a sensor failing under thermal load.
+    de: Die Motorsteuerung erkennt sporadische Signalaussetzer im MAP-/BARO-Sensor-Schaltkreis. Der Fehler tritt nicht dauerhaft auf — typischerweise durch lockere Stecker, aufgescheuerte Verkabelung oder einen unter Wärmebelastung versagenden Sensor.
+  affected_components:
+    - map_sensor
+    - map_connector
+    - map_wiring
+  common_causes:
+    - id: loose_connector
+      likelihood: high
+      label:
+        en: MAP connector loose or corroded
+        de: MAP-Stecker locker oder korrodiert
+    - id: thermal_failure
+      likelihood: medium
+      label:
+        en: Sensor fails when hot
+        de: Sensor versagt im warmen Zustand
+    - id: chafed_wiring
+      likelihood: medium
+      label:
+        en: Wiring chafed or pinched
+        de: Verkabelung aufgescheuert oder gequetscht
+  repair:
+    difficulty: medium
+    diy_possible: true
+    estimated_cost_eur: [40, 200]
+    estimated_hours: [0.5, 2.0]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/MAP_sensor
+
+- code: P0110
+  category: powertrain
+  title:
+    en: Intake Air Temperature Sensor Circuit Malfunction
+    de: Ansauglufttemperatursensor-Schaltkreis fehlerhaft
+  description:
+    en: The ECU detects a general electrical fault in the intake air temperature (IAT) sensor circuit. Signal absent, shorted or out of plausible range. Generic catch-all when no more specific IAT code (low/high/range) is set.
+    de: Die Motorsteuerung erkennt einen generellen elektrischen Fehler im Schaltkreis des Ansauglufttemperatursensors (IAT). Signal fehlt, ist kurzgeschlossen oder liegt außerhalb des plausiblen Bereichs. Sammelcode, wenn kein spezifischerer IAT-Fehler greift.
+  affected_components:
+    - iat_sensor
+    - iat_wiring
+    - iat_connector
+  common_causes:
+    - id: iat_failure
+      likelihood: high
+      label:
+        en: IAT sensor failed (open or shorted)
+        de: IAT-Sensor defekt (unterbrochen oder kurzgeschlossen)
+    - id: iat_wiring
+      likelihood: medium
+      label:
+        en: IAT wiring or connector fault
+        de: IAT-Verkabelung oder Stecker fehlerhaft
+    - id: integrated_maf_iat
+      likelihood: low
+      label:
+        en: Combined MAF/IAT module faulty
+        de: Kombinierte LMM/IAT-Einheit defekt
+  repair:
+    difficulty: easy
+    diy_possible: true
+    estimated_cost_eur: [25, 150]
+    estimated_hours: [0.3, 1.0]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Intake_air_temperature_sensor
+
+- code: P0119
+  category: powertrain
+  title:
+    en: Engine Coolant Temperature Sensor Circuit Intermittent
+    de: Kühlmitteltemperatursensor-Schaltkreis sporadisch
+  description:
+    en: The ECU detects intermittent signal dropouts on the engine coolant temperature (ECT) sensor circuit. Fault not constantly present, typically due to loose connector, chafed wiring or a sensor failing thermally.
+    de: Die Motorsteuerung erkennt sporadische Signalaussetzer am Schaltkreis des Kühlmitteltemperatursensors (ECT). Der Fehler tritt nicht dauerhaft auf, typischerweise wegen lockerem Stecker, aufgescheuerter Verkabelung oder eines thermisch versagenden Sensors.
+  affected_components:
+    - ect_sensor
+    - ect_connector
+    - ect_wiring
+  common_causes:
+    - id: loose_connector
+      likelihood: high
+      label:
+        en: ECT connector loose or corroded
+        de: ECT-Stecker locker oder korrodiert
+    - id: thermal_failure
+      likelihood: medium
+      label:
+        en: Sensor fails when warm
+        de: Sensor versagt bei Erwärmung
+    - id: chafed_wiring
+      likelihood: medium
+      label:
+        en: Wiring chafed near hot engine parts
+        de: Verkabelung in Motornähe aufgescheuert
+  repair:
+    difficulty: easy
+    diy_possible: true
+    estimated_cost_eur: [30, 150]
+    estimated_hours: [0.3, 1.0]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Engine_coolant_temperature_sensor
+
+- code: P0120
+  category: powertrain
+  title:
+    en: Throttle Position Sensor / Switch A Circuit Malfunction
+    de: Drosselklappenpositionssensor / Schalter A Schaltkreis fehlerhaft
+  description:
+    en: The ECU detects a general electrical fault on the throttle position sensor/switch A circuit. Signal missing, implausible, or wiring broken. Generic catch-all when no more specific TPS-A code applies.
+    de: Die Motorsteuerung erkennt einen generellen elektrischen Fehler am Schaltkreis des Drosselklappenpositionssensors/Schalters A. Signal fehlt, ist unplausibel oder die Verkabelung ist unterbrochen. Sammelcode, wenn kein spezifischerer TPS-A-Fehler greift.
+  affected_components:
+    - throttle_position_sensor
+    - tps_wiring
+    - tps_connector
+    - throttle_body
+  common_causes:
+    - id: tps_failure
+      likelihood: high
+      label:
+        en: TPS worn or failed (dead spot in resistive track)
+        de: TPS verschlissen oder defekt (toter Punkt auf der Widerstandsbahn)
+    - id: tps_wiring
+      likelihood: medium
+      label:
+        en: TPS wiring or connector fault
+        de: TPS-Verkabelung oder Stecker fehlerhaft
+    - id: tps_misadjusted
+      likelihood: low
+      label:
+        en: TPS mechanically misaligned to throttle shaft
+        de: TPS mechanisch zur Drosselklappenwelle verstellt
+  repair:
+    difficulty: medium
+    diy_possible: true
+    estimated_cost_eur: [60, 350]
+    estimated_hours: [0.5, 1.5]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+    limp_mode_possible: true
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Throttle_position_sensor
+
+- code: P0134
+  category: powertrain
+  title:
+    en: O2 Sensor Circuit No Activity / Slow Response (Bank 1 Sensor 1)
+    de: Lambdasonde Bank 1 Sensor 1 träge / keine Aktivität
+  description:
+    en: The ECU detects that the upstream oxygen sensor on bank 1 shows no switching activity or responds too slowly to changing exhaust gas composition. Often the sensor is aged, contaminated by silicone or fuel additives, or the heater circuit is degraded.
+    de: Die Motorsteuerung erkennt, dass die vordere Lambdasonde an Bank 1 keine Schaltaktivität zeigt oder zu langsam auf Änderungen der Abgaszusammensetzung reagiert. Häufig ist die Sonde gealtert, durch Silikon oder Kraftstoffadditive vergiftet oder der Heizkreis schwächelt.
+  affected_components:
+    - o2_sensor_bank1_sensor1
+    - o2_heater_circuit
+    - exhaust_manifold_gasket
+  common_causes:
+    - id: aged_sensor
+      likelihood: high
+      label:
+        en: Sensor aged or poisoned (silicone, lead, coolant)
+        de: Sonde gealtert oder vergiftet (Silikon, Blei, Kühlmittel)
+    - id: heater_degraded
+      likelihood: medium
+      label:
+        en: Sensor heater circuit weak
+        de: Sondenheizung schwach
+    - id: exhaust_leak_upstream
+      likelihood: medium
+      label:
+        en: Exhaust leak upstream of sensor diluting reading
+        de: Abgasleck vor der Sonde verfälscht das Signal
+  repair:
+    difficulty: easy
+    diy_possible: true
+    estimated_cost_eur: [80, 350]
+    estimated_hours: [0.3, 1.5]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Oxygen_sensor
+
+- code: P0139
+  category: powertrain
+  title:
+    en: O2 Sensor Circuit High Voltage (Bank 1 Sensor 2)
+    de: Lambdasonde Bank 1 Sensor 2 zu hohe Spannung
+  description:
+    en: The ECU detects that the downstream oxygen sensor on bank 1 reports an abnormally high voltage signal, suggesting a persistently rich exhaust condition past the catalyst, a shorted sensor, or wiring shorted to a voltage source.
+    de: Die Motorsteuerung erkennt, dass die hintere Lambdasonde an Bank 1 ein dauerhaft zu hohes Spannungssignal liefert. Mögliche Ursache ist ein dauerhaft fettes Abgas hinter dem Katalysator, eine kurzgeschlossene Sonde oder Verkabelung mit Kurzschluss gegen Spannung.
+  affected_components:
+    - o2_sensor_bank1_sensor2
+    - o2_wiring
+    - catalytic_converter_bank1
+  common_causes:
+    - id: rich_mixture
+      likelihood: high
+      label:
+        en: Engine running rich (leaking injector, high fuel pressure)
+        de: Motor läuft zu fett (undichter Injektor, zu hoher Kraftstoffdruck)
+    - id: shorted_wiring
+      likelihood: medium
+      label:
+        en: Sensor signal wire shorted to voltage
+        de: Sondensignalleitung gegen Spannung kurzgeschlossen
+    - id: failed_sensor
+      likelihood: medium
+      label:
+        en: Downstream O2 sensor failed
+        de: Hintere Lambdasonde defekt
+  repair:
+    difficulty: easy
+    diy_possible: true
+    estimated_cost_eur: [80, 350]
+    estimated_hours: [0.3, 1.5]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Oxygen_sensor
+
+- code: P0140
+  category: powertrain
+  title:
+    en: O2 Sensor Circuit No Activity / Slow Response (Bank 1 Sensor 2)
+    de: Lambdasonde Bank 1 Sensor 2 träge / keine Aktivität
+  description:
+    en: The ECU detects no switching or excessively slow response from the downstream oxygen sensor on bank 1. Typical for an aged or poisoned sensor; downstream sensors should show a relatively flat signal but must respond to fueling changes during diagnostic monitor runs.
+    de: Die Motorsteuerung erkennt keine Schaltaktivität oder eine viel zu langsame Reaktion der hinteren Lambdasonde an Bank 1. Typisch für eine gealterte oder vergiftete Sonde; hintere Sonden zeigen normalerweise ein eher flaches Signal, müssen aber bei Diagnosezyklen auf Gemischänderungen reagieren.
+  affected_components:
+    - o2_sensor_bank1_sensor2
+    - o2_heater_circuit
+    - catalytic_converter_bank1
+  common_causes:
+    - id: aged_sensor
+      likelihood: high
+      label:
+        en: Sensor aged or poisoned
+        de: Sonde gealtert oder vergiftet
+    - id: heater_degraded
+      likelihood: medium
+      label:
+        en: Sensor heater circuit weak
+        de: Sondenheizung schwach
+    - id: cat_failed
+      likelihood: low
+      label:
+        en: Catalytic converter so degraded that downstream signal mirrors upstream
+        de: Katalysator so verschlissen, dass das hintere Signal dem vorderen folgt
+  repair:
+    difficulty: easy
+    diy_possible: true
+    estimated_cost_eur: [80, 350]
+    estimated_hours: [0.3, 1.5]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Oxygen_sensor
+
+- code: P0142
+  category: powertrain
+  title:
+    en: O2 Sensor Heater Circuit Malfunction (Bank 1 Sensor 2)
+    de: Sondenheizung Bank 1 Sensor 2 fehlerhaft
+  description:
+    en: The ECU detects an electrical fault in the heater circuit of the downstream oxygen sensor on bank 1. The heater current is out of range, suggesting an open or shorted heater element, blown fuse or wiring fault.
+    de: Die Motorsteuerung erkennt einen elektrischen Fehler im Heizkreis der hinteren Lambdasonde an Bank 1. Der Heizstrom liegt außerhalb des Sollbereichs, möglich sind unterbrochenes oder kurzgeschlossenes Heizelement, defekte Sicherung oder Leitungsfehler.
+  affected_components:
+    - o2_sensor_bank1_sensor2
+    - o2_heater_fuse
+    - o2_heater_wiring
+  common_causes:
+    - id: heater_open
+      likelihood: high
+      label:
+        en: Sensor heater element open
+        de: Heizelement der Sonde unterbrochen
+    - id: heater_fuse_blown
+      likelihood: medium
+      label:
+        en: Heater fuse blown
+        de: Heizungssicherung durchgebrannt
+    - id: heater_wiring
+      likelihood: medium
+      label:
+        en: Heater wiring or connector fault
+        de: Heizungsverkabelung oder Stecker fehlerhaft
+  repair:
+    difficulty: easy
+    diy_possible: true
+    estimated_cost_eur: [80, 300]
+    estimated_hours: [0.3, 1.5]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Oxygen_sensor
+
+- code: P0143
+  category: powertrain
+  title:
+    en: O2 Sensor Circuit Malfunction (Bank 1 Sensor 3)
+    de: Lambdasonde Bank 1 Sensor 3 Schaltkreisfehler
+  description:
+    en: The ECU detects a general electrical fault on the third oxygen sensor in the bank 1 exhaust path (typically located after a second catalyst on diesel or large engines with multi-cat exhausts).
+    de: Die Motorsteuerung erkennt einen generellen elektrischen Fehler an der dritten Lambdasonde im Abgastrakt von Bank 1 (typischerweise nach einem zweiten Katalysator bei Dieseln oder Großmotoren mit mehrstufigem Abgassystem).
+  affected_components:
+    - o2_sensor_bank1_sensor3
+    - o2_wiring
+  common_causes:
+    - id: aged_sensor
+      likelihood: high
+      label:
+        en: Sensor aged or failed
+        de: Sonde gealtert oder defekt
+    - id: wiring_fault
+      likelihood: medium
+      label:
+        en: Sensor wiring open or shorted
+        de: Sondenverkabelung unterbrochen oder kurzgeschlossen
+  repair:
+    difficulty: easy
+    diy_possible: true
+    estimated_cost_eur: [80, 350]
+    estimated_hours: [0.3, 1.5]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Oxygen_sensor
+
+- code: P0144
+  category: powertrain
+  title:
+    en: O2 Sensor Circuit Low Voltage (Bank 1 Sensor 3)
+    de: Lambdasonde Bank 1 Sensor 3 zu niedrige Spannung
+  description:
+    en: The ECU detects an abnormally low voltage from the third O2 sensor on bank 1. Indicates persistently lean exhaust, an open sensor or wiring shorted to ground.
+    de: Die Motorsteuerung erkennt eine zu niedrige Spannung der dritten Lambdasonde an Bank 1. Hinweis auf dauerhaft mageres Abgas, eine unterbrochene Sonde oder gegen Masse kurzgeschlossene Verkabelung.
+  affected_components:
+    - o2_sensor_bank1_sensor3
+    - o2_wiring
+  common_causes:
+    - id: lean_mixture
+      likelihood: high
+      label:
+        en: Lean exhaust (vacuum leak, low fuel pressure)
+        de: Mageres Abgas (Falschluft, zu niedriger Kraftstoffdruck)
+    - id: shorted_to_ground
+      likelihood: medium
+      label:
+        en: Signal wire shorted to ground
+        de: Signalleitung gegen Masse kurzgeschlossen
+    - id: failed_sensor
+      likelihood: medium
+      label:
+        en: O2 sensor failed
+        de: Lambdasonde defekt
+  repair:
+    difficulty: easy
+    diy_possible: true
+    estimated_cost_eur: [80, 350]
+    estimated_hours: [0.3, 1.5]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Oxygen_sensor
+
+- code: P0145
+  category: powertrain
+  title:
+    en: O2 Sensor Circuit High Voltage (Bank 1 Sensor 3)
+    de: Lambdasonde Bank 1 Sensor 3 zu hohe Spannung
+  description:
+    en: The ECU detects an abnormally high voltage from the third O2 sensor on bank 1. Indicates persistently rich exhaust, a shorted sensor or wiring shorted to a voltage source.
+    de: Die Motorsteuerung erkennt eine zu hohe Spannung der dritten Lambdasonde an Bank 1. Hinweis auf dauerhaft fettes Abgas, eine kurzgeschlossene Sonde oder gegen Spannung kurzgeschlossene Verkabelung.
+  affected_components:
+    - o2_sensor_bank1_sensor3
+    - o2_wiring
+  common_causes:
+    - id: rich_mixture
+      likelihood: high
+      label:
+        en: Rich exhaust (leaking injector, high fuel pressure)
+        de: Fettes Abgas (undichter Injektor, zu hoher Kraftstoffdruck)
+    - id: shorted_wiring
+      likelihood: medium
+      label:
+        en: Signal wire shorted to voltage
+        de: Signalleitung gegen Spannung kurzgeschlossen
+    - id: failed_sensor
+      likelihood: medium
+      label:
+        en: O2 sensor failed
+        de: Lambdasonde defekt
+  repair:
+    difficulty: easy
+    diy_possible: true
+    estimated_cost_eur: [80, 350]
+    estimated_hours: [0.3, 1.5]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Oxygen_sensor
+
+- code: P0146
+  category: powertrain
+  title:
+    en: O2 Sensor Circuit No Activity / Slow Response (Bank 1 Sensor 3)
+    de: Lambdasonde Bank 1 Sensor 3 träge / keine Aktivität
+  description:
+    en: The ECU detects no switching activity or too slow a response from the third O2 sensor on bank 1. Typical for aged or poisoned sensor.
+    de: Die Motorsteuerung erkennt keine Schaltaktivität oder eine zu träge Reaktion der dritten Lambdasonde an Bank 1. Typisch für gealterte oder vergiftete Sonde.
+  affected_components:
+    - o2_sensor_bank1_sensor3
+    - o2_heater_circuit
+  common_causes:
+    - id: aged_sensor
+      likelihood: high
+      label:
+        en: Sensor aged or poisoned
+        de: Sonde gealtert oder vergiftet
+    - id: heater_degraded
+      likelihood: medium
+      label:
+        en: Heater circuit weak
+        de: Heizkreis schwach
+  repair:
+    difficulty: easy
+    diy_possible: true
+    estimated_cost_eur: [80, 350]
+    estimated_hours: [0.3, 1.5]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Oxygen_sensor
+
+- code: P0147
+  category: powertrain
+  title:
+    en: O2 Sensor Heater Circuit Malfunction (Bank 1 Sensor 3)
+    de: Sondenheizung Bank 1 Sensor 3 fehlerhaft
+  description:
+    en: The ECU detects an electrical fault in the heater circuit of the third O2 sensor on bank 1. Heater current out of range, indicating open/shorted heater element, blown fuse or wiring fault.
+    de: Die Motorsteuerung erkennt einen elektrischen Fehler im Heizkreis der dritten Lambdasonde an Bank 1. Heizstrom außerhalb des Sollbereichs, möglich sind unterbrochenes/kurzgeschlossenes Heizelement, defekte Sicherung oder Leitungsfehler.
+  affected_components:
+    - o2_sensor_bank1_sensor3
+    - o2_heater_fuse
+    - o2_heater_wiring
+  common_causes:
+    - id: heater_open
+      likelihood: high
+      label:
+        en: Heater element open
+        de: Heizelement unterbrochen
+    - id: heater_fuse_blown
+      likelihood: medium
+      label:
+        en: Heater fuse blown
+        de: Heizungssicherung durchgebrannt
+  repair:
+    difficulty: easy
+    diy_possible: true
+    estimated_cost_eur: [80, 300]
+    estimated_hours: [0.3, 1.5]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Oxygen_sensor
+
+- code: P0153
+  category: powertrain
+  title:
+    en: O2 Sensor Circuit High Voltage (Bank 2 Sensor 1)
+    de: Lambdasonde Bank 2 Sensor 1 zu hohe Spannung
+  description:
+    en: The ECU detects an abnormally high voltage from the upstream O2 sensor on bank 2. Indicates persistently rich exhaust, shorted sensor or wiring shorted to voltage.
+    de: Die Motorsteuerung erkennt eine zu hohe Spannung der vorderen Lambdasonde an Bank 2. Hinweis auf dauerhaft fettes Abgas, kurzgeschlossene Sonde oder gegen Spannung kurzgeschlossene Verkabelung.
+  affected_components:
+    - o2_sensor_bank2_sensor1
+    - o2_wiring
+    - fuel_injector_bank2
+  common_causes:
+    - id: rich_mixture
+      likelihood: high
+      label:
+        en: Bank 2 running rich (leaking injector, high fuel pressure)
+        de: Bank 2 läuft fett (undichter Injektor, zu hoher Kraftstoffdruck)
+    - id: shorted_wiring
+      likelihood: medium
+      label:
+        en: Signal wire shorted to voltage
+        de: Signalleitung gegen Spannung kurzgeschlossen
+    - id: failed_sensor
+      likelihood: medium
+      label:
+        en: Upstream O2 sensor failed
+        de: Vordere Lambdasonde defekt
+  repair:
+    difficulty: easy
+    diy_possible: true
+    estimated_cost_eur: [80, 350]
+    estimated_hours: [0.3, 1.5]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Oxygen_sensor
+
+- code: P0154
+  category: powertrain
+  title:
+    en: O2 Sensor Circuit No Activity / Slow Response (Bank 2 Sensor 1)
+    de: Lambdasonde Bank 2 Sensor 1 träge / keine Aktivität
+  description:
+    en: The ECU detects no switching activity or too slow a response from the upstream O2 sensor on bank 2. Typically aged or poisoned sensor, weak heater, or upstream exhaust leak.
+    de: Die Motorsteuerung erkennt keine Schaltaktivität oder eine zu träge Reaktion der vorderen Lambdasonde an Bank 2. Typisch sind gealterte/vergiftete Sonde, schwache Heizung oder Abgasleck vor der Sonde.
+  affected_components:
+    - o2_sensor_bank2_sensor1
+    - o2_heater_circuit
+    - exhaust_manifold_bank2
+  common_causes:
+    - id: aged_sensor
+      likelihood: high
+      label:
+        en: Sensor aged or poisoned
+        de: Sonde gealtert oder vergiftet
+    - id: heater_degraded
+      likelihood: medium
+      label:
+        en: Heater circuit weak
+        de: Heizkreis schwach
+    - id: exhaust_leak_upstream
+      likelihood: medium
+      label:
+        en: Exhaust leak before sensor
+        de: Abgasleck vor der Sonde
+  repair:
+    difficulty: easy
+    diy_possible: true
+    estimated_cost_eur: [80, 350]
+    estimated_hours: [0.3, 1.5]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Oxygen_sensor
+
+- code: P0157
+  category: powertrain
+  title:
+    en: O2 Sensor Circuit Low Voltage (Bank 2 Sensor 2)
+    de: Lambdasonde Bank 2 Sensor 2 zu niedrige Spannung
+  description:
+    en: The ECU detects abnormally low voltage from the downstream O2 sensor on bank 2. Indicates persistently lean exhaust past the catalyst, open sensor or wiring shorted to ground.
+    de: Die Motorsteuerung erkennt eine zu niedrige Spannung der hinteren Lambdasonde an Bank 2. Hinweis auf dauerhaft mageres Abgas hinter dem Katalysator, unterbrochene Sonde oder gegen Masse kurzgeschlossene Verkabelung.
+  affected_components:
+    - o2_sensor_bank2_sensor2
+    - o2_wiring
+    - catalytic_converter_bank2
+  common_causes:
+    - id: lean_mixture
+      likelihood: high
+      label:
+        en: Lean condition on bank 2
+        de: Mageres Gemisch an Bank 2
+    - id: shorted_to_ground
+      likelihood: medium
+      label:
+        en: Signal wire shorted to ground
+        de: Signalleitung gegen Masse kurzgeschlossen
+    - id: failed_sensor
+      likelihood: medium
+      label:
+        en: Downstream O2 sensor failed
+        de: Hintere Lambdasonde defekt
+  repair:
+    difficulty: easy
+    diy_possible: true
+    estimated_cost_eur: [80, 350]
+    estimated_hours: [0.3, 1.5]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Oxygen_sensor
+
+- code: P0158
+  category: powertrain
+  title:
+    en: O2 Sensor Circuit Low Voltage (Bank 2 Sensor 2)
+    de: Lambdasonde Bank 2 Sensor 2 niedriges Signal (alternate)
+  description:
+    en: The ECU detects abnormally low voltage from the downstream O2 sensor on bank 2 (alternate definition mapping in some manufacturers' interpretation). Indicates persistent lean reading, open sensor or wiring shorted to ground.
+    de: Die Motorsteuerung erkennt eine zu niedrige Spannung der hinteren Lambdasonde an Bank 2 (alternative Zuordnung bei manchen Herstellern). Hinweis auf dauerhaft mageres Signal, unterbrochene Sonde oder gegen Masse kurzgeschlossene Verkabelung.
+  affected_components:
+    - o2_sensor_bank2_sensor2
+    - o2_wiring
+  common_causes:
+    - id: lean_mixture
+      likelihood: high
+      label:
+        en: Lean condition on bank 2
+        de: Mageres Gemisch an Bank 2
+    - id: failed_sensor
+      likelihood: medium
+      label:
+        en: O2 sensor failed
+        de: Lambdasonde defekt
+  repair:
+    difficulty: easy
+    diy_possible: true
+    estimated_cost_eur: [80, 350]
+    estimated_hours: [0.3, 1.5]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Oxygen_sensor
+
+- code: P0159
+  category: powertrain
+  title:
+    en: O2 Sensor Circuit High Voltage (Bank 2 Sensor 2)
+    de: Lambdasonde Bank 2 Sensor 2 zu hohe Spannung
+  description:
+    en: The ECU detects an abnormally high voltage from the downstream O2 sensor on bank 2. Indicates persistently rich exhaust past the cat, shorted sensor or wiring shorted to voltage.
+    de: Die Motorsteuerung erkennt eine zu hohe Spannung der hinteren Lambdasonde an Bank 2. Hinweis auf dauerhaft fettes Abgas hinter dem Katalysator, kurzgeschlossene Sonde oder gegen Spannung kurzgeschlossene Verkabelung.
+  affected_components:
+    - o2_sensor_bank2_sensor2
+    - o2_wiring
+  common_causes:
+    - id: rich_mixture
+      likelihood: high
+      label:
+        en: Rich condition on bank 2
+        de: Fettes Gemisch an Bank 2
+    - id: shorted_wiring
+      likelihood: medium
+      label:
+        en: Signal wire shorted to voltage
+        de: Signalleitung gegen Spannung kurzgeschlossen
+  repair:
+    difficulty: easy
+    diy_possible: true
+    estimated_cost_eur: [80, 350]
+    estimated_hours: [0.3, 1.5]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Oxygen_sensor
+
+- code: P0160
+  category: powertrain
+  title:
+    en: O2 Sensor Circuit No Activity / Slow Response (Bank 2 Sensor 2)
+    de: Lambdasonde Bank 2 Sensor 2 träge / keine Aktivität
+  description:
+    en: The ECU detects no switching or too slow a response from the downstream O2 sensor on bank 2. Often aged or poisoned sensor; downstream sensors usually flat but must respond on diagnostic monitor runs.
+    de: Die Motorsteuerung erkennt keine Schaltaktivität oder eine zu träge Reaktion der hinteren Lambdasonde an Bank 2. Häufig gealterte oder vergiftete Sonde; hintere Sonden zeigen normalerweise ein flaches Signal, müssen aber bei Diagnosezyklen reagieren.
+  affected_components:
+    - o2_sensor_bank2_sensor2
+    - o2_heater_circuit
+    - catalytic_converter_bank2
+  common_causes:
+    - id: aged_sensor
+      likelihood: high
+      label:
+        en: Sensor aged or poisoned
+        de: Sonde gealtert oder vergiftet
+    - id: heater_degraded
+      likelihood: medium
+      label:
+        en: Heater circuit weak
+        de: Heizkreis schwach
+  repair:
+    difficulty: easy
+    diy_possible: true
+    estimated_cost_eur: [80, 350]
+    estimated_hours: [0.3, 1.5]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Oxygen_sensor
+
+- code: P0162
+  category: powertrain
+  title:
+    en: O2 Sensor Heater Circuit Malfunction (Bank 2 Sensor 2)
+    de: Sondenheizung Bank 2 Sensor 2 fehlerhaft
+  description:
+    en: The ECU detects an electrical fault in the heater circuit of the downstream O2 sensor on bank 2. Heater current out of range — open or shorted heater element, blown fuse, or wiring fault.
+    de: Die Motorsteuerung erkennt einen elektrischen Fehler im Heizkreis der hinteren Lambdasonde an Bank 2. Heizstrom außerhalb des Sollbereichs — unterbrochenes oder kurzgeschlossenes Heizelement, defekte Sicherung oder Leitungsfehler.
+  affected_components:
+    - o2_sensor_bank2_sensor2
+    - o2_heater_fuse
+    - o2_heater_wiring
+  common_causes:
+    - id: heater_open
+      likelihood: high
+      label:
+        en: Heater element open
+        de: Heizelement unterbrochen
+    - id: heater_fuse_blown
+      likelihood: medium
+      label:
+        en: Heater fuse blown
+        de: Heizungssicherung durchgebrannt
+  repair:
+    difficulty: easy
+    diy_possible: true
+    estimated_cost_eur: [80, 300]
+    estimated_hours: [0.3, 1.5]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Oxygen_sensor
+
+- code: P0163
+  category: powertrain
+  title:
+    en: O2 Sensor Circuit Malfunction (Bank 2 Sensor 3)
+    de: Lambdasonde Bank 2 Sensor 3 Schaltkreisfehler
+  description:
+    en: The ECU detects a general electrical fault on the third O2 sensor in the bank 2 exhaust path (typically post-second-cat in multi-cat exhausts).
+    de: Die Motorsteuerung erkennt einen generellen elektrischen Fehler an der dritten Lambdasonde im Abgastrakt von Bank 2 (typischerweise nach dem zweiten Katalysator bei mehrstufigem Abgassystem).
+  affected_components:
+    - o2_sensor_bank2_sensor3
+    - o2_wiring
+  common_causes:
+    - id: aged_sensor
+      likelihood: high
+      label:
+        en: Sensor aged or failed
+        de: Sonde gealtert oder defekt
+    - id: wiring_fault
+      likelihood: medium
+      label:
+        en: Sensor wiring open or shorted
+        de: Sondenverkabelung unterbrochen oder kurzgeschlossen
+  repair:
+    difficulty: easy
+    diy_possible: true
+    estimated_cost_eur: [80, 350]
+    estimated_hours: [0.3, 1.5]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Oxygen_sensor
+
+- code: P0164
+  category: powertrain
+  title:
+    en: O2 Sensor Circuit Low Voltage (Bank 2 Sensor 3)
+    de: Lambdasonde Bank 2 Sensor 3 zu niedrige Spannung
+  description:
+    en: The ECU detects abnormally low voltage from the third O2 sensor on bank 2. Indicates lean exhaust, open sensor or wiring shorted to ground.
+    de: Die Motorsteuerung erkennt eine zu niedrige Spannung der dritten Lambdasonde an Bank 2. Hinweis auf mageres Abgas, unterbrochene Sonde oder gegen Masse kurzgeschlossene Verkabelung.
+  affected_components:
+    - o2_sensor_bank2_sensor3
+    - o2_wiring
+  common_causes:
+    - id: lean_mixture
+      likelihood: high
+      label:
+        en: Lean exhaust condition
+        de: Mageres Abgas
+    - id: failed_sensor
+      likelihood: medium
+      label:
+        en: O2 sensor failed
+        de: Lambdasonde defekt
+  repair:
+    difficulty: easy
+    diy_possible: true
+    estimated_cost_eur: [80, 350]
+    estimated_hours: [0.3, 1.5]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Oxygen_sensor
+
+- code: P0165
+  category: powertrain
+  title:
+    en: O2 Sensor Circuit High Voltage (Bank 2 Sensor 3)
+    de: Lambdasonde Bank 2 Sensor 3 zu hohe Spannung
+  description:
+    en: The ECU detects abnormally high voltage from the third O2 sensor on bank 2. Indicates rich exhaust or wiring shorted to voltage.
+    de: Die Motorsteuerung erkennt eine zu hohe Spannung der dritten Lambdasonde an Bank 2. Hinweis auf fettes Abgas oder gegen Spannung kurzgeschlossene Verkabelung.
+  affected_components:
+    - o2_sensor_bank2_sensor3
+    - o2_wiring
+  common_causes:
+    - id: rich_mixture
+      likelihood: high
+      label:
+        en: Rich exhaust condition
+        de: Fettes Abgas
+    - id: shorted_wiring
+      likelihood: medium
+      label:
+        en: Signal wire shorted to voltage
+        de: Signalleitung gegen Spannung kurzgeschlossen
+  repair:
+    difficulty: easy
+    diy_possible: true
+    estimated_cost_eur: [80, 350]
+    estimated_hours: [0.3, 1.5]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Oxygen_sensor
+
+- code: P0166
+  category: powertrain
+  title:
+    en: O2 Sensor Circuit No Activity / Slow Response (Bank 2 Sensor 3)
+    de: Lambdasonde Bank 2 Sensor 3 träge / keine Aktivität
+  description:
+    en: The ECU detects no switching or too slow a response from the third O2 sensor on bank 2. Typically aged or poisoned sensor or weak heater.
+    de: Die Motorsteuerung erkennt keine Schaltaktivität oder eine zu träge Reaktion der dritten Lambdasonde an Bank 2. Typisch gealterte/vergiftete Sonde oder schwache Heizung.
+  affected_components:
+    - o2_sensor_bank2_sensor3
+    - o2_heater_circuit
+  common_causes:
+    - id: aged_sensor
+      likelihood: high
+      label:
+        en: Sensor aged or poisoned
+        de: Sonde gealtert oder vergiftet
+    - id: heater_degraded
+      likelihood: medium
+      label:
+        en: Heater circuit weak
+        de: Heizkreis schwach
+  repair:
+    difficulty: easy
+    diy_possible: true
+    estimated_cost_eur: [80, 350]
+    estimated_hours: [0.3, 1.5]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Oxygen_sensor
+
+- code: P0167
+  category: powertrain
+  title:
+    en: O2 Sensor Heater Circuit Malfunction (Bank 2 Sensor 3)
+    de: Sondenheizung Bank 2 Sensor 3 fehlerhaft
+  description:
+    en: The ECU detects an electrical fault in the heater circuit of the third O2 sensor on bank 2. Heater current out of range — open or shorted heater, blown fuse, wiring fault.
+    de: Die Motorsteuerung erkennt einen elektrischen Fehler im Heizkreis der dritten Lambdasonde an Bank 2. Heizstrom außerhalb des Sollbereichs — unterbrochene oder kurzgeschlossene Heizung, defekte Sicherung, Leitungsfehler.
+  affected_components:
+    - o2_sensor_bank2_sensor3
+    - o2_heater_fuse
+    - o2_heater_wiring
+  common_causes:
+    - id: heater_open
+      likelihood: high
+      label:
+        en: Heater element open
+        de: Heizelement unterbrochen
+    - id: heater_fuse_blown
+      likelihood: medium
+      label:
+        en: Heater fuse blown
+        de: Heizungssicherung durchgebrannt
+  repair:
+    difficulty: easy
+    diy_possible: true
+    estimated_cost_eur: [80, 300]
+    estimated_hours: [0.3, 1.5]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Oxygen_sensor
+
+- code: P0170
+  category: powertrain
+  title:
+    en: Fuel Trim Malfunction (Bank 1)
+    de: Gemischadaption Bank 1 fehlerhaft
+  description:
+    en: The ECU detects that short-term and long-term fuel trim values on bank 1 are outside acceptable limits. Engine cannot maintain stoichiometric mixture — typically a vacuum leak, fuel pressure issue, or failing MAF/O2 sensor.
+    de: Die Motorsteuerung erkennt, dass die Kurz- und Langzeit-Gemischadaption an Bank 1 außerhalb der Sollwerte liegt. Der Motor kann das stöchiometrische Gemisch nicht halten — typischerweise Falschluft, Kraftstoffdruckproblem oder defekter LMM/O2-Sensor.
+  affected_components:
+    - intake_system
+    - fuel_pressure_regulator
+    - mass_air_flow_sensor
+    - o2_sensor_bank1_sensor1
+  common_causes:
+    - id: vacuum_leak
+      likelihood: high
+      label:
+        en: Vacuum leak (intake gasket, hose, PCV)
+        de: Falschluft (Saugrohrdichtung, Schlauch, PCV)
+    - id: fuel_pressure
+      likelihood: medium
+      label:
+        en: Fuel pressure too low or too high
+        de: Kraftstoffdruck zu niedrig oder zu hoch
+    - id: maf_drift
+      likelihood: medium
+      label:
+        en: MAF sensor reading drifted
+        de: LMM-Signal driftet
+  repair:
+    difficulty: medium
+    diy_possible: true
+    estimated_cost_eur: [50, 500]
+    estimated_hours: [0.5, 3.0]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Fuel_injection
+
+- code: P0176
+  category: powertrain
+  title:
+    en: Fuel Composition Sensor Circuit Malfunction
+    de: Kraftstoff-Zusammensetzungssensor-Schaltkreis fehlerhaft
+  description:
+    en: The ECU detects an electrical fault in the flex-fuel composition sensor circuit. The sensor measures ethanol content (E0–E85) in the fuel; signal missing, shorted or out of plausible range.
+    de: Die Motorsteuerung erkennt einen elektrischen Fehler im Schaltkreis des Flex-Fuel-Zusammensetzungssensors. Der Sensor misst den Ethanolanteil (E0–E85) im Kraftstoff; Signal fehlt, kurzgeschlossen oder außerhalb des plausiblen Bereichs.
+  affected_components:
+    - flex_fuel_composition_sensor
+    - sensor_wiring
+  common_causes:
+    - id: sensor_failure
+      likelihood: high
+      label:
+        en: Flex-fuel sensor failed
+        de: Flex-Fuel-Sensor defekt
+    - id: wiring_fault
+      likelihood: medium
+      label:
+        en: Wiring or connector fault
+        de: Verkabelung oder Stecker fehlerhaft
+  repair:
+    difficulty: medium
+    diy_possible: true
+    estimated_cost_eur: [120, 500]
+    estimated_hours: [0.5, 2.0]
+  flags:
+    mil: true
+    emissions_relevant: true
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Flexible-fuel_vehicle
+
+- code: P0177
+  category: powertrain
+  title:
+    en: Fuel Composition Sensor Circuit Range / Performance
+    de: Kraftstoff-Zusammensetzungssensor Funktionsbereich
+  description:
+    en: The flex-fuel composition sensor signal is within electrical limits but does not match expected values for the current fuel mix or rate-of-change is implausible.
+    de: Das Signal des Flex-Fuel-Zusammensetzungssensors liegt zwar im elektrischen Sollbereich, passt aber nicht zur erwarteten Kraftstoffzusammensetzung oder zeigt eine unplausible Änderungsrate.
+  affected_components:
+    - flex_fuel_composition_sensor
+  common_causes:
+    - id: sensor_drift
+      likelihood: high
+      label:
+        en: Sensor drifted out of calibration
+        de: Sensor außerhalb der Kalibrierung
+    - id: fuel_contamination
+      likelihood: medium
+      label:
+        en: Fuel contaminated (water, dirt)
+        de: Kraftstoff verunreinigt (Wasser, Schmutz)
+  repair:
+    difficulty: medium
+    diy_possible: true
+    estimated_cost_eur: [120, 500]
+    estimated_hours: [0.5, 2.0]
+  flags:
+    mil: true
+    emissions_relevant: true
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Flexible-fuel_vehicle
+
+- code: P0178
+  category: powertrain
+  title:
+    en: Fuel Composition Sensor Circuit Low Input
+    de: Kraftstoff-Zusammensetzungssensor Signal zu niedrig
+  description:
+    en: The flex-fuel composition sensor signal is below the minimum threshold. Likely shorted to ground, open circuit or failed sensor.
+    de: Das Signal des Flex-Fuel-Zusammensetzungssensors liegt unter dem Mindestwert. Wahrscheinlich Kurzschluss gegen Masse, offener Stromkreis oder defekter Sensor.
+  affected_components:
+    - flex_fuel_composition_sensor
+    - sensor_wiring
+  common_causes:
+    - id: shorted_to_ground
+      likelihood: high
+      label:
+        en: Signal wire shorted to ground
+        de: Signalleitung gegen Masse kurzgeschlossen
+    - id: sensor_failure
+      likelihood: medium
+      label:
+        en: Sensor failed
+        de: Sensor defekt
+  repair:
+    difficulty: medium
+    diy_possible: true
+    estimated_cost_eur: [120, 500]
+    estimated_hours: [0.5, 2.0]
+  flags:
+    mil: true
+    emissions_relevant: true
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Flexible-fuel_vehicle
+
+- code: P0179
+  category: powertrain
+  title:
+    en: Fuel Composition Sensor Circuit High Input
+    de: Kraftstoff-Zusammensetzungssensor Signal zu hoch
+  description:
+    en: The flex-fuel composition sensor signal exceeds the maximum threshold. Likely shorted to voltage, open ground or failed sensor.
+    de: Das Signal des Flex-Fuel-Zusammensetzungssensors überschreitet den Maximalwert. Wahrscheinlich Kurzschluss gegen Spannung, offene Masse oder defekter Sensor.
+  affected_components:
+    - flex_fuel_composition_sensor
+    - sensor_wiring
+  common_causes:
+    - id: shorted_to_voltage
+      likelihood: high
+      label:
+        en: Signal wire shorted to voltage
+        de: Signalleitung gegen Spannung kurzgeschlossen
+    - id: sensor_failure
+      likelihood: medium
+      label:
+        en: Sensor failed
+        de: Sensor defekt
+  repair:
+    difficulty: medium
+    diy_possible: true
+    estimated_cost_eur: [120, 500]
+    estimated_hours: [0.5, 2.0]
+  flags:
+    mil: true
+    emissions_relevant: true
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Flexible-fuel_vehicle
+
+- code: P0180
+  category: powertrain
+  title:
+    en: Fuel Temperature Sensor A Circuit Malfunction
+    de: Kraftstofftemperatursensor A Schaltkreis fehlerhaft
+  description:
+    en: The ECU detects an electrical fault in the fuel temperature sensor A circuit. Fuel temperature input is missing or out of plausible range — typical for sensor failure or wiring open/short.
+    de: Die Motorsteuerung erkennt einen elektrischen Fehler im Schaltkreis des Kraftstofftemperatursensors A. Das Temperatursignal fehlt oder ist unplausibel — typisch bei defektem Sensor oder unterbrochener/kurzgeschlossener Verkabelung.
+  affected_components:
+    - fuel_temperature_sensor_a
+    - sensor_wiring
+  common_causes:
+    - id: sensor_failure
+      likelihood: high
+      label:
+        en: Fuel temperature sensor failed
+        de: Kraftstofftemperatursensor defekt
+    - id: wiring_fault
+      likelihood: medium
+      label:
+        en: Wiring or connector fault
+        de: Verkabelung oder Stecker fehlerhaft
+  repair:
+    difficulty: medium
+    diy_possible: true
+    estimated_cost_eur: [60, 300]
+    estimated_hours: [0.5, 2.0]
+  flags:
+    mil: true
+    emissions_relevant: true
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/On-board_diagnostics
+
+- code: P0181
+  category: powertrain
+  title:
+    en: Fuel Temperature Sensor A Circuit Range / Performance
+    de: Kraftstofftemperatursensor A Funktionsbereich
+  description:
+    en: The fuel temperature sensor A signal is within electrical limits but inconsistent with plausibility checks (e.g. doesn't change with engine warmup, disagrees with ambient temperature).
+    de: Das Signal des Kraftstofftemperatursensors A liegt zwar im elektrischen Sollbereich, ist aber unplausibel (z. B. ändert sich nicht mit Motorerwärmung, widerspricht der Außentemperatur).
+  affected_components:
+    - fuel_temperature_sensor_a
+  common_causes:
+    - id: sensor_drift
+      likelihood: high
+      label:
+        en: Sensor reading drifted
+        de: Sensorsignal driftet
+    - id: stuck_value
+      likelihood: medium
+      label:
+        en: Sensor stuck at fixed value
+        de: Sensor bei festem Wert hängengeblieben
+  repair:
+    difficulty: medium
+    diy_possible: true
+    estimated_cost_eur: [60, 300]
+    estimated_hours: [0.5, 2.0]
+  flags:
+    mil: true
+    emissions_relevant: true
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/On-board_diagnostics
+
+- code: P0182
+  category: powertrain
+  title:
+    en: Fuel Temperature Sensor A Circuit Low Input
+    de: Kraftstofftemperatursensor A Signal zu niedrig
+  description:
+    en: The fuel temperature sensor A signal is below the minimum threshold. Likely shorted to ground or open circuit.
+    de: Das Signal des Kraftstofftemperatursensors A liegt unter dem Mindestwert. Wahrscheinlich Kurzschluss gegen Masse oder offener Stromkreis.
+  affected_components:
+    - fuel_temperature_sensor_a
+    - sensor_wiring
+  common_causes:
+    - id: shorted_to_ground
+      likelihood: high
+      label:
+        en: Signal wire shorted to ground
+        de: Signalleitung gegen Masse kurzgeschlossen
+    - id: sensor_failure
+      likelihood: medium
+      label:
+        en: Sensor failed shorted
+        de: Sensor mit Kurzschluss defekt
+  repair:
+    difficulty: medium
+    diy_possible: true
+    estimated_cost_eur: [60, 300]
+    estimated_hours: [0.5, 2.0]
+  flags:
+    mil: true
+    emissions_relevant: true
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/On-board_diagnostics
+
+- code: P0183
+  category: powertrain
+  title:
+    en: Fuel Temperature Sensor A Circuit High Input
+    de: Kraftstofftemperatursensor A Signal zu hoch
+  description:
+    en: The fuel temperature sensor A signal exceeds the maximum threshold. Likely shorted to voltage, open ground or sensor open-circuit.
+    de: Das Signal des Kraftstofftemperatursensors A überschreitet den Maximalwert. Wahrscheinlich Kurzschluss gegen Spannung, offene Masse oder unterbrochener Sensor.
+  affected_components:
+    - fuel_temperature_sensor_a
+    - sensor_wiring
+  common_causes:
+    - id: shorted_to_voltage
+      likelihood: high
+      label:
+        en: Signal wire shorted to voltage
+        de: Signalleitung gegen Spannung kurzgeschlossen
+    - id: open_sensor
+      likelihood: medium
+      label:
+        en: Sensor open-circuit
+        de: Sensor unterbrochen
+  repair:
+    difficulty: medium
+    diy_possible: true
+    estimated_cost_eur: [60, 300]
+    estimated_hours: [0.5, 2.0]
+  flags:
+    mil: true
+    emissions_relevant: true
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/On-board_diagnostics
+
+- code: P0184
+  category: powertrain
+  title:
+    en: Fuel Temperature Sensor A Circuit Intermittent
+    de: Kraftstofftemperatursensor A Schaltkreis sporadisch
+  description:
+    en: The ECU detects intermittent dropouts on the fuel temperature sensor A circuit. Loose connector, chafed wiring or sensor failing thermally.
+    de: Die Motorsteuerung erkennt sporadische Aussetzer am Schaltkreis des Kraftstofftemperatursensors A. Lockerer Stecker, aufgescheuerte Verkabelung oder thermisch versagender Sensor.
+  affected_components:
+    - fuel_temperature_sensor_a
+    - sensor_connector
+  common_causes:
+    - id: loose_connector
+      likelihood: high
+      label:
+        en: Connector loose or corroded
+        de: Stecker locker oder korrodiert
+    - id: chafed_wiring
+      likelihood: medium
+      label:
+        en: Wiring chafed
+        de: Verkabelung aufgescheuert
+  repair:
+    difficulty: medium
+    diy_possible: true
+    estimated_cost_eur: [40, 250]
+    estimated_hours: [0.5, 2.0]
+  flags:
+    mil: true
+    emissions_relevant: true
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/On-board_diagnostics
+
+- code: P0185
+  category: powertrain
+  title:
+    en: Fuel Temperature Sensor B Circuit Malfunction
+    de: Kraftstofftemperatursensor B Schaltkreis fehlerhaft
+  description:
+    en: The ECU detects an electrical fault in the fuel temperature sensor B circuit (second sensor used on systems with separate supply/return temperature monitoring or twin-tank arrangements).
+    de: Die Motorsteuerung erkennt einen elektrischen Fehler im Schaltkreis des Kraftstofftemperatursensors B (zweiter Sensor bei Systemen mit getrennter Vorlauf-/Rücklauftemperaturüberwachung oder Doppeltanks).
+  affected_components:
+    - fuel_temperature_sensor_b
+    - sensor_wiring
+  common_causes:
+    - id: sensor_failure
+      likelihood: high
+      label:
+        en: Sensor failed
+        de: Sensor defekt
+    - id: wiring_fault
+      likelihood: medium
+      label:
+        en: Wiring or connector fault
+        de: Verkabelung oder Stecker fehlerhaft
+  repair:
+    difficulty: medium
+    diy_possible: true
+    estimated_cost_eur: [60, 300]
+    estimated_hours: [0.5, 2.0]
+  flags:
+    mil: true
+    emissions_relevant: true
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/On-board_diagnostics
+
+- code: P0186
+  category: powertrain
+  title:
+    en: Fuel Temperature Sensor B Circuit Range / Performance
+    de: Kraftstofftemperatursensor B Funktionsbereich
+  description:
+    en: Fuel temperature sensor B reading is within electrical limits but implausible (no warmup change, disagrees with sensor A or ambient).
+    de: Signal des Kraftstofftemperatursensors B liegt im elektrischen Sollbereich, ist aber unplausibel (keine Erwärmungsänderung, weicht von Sensor A oder Außentemperatur ab).
+  affected_components:
+    - fuel_temperature_sensor_b
+  common_causes:
+    - id: sensor_drift
+      likelihood: high
+      label:
+        en: Sensor drifted
+        de: Sensorsignal driftet
+    - id: stuck_value
+      likelihood: medium
+      label:
+        en: Sensor stuck
+        de: Sensor hängengeblieben
+  repair:
+    difficulty: medium
+    diy_possible: true
+    estimated_cost_eur: [60, 300]
+    estimated_hours: [0.5, 2.0]
+  flags:
+    mil: true
+    emissions_relevant: true
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/On-board_diagnostics
+
+- code: P0187
+  category: powertrain
+  title:
+    en: Fuel Temperature Sensor B Circuit Low Input
+    de: Kraftstofftemperatursensor B Signal zu niedrig
+  description:
+    en: Fuel temperature sensor B signal below minimum. Shorted to ground or sensor open.
+    de: Signal des Kraftstofftemperatursensors B unter Mindestwert. Kurzschluss gegen Masse oder Sensor unterbrochen.
+  affected_components:
+    - fuel_temperature_sensor_b
+    - sensor_wiring
+  common_causes:
+    - id: shorted_to_ground
+      likelihood: high
+      label:
+        en: Signal wire shorted to ground
+        de: Signalleitung gegen Masse kurzgeschlossen
+    - id: sensor_failure
+      likelihood: medium
+      label:
+        en: Sensor failed
+        de: Sensor defekt
+  repair:
+    difficulty: medium
+    diy_possible: true
+    estimated_cost_eur: [60, 300]
+    estimated_hours: [0.5, 2.0]
+  flags:
+    mil: true
+    emissions_relevant: true
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/On-board_diagnostics
+
+- code: P0188
+  category: powertrain
+  title:
+    en: Fuel Temperature Sensor B Circuit High Input
+    de: Kraftstofftemperatursensor B Signal zu hoch
+  description:
+    en: Fuel temperature sensor B signal exceeds maximum. Shorted to voltage, open ground or open sensor.
+    de: Signal des Kraftstofftemperatursensors B überschreitet Maximalwert. Kurzschluss gegen Spannung, offene Masse oder unterbrochener Sensor.
+  affected_components:
+    - fuel_temperature_sensor_b
+    - sensor_wiring
+  common_causes:
+    - id: shorted_to_voltage
+      likelihood: high
+      label:
+        en: Signal wire shorted to voltage
+        de: Signalleitung gegen Spannung kurzgeschlossen
+    - id: open_sensor
+      likelihood: medium
+      label:
+        en: Sensor open-circuit
+        de: Sensor unterbrochen
+  repair:
+    difficulty: medium
+    diy_possible: true
+    estimated_cost_eur: [60, 300]
+    estimated_hours: [0.5, 2.0]
+  flags:
+    mil: true
+    emissions_relevant: true
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/On-board_diagnostics
+
+- code: P0189
+  category: powertrain
+  title:
+    en: Fuel Temperature Sensor B Circuit Intermittent
+    de: Kraftstofftemperatursensor B Schaltkreis sporadisch
+  description:
+    en: The ECU detects intermittent dropouts on the fuel temperature sensor B circuit. Loose connector, chafed wiring or sensor failing under thermal load.
+    de: Die Motorsteuerung erkennt sporadische Aussetzer am Schaltkreis des Kraftstofftemperatursensors B. Lockerer Stecker, aufgescheuerte Verkabelung oder thermisch versagender Sensor.
+  affected_components:
+    - fuel_temperature_sensor_b
+    - sensor_connector
+  common_causes:
+    - id: loose_connector
+      likelihood: high
+      label:
+        en: Connector loose or corroded
+        de: Stecker locker oder korrodiert
+    - id: chafed_wiring
+      likelihood: medium
+      label:
+        en: Wiring chafed
+        de: Verkabelung aufgescheuert
+  repair:
+    difficulty: medium
+    diy_possible: true
+    estimated_cost_eur: [40, 250]
+    estimated_hours: [0.5, 2.0]
+  flags:
+    mil: true
+    emissions_relevant: true
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/On-board_diagnostics
+
+- code: P0191
+  category: powertrain
+  title:
+    en: Fuel Rail Pressure Sensor Circuit Range / Performance
+    de: Kraftstoffraildrucksensor Funktionsbereich
+  description:
+    en: The fuel rail pressure sensor signal is within electrical limits but doesn't match commanded rail pressure under various engine loads. Common in common-rail diesel and GDI petrol engines.
+    de: Das Signal des Kraftstoffraildrucksensors liegt im elektrischen Sollbereich, passt aber nicht zum angeforderten Raildruck bei verschiedenen Motorlasten. Häufig bei Common-Rail-Dieseln und Direkteinspritzer-Benzinern.
+  affected_components:
+    - fuel_rail_pressure_sensor
+    - high_pressure_pump
+    - rail_pressure_regulator
+  common_causes:
+    - id: sensor_drift
+      likelihood: high
+      label:
+        en: Pressure sensor drifted
+        de: Drucksensor driftet
+    - id: regulator_fault
+      likelihood: medium
+      label:
+        en: Pressure regulator stuck
+        de: Druckregler hängt
+    - id: pump_wear
+      likelihood: low
+      label:
+        en: High-pressure pump worn
+        de: Hochdruckpumpe verschlissen
+  repair:
+    difficulty: hard
+    diy_possible: false
+    estimated_cost_eur: [200, 1500]
+    estimated_hours: [1.0, 6.0]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Common_rail
+
+- code: P0194
+  category: powertrain
+  title:
+    en: Fuel Rail Pressure Sensor Circuit Intermittent
+    de: Kraftstoffraildrucksensor Schaltkreis sporadisch
+  description:
+    en: The ECU detects intermittent signal dropouts on the fuel rail pressure sensor. Loose connector, chafed wiring or sensor failing under vibration/heat.
+    de: Die Motorsteuerung erkennt sporadische Signalaussetzer am Kraftstoffraildrucksensor. Lockerer Stecker, aufgescheuerte Verkabelung oder unter Vibration/Hitze versagender Sensor.
+  affected_components:
+    - fuel_rail_pressure_sensor
+    - sensor_connector
+  common_causes:
+    - id: loose_connector
+      likelihood: high
+      label:
+        en: Connector loose
+        de: Stecker locker
+    - id: chafed_wiring
+      likelihood: medium
+      label:
+        en: Wiring chafed
+        de: Verkabelung aufgescheuert
+  repair:
+    difficulty: hard
+    diy_possible: false
+    estimated_cost_eur: [150, 800]
+    estimated_hours: [1.0, 4.0]
+  flags:
+    mil: true
+    emissions_relevant: true
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/Common_rail
+
+- code: P0195
+  category: powertrain
+  title:
+    en: Engine Oil Temperature Sensor Malfunction
+    de: Motoröltemperatursensor fehlerhaft
+  description:
+    en: The ECU detects a general electrical fault in the engine oil temperature sensor circuit. Signal missing, shorted or out of plausible range.
+    de: Die Motorsteuerung erkennt einen generellen elektrischen Fehler im Schaltkreis des Motoröltemperatursensors. Signal fehlt, kurzgeschlossen oder außerhalb des plausiblen Bereichs.
+  affected_components:
+    - engine_oil_temperature_sensor
+    - sensor_wiring
+  common_causes:
+    - id: sensor_failure
+      likelihood: high
+      label:
+        en: Oil temperature sensor failed
+        de: Öltemperatursensor defekt
+    - id: wiring_fault
+      likelihood: medium
+      label:
+        en: Wiring or connector fault
+        de: Verkabelung oder Stecker fehlerhaft
+  repair:
+    difficulty: medium
+    diy_possible: true
+    estimated_cost_eur: [60, 300]
+    estimated_hours: [0.5, 2.0]
+  flags:
+    mil: true
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/On-board_diagnostics
+
+- code: P0196
+  category: powertrain
+  title:
+    en: Engine Oil Temperature Sensor Range / Performance
+    de: Motoröltemperatursensor Funktionsbereich
+  description:
+    en: Engine oil temperature sensor signal is within electrical limits but implausible (no warmup change, contradicts coolant temperature).
+    de: Signal des Motoröltemperatursensors liegt im elektrischen Sollbereich, ist aber unplausibel (keine Erwärmungsänderung, widerspricht Kühlmitteltemperatur).
+  affected_components:
+    - engine_oil_temperature_sensor
+  common_causes:
+    - id: sensor_drift
+      likelihood: high
+      label:
+        en: Sensor drifted
+        de: Sensorsignal driftet
+    - id: stuck_value
+      likelihood: medium
+      label:
+        en: Sensor stuck
+        de: Sensor hängengeblieben
+  repair:
+    difficulty: medium
+    diy_possible: true
+    estimated_cost_eur: [60, 300]
+    estimated_hours: [0.5, 2.0]
+  flags:
+    mil: true
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/On-board_diagnostics
+
+- code: P0197
+  category: powertrain
+  title:
+    en: Engine Oil Temperature Sensor Low
+    de: Motoröltemperatursensor Signal zu niedrig
+  description:
+    en: Engine oil temperature sensor signal below minimum. Shorted to ground or open.
+    de: Signal des Motoröltemperatursensors unter Mindestwert. Kurzschluss gegen Masse oder unterbrochen.
+  affected_components:
+    - engine_oil_temperature_sensor
+    - sensor_wiring
+  common_causes:
+    - id: shorted_to_ground
+      likelihood: high
+      label:
+        en: Signal wire shorted to ground
+        de: Signalleitung gegen Masse kurzgeschlossen
+    - id: sensor_failure
+      likelihood: medium
+      label:
+        en: Sensor failed
+        de: Sensor defekt
+  repair:
+    difficulty: medium
+    diy_possible: true
+    estimated_cost_eur: [60, 300]
+    estimated_hours: [0.5, 2.0]
+  flags:
+    mil: true
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/On-board_diagnostics
+
+- code: P0198
+  category: powertrain
+  title:
+    en: Engine Oil Temperature Sensor High
+    de: Motoröltemperatursensor Signal zu hoch
+  description:
+    en: Engine oil temperature sensor signal exceeds maximum. Shorted to voltage, open ground or open sensor.
+    de: Signal des Motoröltemperatursensors überschreitet Maximalwert. Kurzschluss gegen Spannung, offene Masse oder unterbrochener Sensor.
+  affected_components:
+    - engine_oil_temperature_sensor
+    - sensor_wiring
+  common_causes:
+    - id: shorted_to_voltage
+      likelihood: high
+      label:
+        en: Signal wire shorted to voltage
+        de: Signalleitung gegen Spannung kurzgeschlossen
+    - id: open_sensor
+      likelihood: medium
+      label:
+        en: Sensor open-circuit
+        de: Sensor unterbrochen
+  repair:
+    difficulty: medium
+    diy_possible: true
+    estimated_cost_eur: [60, 300]
+    estimated_hours: [0.5, 2.0]
+  flags:
+    mil: true
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/On-board_diagnostics
+
+- code: P0199
+  category: powertrain
+  title:
+    en: Engine Oil Temperature Sensor Intermittent
+    de: Motoröltemperatursensor Schaltkreis sporadisch
+  description:
+    en: The ECU detects intermittent dropouts on the engine oil temperature sensor circuit. Loose connector, chafed wiring or sensor failing thermally.
+    de: Die Motorsteuerung erkennt sporadische Aussetzer am Schaltkreis des Motoröltemperatursensors. Lockerer Stecker, aufgescheuerte Verkabelung oder thermisch versagender Sensor.
+  affected_components:
+    - engine_oil_temperature_sensor
+    - sensor_connector
+  common_causes:
+    - id: loose_connector
+      likelihood: high
+      label:
+        en: Connector loose
+        de: Stecker locker
+    - id: chafed_wiring
+      likelihood: medium
+      label:
+        en: Wiring chafed
+        de: Verkabelung aufgescheuert
+  repair:
+    difficulty: medium
+    diy_possible: true
+    estimated_cost_eur: [40, 250]
+    estimated_hours: [0.5, 2.0]
+  flags:
+    mil: true
+  references:
+    - sae:J2012
+  sources:
+    - https://en.wikipedia.org/wiki/On-board_diagnostics
