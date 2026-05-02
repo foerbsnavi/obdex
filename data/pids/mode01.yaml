@@ -5,6 +5,8 @@
   name:
     en: PIDs supported [01-20]
     de: Unterstützte PIDs [01-20]
+  sources:
+    - https://en.wikipedia.org/wiki/OBD-II_PIDs
 
 - pid: "04"
   mode: "01"
@@ -15,6 +17,8 @@
   name:
     en: Calculated engine load
     de: Berechnete Motorlast
+  sources:
+    - https://en.wikipedia.org/wiki/OBD-II_PIDs
 
 - pid: "05"
   mode: "01"
@@ -25,6 +29,8 @@
   name:
     en: Engine coolant temperature
     de: Kühlmitteltemperatur
+  sources:
+    - https://en.wikipedia.org/wiki/OBD-II_PIDs
 
 - pid: "0B"
   mode: "01"
@@ -35,6 +41,8 @@
   name:
     en: Intake manifold absolute pressure
     de: Saugrohrdruck absolut
+  sources:
+    - https://en.wikipedia.org/wiki/OBD-II_PIDs
 
 - pid: "0C"
   mode: "01"
@@ -45,6 +53,8 @@
   name:
     en: Engine RPM
     de: Motordrehzahl
+  sources:
+    - https://en.wikipedia.org/wiki/OBD-II_PIDs
 
 - pid: "0D"
   mode: "01"
@@ -55,6 +65,8 @@
   name:
     en: Vehicle speed
     de: Fahrzeuggeschwindigkeit
+  sources:
+    - https://en.wikipedia.org/wiki/OBD-II_PIDs
 
 - pid: "0F"
   mode: "01"
@@ -65,6 +77,8 @@
   name:
     en: Intake air temperature
     de: Ansauglufttemperatur
+  sources:
+    - https://en.wikipedia.org/wiki/OBD-II_PIDs
 
 - pid: "10"
   mode: "01"
@@ -75,6 +89,8 @@
   name:
     en: Mass air flow rate
     de: Luftmassenstrom
+  sources:
+    - https://en.wikipedia.org/wiki/OBD-II_PIDs
 
 - pid: "11"
   mode: "01"
@@ -85,6 +101,8 @@
   name:
     en: Throttle position
     de: Drosselklappenstellung
+  sources:
+    - https://en.wikipedia.org/wiki/OBD-II_PIDs
 
 - pid: "2F"
   mode: "01"
@@ -95,6 +113,8 @@
   name:
     en: Fuel tank level
     de: Tankfüllstand
+  sources:
+    - https://en.wikipedia.org/wiki/OBD-II_PIDs
 
 - pid: "5C"
   mode: "01"
@@ -105,6 +125,8 @@
   name:
     en: Engine oil temperature
     de: Motoröltemperatur
+  sources:
+    - https://en.wikipedia.org/wiki/OBD-II_PIDs
 
 - pid: "01"
   mode: "01"

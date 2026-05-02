@@ -5,6 +5,8 @@
   name:
     en: Vehicle Identification Number (VIN)
     de: Fahrzeug-Identifizierungsnummer (FIN)
+  sources:
+    - https://en.wikipedia.org/wiki/OBD-II_PIDs
 
 - pid: "04"
   mode: "09"
@@ -13,6 +15,8 @@
   name:
     en: Calibration ID
     de: Kalibrierungs-ID
+  sources:
+    - https://en.wikipedia.org/wiki/OBD-II_PIDs
 
 - pid: "06"
   mode: "09"
@@ -21,6 +25,8 @@
   name:
     en: Calibration Verification Number (CVN)
     de: Kalibrierungs-Prüfnummer
+  sources:
+    - https://en.wikipedia.org/wiki/OBD-II_PIDs
 
 - pid: "0A"
   mode: "09"
@@ -29,6 +35,8 @@
   name:
     en: ECU name
     de: Steuergerätbezeichnung
+  sources:
+    - https://en.wikipedia.org/wiki/OBD-II_PIDs
 
 - pid: "00"
   mode: "09"
