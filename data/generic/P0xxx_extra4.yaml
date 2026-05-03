@@ -1132,7 +1132,7 @@
   category: powertrain
   title:
     en: A Camshaft Profile Actuator A Control Performance/Stuck Off Bank 1
-    de: A-Nockenwellen-Profilaktuator A Leistung/hängt aus Bank 1
+    de: A-Nockenwellen-Profilaktuator A klemmt in Aus-Stellung Bank 1
   description:
     en: The intake cam profile actuator (profile A, bank 1) does not engage when commanded — stays in low-lift profile. Often hydraulic pin sticking or low oil pressure.
     de: Der Einlass-Profilaktuator (Profil A, Bank 1) schaltet bei Anforderung nicht zu — bleibt im Klein-Hub. Häufig hängender Hydraulikpin oder zu geringer Öldruck.
@@ -1170,7 +1170,7 @@
   category: powertrain
   title:
     en: A Camshaft Profile Actuator A Control Stuck On Bank 1
-    de: A-Nockenwellen-Profilaktuator A hängt zugeschaltet Bank 1
+    de: A-Nockenwellen-Profilaktuator A klemmt in Ein-Stellung Bank 1
   description:
     en: The intake cam profile actuator (profile A, bank 1) stays engaged when commanded off — stuck in high-lift profile. Idle quality and emissions affected.
     de: Der Einlass-Profilaktuator (Profil A, Bank 1) bleibt zugeschaltet, obwohl Sollwert auf Aus — hängt im Groß-Hub. Beeinträchtigt Leerlauf und Emissionen.
@@ -1207,7 +1207,7 @@
   category: powertrain
   title:
     en: A Camshaft Profile Actuator A Control Performance/Stuck Off Bank 2
-    de: A-Nockenwellen-Profilaktuator A Leistung/hängt aus Bank 2
+    de: A-Nockenwellen-Profilaktuator A klemmt in Aus-Stellung Bank 2
   description:
     en: Same as P003C but on bank 2 — intake cam profile actuator A stuck disengaged.
     de: Wie P003C, jedoch Bank 2 — Einlass-Profilaktuator A bleibt aus.
@@ -1239,7 +1239,7 @@
   category: powertrain
   title:
     en: A Camshaft Profile Actuator A Control Stuck On Bank 2
-    de: A-Nockenwellen-Profilaktuator A hängt zugeschaltet Bank 2
+    de: A-Nockenwellen-Profilaktuator A klemmt in Ein-Stellung Bank 2
   description:
     en: Same as P003D but on bank 2 — intake cam profile actuator A stuck engaged.
     de: Wie P003D, jedoch Bank 2 — Einlass-Profilaktuator A bleibt zugeschaltet.
@@ -1946,7 +1946,7 @@
   category: powertrain
   title:
     en: B Camshaft Profile Actuator A Control Performance/Stuck Off Bank 1
-    de: B-Nockenwellen-Profilaktuator A Leistung/hängt aus Bank 1
+    de: B-Nockenwellen-Profilaktuator A klemmt in Aus-Stellung Bank 1
   description:
     en: Exhaust cam profile actuator A on bank 1 stuck disengaged. Same fault pattern as P003C but on the exhaust cam.
     de: Auslass-Profilaktuator A auf Bank 1 bleibt aus. Gleiches Fehlerbild wie P003C, jedoch Auslass.
@@ -1978,7 +1978,7 @@
   category: powertrain
   title:
     en: B Camshaft Profile Actuator A Control Stuck On Bank 1
-    de: B-Nockenwellen-Profilaktuator A hängt zugeschaltet Bank 1
+    de: B-Nockenwellen-Profilaktuator A klemmt in Ein-Stellung Bank 1
   description:
     en: Exhaust cam profile actuator A on bank 1 stuck engaged. Same fault pattern as P003D on the exhaust cam.
     de: Auslass-Profilaktuator A auf Bank 1 bleibt zugeschaltet. Wie P003D, jedoch Auslass.
@@ -2010,7 +2010,7 @@
   category: powertrain
   title:
     en: B Camshaft Profile Actuator A Control Performance/Stuck Off Bank 2
-    de: B-Nockenwellen-Profilaktuator A Leistung/hängt aus Bank 2
+    de: B-Nockenwellen-Profilaktuator A klemmt in Aus-Stellung Bank 2
   description:
     en: Same as P005A on bank 2.
     de: Wie P005A, jedoch Bank 2.
@@ -2042,7 +2042,7 @@
   category: powertrain
   title:
     en: B Camshaft Profile Actuator A Control Stuck On Bank 2
-    de: B-Nockenwellen-Profilaktuator A hängt zugeschaltet Bank 2
+    de: B-Nockenwellen-Profilaktuator A klemmt in Ein-Stellung Bank 2
   description:
     en: Same as P005B on bank 2.
     de: Wie P005B, jedoch Bank 2.
