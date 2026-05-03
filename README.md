@@ -48,12 +48,16 @@ Requires Node.js ≥ 20.
 
 ```
 data/
-├── generic/              SAE J2012 codes, valid for all OBD-II vehicles
-└── pids/                 Live data parameter IDs (Mode 01, 09, …)
+├── generic/                          SAE J2012 codes, valid for all OBD-II vehicles
+│   ├── <family>xxx_enriched.yaml     full schema (P0/P2/P3/U0/B0/C0)
+│   └── <family>xxx_stub.yaml         minimum schema, awaiting enrichment
+└── pids/                             Live data parameter IDs (Mode 01, 09, …)
 
-schema/                   JSON Schema (Draft 2020-12)
-tools/                    Node.js validation + build scripts
+schema/                               JSON Schema (Draft 2020-12)
+tools/                                Node.js validation + build scripts
 ```
+
+Each generic-DTC family has at most two files — `_enriched.yaml` for fully described codes, `_stub.yaml` for minimum-schema entries. The build reads both recursively, so consumers see one merged dataset in `dist/`.
 
 ## Status
 

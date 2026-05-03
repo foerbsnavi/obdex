@@ -18,11 +18,13 @@ By submitting a pull request you agree that your contribution is dedicated to th
 
 ## Adding a code
 
-1. Find the right file by code prefix (e.g. `P0420` → `data/generic/P0xxx.yaml`).
+1. Find the right file by code prefix (e.g. `P0420` → `data/generic/P0xxx_enriched.yaml` if you have a full description, or `P0xxx_stub.yaml` for a minimum-schema entry).
 2. Insert the code in numeric order.
-3. Fill at least: `code`, `category`, `title.en`. German is encouraged but optional.
-4. Add `sources:` with one or more URLs or document references.
-5. Run validation, open PR.
+3. For **enriched** entries, fill: `code`, `category`, `title.en+de`, `description.en+de`, `common_causes` (where known), `repair`, `flags`, `references`, `sources`.
+4. For **stub** entries, fill at minimum: `code`, `category`, `title.en`, `sources`.
+5. Run `npm run check` locally, open PR.
+
+If you're enriching a stub entry, move it from `*_stub.yaml` to `*_enriched.yaml` in the same PR — duplicates are blocked by CI.
 
 ## Adding a PID
 
