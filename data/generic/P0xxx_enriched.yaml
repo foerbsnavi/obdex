@@ -885,8 +885,8 @@
     en: Crankshaft Position - Camshaft Position Correlation (Bank 1 Sensor B)
     de: Korrelation Kurbelwellen- zu Nockenwellenposition (Bank 1, Sensor B)
   description:
-    en: Same fault as P0016 but referenced to the bank 1 exhaust camshaft sensor.
-    de: Gleicher Fehler wie P0016, jedoch bezogen auf den Sensor der Auslassnockenwelle Bank 1.
+    en: 'The relative timing between the crankshaft and bank 1 intake camshaft is outside the expected window. Often caused by a stretched timing chain, jumped tooth, worn tensioner, or failed cam/crank sensor.'
+    de: 'Die relative Steuerzeit zwischen Kurbelwelle und Einlassnockenwelle Bank 1 liegt außerhalb des erwarteten Fensters. Häufige Ursachen — gelängte Steuerkette, übergesprungener Zahn, verschlissener Spanner oder defekter Sensor.'
   affected_components:
     - timing_chain
     - camshaft_position_sensor
@@ -923,8 +923,8 @@
     en: Crankshaft Position - Camshaft Position Correlation (Bank 2 Sensor A)
     de: Korrelation Kurbelwellen- zu Nockenwellenposition (Bank 2, Sensor A)
   description:
-    en: Same fault as P0016 but referenced to the bank 2 intake camshaft sensor (V-engines).
-    de: Gleicher Fehler wie P0016, jedoch bezogen auf den Sensor der Einlassnockenwelle Bank 2 (V-Motoren).
+    en: 'The relative timing between the crankshaft and bank 2 intake camshaft is outside the expected window. Often caused by a stretched timing chain, jumped tooth, worn tensioner, or failed cam/crank sensor.'
+    de: 'Die relative Steuerzeit zwischen Kurbelwelle und Einlassnockenwelle Bank 2 liegt außerhalb des erwarteten Fensters. Häufige Ursachen — gelängte Steuerkette, übergesprungener Zahn, verschlissener Spanner oder defekter Sensor.'
   affected_components:
     - timing_chain
     - camshaft_position_sensor
@@ -961,8 +961,8 @@
     en: Crankshaft Position - Camshaft Position Correlation (Bank 2 Sensor B)
     de: Korrelation Kurbelwellen- zu Nockenwellenposition (Bank 2, Sensor B)
   description:
-    en: Same fault as P0016 but referenced to the bank 2 exhaust camshaft sensor.
-    de: Gleicher Fehler wie P0016, jedoch bezogen auf den Sensor der Auslassnockenwelle Bank 2.
+    en: 'The relative timing between the crankshaft and bank 2 intake camshaft is outside the expected window. Often caused by a stretched timing chain, jumped tooth, worn tensioner, or failed cam/crank sensor.'
+    de: 'Die relative Steuerzeit zwischen Kurbelwelle und Einlassnockenwelle Bank 2 liegt außerhalb des erwarteten Fensters. Häufige Ursachen — gelängte Steuerkette, übergesprungener Zahn, verschlissener Spanner oder defekter Sensor.'
   affected_components:
     - timing_chain
     - camshaft_position_sensor
@@ -1244,8 +1244,8 @@
     en: '"A" Camshaft Position - Timing Over-Advanced (Bank 2)'
     de: Nockenwellenposition "A" — Steuerzeit zu früh (Bank 2)
   description:
-    en: Same fault as P0011 but on bank 2 intake camshaft.
-    de: Gleicher Fehler wie P0011, jedoch an der Einlassnockenwelle Bank 2.
+    en: 'The bank 2 intake camshaft is more advanced than commanded, or the actuator does not respond as expected. Often caused by stuck-open oil control valves, sludge in VVT passages, or low oil pressure.'
+    de: 'Die Einlassnockenwelle Bank 2 ist weiter als angefordert verstellt, oder das Stellglied reagiert nicht wie erwartet. Häufige Ursachen — hängendes Ölsteuerventil, Schlamm in VVT-Kanälen oder niedriger Öldruck.'
   affected_components:
     - camshaft_position_actuator
     - oil_control_valve
@@ -1281,8 +1281,8 @@
     en: '"A" Camshaft Position - Timing Over-Retarded (Bank 2)'
     de: Nockenwellenposition "A" — Steuerzeit zu spät (Bank 2)
   description:
-    en: Same fault as P0012 but on bank 2 intake camshaft.
-    de: Gleicher Fehler wie P0012, jedoch an der Einlassnockenwelle Bank 2.
+    en: 'The bank 2 intake camshaft remains retarded compared to commanded position. Common causes include a stuck-closed oil control valve, blocked oil passages, or a worn cam phaser.'
+    de: 'Die Einlassnockenwelle Bank 2 bleibt gegenüber dem Sollwert in Spätstellung. Häufige Ursachen — geschlossen hängendes Ölsteuerventil, verstopfte Ölkanäle oder verschlissener Phasensteller.'
   affected_components:
     - camshaft_position_actuator
     - oil_control_valve
@@ -1351,8 +1351,8 @@
     en: '"B" Camshaft Position - Timing Over-Advanced (Bank 2)'
     de: Nockenwellenposition "B" — Steuerzeit zu früh (Bank 2)
   description:
-    en: Same fault as P0014 but on bank 2 exhaust camshaft.
-    de: Gleicher Fehler wie P0014, jedoch an der Auslassnockenwelle Bank 2.
+    en: 'The bank 2 exhaust camshaft is more advanced than commanded. Same root causes as P0011 but on the exhaust cam.'
+    de: 'Die Auslassnockenwelle Bank 2 ist weiter als angefordert verstellt. Gleiche Grundursachen wie P0011, jedoch an der Auslassnockenwelle.'
   affected_components:
     - camshaft_position_actuator
     - oil_control_valve
@@ -1383,8 +1383,8 @@
     en: '"B" Camshaft Position - Timing Over-Retarded (Bank 2)'
     de: Nockenwellenposition "B" — Steuerzeit zu spät (Bank 2)
   description:
-    en: Same fault as P0015 but on bank 2 exhaust camshaft.
-    de: Gleicher Fehler wie P0015, jedoch an der Auslassnockenwelle Bank 2.
+    en: 'The bank 2 exhaust camshaft remains retarded relative to commanded position. Same root causes as P0012 but on the exhaust cam.'
+    de: 'Die Auslassnockenwelle Bank 2 bleibt gegenüber dem Sollwert in Spätstellung. Gleiche Grundursachen wie P0012, jedoch an der Auslassnockenwelle.'
   affected_components:
     - camshaft_position_actuator
     - oil_control_valve
@@ -1501,8 +1501,8 @@
     en: Intake Valve Control Solenoid Circuit Range/Performance (Bank 2)
     de: Einlassventil-Steuermagnetventil — Bereich/Leistung (Bank 2)
   description:
-    en: Same fault as P0026 but on bank 2 of the engine. Diagnosis is identical and on V-engines the bank with code P0028 is the side opposite cylinder 1.
-    de: Gleicher Fehler wie P0026, jedoch an Bank 2 des Motors. Diagnose entspricht P0026; bei V-Motoren ist Bank 2 die Bank gegenüber Zylinder 1.
+    en: 'The ECU detected that the bank 2 intake valve oil control solenoid does not respond as expected. Common causes are sludge in the oil passages, a sticking solenoid, or low oil pressure that prevents proper VVT phasing on the intake side.'
+    de: 'Die Motorsteuerung erkennt, dass das Ölsteuerventil der Einlassnockenwelle Bank 2 nicht wie erwartet reagiert. Übliche Ursachen — Verschlammung der Ölkanäle, hängendes Magnetventil oder zu geringer Öldruck, der die Phasenverstellung der Einlassseite behindert.'
   affected_components:
     - oil_control_valve
     - camshaft_position_actuator
@@ -2007,8 +2007,8 @@
     en: HO2S Heater Control Circuit (Bank 1 Sensor 2)
     de: Lambdasonden-Heizung Schaltung (Bank 1, Sonde 2)
   description:
-    en: Same fault as P0030 but for the downstream (post-catalyst) sensor on bank 1.
-    de: Gleicher Fehler wie P0030, jedoch für die Nach-Kat-Sonde Bank 1.
+    en: 'Generic electrical fault in the heater circuit of the upstream oxygen sensor on bank 1. The ECU monitors the heater current and resistance to ensure the sensor reaches operating temperature for closed-loop fueling.'
+    de: 'Allgemeiner elektrischer Fehler im Heizkreis der Vor-Katalysator-Lambdasonde Bank 1. Die Motorsteuerung überwacht Heizstrom und -widerstand, damit die Sonde die für den Lambda-Regelbetrieb nötige Betriebstemperatur erreicht.'
   affected_components:
     - oxygen_sensor
     - oxygen_sensor_heater
@@ -2045,8 +2045,8 @@
     en: HO2S Heater Control Circuit Low (Bank 1 Sensor 2)
     de: Lambdasonden-Heizung Stromkreis niedrig (Bank 1, Sonde 2)
   description:
-    en: Same fault as P0031 but for the downstream sensor on bank 1.
-    de: Gleicher Fehler wie P0031, jedoch für die Nach-Kat-Sonde Bank 1.
+    en: 'The heater control line for the upstream bank 1 oxygen sensor reads below the expected voltage, typical of a short to ground or low driver current.'
+    de: 'Die Steuerleitung der Heizung der Vor-Kat-Lambdasonde Bank 1 liegt unter der erwarteten Spannung — typisch für einen Masseschluss oder zu geringen Treiberstrom.'
   affected_components:
     - oxygen_sensor_heater
     - sensor_wiring
@@ -2077,8 +2077,8 @@
     en: HO2S Heater Control Circuit High (Bank 1 Sensor 2)
     de: Lambdasonden-Heizung Stromkreis hoch (Bank 1, Sonde 2)
   description:
-    en: Same fault as P0032 but for the downstream sensor on bank 1.
-    de: Gleicher Fehler wie P0032, jedoch für die Nach-Kat-Sonde Bank 1.
+    en: 'The heater control line for the upstream bank 1 oxygen sensor reads above the expected voltage, typical of a short to supply.'
+    de: 'Die Steuerleitung der Heizung der Vor-Kat-Lambdasonde Bank 1 liegt über der erwarteten Spannung — typisch für einen Kurzschluss gegen Versorgungsspannung.'
   affected_components:
     - oxygen_sensor_heater
     - sensor_wiring
@@ -2191,8 +2191,8 @@
     en: Turbocharger/Supercharger Boost Control B Position Exceeded Learning Limit
     de: Turbolader/Kompressor Ladedruck-Regelung B Adaptionsgrenze überschritten
   description:
-    en: Same as P003A but on boost control actuator B (twin-turbo or two-stage system).
-    de: Wie P003A, jedoch am Ladedruck-Aktuator B (Twin-Turbo oder zweistufiges System).
+    en: 'Adaptive learning of boost control actuator A position has hit its limit. Long-term mechanical drift (wastegate wear, linkage stretched) outside compensable range.'
+    de: 'Adaptionswert der Ladedruck-Regelung A hat die Lerngrenze erreicht. Langfristige mechanische Drift (Wastegate-Verschleiß, Gestänge gelängt) außerhalb des Kompensationsbereichs.'
   affected_components:
     - wastegate_actuator_b
     - turbocharger_b
@@ -2298,8 +2298,8 @@
     en: A Camshaft Profile Actuator A Control Performance/Stuck Off Bank 2
     de: A-Nockenwellen-Profilaktuator A klemmt in Aus-Stellung Bank 2
   description:
-    en: Same as P003C but on bank 2 — intake cam profile actuator A stuck disengaged.
-    de: Wie P003C, jedoch Bank 2 — Einlass-Profilaktuator A bleibt aus.
+    en: 'The intake cam profile actuator (profile A, bank 2) does not engage when commanded — stays in low-lift profile. Often hydraulic pin sticking or low oil pressure.'
+    de: 'Der Einlass-Profilaktuator (Profil A, Bank 2) schaltet bei Anforderung nicht zu — bleibt im Klein-Hub. Häufig hängender Hydraulikpin oder zu geringer Öldruck.'
   affected_components:
     - cam_profile_actuator
     - oil_control_valve
@@ -2330,8 +2330,8 @@
     en: A Camshaft Profile Actuator A Control Stuck On Bank 2
     de: A-Nockenwellen-Profilaktuator A klemmt in Ein-Stellung Bank 2
   description:
-    en: Same as P003D but on bank 2 — intake cam profile actuator A stuck engaged.
-    de: Wie P003D, jedoch Bank 2 — Einlass-Profilaktuator A bleibt zugeschaltet.
+    en: 'The intake cam profile actuator (profile A, bank 2) stays engaged when commanded off — stuck in high-lift profile. Idle quality and emissions affected.'
+    de: 'Der Einlass-Profilaktuator (Profil A, Bank 2) bleibt zugeschaltet, obwohl Sollwert auf Aus — hängt im Groß-Hub. Beeinträchtigt Leerlauf und Emissionen.'
   affected_components:
     - cam_profile_actuator
     - oil_control_valve
@@ -2400,8 +2400,8 @@
     en: O2 Sensor Signals Swapped Bank 1 Sensor 2/Bank 2 Sensor 2
     de: O2-Sensorsignale vertauscht Bank 1 Sensor 2/Bank 2 Sensor 2
   description:
-    en: Same fault as P0040 but for the post-cat oxygen sensors — bank 1 sensor 2 and bank 2 sensor 2 swapped.
-    de: Wie P0040, jedoch für die Nachkatalysator-Lambdasonden — Bank 1 Sensor 2 und Bank 2 Sensor 2 vertauscht.
+    en: 'The post-cat oxygen sensors of bank 1 and bank 2 appear to be wired the wrong way around — bank 1 reacts when bank 2 should and vice versa. Typically after recent service.'
+    de: 'Die Nachkatalysator-Lambdasonden von Bank 1 und Bank 2 sind offenbar vertauscht angeschlossen — Bank 1 reagiert auf Bank-2-Bedingungen und umgekehrt. Häufig nach Werkstattarbeit.'
   affected_components:
     - o2_sensor_b1s2
     - o2_sensor_b2s2
@@ -2908,8 +2908,8 @@
     en: HO2S Heater Control Circuit (Bank 2 Sensor 1)
     de: Lambdasonden-Heizung Schaltung (Bank 2, Sonde 1)
   description:
-    en: Same fault as P0030 but for the upstream sensor on bank 2 (V-engines).
-    de: Gleicher Fehler wie P0030, jedoch für die Vor-Kat-Sonde Bank 2 (V-Motoren).
+    en: 'Generic electrical fault in the heater circuit of the upstream oxygen sensor on bank 2. The ECU monitors the heater current and resistance to ensure the sensor reaches operating temperature for closed-loop fueling.'
+    de: 'Allgemeiner elektrischer Fehler im Heizkreis der Vor-Katalysator-Lambdasonde Bank 2. Die Motorsteuerung überwacht Heizstrom und -widerstand, damit die Sonde die für den Lambda-Regelbetrieb nötige Betriebstemperatur erreicht.'
   affected_components:
     - oxygen_sensor
     - oxygen_sensor_heater
@@ -2941,8 +2941,8 @@
     en: HO2S Heater Control Circuit Low (Bank 2 Sensor 1)
     de: Lambdasonden-Heizung Stromkreis niedrig (Bank 2, Sonde 1)
   description:
-    en: Same fault as P0031 but for the upstream sensor on bank 2.
-    de: Gleicher Fehler wie P0031, jedoch für die Vor-Kat-Sonde Bank 2.
+    en: 'The heater control line for the upstream bank 2 oxygen sensor reads below the expected voltage, typical of a short to ground or low driver current.'
+    de: 'Die Steuerleitung der Heizung der Vor-Kat-Lambdasonde Bank 2 liegt unter der erwarteten Spannung — typisch für einen Masseschluss oder zu geringen Treiberstrom.'
   affected_components:
     - oxygen_sensor_heater
     - sensor_wiring
@@ -2973,8 +2973,8 @@
     en: HO2S Heater Control Circuit High (Bank 2 Sensor 1)
     de: Lambdasonden-Heizung Stromkreis hoch (Bank 2, Sonde 1)
   description:
-    en: Same fault as P0032 but for the upstream sensor on bank 2.
-    de: Gleicher Fehler wie P0032, jedoch für die Vor-Kat-Sonde Bank 2.
+    en: 'The heater control line for the upstream bank 2 oxygen sensor reads above the expected voltage, typical of a short to supply.'
+    de: 'Die Steuerleitung der Heizung der Vor-Kat-Lambdasonde Bank 2 liegt über der erwarteten Spannung — typisch für einen Kurzschluss gegen Versorgungsspannung.'
   affected_components:
     - oxygen_sensor_heater
     - sensor_wiring
@@ -3041,8 +3041,8 @@
     en: HO2S Heater Resistance Bank 1 Sensor 2
     de: Lambdasondenheizung Widerstand Bank 1 Sensor 2
   description:
-    en: Same as P0053 on bank 1 sensor 2 (post-cat). Heater resistance out of range.
-    de: Wie P0053 auf Bank 1 Sensor 2 (nach Kat). Heizungswiderstand außerhalb des Bereichs.
+    en: 'The heater resistance of the bank 1, sensor 2 oxygen sensor is outside its specified range. Sensor heater aging or short between heater and signal.'
+    de: 'Der Heizungswiderstand der Lambdasonde Bank 1 Sensor 2 liegt außerhalb der Spezifikation. Heizung gealtert oder Kurzschluss zwischen Heizung und Signal.'
   affected_components:
     - o2_sensor_b1s2
   common_causes:
@@ -3072,8 +3072,8 @@
     en: HO2S Heater Resistance Bank 1 Sensor 3
     de: Lambdasondenheizung Widerstand Bank 1 Sensor 3
   description:
-    en: Same as P0053 but on bank 1 sensor 3 (third sensor downstream).
-    de: Wie P0053, jedoch Bank 1 Sensor 3 (dritter Sensor stromabwärts).
+    en: 'The heater resistance of the bank 1, sensor 3 oxygen sensor is outside its specified range. Sensor heater aging or short between heater and signal.'
+    de: 'Der Heizungswiderstand der Lambdasonde Bank 1 Sensor 3 liegt außerhalb der Spezifikation. Heizung gealtert oder Kurzschluss zwischen Heizung und Signal.'
   affected_components:
     - o2_sensor_b1s3
   common_causes:
@@ -3103,8 +3103,8 @@
     en: HO2S Heater Control Circuit (Bank 2 Sensor 2)
     de: Lambdasonden-Heizung Schaltung (Bank 2, Sonde 2)
   description:
-    en: Same fault as P0030 but for the downstream sensor on bank 2.
-    de: Gleicher Fehler wie P0030, jedoch für die Nach-Kat-Sonde Bank 2.
+    en: 'Generic electrical fault in the heater circuit of the upstream oxygen sensor on bank 2. The ECU monitors the heater current and resistance to ensure the sensor reaches operating temperature for closed-loop fueling.'
+    de: 'Allgemeiner elektrischer Fehler im Heizkreis der Vor-Katalysator-Lambdasonde Bank 2. Die Motorsteuerung überwacht Heizstrom und -widerstand, damit die Sonde die für den Lambda-Regelbetrieb nötige Betriebstemperatur erreicht.'
   affected_components:
     - oxygen_sensor
     - oxygen_sensor_heater
@@ -3136,8 +3136,8 @@
     en: HO2S Heater Control Circuit Low (Bank 2 Sensor 2)
     de: Lambdasonden-Heizung Stromkreis niedrig (Bank 2, Sonde 2)
   description:
-    en: Same fault as P0031 but for the downstream sensor on bank 2.
-    de: Gleicher Fehler wie P0031, jedoch für die Nach-Kat-Sonde Bank 2.
+    en: 'The heater control line for the upstream bank 2 oxygen sensor reads below the expected voltage, typical of a short to ground or low driver current.'
+    de: 'Die Steuerleitung der Heizung der Vor-Kat-Lambdasonde Bank 2 liegt unter der erwarteten Spannung — typisch für einen Masseschluss oder zu geringen Treiberstrom.'
   affected_components:
     - oxygen_sensor_heater
     - sensor_wiring
@@ -3168,8 +3168,8 @@
     en: HO2S Heater Control Circuit High (Bank 2 Sensor 2)
     de: Lambdasonden-Heizung Stromkreis hoch (Bank 2, Sonde 2)
   description:
-    en: Same fault as P0032 but for the downstream sensor on bank 2.
-    de: Gleicher Fehler wie P0032, jedoch für die Nach-Kat-Sonde Bank 2.
+    en: 'The heater control line for the upstream bank 2 oxygen sensor reads above the expected voltage, typical of a short to supply.'
+    de: 'Die Steuerleitung der Heizung der Vor-Kat-Lambdasonde Bank 2 liegt über der erwarteten Spannung — typisch für einen Kurzschluss gegen Versorgungsspannung.'
   affected_components:
     - oxygen_sensor_heater
     - sensor_wiring
@@ -3295,8 +3295,8 @@
     en: B Camshaft Profile Actuator A Control Performance/Stuck Off Bank 2
     de: B-Nockenwellen-Profilaktuator A klemmt in Aus-Stellung Bank 2
   description:
-    en: Same as P005A on bank 2.
-    de: Wie P005A, jedoch Bank 2.
+    en: 'Exhaust cam profile actuator A on bank 2 stuck disengaged. Same fault pattern as P003C but on the exhaust cam.'
+    de: 'Auslass-Profilaktuator A auf Bank 2 bleibt aus. Gleiches Fehlerbild wie P003C, jedoch Auslass.'
   affected_components:
     - cam_profile_actuator_exhaust
     - oil_control_valve
@@ -3327,8 +3327,8 @@
     en: B Camshaft Profile Actuator A Control Stuck On Bank 2
     de: B-Nockenwellen-Profilaktuator A klemmt in Ein-Stellung Bank 2
   description:
-    en: Same as P005B on bank 2.
-    de: Wie P005B, jedoch Bank 2.
+    en: 'Exhaust cam profile actuator A on bank 2 stuck engaged. Same fault pattern as P003D on the exhaust cam.'
+    de: 'Auslass-Profilaktuator A auf Bank 2 bleibt zugeschaltet. Wie P003D, jedoch Auslass.'
   affected_components:
     - cam_profile_actuator_exhaust
     - oil_control_valve
@@ -4523,8 +4523,8 @@
     en: Intake Valve Control Solenoid Circuit Bank 2
     de: Einlassventilsteuerungs-Magnetventil Schaltkreis Bank 2
   description:
-    en: Same as P0075 on bank 2.
-    de: Wie P0075, jedoch Bank 2.
+    en: 'Generic electrical fault on the intake-valve control solenoid for bank 2 (used to switch valve lift, deactivation or VVL profiles).'
+    de: 'Allgemeiner elektrischer Fehler am Einlassventilsteuerungs-Magnetventil Bank 2 (für Ventilhub-Umschaltung, Zylinderabschaltung oder VVL).'
   affected_components:
     - intake_valve_solenoid
     - solenoid_wiring
@@ -4555,8 +4555,8 @@
     en: Intake Valve Control Solenoid Circuit Low Bank 2
     de: Einlassventilsteuerungs-Magnetventil Schaltkreis niedrig Bank 2
   description:
-    en: Same as P0076 on bank 2.
-    de: Wie P0076, jedoch Bank 2.
+    en: 'Intake valve solenoid bank 2 control voltage below expected range. Short to ground or low-resistance fault.'
+    de: 'Steuerspannung am Einlassventil-Magnetventil Bank 2 unter Sollbereich. Masseschluss oder niederohmiger Fehler.'
   affected_components:
     - intake_valve_solenoid
     - solenoid_wiring
@@ -4587,8 +4587,8 @@
     en: Intake Valve Control Solenoid Circuit High Bank 2
     de: Einlassventilsteuerungs-Magnetventil Schaltkreis hoch Bank 2
   description:
-    en: Same as P0077 on bank 2.
-    de: Wie P0077, jedoch Bank 2.
+    en: 'Intake valve solenoid bank 2 control voltage above expected range. Short to power or open ground.'
+    de: 'Steuerspannung am Einlassventil-Magnetventil Bank 2 über Sollbereich. Plus-Schluss oder offene Masse.'
   affected_components:
     - intake_valve_solenoid
     - solenoid_wiring
@@ -4619,8 +4619,8 @@
     en: Exhaust Valve Control Solenoid Circuit Bank 2
     de: Auslassventilsteuerungs-Magnetventil Schaltkreis Bank 2
   description:
-    en: Same as P0078 on bank 2.
-    de: Wie P0078, jedoch Bank 2.
+    en: 'Generic electrical fault on the exhaust-valve control solenoid for bank 2.'
+    de: 'Allgemeiner elektrischer Fehler am Auslassventilsteuerungs-Magnetventil Bank 2.'
   affected_components:
     - exhaust_valve_solenoid
     - solenoid_wiring
@@ -4651,8 +4651,8 @@
     en: Exhaust Valve Control Solenoid Circuit Low Bank 2
     de: Auslassventilsteuerungs-Magnetventil Schaltkreis niedrig Bank 2
   description:
-    en: Same as P0079 on bank 2.
-    de: Wie P0079, jedoch Bank 2.
+    en: 'Exhaust valve solenoid bank 2 control voltage below expected range.'
+    de: 'Steuerspannung am Auslassventil-Magnetventil Bank 2 unter Sollbereich.'
   affected_components:
     - exhaust_valve_solenoid
     - solenoid_wiring
@@ -4683,8 +4683,8 @@
     en: Exhaust Valve Control Solenoid Circuit High Bank 2
     de: Auslassventilsteuerungs-Magnetventil Schaltkreis hoch Bank 2
   description:
-    en: Same as P0080 on bank 2.
-    de: Wie P0080, jedoch Bank 2.
+    en: 'Exhaust valve solenoid bank 2 control voltage above expected range. Short to power or open ground.'
+    de: 'Steuerspannung am Auslassventil-Magnetventil Bank 2 über Sollbereich. Plus-Schluss oder offene Masse.'
   affected_components:
     - exhaust_valve_solenoid
     - solenoid_wiring
@@ -5637,8 +5637,8 @@
     en: Charge Air Cooler Temperature Sensor Circuit Low Bank 2
     de: Ladeluftkühler-Temperatursensor Schaltkreis niedrig Bank 2
   description:
-    en: Same as P007C on bank 2 — short to ground.
-    de: Wie P007C, jedoch Bank 2 — Masseschluss.
+    en: 'Charge air cooler temperature sensor signal voltage on bank 2 below expected range. Typically a short to ground.'
+    de: 'Signalspannung des Ladeluftkühler-Temperatursensors Bank 2 unter Sollbereich. Meist Masseschluss.'
   affected_components:
     - cac_temperature_sensor
     - sensor_wiring
@@ -5669,8 +5669,8 @@
     en: Charge Air Cooler Temperature Sensor Circuit High Bank 2
     de: Ladeluftkühler-Temperatursensor Schaltkreis hoch Bank 2
   description:
-    en: Same as P007D on bank 2 — open circuit or short to power.
-    de: Wie P007D, jedoch Bank 2 — Unterbrechung oder Plus-Schluss.
+    en: 'Charge air cooler temperature sensor signal voltage on bank 2 above expected range. Typically open circuit or short to power.'
+    de: 'Signalspannung des Ladeluftkühler-Temperatursensors Bank 2 über Sollbereich. Meist Unterbrechung oder Plus-Schluss.'
   affected_components:
     - cac_temperature_sensor
     - sensor_wiring
@@ -5701,8 +5701,8 @@
     en: Charge Air Cooler Temperature Sensor Circuit Intermittent/Erratic Bank 2
     de: Ladeluftkühler-Temperatursensor sporadisch/unstetig Bank 2
   description:
-    en: Same as P007E on bank 2 — intermittent signal.
-    de: Wie P007E, jedoch Bank 2 — sporadisches Signal.
+    en: 'Intermittent dropouts or noise on the charge air cooler temperature sensor signal on bank 2.'
+    de: 'Sporadische Aussetzer oder Störungen am Signal des Ladeluftkühler-Temperatursensors Bank 2.'
   affected_components:
     - cac_temperature_sensor
     - sensor_wiring
@@ -5733,8 +5733,8 @@
     en: Intake Air Temperature Sensor 2 Circuit Bank 2
     de: Ansauglufttemperatursensor 2 Schaltkreis Bank 2
   description:
-    en: Same as P0095 on bank 2.
-    de: Wie P0095, jedoch Bank 2.
+    en: 'Generic electrical fault on intake air temperature sensor 2 (typically post-intercooler) on bank 2.'
+    de: 'Allgemeiner elektrischer Fehler am Ansauglufttemperatursensor 2 (meist nach Ladeluftkühler) Bank 2.'
   affected_components:
     - iat_sensor_2
     - sensor_wiring
@@ -5765,8 +5765,8 @@
     en: Intake Air Temperature Sensor 2 Circuit Range/Performance Bank 2
     de: Ansauglufttemperatursensor 2 Bereich/Leistung Bank 2
   description:
-    en: Same as P0096 on bank 2.
-    de: Wie P0096, jedoch Bank 2.
+    en: 'IAT sensor 2 reading on bank 2 is electrically valid but implausible — does not match other temperature sources or expected behavior.'
+    de: 'Wert des IAT-Sensors 2 Bank 2 elektrisch plausibel, aber unstimmig — passt nicht zu anderen Temperaturquellen oder erwartetem Verhalten.'
   affected_components:
     - iat_sensor_2
   common_causes:
@@ -5796,8 +5796,8 @@
     en: Intake Air Temperature Sensor 2 Circuit Low Bank 2
     de: Ansauglufttemperatursensor 2 Schaltkreis niedrig Bank 2
   description:
-    en: Same as P0097 on bank 2.
-    de: Wie P0097, jedoch Bank 2.
+    en: 'IAT sensor 2 bank 2 signal voltage below expected range — short to ground.'
+    de: 'Signalspannung IAT-Sensor 2 Bank 2 unter Sollbereich — Masseschluss.'
   affected_components:
     - iat_sensor_2
     - sensor_wiring
@@ -5828,8 +5828,8 @@
     en: Intake Air Temperature Sensor 2 Circuit High Bank 2
     de: Ansauglufttemperatursensor 2 Schaltkreis hoch Bank 2
   description:
-    en: Same as P0098 on bank 2.
-    de: Wie P0098, jedoch Bank 2.
+    en: 'IAT sensor 2 bank 2 signal voltage above expected range — open circuit or short to power.'
+    de: 'Signalspannung IAT-Sensor 2 Bank 2 über Sollbereich — Unterbrechung oder Plus-Schluss.'
   affected_components:
     - iat_sensor_2
     - sensor_wiring
@@ -5860,8 +5860,8 @@
     en: Intake Air Temperature Sensor 2 Circuit Intermittent/Erratic Bank 2
     de: Ansauglufttemperatursensor 2 sporadisch/unstetig Bank 2
   description:
-    en: Same as P0099 on bank 2.
-    de: Wie P0099, jedoch Bank 2.
+    en: 'Intermittent dropouts or noise on IAT sensor 2 bank 2 signal.'
+    de: 'Sporadische Aussetzer oder Störungen am Signal des IAT-Sensors 2 Bank 2.'
   affected_components:
     - iat_sensor_2
     - sensor_wiring
@@ -6082,8 +6082,8 @@
     en: Turbocharger/Supercharger Boost Control B Module Performance
     de: Turbolader/Kompressor Ladedruckregelmodul B Leistung
   description:
-    en: Same as P00AF for boost control module B.
-    de: Wie P00AF, jedoch für Steuermodul B.
+    en: 'The dedicated boost control module A reports a performance fault — internal driver, sensor or self-diagnostic flagged an issue.'
+    de: 'Das dedizierte Ladedruck-Steuermodul B meldet einen Leistungsfehler — interne Endstufe, Sensor oder Eigendiagnose hat einen Fehler erkannt.'
   affected_components:
     - boost_control_module_b
   common_causes:
@@ -6344,8 +6344,8 @@
     en: MAP - Mass or Volume Air Flow Correlation Bank 2
     de: MAP-Saugrohrdruck zu Luftmasse Korrelation Bank 2
   description:
-    en: Same as P006A on bank 2 — implausible relationship between MAP and MAF.
-    de: Wie P006A, jedoch Bank 2 — unplausible Beziehung zwischen MAP und MAF.
+    en: 'The expected relationship between manifold absolute pressure (MAP) and mass airflow (MAF) on bank 2 is violated. One of the two sensors is reading incorrectly.'
+    de: 'Die erwartete Beziehung zwischen Saugrohrdrucksensor (MAP) und Luftmassenmesser (MAF) auf Bank 2 ist verletzt. Einer der beiden Sensoren liest fehlerhaft.'
   affected_components:
     - map_sensor
     - mass_air_flow_sensor
@@ -6541,8 +6541,8 @@
     en: Mass or Volume Air Flow B Circuit Range/Performance - Air Flow Too Low
     de: Luftmassenmesser B Bereich/Leistung - Luftstrom zu niedrig
   description:
-    en: Same as P00BC for MAF sensor B.
-    de: Wie P00BC, jedoch für LMM B.
+    en: 'MAF sensor A reads air flow lower than physically expected for the operating point. Often contaminated MAF or large vacuum leak after the MAF.'
+    de: 'LMM A meldet einen geringeren Luftmassenstrom als bei diesem Betriebspunkt physikalisch erwartet. Häufig verschmutzter LMM oder größeres Leck nach dem LMM.'
   affected_components:
     - mass_air_flow_sensor_b
   common_causes:
@@ -6572,8 +6572,8 @@
     en: Mass or Volume Air Flow B Circuit Range/Performance - Air Flow Too High
     de: Luftmassenmesser B Bereich/Leistung - Luftstrom zu hoch
   description:
-    en: Same as P00BD for MAF sensor B.
-    de: Wie P00BD, jedoch für LMM B.
+    en: 'MAF sensor A reads air flow higher than physically expected — sensor drift to high or signal noise.'
+    de: 'LMM A meldet einen höheren Luftmassenstrom als physikalisch erwartet — Sensordrift nach oben oder Signalstörung.'
   affected_components:
     - mass_air_flow_sensor_b
   common_causes:
@@ -7122,8 +7122,8 @@
     en: Barometric Pressure - Turbocharger/Supercharger Boost Sensor B Correlation
     de: Atmosphärendruck zu Ladedrucksensor B Korrelation
   description:
-    en: Same as P00CF for boost sensor B.
-    de: Wie P00CF, jedoch Ladedrucksensor B.
+    en: 'Barometric pressure and boost sensor B readings disagree at engine off — they should match without boost.'
+    de: 'Atmosphärendruck und Ladedrucksensor B weichen bei stehendem Motor ab — bei fehlendem Ladedruck sollten sie übereinstimmen.'
   affected_components:
     - barometric_pressure_sensor
     - boost_pressure_sensor_b
@@ -7185,8 +7185,8 @@
     en: HO2S Heater Control Circuit Range/Performance Bank 1 Sensor 2
     de: Lambdasondenheizung Bereich/Leistung Bank 1 Sensor 2
   description:
-    en: Same as P00D1 on bank 1 sensor 2.
-    de: Wie P00D1, jedoch Bank 1 Sensor 2.
+    en: 'Heater control of bank 1 sensor 2 is electrically OK but does not heat the sensor as expected — element aged or wiring resistance high.'
+    de: 'Heizung Bank 1 Sensor 2 ist elektrisch in Ordnung, heizt jedoch nicht erwartungsgemäß — Element gealtert oder Übergangswiderstand zu hoch.'
   affected_components:
     - o2_sensor_b1s2
   common_causes:
@@ -7216,8 +7216,8 @@
     en: HO2S Heater Control Circuit Range/Performance Bank 2 Sensor 1
     de: Lambdasondenheizung Bereich/Leistung Bank 2 Sensor 1
   description:
-    en: Same as P00D1 on bank 2 sensor 1.
-    de: Wie P00D1, jedoch Bank 2 Sensor 1.
+    en: 'Heater control of bank 2 sensor 1 is electrically OK but does not heat the sensor as expected — element aged or wiring resistance high.'
+    de: 'Heizung Bank 2 Sensor 1 ist elektrisch in Ordnung, heizt jedoch nicht erwartungsgemäß — Element gealtert oder Übergangswiderstand zu hoch.'
   affected_components:
     - o2_sensor_b2s1
   common_causes:
@@ -7247,8 +7247,8 @@
     en: HO2S Heater Control Circuit Range/Performance Bank 2 Sensor 2
     de: Lambdasondenheizung Bereich/Leistung Bank 2 Sensor 2
   description:
-    en: Same as P00D1 on bank 2 sensor 2.
-    de: Wie P00D1, jedoch Bank 2 Sensor 2.
+    en: 'Heater control of bank 2 sensor 2 is electrically OK but does not heat the sensor as expected — element aged or wiring resistance high.'
+    de: 'Heizung Bank 2 Sensor 2 ist elektrisch in Ordnung, heizt jedoch nicht erwartungsgemäß — Element gealtert oder Übergangswiderstand zu hoch.'
   affected_components:
     - o2_sensor_b2s2
   common_causes:
@@ -7311,8 +7311,8 @@
     en: HO2S Sensor Correlation Bank 2 Sensor 1/Bank 2 Sensor 2
     de: Lambdasonden-Korrelation Bank 2 Sensor 1/Sensor 2
   description:
-    en: Same as P00D5 on bank 2.
-    de: Wie P00D5, jedoch Bank 2.
+    en: 'Pre- and post-cat oxygen sensors on bank 2 do not correlate as expected — typical sign of catalyst inefficiency or one failed sensor.'
+    de: 'Vor- und Nachkat-Lambdasonden Bank 2 korrelieren nicht erwartungsgemäß — typisches Zeichen für Kat-Wirkungsverlust oder defekten Sensor.'
   affected_components:
     - o2_sensor_b2s1
     - o2_sensor_b2s2
@@ -7376,8 +7376,8 @@
     en: Turbocharger/Supercharger Bypass Valve B Temperature Too High
     de: Turbolader/Kompressor Bypassventil B Temperatur zu hoch
   description:
-    en: Same as P00D7 for bypass valve B.
-    de: Wie P00D7, jedoch Bypassventil B.
+    en: 'Bypass valve A temperature exceeded its safe limit — heat soak from prolonged high-load operation.'
+    de: 'Temperatur am Bypassventil A hat den Sicherheitswert überschritten — Wärmestau nach längerem Volllastbetrieb.'
   affected_components:
     - bypass_valve_b
     - intercooler
@@ -7822,8 +7822,8 @@
     en: Intake Air Pressure Measurement System - Multiple Sensor Correlation Bank 2
     de: Saugrohrdruck-Messsystem - Multi-Sensor Korrelation Bank 2
   description:
-    en: Same as P00C7 on bank 2.
-    de: Wie P00C7, jedoch Bank 2.
+    en: 'Multiple intake air pressure sensors on bank 2 disagree with each other beyond the plausible deviation. One has drifted.'
+    de: 'Mehrere Saugrohrdrucksensoren auf Bank 2 weichen über das plausible Maß voneinander ab. Einer ist verschoben.'
   affected_components:
     - map_sensor
     - boost_pressure_sensor
@@ -7854,8 +7854,8 @@
     en: Intake Air Temperature Measurement System - Multiple Sensor Correlation Bank 2
     de: Ansauglufttemperatur-Messsystem - Multi-Sensor Korrelation Bank 2
   description:
-    en: Same as P00CE on bank 2.
-    de: Wie P00CE, jedoch Bank 2.
+    en: 'Multiple intake air temperature sensors on bank 2 disagree beyond plausible limits.'
+    de: 'Mehrere Ansauglufttemperatursensoren auf Bank 2 weichen über das plausible Maß ab.'
   affected_components:
     - iat_sensor_1
     - iat_sensor_2
@@ -8045,8 +8045,8 @@
     en: Intake Air Temperature Sensor 3 Circuit Bank 2
     de: Ansauglufttemperatursensor 3 Schaltkreis Bank 2
   description:
-    en: Same as P00E8 on bank 2.
-    de: Wie P00E8, jedoch Bank 2.
+    en: 'Generic electrical fault on intake air temperature sensor 3 (third measurement location, e.g. in throttle or after intercooler) on bank 2.'
+    de: 'Allgemeiner elektrischer Fehler am Ansauglufttemperatursensor 3 (dritte Messstelle, z. B. an Drosselklappe oder nach LLK) Bank 2.'
   affected_components:
     - iat_sensor_3
     - sensor_wiring
@@ -8077,8 +8077,8 @@
     en: Intake Air Temperature Sensor 3 Circuit Range/Performance Bank 2
     de: Ansauglufttemperatursensor 3 Bereich/Leistung Bank 2
   description:
-    en: Same as P00E9 on bank 2.
-    de: Wie P00E9, jedoch Bank 2.
+    en: 'IAT sensor 3 reading on bank 2 implausible.'
+    de: 'Wert des IAT-Sensors 3 Bank 2 unstimmig.'
   affected_components:
     - iat_sensor_3
   common_causes:
@@ -8108,8 +8108,8 @@
     en: Intake Air Temperature Sensor 3 Circuit Low Bank 2
     de: Ansauglufttemperatursensor 3 Schaltkreis niedrig Bank 2
   description:
-    en: Same as P00EA on bank 2.
-    de: Wie P00EA, jedoch Bank 2.
+    en: 'IAT sensor 3 bank 2 signal voltage below expected range.'
+    de: 'Signalspannung IAT-Sensor 3 Bank 2 unter Sollbereich.'
   affected_components:
     - iat_sensor_3
     - sensor_wiring
@@ -8140,8 +8140,8 @@
     en: Intake Air Temperature Sensor 3 Circuit High Bank 2
     de: Ansauglufttemperatursensor 3 Schaltkreis hoch Bank 2
   description:
-    en: Same as P00EB on bank 2.
-    de: Wie P00EB, jedoch Bank 2.
+    en: 'IAT sensor 3 bank 2 signal voltage above expected range.'
+    de: 'Signalspannung IAT-Sensor 3 Bank 2 über Sollbereich.'
   affected_components:
     - iat_sensor_3
     - sensor_wiring
@@ -8172,8 +8172,8 @@
     en: Intake Air Temperature Sensor 3 Circuit Intermittent/Erratic Bank 2
     de: Ansauglufttemperatursensor 3 sporadisch/unstetig Bank 2
   description:
-    en: Same as P00EC on bank 2.
-    de: Wie P00EC, jedoch Bank 2.
+    en: 'Intermittent signal from IAT sensor 3 on bank 2.'
+    de: 'Sporadisches Signal vom IAT-Sensor 3 Bank 2.'
   affected_components:
     - iat_sensor_3
     - sensor_wiring
@@ -8363,8 +8363,8 @@
     en: Barometric Pressure - Turbocharger/Supercharger Inlet Pressure Correlation Bank 2
     de: Atmosphärendruck zu Turbo-Eingangsdruck Korrelation Bank 2
   description:
-    en: Same as P006D on bank 2 — barometric and turbo inlet pressures disagree.
-    de: Wie P006D, jedoch Bank 2 — Atmosphären- und Turbo-Eingangsdruck weichen ab.
+    en: 'The relationship between barometric pressure and turbo inlet pressure (bank 2) is implausible — at engine off the two should match. Indicates an inlet sensor or barometric sensor fault.'
+    de: 'Die Beziehung zwischen Atmosphärendruck und Turbo-Eingangsdruck (Bank 2) ist unplausibel — bei stehendem Motor sollten beide übereinstimmen. Hinweis auf Defekt am Eingangs- oder Atmosphärendrucksensor.'
   affected_components:
     - barometric_pressure_sensor
     - turbo_inlet_pressure_sensor_b2
@@ -9730,8 +9730,8 @@
     en: Charge Air Cooler Temperature/Intake Air Temperature Correlation Bank 2
     de: Ladeluftkühler- zu Ansauglufttemperatur Korrelation Bank 2
   description:
-    en: Same as P011C on bank 2.
-    de: Wie P011C, jedoch Bank 2.
+    en: 'CAC temperature and IAT on bank 2 disagree at long soak.'
+    de: 'CAC-Temperatur und IAT auf Bank 2 weichen nach langer Standzeit ab.'
   affected_components:
     - cac_temperature_sensor
     - iat_sensor
@@ -9794,8 +9794,8 @@
     en: Engine Coolant Temperature 2 / Ambient Air Temperature Correlation
     de: Kühlmitteltemperatur 2 zu Außenlufttemperatur Korrelation
   description:
-    en: Same as P011E for ECT sensor 2.
-    de: Wie P011E, jedoch ECT-Sensor 2.
+    en: 'ECT 1 and ambient air temperature disagree after long soak — both should match within tolerance.'
+    de: 'ECT 1 und Außenlufttemperatur weichen nach längerer Standzeit ab — beide sollten übereinstimmen.'
   affected_components:
     - ect_sensor_2
     - ambient_air_temp_sensor
@@ -10852,8 +10852,8 @@
     en: O2 Sensor Slow Response - Rich to Lean Bank 2 Sensor 2
     de: Lambdasonde langsame Reaktion - fett nach mager Bank 2 Sensor 2
   description:
-    en: Same as P013A on bank 2.
-    de: Wie P013A, jedoch Bank 2.
+    en: 'Post-cat O2 sensor on bank 2 responds too slowly when mixture transitions from rich to lean. Sensor aging or contamination.'
+    de: 'Nachkat-Lambdasonde Bank 2 reagiert beim Übergang fett→mager zu langsam. Sensoralterung oder Vergiftung.'
   affected_components:
     - o2_sensor_b2s2
   common_causes:
@@ -10883,8 +10883,8 @@
     en: O2 Sensor Slow Response - Lean to Rich Bank 2 Sensor 2
     de: Lambdasonde langsame Reaktion - mager nach fett Bank 2 Sensor 2
   description:
-    en: Same as P013B on bank 2.
-    de: Wie P013B, jedoch Bank 2.
+    en: 'Post-cat O2 sensor on bank 2 responds too slowly when mixture transitions from lean to rich.'
+    de: 'Nachkat-Lambdasonde Bank 2 reagiert beim Übergang mager→fett zu langsam.'
   affected_components:
     - o2_sensor_b2s2
   common_causes:
@@ -11352,8 +11352,8 @@
     en: O2 Sensor Delayed Response - Rich to Lean Bank 2 Sensor 2
     de: Lambdasonde verzögerte Reaktion - fett nach mager Bank 2 Sensor 2
   description:
-    en: Same as P013E on bank 2.
-    de: Wie P013E, jedoch Bank 2.
+    en: 'Post-cat O2 sensor on bank 2 reacts only after delay when mixture switches rich to lean.'
+    de: 'Nachkat-Lambdasonde Bank 2 reagiert mit Verzögerung beim Übergang fett→mager.'
   affected_components:
     - o2_sensor_b2s2
   common_causes:
@@ -11383,8 +11383,8 @@
     en: O2 Sensor Delayed Response - Lean to Rich Bank 2 Sensor 2
     de: Lambdasonde verzögerte Reaktion - mager nach fett Bank 2 Sensor 2
   description:
-    en: Same as P013F on bank 2.
-    de: Wie P013F, jedoch Bank 2.
+    en: 'Post-cat O2 sensor on bank 2 reacts only after delay when mixture switches lean to rich.'
+    de: 'Nachkat-Lambdasonde Bank 2 reagiert mit Verzögerung beim Übergang mager→fett.'
   affected_components:
     - o2_sensor_b2s2
   common_causes:
@@ -11476,8 +11476,8 @@
     en: O2 Sensor Slow Response - Rich to Lean Bank 2 Sensor 1
     de: Lambdasonde langsame Reaktion - fett nach mager Bank 2 Sensor 1
   description:
-    en: Same as P014C on bank 2.
-    de: Wie P014C, jedoch Bank 2.
+    en: 'Pre-cat O2 sensor on bank 2 responds too slowly when mixture transitions from rich to lean.'
+    de: 'Vor-Kat-Lambdasonde Bank 2 reagiert beim Übergang fett→mager zu langsam.'
   affected_components:
     - o2_sensor_b2s1
   common_causes:
@@ -11507,8 +11507,8 @@
     en: O2 Sensor Slow Response - Lean to Rich Bank 2 Sensor 1
     de: Lambdasonde langsame Reaktion - mager nach fett Bank 2 Sensor 1
   description:
-    en: Same as P014D on bank 2.
-    de: Wie P014D, jedoch Bank 2.
+    en: 'Pre-cat O2 sensor on bank 2 responds too slowly when mixture transitions from lean to rich.'
+    de: 'Vor-Kat-Lambdasonde Bank 2 reagiert beim Übergang mager→fett zu langsam.'
   affected_components:
     - o2_sensor_b2s1
   common_causes:
@@ -11972,8 +11972,8 @@
     en: O2 Sensor Delayed Response - Rich to Lean Bank 2 Sensor 1
     de: Lambdasonde verzögerte Reaktion - fett nach mager Bank 2 Sensor 1
   description:
-    en: Same as P015A on bank 2.
-    de: Wie P015A, jedoch Bank 2.
+    en: 'Pre-cat O2 sensor on bank 2 reacts only after delay when mixture switches rich to lean.'
+    de: 'Vor-Kat-Lambdasonde Bank 2 reagiert mit Verzögerung beim Übergang fett→mager.'
   affected_components:
     - o2_sensor_b2s1
   common_causes:
@@ -12003,8 +12003,8 @@
     en: O2 Sensor Delayed Response - Lean to Rich Bank 2 Sensor 1
     de: Lambdasonde verzögerte Reaktion - mager nach fett Bank 2 Sensor 1
   description:
-    en: Same as P015B on bank 2.
-    de: Wie P015B, jedoch Bank 2.
+    en: 'Pre-cat O2 sensor on bank 2 reacts only after delay when mixture switches lean to rich.'
+    de: 'Vor-Kat-Lambdasonde Bank 2 reagiert mit Verzögerung beim Übergang mager→fett.'
   affected_components:
     - o2_sensor_b2s1
   common_causes:
@@ -14195,8 +14195,8 @@
     en: O2 Sensor Delayed Response - Rich to Lean Bank 2 Sensor 3
     de: Lambdasonde verzögerte Reaktion - fett nach mager Bank 2 Sensor 3
   description:
-    en: Same as P019A on bank 2.
-    de: Wie P019A, jedoch Bank 2.
+    en: 'Bank 2 sensor 3 O2 sensor reacts only after delay during rich-to-lean transitions.'
+    de: 'Lambdasonde Bank 2 Sensor 3 reagiert mit Verzögerung beim Übergang fett→mager.'
   affected_components:
     - o2_sensor_b2s3
   common_causes:
@@ -14226,8 +14226,8 @@
     en: O2 Sensor Delayed Response - Lean to Rich Bank 2 Sensor 3
     de: Lambdasonde verzögerte Reaktion - mager nach fett Bank 2 Sensor 3
   description:
-    en: Same as P019B on bank 2.
-    de: Wie P019B, jedoch Bank 2.
+    en: 'Bank 2 sensor 3 O2 sensor reacts only after delay during lean-to-rich transitions.'
+    de: 'Lambdasonde Bank 2 Sensor 3 reagiert mit Verzögerung beim Übergang mager→fett.'
   affected_components:
     - o2_sensor_b2s3
   common_causes:
@@ -16721,8 +16721,8 @@
     en: Engine Coolant Heater B Control Circuit/Open
     de: Kühlmittel-Heizer B Schaltkreis unterbrochen
   description:
-    en: Same as P01E8 for coolant heater B.
-    de: Wie P01E8, jedoch Kühlmittel-Heizer B.
+    en: 'Open circuit at engine coolant heater A (electric heater used for fast warm-up or hybrid coolant management).'
+    de: 'Unterbrechung am Kühlmittel-Heizer A (elektrischer Heizer für schnelles Warmlaufen oder Hybrid-Kühlmittelmanagement).'
   affected_components:
     - coolant_heater_b
     - heater_wiring
@@ -16753,8 +16753,8 @@
     en: Engine Coolant Heater B Control Circuit Low
     de: Kühlmittel-Heizer B Schaltkreis niedrig
   description:
-    en: Same as P01E9 for coolant heater B.
-    de: Wie P01E9, jedoch Kühlmittel-Heizer B.
+    en: 'Coolant heater A control voltage below expected range.'
+    de: 'Steuerspannung Kühlmittel-Heizer A unter Sollbereich.'
   affected_components:
     - coolant_heater_b
     - heater_wiring
@@ -16785,8 +16785,8 @@
     en: Engine Coolant Heater B Control Circuit High
     de: Kühlmittel-Heizer B Schaltkreis hoch
   description:
-    en: Same as P01EA for coolant heater B.
-    de: Wie P01EA, jedoch Kühlmittel-Heizer B.
+    en: 'Coolant heater A control voltage above expected range.'
+    de: 'Steuerspannung Kühlmittel-Heizer A über Sollbereich.'
   affected_components:
     - coolant_heater_b
     - heater_wiring
@@ -16817,8 +16817,8 @@
     en: Engine Coolant Heater B Control Circuit Performance
     de: Kühlmittel-Heizer B Schaltkreis Leistung
   description:
-    en: Same as P01EB for coolant heater B.
-    de: Wie P01EB, jedoch Kühlmittel-Heizer B.
+    en: 'Coolant heater A does not heat the coolant as expected when commanded.'
+    de: 'Kühlmittel-Heizer A heizt das Kühlmittel bei Anforderung nicht erwartungsgemäß.'
   affected_components:
     - coolant_heater_b
   common_causes:
@@ -17133,8 +17133,8 @@
     en: Engine Coolant Heater B Control Circuit Driver Current/Temperature Too High
     de: Kühlmittel-Heizer B Endstufen-Strom/Temperatur zu hoch
   description:
-    en: Same as P01F8 for coolant heater B.
-    de: Wie P01F8, jedoch Kühlmittel-Heizer B.
+    en: 'Driver stage of coolant heater A reports overcurrent or overtemperature. Likely short or thermal shutdown.'
+    de: 'Endstufe des Kühlmittel-Heizers A meldet Überstrom oder Übertemperatur. Wahrscheinlich Kurzschluss oder thermische Abschaltung.'
   affected_components:
     - coolant_heater_b
     - heater_driver
@@ -17430,8 +17430,8 @@
     en: Injector Circuit Malfunction — Cylinder 2
     de: Injektor Schaltung Fehlfunktion — Zylinder 2
   description:
-    en: Same fault as P0201 but on cylinder 2. Diagnostic procedure is identical; swap the connector or the injector itself with a known-good cylinder to confirm whether the fault follows.
-    de: Gleicher Fehler wie P0201, aber an Zylinder 2. Diagnose entspricht P0201; Stecker oder Injektor mit einem nachweislich funktionierenden Zylinder tauschen, um zu prüfen, ob der Fehler mitwandert.
+    en: 'An electrical fault has been detected in the cylinder 2 injector circuit — open winding, short to ground or short to supply. This typically disables that injector to protect the driver stage in the ECU; the cylinder runs without fuel and triggers a misfire code as well.'
+    de: 'Im Steuerkreis des Injektors für Zylinder 2 wurde ein elektrischer Fehler erkannt — offene Wicklung, Kurzschluss gegen Masse oder gegen Versorgungsspannung. Die Motorsteuerung deaktiviert den Injektor üblicherweise, um die Endstufe zu schützen; der Zylinder läuft ohne Kraftstoff und löst zusätzlich einen Aussetzer-Code aus.'
   affected_components:
     - fuel_injector
     - injector_wiring
@@ -17466,8 +17466,8 @@
     en: Injector Circuit Malfunction — Cylinder 3
     de: Injektor Schaltung Fehlfunktion — Zylinder 3
   description:
-    en: Same fault as P0201 but on cylinder 3.
-    de: Gleicher Fehler wie P0201, aber an Zylinder 3.
+    en: 'An electrical fault has been detected in the cylinder 3 injector circuit — open winding, short to ground or short to supply. This typically disables that injector to protect the driver stage in the ECU; the cylinder runs without fuel and triggers a misfire code as well.'
+    de: 'Im Steuerkreis des Injektors für Zylinder 3 wurde ein elektrischer Fehler erkannt — offene Wicklung, Kurzschluss gegen Masse oder gegen Versorgungsspannung. Die Motorsteuerung deaktiviert den Injektor üblicherweise, um die Endstufe zu schützen; der Zylinder läuft ohne Kraftstoff und löst zusätzlich einen Aussetzer-Code aus.'
   affected_components:
     - fuel_injector
     - injector_wiring
@@ -17502,8 +17502,8 @@
     en: Injector Circuit Malfunction — Cylinder 4
     de: Injektor Schaltung Fehlfunktion — Zylinder 4
   description:
-    en: Same fault as P0201 but on cylinder 4.
-    de: Gleicher Fehler wie P0201, aber an Zylinder 4.
+    en: 'An electrical fault has been detected in the cylinder 4 injector circuit — open winding, short to ground or short to supply. This typically disables that injector to protect the driver stage in the ECU; the cylinder runs without fuel and triggers a misfire code as well.'
+    de: 'Im Steuerkreis des Injektors für Zylinder 4 wurde ein elektrischer Fehler erkannt — offene Wicklung, Kurzschluss gegen Masse oder gegen Versorgungsspannung. Die Motorsteuerung deaktiviert den Injektor üblicherweise, um die Endstufe zu schützen; der Zylinder läuft ohne Kraftstoff und löst zusätzlich einen Aussetzer-Code aus.'
   affected_components:
     - fuel_injector
     - injector_wiring
@@ -17538,8 +17538,8 @@
     en: Injector Circuit Malfunction — Cylinder 5
     de: Injektor Schaltung Fehlfunktion — Zylinder 5
   description:
-    en: Same fault as P0201 but on cylinder 5.
-    de: Gleicher Fehler wie P0201, aber an Zylinder 5.
+    en: 'An electrical fault has been detected in the cylinder 5 injector circuit — open winding, short to ground or short to supply. This typically disables that injector to protect the driver stage in the ECU; the cylinder runs without fuel and triggers a misfire code as well.'
+    de: 'Im Steuerkreis des Injektors für Zylinder 5 wurde ein elektrischer Fehler erkannt — offene Wicklung, Kurzschluss gegen Masse oder gegen Versorgungsspannung. Die Motorsteuerung deaktiviert den Injektor üblicherweise, um die Endstufe zu schützen; der Zylinder läuft ohne Kraftstoff und löst zusätzlich einen Aussetzer-Code aus.'
   affected_components:
     - fuel_injector
     - injector_wiring
@@ -17575,8 +17575,8 @@
     en: Injector Circuit Malfunction — Cylinder 6
     de: Injektor Schaltung Fehlfunktion — Zylinder 6
   description:
-    en: Same fault as P0201 but on cylinder 6.
-    de: Gleicher Fehler wie P0201, aber an Zylinder 6.
+    en: 'An electrical fault has been detected in the cylinder 6 injector circuit — open winding, short to ground or short to supply. This typically disables that injector to protect the driver stage in the ECU; the cylinder runs without fuel and triggers a misfire code as well.'
+    de: 'Im Steuerkreis des Injektors für Zylinder 6 wurde ein elektrischer Fehler erkannt — offene Wicklung, Kurzschluss gegen Masse oder gegen Versorgungsspannung. Die Motorsteuerung deaktiviert den Injektor üblicherweise, um die Endstufe zu schützen; der Zylinder läuft ohne Kraftstoff und löst zusätzlich einen Aussetzer-Code aus.'
   affected_components:
     - fuel_injector
     - injector_wiring
@@ -17612,8 +17612,8 @@
     en: Injector Circuit Malfunction — Cylinder 7
     de: Injektor Schaltung Fehlfunktion — Zylinder 7
   description:
-    en: Same fault as P0201 but on cylinder 7.
-    de: Gleicher Fehler wie P0201, aber an Zylinder 7.
+    en: 'An electrical fault has been detected in the cylinder 7 injector circuit — open winding, short to ground or short to supply. This typically disables that injector to protect the driver stage in the ECU; the cylinder runs without fuel and triggers a misfire code as well.'
+    de: 'Im Steuerkreis des Injektors für Zylinder 7 wurde ein elektrischer Fehler erkannt — offene Wicklung, Kurzschluss gegen Masse oder gegen Versorgungsspannung. Die Motorsteuerung deaktiviert den Injektor üblicherweise, um die Endstufe zu schützen; der Zylinder läuft ohne Kraftstoff und löst zusätzlich einen Aussetzer-Code aus.'
   affected_components:
     - fuel_injector
     - injector_wiring
@@ -17649,8 +17649,8 @@
     en: Injector Circuit Malfunction — Cylinder 8
     de: Injektor Schaltung Fehlfunktion — Zylinder 8
   description:
-    en: Same fault as P0201 but on cylinder 8.
-    de: Gleicher Fehler wie P0201, aber an Zylinder 8.
+    en: 'An electrical fault has been detected in the cylinder 8 injector circuit — open winding, short to ground or short to supply. This typically disables that injector to protect the driver stage in the ECU; the cylinder runs without fuel and triggers a misfire code as well.'
+    de: 'Im Steuerkreis des Injektors für Zylinder 8 wurde ein elektrischer Fehler erkannt — offene Wicklung, Kurzschluss gegen Masse oder gegen Versorgungsspannung. Die Motorsteuerung deaktiviert den Injektor üblicherweise, um die Endstufe zu schützen; der Zylinder läuft ohne Kraftstoff und löst zusätzlich einen Aussetzer-Code aus.'
   affected_components:
     - fuel_injector
     - injector_wiring
@@ -17686,8 +17686,8 @@
     en: Injector Circuit Malfunction — Cylinder 9
     de: Injektor Schaltung Fehlfunktion — Zylinder 9
   description:
-    en: Same fault as P0201 but on cylinder 9 (V10/V12 engines).
-    de: Gleicher Fehler wie P0201, aber an Zylinder 9 (V10/V12 Motoren).
+    en: 'An electrical fault has been detected in the cylinder 9 injector circuit — open winding, short to ground or short to supply. This typically disables that injector to protect the driver stage in the ECU; the cylinder runs without fuel and triggers a misfire code as well.'
+    de: 'Im Steuerkreis des Injektors für Zylinder 9 wurde ein elektrischer Fehler erkannt — offene Wicklung, Kurzschluss gegen Masse oder gegen Versorgungsspannung. Die Motorsteuerung deaktiviert den Injektor üblicherweise, um die Endstufe zu schützen; der Zylinder läuft ohne Kraftstoff und löst zusätzlich einen Aussetzer-Code aus.'
   affected_components:
     - fuel_injector
     - injector_wiring
@@ -17909,8 +17909,8 @@
     en: Injector Circuit Malfunction — Cylinder 10
     de: Injektor Schaltung Fehlfunktion — Zylinder 10
   description:
-    en: Same fault as P0201 but on cylinder 10 (V10/V12 engines).
-    de: Gleicher Fehler wie P0201, aber an Zylinder 10 (V10/V12 Motoren).
+    en: 'An electrical fault has been detected in the cylinder 10 injector circuit — open winding, short to ground or short to supply. This typically disables that injector to protect the driver stage in the ECU; the cylinder runs without fuel and triggers a misfire code as well.'
+    de: 'Im Steuerkreis des Injektors für Zylinder 10 wurde ein elektrischer Fehler erkannt — offene Wicklung, Kurzschluss gegen Masse oder gegen Versorgungsspannung. Die Motorsteuerung deaktiviert den Injektor üblicherweise, um die Endstufe zu schützen; der Zylinder läuft ohne Kraftstoff und löst zusätzlich einen Aussetzer-Code aus.'
   affected_components:
     - fuel_injector
     - injector_wiring
@@ -17946,8 +17946,8 @@
     en: Injector Circuit Malfunction — Cylinder 11
     de: Injektor Schaltung Fehlfunktion — Zylinder 11
   description:
-    en: Same fault as P0201 but on cylinder 11 (V12 engines).
-    de: Gleicher Fehler wie P0201, aber an Zylinder 11 (V12 Motoren).
+    en: 'An electrical fault has been detected in the cylinder 11 injector circuit — open winding, short to ground or short to supply. This typically disables that injector to protect the driver stage in the ECU; the cylinder runs without fuel and triggers a misfire code as well.'
+    de: 'Im Steuerkreis des Injektors für Zylinder 11 wurde ein elektrischer Fehler erkannt — offene Wicklung, Kurzschluss gegen Masse oder gegen Versorgungsspannung. Die Motorsteuerung deaktiviert den Injektor üblicherweise, um die Endstufe zu schützen; der Zylinder läuft ohne Kraftstoff und löst zusätzlich einen Aussetzer-Code aus.'
   affected_components:
     - fuel_injector
     - injector_wiring
@@ -17983,8 +17983,8 @@
     en: Injector Circuit Malfunction — Cylinder 12
     de: Injektor Schaltung Fehlfunktion — Zylinder 12
   description:
-    en: Same fault as P0201 but on cylinder 12 (V12 engines).
-    de: Gleicher Fehler wie P0201, aber an Zylinder 12 (V12 Motoren).
+    en: 'An electrical fault has been detected in the cylinder 12 injector circuit — open winding, short to ground or short to supply. This typically disables that injector to protect the driver stage in the ECU; the cylinder runs without fuel and triggers a misfire code as well.'
+    de: 'Im Steuerkreis des Injektors für Zylinder 12 wurde ein elektrischer Fehler erkannt — offene Wicklung, Kurzschluss gegen Masse oder gegen Versorgungsspannung. Die Motorsteuerung deaktiviert den Injektor üblicherweise, um die Endstufe zu schützen; der Zylinder läuft ohne Kraftstoff und löst zusätzlich einen Aussetzer-Code aus.'
   affected_components:
     - fuel_injector
     - injector_wiring
@@ -18893,8 +18893,8 @@
     en: Charge Air Cooler Bypass Control B Circuit/Open
     de: Ladeluftkühler-Bypass B Schaltkreis unterbrochen
   description:
-    en: Same as P022A for bypass B.
-    de: Wie P022A, jedoch Bypass B.
+    en: 'Open circuit at charge air cooler bypass control A — bypass valve cannot be commanded.'
+    de: 'Unterbrechung am Ladeluftkühler-Bypass A — Bypassventil kann nicht angesteuert werden.'
   affected_components:
     - cac_bypass_valve_b
     - actuator_wiring
@@ -18925,8 +18925,8 @@
     en: Charge Air Cooler Bypass Control B Circuit Low
     de: Ladeluftkühler-Bypass B Schaltkreis niedrig
   description:
-    en: Same as P022B for bypass B.
-    de: Wie P022B, jedoch Bypass B.
+    en: 'CAC bypass control A voltage below expected range.'
+    de: 'Steuerspannung CAC-Bypass A unter Sollbereich.'
   affected_components:
     - cac_bypass_valve_b
     - actuator_wiring
@@ -18957,8 +18957,8 @@
     en: Charge Air Cooler Bypass Control B Circuit High
     de: Ladeluftkühler-Bypass B Schaltkreis hoch
   description:
-    en: Same as P022C for bypass B.
-    de: Wie P022C, jedoch Bypass B.
+    en: 'CAC bypass control A voltage above expected range.'
+    de: 'Steuerspannung CAC-Bypass A über Sollbereich.'
   affected_components:
     - cac_bypass_valve_b
     - actuator_wiring
@@ -19487,8 +19487,8 @@
     en: Manifold Absolute Pressure - Turbocharger/Supercharger Boost Sensor B Correlation
     de: Saugrohrdruck zu Ladedrucksensor B Korrelation
   description:
-    en: Same as P023D for boost sensor B.
-    de: Wie P023D, jedoch Ladedrucksensor B.
+    en: 'Manifold absolute pressure and boost sensor B readings disagree beyond plausible deviation.'
+    de: 'Saugrohrdruck und Ladedrucksensor B weichen über plausibles Maß ab.'
   affected_components:
     - map_sensor
     - boost_pressure_sensor_b
@@ -19747,8 +19747,8 @@
     en: Turbocharger/Supercharger Wastegate Solenoid "A" High
     de: Lader-Wastegate-Magnetventil "A" hoch
   description:
-    en: Same fault as P0245 but circuit voltage above upper threshold — short to supply or defective solenoid driver in the ECU.
-    de: Gleicher Fehler wie P0245, jedoch Spannung über dem oberen Schwellwert — Kurzschluss gegen Versorgung oder defekte Endstufe im Steuergerät.
+    en: 'The ECU detected the wastegate control solenoid A circuit voltage below the lower threshold — typically open winding or short to ground. With the solenoid inactive, the wastegate either stays open (no boost) or fully closed (overboost), depending on system layout.'
+    de: 'Die Motorsteuerung erkennt am Stellmagneten A des Wastegates eine Spannung unter dem unteren Schwellwert — meist offene Wicklung oder Masseschluss. Ohne Magnetventil bleibt das Wastegate offen (kein Ladedruck) oder ganz geschlossen (Überdruck), je nach Systemauslegung.'
   affected_components:
     - wastegate_solenoid
     - solenoid_wiring
@@ -20283,8 +20283,8 @@
     en: Injection Pump Fuel Metering Control B (Cam/Rotor/Injector)
     de: Einspritzpumpe Mengenregelung B
   description:
-    en: Same as P0251 for metering control B (second pump or second control axis).
-    de: Wie P0251, jedoch Mengenregelung B (zweite Pumpe oder zweite Achse).
+    en: 'Generic fault on the fuel metering control A of the injection pump (mechanical or rotary distribution pumps).'
+    de: 'Allgemeiner Fehler an der Mengenregelung A der Einspritzpumpe (mechanische oder Verteiler-Einspritzpumpen).'
   affected_components:
     - metering_actuator_b
   common_causes:
@@ -20314,8 +20314,8 @@
     en: Injection Pump Fuel Metering Control B Range/Performance (Cam/Rotor/Injector)
     de: Einspritzpumpe Mengenregelung B Bereich/Leistung
   description:
-    en: Same as P0252 for metering control B.
-    de: Wie P0252, jedoch Mengenregelung B.
+    en: 'Injection pump metering control A does not respond as expected.'
+    de: 'Mengenregelung A der Einspritzpumpe reagiert nicht erwartungsgemäß.'
   affected_components:
     - metering_actuator_b
   common_causes:
@@ -20345,8 +20345,8 @@
     en: Injection Pump Fuel Metering Control B Low (Cam/Rotor/Injector)
     de: Einspritzpumpe Mengenregelung B niedrig
   description:
-    en: Same as P0253 for metering control B.
-    de: Wie P0253, jedoch Mengenregelung B.
+    en: 'Injection pump metering control A signal voltage below expected range.'
+    de: 'Steuerspannung Mengenregelung A der Einspritzpumpe unter Sollbereich.'
   affected_components:
     - metering_actuator_b
     - actuator_wiring
@@ -20377,8 +20377,8 @@
     en: Injection Pump Fuel Metering Control B High (Cam/Rotor/Injector)
     de: Einspritzpumpe Mengenregelung B hoch
   description:
-    en: Same as P0254 for metering control B.
-    de: Wie P0254, jedoch Mengenregelung B.
+    en: 'Injection pump metering control A signal voltage above expected range.'
+    de: 'Steuerspannung Mengenregelung A der Einspritzpumpe über Sollbereich.'
   affected_components:
     - metering_actuator_b
     - actuator_wiring
@@ -20680,8 +20680,8 @@
     en: Cylinder 1 Injector Circuit High
     de: Zylinder 1 Injektorstromkreis hoch
   description:
-    en: Same fault as P0261 but circuit voltage above the upper diagnostic threshold — short to supply or defective driver.
-    de: Gleicher Fehler wie P0261, jedoch Spannung über dem oberen Schwellwert — Kurzschluss gegen Versorgung oder defekte Endstufe.
+    en: 'The cylinder 1 injector control circuit voltage is below the lower diagnostic threshold — open winding, short to ground, or wiring fault. The ECU disables the injector to protect the driver stage.'
+    de: 'Die Spannung im Steuerkreis des Injektors Zylinder 1 liegt unter dem unteren Schwellwert — offene Wicklung, Masseschluss oder Kabelfehler. Die Motorsteuerung deaktiviert den Injektor zum Schutz der Endstufe.'
   affected_components:
     - fuel_injector
     - injector_wiring
@@ -20759,8 +20759,8 @@
     en: Cylinder 2 Injector Circuit Low
     de: Zylinder 2 Injektorstromkreis niedrig
   description:
-    en: Same fault as P0261 but on cylinder 2.
-    de: Gleicher Fehler wie P0261, aber an Zylinder 2.
+    en: 'The cylinder 2 injector control circuit voltage is below the lower diagnostic threshold — open winding, short to ground, or wiring fault. The ECU disables the injector to protect the driver stage.'
+    de: 'Die Spannung im Steuerkreis des Injektors Zylinder 2 liegt unter dem unteren Schwellwert — offene Wicklung, Masseschluss oder Kabelfehler. Die Motorsteuerung deaktiviert den Injektor zum Schutz der Endstufe.'
   affected_components:
     - fuel_injector
     - injector_wiring
@@ -20796,8 +20796,8 @@
     en: Cylinder 2 Injector Circuit High
     de: Zylinder 2 Injektorstromkreis hoch
   description:
-    en: Same fault as P0262 but on cylinder 2.
-    de: Gleicher Fehler wie P0262, aber an Zylinder 2.
+    en: 'The cylinder 2 injector control circuit voltage is below the lower diagnostic threshold — open winding, short to ground, or wiring fault. The ECU disables the injector to protect the driver stage.'
+    de: 'Die Spannung im Steuerkreis des Injektors Zylinder 2 liegt unter dem unteren Schwellwert — offene Wicklung, Masseschluss oder Kabelfehler. Die Motorsteuerung deaktiviert den Injektor zum Schutz der Endstufe.'
   affected_components:
     - fuel_injector
     - injector_wiring
@@ -20833,8 +20833,8 @@
     en: Cylinder 2 Contribution/Balance Fault
     de: Zylinder 2 Beitrag/Balance Fehler
   description:
-    en: Same fault as P0263 but on cylinder 2.
-    de: Gleicher Fehler wie P0263, aber an Zylinder 2.
+    en: 'The ECU compares each cylinder''s contribution to crankshaft speed (rough run analysis) and determined cylinder 2 contributes less or more than the average. This points to a mechanical or fuel delivery problem rather than a pure ignition fault.'
+    de: 'Die Motorsteuerung vergleicht den Beitrag jedes Zylinders zur Kurbelwellendrehzahl (Laufruhenanalyse) und stellt fest, dass Zylinder 2 weniger oder mehr beiträgt als der Durchschnitt. Hinweis auf mechanisches Problem oder Kraftstoffversorgungsfehler statt reiner Zündungsfehler.'
   affected_components:
     - fuel_injector
     - cylinder_compression
@@ -20870,8 +20870,8 @@
     en: Cylinder 3 Injector Circuit Low
     de: Zylinder 3 Injektorstromkreis niedrig
   description:
-    en: Same fault as P0261 but on cylinder 3.
-    de: Gleicher Fehler wie P0261, aber an Zylinder 3.
+    en: 'The cylinder 3 injector control circuit voltage is below the lower diagnostic threshold — open winding, short to ground, or wiring fault. The ECU disables the injector to protect the driver stage.'
+    de: 'Die Spannung im Steuerkreis des Injektors Zylinder 3 liegt unter dem unteren Schwellwert — offene Wicklung, Masseschluss oder Kabelfehler. Die Motorsteuerung deaktiviert den Injektor zum Schutz der Endstufe.'
   affected_components:
     - fuel_injector
     - injector_wiring
@@ -20907,8 +20907,8 @@
     en: Cylinder 3 Injector Circuit High
     de: Zylinder 3 Injektorstromkreis hoch
   description:
-    en: Same fault as P0262 but on cylinder 3.
-    de: Gleicher Fehler wie P0262, aber an Zylinder 3.
+    en: 'The cylinder 3 injector control circuit voltage is below the lower diagnostic threshold — open winding, short to ground, or wiring fault. The ECU disables the injector to protect the driver stage.'
+    de: 'Die Spannung im Steuerkreis des Injektors Zylinder 3 liegt unter dem unteren Schwellwert — offene Wicklung, Masseschluss oder Kabelfehler. Die Motorsteuerung deaktiviert den Injektor zum Schutz der Endstufe.'
   affected_components:
     - fuel_injector
     - injector_wiring
@@ -20944,8 +20944,8 @@
     en: Cylinder 3 Contribution/Balance Fault
     de: Zylinder 3 Beitrag/Balance Fehler
   description:
-    en: Same fault as P0263 but on cylinder 3.
-    de: Gleicher Fehler wie P0263, aber an Zylinder 3.
+    en: 'The ECU compares each cylinder''s contribution to crankshaft speed (rough run analysis) and determined cylinder 3 contributes less or more than the average. This points to a mechanical or fuel delivery problem rather than a pure ignition fault.'
+    de: 'Die Motorsteuerung vergleicht den Beitrag jedes Zylinders zur Kurbelwellendrehzahl (Laufruhenanalyse) und stellt fest, dass Zylinder 3 weniger oder mehr beiträgt als der Durchschnitt. Hinweis auf mechanisches Problem oder Kraftstoffversorgungsfehler statt reiner Zündungsfehler.'
   affected_components:
     - fuel_injector
     - cylinder_compression
@@ -21169,8 +21169,8 @@
     en: Cylinder 4 Injector Circuit Low
     de: Zylinder 4 Injektorstromkreis niedrig
   description:
-    en: Same fault as P0261 but on cylinder 4.
-    de: Gleicher Fehler wie P0261, aber an Zylinder 4.
+    en: 'The cylinder 4 injector control circuit voltage is below the lower diagnostic threshold — open winding, short to ground, or wiring fault. The ECU disables the injector to protect the driver stage.'
+    de: 'Die Spannung im Steuerkreis des Injektors Zylinder 4 liegt unter dem unteren Schwellwert — offene Wicklung, Masseschluss oder Kabelfehler. Die Motorsteuerung deaktiviert den Injektor zum Schutz der Endstufe.'
   affected_components:
     - fuel_injector
     - injector_wiring
@@ -21206,8 +21206,8 @@
     en: Cylinder 4 Injector Circuit High
     de: Zylinder 4 Injektorstromkreis hoch
   description:
-    en: Same fault as P0262 but on cylinder 4.
-    de: Gleicher Fehler wie P0262, aber an Zylinder 4.
+    en: 'The cylinder 4 injector control circuit voltage is below the lower diagnostic threshold — open winding, short to ground, or wiring fault. The ECU disables the injector to protect the driver stage.'
+    de: 'Die Spannung im Steuerkreis des Injektors Zylinder 4 liegt unter dem unteren Schwellwert — offene Wicklung, Masseschluss oder Kabelfehler. Die Motorsteuerung deaktiviert den Injektor zum Schutz der Endstufe.'
   affected_components:
     - fuel_injector
     - injector_wiring
@@ -21243,8 +21243,8 @@
     en: Cylinder 4 Contribution/Balance Fault
     de: Zylinder 4 Beitrag/Balance Fehler
   description:
-    en: Same fault as P0263 but on cylinder 4.
-    de: Gleicher Fehler wie P0263, aber an Zylinder 4.
+    en: 'The ECU compares each cylinder''s contribution to crankshaft speed (rough run analysis) and determined cylinder 4 contributes less or more than the average. This points to a mechanical or fuel delivery problem rather than a pure ignition fault.'
+    de: 'Die Motorsteuerung vergleicht den Beitrag jedes Zylinders zur Kurbelwellendrehzahl (Laufruhenanalyse) und stellt fest, dass Zylinder 4 weniger oder mehr beiträgt als der Durchschnitt. Hinweis auf mechanisches Problem oder Kraftstoffversorgungsfehler statt reiner Zündungsfehler.'
   affected_components:
     - fuel_injector
     - cylinder_compression
@@ -22674,8 +22674,8 @@
     en: Cylinder 2 - Fuel Trim at Max Limit
     de: Zylinder 2 - Gemischadaption am Maximum
   description:
-    en: Same as P029A on cylinder 2.
-    de: Wie P029A, jedoch Zylinder 2.
+    en: 'Per-cylinder fuel trim on cylinder 2 has reached its maximum correction limit. Cylinder running too lean structurally.'
+    de: 'Zylinderindividuelle Gemischadaption Zylinder 2 hat das Maximum erreicht. Zylinder strukturell zu mager.'
   affected_components:
     - injector_cyl2
   common_causes:
@@ -22705,8 +22705,8 @@
     en: Cylinder 2 - Fuel Trim at Min Limit
     de: Zylinder 2 - Gemischadaption am Minimum
   description:
-    en: Same as P029B on cylinder 2.
-    de: Wie P029B, jedoch Zylinder 2.
+    en: 'Per-cylinder fuel trim on cylinder 2 has reached its minimum correction limit. Cylinder running too rich structurally.'
+    de: 'Zylinderindividuelle Gemischadaption Zylinder 2 hat das Minimum erreicht. Zylinder strukturell zu fett.'
   affected_components:
     - injector_cyl2
   common_causes:
@@ -22736,8 +22736,8 @@
     en: Cylinder 2 - Injector Restricted
     de: Zylinder 2 - Injektor verstopft
   description:
-    en: Same as P029C on cylinder 2.
-    de: Wie P029C, jedoch Zylinder 2.
+    en: 'Cylinder 2 injector flow restricted — partial blockage detected.'
+    de: 'Injektor Zylinder 2 mit eingeschränktem Durchfluss — teilweise Verstopfung erkannt.'
   affected_components:
     - injector_cyl2
   common_causes:
@@ -22767,8 +22767,8 @@
     en: Cylinder 2 - Injector Leaking
     de: Zylinder 2 - Injektor undicht
   description:
-    en: Same as P029D on cylinder 2.
-    de: Wie P029D, jedoch Zylinder 2.
+    en: 'Cylinder 2 injector leaking fuel between commanded openings.'
+    de: 'Injektor Zylinder 2 leckt Kraftstoff zwischen den Ansteuerungen.'
   affected_components:
     - injector_cyl2
   common_causes:
@@ -22798,8 +22798,8 @@
     en: Cylinder 3 - Fuel Trim at Max Limit
     de: Zylinder 3 - Gemischadaption am Maximum
   description:
-    en: Same as P029A on cylinder 3.
-    de: Wie P029A, jedoch Zylinder 3.
+    en: 'Per-cylinder fuel trim on cylinder 3 has reached its maximum correction limit. Cylinder running too lean structurally.'
+    de: 'Zylinderindividuelle Gemischadaption Zylinder 3 hat das Maximum erreicht. Zylinder strukturell zu mager.'
   affected_components:
     - injector_cyl3
   common_causes:
@@ -22829,8 +22829,8 @@
     en: Cylinder 3 - Fuel Trim at Min Limit
     de: Zylinder 3 - Gemischadaption am Minimum
   description:
-    en: Same as P029B on cylinder 3.
-    de: Wie P029B, jedoch Zylinder 3.
+    en: 'Per-cylinder fuel trim on cylinder 3 has reached its minimum correction limit. Cylinder running too rich structurally.'
+    de: 'Zylinderindividuelle Gemischadaption Zylinder 3 hat das Minimum erreicht. Zylinder strukturell zu fett.'
   affected_components:
     - injector_cyl3
   common_causes:
@@ -22860,8 +22860,8 @@
     en: Cylinder 3 - Injector Restricted
     de: Zylinder 3 - Injektor verstopft
   description:
-    en: Same as P029C on cylinder 3.
-    de: Wie P029C, jedoch Zylinder 3.
+    en: 'Cylinder 3 injector flow restricted — partial blockage detected.'
+    de: 'Injektor Zylinder 3 mit eingeschränktem Durchfluss — teilweise Verstopfung erkannt.'
   affected_components:
     - injector_cyl3
   common_causes:
@@ -22891,8 +22891,8 @@
     en: Cylinder 3 - Injector Leaking
     de: Zylinder 3 - Injektor undicht
   description:
-    en: Same as P029D on cylinder 3.
-    de: Wie P029D, jedoch Zylinder 3.
+    en: 'Cylinder 3 injector leaking fuel between commanded openings.'
+    de: 'Injektor Zylinder 3 leckt Kraftstoff zwischen den Ansteuerungen.'
   affected_components:
     - injector_cyl3
   common_causes:
@@ -22922,8 +22922,8 @@
     en: Cylinder 4 - Fuel Trim at Max Limit
     de: Zylinder 4 - Gemischadaption am Maximum
   description:
-    en: Same as P029A on cylinder 4.
-    de: Wie P029A, jedoch Zylinder 4.
+    en: 'Per-cylinder fuel trim on cylinder 4 has reached its maximum correction limit. Cylinder running too lean structurally.'
+    de: 'Zylinderindividuelle Gemischadaption Zylinder 4 hat das Maximum erreicht. Zylinder strukturell zu mager.'
   affected_components:
     - injector_cyl4
   common_causes:
@@ -22953,8 +22953,8 @@
     en: Cylinder 4 - Fuel Trim at Min Limit
     de: Zylinder 4 - Gemischadaption am Minimum
   description:
-    en: Same as P029B on cylinder 4.
-    de: Wie P029B, jedoch Zylinder 4.
+    en: 'Per-cylinder fuel trim on cylinder 4 has reached its minimum correction limit. Cylinder running too rich structurally.'
+    de: 'Zylinderindividuelle Gemischadaption Zylinder 4 hat das Minimum erreicht. Zylinder strukturell zu fett.'
   affected_components:
     - injector_cyl4
   common_causes:
@@ -22984,8 +22984,8 @@
     en: Cylinder 4 - Injector Restricted
     de: Zylinder 4 - Injektor verstopft
   description:
-    en: Same as P029C on cylinder 4.
-    de: Wie P029C, jedoch Zylinder 4.
+    en: 'Cylinder 4 injector flow restricted — partial blockage detected.'
+    de: 'Injektor Zylinder 4 mit eingeschränktem Durchfluss — teilweise Verstopfung erkannt.'
   affected_components:
     - injector_cyl4
   common_causes:
@@ -23312,8 +23312,8 @@
     en: Cylinder 7 Misfire Detected
     de: Zündaussetzer Zylinder 7 erkannt
   description:
-    en: Same as P0301 but cylinder 7 (V8 and larger engines).
-    de: Gleicher Fehler wie P0301, jedoch Zylinder 7 (V8 und größere Motoren).
+    en: 'Misfires concentrated on cylinder 7. A cylinder-specific code points away from shared causes (fuel pressure, MAF) toward components dedicated to that cylinder — coil, spark plug, injector, compression.'
+    de: 'Verbrennungsaussetzer konzentriert auf Zylinder 7. Ein zylinderspezifischer Code verweist weg von gemeinsamen Ursachen (Kraftstoffdruck, LMM) hin zu Komponenten, die nur diesen Zylinder betreffen — Zündspule, Zündkerze, Injektor, Kompression.'
   affected_components:
     - ignition_coil
     - spark_plug
@@ -23350,8 +23350,8 @@
     en: Cylinder 8 Misfire Detected
     de: Zündaussetzer Zylinder 8 erkannt
   description:
-    en: Same as P0301 but cylinder 8.
-    de: Gleicher Fehler wie P0301, jedoch Zylinder 8.
+    en: 'Misfires concentrated on cylinder 8. A cylinder-specific code points away from shared causes (fuel pressure, MAF) toward components dedicated to that cylinder — coil, spark plug, injector, compression.'
+    de: 'Verbrennungsaussetzer konzentriert auf Zylinder 8. Ein zylinderspezifischer Code verweist weg von gemeinsamen Ursachen (Kraftstoffdruck, LMM) hin zu Komponenten, die nur diesen Zylinder betreffen — Zündspule, Zündkerze, Injektor, Kompression.'
   affected_components:
     - ignition_coil
     - spark_plug
@@ -23383,8 +23383,8 @@
     en: Cylinder 9 Misfire Detected
     de: Zündaussetzer Zylinder 9 erkannt
   description:
-    en: Same as P0301 but cylinder 9 (V10 and larger).
-    de: Gleicher Fehler wie P0301, jedoch Zylinder 9 (V10 und größer).
+    en: 'Misfires concentrated on cylinder 9. A cylinder-specific code points away from shared causes (fuel pressure, MAF) toward components dedicated to that cylinder — coil, spark plug, injector, compression.'
+    de: 'Verbrennungsaussetzer konzentriert auf Zylinder 9. Ein zylinderspezifischer Code verweist weg von gemeinsamen Ursachen (Kraftstoffdruck, LMM) hin zu Komponenten, die nur diesen Zylinder betreffen — Zündspule, Zündkerze, Injektor, Kompression.'
   affected_components:
     - ignition_coil
     - spark_plug
@@ -23415,8 +23415,8 @@
     en: Cylinder 10 Misfire Detected
     de: Zündaussetzer Zylinder 10 erkannt
   description:
-    en: Same as P0301 but cylinder 10.
-    de: Gleicher Fehler wie P0301, jedoch Zylinder 10.
+    en: 'Misfires concentrated on cylinder 10. A cylinder-specific code points away from shared causes (fuel pressure, MAF) toward components dedicated to that cylinder — coil, spark plug, injector, compression.'
+    de: 'Verbrennungsaussetzer konzentriert auf Zylinder 10. Ein zylinderspezifischer Code verweist weg von gemeinsamen Ursachen (Kraftstoffdruck, LMM) hin zu Komponenten, die nur diesen Zylinder betreffen — Zündspule, Zündkerze, Injektor, Kompression.'
   affected_components:
     - ignition_coil
     - spark_plug
@@ -23447,8 +23447,8 @@
     en: Cylinder 11 Misfire Detected
     de: Zündaussetzer Zylinder 11 erkannt
   description:
-    en: Same as P0301 but cylinder 11 (V12).
-    de: Gleicher Fehler wie P0301, jedoch Zylinder 11 (V12).
+    en: 'Misfires concentrated on cylinder 11. A cylinder-specific code points away from shared causes (fuel pressure, MAF) toward components dedicated to that cylinder — coil, spark plug, injector, compression.'
+    de: 'Verbrennungsaussetzer konzentriert auf Zylinder 11. Ein zylinderspezifischer Code verweist weg von gemeinsamen Ursachen (Kraftstoffdruck, LMM) hin zu Komponenten, die nur diesen Zylinder betreffen — Zündspule, Zündkerze, Injektor, Kompression.'
   affected_components:
     - ignition_coil
     - spark_plug
@@ -23479,8 +23479,8 @@
     en: Cylinder 12 Misfire Detected
     de: Zündaussetzer Zylinder 12 erkannt
   description:
-    en: Same as P0301 but cylinder 12 (V12).
-    de: Gleicher Fehler wie P0301, jedoch Zylinder 12 (V12).
+    en: 'Misfires concentrated on cylinder 12. A cylinder-specific code points away from shared causes (fuel pressure, MAF) toward components dedicated to that cylinder — coil, spark plug, injector, compression.'
+    de: 'Verbrennungsaussetzer konzentriert auf Zylinder 12. Ein zylinderspezifischer Code verweist weg von gemeinsamen Ursachen (Kraftstoffdruck, LMM) hin zu Komponenten, die nur diesen Zylinder betreffen — Zündspule, Zündkerze, Injektor, Kompression.'
   affected_components:
     - ignition_coil
     - spark_plug
@@ -24297,8 +24297,8 @@
     en: Ignition Coil "B" Primary/Secondary Circuit Malfunction (Cylinder 2)
     de: Zündspule "B" Primär-/Sekundärkreis Fehlfunktion (Zylinder 2)
   description:
-    en: Same fault as P0351 but on the cylinder 2 coil.
-    de: Gleicher Fehler wie P0351, aber an der Spule von Zylinder 2.
+    en: 'An electrical fault has been detected in the ignition coil circuit for cylinder 2 — open primary winding, short to ground, or short to supply. The ECU disables the coil to protect its driver and the cylinder misfires.'
+    de: 'Im Steuerkreis der Zündspule für Zylinder 2 wurde ein elektrischer Fehler erkannt — offene Primärwicklung, Kurzschluss gegen Masse oder gegen Versorgung. Die Motorsteuerung deaktiviert die Spule zum Schutz der Endstufe; der Zylinder hat Aussetzer.'
   affected_components:
     - ignition_coil
     - ignition_coil_wiring
@@ -24334,8 +24334,8 @@
     en: Ignition Coil "C" Primary/Secondary Circuit Malfunction (Cylinder 3)
     de: Zündspule "C" Primär-/Sekundärkreis Fehlfunktion (Zylinder 3)
   description:
-    en: Same fault as P0351 but on the cylinder 3 coil.
-    de: Gleicher Fehler wie P0351, aber an der Spule von Zylinder 3.
+    en: 'An electrical fault has been detected in the ignition coil circuit for cylinder 3 — open primary winding, short to ground, or short to supply. The ECU disables the coil to protect its driver and the cylinder misfires.'
+    de: 'Im Steuerkreis der Zündspule für Zylinder 3 wurde ein elektrischer Fehler erkannt — offene Primärwicklung, Kurzschluss gegen Masse oder gegen Versorgung. Die Motorsteuerung deaktiviert die Spule zum Schutz der Endstufe; der Zylinder hat Aussetzer.'
   affected_components:
     - ignition_coil
     - ignition_coil_wiring
@@ -24371,8 +24371,8 @@
     en: Ignition Coil "D" Primary/Secondary Circuit Malfunction (Cylinder 4)
     de: Zündspule "D" Primär-/Sekundärkreis Fehlfunktion (Zylinder 4)
   description:
-    en: Same fault as P0351 but on the cylinder 4 coil.
-    de: Gleicher Fehler wie P0351, aber an der Spule von Zylinder 4.
+    en: 'An electrical fault has been detected in the ignition coil circuit for cylinder 4 — open primary winding, short to ground, or short to supply. The ECU disables the coil to protect its driver and the cylinder misfires.'
+    de: 'Im Steuerkreis der Zündspule für Zylinder 4 wurde ein elektrischer Fehler erkannt — offene Primärwicklung, Kurzschluss gegen Masse oder gegen Versorgung. Die Motorsteuerung deaktiviert die Spule zum Schutz der Endstufe; der Zylinder hat Aussetzer.'
   affected_components:
     - ignition_coil
     - ignition_coil_wiring
@@ -24408,8 +24408,8 @@
     en: Ignition Coil "E" Primary/Secondary Circuit
     de: Zündspule "E" Primär-/Sekundärkreis
   description:
-    en: Same fault as P0351 but on ignition coil E (typically cylinder 5 in coil-on-plug systems).
-    de: Gleicher Fehler wie P0351, jedoch an Zündspule E (in der Regel Zylinder 5 bei Einzelfunkenspulen).
+    en: 'An electrical fault has been detected in the ignition coil circuit for cylinder 1 — open primary winding, short to ground, or short to supply. The ECU disables the coil to protect its driver and the cylinder misfires.'
+    de: 'Im Steuerkreis der Zündspule für Zylinder 1 wurde ein elektrischer Fehler erkannt — offene Primärwicklung, Kurzschluss gegen Masse oder gegen Versorgung. Die Motorsteuerung deaktiviert die Spule zum Schutz der Endstufe; der Zylinder hat Aussetzer.'
   affected_components:
     - ignition_coil
     - coil_wiring
@@ -24445,8 +24445,8 @@
     en: Ignition Coil "F" Primary/Secondary Circuit
     de: Zündspule "F" Primär-/Sekundärkreis
   description:
-    en: Same fault as P0351 but on ignition coil F (typically cylinder 6).
-    de: Gleicher Fehler wie P0351, jedoch an Zündspule F (in der Regel Zylinder 6).
+    en: 'An electrical fault has been detected in the ignition coil circuit for cylinder 1 — open primary winding, short to ground, or short to supply. The ECU disables the coil to protect its driver and the cylinder misfires.'
+    de: 'Im Steuerkreis der Zündspule für Zylinder 1 wurde ein elektrischer Fehler erkannt — offene Primärwicklung, Kurzschluss gegen Masse oder gegen Versorgung. Die Motorsteuerung deaktiviert die Spule zum Schutz der Endstufe; der Zylinder hat Aussetzer.'
   affected_components:
     - ignition_coil
     - coil_wiring
@@ -24477,8 +24477,8 @@
     en: Ignition Coil "G" Primary/Secondary Circuit
     de: Zündspule "G" Primär-/Sekundärkreis
   description:
-    en: Same fault as P0351 but on ignition coil G (cylinder 7).
-    de: Gleicher Fehler wie P0351, jedoch an Zündspule G (Zylinder 7).
+    en: 'An electrical fault has been detected in the ignition coil circuit for cylinder 1 — open primary winding, short to ground, or short to supply. The ECU disables the coil to protect its driver and the cylinder misfires.'
+    de: 'Im Steuerkreis der Zündspule für Zylinder 1 wurde ein elektrischer Fehler erkannt — offene Primärwicklung, Kurzschluss gegen Masse oder gegen Versorgung. Die Motorsteuerung deaktiviert die Spule zum Schutz der Endstufe; der Zylinder hat Aussetzer.'
   affected_components:
     - ignition_coil
     - coil_wiring
@@ -24509,8 +24509,8 @@
     en: Ignition Coil "H" Primary/Secondary Circuit
     de: Zündspule "H" Primär-/Sekundärkreis
   description:
-    en: Same fault as P0351 but on ignition coil H (cylinder 8).
-    de: Gleicher Fehler wie P0351, jedoch an Zündspule H (Zylinder 8).
+    en: 'An electrical fault has been detected in the ignition coil circuit for cylinder 1 — open primary winding, short to ground, or short to supply. The ECU disables the coil to protect its driver and the cylinder misfires.'
+    de: 'Im Steuerkreis der Zündspule für Zylinder 1 wurde ein elektrischer Fehler erkannt — offene Primärwicklung, Kurzschluss gegen Masse oder gegen Versorgung. Die Motorsteuerung deaktiviert die Spule zum Schutz der Endstufe; der Zylinder hat Aussetzer.'
   affected_components:
     - ignition_coil
     - coil_wiring
@@ -24855,8 +24855,8 @@
     en: Exhaust Gas Recirculation Sensor "A" Circuit High
     de: Abgasrückführungssensor "A" Schaltung hoch
   description:
-    en: Same fault as P0405 but signal voltage above upper threshold — short to supply or defective sensor.
-    de: Gleicher Fehler wie P0405, jedoch Signalspannung über dem oberen Schwellwert — Kurzschluss gegen Versorgung oder defekter Sensor.
+    en: 'The EGR position sensor A signal voltage is below the lower diagnostic threshold — open circuit, short to ground, or sensor fault. With no valid feedback, the ECU disables EGR and may set additional EGR codes.'
+    de: 'Die Spannung des EGR-Positionssensors A liegt unter dem unteren Schwellwert — Unterbrechung, Masseschluss oder Sensordefekt. Ohne gültige Rückmeldung deaktiviert die Motorsteuerung die AGR und setzt eventuell weitere EGR-Codes.'
   affected_components:
     - egr_position_sensor
     - egr_sensor_wiring
@@ -24934,8 +24934,8 @@
     en: Exhaust Gas Recirculation Sensor "B" Circuit Low
     de: Abgasrückführungssensor "B" Schaltung niedrig
   description:
-    en: Same fault as P0405 but on the secondary EGR position sensor B (used on some dual-feedback EGR systems).
-    de: Gleicher Fehler wie P0405, jedoch am sekundären EGR-Positionssensor B (bei einigen AGR-Systemen mit doppelter Rückmeldung).
+    en: 'The EGR position sensor A signal voltage is below the lower diagnostic threshold — open circuit, short to ground, or sensor fault. With no valid feedback, the ECU disables EGR and may set additional EGR codes.'
+    de: 'Die Spannung des EGR-Positionssensors A liegt unter dem unteren Schwellwert — Unterbrechung, Masseschluss oder Sensordefekt. Ohne gültige Rückmeldung deaktiviert die Motorsteuerung die AGR und setzt eventuell weitere EGR-Codes.'
   affected_components:
     - egr_position_sensor
     - egr_sensor_wiring
@@ -24971,8 +24971,8 @@
     en: Exhaust Gas Recirculation Sensor "B" Circuit High
     de: Abgasrückführungssensor "B" Schaltung hoch
   description:
-    en: Same fault as P0406 but on the secondary EGR position sensor B.
-    de: Gleicher Fehler wie P0406, jedoch am sekundären EGR-Positionssensor B.
+    en: 'The EGR position sensor A signal voltage is below the lower diagnostic threshold — open circuit, short to ground, or sensor fault. With no valid feedback, the ECU disables EGR and may set additional EGR codes.'
+    de: 'Die Spannung des EGR-Positionssensors A liegt unter dem unteren Schwellwert — Unterbrechung, Masseschluss oder Sensordefekt. Ohne gültige Rückmeldung deaktiviert die Motorsteuerung die AGR und setzt eventuell weitere EGR-Codes.'
   affected_components:
     - egr_position_sensor
     - egr_sensor_wiring
@@ -25432,8 +25432,8 @@
     en: Warm Up Catalyst Efficiency Below Threshold (Bank 2)
     de: Warmlauf-Katalysator Wirkungsgrad unter Schwellwert (Bank 2)
   description:
-    en: Same fault as P0421 but on bank 2.
-    de: Gleicher Fehler wie P0421, jedoch an Bank 2.
+    en: 'The pre-cat (warm-up) catalyst on bank 2 has lost too much oxygen storage capacity. Its primary purpose — quickly reaching light-off after a cold start — is no longer met within the OBD limits.'
+    de: 'Der Vorkatalysator (Warmlauf-Katalysator) auf Bank 2 hat zu viel Sauerstoffspeicherkapazität verloren. Seine Hauptaufgabe — schneller Light-off nach Kaltstart — wird innerhalb der OBD-Grenzen nicht mehr erreicht.'
   affected_components:
     - warm_up_catalyst
     - oxygen_sensor_upstream
@@ -25470,8 +25470,8 @@
     en: Main Catalyst Efficiency Below Threshold (Bank 2)
     de: Hauptkatalysator Wirkungsgrad unter Schwellwert (Bank 2)
   description:
-    en: Same fault as P0422 but on bank 2.
-    de: Gleicher Fehler wie P0422, jedoch an Bank 2.
+    en: 'Generic main catalyst efficiency code on bank 2 — used by some manufacturers in addition to or instead of P0420. Indicates the same root cause — degraded oxygen storage in the main catalyst.'
+    de: 'Allgemeiner Wirkungsgrad-Code des Hauptkatalysators Bank 2 — von einigen Herstellern zusätzlich oder anstelle von P0420 verwendet. Gleiche Grundursache — verschlechterte Sauerstoffspeicherung im Hauptkatalysator.'
   affected_components:
     - catalytic_converter
     - oxygen_sensor_upstream
@@ -25508,8 +25508,8 @@
     en: Heated Catalyst Efficiency Below Threshold (Bank 2)
     de: Beheizter Katalysator Wirkungsgrad unter Schwellwert (Bank 2)
   description:
-    en: Same fault as P0423 but on bank 2.
-    de: Gleicher Fehler wie P0423, jedoch an Bank 2.
+    en: 'Heated (electrically warmed) catalyst on bank 2 fails efficiency monitoring. In addition to standard catalyst aging, faults in the catalyst heater control or supply can cause this code.'
+    de: 'Beheizter (elektrisch erwärmter) Katalysator Bank 2 besteht die Wirkungsgrad-Prüfung nicht. Neben üblicher Alterung können Fehler in der Heizungssteuerung oder -versorgung diesen Code auslösen.'
   affected_components:
     - heated_catalyst
     - catalyst_heater
@@ -26134,8 +26134,8 @@
     en: Cooling Fan 2 Control Circuit
     de: Kühlerlüfter 2 Steuerkreis
   description:
-    en: Same fault as P0480 but for the second cooling fan control circuit.
-    de: Gleicher Fehler wie P0480, jedoch für den zweiten Kühlerlüfter-Steuerkreis.
+    en: 'An electrical fault in the cooling fan 1 control circuit (relay or PWM driver). May be set when the ECU detects an open, short, or unexpected current draw.'
+    de: 'Elektrischer Fehler im Steuerkreis von Kühlerlüfter 1 (Relais oder PWM-Treiber). Wird gesetzt, wenn die Motorsteuerung einen offenen, kurzgeschlossenen oder unplausiblen Strom feststellt.'
   affected_components:
     - cooling_fan_relay
     - cooling_fan_motor
@@ -27044,8 +27044,8 @@
     en: Intake Air Heater A Circuit Low
     de: Ansaugluftheizung A Schaltkreis niedrig
   description:
-    en: Same fault as P0540 but with the control voltage below the lower threshold, suggesting short to ground or open winding.
-    de: Gleicher Fehler wie P0540, jedoch mit Steuerspannung unterhalb des unteren Schwellwerts — Hinweis auf Masseschluss oder offene Wicklung.
+    en: 'The intake air heater control circuit reports a generic fault. Heater is used on diesel and some gasoline engines for cold-start emissions and starting reliability.'
+    de: 'Der Steuerkreis der Ansaugluftheizung meldet einen allgemeinen Fehler. Die Heizung dient bei Dieseln und manchen Benzinmotoren der Kaltstartemission und Startsicherheit.'
   affected_components:
     - intake_air_heater
     - heater_wiring
@@ -27080,8 +27080,8 @@
     en: Intake Air Heater A Circuit High
     de: Ansaugluftheizung A Schaltkreis hoch
   description:
-    en: Same fault as P0540 but with the control voltage above the upper threshold. Typically open ground or short to power.
-    de: Gleicher Fehler wie P0540, jedoch mit Steuerspannung oberhalb des oberen Schwellwerts. Üblich sind offene Masse oder Spannungsschluss.
+    en: 'The intake air heater control circuit reports a generic fault. Heater is used on diesel and some gasoline engines for cold-start emissions and starting reliability.'
+    de: 'Der Steuerkreis der Ansaugluftheizung meldet einen allgemeinen Fehler. Die Heizung dient bei Dieseln und manchen Benzinmotoren der Kaltstartemission und Startsicherheit.'
   affected_components:
     - intake_air_heater
     - heater_wiring
@@ -27500,8 +27500,8 @@
     en: Cruise Control Resume Input Circuit
     de: Tempomat Wiederaufnahme-Eingang Schaltkreis
   description:
-    en: Same fault as P0566 but for the resume input.
-    de: Gleicher Fehler wie P0566, jedoch am Wiederaufnahme-Eingang.
+    en: 'The cancel input from the cruise control switch reports an electrical fault or implausible signal.'
+    de: 'Der Abbruch-Eingang vom Tempomatschalter meldet einen elektrischen Fehler oder ein unplausibles Signal.'
   affected_components:
     - cruise_control_switch
     - switch_wiring
@@ -27531,8 +27531,8 @@
     en: Cruise Control Set Input Circuit
     de: Tempomat Setzen-Eingang Schaltkreis
   description:
-    en: Same fault as P0566 but for the set input.
-    de: Gleicher Fehler wie P0566, jedoch am Setzen-Eingang.
+    en: 'The cancel input from the cruise control switch reports an electrical fault or implausible signal.'
+    de: 'Der Abbruch-Eingang vom Tempomatschalter meldet einen elektrischen Fehler oder ein unplausibles Signal.'
   affected_components:
     - cruise_control_switch
     - switch_wiring
@@ -27668,8 +27668,8 @@
     en: Cruise Control/Brake Switch B Circuit High
     de: Tempomat-/Bremsschalter B Schaltkreis hoch
   description:
-    en: Same fault as P0572 but the input reads above the upper threshold. Typically open circuit or short to power.
-    de: Gleicher Fehler wie P0572, jedoch liegt das Signal über dem oberen Schwellwert. Üblich sind Unterbrechung oder Spannungsschluss.
+    en: 'The brake switch B input used by the cruise control system reads below the lower diagnostic threshold.'
+    de: 'Der vom Tempomatsystem genutzte Bremsschalter-B-Eingang liegt unter dem unteren Diagnoseschwellwert.'
   affected_components:
     - brake_switch
     - switch_wiring
@@ -28427,8 +28427,8 @@
     en: Fuel Pump A Control Circuit High
     de: Kraftstoffpumpe A Steuerkreis hoch
   description:
-    en: Same fault as P0628 but with voltage above the upper threshold. Typically open ground or short to power.
-    de: Gleicher Fehler wie P0628, jedoch mit Spannung oberhalb des oberen Schwellwerts. Üblich sind offene Masse oder Spannungsschluss.
+    en: 'The control circuit for fuel pump A reports voltage below the lower diagnostic threshold. Indicates short to ground or open winding.'
+    de: 'Der Steuerkreis der Kraftstoffpumpe A meldet eine Spannung unterhalb des unteren Diagnoseschwellwerts. Hinweis auf Masseschluss oder offene Wicklung.'
   affected_components:
     - fuel_pump
     - fuel_pump_relay
@@ -28683,8 +28683,8 @@
     en: Cylinder 1 Glow Plug Circuit
     de: Glühkerze Zylinder 1 Schaltkreis
   description:
-    en: Same as P0670 but for cylinder 1 glow plug circuit specifically.
-    de: Gleicher Fehler wie P0670, jedoch speziell am Glühkerzenkreis von Zylinder 1.
+    en: 'The control circuit between the engine controller and the glow plug control module reports a fault. The module cannot reliably drive the glow plugs for cold-start preheating.'
+    de: 'Der Steuerkreis zwischen Motorsteuergerät und Glühkerzenmodul meldet einen Fehler. Das Modul kann die Glühkerzen für die Kaltstart-Vorglühung nicht zuverlässig ansteuern.'
   affected_components:
     - glow_plug
     - glow_plug_wiring
@@ -28719,8 +28719,8 @@
     en: Cylinder 2 Glow Plug Circuit
     de: Glühkerze Zylinder 2 Schaltkreis
   description:
-    en: Same as P0671 but for cylinder 2 glow plug circuit.
-    de: Gleicher Fehler wie P0671, jedoch am Glühkerzenkreis von Zylinder 2.
+    en: 'The control circuit between the engine controller and the glow plug control module reports a fault. The module cannot reliably drive the glow plugs for cold-start preheating.'
+    de: 'Der Steuerkreis zwischen Motorsteuergerät und Glühkerzenmodul meldet einen Fehler. Das Modul kann die Glühkerzen für die Kaltstart-Vorglühung nicht zuverlässig ansteuern.'
   affected_components:
     - glow_plug
     - glow_plug_wiring
@@ -28750,8 +28750,8 @@
     en: Cylinder 3 Glow Plug Circuit
     de: Glühkerze Zylinder 3 Schaltkreis
   description:
-    en: Same as P0671 but for cylinder 3 glow plug circuit.
-    de: Gleicher Fehler wie P0671, jedoch am Glühkerzenkreis von Zylinder 3.
+    en: 'The control circuit between the engine controller and the glow plug control module reports a fault. The module cannot reliably drive the glow plugs for cold-start preheating.'
+    de: 'Der Steuerkreis zwischen Motorsteuergerät und Glühkerzenmodul meldet einen Fehler. Das Modul kann die Glühkerzen für die Kaltstart-Vorglühung nicht zuverlässig ansteuern.'
   affected_components:
     - glow_plug
     - glow_plug_wiring
@@ -28781,8 +28781,8 @@
     en: Cylinder 4 Glow Plug Circuit
     de: Glühkerze Zylinder 4 Schaltkreis
   description:
-    en: Same as P0671 but for cylinder 4 glow plug circuit.
-    de: Gleicher Fehler wie P0671, jedoch am Glühkerzenkreis von Zylinder 4.
+    en: 'The control circuit between the engine controller and the glow plug control module reports a fault. The module cannot reliably drive the glow plugs for cold-start preheating.'
+    de: 'Der Steuerkreis zwischen Motorsteuergerät und Glühkerzenmodul meldet einen Fehler. Das Modul kann die Glühkerzen für die Kaltstart-Vorglühung nicht zuverlässig ansteuern.'
   affected_components:
     - glow_plug
     - glow_plug_wiring
@@ -28812,8 +28812,8 @@
     en: Cylinder 5 Glow Plug Circuit
     de: Glühkerze Zylinder 5 Schaltkreis
   description:
-    en: Same as P0671 but for cylinder 5 glow plug circuit.
-    de: Gleicher Fehler wie P0671, jedoch am Glühkerzenkreis von Zylinder 5.
+    en: 'The control circuit between the engine controller and the glow plug control module reports a fault. The module cannot reliably drive the glow plugs for cold-start preheating.'
+    de: 'Der Steuerkreis zwischen Motorsteuergerät und Glühkerzenmodul meldet einen Fehler. Das Modul kann die Glühkerzen für die Kaltstart-Vorglühung nicht zuverlässig ansteuern.'
   affected_components:
     - glow_plug
     - glow_plug_wiring
@@ -28843,8 +28843,8 @@
     en: Cylinder 6 Glow Plug Circuit
     de: Glühkerze Zylinder 6 Schaltkreis
   description:
-    en: Same as P0671 but for cylinder 6 glow plug circuit.
-    de: Gleicher Fehler wie P0671, jedoch am Glühkerzenkreis von Zylinder 6.
+    en: 'The control circuit between the engine controller and the glow plug control module reports a fault. The module cannot reliably drive the glow plugs for cold-start preheating.'
+    de: 'Der Steuerkreis zwischen Motorsteuergerät und Glühkerzenmodul meldet einen Fehler. Das Modul kann die Glühkerzen für die Kaltstart-Vorglühung nicht zuverlässig ansteuern.'
   affected_components:
     - glow_plug
     - glow_plug_wiring
@@ -28874,8 +28874,8 @@
     en: Cylinder 7 Glow Plug Circuit
     de: Glühkerze Zylinder 7 Schaltkreis
   description:
-    en: Same as P0671 but for cylinder 7 glow plug circuit.
-    de: Gleicher Fehler wie P0671, jedoch am Glühkerzenkreis von Zylinder 7.
+    en: 'The control circuit between the engine controller and the glow plug control module reports a fault. The module cannot reliably drive the glow plugs for cold-start preheating.'
+    de: 'Der Steuerkreis zwischen Motorsteuergerät und Glühkerzenmodul meldet einen Fehler. Das Modul kann die Glühkerzen für die Kaltstart-Vorglühung nicht zuverlässig ansteuern.'
   affected_components:
     - glow_plug
     - glow_plug_wiring
@@ -28905,8 +28905,8 @@
     en: Cylinder 8 Glow Plug Circuit
     de: Glühkerze Zylinder 8 Schaltkreis
   description:
-    en: Same as P0671 but for cylinder 8 glow plug circuit.
-    de: Gleicher Fehler wie P0671, jedoch am Glühkerzenkreis von Zylinder 8.
+    en: 'The control circuit between the engine controller and the glow plug control module reports a fault. The module cannot reliably drive the glow plugs for cold-start preheating.'
+    de: 'Der Steuerkreis zwischen Motorsteuergerät und Glühkerzenmodul meldet einen Fehler. Das Modul kann die Glühkerzen für die Kaltstart-Vorglühung nicht zuverlässig ansteuern.'
   affected_components:
     - glow_plug
     - glow_plug_wiring
@@ -29009,8 +29009,8 @@
     en: ECM/PCM Power Relay Sense Circuit High
     de: ECM/PCM Hauptrelais Erkennungskreis hoch
   description:
-    en: Same fault as P0687 but the sense input remains high when the ECM has commanded the relay off.
-    de: Gleicher Fehler wie P0687, jedoch bleibt der Erkennungseingang hoch, obwohl das Steuergerät das Relais ausgeschaltet hat.
+    en: 'The ECM cannot detect that the main power relay has switched on. The sense input remains low when commanded high.'
+    de: 'Das Steuergerät kann nicht erkennen, dass das Hauptrelais eingeschaltet hat. Der Erkennungseingang bleibt niedrig, obwohl Einschalten angefordert ist.'
   affected_components:
     - ecm
     - main_relay
@@ -29081,8 +29081,8 @@
     en: Cooling Fan 1 Control Circuit High
     de: Kühlerlüfter 1 Steuerkreis hoch
   description:
-    en: Same fault as P0691 but with voltage above the upper threshold. Typically open ground or short to power.
-    de: Gleicher Fehler wie P0691, jedoch mit Spannung oberhalb des oberen Schwellwerts. Üblich sind offene Masse oder Spannungsschluss.
+    en: 'The control circuit for cooling fan 1 reports voltage below the lower diagnostic threshold. Indicates short to ground or open winding.'
+    de: 'Der Steuerkreis von Kühlerlüfter 1 meldet eine Spannung unterhalb des unteren Diagnoseschwellwerts. Hinweis auf Masseschluss oder offene Wicklung.'
   affected_components:
     - cooling_fan
     - cooling_fan_relay
@@ -29117,8 +29117,8 @@
     en: Cooling Fan 2 Control Circuit Low
     de: Kühlerlüfter 2 Steuerkreis niedrig
   description:
-    en: Same fault as P0691 but for cooling fan 2.
-    de: Gleicher Fehler wie P0691, jedoch für Kühlerlüfter 2.
+    en: 'The control circuit for cooling fan 1 reports voltage below the lower diagnostic threshold. Indicates short to ground or open winding.'
+    de: 'Der Steuerkreis von Kühlerlüfter 1 meldet eine Spannung unterhalb des unteren Diagnoseschwellwerts. Hinweis auf Masseschluss oder offene Wicklung.'
   affected_components:
     - cooling_fan
     - cooling_fan_relay
@@ -29153,8 +29153,8 @@
     en: Cooling Fan 2 Control Circuit High
     de: Kühlerlüfter 2 Steuerkreis hoch
   description:
-    en: Same fault as P0692 but for cooling fan 2.
-    de: Gleicher Fehler wie P0692, jedoch für Kühlerlüfter 2.
+    en: 'The control circuit for cooling fan 1 reports voltage below the lower diagnostic threshold. Indicates short to ground or open winding.'
+    de: 'Der Steuerkreis von Kühlerlüfter 1 meldet eine Spannung unterhalb des unteren Diagnoseschwellwerts. Hinweis auf Masseschluss oder offene Wicklung.'
   affected_components:
     - cooling_fan
     - cooling_fan_relay
@@ -29687,8 +29687,8 @@
     en: Brake Switch B Circuit High
     de: Bremsschalter B Schaltkreis hoch
   description:
-    en: Same fault as P0719 but the input reads above the upper threshold.
-    de: Gleicher Fehler wie P0719, jedoch liegt das Signal über dem oberen Schwellwert.
+    en: 'The transmission control system sees the brake switch B input below the lower threshold. Used to release torque converter lockup on braking.'
+    de: 'Die Getriebesteuerung sieht den Bremsschalter-B-Eingang unterhalb des unteren Schwellwerts. Wird genutzt, um die Wandlerüberbrückung beim Bremsen zu lösen.'
   affected_components:
     - brake_switch
     - switch_wiring
@@ -29761,8 +29761,8 @@
     en: Gear 6 Incorrect Ratio
     de: 6. Gang falsche Übersetzung
   description:
-    en: Same fault as P0731 but for sixth gear. The ratio between input and output shaft does not match the expected sixth-gear value.
-    de: Gleicher Fehler wie P0731, jedoch für den 6. Gang. Das Verhältnis zwischen Eingangs- und Ausgangswelle entspricht nicht dem erwarteten Wert.
+    en: 'When 1st gear is commanded, the actual ratio between input and output speed sensors does not match the expected value. Indicates internal slip — typically worn clutches or low line pressure.'
+    de: 'Wenn der 1. Gang angefordert wird, stimmt das gemessene Übersetzungsverhältnis zwischen Eingangs- und Ausgangsdrehzahlsensor nicht mit dem Erwarteten überein. Hinweis auf inneren Schlupf — typischerweise verschlissene Kupplungen oder niedriger Leitungsdruck.'
   affected_components:
     - automatic_transmission
     - shift_solenoid
@@ -29878,8 +29878,8 @@
     en: Gear 2 Incorrect Ratio
     de: Gang 2 falsche Übersetzung
   description:
-    en: Same fault as P0731 but for 2nd gear. Most automatic transmission designs show 2nd-gear clutch wear before others because of the load and slip during the 1-2 shift.
-    de: Gleicher Fehler wie P0731, aber für den 2. Gang. Die meisten Automatikgetriebe zeigen Verschleiß am 2.-Gang-Kupplungspaket vor allen anderen, weil dieses bei der 1-2-Schaltung am stärksten belastet wird.
+    en: 'When 1st gear is commanded, the actual ratio between input and output speed sensors does not match the expected value. Indicates internal slip — typically worn clutches or low line pressure.'
+    de: 'Wenn der 1. Gang angefordert wird, stimmt das gemessene Übersetzungsverhältnis zwischen Eingangs- und Ausgangsdrehzahlsensor nicht mit dem Erwarteten überein. Hinweis auf inneren Schlupf — typischerweise verschlissene Kupplungen oder niedriger Leitungsdruck.'
   affected_components:
     - transmission_clutch_pack
     - transmission_valve_body
@@ -29915,8 +29915,8 @@
     en: Gear 3 Incorrect Ratio
     de: Gang 3 falsche Übersetzung
   description:
-    en: Same fault as P0731 but for 3rd gear.
-    de: Gleicher Fehler wie P0731, aber für den 3. Gang.
+    en: 'When 1st gear is commanded, the actual ratio between input and output speed sensors does not match the expected value. Indicates internal slip — typically worn clutches or low line pressure.'
+    de: 'Wenn der 1. Gang angefordert wird, stimmt das gemessene Übersetzungsverhältnis zwischen Eingangs- und Ausgangsdrehzahlsensor nicht mit dem Erwarteten überein. Hinweis auf inneren Schlupf — typischerweise verschlissene Kupplungen oder niedriger Leitungsdruck.'
   affected_components:
     - transmission_clutch_pack
     - transmission_valve_body
@@ -29947,8 +29947,8 @@
     en: Gear 4 Incorrect Ratio
     de: Gang 4 falsche Übersetzung
   description:
-    en: Same fault as P0731 but for 4th gear. On 4-speed transmissions this is the lockup gear — slip here often indicates a worn 4th-gear clutch or torque converter clutch issue (cross-check with P0741).
-    de: Gleicher Fehler wie P0731, aber für den 4. Gang. Bei 4-Gang-Getrieben ist das der Direkt-/Overdrive-Gang — Schlupf weist häufig auf verschlissene 4.-Gang-Kupplung oder ein TCC-Problem hin (mit P0741 abgleichen).
+    en: 'When 1st gear is commanded, the actual ratio between input and output speed sensors does not match the expected value. Indicates internal slip — typically worn clutches or low line pressure.'
+    de: 'Wenn der 1. Gang angefordert wird, stimmt das gemessene Übersetzungsverhältnis zwischen Eingangs- und Ausgangsdrehzahlsensor nicht mit dem Erwarteten überein. Hinweis auf inneren Schlupf — typischerweise verschlissene Kupplungen oder niedriger Leitungsdruck.'
   affected_components:
     - transmission_clutch_pack
     - torque_converter
@@ -29979,8 +29979,8 @@
     en: Gear 5 Incorrect Ratio
     de: Gang 5 falsche Übersetzung
   description:
-    en: Same fault as P0731 but for 5th gear (5+ speed transmissions).
-    de: Gleicher Fehler wie P0731, aber für den 5. Gang (5-Gang-Getriebe und höher).
+    en: 'When 1st gear is commanded, the actual ratio between input and output speed sensors does not match the expected value. Indicates internal slip — typically worn clutches or low line pressure.'
+    de: 'Wenn der 1. Gang angefordert wird, stimmt das gemessene Übersetzungsverhältnis zwischen Eingangs- und Ausgangsdrehzahlsensor nicht mit dem Erwarteten überein. Hinweis auf inneren Schlupf — typischerweise verschlissene Kupplungen oder niedriger Leitungsdruck.'
   affected_components:
     - transmission_clutch_pack
   common_causes:
@@ -30388,8 +30388,8 @@
     en: Shift Solenoid "B" Malfunction
     de: Schaltsolenoid "B" Fehlfunktion
   description:
-    en: Same fault as P0750 but on shift solenoid B.
-    de: Gleicher Fehler wie P0750, aber am Schaltsolenoid B.
+    en: 'An electrical or hydraulic fault in shift solenoid A. Shift solenoids open or close hydraulic passages inside the valve body to engage the right clutch pack for each gear; a stuck or shorted solenoid causes harsh shifts, no-shift, or limp-home.'
+    de: 'Elektrischer oder hydraulischer Fehler am Schaltsolenoid A. Schaltsolenoide öffnen oder schließen Hydraulikkanäle im Schaltschieberkasten, um die jeweils benötigten Kupplungen einzulegen; ein hängendes oder kurzgeschlossenes Magnetventil verursacht harte Schaltungen, fehlende Schaltungen oder Notlauf.'
   affected_components:
     - shift_solenoid
     - transmission_valve_body
@@ -30425,8 +30425,8 @@
     en: Shift Solenoid B Performance
     de: Schaltsolenoid B Leistung
   description:
-    en: Same fault as P0751 but on shift solenoid B.
-    de: Gleicher Fehler wie P0751, jedoch am Schaltsolenoid B.
+    en: 'Shift solenoid A is electrically intact but its mechanical response does not match command. Often caused by mechanical sticking or contamination.'
+    de: 'Schaltsolenoid A ist elektrisch in Ordnung, die mechanische Reaktion passt jedoch nicht zur Vorgabe. Häufig durch mechanisches Hängen oder Verschmutzung.'
   affected_components:
     - shift_solenoid
     - valve_body
@@ -30493,8 +30493,8 @@
     en: Shift Solenoid "C" Malfunction
     de: Schaltsolenoid "C" Fehlfunktion
   description:
-    en: Same fault as P0750 but on shift solenoid C.
-    de: Gleicher Fehler wie P0750, jedoch am Schaltsolenoid C.
+    en: 'An electrical or hydraulic fault in shift solenoid A. Shift solenoids open or close hydraulic passages inside the valve body to engage the right clutch pack for each gear; a stuck or shorted solenoid causes harsh shifts, no-shift, or limp-home.'
+    de: 'Elektrischer oder hydraulischer Fehler am Schaltsolenoid A. Schaltsolenoide öffnen oder schließen Hydraulikkanäle im Schaltschieberkasten, um die jeweils benötigten Kupplungen einzulegen; ein hängendes oder kurzgeschlossenes Magnetventil verursacht harte Schaltungen, fehlende Schaltungen oder Notlauf.'
   affected_components:
     - shift_solenoid
     - transmission_valve_body
@@ -30530,8 +30530,8 @@
     en: Shift Solenoid C Performance
     de: Schaltsolenoid C Leistung
   description:
-    en: Same fault as P0751 but on shift solenoid C.
-    de: Gleicher Fehler wie P0751, jedoch am Schaltsolenoid C.
+    en: 'Shift solenoid A is electrically intact but its mechanical response does not match command. Often caused by mechanical sticking or contamination.'
+    de: 'Schaltsolenoid A ist elektrisch in Ordnung, die mechanische Reaktion passt jedoch nicht zur Vorgabe. Häufig durch mechanisches Hängen oder Verschmutzung.'
   affected_components:
     - shift_solenoid
     - valve_body
@@ -30562,8 +30562,8 @@
     en: Shift Solenoid "C" Electrical
     de: Schaltsolenoid "C" Elektrisch
   description:
-    en: Same fault as P0758 but on shift solenoid C.
-    de: Gleicher Fehler wie P0758, jedoch am Schaltsolenoid C.
+    en: 'Electrical fault on shift solenoid B circuit — open winding, short to ground, or short to supply.'
+    de: 'Elektrischer Fehler im Stromkreis des Schaltsolenoids B — offene Wicklung, Masseschluss oder Kurzschluss gegen Versorgung.'
   affected_components:
     - shift_solenoid
     - solenoid_wiring
@@ -30599,8 +30599,8 @@
     en: Shift Solenoid "D" Malfunction
     de: Schaltsolenoid "D" Fehlfunktion
   description:
-    en: Same fault as P0750 but on shift solenoid D.
-    de: Gleicher Fehler wie P0750, jedoch am Schaltsolenoid D.
+    en: 'An electrical or hydraulic fault in shift solenoid A. Shift solenoids open or close hydraulic passages inside the valve body to engage the right clutch pack for each gear; a stuck or shorted solenoid causes harsh shifts, no-shift, or limp-home.'
+    de: 'Elektrischer oder hydraulischer Fehler am Schaltsolenoid A. Schaltsolenoide öffnen oder schließen Hydraulikkanäle im Schaltschieberkasten, um die jeweils benötigten Kupplungen einzulegen; ein hängendes oder kurzgeschlossenes Magnetventil verursacht harte Schaltungen, fehlende Schaltungen oder Notlauf.'
   affected_components:
     - shift_solenoid
     - transmission_valve_body
@@ -30636,8 +30636,8 @@
     en: Shift Solenoid D Performance
     de: Schaltsolenoid D Leistung
   description:
-    en: Same fault as P0751 but on shift solenoid D.
-    de: Gleicher Fehler wie P0751, jedoch am Schaltsolenoid D.
+    en: 'Shift solenoid A is electrically intact but its mechanical response does not match command. Often caused by mechanical sticking or contamination.'
+    de: 'Schaltsolenoid A ist elektrisch in Ordnung, die mechanische Reaktion passt jedoch nicht zur Vorgabe. Häufig durch mechanisches Hängen oder Verschmutzung.'
   affected_components:
     - shift_solenoid
     - valve_body
@@ -30668,8 +30668,8 @@
     en: Shift Solenoid "D" Electrical
     de: Schaltsolenoid "D" Elektrisch
   description:
-    en: Same fault as P0758 but on shift solenoid D.
-    de: Gleicher Fehler wie P0758, jedoch am Schaltsolenoid D.
+    en: 'Electrical fault on shift solenoid B circuit — open winding, short to ground, or short to supply.'
+    de: 'Elektrischer Fehler im Stromkreis des Schaltsolenoids B — offene Wicklung, Masseschluss oder Kurzschluss gegen Versorgung.'
   affected_components:
     - shift_solenoid
     - solenoid_wiring
@@ -30705,8 +30705,8 @@
     en: Shift Solenoid "E" Electrical
     de: Schaltsolenoid "E" Elektrisch
   description:
-    en: Same fault as P0758 but on shift solenoid E.
-    de: Gleicher Fehler wie P0758, jedoch am Schaltsolenoid E.
+    en: 'Electrical fault on shift solenoid B circuit — open winding, short to ground, or short to supply.'
+    de: 'Elektrischer Fehler im Stromkreis des Schaltsolenoids B — offene Wicklung, Masseschluss oder Kurzschluss gegen Versorgung.'
   affected_components:
     - shift_solenoid
     - solenoid_wiring
@@ -30779,8 +30779,8 @@
     en: Pressure Control Solenoid B Performance
     de: Druckregelmagnetventil B Leistung
   description:
-    en: Same fault as P0746 but on pressure control solenoid B.
-    de: Gleicher Fehler wie P0746, jedoch am Druckregelmagnetventil B.
+    en: 'Pressure control solenoid A response does not match command. Line pressure does not track expected values, leading to harsh, slipping or delayed shifts.'
+    de: 'Die Reaktion des Druckregelmagnetventils A passt nicht zur Vorgabe. Der Leitungsdruck folgt den Sollwerten nicht, was zu harten, schlupfenden oder verzögerten Schaltungen führt.'
   affected_components:
     - pressure_control_solenoid
     - valve_body
@@ -31039,8 +31039,8 @@
     en: Pressure Control Solenoid C Performance
     de: Druckregelmagnetventil C Leistung
   description:
-    en: Same fault as P0746 but on pressure control solenoid C.
-    de: Gleicher Fehler wie P0746, jedoch am Druckregelmagnetventil C.
+    en: 'Pressure control solenoid A response does not match command. Line pressure does not track expected values, leading to harsh, slipping or delayed shifts.'
+    de: 'Die Reaktion des Druckregelmagnetventils A passt nicht zur Vorgabe. Der Leitungsdruck folgt den Sollwerten nicht, was zu harten, schlupfenden oder verzögerten Schaltungen führt.'
   affected_components:
     - pressure_control_solenoid
     - valve_body

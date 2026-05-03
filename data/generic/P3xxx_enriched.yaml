@@ -941,8 +941,8 @@
     en: Cylinder 3 Deactivation/Intake Valve Control Circuit Open
     de: Zylinder 3 Abschalt-/Einlassventilsteuerkreis offen
   description:
-    en: Same fault as P3401 but for cylinder 3 — the deactivation or intake valve control circuit is open.
-    de: Gleicher Fehler wie P3401, jedoch für Zylinder 3 — der Abschalt- oder Einlassventilsteuerkreis ist unterbrochen.
+    en: 'The engine control module has detected an open circuit at the cylinder 3 deactivation or intake valve control solenoid. Without a valid circuit, cylinder 3 cannot be deactivated.'
+    de: 'Das Motorsteuergerät hat eine Unterbrechung im Steuerkreis des Abschalt- oder Einlassventil-Magnetventils von Zylinder 3 erkannt. Ohne gültigen Stromkreis kann Zylinder 3 nicht abgeschaltet werden.'
   affected_components:
     - cylinder_deactivation_solenoid
     - engine_wiring_harness

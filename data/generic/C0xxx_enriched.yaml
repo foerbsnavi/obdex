@@ -450,8 +450,8 @@
     en: Right Front Wheel Speed Sensor Circuit Malfunction
     de: Raddrehzahlsensor vorne rechts Schaltung Fehlfunktion
   description:
-    en: Same fault as C0035 but for the right front wheel. ABS and stability control are disabled while the fault is active.
-    de: Gleicher Fehler wie C0035, jedoch für das rechte Vorderrad. ABS und Stabilitätsregelung sind bei aktivem Fehler deaktiviert.
+    en: 'The ABS control module has detected a fault in the left front wheel speed sensor circuit. Loss of wheel speed information disables ABS and stability control, and a separate ABS warning lamp is illuminated.'
+    de: 'Das ABS-Steuergerät hat einen Fehler im Stromkreis des Raddrehzahlsensors vorne links erkannt. Ohne Raddrehzahlsignal werden ABS und Stabilitätsregelung deaktiviert und die ABS-Warnleuchte leuchtet.'
   affected_components:
     - wheel_speed_sensor
     - abs_control_module
@@ -636,8 +636,8 @@
     en: Left Rear Wheel Speed Sensor Circuit Malfunction
     de: Raddrehzahlsensor hinten links Schaltung Fehlfunktion
   description:
-    en: Same fault as C0035 but for the left rear wheel. ABS and stability control are disabled while the fault is active.
-    de: Gleicher Fehler wie C0035, jedoch für das linke Hinterrad. ABS und Stabilitätsregelung sind bei aktivem Fehler deaktiviert.
+    en: 'The ABS control module has detected a fault in the left front wheel speed sensor circuit. Loss of wheel speed information disables ABS and stability control, and a separate ABS warning lamp is illuminated.'
+    de: 'Das ABS-Steuergerät hat einen Fehler im Stromkreis des Raddrehzahlsensors vorne links erkannt. Ohne Raddrehzahlsignal werden ABS und Stabilitätsregelung deaktiviert und die ABS-Warnleuchte leuchtet.'
   affected_components:
     - wheel_speed_sensor
     - abs_control_module
@@ -718,8 +718,8 @@
     en: Right Rear Wheel Speed Sensor Circuit Malfunction
     de: Raddrehzahlsensor hinten rechts Schaltung Fehlfunktion
   description:
-    en: Same fault as C0035 but for the right rear wheel. ABS and stability control are disabled while the fault is active.
-    de: Gleicher Fehler wie C0035, jedoch für das rechte Hinterrad. ABS und Stabilitätsregelung sind bei aktivem Fehler deaktiviert.
+    en: 'The ABS control module has detected a fault in the left front wheel speed sensor circuit. Loss of wheel speed information disables ABS and stability control, and a separate ABS warning lamp is illuminated.'
+    de: 'Das ABS-Steuergerät hat einen Fehler im Stromkreis des Raddrehzahlsensors vorne links erkannt. Ohne Raddrehzahlsignal werden ABS und Stabilitätsregelung deaktiviert und die ABS-Warnleuchte leuchtet.'
   affected_components:
     - wheel_speed_sensor
     - abs_control_module
@@ -1802,8 +1802,8 @@
     en: Right Front ABS Inlet Solenoid Circuit
     de: ABS-Einlassventil vorne rechts Schaltung
   description:
-    en: Same fault as C0141 but for the right front brake circuit inlet solenoid.
-    de: Gleicher Fehler wie C0141, jedoch für das Einlassventil des rechten vorderen Bremskreises.
+    en: 'The ABS control module has detected an electrical fault in the inlet solenoid for the left front brake circuit. The solenoid isolates the wheel circuit from master cylinder pressure during ABS regulation.'
+    de: 'Das ABS-Steuergerät hat einen elektrischen Fehler am Einlassventil des linken vorderen Bremskreises erkannt. Das Ventil trennt während der ABS-Regelung den Radkreis vom Hauptbremszylinderdruck.'
   affected_components:
     - abs_inlet_solenoid
     - abs_hydraulic_unit
@@ -1874,8 +1874,8 @@
     en: Right Front ABS Outlet Solenoid Circuit
     de: ABS-Auslassventil vorne rechts Schaltung
   description:
-    en: Same fault as C0146 but for the right front brake circuit outlet solenoid.
-    de: Gleicher Fehler wie C0146, jedoch für das Auslassventil des rechten vorderen Bremskreises.
+    en: 'The ABS control module has detected an electrical fault in the outlet solenoid for the left front brake circuit. The outlet valve releases brake pressure to the low-pressure accumulator during ABS regulation.'
+    de: 'Das ABS-Steuergerät hat einen elektrischen Fehler am Auslassventil des linken vorderen Bremskreises erkannt. Das Auslassventil baut während der ABS-Regelung Bremsdruck zum Niederdruckspeicher ab.'
   affected_components:
     - abs_outlet_solenoid
     - abs_hydraulic_unit
@@ -3860,8 +3860,8 @@
     en: Ride Height Sensor Front Right
     de: Niveausensor vorne rechts
   description:
-    en: Same as C0306 but for the front right corner of the vehicle.
-    de: Gleicher Fehler wie C0306, jedoch für die vordere rechte Fahrzeugecke.
+    en: 'The air suspension control module has detected a fault in the front left ride height sensor circuit. Without this signal the module cannot regulate suspension height and self-levelling is disabled.'
+    de: 'Das Luftfederungs-Steuergerät hat einen Fehler im Stromkreis des Niveausensors vorne links erkannt. Ohne dieses Signal kann das Modul die Federungsniveaus nicht regeln und die Niveauregulierung wird deaktiviert.'
   affected_components:
     - ride_height_sensor
     - air_suspension_module
@@ -3935,8 +3935,8 @@
     en: Ride Height Sensor Rear Left
     de: Niveausensor hinten links
   description:
-    en: Same as C0306 but for the rear left corner of the vehicle.
-    de: Gleicher Fehler wie C0306, jedoch für die hintere linke Fahrzeugecke.
+    en: 'The air suspension control module has detected a fault in the front left ride height sensor circuit. Without this signal the module cannot regulate suspension height and self-levelling is disabled.'
+    de: 'Das Luftfederungs-Steuergerät hat einen Fehler im Stromkreis des Niveausensors vorne links erkannt. Ohne dieses Signal kann das Modul die Federungsniveaus nicht regeln und die Niveauregulierung wird deaktiviert.'
   affected_components:
     - ride_height_sensor
     - air_suspension_module
@@ -3976,8 +3976,8 @@
     en: Ride Height Sensor Rear Right
     de: Niveausensor hinten rechts
   description:
-    en: Same as C0306 but for the rear right corner of the vehicle.
-    de: Gleicher Fehler wie C0306, jedoch für die hintere rechte Fahrzeugecke.
+    en: 'The air suspension control module has detected a fault in the front left ride height sensor circuit. Without this signal the module cannot regulate suspension height and self-levelling is disabled.'
+    de: 'Das Luftfederungs-Steuergerät hat einen Fehler im Stromkreis des Niveausensors vorne links erkannt. Ohne dieses Signal kann das Modul die Federungsniveaus nicht regeln und die Niveauregulierung wird deaktiviert.'
   affected_components:
     - ride_height_sensor
     - air_suspension_module
@@ -7086,8 +7086,8 @@
     en: TPMS Sensor 2 Battery
     de: Reifendrucksensor 2 Batterie
   description:
-    en: Same as C0900 but for tyre pressure sensor 2 (typically front right or as defined by the position table of the TPMS module).
-    de: Gleicher Fehler wie C0900, jedoch für den Reifendrucksensor 2 (üblicherweise vorne rechts oder gemäß Positionstabelle des RDKS-Steuergeräts).
+    en: 'The tyre pressure monitoring system has detected that the battery in tyre pressure sensor 2 is low or depleted. TPMS sensors are battery-powered with a typical life of 5 to 10 years and must be replaced as a unit when the battery fails.'
+    de: 'Das Reifendruckkontrollsystem hat erkannt, dass die Batterie des Reifendrucksensors 1 schwach oder leer ist. RDKS-Sensoren sind batteriebetrieben mit einer Lebensdauer von 5 bis 10 Jahren und müssen bei leerer Batterie als Einheit getauscht werden.'
   affected_components:
     - tpms_sensor
     - tpms_control_module
@@ -7121,8 +7121,8 @@
     en: TPMS Sensor 2 Position Performance
     de: RDKS-Sensor 2 Position Leistung
   description:
-    en: Same as C0901 but for TPMS sensor 2. Position relearn is typically required.
-    de: Wie C0901, jedoch für RDKS-Sensor 2. In der Regel ist ein erneutes Anlernen erforderlich.
+    en: 'The tire pressure monitoring receiver cannot reliably localize sensor 2 to a wheel position. Pressure values may be assigned to the wrong wheel until relearn is completed.'
+    de: 'Der RDKS-Empfänger kann Sensor 2 keiner Radposition mehr zuverlässig zuordnen. Druckwerte werden bis zum erneuten Anlernen ggf. dem falschen Rad zugewiesen.'
   affected_components:
     - tpms_sensor
     - tpms_receiver
@@ -7191,8 +7191,8 @@
     en: TPMS Sensor 4 Battery Low
     de: RDKS-Sensor 4 Batterie schwach
   description:
-    en: Same as C0905 but for TPMS sensor 4. Sensor replacement is required.
-    de: Wie C0905, jedoch für RDKS-Sensor 4. Sensor muss getauscht werden.
+    en: 'The TPMS receiver reports that the internal battery of sensor 4 is at end of life. The sensor must be replaced as the battery is sealed inside the housing.'
+    de: 'Der RDKS-Empfänger meldet, dass die interne Batterie von Sensor 4 am Lebensdauerende ist. Der Sensor muss getauscht werden, da die Batterie im Gehäuse vergossen ist.'
   affected_components:
     - tpms_sensor
     - tpms_receiver

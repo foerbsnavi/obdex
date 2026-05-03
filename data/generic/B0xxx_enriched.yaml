@@ -338,8 +338,8 @@
     en: Right Front/Passenger Frontal Stage 2 Deployment Control
     de: Beifahrerseite Frontairbag Stufe 2 Auslösekreis
   description:
-    en: Same fault as B0010 but for the second stage of a dual-stage passenger frontal airbag. The high-severity deployment stage cannot be reliably triggered.
-    de: Gleicher Fehler wie B0010, jedoch für die zweite Stufe eines zweistufigen Beifahrer-Frontairbags. Die Hochlast-Auslösestufe kann nicht zuverlässig ausgelöst werden.
+    en: 'The SRS module has detected a fault in the deployment control circuit for the front passenger airbag. The airbag warning lamp activates and crash protection on the passenger side may be reduced.'
+    de: 'Das SRS-Steuergerät hat einen Fehler im Auslösekreis des Beifahrer-Frontairbags erkannt. Die Airbag-Warnleuchte leuchtet und der Crashschutz auf der Beifahrerseite kann eingeschränkt sein.'
   affected_components:
     - passenger_airbag_module
     - srs_control_module
@@ -785,8 +785,8 @@
     en: Right Side Deployment Control
     de: Seitenairbag rechts Auslösekreis
   description:
-    en: Same fault as B0020 but for the right (passenger) side airbag. A wiring or squib fault prevents reliable deployment of the side airbag on the passenger side.
-    de: Gleicher Fehler wie B0020, jedoch für den rechten (beifahrerseitigen) Seitenairbag. Ein Verkabelungs- oder Zündfehler verhindert die zuverlässige Auslösung.
+    en: 'The SRS module has detected a fault in the deployment control circuit for the left (driver) side airbag, typically located in the seat or door. The airbag warning lamp illuminates.'
+    de: 'Das SRS-Steuergerät hat einen Fehler im Auslösekreis des linken Seitenairbags erkannt — meist in Sitz oder Tür verbaut. Die Airbag-Warnleuchte leuchtet.'
   affected_components:
     - right_side_airbag_module
     - srs_control_module
@@ -938,8 +938,8 @@
     en: Right Side Curtain Air Bag Deployment Control
     de: Beifahrerseite Kopfairbag (Curtain) Auslösekreis
   description:
-    en: Same fault as B0028 but for the passenger side curtain airbag. A wiring or squib fault prevents reliable deployment from the passenger headliner.
-    de: Gleicher Fehler wie B0028, jedoch für den beifahrerseitigen Kopfairbag. Ein Verkabelungs- oder Zündfehler verhindert die zuverlässige Auslösung.
+    en: 'The SRS module has detected a fault in the deployment control circuit for the driver side curtain (head) airbag, which deploys from the headliner during a side impact or rollover.'
+    de: 'Das SRS-Steuergerät hat einen Fehler im Auslösekreis des fahrerseitigen Kopfairbags (Curtain) erkannt. Dieser entfaltet sich bei Seitenaufprall oder Überschlag aus dem Dachhimmel.'
   affected_components:
     - passenger_curtain_airbag
     - srs_control_module
@@ -1405,8 +1405,8 @@
     en: Passenger Pretensioner Deployment Control
     de: Beifahrer-Gurtstraffer Auslösekreis
   description:
-    en: Same fault as B0050 but for the passenger seat belt pretensioner. A circuit fault prevents reliable pretensioner activation on the passenger side during a crash.
-    de: Gleicher Fehler wie B0050, jedoch für den Beifahrer-Gurtstraffer. Ein Schaltkreisfehler verhindert die zuverlässige Aktivierung auf der Beifahrerseite im Crashfall.
+    en: 'The SRS module has detected a fault in the deployment control circuit for the driver seat belt pretensioner. The pretensioner pulls the belt taut during a crash and may not function reliably with this fault active.'
+    de: 'Das SRS-Steuergerät hat einen Fehler im Auslösekreis des Fahrer-Gurtstraffers erkannt. Der Gurtstraffer zieht den Gurt im Crashfall straff und arbeitet bei aktivem Fehler möglicherweise nicht zuverlässig.'
   affected_components:
     - passenger_pretensioner
     - srs_control_module
@@ -2118,8 +2118,8 @@
     en: Passenger Side Pretensioner Stage 2 Deployment Control
     de: Beifahrer-Gurtstraffer Stufe 2 Auslösekreis
   description:
-    en: Same fault as B0090 but for the passenger pretensioner stage 2. The high-severity stage cannot be reliably triggered on the passenger side.
-    de: Gleicher Fehler wie B0090, jedoch für die zweite Stufe des Beifahrer-Gurtstraffers. Die Hochlast-Stufe kann auf der Beifahrerseite nicht zuverlässig ausgelöst werden.
+    en: 'The SRS module has detected a fault in the second-stage circuit of the driver seat belt pretensioner. Multi-stage pretensioners use additional charges for severe crashes — this stage cannot be triggered reliably.'
+    de: 'Das SRS-Steuergerät hat einen Fehler im Stufe-2-Stromkreis des Fahrer-Gurtstraffers erkannt. Mehrstufige Gurtstraffer nutzen zusätzliche Treibsätze bei schweren Unfällen — diese Stufe kann nicht zuverlässig ausgelöst werden.'
   affected_components:
     - passenger_pretensioner
     - srs_control_module
@@ -4603,8 +4603,8 @@
     en: Passenger Door Lock Switch Circuit
     de: Beifahrertür Verriegelungsschalter Schaltung
   description:
-    en: Same fault as B0265 but for the passenger door lock switch. Pressing the switch on the passenger door panel does not operate the central locking.
-    de: Gleicher Fehler wie B0265, jedoch für den Verriegelungsschalter der Beifahrertür. Das Drücken des Schalters in der Beifahrertürverkleidung steuert die Zentralverriegelung nicht.
+    en: 'The body control module has detected a fault in the driver door lock/unlock switch on the door panel. Pressing the switch may not lock or unlock the doors.'
+    de: 'Das Karosserie-Steuergerät hat einen Fehler am Verriegelungs-/Entriegelungsschalter in der Fahrertürverkleidung erkannt. Das Drücken des Schalters verriegelt oder entriegelt die Türen nicht.'
   affected_components:
     - door_lock_switch
     - body_control_module
@@ -5074,8 +5074,8 @@
     en: Passenger Seat Position Sensor Circuit
     de: Beifahrersitz Positionssensor Schaltung
   description:
-    en: Same fault as B0310 but for the passenger seat position sensor. The sensor signal is implausible — memory recall and occupant classification may be impaired.
-    de: Gleicher Fehler wie B0310, jedoch für den Positionssensor des Beifahrersitzes. Das Signal ist unplausibel — Memory-Funktion und Insassenerkennung können beeinträchtigt sein.
+    en: 'The seat module has detected an implausible signal from the driver seat position sensor. The sensor reports the fore/aft position used for memory seat recall and for SRS occupant logic.'
+    de: 'Das Sitzsteuergerät hat ein unplausibles Signal vom Positionssensor des Fahrersitzes erkannt. Der Sensor meldet die Längsposition für die Memory-Funktion und die SRS-Insassenlogik.'
   affected_components:
     - seat_position_sensor
     - seat_control_module

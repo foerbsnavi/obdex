@@ -1529,8 +1529,8 @@
     en: Vehicle Communication Bus C Performance
     de: Fahrzeug-Kommunikationsbus C Leistung
   description:
-    en: Same fault as U0038 on bus C — error counters or message rate out of spec.
-    de: Wie U0038, jedoch Bus C — Fehlerzähler oder Nachrichtenrate außerhalb Spezifikation.
+    en: 'Bus C is electrically OK but message rate or error counters are outside spec. Often intermittent wiring or a degraded transceiver.'
+    de: 'Bus C ist elektrisch in Ordnung, aber Nachrichtenrate oder Fehlerzähler liegen außerhalb der Spezifikation. Häufig sporadische Verkabelung oder schwacher Transceiver.'
   affected_components:
     - bus_c_wiring
   common_causes:
@@ -2616,8 +2616,8 @@
     en: Control Module Communication Bus I Off
     de: Steuermodul-Kommunikationsbus I aus
   description:
-    en: Same as U007A on bus I.
-    de: Wie U007A, jedoch Bus I.
+    en: 'The control module communication bus I is off — the gateway has shut down or isolated this bus, often due to repeated bus errors or a "bus off" event in the CAN controller.'
+    de: 'Der Steuermodul-Kommunikationsbus I ist abgeschaltet — Gateway hat den Bus abgeschaltet oder isoliert, häufig durch wiederholte Fehler oder "Bus-Off" im CAN-Controller.'
   affected_components:
     - bus_i_gateway
     - bus_i_wiring
@@ -2648,8 +2648,8 @@
     en: Control Module Communication Bus J Off
     de: Steuermodul-Kommunikationsbus J aus
   description:
-    en: Same as U007A on bus J.
-    de: Wie U007A, jedoch Bus J.
+    en: 'The control module communication bus J is off — the gateway has shut down or isolated this bus, often due to repeated bus errors or a "bus off" event in the CAN controller.'
+    de: 'Der Steuermodul-Kommunikationsbus J ist abgeschaltet — Gateway hat den Bus abgeschaltet oder isoliert, häufig durch wiederholte Fehler oder "Bus-Off" im CAN-Controller.'
   affected_components:
     - bus_j_gateway
     - bus_j_wiring
@@ -2680,8 +2680,8 @@
     en: Control Module Communication Bus K Off
     de: Steuermodul-Kommunikationsbus K aus
   description:
-    en: Same as U007A on bus K.
-    de: Wie U007A, jedoch Bus K.
+    en: 'The control module communication bus K is off — the gateway has shut down or isolated this bus, often due to repeated bus errors or a "bus off" event in the CAN controller.'
+    de: 'Der Steuermodul-Kommunikationsbus K ist abgeschaltet — Gateway hat den Bus abgeschaltet oder isoliert, häufig durch wiederholte Fehler oder "Bus-Off" im CAN-Controller.'
   affected_components:
     - bus_k_gateway
     - bus_k_wiring
@@ -2712,8 +2712,8 @@
     en: Control Module Communication Bus L Off
     de: Steuermodul-Kommunikationsbus L aus
   description:
-    en: Same as U007A on bus L.
-    de: Wie U007A, jedoch Bus L.
+    en: 'The control module communication bus L is off — the gateway has shut down or isolated this bus, often due to repeated bus errors or a "bus off" event in the CAN controller.'
+    de: 'Der Steuermodul-Kommunikationsbus L ist abgeschaltet — Gateway hat den Bus abgeschaltet oder isoliert, häufig durch wiederholte Fehler oder "Bus-Off" im CAN-Controller.'
   affected_components:
     - bus_l_gateway
     - bus_l_wiring
@@ -2744,8 +2744,8 @@
     en: Control Module Communication Bus M Off
     de: Steuermodul-Kommunikationsbus M aus
   description:
-    en: Same as U007A on bus M.
-    de: Wie U007A, jedoch Bus M.
+    en: 'The control module communication bus M is off — the gateway has shut down or isolated this bus, often due to repeated bus errors or a "bus off" event in the CAN controller.'
+    de: 'Der Steuermodul-Kommunikationsbus M ist abgeschaltet — Gateway hat den Bus abgeschaltet oder isoliert, häufig durch wiederholte Fehler oder "Bus-Off" im CAN-Controller.'
   affected_components:
     - bus_m_gateway
     - bus_m_wiring
@@ -3824,8 +3824,8 @@
     en: Lost Communication with Transfer Case Control Module
     de: Kommunikation mit Verteilergetriebe-Steuergerät verloren
   description:
-    en: Same as U0100 but for the transfer case control module on 4WD/AWD vehicles. The driver typically loses the ability to switch between 2WD/4WD modes and the system may default to a fixed setting.
-    de: Wie U0100, aber für das Verteilergetriebe-Steuergerät bei 4WD/AWD-Fahrzeugen. Der Fahrer kann typischerweise nicht mehr zwischen 2WD/4WD wechseln und das System fällt auf eine feste Einstellung zurück.
+    en: 'A control module that expects to talk to the engine ECU has stopped receiving messages. Most commonly seen by the TCM, instrument cluster, or BCM after the ECU has been disconnected, fitted with a faulty replacement, or the CAN wiring has been damaged. Engine usually will not run while this fault is active in other modules.'
+    de: 'Ein Steuergerät, das mit dem Motorsteuergerät kommunizieren sollte, empfängt keine Botschaften mehr. Wird am häufigsten von Getriebesteuergerät, Kombiinstrument oder Bordnetzsteuergerät gemeldet, nachdem die Motorsteuerung abgesteckt, ein defektes Ersatzgerät eingebaut oder die CAN-Verkabelung beschädigt wurde. Der Motor läuft meist nicht, solange dieser Fehler in anderen Steuergeräten aktiv ist.'
   affected_components:
     - transfer_case_control_module
     - can_bus_wiring
@@ -3860,8 +3860,8 @@
     en: Lost Communication with Gear Shift Module
     de: Kommunikation mit Schaltmodul verloren
   description:
-    en: Same as U0100 but for the gear shift module (shift-by-wire selector). The transmission may go to limp-home, refuse to leave Park, or ignore selector inputs.
-    de: Wie U0100, aber für das Schaltmodul (Shift-by-Wire-Wählhebel). Das Getriebe kann in den Notlauf gehen, sich weigern, aus Parken zu schalten, oder Wählhebeleingaben ignorieren.
+    en: 'A control module that expects to talk to the engine ECU has stopped receiving messages. Most commonly seen by the TCM, instrument cluster, or BCM after the ECU has been disconnected, fitted with a faulty replacement, or the CAN wiring has been damaged. Engine usually will not run while this fault is active in other modules.'
+    de: 'Ein Steuergerät, das mit dem Motorsteuergerät kommunizieren sollte, empfängt keine Botschaften mehr. Wird am häufigsten von Getriebesteuergerät, Kombiinstrument oder Bordnetzsteuergerät gemeldet, nachdem die Motorsteuerung abgesteckt, ein defektes Ersatzgerät eingebaut oder die CAN-Verkabelung beschädigt wurde. Der Motor läuft meist nicht, solange dieser Fehler in anderen Steuergeräten aktiv ist.'
   affected_components:
     - gear_shift_module
     - can_bus_wiring
@@ -3896,8 +3896,8 @@
     en: Lost Communication with Cruise Control Module
     de: Kommunikation mit Tempomat-Steuergerät verloren
   description:
-    en: Same as U0100 but for the cruise control module. Cruise control (and on modern cars adaptive cruise) becomes inoperative.
-    de: Wie U0100, aber für das Tempomat-Steuergerät. Tempomat (und bei modernen Fahrzeugen adaptiver Tempomat) ist nicht mehr verfügbar.
+    en: 'A control module that expects to talk to the engine ECU has stopped receiving messages. Most commonly seen by the TCM, instrument cluster, or BCM after the ECU has been disconnected, fitted with a faulty replacement, or the CAN wiring has been damaged. Engine usually will not run while this fault is active in other modules.'
+    de: 'Ein Steuergerät, das mit dem Motorsteuergerät kommunizieren sollte, empfängt keine Botschaften mehr. Wird am häufigsten von Getriebesteuergerät, Kombiinstrument oder Bordnetzsteuergerät gemeldet, nachdem die Motorsteuerung abgesteckt, ein defektes Ersatzgerät eingebaut oder die CAN-Verkabelung beschädigt wurde. Der Motor läuft meist nicht, solange dieser Fehler in anderen Steuergeräten aktiv ist.'
   affected_components:
     - cruise_control_module
     - can_bus_wiring
@@ -3931,8 +3931,8 @@
     en: Lost Communication with Fuel Injector Control Module
     de: Kommunikation mit Einspritzdüsen-Steuergerät verloren
   description:
-    en: Same as U0100 but for the fuel injector control module (typically found on diesels with separate injector driver units). The engine usually stops or refuses to start.
-    de: Wie U0100, aber für das Einspritzdüsen-Steuergerät (typischerweise bei Dieselmotoren mit separaten Einspritzdüsen-Treibern). Der Motor stoppt meist oder springt nicht an.
+    en: 'A control module that expects to talk to the engine ECU has stopped receiving messages. Most commonly seen by the TCM, instrument cluster, or BCM after the ECU has been disconnected, fitted with a faulty replacement, or the CAN wiring has been damaged. Engine usually will not run while this fault is active in other modules.'
+    de: 'Ein Steuergerät, das mit dem Motorsteuergerät kommunizieren sollte, empfängt keine Botschaften mehr. Wird am häufigsten von Getriebesteuergerät, Kombiinstrument oder Bordnetzsteuergerät gemeldet, nachdem die Motorsteuerung abgesteckt, ein defektes Ersatzgerät eingebaut oder die CAN-Verkabelung beschädigt wurde. Der Motor läuft meist nicht, solange dieser Fehler in anderen Steuergeräten aktiv ist.'
   affected_components:
     - fuel_injector_control_module
     - can_bus_wiring
@@ -3967,8 +3967,8 @@
     en: Lost Communication with Glow Plug Control Module
     de: Kommunikation mit Glühkerzen-Steuergerät verloren
   description:
-    en: Same as U0100 but for the glow plug control module on diesel engines. Cold-start preheat is no longer commanded — the engine cranks longer and may run rough until warm, and white smoke may appear at startup.
-    de: Wie U0100, aber für das Glühkerzen-Steuergerät bei Dieselmotoren. Das Kaltstart-Vorglühen wird nicht mehr angesteuert — der Motor orgelt länger und läuft eventuell rau, bis er warm ist, und beim Start kann weißer Rauch auftreten.
+    en: 'A control module that expects to talk to the engine ECU has stopped receiving messages. Most commonly seen by the TCM, instrument cluster, or BCM after the ECU has been disconnected, fitted with a faulty replacement, or the CAN wiring has been damaged. Engine usually will not run while this fault is active in other modules.'
+    de: 'Ein Steuergerät, das mit dem Motorsteuergerät kommunizieren sollte, empfängt keine Botschaften mehr. Wird am häufigsten von Getriebesteuergerät, Kombiinstrument oder Bordnetzsteuergerät gemeldet, nachdem die Motorsteuerung abgesteckt, ein defektes Ersatzgerät eingebaut oder die CAN-Verkabelung beschädigt wurde. Der Motor läuft meist nicht, solange dieser Fehler in anderen Steuergeräten aktiv ist.'
   affected_components:
     - glow_plug_control_module
     - can_bus_wiring
@@ -4003,8 +4003,8 @@
     en: Lost Communication with Throttle Actuator Control Module
     de: Kommunikation mit Drosselklappen-Steuergerät verloren
   description:
-    en: Same as U0100 but for the throttle actuator control module on drive-by-wire systems. The engine usually drops to forced idle or limp mode because the throttle cannot be commanded.
-    de: Wie U0100, aber für das Drosselklappen-Steuergerät bei elektronischer Drosselklappe. Der Motor fällt meist auf Zwangsleerlauf oder Notlauf zurück, weil die Drosselklappe nicht angesteuert werden kann.
+    en: 'A control module that expects to talk to the engine ECU has stopped receiving messages. Most commonly seen by the TCM, instrument cluster, or BCM after the ECU has been disconnected, fitted with a faulty replacement, or the CAN wiring has been damaged. Engine usually will not run while this fault is active in other modules.'
+    de: 'Ein Steuergerät, das mit dem Motorsteuergerät kommunizieren sollte, empfängt keine Botschaften mehr. Wird am häufigsten von Getriebesteuergerät, Kombiinstrument oder Bordnetzsteuergerät gemeldet, nachdem die Motorsteuerung abgesteckt, ein defektes Ersatzgerät eingebaut oder die CAN-Verkabelung beschädigt wurde. Der Motor läuft meist nicht, solange dieser Fehler in anderen Steuergeräten aktiv ist.'
   affected_components:
     - throttle_actuator_control_module
     - can_bus_wiring
@@ -4076,8 +4076,8 @@
     en: Lost Communication with Fuel Pump Control Module
     de: Kommunikation mit Kraftstoffpumpen-Steuergerät verloren
   description:
-    en: Same as U0100 but for the fuel pump control module (FPCM). On vehicles with electronic returnless fuel systems the engine stalls or will not start because pump speed can no longer be commanded.
-    de: Wie U0100, aber für das Kraftstoffpumpen-Steuergerät (FPCM). Bei Fahrzeugen mit rücklauffreiem elektronischen Kraftstoffsystem stirbt der Motor ab oder springt nicht an, weil die Pumpendrehzahl nicht mehr angesteuert werden kann.
+    en: 'A control module that expects to talk to the engine ECU has stopped receiving messages. Most commonly seen by the TCM, instrument cluster, or BCM after the ECU has been disconnected, fitted with a faulty replacement, or the CAN wiring has been damaged. Engine usually will not run while this fault is active in other modules.'
+    de: 'Ein Steuergerät, das mit dem Motorsteuergerät kommunizieren sollte, empfängt keine Botschaften mehr. Wird am häufigsten von Getriebesteuergerät, Kombiinstrument oder Bordnetzsteuergerät gemeldet, nachdem die Motorsteuerung abgesteckt, ein defektes Ersatzgerät eingebaut oder die CAN-Verkabelung beschädigt wurde. Der Motor läuft meist nicht, solange dieser Fehler in anderen Steuergeräten aktiv ist.'
   affected_components:
     - fuel_pump_control_module
     - can_bus_wiring
@@ -4144,8 +4144,8 @@
     en: Lost Communication With Exhaust Gas Recirculation Control Module B
     de: Kommunikationsverlust mit AGR-Steuermodul B
   description:
-    en: Same as U010A on EGR module B.
-    de: Wie U010A, jedoch AGR-Modul B.
+    en: 'ECU has lost CAN communication with the EGR control module B.'
+    de: 'Steuergerät hat die CAN-Kommunikation zum AGR-Steuermodul B verloren.'
   affected_components:
     - egr_module_b
     - can_bus
@@ -4208,8 +4208,8 @@
     en: Lost Communication With Turbocharger/Supercharger Control Module B
     de: Kommunikationsverlust mit Turbolader/Kompressor-Steuermodul B
   description:
-    en: Same as U010C on turbo module B.
-    de: Wie U010C, jedoch Turbo-Modul B.
+    en: 'ECU has lost CAN communication with the turbocharger control module B.'
+    de: 'Steuergerät hat die CAN-Kommunikation zum Turbolader-Steuermodul B verloren.'
   affected_components:
     - turbo_module_b
     - can_bus
@@ -4304,8 +4304,8 @@
     en: Lost Communication with Drive Motor Control Module
     de: Kommunikation mit Antriebsmotor-Steuergerät verloren
   description:
-    en: Same as U0100 but for the drive motor control module on hybrid and electric vehicles. The vehicle typically falls into ready-off or severely reduced power because the traction motor inverter cannot be commanded.
-    de: Wie U0100, aber für das Antriebsmotor-Steuergerät bei Hybrid- und Elektrofahrzeugen. Das Fahrzeug fällt typischerweise in den Ready-Off-Zustand oder stark reduzierte Leistung, weil der Traktionsmotor-Inverter nicht angesteuert werden kann.
+    en: 'A control module that expects to talk to the engine ECU has stopped receiving messages. Most commonly seen by the TCM, instrument cluster, or BCM after the ECU has been disconnected, fitted with a faulty replacement, or the CAN wiring has been damaged. Engine usually will not run while this fault is active in other modules.'
+    de: 'Ein Steuergerät, das mit dem Motorsteuergerät kommunizieren sollte, empfängt keine Botschaften mehr. Wird am häufigsten von Getriebesteuergerät, Kombiinstrument oder Bordnetzsteuergerät gemeldet, nachdem die Motorsteuerung abgesteckt, ein defektes Ersatzgerät eingebaut oder die CAN-Verkabelung beschädigt wurde. Der Motor läuft meist nicht, solange dieser Fehler in anderen Steuergeräten aktiv ist.'
   affected_components:
     - drive_motor_control_module
     - can_bus_wiring
@@ -4340,8 +4340,8 @@
     en: Lost Communication with Battery Energy Control Module
     de: Kommunikation mit Hochvoltbatterie-Steuergerät verloren
   description:
-    en: Same as U0100 but for the battery energy control module (BMS) on hybrid and electric vehicles. The high-voltage system typically refuses to engage and the car cannot drive.
-    de: Wie U0100, aber für das Batteriemanagement-Steuergerät (BMS) bei Hybrid- und Elektrofahrzeugen. Das Hochvolt-System wird typischerweise nicht freigegeben und das Fahrzeug ist nicht fahrbereit.
+    en: 'A control module that expects to talk to the engine ECU has stopped receiving messages. Most commonly seen by the TCM, instrument cluster, or BCM after the ECU has been disconnected, fitted with a faulty replacement, or the CAN wiring has been damaged. Engine usually will not run while this fault is active in other modules.'
+    de: 'Ein Steuergerät, das mit dem Motorsteuergerät kommunizieren sollte, empfängt keine Botschaften mehr. Wird am häufigsten von Getriebesteuergerät, Kombiinstrument oder Bordnetzsteuergerät gemeldet, nachdem die Motorsteuerung abgesteckt, ein defektes Ersatzgerät eingebaut oder die CAN-Verkabelung beschädigt wurde. Der Motor läuft meist nicht, solange dieser Fehler in anderen Steuergeräten aktiv ist.'
   affected_components:
     - battery_energy_control_module
     - can_bus_wiring
@@ -4376,8 +4376,8 @@
     en: Lost Communication with Battery Energy Control Module "B"
     de: Kommunikation mit Batterie-Energiesteuergerät "B" verloren
   description:
-    en: Same as U0100 but for the second battery energy control module on EV/hybrid vehicles. Charge/discharge management is impaired and the vehicle may refuse to enter ready or limit power.
-    de: Wie U0100, aber für das zweite Batterie-Energiesteuergerät bei E-/Hybridfahrzeugen. Das Lade-/Entlade-Management ist gestört und das Fahrzeug verweigert eventuell Ready oder begrenzt die Leistung.
+    en: 'A control module that expects to talk to the engine ECU has stopped receiving messages. Most commonly seen by the TCM, instrument cluster, or BCM after the ECU has been disconnected, fitted with a faulty replacement, or the CAN wiring has been damaged. Engine usually will not run while this fault is active in other modules.'
+    de: 'Ein Steuergerät, das mit dem Motorsteuergerät kommunizieren sollte, empfängt keine Botschaften mehr. Wird am häufigsten von Getriebesteuergerät, Kombiinstrument oder Bordnetzsteuergerät gemeldet, nachdem die Motorsteuerung abgesteckt, ein defektes Ersatzgerät eingebaut oder die CAN-Verkabelung beschädigt wurde. Der Motor läuft meist nicht, solange dieser Fehler in anderen Steuergeräten aktiv ist.'
   affected_components:
     - battery_energy_control_module
     - can_bus_wiring
@@ -4412,8 +4412,8 @@
     en: Lost Communication with Battery Charger A Control Module
     de: Kommunikation mit Batterieladegerät A Steuergerät verloren
   description:
-    en: Same as U0100 but for the on-board battery charger module on hybrid and electric vehicles. AC charging is disabled and the dashboard typically shows a charging-system error.
-    de: Wie U0100, aber für das On-Board-Batterieladegerät bei Hybrid- und Elektrofahrzeugen. AC-Laden ist deaktiviert und im Kombiinstrument wird typischerweise ein Ladesystem-Fehler angezeigt.
+    en: 'A control module that expects to talk to the engine ECU has stopped receiving messages. Most commonly seen by the TCM, instrument cluster, or BCM after the ECU has been disconnected, fitted with a faulty replacement, or the CAN wiring has been damaged. Engine usually will not run while this fault is active in other modules.'
+    de: 'Ein Steuergerät, das mit dem Motorsteuergerät kommunizieren sollte, empfängt keine Botschaften mehr. Wird am häufigsten von Getriebesteuergerät, Kombiinstrument oder Bordnetzsteuergerät gemeldet, nachdem die Motorsteuerung abgesteckt, ein defektes Ersatzgerät eingebaut oder die CAN-Verkabelung beschädigt wurde. Der Motor läuft meist nicht, solange dieser Fehler in anderen Steuergeräten aktiv ist.'
   affected_components:
     - battery_charger_module
     - can_bus_wiring
@@ -4448,8 +4448,8 @@
     en: Lost Communication with 4WD Clutch Control Module
     de: Kommunikation mit 4WD-Kupplungs-Steuergerät verloren
   description:
-    en: Same as U0100 but for the 4WD clutch control module (Haldex-type or similar). The drive defaults to FWD or RWD only and AWD warning lamps illuminate.
-    de: Wie U0100, aber für das 4WD-Kupplungs-Steuergerät (Haldex-Typ oder ähnlich). Der Antrieb fällt auf reinen Front- oder Heckantrieb zurück und AWD-Warnleuchten leuchten.
+    en: 'A control module that expects to talk to the engine ECU has stopped receiving messages. Most commonly seen by the TCM, instrument cluster, or BCM after the ECU has been disconnected, fitted with a faulty replacement, or the CAN wiring has been damaged. Engine usually will not run while this fault is active in other modules.'
+    de: 'Ein Steuergerät, das mit dem Motorsteuergerät kommunizieren sollte, empfängt keine Botschaften mehr. Wird am häufigsten von Getriebesteuergerät, Kombiinstrument oder Bordnetzsteuergerät gemeldet, nachdem die Motorsteuerung abgesteckt, ein defektes Ersatzgerät eingebaut oder die CAN-Verkabelung beschädigt wurde. Der Motor läuft meist nicht, solange dieser Fehler in anderen Steuergeräten aktiv ist.'
   affected_components:
     - awd_clutch_control_module
     - can_bus_wiring
@@ -4483,8 +4483,8 @@
     en: Lost Communication with ECM/PCM "B"
     de: Kommunikation mit ECM/PCM "B" verloren
   description:
-    en: Same as U0100 but for the secondary ECM/PCM. Found on engines with a master/slave ECU layout (e.g. some V8/V12 with bank-specific controllers); the engine usually drops to limp-home or refuses to start.
-    de: Wie U0100, aber für das sekundäre ECM/PCM. Tritt bei Motoren mit Master-/Slave-Steuergerät-Aufbau auf (z. B. einige V8/V12 mit bankspezifischen Steuergeräten); der Motor fällt meist in den Notlauf oder springt nicht an.
+    en: 'A control module that expects to talk to the engine ECU has stopped receiving messages. Most commonly seen by the TCM, instrument cluster, or BCM after the ECU has been disconnected, fitted with a faulty replacement, or the CAN wiring has been damaged. Engine usually will not run while this fault is active in other modules.'
+    de: 'Ein Steuergerät, das mit dem Motorsteuergerät kommunizieren sollte, empfängt keine Botschaften mehr. Wird am häufigsten von Getriebesteuergerät, Kombiinstrument oder Bordnetzsteuergerät gemeldet, nachdem die Motorsteuerung abgesteckt, ein defektes Ersatzgerät eingebaut oder die CAN-Verkabelung beschädigt wurde. Der Motor läuft meist nicht, solange dieser Fehler in anderen Steuergeräten aktiv ist.'
   affected_components:
     - engine_control_module
     - can_bus_wiring
@@ -4519,8 +4519,8 @@
     en: Lost Communication with Steering Effort Control Module
     de: Kommunikation mit Lenkkraft-Steuergerät verloren
   description:
-    en: Same as U0100 but for the steering effort (variable assist) control module. Steering may revert to a fixed assist level — typically heavier than expected at parking speeds.
-    de: Wie U0100, aber für das Lenkkraft- bzw. variable Servounterstützungs-Steuergerät. Die Lenkung fällt auf eine feste Unterstützungsstufe zurück — typischerweise schwerer als gewohnt bei Rangiergeschwindigkeit.
+    en: 'A control module that expects to talk to the engine ECU has stopped receiving messages. Most commonly seen by the TCM, instrument cluster, or BCM after the ECU has been disconnected, fitted with a faulty replacement, or the CAN wiring has been damaged. Engine usually will not run while this fault is active in other modules.'
+    de: 'Ein Steuergerät, das mit dem Motorsteuergerät kommunizieren sollte, empfängt keine Botschaften mehr. Wird am häufigsten von Getriebesteuergerät, Kombiinstrument oder Bordnetzsteuergerät gemeldet, nachdem die Motorsteuerung abgesteckt, ein defektes Ersatzgerät eingebaut oder die CAN-Verkabelung beschädigt wurde. Der Motor läuft meist nicht, solange dieser Fehler in anderen Steuergeräten aktiv ist.'
   affected_components:
     - steering_effort_module
     - can_bus_wiring
@@ -4554,8 +4554,8 @@
     en: Lost Communication with Drive Motor Control Module 2
     de: Kommunikation mit Antriebsmotor-Steuergerät 2 verloren
   description:
-    en: Same as U0100 but for the secondary drive motor control module on hybrid and electric vehicles with multiple traction motors (e.g. dual-motor AWD). Vehicle typically loses one axle of drive and falls into reduced power.
-    de: Wie U0100, aber für das sekundäre Antriebsmotor-Steuergerät bei Hybrid- und Elektrofahrzeugen mit mehreren Traktionsmotoren (z. B. Dual-Motor-AWD). Das Fahrzeug verliert typischerweise eine Antriebsachse und fällt in reduzierte Leistung.
+    en: 'A control module that expects to talk to the engine ECU has stopped receiving messages. Most commonly seen by the TCM, instrument cluster, or BCM after the ECU has been disconnected, fitted with a faulty replacement, or the CAN wiring has been damaged. Engine usually will not run while this fault is active in other modules.'
+    de: 'Ein Steuergerät, das mit dem Motorsteuergerät kommunizieren sollte, empfängt keine Botschaften mehr. Wird am häufigsten von Getriebesteuergerät, Kombiinstrument oder Bordnetzsteuergerät gemeldet, nachdem die Motorsteuerung abgesteckt, ein defektes Ersatzgerät eingebaut oder die CAN-Verkabelung beschädigt wurde. Der Motor läuft meist nicht, solange dieser Fehler in anderen Steuergeräten aktiv ist.'
   affected_components:
     - drive_motor_control_module
     - can_bus_wiring
@@ -4590,8 +4590,8 @@
     en: Lost Communication with Cabin Air Quality Sensor Module
     de: Kommunikation mit Innenraum-Luftgütesensor-Modul verloren
   description:
-    en: Same as U0100 but for the cabin air quality sensor module. Automatic recirculation on detected exhaust fumes stops working; HVAC may default to fresh-air mode.
-    de: Wie U0100, aber für das Innenraum-Luftgütesensor-Modul. Automatische Umluftschaltung bei erkannten Abgasen funktioniert nicht mehr; die Klimaanlage geht eventuell in Frischluft-Standard.
+    en: 'A control module that expects to talk to the engine ECU has stopped receiving messages. Most commonly seen by the TCM, instrument cluster, or BCM after the ECU has been disconnected, fitted with a faulty replacement, or the CAN wiring has been damaged. Engine usually will not run while this fault is active in other modules.'
+    de: 'Ein Steuergerät, das mit dem Motorsteuergerät kommunizieren sollte, empfängt keine Botschaften mehr. Wird am häufigsten von Getriebesteuergerät, Kombiinstrument oder Bordnetzsteuergerät gemeldet, nachdem die Motorsteuerung abgesteckt, ein defektes Ersatzgerät eingebaut oder die CAN-Verkabelung beschädigt wurde. Der Motor läuft meist nicht, solange dieser Fehler in anderen Steuergeräten aktiv ist.'
   affected_components:
     - air_quality_sensor_module
     - can_bus_wiring
@@ -4625,8 +4625,8 @@
     en: Lost Communication with Steering Column Control Module
     de: Kommunikation mit Lenksäulen-Steuergerät verloren
   description:
-    en: Same as U0100 but for the steering column module (typically housing the multifunction switches, clockspring, key sense and column lock). Multiple comfort functions on the column stalks fail at once.
-    de: Wie U0100, aber für das Lenksäulen-Steuergerät (das typischerweise Multifunktionsschalter, Wickelfeder, Zündschlüssel-Erkennung und Lenkradschloss enthält). Mehrere Komfortfunktionen an den Lenkstockhebeln fallen gleichzeitig aus.
+    en: 'A control module that expects to talk to the engine ECU has stopped receiving messages. Most commonly seen by the TCM, instrument cluster, or BCM after the ECU has been disconnected, fitted with a faulty replacement, or the CAN wiring has been damaged. Engine usually will not run while this fault is active in other modules.'
+    de: 'Ein Steuergerät, das mit dem Motorsteuergerät kommunizieren sollte, empfängt keine Botschaften mehr. Wird am häufigsten von Getriebesteuergerät, Kombiinstrument oder Bordnetzsteuergerät gemeldet, nachdem die Motorsteuerung abgesteckt, ein defektes Ersatzgerät eingebaut oder die CAN-Verkabelung beschädigt wurde. Der Motor läuft meist nicht, solange dieser Fehler in anderen Steuergeräten aktiv ist.'
   affected_components:
     - steering_column_module
     - can_bus_wiring
@@ -4724,8 +4724,8 @@
     en: Lost Communication With Rocker Arm Control Module B
     de: Kommunikationsverlust mit Kipphebel-Steuermodul B
   description:
-    en: Same as U011B on rocker arm module B.
-    de: Wie U011B, jedoch Kipphebel-Modul B.
+    en: 'ECU lost CAN communication with rocker arm control module B (variable valve actuation).'
+    de: 'Steuergerät hat die CAN-Kommunikation zum Kipphebel-Steuermodul B verloren (variable Ventilbetätigung).'
   affected_components:
     - rocker_arm_module_b
     - can_bus
@@ -4852,8 +4852,8 @@
     en: Lost Communication with Starter/Generator Control Module
     de: Kommunikation mit Starter-/Generator-Steuergerät verloren
   description:
-    en: Same as U0100 but for the starter/generator control module on mild-hybrid (BSG/ISG) vehicles. Stop/start no longer works, regenerative braking is disabled and on some vehicles the engine cannot restart automatically.
-    de: Wie U0100, aber für das Starter-/Generator-Steuergerät bei Mild-Hybrid-Fahrzeugen (BSG/ISG). Start-Stopp funktioniert nicht mehr, die Rekuperation ist deaktiviert und bei manchen Fahrzeugen springt der Motor nicht mehr automatisch an.
+    en: 'A control module that expects to talk to the engine ECU has stopped receiving messages. Most commonly seen by the TCM, instrument cluster, or BCM after the ECU has been disconnected, fitted with a faulty replacement, or the CAN wiring has been damaged. Engine usually will not run while this fault is active in other modules.'
+    de: 'Ein Steuergerät, das mit dem Motorsteuergerät kommunizieren sollte, empfängt keine Botschaften mehr. Wird am häufigsten von Getriebesteuergerät, Kombiinstrument oder Bordnetzsteuergerät gemeldet, nachdem die Motorsteuerung abgesteckt, ein defektes Ersatzgerät eingebaut oder die CAN-Verkabelung beschädigt wurde. Der Motor läuft meist nicht, solange dieser Fehler in anderen Steuergeräten aktiv ist.'
   affected_components:
     - starter_generator_module
     - can_bus_wiring
@@ -4928,8 +4928,8 @@
     en: Lost Communication with Vehicle Dynamics Control Module
     de: Kommunikation mit Fahrdynamik-Steuergerät verloren
   description:
-    en: Same as U0100 but for the vehicle dynamics control module (often a separate ESP/active-chassis controller). Active suspension, roll stabilization or rear-wheel steering deactivate.
-    de: Wie U0100, aber für das Fahrdynamik-Steuergerät (oft ein separates ESP- bzw. Aktiv-Fahrwerks-Steuergerät). Aktivfahrwerk, Wankstabilisierung oder Hinterachslenkung sind deaktiviert.
+    en: 'A control module that expects to talk to the engine ECU has stopped receiving messages. Most commonly seen by the TCM, instrument cluster, or BCM after the ECU has been disconnected, fitted with a faulty replacement, or the CAN wiring has been damaged. Engine usually will not run while this fault is active in other modules.'
+    de: 'Ein Steuergerät, das mit dem Motorsteuergerät kommunizieren sollte, empfängt keine Botschaften mehr. Wird am häufigsten von Getriebesteuergerät, Kombiinstrument oder Bordnetzsteuergerät gemeldet, nachdem die Motorsteuerung abgesteckt, ein defektes Ersatzgerät eingebaut oder die CAN-Verkabelung beschädigt wurde. Der Motor läuft meist nicht, solange dieser Fehler in anderen Steuergeräten aktiv ist.'
   affected_components:
     - vehicle_dynamics_module
     - can_bus_wiring
@@ -4963,8 +4963,8 @@
     en: Lost Communication with Yaw Rate Sensor Module
     de: Kommunikation mit Gierratensensor-Modul verloren
   description:
-    en: Same as U0100 but for the standalone yaw rate sensor module. ESP/ESC, rollover detection and on some vehicles the airbag system lose their reference and disable.
-    de: Wie U0100, aber für das eigenständige Gierratensensor-Modul. ESP/ESC, Überschlagserkennung und bei manchen Fahrzeugen das Airbag-System verlieren ihre Referenz und werden deaktiviert.
+    en: 'A control module that expects to talk to the engine ECU has stopped receiving messages. Most commonly seen by the TCM, instrument cluster, or BCM after the ECU has been disconnected, fitted with a faulty replacement, or the CAN wiring has been damaged. Engine usually will not run while this fault is active in other modules.'
+    de: 'Ein Steuergerät, das mit dem Motorsteuergerät kommunizieren sollte, empfängt keine Botschaften mehr. Wird am häufigsten von Getriebesteuergerät, Kombiinstrument oder Bordnetzsteuergerät gemeldet, nachdem die Motorsteuerung abgesteckt, ein defektes Ersatzgerät eingebaut oder die CAN-Verkabelung beschädigt wurde. Der Motor läuft meist nicht, solange dieser Fehler in anderen Steuergeräten aktiv ist.'
   affected_components:
     - yaw_rate_sensor
     - can_bus_wiring
@@ -4998,8 +4998,8 @@
     en: Lost Communication with Lateral Acceleration Sensor Module
     de: Kommunikation mit Querbeschleunigungs-Sensor-Modul verloren
   description:
-    en: Same as U0100 but for the lateral acceleration sensor used by ESP/ESC. Stability control becomes inactive and warning lamps illuminate.
-    de: Wie U0100, aber für den Querbeschleunigungssensor von ESP/ESC. Die Stabilitätskontrolle ist deaktiviert und Warnleuchten leuchten.
+    en: 'A control module that expects to talk to the engine ECU has stopped receiving messages. Most commonly seen by the TCM, instrument cluster, or BCM after the ECU has been disconnected, fitted with a faulty replacement, or the CAN wiring has been damaged. Engine usually will not run while this fault is active in other modules.'
+    de: 'Ein Steuergerät, das mit dem Motorsteuergerät kommunizieren sollte, empfängt keine Botschaften mehr. Wird am häufigsten von Getriebesteuergerät, Kombiinstrument oder Bordnetzsteuergerät gemeldet, nachdem die Motorsteuerung abgesteckt, ein defektes Ersatzgerät eingebaut oder die CAN-Verkabelung beschädigt wurde. Der Motor läuft meist nicht, solange dieser Fehler in anderen Steuergeräten aktiv ist.'
   affected_components:
     - lateral_acceleration_sensor
     - can_bus_wiring
@@ -5033,8 +5033,8 @@
     en: Lost Communication with Multi-axis Acceleration Sensor
     de: Kommunikation mit Multiachsen-Beschleunigungssensor verloren
   description:
-    en: Same as U0100 but for the multi-axis acceleration (yaw rate) sensor used by ESP/ESC and rollover detection. Stability control becomes inactive.
-    de: Wie U0100, aber für den Multiachsen-Beschleunigungs- bzw. Gierratensensor von ESP/ESC und Überschlagserkennung. Die Stabilitätskontrolle ist deaktiviert.
+    en: 'A control module that expects to talk to the engine ECU has stopped receiving messages. Most commonly seen by the TCM, instrument cluster, or BCM after the ECU has been disconnected, fitted with a faulty replacement, or the CAN wiring has been damaged. Engine usually will not run while this fault is active in other modules.'
+    de: 'Ein Steuergerät, das mit dem Motorsteuergerät kommunizieren sollte, empfängt keine Botschaften mehr. Wird am häufigsten von Getriebesteuergerät, Kombiinstrument oder Bordnetzsteuergerät gemeldet, nachdem die Motorsteuerung abgesteckt, ein defektes Ersatzgerät eingebaut oder die CAN-Verkabelung beschädigt wurde. Der Motor läuft meist nicht, solange dieser Fehler in anderen Steuergeräten aktiv ist.'
   affected_components:
     - yaw_rate_sensor
     - can_bus_wiring
@@ -5068,8 +5068,8 @@
     en: Lost Communication with Steering Angle Sensor Module
     de: Kommunikation mit Lenkwinkelsensor-Modul verloren
   description:
-    en: Same as U0100 but for the steering angle sensor. ESP/ESC and electric power steering lose their reference for driver intent — stability control deactivates and EPS may revert to a default mode.
-    de: Wie U0100, aber für den Lenkwinkelsensor. ESP/ESC und elektrische Servolenkung verlieren die Fahrer-Sollwert-Referenz — die Stabilitätskontrolle wird deaktiviert und die EPS fällt eventuell auf einen Standardmodus zurück.
+    en: 'A control module that expects to talk to the engine ECU has stopped receiving messages. Most commonly seen by the TCM, instrument cluster, or BCM after the ECU has been disconnected, fitted with a faulty replacement, or the CAN wiring has been damaged. Engine usually will not run while this fault is active in other modules.'
+    de: 'Ein Steuergerät, das mit dem Motorsteuergerät kommunizieren sollte, empfängt keine Botschaften mehr. Wird am häufigsten von Getriebesteuergerät, Kombiinstrument oder Bordnetzsteuergerät gemeldet, nachdem die Motorsteuerung abgesteckt, ein defektes Ersatzgerät eingebaut oder die CAN-Verkabelung beschädigt wurde. Der Motor läuft meist nicht, solange dieser Fehler in anderen Steuergeräten aktiv ist.'
   affected_components:
     - steering_angle_sensor
     - can_bus_wiring
@@ -5103,8 +5103,8 @@
     en: Lost Communication with Tire Pressure Monitor Module
     de: Kommunikation mit Reifendruck-Kontrollmodul verloren
   description:
-    en: Same as U0100 but for the tire pressure monitor (TPMS) module. Tire pressure warnings cannot be displayed and the TPMS warning lamp illuminates permanently.
-    de: Wie U0100, aber für das Reifendruck-Kontrollmodul (TPMS). Reifendruckwarnungen können nicht mehr angezeigt werden und die TPMS-Warnleuchte leuchtet dauerhaft.
+    en: 'A control module that expects to talk to the engine ECU has stopped receiving messages. Most commonly seen by the TCM, instrument cluster, or BCM after the ECU has been disconnected, fitted with a faulty replacement, or the CAN wiring has been damaged. Engine usually will not run while this fault is active in other modules.'
+    de: 'Ein Steuergerät, das mit dem Motorsteuergerät kommunizieren sollte, empfängt keine Botschaften mehr. Wird am häufigsten von Getriebesteuergerät, Kombiinstrument oder Bordnetzsteuergerät gemeldet, nachdem die Motorsteuerung abgesteckt, ein defektes Ersatzgerät eingebaut oder die CAN-Verkabelung beschädigt wurde. Der Motor läuft meist nicht, solange dieser Fehler in anderen Steuergeräten aktiv ist.'
   affected_components:
     - tpms_module
     - can_bus_wiring
@@ -5138,8 +5138,8 @@
     en: Lost Communication with Park Brake Control Module
     de: Kommunikation mit Feststellbrems-Steuergerät verloren
   description:
-    en: Same as U0100 but for the electronic parking brake module (EPB). The EPB may refuse to release or apply, and the dashboard typically shows EPB and brake warnings.
-    de: Wie U0100, aber für das elektronische Feststellbrems-Modul (EPB). Die EPB lässt sich eventuell nicht lösen oder anziehen, und im Kombiinstrument leuchten typischerweise EPB- und Bremswarnlampen.
+    en: 'A control module that expects to talk to the engine ECU has stopped receiving messages. Most commonly seen by the TCM, instrument cluster, or BCM after the ECU has been disconnected, fitted with a faulty replacement, or the CAN wiring has been damaged. Engine usually will not run while this fault is active in other modules.'
+    de: 'Ein Steuergerät, das mit dem Motorsteuergerät kommunizieren sollte, empfängt keine Botschaften mehr. Wird am häufigsten von Getriebesteuergerät, Kombiinstrument oder Bordnetzsteuergerät gemeldet, nachdem die Motorsteuerung abgesteckt, ein defektes Ersatzgerät eingebaut oder die CAN-Verkabelung beschädigt wurde. Der Motor läuft meist nicht, solange dieser Fehler in anderen Steuergeräten aktiv ist.'
   affected_components:
     - parking_brake_module
     - can_bus_wiring
@@ -5173,8 +5173,8 @@
     en: Lost Communication with Brake System Control Module
     de: Kommunikation mit Bremssystem-Steuergerät verloren
   description:
-    en: Same as U0100 but for the brake system control module (often the integrated brake booster on vehicles with electric brake-by-wire). Brake assist functions deactivate and pedal feel may change.
-    de: Wie U0100, aber für das Bremssystem-Steuergerät (oft der integrierte Bremskraftverstärker bei Fahrzeugen mit elektrischer Brake-by-Wire). Bremsassistenzfunktionen werden deaktiviert und das Pedalgefühl kann sich ändern.
+    en: 'A control module that expects to talk to the engine ECU has stopped receiving messages. Most commonly seen by the TCM, instrument cluster, or BCM after the ECU has been disconnected, fitted with a faulty replacement, or the CAN wiring has been damaged. Engine usually will not run while this fault is active in other modules.'
+    de: 'Ein Steuergerät, das mit dem Motorsteuergerät kommunizieren sollte, empfängt keine Botschaften mehr. Wird am häufigsten von Getriebesteuergerät, Kombiinstrument oder Bordnetzsteuergerät gemeldet, nachdem die Motorsteuerung abgesteckt, ein defektes Ersatzgerät eingebaut oder die CAN-Verkabelung beschädigt wurde. Der Motor läuft meist nicht, solange dieser Fehler in anderen Steuergeräten aktiv ist.'
   affected_components:
     - brake_system_control_module
     - can_bus_wiring
@@ -5241,8 +5241,8 @@
     en: Lost Communication With Chassis Control Module B
     de: Kommunikationsverlust mit Chassis-Steuermodul B
   description:
-    en: Same as U012A on chassis module B.
-    de: Wie U012A, jedoch Chassis-Modul B.
+    en: 'ECU lost CAN communication with chassis control module B (vehicle dynamics).'
+    de: 'Steuergerät hat die CAN-Kommunikation zum Chassis-Modul B verloren (Fahrdynamik).'
   affected_components:
     - chassis_module_b
     - can_bus
@@ -5369,8 +5369,8 @@
     en: Lost Communication With Generator B Control Module
     de: Kommunikationsverlust mit Generator-B-Steuermodul
   description:
-    en: Same as U012D on generator B.
-    de: Wie U012D, jedoch Generator B.
+    en: 'ECU lost CAN communication with generator (alternator) A control module.'
+    de: 'Steuergerät hat die CAN-Kommunikation zum Generator-A-Modul (Lichtmaschine) verloren.'
   affected_components:
     - generator_b_module
     - can_bus
@@ -5401,8 +5401,8 @@
     en: Lost Communication with Steering Effort Control Module B
     de: Kommunikation mit Lenkkraft-Steuergerät B verloren
   description:
-    en: Same as U0100 but for a secondary steering effort module (used on systems with redundant or split front/rear-wheel steering). Steering assist may revert to a single channel.
-    de: Wie U0100, aber für ein sekundäres Lenkkraft-Modul (bei Systemen mit redundanter oder getrennter Vorder-/Hinterachslenkung). Die Lenkunterstützung fällt eventuell auf einen einzelnen Kanal zurück.
+    en: 'A control module that expects to talk to the engine ECU has stopped receiving messages. Most commonly seen by the TCM, instrument cluster, or BCM after the ECU has been disconnected, fitted with a faulty replacement, or the CAN wiring has been damaged. Engine usually will not run while this fault is active in other modules.'
+    de: 'Ein Steuergerät, das mit dem Motorsteuergerät kommunizieren sollte, empfängt keine Botschaften mehr. Wird am häufigsten von Getriebesteuergerät, Kombiinstrument oder Bordnetzsteuergerät gemeldet, nachdem die Motorsteuerung abgesteckt, ein defektes Ersatzgerät eingebaut oder die CAN-Verkabelung beschädigt wurde. Der Motor läuft meist nicht, solange dieser Fehler in anderen Steuergeräten aktiv ist.'
   affected_components:
     - steering_effort_module
     - can_bus_wiring
@@ -5436,8 +5436,8 @@
     en: Lost Communication with Power Steering Control Module
     de: Kommunikation mit Servolenkungs-Steuergerät verloren
   description:
-    en: Same as U0100 but for the electric power steering (EPS) module. Steering assist is lost or reduced — the wheel becomes much heavier and a steering warning lamp illuminates.
-    de: Wie U0100, aber für das Servolenkungs-Steuergerät (EPS). Die Lenkunterstützung fällt aus oder wird reduziert — das Lenkrad wird deutlich schwerer und eine Lenkungs-Warnleuchte leuchtet.
+    en: 'A control module that expects to talk to the engine ECU has stopped receiving messages. Most commonly seen by the TCM, instrument cluster, or BCM after the ECU has been disconnected, fitted with a faulty replacement, or the CAN wiring has been damaged. Engine usually will not run while this fault is active in other modules.'
+    de: 'Ein Steuergerät, das mit dem Motorsteuergerät kommunizieren sollte, empfängt keine Botschaften mehr. Wird am häufigsten von Getriebesteuergerät, Kombiinstrument oder Bordnetzsteuergerät gemeldet, nachdem die Motorsteuerung abgesteckt, ein defektes Ersatzgerät eingebaut oder die CAN-Verkabelung beschädigt wurde. Der Motor läuft meist nicht, solange dieser Fehler in anderen Steuergeräten aktiv ist.'
   affected_components:
     - power_steering_module
     - can_bus_wiring
@@ -5471,8 +5471,8 @@
     en: Lost Communication with Ride Level Control Module
     de: Kommunikation mit Niveauregulierungs-Steuergerät verloren
   description:
-    en: Same as U0100 but for the ride level/air suspension control module. The vehicle may fall to its mechanical stops on a non-self-leveling axle and the suspension warning lamp illuminates.
-    de: Wie U0100, aber für das Niveauregulierungs- bzw. Luftfeder-Steuergerät. Das Fahrzeug kann auf seinen mechanischen Anschlag absinken und die Fahrwerks-Warnleuchte leuchtet.
+    en: 'A control module that expects to talk to the engine ECU has stopped receiving messages. Most commonly seen by the TCM, instrument cluster, or BCM after the ECU has been disconnected, fitted with a faulty replacement, or the CAN wiring has been damaged. Engine usually will not run while this fault is active in other modules.'
+    de: 'Ein Steuergerät, das mit dem Motorsteuergerät kommunizieren sollte, empfängt keine Botschaften mehr. Wird am häufigsten von Getriebesteuergerät, Kombiinstrument oder Bordnetzsteuergerät gemeldet, nachdem die Motorsteuerung abgesteckt, ein defektes Ersatzgerät eingebaut oder die CAN-Verkabelung beschädigt wurde. Der Motor läuft meist nicht, solange dieser Fehler in anderen Steuergeräten aktiv ist.'
   affected_components:
     - air_suspension_module
     - can_bus_wiring
@@ -5612,8 +5612,8 @@
     en: Lost Communication with Park Brake Module B
     de: Kommunikation mit Feststellbrems-Modul B verloren
   description:
-    en: Same as U0100 but for a secondary electronic parking brake (EPB) module — typically on vehicles with one actuator per rear wheel. The EPB partially fails and warnings illuminate.
-    de: Wie U0100, aber für ein sekundäres EPB-Modul — typischerweise bei Fahrzeugen mit einem Aktuator pro Hinterrad. Die EPB fällt teilweise aus und Warnleuchten leuchten.
+    en: 'A control module that expects to talk to the engine ECU has stopped receiving messages. Most commonly seen by the TCM, instrument cluster, or BCM after the ECU has been disconnected, fitted with a faulty replacement, or the CAN wiring has been damaged. Engine usually will not run while this fault is active in other modules.'
+    de: 'Ein Steuergerät, das mit dem Motorsteuergerät kommunizieren sollte, empfängt keine Botschaften mehr. Wird am häufigsten von Getriebesteuergerät, Kombiinstrument oder Bordnetzsteuergerät gemeldet, nachdem die Motorsteuerung abgesteckt, ein defektes Ersatzgerät eingebaut oder die CAN-Verkabelung beschädigt wurde. Der Motor läuft meist nicht, solange dieser Fehler in anderen Steuergeräten aktiv ist.'
   affected_components:
     - parking_brake_module
     - can_bus_wiring
@@ -5798,8 +5798,8 @@
     en: Lost Communication With Vacuum Sensor B
     de: Kommunikationsverlust mit Unterdrucksensor B
   description:
-    en: Same as U013D on vacuum sensor B.
-    de: Wie U013D, jedoch Unterdrucksensor B.
+    en: 'ECU lost CAN communication with vacuum sensor B (often a smart sensor with bus interface).'
+    de: 'Steuergerät hat die CAN-Kommunikation zum Unterdrucksensor B verloren (Smart-Sensor mit Bus-Schnittstelle).'
   affected_components:
     - vacuum_sensor_b
     - can_bus
@@ -5931,8 +5931,8 @@
     en: Lost Communication with Body Control Module B
     de: Kommunikation mit Bordnetzsteuergerät B verloren
   description:
-    en: Same as U0100 but for a secondary body control module (rear BCM, trunk module, or zone controller in modern E/E architectures). Comfort functions in the affected zone fail.
-    de: Wie U0100, aber für ein sekundäres Bordnetzsteuergerät (hinteres BCM, Heckmodul oder Zonen-Steuergerät bei modernen E/E-Architekturen). Komfortfunktionen in der betroffenen Zone fallen aus.
+    en: 'A control module that expects to talk to the engine ECU has stopped receiving messages. Most commonly seen by the TCM, instrument cluster, or BCM after the ECU has been disconnected, fitted with a faulty replacement, or the CAN wiring has been damaged. Engine usually will not run while this fault is active in other modules.'
+    de: 'Ein Steuergerät, das mit dem Motorsteuergerät kommunizieren sollte, empfängt keine Botschaften mehr. Wird am häufigsten von Getriebesteuergerät, Kombiinstrument oder Bordnetzsteuergerät gemeldet, nachdem die Motorsteuerung abgesteckt, ein defektes Ersatzgerät eingebaut oder die CAN-Verkabelung beschädigt wurde. Der Motor läuft meist nicht, solange dieser Fehler in anderen Steuergeräten aktiv ist.'
   affected_components:
     - body_control_module
     - can_bus_wiring
@@ -5995,8 +5995,8 @@
     en: Lost Communication with Personalization Module "B"
     de: Kommunikation mit Personalisierungs-Modul "B" verloren
   description:
-    en: Same as U0100 but for the secondary personalization module that stores driver-profile settings (seat, mirror, climate). Memory positions and preference recall stop working.
-    de: Wie U0100, aber für das sekundäre Personalisierungs-Modul, das Fahrerprofile (Sitz, Spiegel, Klima) speichert. Memory-Positionen und Präferenz-Abruf funktionieren nicht mehr.
+    en: 'A control module that expects to talk to the engine ECU has stopped receiving messages. Most commonly seen by the TCM, instrument cluster, or BCM after the ECU has been disconnected, fitted with a faulty replacement, or the CAN wiring has been damaged. Engine usually will not run while this fault is active in other modules.'
+    de: 'Ein Steuergerät, das mit dem Motorsteuergerät kommunizieren sollte, empfängt keine Botschaften mehr. Wird am häufigsten von Getriebesteuergerät, Kombiinstrument oder Bordnetzsteuergerät gemeldet, nachdem die Motorsteuerung abgesteckt, ein defektes Ersatzgerät eingebaut oder die CAN-Verkabelung beschädigt wurde. Der Motor läuft meist nicht, solange dieser Fehler in anderen Steuergeräten aktiv ist.'
   affected_components:
     - personalization_module
     - can_bus_wiring
@@ -6095,8 +6095,8 @@
     en: Lost Communication with Gateway "B"
     de: Kommunikation mit Gateway "B" verloren
   description:
-    en: Same as U0146 but for a secondary gateway module. Found on architectures with split front/rear or powertrain/body gateways; the affected segment goes offline.
-    de: Wie U0146, aber für ein sekundäres Gateway-Modul. Tritt bei Architekturen mit getrennten Front-/Heck- oder Antrieb-/Karosserie-Gateways auf; das betroffene Segment ist offline.
+    en: 'A control module has lost communication with the central gateway. The gateway routes messages between separate CAN/Ethernet segments — when it falls silent, large parts of the vehicle simultaneously go offline and many secondary DTCs are stored.'
+    de: 'Ein Steuergerät hat die Kommunikation mit dem zentralen Gateway verloren. Das Gateway leitet Botschaften zwischen separaten CAN-/Ethernet-Segmenten weiter — fällt es aus, gehen große Teile des Fahrzeugs gleichzeitig offline und viele Folgefehler werden abgelegt.'
   affected_components:
     - gateway_module
     - can_bus_wiring
@@ -6131,8 +6131,8 @@
     en: Lost Communication with Body Control Module "C"
     de: Kommunikation mit Bordnetzsteuergerät "C" verloren
   description:
-    en: Same as U0100 but for the third body control module (some vehicles have multiple BCMs distributed across the chassis). Effects depend on what this BCM controls — typically rear-end body functions, tailgate, or rear lighting.
-    de: Wie U0100, aber für das dritte Bordnetzsteuergerät (manche Fahrzeuge haben mehrere BCMs verteilt im Chassis). Auswirkungen hängen davon ab, was dieses BCM steuert — typischerweise Heckbereich, Heckklappe oder Heckbeleuchtung.
+    en: 'A control module that expects to talk to the engine ECU has stopped receiving messages. Most commonly seen by the TCM, instrument cluster, or BCM after the ECU has been disconnected, fitted with a faulty replacement, or the CAN wiring has been damaged. Engine usually will not run while this fault is active in other modules.'
+    de: 'Ein Steuergerät, das mit dem Motorsteuergerät kommunizieren sollte, empfängt keine Botschaften mehr. Wird am häufigsten von Getriebesteuergerät, Kombiinstrument oder Bordnetzsteuergerät gemeldet, nachdem die Motorsteuerung abgesteckt, ein defektes Ersatzgerät eingebaut oder die CAN-Verkabelung beschädigt wurde. Der Motor läuft meist nicht, solange dieser Fehler in anderen Steuergeräten aktiv ist.'
   affected_components:
     - body_control_module
     - can_bus_wiring
@@ -6166,8 +6166,8 @@
     en: Lost Communication with Door Driver Module
     de: Kommunikation mit Fahrertür-Modul verloren
   description:
-    en: Same as U0100 but specifically for the driver-door control module. Driver-side power window, mirror, central locking switch and door speaker may all stop working.
-    de: Wie U0100, aber speziell für das Fahrertür-Steuergerät. Fahrerseitiger Fensterheber, Spiegel, Zentralverriegelungs-Taster und Türlautsprecher können alle ausfallen.
+    en: 'A control module that expects to talk to the engine ECU has stopped receiving messages. Most commonly seen by the TCM, instrument cluster, or BCM after the ECU has been disconnected, fitted with a faulty replacement, or the CAN wiring has been damaged. Engine usually will not run while this fault is active in other modules.'
+    de: 'Ein Steuergerät, das mit dem Motorsteuergerät kommunizieren sollte, empfängt keine Botschaften mehr. Wird am häufigsten von Getriebesteuergerät, Kombiinstrument oder Bordnetzsteuergerät gemeldet, nachdem die Motorsteuerung abgesteckt, ein defektes Ersatzgerät eingebaut oder die CAN-Verkabelung beschädigt wurde. Der Motor läuft meist nicht, solange dieser Fehler in anderen Steuergeräten aktiv ist.'
   affected_components:
     - door_control_module
     - can_bus_wiring
@@ -6265,8 +6265,8 @@
     en: Lost Communication With Battery Energy Control Module D
     de: Kommunikationsverlust mit Batterie-Energiemanagement-Modul D
   description:
-    en: Same as U014A on battery energy module D.
-    de: Wie U014A, jedoch Batterie-Energiemodul D.
+    en: 'ECU lost CAN communication with battery energy control module D (hybrid/EV high-voltage battery management).'
+    de: 'Steuergerät hat die CAN-Kommunikation zum Batterie-Energiemanagement-Modul D verloren (HV-Batterie bei Hybrid/EV).'
   affected_components:
     - battery_energy_module_d
     - can_bus
@@ -6361,8 +6361,8 @@
     en: Lost Communication with Side Object Detection Control Module Left
     de: Kommunikation mit Seitenobjekterkennung links verloren
   description:
-    en: Same as U0100 but for the left-side object detection module (blind-spot/lane-change radar). Blind-spot warning on the left disables and the warning lamp illuminates.
-    de: Wie U0100, aber für das linke Seitenobjekterkennungs-Modul (Toter-Winkel-/Spurwechsel-Radar). Die Toter-Winkel-Warnung links ist deaktiviert und die Warnleuchte leuchtet.
+    en: 'A control module that expects to talk to the engine ECU has stopped receiving messages. Most commonly seen by the TCM, instrument cluster, or BCM after the ECU has been disconnected, fitted with a faulty replacement, or the CAN wiring has been damaged. Engine usually will not run while this fault is active in other modules.'
+    de: 'Ein Steuergerät, das mit dem Motorsteuergerät kommunizieren sollte, empfängt keine Botschaften mehr. Wird am häufigsten von Getriebesteuergerät, Kombiinstrument oder Bordnetzsteuergerät gemeldet, nachdem die Motorsteuerung abgesteckt, ein defektes Ersatzgerät eingebaut oder die CAN-Verkabelung beschädigt wurde. Der Motor läuft meist nicht, solange dieser Fehler in anderen Steuergeräten aktiv ist.'
   affected_components:
     - side_object_detection_module_left
     - can_bus_wiring
@@ -6396,8 +6396,8 @@
     en: Lost Communication with Restraints Control Module
     de: Kommunikation mit Airbag-Steuergerät verloren
   description:
-    en: Same as U0100 but for the restraints control module (airbag/SRS ECU). The airbag warning lamp illuminates and the SRS system is no longer guaranteed to deploy correctly in a crash.
-    de: Wie U0100, aber für das Airbag-Steuergerät (Restraints/SRS-Steuergerät). Die Airbag-Warnleuchte leuchtet und es ist nicht mehr sichergestellt, dass das SRS-System bei einem Unfall korrekt auslöst.
+    en: 'A control module that expects to talk to the engine ECU has stopped receiving messages. Most commonly seen by the TCM, instrument cluster, or BCM after the ECU has been disconnected, fitted with a faulty replacement, or the CAN wiring has been damaged. Engine usually will not run while this fault is active in other modules.'
+    de: 'Ein Steuergerät, das mit dem Motorsteuergerät kommunizieren sollte, empfängt keine Botschaften mehr. Wird am häufigsten von Getriebesteuergerät, Kombiinstrument oder Bordnetzsteuergerät gemeldet, nachdem die Motorsteuerung abgesteckt, ein defektes Ersatzgerät eingebaut oder die CAN-Verkabelung beschädigt wurde. Der Motor läuft meist nicht, solange dieser Fehler in anderen Steuergeräten aktiv ist.'
   affected_components:
     - restraints_control_module
     - can_bus_wiring
@@ -6431,8 +6431,8 @@
     en: Lost Communication with Side Restraints Control Module Left
     de: Kommunikation mit Seiten-Airbag-Steuergerät links verloren
   description:
-    en: Same as U0100 but for the left-side restraints (side airbag) control module. Side airbag warning lamps illuminate and side SRS deployment is not guaranteed.
-    de: Wie U0100, aber für das linke Seiten-Airbag-Steuergerät. Seiten-Airbag-Warnleuchten leuchten und das Auslösen der Seitenairbags ist nicht mehr sichergestellt.
+    en: 'A control module that expects to talk to the engine ECU has stopped receiving messages. Most commonly seen by the TCM, instrument cluster, or BCM after the ECU has been disconnected, fitted with a faulty replacement, or the CAN wiring has been damaged. Engine usually will not run while this fault is active in other modules.'
+    de: 'Ein Steuergerät, das mit dem Motorsteuergerät kommunizieren sollte, empfängt keine Botschaften mehr. Wird am häufigsten von Getriebesteuergerät, Kombiinstrument oder Bordnetzsteuergerät gemeldet, nachdem die Motorsteuerung abgesteckt, ein defektes Ersatzgerät eingebaut oder die CAN-Verkabelung beschädigt wurde. Der Motor läuft meist nicht, solange dieser Fehler in anderen Steuergeräten aktiv ist.'
   affected_components:
     - side_restraints_module_left
     - can_bus_wiring
@@ -6466,8 +6466,8 @@
     en: Lost Communication with Restraints Control Module B
     de: Kommunikation mit Airbag-Steuergerät B verloren
   description:
-    en: Same as U0100 but for a secondary restraints/airbag control module (often a satellite ECU for side or curtain airbags). The airbag warning lamp illuminates and partial SRS deployment is not guaranteed.
-    de: Wie U0100, aber für ein sekundäres Airbag-Steuergerät (oft ein Satelliten-Steuergerät für Seiten- oder Vorhang-Airbags). Die Airbag-Warnleuchte leuchtet und ein partielles SRS-Auslösen ist nicht sichergestellt.
+    en: 'A control module that expects to talk to the engine ECU has stopped receiving messages. Most commonly seen by the TCM, instrument cluster, or BCM after the ECU has been disconnected, fitted with a faulty replacement, or the CAN wiring has been damaged. Engine usually will not run while this fault is active in other modules.'
+    de: 'Ein Steuergerät, das mit dem Motorsteuergerät kommunizieren sollte, empfängt keine Botschaften mehr. Wird am häufigsten von Getriebesteuergerät, Kombiinstrument oder Bordnetzsteuergerät gemeldet, nachdem die Motorsteuerung abgesteckt, ein defektes Ersatzgerät eingebaut oder die CAN-Verkabelung beschädigt wurde. Der Motor läuft meist nicht, solange dieser Fehler in anderen Steuergeräten aktiv ist.'
   affected_components:
     - restraints_control_module
     - can_bus_wiring
@@ -6501,8 +6501,8 @@
     en: Lost Communication with Restraints Occupant Sensing Module
     de: Kommunikation mit Insassenerkennungs-Modul verloren
   description:
-    en: Same as U0100 but for the occupant classification module (seat sensor). The passenger airbag may be permanently disabled and the PASSENGER AIRBAG OFF lamp may stay on.
-    de: Wie U0100, aber für das Insassenerkennungs-Modul (Sitz-Sensor). Der Beifahrer-Airbag wird eventuell dauerhaft deaktiviert und die PASSENGER-AIRBAG-OFF-Leuchte bleibt eventuell an.
+    en: 'A control module that expects to talk to the engine ECU has stopped receiving messages. Most commonly seen by the TCM, instrument cluster, or BCM after the ECU has been disconnected, fitted with a faulty replacement, or the CAN wiring has been damaged. Engine usually will not run while this fault is active in other modules.'
+    de: 'Ein Steuergerät, das mit dem Motorsteuergerät kommunizieren sollte, empfängt keine Botschaften mehr. Wird am häufigsten von Getriebesteuergerät, Kombiinstrument oder Bordnetzsteuergerät gemeldet, nachdem die Motorsteuerung abgesteckt, ein defektes Ersatzgerät eingebaut oder die CAN-Verkabelung beschädigt wurde. Der Motor läuft meist nicht, solange dieser Fehler in anderen Steuergeräten aktiv ist.'
   affected_components:
     - occupant_sensing_module
     - can_bus_wiring
@@ -6571,8 +6571,8 @@
     en: Lost Communication with Information Center "A"
     de: Kommunikation mit Informations-Center "A" verloren
   description:
-    en: Same as U0100 but for the central information display (head unit/MMI). The infotainment display goes blank or shows a communication error and trip computer functions may be unavailable.
-    de: Wie U0100, aber für das zentrale Informationsdisplay (Head-Unit/MMI). Das Infotainment-Display bleibt schwarz oder zeigt einen Kommunikationsfehler, und Bordcomputerfunktionen sind eventuell nicht verfügbar.
+    en: 'A control module that expects to talk to the engine ECU has stopped receiving messages. Most commonly seen by the TCM, instrument cluster, or BCM after the ECU has been disconnected, fitted with a faulty replacement, or the CAN wiring has been damaged. Engine usually will not run while this fault is active in other modules.'
+    de: 'Ein Steuergerät, das mit dem Motorsteuergerät kommunizieren sollte, empfängt keine Botschaften mehr. Wird am häufigsten von Getriebesteuergerät, Kombiinstrument oder Bordnetzsteuergerät gemeldet, nachdem die Motorsteuerung abgesteckt, ein defektes Ersatzgerät eingebaut oder die CAN-Verkabelung beschädigt wurde. Der Motor läuft meist nicht, solange dieser Fehler in anderen Steuergeräten aktiv ist.'
   affected_components:
     - information_display_module
     - can_bus_wiring
@@ -6606,8 +6606,8 @@
     en: Lost Communication with Personalization Control Module
     de: Kommunikation mit Personalisierungs-Steuergerät verloren
   description:
-    en: Same as U0100 but for the personalization module (memory seat, mirror and steering settings tied to driver profile). Stored profiles cannot be recalled and seat/mirror memory becomes inoperative.
-    de: Wie U0100, aber für das Personalisierungs-Modul (Memory-Sitze, Spiegel und Lenkradeinstellungen pro Fahrerprofil). Gespeicherte Profile können nicht mehr abgerufen werden und die Sitz-/Spiegel-Memory funktioniert nicht.
+    en: 'A control module that expects to talk to the engine ECU has stopped receiving messages. Most commonly seen by the TCM, instrument cluster, or BCM after the ECU has been disconnected, fitted with a faulty replacement, or the CAN wiring has been damaged. Engine usually will not run while this fault is active in other modules.'
+    de: 'Ein Steuergerät, das mit dem Motorsteuergerät kommunizieren sollte, empfängt keine Botschaften mehr. Wird am häufigsten von Getriebesteuergerät, Kombiinstrument oder Bordnetzsteuergerät gemeldet, nachdem die Motorsteuerung abgesteckt, ein defektes Ersatzgerät eingebaut oder die CAN-Verkabelung beschädigt wurde. Der Motor läuft meist nicht, solange dieser Fehler in anderen Steuergeräten aktiv ist.'
   affected_components:
     - personalization_module
     - can_bus_wiring
@@ -6641,8 +6641,8 @@
     en: Lost Communication with Head Up Display
     de: Kommunikation mit Head-Up-Display verloren
   description:
-    en: Same as U0100 but for the head-up display (HUD) module. The HUD goes blank or refuses to project — speed, navigation arrows and warning icons are missing from the windshield.
-    de: Wie U0100, aber für das Head-Up-Display-Modul (HUD). Das HUD bleibt schwarz oder projiziert nicht mehr — Geschwindigkeit, Navigationspfeile und Warnsymbole fehlen auf der Windschutzscheibe.
+    en: 'A control module that expects to talk to the engine ECU has stopped receiving messages. Most commonly seen by the TCM, instrument cluster, or BCM after the ECU has been disconnected, fitted with a faulty replacement, or the CAN wiring has been damaged. Engine usually will not run while this fault is active in other modules.'
+    de: 'Ein Steuergerät, das mit dem Motorsteuergerät kommunizieren sollte, empfängt keine Botschaften mehr. Wird am häufigsten von Getriebesteuergerät, Kombiinstrument oder Bordnetzsteuergerät gemeldet, nachdem die Motorsteuerung abgesteckt, ein defektes Ersatzgerät eingebaut oder die CAN-Verkabelung beschädigt wurde. Der Motor läuft meist nicht, solange dieser Fehler in anderen Steuergeräten aktiv ist.'
   affected_components:
     - head_up_display_module
     - can_bus_wiring
@@ -6676,8 +6676,8 @@
     en: Lost Communication with Parking Assist Module
     de: Kommunikation mit Einparkhilfe-Steuergerät verloren
   description:
-    en: Same as U0100 but for the parking assist module (PDC/ultrasonic sensors). Parking sensors and visual park assist deactivate and the warning lamp illuminates.
-    de: Wie U0100, aber für das Einparkhilfe-Steuergerät (PDC/Ultraschallsensoren). Einparksensoren und visuelle Einparkhilfe sind deaktiviert und die Warnleuchte leuchtet.
+    en: 'A control module that expects to talk to the engine ECU has stopped receiving messages. Most commonly seen by the TCM, instrument cluster, or BCM after the ECU has been disconnected, fitted with a faulty replacement, or the CAN wiring has been damaged. Engine usually will not run while this fault is active in other modules.'
+    de: 'Ein Steuergerät, das mit dem Motorsteuergerät kommunizieren sollte, empfängt keine Botschaften mehr. Wird am häufigsten von Getriebesteuergerät, Kombiinstrument oder Bordnetzsteuergerät gemeldet, nachdem die Motorsteuerung abgesteckt, ein defektes Ersatzgerät eingebaut oder die CAN-Verkabelung beschädigt wurde. Der Motor läuft meist nicht, solange dieser Fehler in anderen Steuergeräten aktiv ist.'
   affected_components:
     - parking_assist_module
     - can_bus_wiring
@@ -6807,8 +6807,8 @@
     en: Lost Communication With Automated Driving System Control Module B
     de: Kommunikationsverlust mit Automatisiertes-Fahren-Steuermodul B
   description:
-    en: Same as U015C on ADS module B.
-    de: Wie U015C, jedoch ADS-Modul B.
+    en: 'ECU lost CAN communication with automated driving system control module B (autonomous driving compute platform).'
+    de: 'Steuergerät hat die CAN-Kommunikation zum Steuermodul des automatisierten Fahrens A verloren (Autonomous-Driving-Compute).'
   affected_components:
     - ads_module_b
     - can_bus
@@ -6871,8 +6871,8 @@
     en: Lost Communication With Automated Driving System Interface Module B
     de: Kommunikationsverlust mit ADS-Schnittstellen-Modul B
   description:
-    en: Same as U015E on ADS interface module B.
-    de: Wie U015E, jedoch ADS-Schnittstellen-Modul B.
+    en: 'ECU lost CAN communication with ADS interface module B (interface between automated driving compute and vehicle subsystems).'
+    de: 'Steuergerät hat die CAN-Kommunikation zum ADS-Schnittstellen-Modul B verloren (Schnittstelle zwischen Automatisiert-Fahren-Compute und Fahrzeugsubsystemen).'
   affected_components:
     - ads_interface_module_b
     - can_bus
@@ -6903,8 +6903,8 @@
     en: Lost Communication with Audible Alert Control Module
     de: Kommunikation mit Akustiksignal-Steuergerät verloren
   description:
-    en: Same as U0100 but for the audible alert (chime/warning gong) module. Warning chimes — seatbelt, key-in-ignition, lights-on — fall silent even though the corresponding lamps still work.
-    de: Wie U0100, aber für das Akustiksignal-Modul (Warngong/Chime). Warntöne — Gurt, Schlüssel im Zündschloss, Licht an — verstummen, obwohl die zugehörigen Warnleuchten noch funktionieren.
+    en: 'A control module that expects to talk to the engine ECU has stopped receiving messages. Most commonly seen by the TCM, instrument cluster, or BCM after the ECU has been disconnected, fitted with a faulty replacement, or the CAN wiring has been damaged. Engine usually will not run while this fault is active in other modules.'
+    de: 'Ein Steuergerät, das mit dem Motorsteuergerät kommunizieren sollte, empfängt keine Botschaften mehr. Wird am häufigsten von Getriebesteuergerät, Kombiinstrument oder Bordnetzsteuergerät gemeldet, nachdem die Motorsteuerung abgesteckt, ein defektes Ersatzgerät eingebaut oder die CAN-Verkabelung beschädigt wurde. Der Motor läuft meist nicht, solange dieser Fehler in anderen Steuergeräten aktiv ist.'
   affected_components:
     - audible_alert_module
     - can_bus_wiring
@@ -6938,8 +6938,8 @@
     en: Lost Communication with Compass Module
     de: Kommunikation mit Kompass-Modul verloren
   description:
-    en: Same as U0100 but for the compass (electronic magnetometer) module. Compass heading in the cluster or rear-view mirror disappears or freezes.
-    de: Wie U0100, aber für das Kompass-Modul (elektronischer Magnetometer). Die Kompass-Anzeige im Kombiinstrument oder Innenspiegel verschwindet oder friert ein.
+    en: 'A control module that expects to talk to the engine ECU has stopped receiving messages. Most commonly seen by the TCM, instrument cluster, or BCM after the ECU has been disconnected, fitted with a faulty replacement, or the CAN wiring has been damaged. Engine usually will not run while this fault is active in other modules.'
+    de: 'Ein Steuergerät, das mit dem Motorsteuergerät kommunizieren sollte, empfängt keine Botschaften mehr. Wird am häufigsten von Getriebesteuergerät, Kombiinstrument oder Bordnetzsteuergerät gemeldet, nachdem die Motorsteuerung abgesteckt, ein defektes Ersatzgerät eingebaut oder die CAN-Verkabelung beschädigt wurde. Der Motor läuft meist nicht, solange dieser Fehler in anderen Steuergeräten aktiv ist.'
   affected_components:
     - compass_module
     - can_bus_wiring
@@ -6973,8 +6973,8 @@
     en: Lost Communication with Navigation Display Module
     de: Kommunikation mit Navigations-Display-Modul verloren
   description:
-    en: Same as U0100 but for the navigation display module. The map display goes blank or shows a communication error while the navigation computer may still operate in the background.
-    de: Wie U0100, aber für das Navigations-Display-Modul. Die Kartenanzeige bleibt schwarz oder zeigt einen Kommunikationsfehler, während der Navigationsrechner im Hintergrund eventuell noch arbeitet.
+    en: 'A control module that expects to talk to the engine ECU has stopped receiving messages. Most commonly seen by the TCM, instrument cluster, or BCM after the ECU has been disconnected, fitted with a faulty replacement, or the CAN wiring has been damaged. Engine usually will not run while this fault is active in other modules.'
+    de: 'Ein Steuergerät, das mit dem Motorsteuergerät kommunizieren sollte, empfängt keine Botschaften mehr. Wird am häufigsten von Getriebesteuergerät, Kombiinstrument oder Bordnetzsteuergerät gemeldet, nachdem die Motorsteuerung abgesteckt, ein defektes Ersatzgerät eingebaut oder die CAN-Verkabelung beschädigt wurde. Der Motor läuft meist nicht, solange dieser Fehler in anderen Steuergeräten aktiv ist.'
   affected_components:
     - navigation_display_module
     - can_bus_wiring
@@ -7008,8 +7008,8 @@
     en: Lost Communication with Navigation Control Module
     de: Kommunikation mit Navigations-Steuergerät verloren
   description:
-    en: Same as U0100 but for the navigation control unit (the computer that calculates routes). Routing fails entirely — the display may still come up but cannot compute or guide.
-    de: Wie U0100, aber für das Navigations-Steuergerät (der Rechner, der Routen berechnet). Die Routenführung schlägt komplett fehl — das Display erscheint eventuell noch, kann aber weder berechnen noch führen.
+    en: 'A control module that expects to talk to the engine ECU has stopped receiving messages. Most commonly seen by the TCM, instrument cluster, or BCM after the ECU has been disconnected, fitted with a faulty replacement, or the CAN wiring has been damaged. Engine usually will not run while this fault is active in other modules.'
+    de: 'Ein Steuergerät, das mit dem Motorsteuergerät kommunizieren sollte, empfängt keine Botschaften mehr. Wird am häufigsten von Getriebesteuergerät, Kombiinstrument oder Bordnetzsteuergerät gemeldet, nachdem die Motorsteuerung abgesteckt, ein defektes Ersatzgerät eingebaut oder die CAN-Verkabelung beschädigt wurde. Der Motor läuft meist nicht, solange dieser Fehler in anderen Steuergeräten aktiv ist.'
   affected_components:
     - navigation_control_module
     - can_bus_wiring
@@ -7043,8 +7043,8 @@
     en: Lost Communication with HVAC Control Module
     de: Kommunikation mit Klima-Steuergerät verloren
   description:
-    en: Same as U0100 but for the HVAC control module (climate panel). Climate functions become unresponsive and the display in the centre stack may freeze.
-    de: Wie U0100, aber für das Klima-Steuergerät (Klima-Bedienteil). Klimafunktionen reagieren nicht mehr und das Display in der Mittelkonsole kann einfrieren.
+    en: 'A control module that expects to talk to the engine ECU has stopped receiving messages. Most commonly seen by the TCM, instrument cluster, or BCM after the ECU has been disconnected, fitted with a faulty replacement, or the CAN wiring has been damaged. Engine usually will not run while this fault is active in other modules.'
+    de: 'Ein Steuergerät, das mit dem Motorsteuergerät kommunizieren sollte, empfängt keine Botschaften mehr. Wird am häufigsten von Getriebesteuergerät, Kombiinstrument oder Bordnetzsteuergerät gemeldet, nachdem die Motorsteuerung abgesteckt, ein defektes Ersatzgerät eingebaut oder die CAN-Verkabelung beschädigt wurde. Der Motor läuft meist nicht, solange dieser Fehler in anderen Steuergeräten aktiv ist.'
   affected_components:
     - hvac_control_module
     - can_bus_wiring
@@ -7078,8 +7078,8 @@
     en: Lost Communication with Auxiliary HVAC Control Module
     de: Kommunikation mit Zusatz-Klima-Steuergerät verloren
   description:
-    en: Same as U0100 but for a secondary/rear HVAC module (typically rear-zone climate or auxiliary heater on vans and SUVs). Rear climate functions become inoperative.
-    de: Wie U0100, aber für ein sekundäres Klima-Modul (typischerweise Heck-Klima oder Zusatzheizung bei Vans und SUVs). Hintere Klimafunktionen sind nicht mehr verfügbar.
+    en: 'A control module that expects to talk to the engine ECU has stopped receiving messages. Most commonly seen by the TCM, instrument cluster, or BCM after the ECU has been disconnected, fitted with a faulty replacement, or the CAN wiring has been damaged. Engine usually will not run while this fault is active in other modules.'
+    de: 'Ein Steuergerät, das mit dem Motorsteuergerät kommunizieren sollte, empfängt keine Botschaften mehr. Wird am häufigsten von Getriebesteuergerät, Kombiinstrument oder Bordnetzsteuergerät gemeldet, nachdem die Motorsteuerung abgesteckt, ein defektes Ersatzgerät eingebaut oder die CAN-Verkabelung beschädigt wurde. Der Motor läuft meist nicht, solange dieser Fehler in anderen Steuergeräten aktiv ist.'
   affected_components:
     - hvac_control_module
     - can_bus_wiring
@@ -7113,8 +7113,8 @@
     en: Lost Communication with Auxiliary Heater Control Module
     de: Kommunikation mit Zusatzheizungs-Steuergerät verloren
   description:
-    en: Same as U0100 but for the auxiliary heater (often a fuel-fired Webasto/Eberspächer or a high-voltage PTC heater on EVs). Pre-heat function and supplemental cabin heating stop working.
-    de: Wie U0100, aber für die Zusatzheizung (oft kraftstoffbetriebene Webasto/Eberspächer oder Hochvolt-PTC-Heizer bei E-Autos). Standheizung und Zusatzheizung des Innenraums funktionieren nicht mehr.
+    en: 'A control module that expects to talk to the engine ECU has stopped receiving messages. Most commonly seen by the TCM, instrument cluster, or BCM after the ECU has been disconnected, fitted with a faulty replacement, or the CAN wiring has been damaged. Engine usually will not run while this fault is active in other modules.'
+    de: 'Ein Steuergerät, das mit dem Motorsteuergerät kommunizieren sollte, empfängt keine Botschaften mehr. Wird am häufigsten von Getriebesteuergerät, Kombiinstrument oder Bordnetzsteuergerät gemeldet, nachdem die Motorsteuerung abgesteckt, ein defektes Ersatzgerät eingebaut oder die CAN-Verkabelung beschädigt wurde. Der Motor läuft meist nicht, solange dieser Fehler in anderen Steuergeräten aktiv ist.'
   affected_components:
     - auxiliary_heater_module
     - can_bus_wiring
@@ -7148,8 +7148,8 @@
     en: Lost Communication with Vehicle Immobiliser Control Module
     de: Kommunikation mit Wegfahrsperren-Steuergerät verloren
   description:
-    en: Same as U0100 but for the immobiliser module. The engine usually refuses to start because the cryptographic handshake between key, immobiliser and ECU fails.
-    de: Wie U0100, aber für das Wegfahrsperren-Steuergerät. Der Motor springt meist nicht an, weil der kryptografische Handshake zwischen Schlüssel, Wegfahrsperre und Motorsteuerung scheitert.
+    en: 'A control module that expects to talk to the engine ECU has stopped receiving messages. Most commonly seen by the TCM, instrument cluster, or BCM after the ECU has been disconnected, fitted with a faulty replacement, or the CAN wiring has been damaged. Engine usually will not run while this fault is active in other modules.'
+    de: 'Ein Steuergerät, das mit dem Motorsteuergerät kommunizieren sollte, empfängt keine Botschaften mehr. Wird am häufigsten von Getriebesteuergerät, Kombiinstrument oder Bordnetzsteuergerät gemeldet, nachdem die Motorsteuerung abgesteckt, ein defektes Ersatzgerät eingebaut oder die CAN-Verkabelung beschädigt wurde. Der Motor läuft meist nicht, solange dieser Fehler in anderen Steuergeräten aktiv ist.'
   affected_components:
     - immobiliser_module
     - can_bus_wiring
@@ -7218,8 +7218,8 @@
     en: Lost Communication with Sun Roof Control Module
     de: Kommunikation mit Schiebedach-Steuergerät verloren
   description:
-    en: Same as U0100 but for the sunroof/panoramic roof control module. Sunroof switches do nothing; pinch protection and one-touch operation are disabled.
-    de: Wie U0100, aber für das Schiebedach-/Panoramadach-Steuergerät. Schiebedach-Tasten reagieren nicht; Einklemmschutz und Komfortfunktion sind deaktiviert.
+    en: 'A control module that expects to talk to the engine ECU has stopped receiving messages. Most commonly seen by the TCM, instrument cluster, or BCM after the ECU has been disconnected, fitted with a faulty replacement, or the CAN wiring has been damaged. Engine usually will not run while this fault is active in other modules.'
+    de: 'Ein Steuergerät, das mit dem Motorsteuergerät kommunizieren sollte, empfängt keine Botschaften mehr. Wird am häufigsten von Getriebesteuergerät, Kombiinstrument oder Bordnetzsteuergerät gemeldet, nachdem die Motorsteuerung abgesteckt, ein defektes Ersatzgerät eingebaut oder die CAN-Verkabelung beschädigt wurde. Der Motor läuft meist nicht, solange dieser Fehler in anderen Steuergeräten aktiv ist.'
   affected_components:
     - sun_roof_module
     - can_bus_wiring
@@ -7349,8 +7349,8 @@
     en: Lost Communication With Exhaust Gas Sensor Module B
     de: Kommunikationsverlust mit Abgassensor-Modul B
   description:
-    en: Same as U011A on exhaust gas sensor module B.
-    de: Wie U011A, jedoch Abgassensor-Modul B.
+    en: 'ECU lost CAN communication with exhaust gas sensor module B (often integrates wide-range O2/NOx sensors).'
+    de: 'Steuergerät hat die CAN-Kommunikation zum Abgassensor-Modul B verloren (integriert oft Breitband-O2/NOx-Sensoren).'
   affected_components:
     - exhaust_gas_sensor_module_b
     - can_bus
@@ -7381,8 +7381,8 @@
     en: Lost Communication with Restraints Front Sensor "B"
     de: Kommunikation mit Rückhaltesystem-Frontsensor "B" verloren
   description:
-    en: Same as U0100 but for the secondary front impact sensor of the airbag system. Airbag warning lamp illuminates and frontal-impact deployment may be disabled.
-    de: Wie U0100, aber für den zweiten Front-Aufprallsensor des Airbag-Systems. Airbag-Warnleuchte leuchtet und Frontal-Auslösung ist eventuell deaktiviert.
+    en: 'A control module that expects to talk to the engine ECU has stopped receiving messages. Most commonly seen by the TCM, instrument cluster, or BCM after the ECU has been disconnected, fitted with a faulty replacement, or the CAN wiring has been damaged. Engine usually will not run while this fault is active in other modules.'
+    de: 'Ein Steuergerät, das mit dem Motorsteuergerät kommunizieren sollte, empfängt keine Botschaften mehr. Wird am häufigsten von Getriebesteuergerät, Kombiinstrument oder Bordnetzsteuergerät gemeldet, nachdem die Motorsteuerung abgesteckt, ein defektes Ersatzgerät eingebaut oder die CAN-Verkabelung beschädigt wurde. Der Motor läuft meist nicht, solange dieser Fehler in anderen Steuergeräten aktiv ist.'
   affected_components:
     - restraints_front_sensor
     - can_bus_wiring
@@ -7416,8 +7416,8 @@
     en: Lost Communication with Restraints Rear Sensor "A"
     de: Kommunikation mit Rückhaltesystem-Hecksensor "A" verloren
   description:
-    en: Same as U0100 but for the rear impact sensor of the airbag system. Airbag warning lamp illuminates and rear-impact response (e.g. seatbelt pretensioners on rear collision) may be disabled.
-    de: Wie U0100, aber für den Heck-Aufprallsensor des Airbag-Systems. Airbag-Warnleuchte leuchtet und Heckaufprall-Reaktion (z.B. Gurtstraffer bei Heckkollision) ist eventuell deaktiviert.
+    en: 'A control module that expects to talk to the engine ECU has stopped receiving messages. Most commonly seen by the TCM, instrument cluster, or BCM after the ECU has been disconnected, fitted with a faulty replacement, or the CAN wiring has been damaged. Engine usually will not run while this fault is active in other modules.'
+    de: 'Ein Steuergerät, das mit dem Motorsteuergerät kommunizieren sollte, empfängt keine Botschaften mehr. Wird am häufigsten von Getriebesteuergerät, Kombiinstrument oder Bordnetzsteuergerät gemeldet, nachdem die Motorsteuerung abgesteckt, ein defektes Ersatzgerät eingebaut oder die CAN-Verkabelung beschädigt wurde. Der Motor läuft meist nicht, solange dieser Fehler in anderen Steuergeräten aktiv ist.'
   affected_components:
     - restraints_rear_sensor
     - can_bus_wiring
@@ -7451,8 +7451,8 @@
     en: Lost Communication with Restraints Rear Sensor "B"
     de: Kommunikation mit Rückhaltesystem-Hecksensor "B" verloren
   description:
-    en: Same as U0100 but for the secondary rear impact sensor. Airbag warning lamp illuminates; rear-impact protection logic may be partially disabled.
-    de: Wie U0100, aber für den zweiten Heck-Aufprallsensor. Airbag-Warnleuchte leuchtet; Heckaufprall-Schutzlogik ist eventuell teilweise deaktiviert.
+    en: 'A control module that expects to talk to the engine ECU has stopped receiving messages. Most commonly seen by the TCM, instrument cluster, or BCM after the ECU has been disconnected, fitted with a faulty replacement, or the CAN wiring has been damaged. Engine usually will not run while this fault is active in other modules.'
+    de: 'Ein Steuergerät, das mit dem Motorsteuergerät kommunizieren sollte, empfängt keine Botschaften mehr. Wird am häufigsten von Getriebesteuergerät, Kombiinstrument oder Bordnetzsteuergerät gemeldet, nachdem die Motorsteuerung abgesteckt, ein defektes Ersatzgerät eingebaut oder die CAN-Verkabelung beschädigt wurde. Der Motor läuft meist nicht, solange dieser Fehler in anderen Steuergeräten aktiv ist.'
   affected_components:
     - restraints_rear_sensor
     - can_bus_wiring
@@ -7555,8 +7555,8 @@
     en: Lost Communication With Restraints System Sensor F
     de: Kommunikationsverlust mit Rückhaltesystem-Sensor F
   description:
-    en: Same as U0174 on sensor F.
-    de: Wie U0174, jedoch Sensor F.
+    en: 'ECU lost CAN/dedicated-bus communication with restraints system sensor F (airbag/seatbelt sensor).'
+    de: 'Steuergerät hat die Kommunikation zum Rückhaltesystem-Sensor F (Airbag/Gurtsensor) verloren.'
   affected_components:
     - restraints_sensor_f
     - can_bus
@@ -7587,8 +7587,8 @@
     en: Lost Communication With Restraints System Sensor G
     de: Kommunikationsverlust mit Rückhaltesystem-Sensor G
   description:
-    en: Same as U0174 on sensor G.
-    de: Wie U0174, jedoch Sensor G.
+    en: 'ECU lost CAN/dedicated-bus communication with restraints system sensor G (airbag/seatbelt sensor).'
+    de: 'Steuergerät hat die Kommunikation zum Rückhaltesystem-Sensor G (Airbag/Gurtsensor) verloren.'
   affected_components:
     - restraints_sensor_g
     - can_bus
@@ -7619,8 +7619,8 @@
     en: Lost Communication with Mirror Memory Module
     de: Kommunikation mit Spiegel-Memory-Modul verloren
   description:
-    en: Same as U0100 but for the mirror memory module (stores per-driver mirror positions). Memory recall and tilt-down on reverse may stop working.
-    de: Wie U0100, aber für das Spiegel-Memory-Modul (speichert fahrerspezifische Spiegelpositionen). Memory-Abruf und Absenken beim Rückwärtsgang funktionieren eventuell nicht mehr.
+    en: 'A control module that expects to talk to the engine ECU has stopped receiving messages. Most commonly seen by the TCM, instrument cluster, or BCM after the ECU has been disconnected, fitted with a faulty replacement, or the CAN wiring has been damaged. Engine usually will not run while this fault is active in other modules.'
+    de: 'Ein Steuergerät, das mit dem Motorsteuergerät kommunizieren sollte, empfängt keine Botschaften mehr. Wird am häufigsten von Getriebesteuergerät, Kombiinstrument oder Bordnetzsteuergerät gemeldet, nachdem die Motorsteuerung abgesteckt, ein defektes Ersatzgerät eingebaut oder die CAN-Verkabelung beschädigt wurde. Der Motor läuft meist nicht, solange dieser Fehler in anderen Steuergeräten aktiv ist.'
   affected_components:
     - mirror_memory_module
     - can_bus_wiring
@@ -7654,8 +7654,8 @@
     en: Lost Communication With Restraints System Sensor I
     de: Kommunikationsverlust mit Rückhaltesystem-Sensor I
   description:
-    en: Same as U0174 on sensor I.
-    de: Wie U0174, jedoch Sensor I.
+    en: 'ECU lost CAN/dedicated-bus communication with restraints system sensor I (airbag/seatbelt sensor).'
+    de: 'Steuergerät hat die Kommunikation zum Rückhaltesystem-Sensor I (Airbag/Gurtsensor) verloren.'
   affected_components:
     - restraints_sensor_i
     - can_bus
@@ -7686,8 +7686,8 @@
     en: Lost Communication with Power Liftgate Control Module
     de: Kommunikation mit elektrischer Heckklappen-Steuerung verloren
   description:
-    en: Same as U0100 but for the powered tailgate/liftgate module. Automatic open/close stops working; the tailgate can typically still be operated manually.
-    de: Wie U0100, aber für die elektrische Heckklappen-Steuerung. Automatisches Öffnen/Schließen funktioniert nicht mehr; die Heckklappe lässt sich typischerweise noch manuell bedienen.
+    en: 'A control module that expects to talk to the engine ECU has stopped receiving messages. Most commonly seen by the TCM, instrument cluster, or BCM after the ECU has been disconnected, fitted with a faulty replacement, or the CAN wiring has been damaged. Engine usually will not run while this fault is active in other modules.'
+    de: 'Ein Steuergerät, das mit dem Motorsteuergerät kommunizieren sollte, empfängt keine Botschaften mehr. Wird am häufigsten von Getriebesteuergerät, Kombiinstrument oder Bordnetzsteuergerät gemeldet, nachdem die Motorsteuerung abgesteckt, ein defektes Ersatzgerät eingebaut oder die CAN-Verkabelung beschädigt wurde. Der Motor läuft meist nicht, solange dieser Fehler in anderen Steuergeräten aktiv ist.'
   affected_components:
     - power_liftgate_module
     - can_bus_wiring
@@ -7721,8 +7721,8 @@
     en: Lost Communication With Restraints System Sensor K
     de: Kommunikationsverlust mit Rückhaltesystem-Sensor K
   description:
-    en: Same as U0174 on sensor K.
-    de: Wie U0174, jedoch Sensor K.
+    en: 'ECU lost CAN/dedicated-bus communication with restraints system sensor K (airbag/seatbelt sensor).'
+    de: 'Steuergerät hat die Kommunikation zum Rückhaltesystem-Sensor K (Airbag/Gurtsensor) verloren.'
   affected_components:
     - restraints_sensor_k
     - can_bus
@@ -7753,8 +7753,8 @@
     en: Lost Communication With Restraints System Sensor L
     de: Kommunikationsverlust mit Rückhaltesystem-Sensor L
   description:
-    en: Same as U0174 on sensor L.
-    de: Wie U0174, jedoch Sensor L.
+    en: 'ECU lost CAN/dedicated-bus communication with restraints system sensor L (airbag/seatbelt sensor).'
+    de: 'Steuergerät hat die Kommunikation zum Rückhaltesystem-Sensor L (Airbag/Gurtsensor) verloren.'
   affected_components:
     - restraints_sensor_l
     - can_bus
@@ -7785,8 +7785,8 @@
     en: Lost Communication With Restraints System Sensor M
     de: Kommunikationsverlust mit Rückhaltesystem-Sensor M
   description:
-    en: Same as U0174 on sensor M.
-    de: Wie U0174, jedoch Sensor M.
+    en: 'ECU lost CAN/dedicated-bus communication with restraints system sensor M (airbag/seatbelt sensor).'
+    de: 'Steuergerät hat die Kommunikation zum Rückhaltesystem-Sensor M (Airbag/Gurtsensor) verloren.'
   affected_components:
     - restraints_sensor_m
     - can_bus
@@ -7817,8 +7817,8 @@
     en: Lost Communication With Restraints System Sensor N
     de: Kommunikationsverlust mit Rückhaltesystem-Sensor N
   description:
-    en: Same as U0174 on sensor N.
-    de: Wie U0174, jedoch Sensor N.
+    en: 'ECU lost CAN/dedicated-bus communication with restraints system sensor N (airbag/seatbelt sensor).'
+    de: 'Steuergerät hat die Kommunikation zum Rückhaltesystem-Sensor N (Airbag/Gurtsensor) verloren.'
   affected_components:
     - restraints_sensor_n
     - can_bus
@@ -7881,8 +7881,8 @@
     en: Lost Communication With Seat Belt Pretensioner Module B
     de: Kommunikationsverlust mit Gurtstraffer-Modul B
   description:
-    en: Same as U017E on pretensioner module B.
-    de: Wie U017E, jedoch Gurtstraffer-Modul B.
+    en: 'ECU lost communication with seat belt pretensioner module B. Pretensioner function may be unavailable in a crash.'
+    de: 'Steuergerät hat die Kommunikation zum Gurtstraffer-Modul B verloren. Straffung im Crashfall evtl. nicht verfügbar.'
   affected_components:
     - seatbelt_pretensioner_b
     - can_bus
@@ -7913,8 +7913,8 @@
     en: Lost Communication with Automatic Lighting Control Module
     de: Kommunikation mit automatischer Lichtsteuerung verloren
   description:
-    en: Same as U0100 but for the headlamp/automatic-lighting control module. Auto headlights, adaptive cornering and headlight levelling stop working; lights may default to a fixed setting.
-    de: Wie U0100, aber für das Scheinwerfer-/automatische Lichtsteuerungs-Modul. Lichtautomatik, adaptives Kurvenlicht und Leuchtweitenregelung fallen aus; Scheinwerfer gehen eventuell in Festeinstellung.
+    en: 'A control module that expects to talk to the engine ECU has stopped receiving messages. Most commonly seen by the TCM, instrument cluster, or BCM after the ECU has been disconnected, fitted with a faulty replacement, or the CAN wiring has been damaged. Engine usually will not run while this fault is active in other modules.'
+    de: 'Ein Steuergerät, das mit dem Motorsteuergerät kommunizieren sollte, empfängt keine Botschaften mehr. Wird am häufigsten von Getriebesteuergerät, Kombiinstrument oder Bordnetzsteuergerät gemeldet, nachdem die Motorsteuerung abgesteckt, ein defektes Ersatzgerät eingebaut oder die CAN-Verkabelung beschädigt wurde. Der Motor läuft meist nicht, solange dieser Fehler in anderen Steuergeräten aktiv ist.'
   affected_components:
     - headlamp_control_module
     - can_bus_wiring
@@ -7948,8 +7948,8 @@
     en: Lost Communication with Auto Park Brake Module
     de: Kommunikation mit elektrischer Parkbremsen-Steuerung verloren
   description:
-    en: Same as U0100 but for the electric parking brake (EPB) module. The EPB warning lamp illuminates and the parking brake may not engage or release on command.
-    de: Wie U0100, aber für das elektrische Parkbremsen-Steuergerät (EPB). Die EPB-Warnleuchte leuchtet und die Feststellbremse lässt sich eventuell nicht mehr per Tastendruck schließen oder lösen.
+    en: 'A control module that expects to talk to the engine ECU has stopped receiving messages. Most commonly seen by the TCM, instrument cluster, or BCM after the ECU has been disconnected, fitted with a faulty replacement, or the CAN wiring has been damaged. Engine usually will not run while this fault is active in other modules.'
+    de: 'Ein Steuergerät, das mit dem Motorsteuergerät kommunizieren sollte, empfängt keine Botschaften mehr. Wird am häufigsten von Getriebesteuergerät, Kombiinstrument oder Bordnetzsteuergerät gemeldet, nachdem die Motorsteuerung abgesteckt, ein defektes Ersatzgerät eingebaut oder die CAN-Verkabelung beschädigt wurde. Der Motor läuft meist nicht, solange dieser Fehler in anderen Steuergeräten aktiv ist.'
   affected_components:
     - park_brake_module
     - can_bus_wiring
@@ -8046,8 +8046,8 @@
     en: Lost Communication with Radio
     de: Kommunikation mit Radio verloren
   description:
-    en: Same as U0100 but for the radio/head unit. The radio appears dead or shows a communication error; on some vehicles steering wheel controls also stop working.
-    de: Wie U0100, aber für Radio/Head-Unit. Das Radio wirkt tot oder zeigt einen Kommunikationsfehler; bei manchen Fahrzeugen funktionieren auch die Lenkradtasten nicht mehr.
+    en: 'A control module that expects to talk to the engine ECU has stopped receiving messages. Most commonly seen by the TCM, instrument cluster, or BCM after the ECU has been disconnected, fitted with a faulty replacement, or the CAN wiring has been damaged. Engine usually will not run while this fault is active in other modules.'
+    de: 'Ein Steuergerät, das mit dem Motorsteuergerät kommunizieren sollte, empfängt keine Botschaften mehr. Wird am häufigsten von Getriebesteuergerät, Kombiinstrument oder Bordnetzsteuergerät gemeldet, nachdem die Motorsteuerung abgesteckt, ein defektes Ersatzgerät eingebaut oder die CAN-Verkabelung beschädigt wurde. Der Motor läuft meist nicht, solange dieser Fehler in anderen Steuergeräten aktiv ist.'
   affected_components:
     - radio_module
     - can_bus_wiring
@@ -8110,8 +8110,8 @@
     en: Lost Communication with Audio Amplifier
     de: Kommunikation mit Audio-Verstärker verloren
   description:
-    en: Same as U0100 but for the external audio amplifier (often a Bose, Harman or Burmester unit in the trunk). Audio output is lost or only plays on a subset of speakers.
-    de: Wie U0100, aber für den externen Audio-Verstärker (oft Bose, Harman oder Burmester im Kofferraum). Audio-Ausgabe fällt aus oder kommt nur über einen Teil der Lautsprecher.
+    en: 'A control module that expects to talk to the engine ECU has stopped receiving messages. Most commonly seen by the TCM, instrument cluster, or BCM after the ECU has been disconnected, fitted with a faulty replacement, or the CAN wiring has been damaged. Engine usually will not run while this fault is active in other modules.'
+    de: 'Ein Steuergerät, das mit dem Motorsteuergerät kommunizieren sollte, empfängt keine Botschaften mehr. Wird am häufigsten von Getriebesteuergerät, Kombiinstrument oder Bordnetzsteuergerät gemeldet, nachdem die Motorsteuerung abgesteckt, ein defektes Ersatzgerät eingebaut oder die CAN-Verkabelung beschädigt wurde. Der Motor läuft meist nicht, solange dieser Fehler in anderen Steuergeräten aktiv ist.'
   affected_components:
     - audio_amplifier_module
     - can_bus_wiring
@@ -8145,8 +8145,8 @@
     en: Lost Communication with Disc Player Module
     de: Kommunikation mit CD-/DVD-Player-Modul verloren
   description:
-    en: Same as U0100 but for the disc player/changer module. Disc playback stops working; on older systems the head unit may show a generic communication error.
-    de: Wie U0100, aber für das CD-/DVD-Player-/Wechsler-Modul. Disc-Wiedergabe funktioniert nicht mehr; bei älteren Systemen zeigt die Head-Unit einen allgemeinen Kommunikationsfehler.
+    en: 'A control module that expects to talk to the engine ECU has stopped receiving messages. Most commonly seen by the TCM, instrument cluster, or BCM after the ECU has been disconnected, fitted with a faulty replacement, or the CAN wiring has been damaged. Engine usually will not run while this fault is active in other modules.'
+    de: 'Ein Steuergerät, das mit dem Motorsteuergerät kommunizieren sollte, empfängt keine Botschaften mehr. Wird am häufigsten von Getriebesteuergerät, Kombiinstrument oder Bordnetzsteuergerät gemeldet, nachdem die Motorsteuerung abgesteckt, ein defektes Ersatzgerät eingebaut oder die CAN-Verkabelung beschädigt wurde. Der Motor läuft meist nicht, solange dieser Fehler in anderen Steuergeräten aktiv ist.'
   affected_components:
     - disc_player_module
     - can_bus_wiring
@@ -8180,8 +8180,8 @@
     en: Lost Communication with Audio Rear Control Module
     de: Kommunikation mit Audio-Hecksteuerung verloren
   description:
-    en: Same as U0100 but for the rear-seat audio control module (lets rear passengers select source/volume independently). Rear audio controls stop working.
-    de: Wie U0100, aber für die Audio-Bedienung im Fond (Fond-Passagiere können Quelle/Lautstärke separat steuern). Hecksitz-Audio-Bedienung funktioniert nicht mehr.
+    en: 'A control module that expects to talk to the engine ECU has stopped receiving messages. Most commonly seen by the TCM, instrument cluster, or BCM after the ECU has been disconnected, fitted with a faulty replacement, or the CAN wiring has been damaged. Engine usually will not run while this fault is active in other modules.'
+    de: 'Ein Steuergerät, das mit dem Motorsteuergerät kommunizieren sollte, empfängt keine Botschaften mehr. Wird am häufigsten von Getriebesteuergerät, Kombiinstrument oder Bordnetzsteuergerät gemeldet, nachdem die Motorsteuerung abgesteckt, ein defektes Ersatzgerät eingebaut oder die CAN-Verkabelung beschädigt wurde. Der Motor läuft meist nicht, solange dieser Fehler in anderen Steuergeräten aktiv ist.'
   affected_components:
     - audio_rear_control_module
     - can_bus_wiring
@@ -8276,8 +8276,8 @@
     en: Lost Communication with Subwoofer Amplifier Module
     de: Kommunikation mit Subwoofer-Verstärker-Modul verloren
   description:
-    en: Same as U0100 but for a separate subwoofer amplifier (typical on premium audio packages). Bass output is lost while the rest of the audio system still plays.
-    de: Wie U0100, aber für einen separaten Subwoofer-Verstärker (typisch bei Premium-Audio-Paketen). Bass-Wiedergabe fällt aus, während der Rest des Audiosystems weiter spielt.
+    en: 'A control module that expects to talk to the engine ECU has stopped receiving messages. Most commonly seen by the TCM, instrument cluster, or BCM after the ECU has been disconnected, fitted with a faulty replacement, or the CAN wiring has been damaged. Engine usually will not run while this fault is active in other modules.'
+    de: 'Ein Steuergerät, das mit dem Motorsteuergerät kommunizieren sollte, empfängt keine Botschaften mehr. Wird am häufigsten von Getriebesteuergerät, Kombiinstrument oder Bordnetzsteuergerät gemeldet, nachdem die Motorsteuerung abgesteckt, ein defektes Ersatzgerät eingebaut oder die CAN-Verkabelung beschädigt wurde. Der Motor läuft meist nicht, solange dieser Fehler in anderen Steuergeräten aktiv ist.'
   affected_components:
     - subwoofer_amplifier_module
     - can_bus_wiring
@@ -8311,8 +8311,8 @@
     en: Lost Communication with Television Tuner Module
     de: Kommunikation mit TV-Tuner-Modul verloren
   description:
-    en: Same as U0100 but for the TV tuner (DVB-T/ATSC) module fitted in some rear-seat entertainment packages. TV reception stops working.
-    de: Wie U0100, aber für das TV-Tuner-Modul (DVB-T/ATSC) in manchen Fond-Entertainment-Paketen. TV-Empfang funktioniert nicht mehr.
+    en: 'A control module that expects to talk to the engine ECU has stopped receiving messages. Most commonly seen by the TCM, instrument cluster, or BCM after the ECU has been disconnected, fitted with a faulty replacement, or the CAN wiring has been damaged. Engine usually will not run while this fault is active in other modules.'
+    de: 'Ein Steuergerät, das mit dem Motorsteuergerät kommunizieren sollte, empfängt keine Botschaften mehr. Wird am häufigsten von Getriebesteuergerät, Kombiinstrument oder Bordnetzsteuergerät gemeldet, nachdem die Motorsteuerung abgesteckt, ein defektes Ersatzgerät eingebaut oder die CAN-Verkabelung beschädigt wurde. Der Motor läuft meist nicht, solange dieser Fehler in anderen Steuergeräten aktiv ist.'
   affected_components:
     - television_tuner_module
     - can_bus_wiring
@@ -8375,8 +8375,8 @@
     en: Lost Communication with Mobile Phone Module
     de: Kommunikation mit Mobiltelefon-Modul verloren
   description:
-    en: Same as U0100 but for the integrated mobile phone/telematics module. Hands-free calling and built-in cellular services stop working.
-    de: Wie U0100, aber für das integrierte Mobiltelefon-/Telematik-Modul. Freisprecheinrichtung und integrierte Mobilfunkdienste funktionieren nicht mehr.
+    en: 'A control module that expects to talk to the engine ECU has stopped receiving messages. Most commonly seen by the TCM, instrument cluster, or BCM after the ECU has been disconnected, fitted with a faulty replacement, or the CAN wiring has been damaged. Engine usually will not run while this fault is active in other modules.'
+    de: 'Ein Steuergerät, das mit dem Motorsteuergerät kommunizieren sollte, empfängt keine Botschaften mehr. Wird am häufigsten von Getriebesteuergerät, Kombiinstrument oder Bordnetzsteuergerät gemeldet, nachdem die Motorsteuerung abgesteckt, ein defektes Ersatzgerät eingebaut oder die CAN-Verkabelung beschädigt wurde. Der Motor läuft meist nicht, solange dieser Fehler in anderen Steuergeräten aktiv ist.'
   affected_components:
     - mobile_phone_module
     - can_bus_wiring
@@ -8439,8 +8439,8 @@
     en: Lost Communication with Satellite Radio Receiver Module
     de: Kommunikation mit Satellitenradio-Empfänger-Modul verloren
   description:
-    en: Same as U0100 but for the satellite radio receiver (SiriusXM in North America, DAB+ tuners on some systems). Satellite radio source disappears from the head unit.
-    de: Wie U0100, aber für den Satellitenradio-Empfänger (SiriusXM in Nordamerika, DAB+-Tuner bei manchen Systemen). Satellitenradio-Quelle verschwindet von der Head-Unit.
+    en: 'A control module that expects to talk to the engine ECU has stopped receiving messages. Most commonly seen by the TCM, instrument cluster, or BCM after the ECU has been disconnected, fitted with a faulty replacement, or the CAN wiring has been damaged. Engine usually will not run while this fault is active in other modules.'
+    de: 'Ein Steuergerät, das mit dem Motorsteuergerät kommunizieren sollte, empfängt keine Botschaften mehr. Wird am häufigsten von Getriebesteuergerät, Kombiinstrument oder Bordnetzsteuergerät gemeldet, nachdem die Motorsteuerung abgesteckt, ein defektes Ersatzgerät eingebaut oder die CAN-Verkabelung beschädigt wurde. Der Motor läuft meist nicht, solange dieser Fehler in anderen Steuergeräten aktiv ist.'
   affected_components:
     - satellite_radio_module
     - can_bus_wiring
@@ -8474,8 +8474,8 @@
     en: Lost Communication with Rear Seat Entertainment Control Module
     de: Kommunikation mit Fond-Entertainment-Steuergerät verloren
   description:
-    en: Same as U0100 but for the rear-seat entertainment (RSE) control module. Rear screens, headphone jacks and remote control stop working.
-    de: Wie U0100, aber für das Fond-Entertainment-Steuergerät (RSE). Hecksitz-Bildschirme, Kopfhöreranschlüsse und Fernbedienung funktionieren nicht mehr.
+    en: 'A control module that expects to talk to the engine ECU has stopped receiving messages. Most commonly seen by the TCM, instrument cluster, or BCM after the ECU has been disconnected, fitted with a faulty replacement, or the CAN wiring has been damaged. Engine usually will not run while this fault is active in other modules.'
+    de: 'Ein Steuergerät, das mit dem Motorsteuergerät kommunizieren sollte, empfängt keine Botschaften mehr. Wird am häufigsten von Getriebesteuergerät, Kombiinstrument oder Bordnetzsteuergerät gemeldet, nachdem die Motorsteuerung abgesteckt, ein defektes Ersatzgerät eingebaut oder die CAN-Verkabelung beschädigt wurde. Der Motor läuft meist nicht, solange dieser Fehler in anderen Steuergeräten aktiv ist.'
   affected_components:
     - rear_seat_entertainment_module
     - can_bus_wiring
@@ -8572,8 +8572,8 @@
     en: Lost Communication with Door Control Module
     de: Kommunikation mit Tür-Steuergerät verloren
   description:
-    en: Same as U0100 but for a door control module (typically driver door). Power windows, mirror adjust, central locking and door-mounted speakers on the affected door may stop working.
-    de: Wie U0100, aber für ein Tür-Steuergerät (typischerweise Fahrertür). Elektrische Fensterheber, Spiegelverstellung, Zentralverriegelung und Türlautsprecher der betroffenen Tür können ausfallen.
+    en: 'A control module that expects to talk to the engine ECU has stopped receiving messages. Most commonly seen by the TCM, instrument cluster, or BCM after the ECU has been disconnected, fitted with a faulty replacement, or the CAN wiring has been damaged. Engine usually will not run while this fault is active in other modules.'
+    de: 'Ein Steuergerät, das mit dem Motorsteuergerät kommunizieren sollte, empfängt keine Botschaften mehr. Wird am häufigsten von Getriebesteuergerät, Kombiinstrument oder Bordnetzsteuergerät gemeldet, nachdem die Motorsteuerung abgesteckt, ein defektes Ersatzgerät eingebaut oder die CAN-Verkabelung beschädigt wurde. Der Motor läuft meist nicht, solange dieser Fehler in anderen Steuergeräten aktiv ist.'
   affected_components:
     - door_control_module
     - can_bus_wiring
@@ -8831,8 +8831,8 @@
     en: Lost Communication With Hybrid/EV Battery Interface Control Module B
     de: Kommunikationsverlust mit Hybrid/EV-Batterie-Schnittstellen-Modul B
   description:
-    en: Same as U01A0 on interface module B.
-    de: Wie U01A0, jedoch Schnittstellen-Modul B.
+    en: 'ECU lost CAN communication with hybrid/EV HV battery interface module B (BMS slave or cell-monitoring submodule).'
+    de: 'Steuergerät hat die CAN-Kommunikation zum HV-Batterie-Schnittstellen-Modul B verloren (BMS-Slave oder Zellüberwachungs-Submodul).'
   affected_components:
     - hv_battery_interface_b
     - can_bus
@@ -8863,8 +8863,8 @@
     en: Lost Communication With Hybrid/EV Battery Interface Control Module C
     de: Kommunikationsverlust mit Hybrid/EV-Batterie-Schnittstellen-Modul C
   description:
-    en: Same as U01A0 on interface module C.
-    de: Wie U01A0, jedoch Schnittstellen-Modul C.
+    en: 'ECU lost CAN communication with hybrid/EV HV battery interface module C (BMS slave or cell-monitoring submodule).'
+    de: 'Steuergerät hat die CAN-Kommunikation zum HV-Batterie-Schnittstellen-Modul C verloren (BMS-Slave oder Zellüberwachungs-Submodul).'
   affected_components:
     - hv_battery_interface_c
     - can_bus
@@ -8895,8 +8895,8 @@
     en: Lost Communication With Hybrid/EV Battery Interface Control Module D
     de: Kommunikationsverlust mit Hybrid/EV-Batterie-Schnittstellen-Modul D
   description:
-    en: Same as U01A0 on interface module D.
-    de: Wie U01A0, jedoch Schnittstellen-Modul D.
+    en: 'ECU lost CAN communication with hybrid/EV HV battery interface module D (BMS slave or cell-monitoring submodule).'
+    de: 'Steuergerät hat die CAN-Kommunikation zum HV-Batterie-Schnittstellen-Modul D verloren (BMS-Slave oder Zellüberwachungs-Submodul).'
   affected_components:
     - hv_battery_interface_d
     - can_bus
@@ -8927,8 +8927,8 @@
     en: Lost Communication With Hybrid/EV Battery Interface Control Module E
     de: Kommunikationsverlust mit Hybrid/EV-Batterie-Schnittstellen-Modul E
   description:
-    en: Same as U01A0 on interface module E.
-    de: Wie U01A0, jedoch Schnittstellen-Modul E.
+    en: 'ECU lost CAN communication with hybrid/EV HV battery interface module E (BMS slave or cell-monitoring submodule).'
+    de: 'Steuergerät hat die CAN-Kommunikation zum HV-Batterie-Schnittstellen-Modul E verloren (BMS-Slave oder Zellüberwachungs-Submodul).'
   affected_components:
     - hv_battery_interface_e
     - can_bus
@@ -8959,8 +8959,8 @@
     en: Lost Communication With Hybrid/EV Battery Interface Control Module F
     de: Kommunikationsverlust mit Hybrid/EV-Batterie-Schnittstellen-Modul F
   description:
-    en: Same as U01A0 on interface module F.
-    de: Wie U01A0, jedoch Schnittstellen-Modul F.
+    en: 'ECU lost CAN communication with hybrid/EV HV battery interface module F (BMS slave or cell-monitoring submodule).'
+    de: 'Steuergerät hat die CAN-Kommunikation zum HV-Batterie-Schnittstellen-Modul F verloren (BMS-Slave oder Zellüberwachungs-Submodul).'
   affected_components:
     - hv_battery_interface_f
     - can_bus
@@ -8991,8 +8991,8 @@
     en: Lost Communication With Hybrid/EV Battery Interface Control Module G
     de: Kommunikationsverlust mit Hybrid/EV-Batterie-Schnittstellen-Modul G
   description:
-    en: Same as U01A0 on interface module G.
-    de: Wie U01A0, jedoch Schnittstellen-Modul G.
+    en: 'ECU lost CAN communication with hybrid/EV HV battery interface module G (BMS slave or cell-monitoring submodule).'
+    de: 'Steuergerät hat die CAN-Kommunikation zum HV-Batterie-Schnittstellen-Modul G verloren (BMS-Slave oder Zellüberwachungs-Submodul).'
   affected_components:
     - hv_battery_interface_g
     - can_bus
@@ -9023,8 +9023,8 @@
     en: Lost Communication With Hybrid/EV Battery Interface Control Module H
     de: Kommunikationsverlust mit Hybrid/EV-Batterie-Schnittstellen-Modul H
   description:
-    en: Same as U01A0 on interface module H.
-    de: Wie U01A0, jedoch Schnittstellen-Modul H.
+    en: 'ECU lost CAN communication with hybrid/EV HV battery interface module H (BMS slave or cell-monitoring submodule).'
+    de: 'Steuergerät hat die CAN-Kommunikation zum HV-Batterie-Schnittstellen-Modul H verloren (BMS-Slave oder Zellüberwachungs-Submodul).'
   affected_components:
     - hv_battery_interface_h
     - can_bus
@@ -9055,8 +9055,8 @@
     en: Lost Communication With Hybrid/EV Battery Interface Control Module I
     de: Kommunikationsverlust mit Hybrid/EV-Batterie-Schnittstellen-Modul I
   description:
-    en: Same as U01A0 on interface module I.
-    de: Wie U01A0, jedoch Schnittstellen-Modul I.
+    en: 'ECU lost CAN communication with hybrid/EV HV battery interface module I (BMS slave or cell-monitoring submodule).'
+    de: 'Steuergerät hat die CAN-Kommunikation zum HV-Batterie-Schnittstellen-Modul I verloren (BMS-Slave oder Zellüberwachungs-Submodul).'
   affected_components:
     - hv_battery_interface_i
     - can_bus
@@ -9087,8 +9087,8 @@
     en: Lost Communication With Hybrid/EV Battery Interface Control Module J
     de: Kommunikationsverlust mit Hybrid/EV-Batterie-Schnittstellen-Modul J
   description:
-    en: Same as U01A0 on interface module J.
-    de: Wie U01A0, jedoch Schnittstellen-Modul J.
+    en: 'ECU lost CAN communication with hybrid/EV HV battery interface module J (BMS slave or cell-monitoring submodule).'
+    de: 'Steuergerät hat die CAN-Kommunikation zum HV-Batterie-Schnittstellen-Modul J verloren (BMS-Slave oder Zellüberwachungs-Submodul).'
   affected_components:
     - hv_battery_interface_j
     - can_bus
@@ -9119,8 +9119,8 @@
     en: Lost Communication With Hybrid/EV Battery Interface Control Module K
     de: Kommunikationsverlust mit Hybrid/EV-Batterie-Schnittstellen-Modul K
   description:
-    en: Same as U01A0 on interface module K.
-    de: Wie U01A0, jedoch Schnittstellen-Modul K.
+    en: 'ECU lost CAN communication with hybrid/EV HV battery interface module K (BMS slave or cell-monitoring submodule).'
+    de: 'Steuergerät hat die CAN-Kommunikation zum HV-Batterie-Schnittstellen-Modul K verloren (BMS-Slave oder Zellüberwachungs-Submodul).'
   affected_components:
     - hv_battery_interface_k
     - can_bus
@@ -9151,8 +9151,8 @@
     en: Lost Communication With Hybrid/EV Battery Interface Control Module L
     de: Kommunikationsverlust mit Hybrid/EV-Batterie-Schnittstellen-Modul L
   description:
-    en: Same as U01A0 on interface module L.
-    de: Wie U01A0, jedoch Schnittstellen-Modul L.
+    en: 'ECU lost CAN communication with hybrid/EV HV battery interface module L (BMS slave or cell-monitoring submodule).'
+    de: 'Steuergerät hat die CAN-Kommunikation zum HV-Batterie-Schnittstellen-Modul L verloren (BMS-Slave oder Zellüberwachungs-Submodul).'
   affected_components:
     - hv_battery_interface_l
     - can_bus
@@ -9183,8 +9183,8 @@
     en: Lost Communication With Hybrid/EV Battery Interface Control Module M
     de: Kommunikationsverlust mit Hybrid/EV-Batterie-Schnittstellen-Modul M
   description:
-    en: Same as U01A0 on interface module M.
-    de: Wie U01A0, jedoch Schnittstellen-Modul M.
+    en: 'ECU lost CAN communication with hybrid/EV HV battery interface module M (BMS slave or cell-monitoring submodule).'
+    de: 'Steuergerät hat die CAN-Kommunikation zum HV-Batterie-Schnittstellen-Modul M verloren (BMS-Slave oder Zellüberwachungs-Submodul).'
   affected_components:
     - hv_battery_interface_m
     - can_bus
@@ -9215,8 +9215,8 @@
     en: Lost Communication With Hybrid/EV Battery Interface Control Module N
     de: Kommunikationsverlust mit Hybrid/EV-Batterie-Schnittstellen-Modul N
   description:
-    en: Same as U01A0 on interface module N.
-    de: Wie U01A0, jedoch Schnittstellen-Modul N.
+    en: 'ECU lost CAN communication with hybrid/EV HV battery interface module N (BMS slave or cell-monitoring submodule).'
+    de: 'Steuergerät hat die CAN-Kommunikation zum HV-Batterie-Schnittstellen-Modul N verloren (BMS-Slave oder Zellüberwachungs-Submodul).'
   affected_components:
     - hv_battery_interface_n
     - can_bus
@@ -9247,8 +9247,8 @@
     en: Lost Communication With Hybrid/EV Battery Interface Control Module O
     de: Kommunikationsverlust mit Hybrid/EV-Batterie-Schnittstellen-Modul O
   description:
-    en: Same as U01A0 on interface module O.
-    de: Wie U01A0, jedoch Schnittstellen-Modul O.
+    en: 'ECU lost CAN communication with hybrid/EV HV battery interface module O (BMS slave or cell-monitoring submodule).'
+    de: 'Steuergerät hat die CAN-Kommunikation zum HV-Batterie-Schnittstellen-Modul O verloren (BMS-Slave oder Zellüberwachungs-Submodul).'
   affected_components:
     - hv_battery_interface_o
     - can_bus
@@ -9279,8 +9279,8 @@
     en: Lost Communication With Hybrid/EV Battery Interface Control Module P
     de: Kommunikationsverlust mit Hybrid/EV-Batterie-Schnittstellen-Modul P
   description:
-    en: Same as U01A0 on interface module P.
-    de: Wie U01A0, jedoch Schnittstellen-Modul P.
+    en: 'ECU lost CAN communication with hybrid/EV HV battery interface module P (BMS slave or cell-monitoring submodule).'
+    de: 'Steuergerät hat die CAN-Kommunikation zum HV-Batterie-Schnittstellen-Modul P verloren (BMS-Slave oder Zellüberwachungs-Submodul).'
   affected_components:
     - hv_battery_interface_p
     - can_bus
@@ -9567,8 +9567,8 @@
     en: Lost Communication With Switch Input Module B
     de: Kommunikationsverlust mit Schaltereingangs-Modul B
   description:
-    en: Same as U01B7 on switch input module B.
-    de: Wie U01B7, jedoch Modul B.
+    en: 'ECU lost communication with switch input module B (collects switch signals — windows, lights, etc.).'
+    de: 'Steuergerät hat die Kommunikation zum Schaltereingangs-Modul B verloren (erfasst Schaltersignale — Fenster, Licht, etc.).'
   affected_components:
     - switch_input_module_b
     - can_bus
@@ -9599,8 +9599,8 @@
     en: Lost Communication With Switch Input Module C
     de: Kommunikationsverlust mit Schaltereingangs-Modul C
   description:
-    en: Same as U01B7 on switch input module C.
-    de: Wie U01B7, jedoch Modul C.
+    en: 'ECU lost communication with switch input module C (collects switch signals — windows, lights, etc.).'
+    de: 'Steuergerät hat die Kommunikation zum Schaltereingangs-Modul C verloren (erfasst Schaltersignale — Fenster, Licht, etc.).'
   affected_components:
     - switch_input_module_c
     - can_bus
@@ -9663,8 +9663,8 @@
     en: Lost Communication With Battery Charger Control Module B
     de: Kommunikationsverlust mit Batterie-Lademodul B
   description:
-    en: Same as U019B on battery charger module B.
-    de: Wie U019B, jedoch Lademodul B.
+    en: 'ECU lost communication with battery charger control module B (on-board charger for HV battery on plug-in hybrids/EVs).'
+    de: 'Steuergerät hat die Kommunikation zum Batterie-Lademodul B verloren (On-Board-Ladegerät für HV-Batterie bei Plug-in-Hybrid/EV).'
   affected_components:
     - battery_charger_module_b
     - can_bus
@@ -9855,8 +9855,8 @@
     en: Lost Communication With Door Control Module C
     de: Kommunikationsverlust mit Türsteuermodul C
   description:
-    en: Same as U0200 on door C (typically rear-left).
-    de: Wie U0200, jedoch Tür C (typisch hinten links).
+    en: 'ECU lost communication with door control module C (typically passenger front door).'
+    de: 'Steuergerät hat die Kommunikation zum Türsteuermodul C verloren (typisch Beifahrertür vorne).'
   affected_components:
     - door_module_c
     - can_bus
@@ -9887,8 +9887,8 @@
     en: Lost Communication With Door Control Module D
     de: Kommunikationsverlust mit Türsteuermodul D
   description:
-    en: Same as U0200 on door D (typically rear-right).
-    de: Wie U0200, jedoch Tür D (typisch hinten rechts).
+    en: 'ECU lost communication with door control module D (typically passenger front door).'
+    de: 'Steuergerät hat die Kommunikation zum Türsteuermodul D verloren (typisch Beifahrertür vorne).'
   affected_components:
     - door_module_d
     - can_bus
@@ -9919,8 +9919,8 @@
     en: Lost Communication With Door Control Module E
     de: Kommunikationsverlust mit Türsteuermodul E
   description:
-    en: Same as U0200 on door E (additional door, e.g. rear gate or sliding door).
-    de: Wie U0200, jedoch Tür E (zusätzliche Tür, z. B. Heckklappe oder Schiebetür).
+    en: 'ECU lost communication with door control module E (typically passenger front door).'
+    de: 'Steuergerät hat die Kommunikation zum Türsteuermodul E verloren (typisch Beifahrertür vorne).'
   affected_components:
     - door_module_e
     - can_bus
@@ -9951,8 +9951,8 @@
     en: Lost Communication With Door Control Module F
     de: Kommunikationsverlust mit Türsteuermodul F
   description:
-    en: Same as U0200 on door F.
-    de: Wie U0200, jedoch Tür F.
+    en: 'ECU lost communication with door control module F (typically passenger front door).'
+    de: 'Steuergerät hat die Kommunikation zum Türsteuermodul F verloren (typisch Beifahrertür vorne).'
   affected_components:
     - door_module_f
     - can_bus
@@ -9983,8 +9983,8 @@
     en: Lost Communication With Door Control Module G
     de: Kommunikationsverlust mit Türsteuermodul G
   description:
-    en: Same as U0200 on door G.
-    de: Wie U0200, jedoch Tür G.
+    en: 'ECU lost communication with door control module G (typically passenger front door).'
+    de: 'Steuergerät hat die Kommunikation zum Türsteuermodul G verloren (typisch Beifahrertür vorne).'
   affected_components:
     - door_module_g
     - can_bus
@@ -10111,8 +10111,8 @@
     en: Lost Communication With Seat Control Module B
     de: Kommunikationsverlust mit Sitzsteuermodul B
   description:
-    en: Same as U0208 on seat module B (typically passenger seat).
-    de: Wie U0208, jedoch Sitzmodul B (typisch Beifahrersitz).
+    en: 'ECU lost communication with seat control module B (driver seat with memory/heating/ventilation).'
+    de: 'Steuergerät hat die Kommunikation zum Sitzsteuermodul B verloren (Fahrersitz mit Memory/Heizung/Ventilation).'
   affected_components:
     - seat_module_b
     - can_bus
@@ -10143,8 +10143,8 @@
     en: Lost Communication With Moveable Roof Control Module B
     de: Kommunikationsverlust mit Bewegliches-Dach-Steuermodul B
   description:
-    en: Same as U0207 on moveable roof module B.
-    de: Wie U0207, jedoch Modul B.
+    en: 'ECU lost communication with moveable roof control module B (panoramic sunroof, hardtop).'
+    de: 'Steuergerät hat die Kommunikation zum Modul für bewegliches Dach A verloren (Panoramadach, Hardtop).'
   affected_components:
     - moveable_roof_module_b
     - can_bus
@@ -10175,8 +10175,8 @@
     en: Lost Communication With Door Control Module H
     de: Kommunikationsverlust mit Türsteuermodul H
   description:
-    en: Same as U0200 on door H.
-    de: Wie U0200, jedoch Tür H.
+    en: 'ECU lost communication with door control module H (typically passenger front door).'
+    de: 'Steuergerät hat die Kommunikation zum Türsteuermodul H verloren (typisch Beifahrertür vorne).'
   affected_components:
     - door_module_h
     - can_bus
@@ -10239,8 +10239,8 @@
     en: Lost Communication With Wireless Accessory Charging Module B
     de: Kommunikationsverlust mit Drahtlos-Zubehör-Lademodul B
   description:
-    en: Same as U020C on wireless charging module B.
-    de: Wie U020C, jedoch Modul B.
+    en: 'ECU lost communication with wireless accessory charging module B (Qi pad for phones).'
+    de: 'Steuergerät hat die Kommunikation zum Drahtlos-Lademodul B verloren (Qi-Pad für Telefone).'
   affected_components:
     - wireless_charging_module_b
     - can_bus
@@ -10271,8 +10271,8 @@
     en: Lost Communication With Seat Control Module C
     de: Kommunikationsverlust mit Sitzsteuermodul C
   description:
-    en: Same as U0208 on seat module C (rear seat).
-    de: Wie U0208, jedoch Sitzmodul C (Rücksitz).
+    en: 'ECU lost communication with seat control module C (driver seat with memory/heating/ventilation).'
+    de: 'Steuergerät hat die Kommunikation zum Sitzsteuermodul C verloren (Fahrersitz mit Memory/Heizung/Ventilation).'
   affected_components:
     - seat_module_c
     - can_bus
@@ -10303,8 +10303,8 @@
     en: Lost Communication With Seat Control Module D
     de: Kommunikationsverlust mit Sitzsteuermodul D
   description:
-    en: Same as U0208 on seat module D.
-    de: Wie U0208, jedoch Sitzmodul D.
+    en: 'ECU lost communication with seat control module D (driver seat with memory/heating/ventilation).'
+    de: 'Steuergerät hat die Kommunikation zum Sitzsteuermodul D verloren (Fahrersitz mit Memory/Heizung/Ventilation).'
   affected_components:
     - seat_module_d
     - can_bus
@@ -10697,8 +10697,8 @@
     en: Lost Communication With Door Window Motor C
     de: Kommunikationsverlust mit Fensterhebermotor C
   description:
-    en: Same as U0223 on window motor C.
-    de: Wie U0223, jedoch Motor C.
+    en: 'ECU lost communication with door window motor B (smart window motor with bus interface).'
+    de: 'Steuergerät hat die Kommunikation zum Fensterhebermotor B verloren (Smart-Motor mit Bus-Schnittstelle).'
   affected_components:
     - window_motor_c
     - can_bus
@@ -10729,8 +10729,8 @@
     en: Lost Communication With Door Window Motor D
     de: Kommunikationsverlust mit Fensterhebermotor D
   description:
-    en: Same as U0223 on window motor D.
-    de: Wie U0223, jedoch Motor D.
+    en: 'ECU lost communication with door window motor B (smart window motor with bus interface).'
+    de: 'Steuergerät hat die Kommunikation zum Fensterhebermotor B verloren (Smart-Motor mit Bus-Schnittstelle).'
   affected_components:
     - window_motor_d
     - can_bus
@@ -10761,8 +10761,8 @@
     en: Lost Communication With Door Window Motor E
     de: Kommunikationsverlust mit Fensterhebermotor E
   description:
-    en: Same as U0223 on window motor E.
-    de: Wie U0223, jedoch Motor E.
+    en: 'ECU lost communication with door window motor B (smart window motor with bus interface).'
+    de: 'Steuergerät hat die Kommunikation zum Fensterhebermotor B verloren (Smart-Motor mit Bus-Schnittstelle).'
   affected_components:
     - window_motor_e
     - can_bus
@@ -10793,8 +10793,8 @@
     en: Lost Communication With Door Window Motor F
     de: Kommunikationsverlust mit Fensterhebermotor F
   description:
-    en: Same as U0223 on window motor F.
-    de: Wie U0223, jedoch Motor F.
+    en: 'ECU lost communication with door window motor B (smart window motor with bus interface).'
+    de: 'Steuergerät hat die Kommunikation zum Fensterhebermotor B verloren (Smart-Motor mit Bus-Schnittstelle).'
   affected_components:
     - window_motor_f
     - can_bus
@@ -10825,8 +10825,8 @@
     en: Lost Communication With Door Window Motor G
     de: Kommunikationsverlust mit Fensterhebermotor G
   description:
-    en: Same as U0223 on window motor G.
-    de: Wie U0223, jedoch Motor G.
+    en: 'ECU lost communication with door window motor B (smart window motor with bus interface).'
+    de: 'Steuergerät hat die Kommunikation zum Fensterhebermotor B verloren (Smart-Motor mit Bus-Schnittstelle).'
   affected_components:
     - window_motor_g
     - can_bus
@@ -10921,8 +10921,8 @@
     en: Lost Communication With Object Detection Maintenance Control Module B
     de: Kommunikationsverlust mit Objekterkennungs-Wartungsmodul B
   description:
-    en: Same as U022E on module B.
-    de: Wie U022E, jedoch Modul B.
+    en: 'ECU lost communication with object detection maintenance control module B (camera/radar/lidar self-cleaning, alignment).'
+    de: 'Steuergerät hat die Kommunikation zum Objekterkennungs-Wartungsmodul B verloren (Kamera/Radar/Lidar-Reinigung, Kalibrierung).'
   affected_components:
     - obj_detect_module_b
     - can_bus
@@ -11309,8 +11309,8 @@
     en: Lost Communication With Image Processing Module B
     de: Kommunikationsverlust mit Bildverarbeitungs-Modul B
   description:
-    en: Same as U023A on image module B.
-    de: Wie U023A, jedoch Modul B.
+    en: 'ECU lost communication with image processing module B (camera ECU for ADAS, e.g. front camera).'
+    de: 'Steuergerät hat die Kommunikation zum Bildverarbeitungs-Modul B verloren (Kamera-ECU für Fahrerassistenz, z. B. Frontkamera).'
   affected_components:
     - image_module_b
     - can_bus
@@ -11341,8 +11341,8 @@
     en: Lost Communication With Image Processing Module C
     de: Kommunikationsverlust mit Bildverarbeitungs-Modul C
   description:
-    en: Same as U023A on image module C.
-    de: Wie U023A, jedoch Modul C.
+    en: 'ECU lost communication with image processing module C (camera ECU for ADAS, e.g. front camera).'
+    de: 'Steuergerät hat die Kommunikation zum Bildverarbeitungs-Modul C verloren (Kamera-ECU für Fahrerassistenz, z. B. Frontkamera).'
   affected_components:
     - image_module_c
     - can_bus
@@ -11405,8 +11405,8 @@
     en: Lost Communication With Front Distance Range Sensor - Right
     de: Kommunikationsverlust mit Front-Abstandssensor rechts
   description:
-    en: Same as U023D on the right-side sensor.
-    de: Wie U023D, jedoch rechter Sensor.
+    en: 'ECU lost communication with the front distance range sensor (radar/lidar) on the left.'
+    de: 'Steuergerät hat die Kommunikation zum vorderen linken Abstandssensor (Radar/Lidar) verloren.'
   affected_components:
     - front_distance_sensor_r
     - can_bus
@@ -11437,8 +11437,8 @@
     en: Lost Communication With Entrapment Control Module B
     de: Kommunikationsverlust mit Einklemmschutz-Modul B
   description:
-    en: Same as U0239 on entrapment module B.
-    de: Wie U0239, jedoch Einklemmschutz-Modul B.
+    en: 'ECU lost communication with entrapment control module B (anti-pinch protection on windows/sunroof/doors).'
+    de: 'Steuergerät hat die Kommunikation zum Einklemmschutz-Modul B verloren (Klemmschutz an Fenstern/SD/Türen).'
   affected_components:
     - entrapment_module_b
     - can_bus
@@ -11501,8 +11501,8 @@
     en: Lost Communication With Headlamp Control Module B
     de: Kommunikationsverlust mit Scheinwerfer-Steuermodul B
   description:
-    en: Same as U0241 on headlamp module B.
-    de: Wie U0241, jedoch Scheinwerfer-Modul B.
+    en: 'ECU lost communication with the headlamp control module B (matrix LED, adaptive headlights).'
+    de: 'Steuergerät hat die Kommunikation zum Scheinwerfer-Modul B verloren (Matrix-LED, adaptive Scheinwerfer).'
   affected_components:
     - headlamp_module_b
     - can_bus
@@ -11629,8 +11629,8 @@
     en: Lost Communication With Seat Control Module E
     de: Kommunikationsverlust mit Sitzsteuermodul E
   description:
-    en: Same as U0208 on seat module E.
-    de: Wie U0208, jedoch Sitzmodul E.
+    en: 'ECU lost communication with seat control module E (driver seat with memory/heating/ventilation).'
+    de: 'Steuergerät hat die Kommunikation zum Sitzsteuermodul E verloren (Fahrersitz mit Memory/Heizung/Ventilation).'
   affected_components:
     - seat_module_e
     - can_bus
@@ -11661,8 +11661,8 @@
     en: Lost Communication With Seat Control Module F
     de: Kommunikationsverlust mit Sitzsteuermodul F
   description:
-    en: Same as U0208 on seat module F.
-    de: Wie U0208, jedoch Sitzmodul F.
+    en: 'ECU lost communication with seat control module F (driver seat with memory/heating/ventilation).'
+    de: 'Steuergerät hat die Kommunikation zum Sitzsteuermodul F verloren (Fahrersitz mit Memory/Heizung/Ventilation).'
   affected_components:
     - seat_module_f
     - can_bus
@@ -12621,8 +12621,8 @@
     en: Invalid Data Received from Transfer Case Control Module
     de: Ungültige Daten vom Verteilergetriebe-Steuergerät empfangen
   description:
-    en: Same as U0401 but for the transfer case module. AWD/4WD modes may default to a fixed setting and warning lamps illuminate.
-    de: Wie U0401, aber für das Verteilergetriebe-Modul. AWD-/4WD-Modi fallen auf eine feste Einstellung zurück und Warnleuchten leuchten.
+    en: 'A control module is communicating with the engine ECU but receives data that is implausible or out of range — wrong checksum, value frozen, or value outside expected limits. Typical effects include limp-home and incorrect dashboard readings.'
+    de: 'Ein Steuergerät kommuniziert mit dem Motorsteuergerät, empfängt aber unplausible oder außerhalb des Bereichs liegende Daten — falsche Checksumme, eingefrorener Wert oder Wert außerhalb der erwarteten Grenzen. Typische Folgen sind Notlauf und falsche Anzeigen im Kombiinstrument.'
   affected_components:
     - transfer_case_control_module
     - can_bus_wiring
@@ -12656,8 +12656,8 @@
     en: Invalid Data Received from Gear Shift Control Module
     de: Ungültige Daten vom Schaltmodul empfangen
   description:
-    en: Same as U0401 but for the gear shift module (shift-by-wire selector). The transmission may go to limp-home or refuse to leave Park.
-    de: Wie U0401, aber für das Schaltmodul (Shift-by-Wire-Wählhebel). Das Getriebe kann in den Notlauf gehen oder sich weigern, aus Parken zu schalten.
+    en: 'A control module is communicating with the engine ECU but receives data that is implausible or out of range — wrong checksum, value frozen, or value outside expected limits. Typical effects include limp-home and incorrect dashboard readings.'
+    de: 'Ein Steuergerät kommuniziert mit dem Motorsteuergerät, empfängt aber unplausible oder außerhalb des Bereichs liegende Daten — falsche Checksumme, eingefrorener Wert oder Wert außerhalb der erwarteten Grenzen. Typische Folgen sind Notlauf und falsche Anzeigen im Kombiinstrument.'
   affected_components:
     - gear_shift_module
     - can_bus_wiring
@@ -12692,8 +12692,8 @@
     en: Invalid Data Received from Cruise Control Module
     de: Ungültige Daten vom Tempomat-Steuergerät empfangen
   description:
-    en: Same as U0401 but for the cruise control module. Cruise control becomes inoperative until valid data is restored.
-    de: Wie U0401, aber für das Tempomat-Steuergerät. Der Tempomat ist nicht mehr verfügbar, bis wieder gültige Daten anliegen.
+    en: 'A control module is communicating with the engine ECU but receives data that is implausible or out of range — wrong checksum, value frozen, or value outside expected limits. Typical effects include limp-home and incorrect dashboard readings.'
+    de: 'Ein Steuergerät kommuniziert mit dem Motorsteuergerät, empfängt aber unplausible oder außerhalb des Bereichs liegende Daten — falsche Checksumme, eingefrorener Wert oder Wert außerhalb der erwarteten Grenzen. Typische Folgen sind Notlauf und falsche Anzeigen im Kombiinstrument.'
   affected_components:
     - cruise_control_module
     - can_bus_wiring
@@ -12962,8 +12962,8 @@
     en: Invalid Data Received from 4WD Clutch Control Module
     de: Ungültige Daten vom 4WD-Kupplungs-Steuergerät empfangen
   description:
-    en: Same as U0401 but for the 4WD clutch control module (Haldex-type). AWD distribution defaults to FWD/RWD and warning lamps illuminate.
-    de: Wie U0401, aber für das 4WD-Kupplungs-Steuergerät (Haldex-Typ). Die AWD-Verteilung fällt auf reinen Front-/Heckantrieb zurück und Warnleuchten leuchten.
+    en: 'A control module is communicating with the engine ECU but receives data that is implausible or out of range — wrong checksum, value frozen, or value outside expected limits. Typical effects include limp-home and incorrect dashboard readings.'
+    de: 'Ein Steuergerät kommuniziert mit dem Motorsteuergerät, empfängt aber unplausible oder außerhalb des Bereichs liegende Daten — falsche Checksumme, eingefrorener Wert oder Wert außerhalb der erwarteten Grenzen. Typische Folgen sind Notlauf und falsche Anzeigen im Kombiinstrument.'
   affected_components:
     - awd_clutch_control_module
     - can_bus_wiring
@@ -13038,8 +13038,8 @@
     en: Invalid Data Received from Vehicle Dynamics Control Module
     de: Ungültige Daten vom Fahrdynamik-Steuergerät empfangen
   description:
-    en: Same as U0401 but for the vehicle dynamics module. Active suspension, roll stabilization or rear-wheel steering deactivate when implausible data is received.
-    de: Wie U0401, aber für das Fahrdynamik-Modul. Aktivfahrwerk, Wankstabilisierung oder Hinterachslenkung werden deaktiviert, wenn unplausible Daten empfangen werden.
+    en: 'A control module is communicating with the engine ECU but receives data that is implausible or out of range — wrong checksum, value frozen, or value outside expected limits. Typical effects include limp-home and incorrect dashboard readings.'
+    de: 'Ein Steuergerät kommuniziert mit dem Motorsteuergerät, empfängt aber unplausible oder außerhalb des Bereichs liegende Daten — falsche Checksumme, eingefrorener Wert oder Wert außerhalb der erwarteten Grenzen. Typische Folgen sind Notlauf und falsche Anzeigen im Kombiinstrument.'
   affected_components:
     - vehicle_dynamics_module
     - can_bus_wiring
@@ -13102,8 +13102,8 @@
     en: Invalid Data Received from Brake System Control Module
     de: Ungültige Daten vom Bremssystem-Steuergerät empfangen
   description:
-    en: Same as U0401 but for the brake system module (often integrated brake booster on brake-by-wire vehicles). Brake assist functions deactivate and pedal feel may change.
-    de: Wie U0401, aber für das Bremssystem-Modul (oft integrierter Bremskraftverstärker bei Brake-by-Wire-Fahrzeugen). Bremsassistenzfunktionen werden deaktiviert und das Pedalgefühl kann sich ändern.
+    en: 'A control module is communicating with the engine ECU but receives data that is implausible or out of range — wrong checksum, value frozen, or value outside expected limits. Typical effects include limp-home and incorrect dashboard readings.'
+    de: 'Ein Steuergerät kommuniziert mit dem Motorsteuergerät, empfängt aber unplausible oder außerhalb des Bereichs liegende Daten — falsche Checksumme, eingefrorener Wert oder Wert außerhalb der erwarteten Grenzen. Typische Folgen sind Notlauf und falsche Anzeigen im Kombiinstrument.'
   affected_components:
     - brake_system_control_module
     - can_bus_wiring
@@ -13138,8 +13138,8 @@
     en: Invalid Data Received from Brake System Control Module
     de: Ungültige Daten vom Bremssystem-Steuergerät empfangen
   description:
-    en: Same as U0401 but for data coming from the ABS/brake module — wheel-speeds, brake pressure or yaw values are implausible. ESP/traction control typically de-activate and the warning lamp illuminates.
-    de: Wie U0401, aber für Daten vom ABS-/Bremssystem-Modul — Raddrehzahlen, Bremsdruck oder Gierwerte sind unplausibel. ESP/Traktionskontrolle deaktivieren typischerweise und die Warnleuchte leuchtet.
+    en: 'A control module is communicating with the engine ECU but receives data that is implausible or out of range — wrong checksum, value frozen, or value outside expected limits. Typical effects include limp-home and incorrect dashboard readings.'
+    de: 'Ein Steuergerät kommuniziert mit dem Motorsteuergerät, empfängt aber unplausible oder außerhalb des Bereichs liegende Daten — falsche Checksumme, eingefrorener Wert oder Wert außerhalb der erwarteten Grenzen. Typische Folgen sind Notlauf und falsche Anzeigen im Kombiinstrument.'
   affected_components:
     - abs_control_module
     - can_bus_wiring
@@ -13173,8 +13173,8 @@
     en: Invalid Data Received from Power Steering Control Module
     de: Ungültige Daten vom Servolenkungs-Steuergerät empfangen
   description:
-    en: Same as U0401 but for the electric power steering (EPS) module. Steering assist may revert to a default mode and the steering warning lamp illuminates.
-    de: Wie U0401, aber für das Servolenkungs-Steuergerät (EPS). Die Lenkunterstützung fällt eventuell auf einen Standardmodus zurück und die Lenkungs-Warnleuchte leuchtet.
+    en: 'A control module is communicating with the engine ECU but receives data that is implausible or out of range — wrong checksum, value frozen, or value outside expected limits. Typical effects include limp-home and incorrect dashboard readings.'
+    de: 'Ein Steuergerät kommuniziert mit dem Motorsteuergerät, empfängt aber unplausible oder außerhalb des Bereichs liegende Daten — falsche Checksumme, eingefrorener Wert oder Wert außerhalb der erwarteten Grenzen. Typische Folgen sind Notlauf und falsche Anzeigen im Kombiinstrument.'
   affected_components:
     - power_steering_module
     - can_bus_wiring
@@ -13238,8 +13238,8 @@
     en: Invalid Data Received from Body Control Module
     de: Ungültige Daten vom Bordnetzsteuergerät empfangen
   description:
-    en: Same as U0401 but for the body control module (BCM). Affected functions are typically interior lights, wipers, central locking and immobiliser handshake.
-    de: Wie U0401, aber für das Bordnetzsteuergerät (BCM). Betroffen sind typischerweise Innenraumbeleuchtung, Scheibenwischer, Zentralverriegelung und Wegfahrsperren-Handshake.
+    en: 'A control module is communicating with the engine ECU but receives data that is implausible or out of range — wrong checksum, value frozen, or value outside expected limits. Typical effects include limp-home and incorrect dashboard readings.'
+    de: 'Ein Steuergerät kommuniziert mit dem Motorsteuergerät, empfängt aber unplausible oder außerhalb des Bereichs liegende Daten — falsche Checksumme, eingefrorener Wert oder Wert außerhalb der erwarteten Grenzen. Typische Folgen sind Notlauf und falsche Anzeigen im Kombiinstrument.'
   affected_components:
     - body_control_module
     - can_bus_wiring
@@ -13273,8 +13273,8 @@
     en: Invalid Data Received from Information Center
     de: Ungültige Daten vom Informations-Center empfangen
   description:
-    en: Same as U0401 but for the central information display/head unit. The display may show stale or wrong values, or the trip computer may freeze on certain readings.
-    de: Wie U0401, aber für das zentrale Informationsdisplay/Head-Unit. Das Display zeigt eventuell veraltete oder falsche Werte, oder der Bordcomputer friert bei bestimmten Anzeigen ein.
+    en: 'A control module is communicating with the engine ECU but receives data that is implausible or out of range — wrong checksum, value frozen, or value outside expected limits. Typical effects include limp-home and incorrect dashboard readings.'
+    de: 'Ein Steuergerät kommuniziert mit dem Motorsteuergerät, empfängt aber unplausible oder außerhalb des Bereichs liegende Daten — falsche Checksumme, eingefrorener Wert oder Wert außerhalb der erwarteten Grenzen. Typische Folgen sind Notlauf und falsche Anzeigen im Kombiinstrument.'
   affected_components:
     - information_display_module
     - can_bus_wiring
@@ -13308,8 +13308,8 @@
     en: Invalid Data Received from HVAC Control Module
     de: Ungültige Daten vom Klima-Steuergerät empfangen
   description:
-    en: Same as U0401 but for the HVAC control module. Climate functions may behave erratically — wrong temperature, blower stuck on a step, defrost not engaging.
-    de: Wie U0401, aber für das Klima-Steuergerät. Klimafunktionen verhalten sich eventuell sprunghaft — falsche Temperatur, Gebläse hängt in einer Stufe, Defroster aktiviert nicht.
+    en: 'A control module is communicating with the engine ECU but receives data that is implausible or out of range — wrong checksum, value frozen, or value outside expected limits. Typical effects include limp-home and incorrect dashboard readings.'
+    de: 'Ein Steuergerät kommuniziert mit dem Motorsteuergerät, empfängt aber unplausible oder außerhalb des Bereichs liegende Daten — falsche Checksumme, eingefrorener Wert oder Wert außerhalb der erwarteten Grenzen. Typische Folgen sind Notlauf und falsche Anzeigen im Kombiinstrument.'
   affected_components:
     - hvac_control_module
     - can_bus_wiring
@@ -13371,8 +13371,8 @@
     en: Invalid Data Received from Vehicle Immobiliser Control Module
     de: Ungültige Daten vom Wegfahrsperren-Steuergerät empfangen
   description:
-    en: Same as U0401 but for the immobiliser module. The cryptographic handshake may fail intermittently — typical symptom is engine refusing to start on some attempts but starting on others.
-    de: Wie U0401, aber für das Wegfahrsperren-Modul. Der kryptografische Handshake schlägt eventuell sporadisch fehl — typisches Symptom ist, dass der Motor manchmal nicht anspringt und beim nächsten Versuch wieder läuft.
+    en: 'A control module is communicating with the engine ECU but receives data that is implausible or out of range — wrong checksum, value frozen, or value outside expected limits. Typical effects include limp-home and incorrect dashboard readings.'
+    de: 'Ein Steuergerät kommuniziert mit dem Motorsteuergerät, empfängt aber unplausible oder außerhalb des Bereichs liegende Daten — falsche Checksumme, eingefrorener Wert oder Wert außerhalb der erwarteten Grenzen. Typische Folgen sind Notlauf und falsche Anzeigen im Kombiinstrument.'
   affected_components:
     - immobiliser_module
     - can_bus_wiring
@@ -13434,8 +13434,8 @@
     en: Invalid Data Received from Steering Angle Sensor Module
     de: Ungültige Daten vom Lenkwinkelsensor-Modul empfangen
   description:
-    en: Same as U0401 but for steering effort/torque data from the EPS or torque sensor. ESP and lane-keeping may de-activate because the steering input cannot be trusted.
-    de: Wie U0401, aber für Lenkmoment-Daten vom EPS oder Drehmomentsensor. ESP und Spurhalteassistent deaktivieren eventuell, weil der Lenkeingriff nicht vertrauenswürdig ist.
+    en: 'A control module is communicating with the engine ECU but receives data that is implausible or out of range — wrong checksum, value frozen, or value outside expected limits. Typical effects include limp-home and incorrect dashboard readings.'
+    de: 'Ein Steuergerät kommuniziert mit dem Motorsteuergerät, empfängt aber unplausible oder außerhalb des Bereichs liegende Daten — falsche Checksumme, eingefrorener Wert oder Wert außerhalb der erwarteten Grenzen. Typische Folgen sind Notlauf und falsche Anzeigen im Kombiinstrument.'
   affected_components:
     - power_steering_module
     - steering_angle_sensor
@@ -13469,8 +13469,8 @@
     en: Invalid Data Received from Steering Wheel Angle Sensor
     de: Ungültige Daten vom Lenkwinkelsensor empfangen
   description:
-    en: Same as U0401 but for steering wheel angle data. ESP and lane-keeping de-activate because the system cannot tell where the wheel is pointed.
-    de: Wie U0401, aber für Lenkrad-Winkeldaten. ESP und Spurhalteassistent deaktivieren, weil das System nicht erkennen kann, wo das Lenkrad steht.
+    en: 'A control module is communicating with the engine ECU but receives data that is implausible or out of range — wrong checksum, value frozen, or value outside expected limits. Typical effects include limp-home and incorrect dashboard readings.'
+    de: 'Ein Steuergerät kommuniziert mit dem Motorsteuergerät, empfängt aber unplausible oder außerhalb des Bereichs liegende Daten — falsche Checksumme, eingefrorener Wert oder Wert außerhalb der erwarteten Grenzen. Typische Folgen sind Notlauf und falsche Anzeigen im Kombiinstrument.'
   affected_components:
     - steering_angle_sensor
     - can_bus_wiring
@@ -13504,8 +13504,8 @@
     en: Invalid Data Received from Tire Pressure Monitoring Sensor
     de: Ungültige Daten vom Reifendruckkontroll-Sensor empfangen
   description:
-    en: Same as U0401 but for TPMS sensor data — pressure or temperature values out of range, missing sensor IDs, or implausible reading. The TPMS warning lamp illuminates.
-    de: Wie U0401, aber für TPMS-Sensordaten — Druck- oder Temperaturwerte außerhalb des Bereichs, fehlende Sensor-IDs oder unplausibler Wert. Die TPMS-Warnleuchte leuchtet.
+    en: 'A control module is communicating with the engine ECU but receives data that is implausible or out of range — wrong checksum, value frozen, or value outside expected limits. Typical effects include limp-home and incorrect dashboard readings.'
+    de: 'Ein Steuergerät kommuniziert mit dem Motorsteuergerät, empfängt aber unplausible oder außerhalb des Bereichs liegende Daten — falsche Checksumme, eingefrorener Wert oder Wert außerhalb der erwarteten Grenzen. Typische Folgen sind Notlauf und falsche Anzeigen im Kombiinstrument.'
   affected_components:
     - tpms_module
     - tpms_sensor
@@ -13595,8 +13595,8 @@
     en: Invalid Data Received from Park Brake Control Module
     de: Ungültige Daten vom Parkbremsen-Steuergerät empfangen
   description:
-    en: Same as U0401 but for data from the electric parking brake module. EPB engagement state or motor current values are implausible; the EPB warning lamp illuminates.
-    de: Wie U0401, aber für Daten vom elektrischen Parkbremsen-Modul. EPB-Zuspannzustand oder Motorstromwerte sind unplausibel; die EPB-Warnleuchte leuchtet.
+    en: 'A control module is communicating with the engine ECU but receives data that is implausible or out of range — wrong checksum, value frozen, or value outside expected limits. Typical effects include limp-home and incorrect dashboard readings.'
+    de: 'Ein Steuergerät kommuniziert mit dem Motorsteuergerät, empfängt aber unplausible oder außerhalb des Bereichs liegende Daten — falsche Checksumme, eingefrorener Wert oder Wert außerhalb der erwarteten Grenzen. Typische Folgen sind Notlauf und falsche Anzeigen im Kombiinstrument.'
   affected_components:
     - park_brake_module
     - can_bus_wiring
@@ -13630,8 +13630,8 @@
     en: Invalid Data Received from Drive Motor Control Module
     de: Ungültige Daten vom Antriebsmotor-Steuergerät empfangen
   description:
-    en: Same as U0401 but for data from the drive-motor control module on hybrid/EV vehicles. Torque or speed values are implausible; the vehicle typically reduces power or refuses to enter ready.
-    de: Wie U0401, aber für Daten vom Antriebsmotor-Steuergerät bei Hybrid-/E-Fahrzeugen. Drehmoment- oder Drehzahlwerte sind unplausibel; das Fahrzeug reduziert typischerweise die Leistung oder verweigert Ready.
+    en: 'A control module is communicating with the engine ECU but receives data that is implausible or out of range — wrong checksum, value frozen, or value outside expected limits. Typical effects include limp-home and incorrect dashboard readings.'
+    de: 'Ein Steuergerät kommuniziert mit dem Motorsteuergerät, empfängt aber unplausible oder außerhalb des Bereichs liegende Daten — falsche Checksumme, eingefrorener Wert oder Wert außerhalb der erwarteten Grenzen. Typische Folgen sind Notlauf und falsche Anzeigen im Kombiinstrument.'
   affected_components:
     - drive_motor_control_module
     - can_bus_wiring
@@ -13728,8 +13728,8 @@
     en: Invalid Data Received from Driver Assistance System
     de: Ungültige Daten vom Fahrerassistenzsystem empfangen
   description:
-    en: Same as U0401 but for data from a driver assistance module (e.g. radar, camera, lane-keep). The affected ADAS feature de-activates and a warning is shown in the cluster.
-    de: Wie U0401, aber für Daten von einem Fahrerassistenz-Modul (z.B. Radar, Kamera, Spurhalteassistent). Die betroffene Assistenzfunktion deaktiviert und im Kombiinstrument wird eine Warnung angezeigt.
+    en: 'A control module is communicating with the engine ECU but receives data that is implausible or out of range — wrong checksum, value frozen, or value outside expected limits. Typical effects include limp-home and incorrect dashboard readings.'
+    de: 'Ein Steuergerät kommuniziert mit dem Motorsteuergerät, empfängt aber unplausible oder außerhalb des Bereichs liegende Daten — falsche Checksumme, eingefrorener Wert oder Wert außerhalb der erwarteten Grenzen. Typische Folgen sind Notlauf und falsche Anzeigen im Kombiinstrument.'
   affected_components:
     - driver_assistance_module
     - can_bus_wiring

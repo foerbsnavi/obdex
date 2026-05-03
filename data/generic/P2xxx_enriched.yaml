@@ -56,8 +56,8 @@
     en: Diesel Particulate Filter Efficiency Below Threshold (Bank 2)
     de: Dieselpartikelfilter Wirkungsgrad unter Schwellwert (Bank 2)
   description:
-    en: Same as P2002 but on bank 2. Found on V-engines with two separate exhaust trains and a DPF per bank.
-    de: Wie P2002, aber auf Bank 2. Tritt bei V-Motoren mit zwei getrennten Abgassträngen und je einem DPF pro Bank auf.
+    en: 'The differential pressure sensor or temperature monitor across the diesel particulate filter (DPF) reports that filtration efficiency has dropped below the legal threshold. Common after a damaged filter substrate, blocked passages from failed regenerations, or a leak around the housing.'
+    de: 'Der Differenzdrucksensor oder die Temperaturüberwachung am Dieselpartikelfilter (DPF) meldet, dass die Filtrationswirkung unter den gesetzlichen Schwellwert gefallen ist. Häufig nach beschädigtem Filtermaterial, durch fehlgeschlagene Regenerationen verstopft oder bei einer Undichtigkeit am Gehäuse.'
   affected_components:
     - diesel_particulate_filter
     - dpf_differential_pressure_sensor
@@ -137,8 +137,8 @@
     en: Intake Manifold Runner Control Stuck Open (Bank 2)
     de: Saugrohrumschaltung hängt offen (Bank 2)
   description:
-    en: Same fault as P2004 but on bank 2 of a V- or boxer engine. The IMRC flap on bank 2 cannot reach the closed position, reducing low-rpm swirl and torque.
-    de: Gleicher Fehler wie P2004, aber an Bank 2 eines V- oder Boxermotors. Die IMRC-Klappe auf Bank 2 erreicht die geschlossene Stellung nicht und reduziert Drall und Drehmoment im unteren Drehzahlbereich.
+    en: 'The intake manifold runner control (IMRC) flap on bank 2 is stuck in the open position. The IMRC swirls or tumbles intake charge at low rpm by closing one runner per cylinder; when stuck open, low-end torque drops and the engine may misfire on cold starts.'
+    de: 'Die Saugrohrumschaltklappe (IMRC) an Bank 2 hängt offen. Die IMRC erzeugt bei niedriger Drehzahl Drall oder Tumble, indem sie pro Zylinder einen Kanal schliesst; offen festhängend bricht das Drehmoment unten ein und der Motor kann beim Kaltstart Aussetzer zeigen.'
   affected_components:
     - intake_manifold_runner
     - imrc_actuator
@@ -2719,8 +2719,8 @@
     en: Throttle/Pedal Position Sensor "E" Circuit Low
     de: Drosselklappen-/Pedalstellungssensor "E" Stromkreis Signal zu niedrig
   description:
-    en: Same fault as P2122 but on sensor "E" of the redundant pedal pair.
-    de: Wie P2122, aber auf Sensor "E" des redundanten Pedalsensorpaars.
+    en: 'Sensor "D" of the redundant accelerator-pedal pair reports a voltage below the valid window. The ECU rejects the signal and falls back on the second sensor or limp-home.'
+    de: 'Sensor "D" des redundanten Pedalsensorpaars meldet eine Spannung unter dem zulässigen Fenster. Die Motorsteuerung verwirft das Signal und greift auf den zweiten Sensor zurück oder geht in Notlauf.'
   affected_components:
     - accelerator_pedal_sensor
     - accelerator_pedal_wiring
@@ -2757,8 +2757,8 @@
     en: Throttle/Pedal Position Sensor "E" Circuit High
     de: Drosselklappen-/Pedalstellungssensor "E" Stromkreis Signal zu hoch
   description:
-    en: Same fault as P2123 but on sensor "E" of the redundant pedal pair.
-    de: Wie P2123, aber auf Sensor "E" des redundanten Pedalsensorpaars.
+    en: 'Sensor "D" of the pedal pair reports a voltage above the valid window. Often a short to supply or an open ground at the connector.'
+    de: 'Sensor "D" des Pedalsensorpaars meldet eine Spannung über dem zulässigen Fenster. Häufig ein Kurzschluss nach Plus oder eine unterbrochene Masse am Stecker.'
   affected_components:
     - accelerator_pedal_sensor
     - accelerator_pedal_wiring
@@ -3675,8 +3675,8 @@
     en: System Too Lean at Idle (Bank 2)
     de: System zu mager im Leerlauf (Bank 2)
   description:
-    en: Same as P2187 but on bank 2.
-    de: Wie P2187, aber auf Bank 2.
+    en: 'Fuel trim on bank 2 hits the lean limit only at idle, while trim returns to normal at higher load. This pattern strongly indicates a vacuum leak — leaks become a larger fraction of total airflow at idle and so dominate the trim, but disappear into background noise above idle.'
+    de: 'Die Kraftstofftrimmung auf Bank 2 erreicht nur im Leerlauf den mageren Anschlag, bei höherer Last normalisiert sie sich. Dieses Muster weist sehr stark auf Falschluft hin — Lecks machen im Leerlauf einen großen Anteil am Gesamtluftstrom aus und prägen die Trimmung, oberhalb des Leerlaufs gehen sie im Rauschen unter.'
   affected_components:
     - intake_manifold
     - pcv_valve
@@ -3713,8 +3713,8 @@
     en: System Too Rich at Idle (Bank 2)
     de: System zu fett im Leerlauf (Bank 2)
   description:
-    en: Same as P2188 but on bank 2.
-    de: Wie P2188, aber auf Bank 2.
+    en: 'Fuel trim on bank 2 hits the rich limit only at idle. Often a leaking injector dribbling fuel at low load, a sticky purge valve dumping fuel vapour, or fuel pressure regulator that fails to relieve pressure when intake vacuum is high.'
+    de: 'Die Kraftstofftrimmung auf Bank 2 erreicht nur im Leerlauf den fetten Anschlag. Häufig ein undichter Injektor, der bei geringer Last Kraftstoff abgibt, ein hängendes Tankentlüftungsventil, das Benzindämpfe einleitet, oder ein Kraftstoffdruckregler, der bei hohem Saugrohrunterdruck den Druck nicht abbaut.'
   affected_components:
     - fuel_injector
     - evap_purge_valve
@@ -3838,8 +3838,8 @@
     en: System Too Lean at Higher Load (Bank 2)
     de: System zu mager bei höherer Last (Bank 2)
   description:
-    en: Same as P2191 but on bank 2.
-    de: Wie P2191, aber auf Bank 2.
+    en: 'Bank 2 fuel trim hits the lean limit only at higher engine load. Pattern points to a fuel-supply restriction — failing fuel pump, blocked filter, or weak injectors — rather than a vacuum leak (which would dominate at idle).'
+    de: 'Die Trimmung auf Bank 2 erreicht nur bei höherer Motorlast den mageren Anschlag. Dieses Muster weist eher auf eine Kraftstoffversorgungsschwäche hin — schwächelnde Kraftstoffpumpe, verstopfter Filter, schwache Injektoren — als auf Falschluft (die im Leerlauf dominieren würde).'
   affected_components:
     - fuel_pump
     - fuel_filter
@@ -3876,8 +3876,8 @@
     en: System Too Rich at Higher Load (Bank 2)
     de: System zu fett bei höherer Last (Bank 2)
   description:
-    en: Same as P2192 but on bank 2.
-    de: Wie P2192, aber auf Bank 2.
+    en: 'Bank 2 fuel trim hits the rich limit only at higher load. Often excessive fuel pressure, a stuck-closed MAF reading low, or coolant temperature signal stuck cold causing over-fuelling.'
+    de: 'Die Trimmung auf Bank 2 erreicht nur bei höherer Last den fetten Anschlag. Häufig zu hoher Kraftstoffdruck, ein zu niedrig anzeigender MAF oder ein bei "kalt" hängender Kühlmitteltemperatursensor, der dauerhaftes Anfetten erzwingt.'
   affected_components:
     - fuel_pressure_regulator
     - mass_air_flow_sensor
@@ -3985,8 +3985,8 @@
     en: O2 Sensor Signal Stuck Lean (Bank 2, Sensor 1)
     de: Lambdasonde Signal hängt mager (Bank 2, Sonde 1)
   description:
-    en: Same as P2195 but on bank 2.
-    de: Wie P2195, aber auf Bank 2.
+    en: 'The upstream oxygen sensor on bank 2 returns a constant lean signal during conditions where rich content is expected (for example after a deceleration fuel cut-off recovery). Usually a sensor that has lost its rich-side response or a slow heater warm-up.'
+    de: 'Die vorgeschaltete Lambdasonde auf Bank 2 meldet dauerhaft mager unter Bedingungen, in denen ein fettes Signal erwartet wird (z.B. nach Wiedereinsetzen nach Schubabschalten). Meist eine Sonde, die das fette Spektrum nicht mehr abbildet, oder ein zu langsam aufheizendes Heizelement.'
   affected_components:
     - oxygen_sensor_upstream
     - o2_sensor_heater
@@ -4017,8 +4017,8 @@
     en: O2 Sensor Signal Stuck Rich (Bank 2, Sensor 1)
     de: Lambdasonde Signal hängt fett (Bank 2, Sonde 1)
   description:
-    en: Same as P2196 but on bank 2.
-    de: Wie P2196, aber auf Bank 2.
+    en: 'The upstream oxygen sensor on bank 2 returns a constant rich signal under deceleration fuel cut-off where lean is expected. Often a contaminated sensor (silicone, oil, coolant) or short to ground that pulls the signal high in some sensor types.'
+    de: 'Die vorgeschaltete Lambdasonde auf Bank 2 meldet im Schubabschalten dauerhaft fett, obwohl mager erwartet wird. Häufig eine verunreinigte Sonde (Silikon, Öl, Kühlmittel) oder ein Kurzschluss nach Masse, der bei manchen Sondentypen das Signal hochzieht.'
   affected_components:
     - oxygen_sensor_upstream
   common_causes:
@@ -5819,8 +5819,8 @@
     en: O2 Sensor Signal Stuck Lean (Bank 2, Sensor 2)
     de: Lambdasonde Signal hängt mager (Bank 2, Sonde 2)
   description:
-    en: Same as P2270 but on bank 2.
-    de: Wie P2270, aber auf Bank 2.
+    en: 'The downstream oxygen sensor on bank 2 reports a constant lean signal during a forced-rich command from the ECU. Suggests either a sensor that has lost its rich-side response, or a catalyst that is so degraded that no rich exhaust reaches the downstream sensor (cross-check P0420).'
+    de: 'Die nachgeschaltete Lambdasonde auf Bank 2 meldet während einer angeforderten Anfettung dauerhaft mager. Hinweis entweder auf eine Sonde, die das fette Spektrum nicht mehr abbildet, oder auf einen so stark degradierten Katalysator, dass kein fettes Abgas zur Nachsonde durchkommt (mit P0420 abgleichen).'
   affected_components:
     - oxygen_sensor_downstream
     - catalytic_converter
@@ -5856,8 +5856,8 @@
     en: O2 Sensor Signal Stuck Rich (Bank 2, Sensor 2)
     de: Lambdasonde Signal hängt fett (Bank 2, Sonde 2)
   description:
-    en: Same as P2271 but on bank 2.
-    de: Wie P2271, aber auf Bank 2.
+    en: 'The downstream oxygen sensor on bank 2 reports a constant rich signal during a forced-lean command. Suggests a failed downstream sensor or a sensor contaminated by oil/coolant from upstream engine wear.'
+    de: 'Die nachgeschaltete Lambdasonde auf Bank 2 meldet während einer angeforderten Abmagerung dauerhaft fett. Hinweis auf eine defekte Nachsonde oder eine durch Öl/Kühlmittel verunreinigte Sonde nach motorseitigem Verschleiß.'
   affected_components:
     - oxygen_sensor_downstream
   common_causes:
@@ -6934,8 +6934,8 @@
     en: Cylinder 2 Above Knock Threshold
     de: Zylinder 2 über Klopfschwelle
   description:
-    en: Same fault as P2336 but on cylinder 2.
-    de: Gleicher Fehler wie P2336, aber an Zylinder 2.
+    en: 'The knock sensor channel for cylinder 2 has registered combustion noise above the calibrated knock threshold beyond what the spark retard map can correct. Often associated with low-octane fuel, EGR malfunction or carbon-induced hot spots.'
+    de: 'Der Klopfsensorkanal für Zylinder 2 meldet Verbrennungsgeräusche über der kalibrierten Klopfschwelle, die durch Zündzeitpunkt-Spätverstellung nicht mehr ausgeregelt werden können. Häufig durch zu niedrigoktanigen Kraftstoff, AGR-Fehler oder verkokungsbedingte Glühnester.'
   affected_components:
     - knock_sensor
     - spark_plug
@@ -6971,8 +6971,8 @@
     en: Cylinder 3 Above Knock Threshold
     de: Zylinder 3 über Klopfschwelle
   description:
-    en: Same fault as P2336 but on cylinder 3.
-    de: Gleicher Fehler wie P2336, aber an Zylinder 3.
+    en: 'The knock sensor channel for cylinder 3 has registered combustion noise above the calibrated knock threshold beyond what the spark retard map can correct. Often associated with low-octane fuel, EGR malfunction or carbon-induced hot spots.'
+    de: 'Der Klopfsensorkanal für Zylinder 3 meldet Verbrennungsgeräusche über der kalibrierten Klopfschwelle, die durch Zündzeitpunkt-Spätverstellung nicht mehr ausgeregelt werden können. Häufig durch zu niedrigoktanigen Kraftstoff, AGR-Fehler oder verkokungsbedingte Glühnester.'
   affected_components:
     - knock_sensor
     - spark_plug
@@ -7008,8 +7008,8 @@
     en: Cylinder 4 Above Knock Threshold
     de: Zylinder 4 über Klopfschwelle
   description:
-    en: Same fault as P2336 but on cylinder 4.
-    de: Gleicher Fehler wie P2336, aber an Zylinder 4.
+    en: 'The knock sensor channel for cylinder 4 has registered combustion noise above the calibrated knock threshold beyond what the spark retard map can correct. Often associated with low-octane fuel, EGR malfunction or carbon-induced hot spots.'
+    de: 'Der Klopfsensorkanal für Zylinder 4 meldet Verbrennungsgeräusche über der kalibrierten Klopfschwelle, die durch Zündzeitpunkt-Spätverstellung nicht mehr ausgeregelt werden können. Häufig durch zu niedrigoktanigen Kraftstoff, AGR-Fehler oder verkokungsbedingte Glühnester.'
   affected_components:
     - knock_sensor
     - spark_plug
@@ -8140,8 +8140,8 @@
     en: Secondary Air Injection System Switching Valve Stuck Open (Bank 2)
     de: Sekundärluft-Umschaltventil hängt offen (Bank 2)
   description:
-    en: Same as P2440 but on bank 2.
-    de: Wie P2440, aber auf Bank 2.
+    en: 'The switching/check valve in the secondary air injection plumbing on bank 2 is stuck in the open position. With the valve permanently open, exhaust gas can back-feed into the air pump and corrode it, while the downstream O2 sensor sees ambient air constantly.'
+    de: 'Das Umschalt-/Rückschlagventil im Sekundärluftpfad auf Bank 2 hängt in offener Stellung. Bei dauerhaft offenem Ventil kann Abgas in die Luftpumpe rückströmen und sie zerstören, während die Lambdasonde nach Kat dauerhaft Umgebungsluft sieht.'
   affected_components:
     - secondary_air_switching_valve
     - secondary_air_pump
@@ -8172,8 +8172,8 @@
     en: Secondary Air Injection System Switching Valve Stuck Closed (Bank 2)
     de: Sekundärluft-Umschaltventil hängt geschlossen (Bank 2)
   description:
-    en: Same as P2441 but on bank 2.
-    de: Wie P2441, aber auf Bank 2.
+    en: 'The switching valve on bank 2 will not open when commanded, so no secondary air reaches the exhaust during cold start. Catalyst light-off is delayed and emissions during the cold-start window rise.'
+    de: 'Das Umschaltventil auf Bank 2 öffnet bei Ansteuerung nicht — beim Kaltstart erreicht keine Sekundärluft den Abgastrakt. Der Katalysator-Light-off verzögert sich und die Kaltstart-Emissionen steigen.'
   affected_components:
     - secondary_air_switching_valve
     - secondary_air_vacuum_lines

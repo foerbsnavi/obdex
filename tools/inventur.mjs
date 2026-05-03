@@ -23,7 +23,7 @@ for (const file of files) {
   for (const c of codes) {
     total++;
     const desc = c.description?.en || "";
-    if (/^Same as P|^Same as B|^Same as C|^Same as U/i.test(desc.trim())) {
+    if (/^Same (as|fault as|behaviour as|behavior as) [PBCU]/i.test(desc.trim())) {
       sameAs++;
       sameAsCodes.push(c.code);
     }
