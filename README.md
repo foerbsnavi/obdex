@@ -4,9 +4,20 @@
 [![data: CC0-1.0](https://img.shields.io/badge/data-CC0--1.0-blue.svg)](LICENSE-DATA)
 [![code: MIT](https://img.shields.io/badge/code-MIT-green.svg)](LICENSE-CODE)
 
-Open, machine-readable database of generic OBD-II diagnostic trouble codes (DTCs) and PIDs.
+**The complete, open, machine-readable list of every generic OBD-II diagnostic trouble code — with bilingual descriptions, common causes, and repair estimates.**
 
-Codes follow the publicly known SAE J2012 identifier scheme and ISO 15031-6. The project deliberately limits itself to the generic, standard-defined layer — manufacturer-specific codes are out of scope.
+If you are looking up a P-, B-, C- or U-code from your scan tool, this is a single source you can read, fork, and embed without paywalls or per-API fees.
+
+## What you get
+
+- **All 9,533 generic codes** of the SAE J2012 / ISO 15031-6 standard in one repository.
+- **Plain English and German descriptions**, written from public sources, on every enriched code (currently 3,002 — growing wave by wave toward full coverage).
+- **Per code:** title, description, affected components, common causes with likelihood, repair difficulty + cost + hours, MIL/emissions/limp-mode flags, sources.
+- **132 OBD-II PIDs** (Mode 01 + Mode 09) with formulas and units.
+- **CC0 data, MIT tooling.** Use it in your scan-tool app, garage software, training material — no attribution required, no licence fee.
+- **Static JSON over CDN.** No API key, no rate limit, no account.
+
+Manufacturer-specific codes (P1xxx, B1xxx, etc.) are deliberately out of scope — those are vendor IP. obdex covers only the generic layer that every OBD-II tool already speaks.
 
 ## Use
 
