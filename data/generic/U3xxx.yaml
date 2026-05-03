@@ -1,0 +1,1221 @@
+# wave 15 Bulk-Import (Minimal-Schema)
+# Quelle: Wal33D/dtc-database (MIT)
+# 174 Codes, U3-Familie. Anreicherung folgt in wave 16+.
+
+- code: U3000
+  category: network
+  title:
+    en: 'Control Module'
+  sources:
+    - https://github.com/Wal33D/dtc-database
+
+- code: U3001
+  category: network
+  title:
+    en: 'Control Module Improper Shutdown Performance'
+  sources:
+    - https://github.com/Wal33D/dtc-database
+
+- code: U3002
+  category: network
+  title:
+    en: 'Vehicle Identification Number'
+  sources:
+    - https://github.com/Wal33D/dtc-database
+
+- code: U3003
+  category: network
+  title:
+    en: 'Battery Voltage'
+  sources:
+    - https://github.com/Wal33D/dtc-database
+
+- code: U3004
+  category: network
+  title:
+    en: 'Accessory Power Relay'
+  sources:
+    - https://github.com/Wal33D/dtc-database
+
+- code: U3005
+  category: network
+  title:
+    en: 'Retained Accessory Power'
+  sources:
+    - https://github.com/Wal33D/dtc-database
+
+- code: U3006
+  category: network
+  title:
+    en: 'Control Module Input Power A Circuit/Open'
+  sources:
+    - https://github.com/Wal33D/dtc-database
+
+- code: U3007
+  category: network
+  title:
+    en: 'Control Module Input Power B Circuit/Open'
+  sources:
+    - https://github.com/Wal33D/dtc-database
+
+- code: U3008
+  category: network
+  title:
+    en: 'Control Module Ground A'
+  sources:
+    - https://github.com/Wal33D/dtc-database
+
+- code: U3009
+  category: network
+  title:
+    en: 'Control Module Ground B'
+  sources:
+    - https://github.com/Wal33D/dtc-database
+
+- code: U300A
+  category: network
+  title:
+    en: 'Ignition Switch'
+  sources:
+    - https://github.com/Wal33D/dtc-database
+
+- code: U300B
+  category: network
+  title:
+    en: 'Ignition Input Accessory/On/Start'
+  sources:
+    - https://github.com/Wal33D/dtc-database
+
+- code: U300C
+  category: network
+  title:
+    en: 'Ignition Input Off/On/Start'
+  sources:
+    - https://github.com/Wal33D/dtc-database
+
+- code: U300D
+  category: network
+  title:
+    en: 'Ignition Input On/Start'
+  sources:
+    - https://github.com/Wal33D/dtc-database
+
+- code: U300E
+  category: network
+  title:
+    en: 'Ignition Input On'
+  sources:
+    - https://github.com/Wal33D/dtc-database
+
+- code: U300F
+  category: network
+  title:
+    en: 'Ignition Input Accessory'
+  sources:
+    - https://github.com/Wal33D/dtc-database
+
+- code: U3010
+  category: network
+  title:
+    en: 'Ignition Input Start'
+  sources:
+    - https://github.com/Wal33D/dtc-database
+
+- code: U3011
+  category: network
+  title:
+    en: 'Ignition Input Off'
+  sources:
+    - https://github.com/Wal33D/dtc-database
+
+- code: U3012
+  category: network
+  title:
+    en: 'Control Module Improper Wake-up Performance'
+  sources:
+    - https://github.com/Wal33D/dtc-database
+
+- code: U3013
+  category: network
+  title:
+    en: 'Control Module Input Power C Circuit/Open'
+  sources:
+    - https://github.com/Wal33D/dtc-database
+
+- code: U3014
+  category: network
+  title:
+    en: 'Control Module Input Power D Circuit/Open'
+  sources:
+    - https://github.com/Wal33D/dtc-database
+
+- code: U3015
+  category: network
+  title:
+    en: 'Control Module Ground C'
+  sources:
+    - https://github.com/Wal33D/dtc-database
+
+- code: U3016
+  category: network
+  title:
+    en: 'Control Module Ground D'
+  sources:
+    - https://github.com/Wal33D/dtc-database
+
+- code: U3017
+  category: network
+  title:
+    en: 'Control Module Timer/Clock Performance'
+  sources:
+    - https://github.com/Wal33D/dtc-database
+
+- code: U3018
+  category: network
+  title:
+    en: 'Control Module Input Power Circuit A/B Correlation'
+  sources:
+    - https://github.com/Wal33D/dtc-database
+
+- code: U3019
+  category: network
+  title:
+    en: 'Control Module Input Power Circuit B/C Correlation'
+  sources:
+    - https://github.com/Wal33D/dtc-database
+
+- code: U301A
+  category: network
+  title:
+    en: 'Control Module Wake-up Circuit A/Open'
+  sources:
+    - https://github.com/Wal33D/dtc-database
+
+- code: U301B
+  category: network
+  title:
+    en: 'Control Module Wake-up Circuit A Low'
+  sources:
+    - https://github.com/Wal33D/dtc-database
+
+- code: U301C
+  category: network
+  title:
+    en: 'Control Module Wake-up Circuit A High'
+  sources:
+    - https://github.com/Wal33D/dtc-database
+
+- code: U301D
+  category: network
+  title:
+    en: 'Control Module Wake-up Circuit A Performance'
+  sources:
+    - https://github.com/Wal33D/dtc-database
+
+- code: U301E
+  category: network
+  title:
+    en: 'Control Module Wake-up Circuit B/Open'
+  sources:
+    - https://github.com/Wal33D/dtc-database
+
+- code: U301F
+  category: network
+  title:
+    en: 'Control Module Wake-up Circuit B Low'
+  sources:
+    - https://github.com/Wal33D/dtc-database
+
+- code: U3020
+  category: network
+  title:
+    en: 'Control Module Wake-up Circuit B High'
+  sources:
+    - https://github.com/Wal33D/dtc-database
+
+- code: U3021
+  category: network
+  title:
+    en: 'Control Module Wake-up Circuit B Performance'
+  sources:
+    - https://github.com/Wal33D/dtc-database
+
+- code: U3022
+  category: network
+  title:
+    en: 'Ignition Input Accessory/Off'
+  sources:
+    - https://github.com/Wal33D/dtc-database
+
+- code: U3023
+  category: network
+  title:
+    en: 'Control Module Input Power Circuit A - Ignition Input On/Start Circuit Correlation'
+  sources:
+    - https://github.com/Wal33D/dtc-database
+
+- code: U3024
+  category: network
+  title:
+    en: 'Control Module Input Power Circuit B - Ignition Input On/Start Circuit Correlation'
+  sources:
+    - https://github.com/Wal33D/dtc-database
+
+- code: U3025
+  category: network
+  title:
+    en: 'Control Module A Disable Circuit/Open'
+  sources:
+    - https://github.com/Wal33D/dtc-database
+
+- code: U3026
+  category: network
+  title:
+    en: 'Control Module A Disable Circuit Low'
+  sources:
+    - https://github.com/Wal33D/dtc-database
+
+- code: U3027
+  category: network
+  title:
+    en: 'Control Module A Disable Circuit High'
+  sources:
+    - https://github.com/Wal33D/dtc-database
+
+- code: U3028
+  category: network
+  title:
+    en: 'Control Module A Disable Feedback Circuit'
+  sources:
+    - https://github.com/Wal33D/dtc-database
+
+- code: U3029
+  category: network
+  title:
+    en: 'Control Module A Disable Feedback Circuit Low'
+  sources:
+    - https://github.com/Wal33D/dtc-database
+
+- code: U302A
+  category: network
+  title:
+    en: 'Control Module A Disable Feedback Circuit High'
+  sources:
+    - https://github.com/Wal33D/dtc-database
+
+- code: U302B
+  category: network
+  title:
+    en: 'Ignition Output Accessory/On/Start'
+  sources:
+    - https://github.com/Wal33D/dtc-database
+
+- code: U302C
+  category: network
+  title:
+    en: 'Ignition Output Off/On/Start'
+  sources:
+    - https://github.com/Wal33D/dtc-database
+
+- code: U302D
+  category: network
+  title:
+    en: 'Ignition Output On/Start'
+  sources:
+    - https://github.com/Wal33D/dtc-database
+
+- code: U302E
+  category: network
+  title:
+    en: 'Ignition Output On'
+  sources:
+    - https://github.com/Wal33D/dtc-database
+
+- code: U302F
+  category: network
+  title:
+    en: 'Ignition Output Accessory'
+  sources:
+    - https://github.com/Wal33D/dtc-database
+
+- code: U3030
+  category: network
+  title:
+    en: 'Ignition Output Start'
+  sources:
+    - https://github.com/Wal33D/dtc-database
+
+- code: U3031
+  category: network
+  title:
+    en: 'Ignition Output Off'
+  sources:
+    - https://github.com/Wal33D/dtc-database
+
+- code: U3032
+  category: network
+  title:
+    en: 'Ignition Output Accessory/Off'
+  sources:
+    - https://github.com/Wal33D/dtc-database
+
+- code: U3033
+  category: network
+  title:
+    en: 'Control Module Security Certificate Missing/Invalid'
+  sources:
+    - https://github.com/Wal33D/dtc-database
+
+- code: U3034
+  category: network
+  title:
+    en: 'Communication Authentication Key/Certificate Missing/Invalid'
+  sources:
+    - https://github.com/Wal33D/dtc-database
+
+- code: U3035
+  category: network
+  title:
+    en: 'Communication Authentication Signal Invalid Data'
+  sources:
+    - https://github.com/Wal33D/dtc-database
+
+- code: U3036
+  category: network
+  title:
+    en: 'Communication Authentication Signal Performance'
+  sources:
+    - https://github.com/Wal33D/dtc-database
+
+- code: U3500
+  category: network
+  title:
+    en: 'Control Module Input Power A Circuit Range/Performance'
+  sources:
+    - https://github.com/Wal33D/dtc-database
+
+- code: U3501
+  category: network
+  title:
+    en: 'Control Module Input Power A Circuit Low'
+  sources:
+    - https://github.com/Wal33D/dtc-database
+
+- code: U3502
+  category: network
+  title:
+    en: 'Control Module Input Power A Circuit High'
+  sources:
+    - https://github.com/Wal33D/dtc-database
+
+- code: U3503
+  category: network
+  title:
+    en: 'Control Module Input Power A Circuit Intermittent/Erratic'
+  sources:
+    - https://github.com/Wal33D/dtc-database
+
+- code: U3504
+  category: network
+  title:
+    en: 'Control Module Input Power B Circuit Range/Performance'
+  sources:
+    - https://github.com/Wal33D/dtc-database
+
+- code: U3505
+  category: network
+  title:
+    en: 'Control Module Input Power B Circuit Low'
+  sources:
+    - https://github.com/Wal33D/dtc-database
+
+- code: U3506
+  category: network
+  title:
+    en: 'Control Module Input Power B Circuit High'
+  sources:
+    - https://github.com/Wal33D/dtc-database
+
+- code: U3507
+  category: network
+  title:
+    en: 'Control Module Input Power B Circuit Intermittent/Erratic'
+  sources:
+    - https://github.com/Wal33D/dtc-database
+
+- code: U3508
+  category: network
+  title:
+    en: 'Control Module Input Power C Circuit Range/Performance'
+  sources:
+    - https://github.com/Wal33D/dtc-database
+
+- code: U3509
+  category: network
+  title:
+    en: 'Control Module Input Power C Circuit Low'
+  sources:
+    - https://github.com/Wal33D/dtc-database
+
+- code: U350A
+  category: network
+  title:
+    en: 'Control Module Input Power C Circuit High'
+  sources:
+    - https://github.com/Wal33D/dtc-database
+
+- code: U350B
+  category: network
+  title:
+    en: 'Control Module Input Power C Circuit Intermittent/Erratic'
+  sources:
+    - https://github.com/Wal33D/dtc-database
+
+- code: U350C
+  category: network
+  title:
+    en: 'Control Module Cooling Fan Circuit/Open'
+  sources:
+    - https://github.com/Wal33D/dtc-database
+
+- code: U350D
+  category: network
+  title:
+    en: 'Control Module Cooling Fan Circuit Low'
+  sources:
+    - https://github.com/Wal33D/dtc-database
+
+- code: U350E
+  category: network
+  title:
+    en: 'Control Module Cooling Fan Circuit High'
+  sources:
+    - https://github.com/Wal33D/dtc-database
+
+- code: U350F
+  category: network
+  title:
+    en: 'Control Module Cooling Fan Circuit Range/Performance'
+  sources:
+    - https://github.com/Wal33D/dtc-database
+
+- code: U3510
+  category: network
+  title:
+    en: 'Control Module Missing Calibration'
+  sources:
+    - https://github.com/Wal33D/dtc-database
+
+- code: U3511
+  category: network
+  title:
+    en: 'High Voltage System Interlock Circuit B'
+  sources:
+    - https://github.com/Wal33D/dtc-database
+
+- code: U3512
+  category: network
+  title:
+    en: 'High Voltage System Interlock Circuit B Performance'
+  sources:
+    - https://github.com/Wal33D/dtc-database
+
+- code: U3513
+  category: network
+  title:
+    en: 'High Voltage System Interlock Circuit B Low'
+  sources:
+    - https://github.com/Wal33D/dtc-database
+
+- code: U3514
+  category: network
+  title:
+    en: 'High Voltage System Interlock Circuit B High'
+  sources:
+    - https://github.com/Wal33D/dtc-database
+
+- code: U3515
+  category: network
+  title:
+    en: 'High Voltage System Interlock Circuit C'
+  sources:
+    - https://github.com/Wal33D/dtc-database
+
+- code: U3516
+  category: network
+  title:
+    en: 'High Voltage System Interlock Circuit C Performance'
+  sources:
+    - https://github.com/Wal33D/dtc-database
+
+- code: U3517
+  category: network
+  title:
+    en: 'High Voltage System Interlock Circuit C Low'
+  sources:
+    - https://github.com/Wal33D/dtc-database
+
+- code: U3518
+  category: network
+  title:
+    en: 'High Voltage System Interlock Circuit C High'
+  sources:
+    - https://github.com/Wal33D/dtc-database
+
+- code: U3519
+  category: network
+  title:
+    en: 'High Voltage System Interlock Circuit D'
+  sources:
+    - https://github.com/Wal33D/dtc-database
+
+- code: U351A
+  category: network
+  title:
+    en: 'High Voltage System Interlock Circuit D Performance'
+  sources:
+    - https://github.com/Wal33D/dtc-database
+
+- code: U351B
+  category: network
+  title:
+    en: 'High Voltage System Interlock Circuit D Low'
+  sources:
+    - https://github.com/Wal33D/dtc-database
+
+- code: U351C
+  category: network
+  title:
+    en: 'High Voltage System Interlock Circuit D High'
+  sources:
+    - https://github.com/Wal33D/dtc-database
+
+- code: U351D
+  category: network
+  title:
+    en: 'High Voltage System Interlock Circuit E'
+  sources:
+    - https://github.com/Wal33D/dtc-database
+
+- code: U351E
+  category: network
+  title:
+    en: 'High Voltage System Interlock Circuit E Performance'
+  sources:
+    - https://github.com/Wal33D/dtc-database
+
+- code: U351F
+  category: network
+  title:
+    en: 'High Voltage System Interlock Circuit E Low'
+  sources:
+    - https://github.com/Wal33D/dtc-database
+
+- code: U3520
+  category: network
+  title:
+    en: 'High Voltage System Interlock Circuit E High'
+  sources:
+    - https://github.com/Wal33D/dtc-database
+
+- code: U3521
+  category: network
+  title:
+    en: 'High Voltage System Interlock Circuit F'
+  sources:
+    - https://github.com/Wal33D/dtc-database
+
+- code: U3522
+  category: network
+  title:
+    en: 'High Voltage System Interlock Circuit F Performance'
+  sources:
+    - https://github.com/Wal33D/dtc-database
+
+- code: U3523
+  category: network
+  title:
+    en: 'High Voltage System Interlock Circuit F Low'
+  sources:
+    - https://github.com/Wal33D/dtc-database
+
+- code: U3524
+  category: network
+  title:
+    en: 'High Voltage System Interlock Circuit F High'
+  sources:
+    - https://github.com/Wal33D/dtc-database
+
+- code: U3525
+  category: network
+  title:
+    en: 'High Voltage System Interlock Circuit G'
+  sources:
+    - https://github.com/Wal33D/dtc-database
+
+- code: U3526
+  category: network
+  title:
+    en: 'High Voltage System Interlock Circuit G Performance'
+  sources:
+    - https://github.com/Wal33D/dtc-database
+
+- code: U3527
+  category: network
+  title:
+    en: 'High Voltage System Interlock Circuit G Low'
+  sources:
+    - https://github.com/Wal33D/dtc-database
+
+- code: U3528
+  category: network
+  title:
+    en: 'High Voltage System Interlock Circuit G High'
+  sources:
+    - https://github.com/Wal33D/dtc-database
+
+- code: U3529
+  category: network
+  title:
+    en: 'High Voltage System Interlock Circuit H'
+  sources:
+    - https://github.com/Wal33D/dtc-database
+
+- code: U352A
+  category: network
+  title:
+    en: 'High Voltage System Interlock Circuit H Performance'
+  sources:
+    - https://github.com/Wal33D/dtc-database
+
+- code: U352B
+  category: network
+  title:
+    en: 'High Voltage System Interlock Circuit H Low'
+  sources:
+    - https://github.com/Wal33D/dtc-database
+
+- code: U352C
+  category: network
+  title:
+    en: 'High Voltage System Interlock Circuit H High'
+  sources:
+    - https://github.com/Wal33D/dtc-database
+
+- code: U352D
+  category: network
+  title:
+    en: 'High Voltage System Interlock Circuit J'
+  sources:
+    - https://github.com/Wal33D/dtc-database
+
+- code: U352E
+  category: network
+  title:
+    en: 'High Voltage System Interlock Circuit J Performance'
+  sources:
+    - https://github.com/Wal33D/dtc-database
+
+- code: U352F
+  category: network
+  title:
+    en: 'High Voltage System Interlock Circuit J Low'
+  sources:
+    - https://github.com/Wal33D/dtc-database
+
+- code: U3530
+  category: network
+  title:
+    en: 'High Voltage System Interlock Circuit J High'
+  sources:
+    - https://github.com/Wal33D/dtc-database
+
+- code: U3531
+  category: network
+  title:
+    en: 'High Voltage System Interlock Circuit K'
+  sources:
+    - https://github.com/Wal33D/dtc-database
+
+- code: U3532
+  category: network
+  title:
+    en: 'High Voltage System Interlock Circuit K Performance'
+  sources:
+    - https://github.com/Wal33D/dtc-database
+
+- code: U3533
+  category: network
+  title:
+    en: 'High Voltage System Interlock Circuit K Low'
+  sources:
+    - https://github.com/Wal33D/dtc-database
+
+- code: U3534
+  category: network
+  title:
+    en: 'High Voltage System Interlock Circuit K High'
+  sources:
+    - https://github.com/Wal33D/dtc-database
+
+- code: U3535
+  category: network
+  title:
+    en: 'High Voltage System Interlock Circuit L'
+  sources:
+    - https://github.com/Wal33D/dtc-database
+
+- code: U3536
+  category: network
+  title:
+    en: 'High Voltage System Interlock Circuit L Performance'
+  sources:
+    - https://github.com/Wal33D/dtc-database
+
+- code: U3537
+  category: network
+  title:
+    en: 'High Voltage System Interlock Circuit L Low'
+  sources:
+    - https://github.com/Wal33D/dtc-database
+
+- code: U3538
+  category: network
+  title:
+    en: 'High Voltage System Interlock Circuit L High'
+  sources:
+    - https://github.com/Wal33D/dtc-database
+
+- code: U3539
+  category: network
+  title:
+    en: 'High Voltage System Interlock Circuit M'
+  sources:
+    - https://github.com/Wal33D/dtc-database
+
+- code: U353A
+  category: network
+  title:
+    en: 'High Voltage System Interlock Circuit M Performance'
+  sources:
+    - https://github.com/Wal33D/dtc-database
+
+- code: U353B
+  category: network
+  title:
+    en: 'High Voltage System Interlock Circuit M Low'
+  sources:
+    - https://github.com/Wal33D/dtc-database
+
+- code: U353C
+  category: network
+  title:
+    en: 'High Voltage System Interlock Circuit M High'
+  sources:
+    - https://github.com/Wal33D/dtc-database
+
+- code: U353D
+  category: network
+  title:
+    en: 'High Voltage System Interlock Circuit N'
+  sources:
+    - https://github.com/Wal33D/dtc-database
+
+- code: U353E
+  category: network
+  title:
+    en: 'High Voltage System Interlock Circuit N Performance'
+  sources:
+    - https://github.com/Wal33D/dtc-database
+
+- code: U353F
+  category: network
+  title:
+    en: 'High Voltage System Interlock Circuit N Low'
+  sources:
+    - https://github.com/Wal33D/dtc-database
+
+- code: U3540
+  category: network
+  title:
+    en: 'High Voltage System Interlock Circuit N High'
+  sources:
+    - https://github.com/Wal33D/dtc-database
+
+- code: U3541
+  category: network
+  title:
+    en: 'High Voltage System Interlock Circuit O'
+  sources:
+    - https://github.com/Wal33D/dtc-database
+
+- code: U3542
+  category: network
+  title:
+    en: 'High Voltage System Interlock Circuit O Performance'
+  sources:
+    - https://github.com/Wal33D/dtc-database
+
+- code: U3543
+  category: network
+  title:
+    en: 'High Voltage System Interlock Circuit O Low'
+  sources:
+    - https://github.com/Wal33D/dtc-database
+
+- code: U3544
+  category: network
+  title:
+    en: 'High Voltage System Interlock Circuit O High'
+  sources:
+    - https://github.com/Wal33D/dtc-database
+
+- code: U3545
+  category: network
+  title:
+    en: 'High Voltage System Interlock Circuit P'
+  sources:
+    - https://github.com/Wal33D/dtc-database
+
+- code: U3546
+  category: network
+  title:
+    en: 'High Voltage System Interlock Circuit P Performance'
+  sources:
+    - https://github.com/Wal33D/dtc-database
+
+- code: U3547
+  category: network
+  title:
+    en: 'High Voltage System Interlock Circuit P Low'
+  sources:
+    - https://github.com/Wal33D/dtc-database
+
+- code: U3548
+  category: network
+  title:
+    en: 'High Voltage System Interlock Circuit P High'
+  sources:
+    - https://github.com/Wal33D/dtc-database
+
+- code: U3549
+  category: network
+  title:
+    en: 'Hydrogen Tank High Pressure Sensor 1 Circuit'
+  sources:
+    - https://github.com/Wal33D/dtc-database
+
+- code: U354A
+  category: network
+  title:
+    en: 'Hydrogen Tank A Temperature Sensor 1 Circuit'
+  sources:
+    - https://github.com/Wal33D/dtc-database
+
+- code: U354B
+  category: network
+  title:
+    en: 'Hydrogen Tank A Temperature Sensor 2 Circuit'
+  sources:
+    - https://github.com/Wal33D/dtc-database
+
+- code: U354C
+  category: network
+  title:
+    en: 'Hydrogen Tank B Temperature Sensor 1 Circuit'
+  sources:
+    - https://github.com/Wal33D/dtc-database
+
+- code: U354D
+  category: network
+  title:
+    en: 'Hydrogen Tank B Temperature Sensor 2 Circuit'
+  sources:
+    - https://github.com/Wal33D/dtc-database
+
+- code: U354E
+  category: network
+  title:
+    en: 'Hydrogen Tank C Temperature Sensor 1 Circuit'
+  sources:
+    - https://github.com/Wal33D/dtc-database
+
+- code: U354F
+  category: network
+  title:
+    en: 'Hydrogen Tank C Temperature Sensor 2 Circuit'
+  sources:
+    - https://github.com/Wal33D/dtc-database
+
+- code: U3550
+  category: network
+  title:
+    en: 'Hydrogen Tank A Valve Control Circuit'
+  sources:
+    - https://github.com/Wal33D/dtc-database
+
+- code: U3551
+  category: network
+  title:
+    en: 'Hydrogen Tank A Valve Enable Circuit'
+  sources:
+    - https://github.com/Wal33D/dtc-database
+
+- code: U3552
+  category: network
+  title:
+    en: 'Hydrogen Tank A Valve Performance'
+  sources:
+    - https://github.com/Wal33D/dtc-database
+
+- code: U3553
+  category: network
+  title:
+    en: 'Hydrogen Tank B Valve Control Circuit'
+  sources:
+    - https://github.com/Wal33D/dtc-database
+
+- code: U3554
+  category: network
+  title:
+    en: 'Hydrogen Tank B Valve Enable Circuit'
+  sources:
+    - https://github.com/Wal33D/dtc-database
+
+- code: U3555
+  category: network
+  title:
+    en: 'Hydrogen Tank B Valve Performance'
+  sources:
+    - https://github.com/Wal33D/dtc-database
+
+- code: U3556
+  category: network
+  title:
+    en: 'Hydrogen Tank C Valve Control Circuit'
+  sources:
+    - https://github.com/Wal33D/dtc-database
+
+- code: U3557
+  category: network
+  title:
+    en: 'Hydrogen Tank C Valve Enable Circuit'
+  sources:
+    - https://github.com/Wal33D/dtc-database
+
+- code: U3558
+  category: network
+  title:
+    en: 'Hydrogen Tank C Valve'
+  sources:
+    - https://github.com/Wal33D/dtc-database
+
+- code: U3559
+  category: network
+  title:
+    en: 'Air Inlet Pressure Sensor Circuit'
+  sources:
+    - https://github.com/Wal33D/dtc-database
+
+- code: U355A
+  category: network
+  title:
+    en: 'Charge Air Cooler Outlet Pressure Sensor 1 Circuit'
+  sources:
+    - https://github.com/Wal33D/dtc-database
+
+- code: U355B
+  category: network
+  title:
+    en: 'Charge Air Cooler Outlet Pressure Sensor 2 Circuit'
+  sources:
+    - https://github.com/Wal33D/dtc-database
+
+- code: U355C
+  category: network
+  title:
+    en: 'Charge Air Cooler Outlet Temperature Sensor Circuit'
+  sources:
+    - https://github.com/Wal33D/dtc-database
+
+- code: U355D
+  category: network
+  title:
+    en: 'Expander Inlet Pressure Sensor 1 Circuit'
+  sources:
+    - https://github.com/Wal33D/dtc-database
+
+- code: U355E
+  category: network
+  title:
+    en: 'Expander Inlet Pressure Sensor 2 Circuit'
+  sources:
+    - https://github.com/Wal33D/dtc-database
+
+- code: U355F
+  category: network
+  title:
+    en: 'Cathode Backpressure Valve Control Circuit'
+  sources:
+    - https://github.com/Wal33D/dtc-database
+
+- code: U3560
+  category: network
+  title:
+    en: 'Cathode Backpressure Valve Position Sensor Circuit'
+  sources:
+    - https://github.com/Wal33D/dtc-database
+
+- code: U3561
+  category: network
+  title:
+    en: 'Cathode Bypass Valve Control Circuit'
+  sources:
+    - https://github.com/Wal33D/dtc-database
+
+- code: U3562
+  category: network
+  title:
+    en: 'Cathode Bypass Valve'
+  sources:
+    - https://github.com/Wal33D/dtc-database
+
+- code: U3563
+  category: network
+  title:
+    en: 'Cathode Bypass Valve Position Sensor Circuit'
+  sources:
+    - https://github.com/Wal33D/dtc-database
+
+- code: U3564
+  category: network
+  title:
+    en: 'Hydrogen Supply Line A Pressure Sensor 1 Circuit'
+  sources:
+    - https://github.com/Wal33D/dtc-database
+
+- code: U3565
+  category: network
+  title:
+    en: 'Hydrogen Supply Line A Pressure Sensor 2 Circuit'
+  sources:
+    - https://github.com/Wal33D/dtc-database
+
+- code: U3566
+  category: network
+  title:
+    en: 'Anode Inlet Pressure Sensor 1 Circuit'
+  sources:
+    - https://github.com/Wal33D/dtc-database
+
+- code: U3567
+  category: network
+  title:
+    en: 'Anode Inlet Pressure Sensor 2 Circuit'
+  sources:
+    - https://github.com/Wal33D/dtc-database
+
+- code: U3568
+  category: network
+  title:
+    en: 'Anode Multifunction Valve Control Circuit'
+  sources:
+    - https://github.com/Wal33D/dtc-database
+
+- code: U3569
+  category: network
+  title:
+    en: 'Anode Multifunction Valve'
+  sources:
+    - https://github.com/Wal33D/dtc-database
+
+- code: U356A
+  category: network
+  title:
+    en: 'Anode Drain Valve Control Circuit'
+  sources:
+    - https://github.com/Wal33D/dtc-database
+
+- code: U356B
+  category: network
+  title:
+    en: 'Anode Drain Valve'
+  sources:
+    - https://github.com/Wal33D/dtc-database
+
+- code: U356C
+  category: network
+  title:
+    en: 'Anode Header Drain Valve Control Circuit'
+  sources:
+    - https://github.com/Wal33D/dtc-database
+
+- code: U356D
+  category: network
+  title:
+    en: 'Anode Header Drain Valve'
+  sources:
+    - https://github.com/Wal33D/dtc-database
+
+- code: U356E
+  category: network
+  title:
+    en: 'Anode Drain Valve Heater Relay Control Circuit'
+  sources:
+    - https://github.com/Wal33D/dtc-database
+
+- code: U356F
+  category: network
+  title:
+    en: 'Anode Header Drain Valve Heater Relay Control Circuit'
+  sources:
+    - https://github.com/Wal33D/dtc-database
+
+- code: U3570
+  category: network
+  title:
+    en: 'Stack Inlet Coolant Temperature Sensor Circuit'
+  sources:
+    - https://github.com/Wal33D/dtc-database
+
+- code: U3571
+  category: network
+  title:
+    en: 'Stack Outlet Coolant Temperature Sensor 1 Circuit'
+  sources:
+    - https://github.com/Wal33D/dtc-database
+
+- code: U3572
+  category: network
+  title:
+    en: 'Stack Outlet Coolant Temperature Sensor 2 Circuit'
+  sources:
+    - https://github.com/Wal33D/dtc-database
+
+- code: U3573
+  category: network
+  title:
+    en: 'Coolant Mixing Valve Control Circuit'
+  sources:
+    - https://github.com/Wal33D/dtc-database
+
+- code: U3574
+  category: network
+  title:
+    en: 'Coolant Mixing Valve'
+  sources:
+    - https://github.com/Wal33D/dtc-database
+
+- code: U3575
+  category: network
+  title:
+    en: 'Coolant Mixing Valve Position Sensor Circuit'
+  sources:
+    - https://github.com/Wal33D/dtc-database
+
+- code: U3576
+  category: network
+  title:
+    en: 'Stack Differential Pressure Sensor Circuit'
+  sources:
+    - https://github.com/Wal33D/dtc-database
