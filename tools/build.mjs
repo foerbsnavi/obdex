@@ -67,13 +67,41 @@ const pidLinks = Object.keys(pidsByMode).sort()
   .map(mode => `      <li><a href="pids/${mode}.json"><code>pids/${mode}.json</code></a> <span class="count">${pidsByMode[mode].length}</span></li>`)
   .join("\n");
 
+// Coverage je Familie: enriched (mit Description) vs indexed (nur Minimal-Schema)
+const families = ["P0", "P2", "P3", "U0", "U3", "B0", "C0"];
+const coverage = {};
+for (const fam of families) coverage[fam] = { total: 0, enriched: 0 };
+for (const c of generic) {
+  const fam = c.code.slice(0, 2);
+  if (!coverage[fam]) continue;
+  coverage[fam].total++;
+  if (c.description?.en) coverage[fam].enriched++;
+}
+const totalEnriched = Object.values(coverage).reduce((a, b) => a + b.enriched, 0);
+const totalIndexed = totalCodes - totalEnriched;
+
+const coverageRows = families
+  .filter(f => coverage[f].total > 0)
+  .map(f => {
+    const e = coverage[f].enriched;
+    const t = coverage[f].total;
+    const pct = t === 0 ? 0 : Math.round((e / t) * 100);
+    return `      <tr><td><code>${f}</code></td><td class="num">${t.toLocaleString("en-US")}</td><td class="num">${e.toLocaleString("en-US")}</td><td class="bar"><div class="bar-track"><div class="bar-fill" style="width:${pct}%"></div></div><span class="bar-pct">${pct}%</span></td></tr>`;
+  })
+  .join("\n");
+
 const indexHtml = `<!doctype html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>obdex — OBD-II diagnostic codes &amp; PIDs</title>
-  <meta name="description" content="Open, machine-readable database of OBD-II diagnostic trouble codes and PIDs. CC0 data, MIT tooling.">
+  <meta name="description" content="Open, machine-readable database of ${totalCodes.toLocaleString("en-US")} OBD-II diagnostic trouble codes and ${totalPids} PIDs. CC0 data, MIT tooling.">
+  <meta property="og:title" content="obdex — OBD-II diagnostic codes &amp; PIDs">
+  <meta property="og:description" content="Open, machine-readable database of ${totalCodes.toLocaleString("en-US")} generic OBD-II codes and ${totalPids} PIDs. SAE J2012, CC0.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://foerbsnavi.github.io/obdex/">
+  <meta name="twitter:card" content="summary">
   <style>
     :root { color-scheme: light dark; --fg: #111; --muted: #666; --bg: #fff; --accent: #0969da; --border: #d0d7de; --code-bg: #f6f8fa; --card: #f6f8fa; --pill-bg: #ddf4ff; --pill-fg: #0969da; --warn-bg: #fff8c5; --warn-fg: #7d4e00; }
     @media (prefers-color-scheme: dark) {
@@ -142,6 +170,23 @@ const indexHtml = `<!doctype html>
     .pid-grid .label { font-size: .75rem; color: var(--muted); text-transform: uppercase; letter-spacing: .04em; }
     .pid-grid .value { font-weight: 500; word-break: break-word; }
     .pid-grid .value.mono { font-family: ui-monospace, "SF Mono", Consolas, monospace; font-size: .9em; }
+
+    .ex { font-size: .85rem; color: var(--muted); margin: .5rem 0 0; }
+    .ex code { font-size: .9em; cursor: pointer; transition: background-color .12s, color .12s; }
+    .ex code:hover { background: var(--pill-bg); color: var(--pill-fg); }
+    .depth { font-size: .68rem; padding: .12rem .5rem; border-radius: 999px; text-transform: uppercase; letter-spacing: .05em; font-weight: 600; }
+    .depth.enriched { background: var(--pill-bg); color: var(--pill-fg); }
+    .depth.indexed { background: var(--code-bg); color: var(--muted); border: 1px solid var(--border); }
+
+    table.coverage { width: 100%; border-collapse: collapse; font-size: .92rem; }
+    table.coverage td, table.coverage th { padding: .35rem .25rem; text-align: left; border-bottom: 1px solid var(--border); }
+    table.coverage th { font-size: .75rem; text-transform: uppercase; letter-spacing: .05em; color: var(--muted); font-weight: 600; }
+    table.coverage td.num { text-align: right; font-variant-numeric: tabular-nums; font-family: ui-monospace, "SF Mono", Consolas, monospace; font-size: .9em; }
+    table.coverage td.bar { width: 40%; display: flex; align-items: center; gap: .6rem; padding-left: .75rem; }
+    .bar-track { flex: 1; height: 6px; background: var(--code-bg); border-radius: 3px; overflow: hidden; border: 1px solid var(--border); }
+    .bar-fill { height: 100%; background: var(--accent); transition: width .3s; }
+    .bar-pct { font-size: .78rem; color: var(--muted); font-variant-numeric: tabular-nums; min-width: 2.5rem; text-align: right; }
+    table.coverage tfoot td { font-weight: 600; padding-top: .55rem; border-top: 2px solid var(--border); border-bottom: none; }
   </style>
 </head>
 <body>
@@ -157,8 +202,18 @@ const indexHtml = `<!doctype html>
   <div class="search">
     <input id="q" type="search" autocomplete="off" autocapitalize="off" spellcheck="false" placeholder="Loading database…" disabled>
   </div>
-  <p class="hint">Examples: <code>P0420</code>, <code>oxygen sensor</code>, <code>Lambdasonde</code>, <code>0C</code> (PID), <code>01:0C</code> (Mode 01 PID 0C)</p>
+  <p class="ex">Try: <code data-q="P0420">P0420</code> · <code data-q="oxygen sensor">oxygen sensor</code> · <code data-q="Lambdasonde">Lambdasonde</code> · <code data-q="0C">0C</code> (PID) · <code data-q="01:0C">01:0C</code> (Mode 01 PID 0C)</p>
   <div id="result"></div>
+
+  <h2>Coverage</h2>
+  <p class="hint">Each code is at one of two depths: <span class="depth enriched">enriched</span> with full description, causes, repair estimate; or <span class="depth indexed">indexed</span> with code + title only, awaiting enrichment.</p>
+  <table class="coverage">
+    <thead><tr><th>Family</th><th class="num">Total</th><th class="num">Enriched</th><th>Coverage</th></tr></thead>
+    <tbody>
+${coverageRows}
+    </tbody>
+    <tfoot><tr><td><strong>All generic</strong></td><td class="num">${totalCodes.toLocaleString("en-US")}</td><td class="num">${totalEnriched.toLocaleString("en-US")}</td><td class="bar"><div class="bar-track"><div class="bar-fill" style="width:${Math.round((totalEnriched / totalCodes) * 100)}%"></div></div><span class="bar-pct">${Math.round((totalEnriched / totalCodes) * 100)}%</span></td></tr></tfoot>
+  </table>
 
   <h2>Bundle</h2>
   <ul>
@@ -178,10 +233,9 @@ ${pidLinks}
   </ul>
 
   <footer>
-    Source on <a href="https://github.com/foerbsnavi/obdex">GitHub</a> — data
-    <a href="https://github.com/foerbsnavi/obdex/blob/main/LICENSE-DATA">CC0-1.0</a>, code
-    <a href="https://github.com/foerbsnavi/obdex/blob/main/LICENSE-CODE">MIT</a>.
-    Each endpoint also has a <code>.min.json</code> variant.
+    <p>Source on <a href="https://github.com/foerbsnavi/obdex">GitHub</a> · <a href="https://github.com/foerbsnavi/obdex/blob/main/CONTRIBUTING.md">contributing</a> · <a href="https://github.com/foerbsnavi/obdex/issues">report a wrong code or description</a></p>
+    <p>Identifiers follow SAE J2012. Descriptions are independently authored, with Wikipedia and source references on each enriched code.</p>
+    <p>Data <a href="https://github.com/foerbsnavi/obdex/blob/main/LICENSE-DATA">CC0-1.0</a> · code <a href="https://github.com/foerbsnavi/obdex/blob/main/LICENSE-CODE">MIT</a> · each endpoint has a <code>.min.json</code> variant.</p>
   </footer>
 </main>
 
@@ -240,6 +294,9 @@ ${pidLinks}
 
   function renderDtcCard(c) {
     const cat = c.category ? esc(c.category) : '';
+    const depth = c.description?.en
+      ? '<span class="depth enriched">enriched</span>'
+      : '<span class="depth indexed">indexed</span>';
     const titleEn = c.title?.en ? '<p class="card-title">' + esc(c.title.en) + '</p>' : '';
     const titleDe = c.title?.de ? '<p class="card-title-de">' + esc(c.title.de) + '</p>' : '';
     const descEn = c.description?.en ? '<p class="desc">' + esc(c.description.en) + '</p>' : '';
@@ -281,7 +338,7 @@ ${pidLinks}
     }
 
     return '<div class="card">' +
-      '<div class="card-head"><span class="card-code">' + esc(c.code) + '</span><span class="card-cat">' + cat + '</span></div>' +
+      '<div class="card-head"><span class="card-code">' + esc(c.code) + '</span><span class="card-cat">' + cat + '</span>' + depth + '</div>' +
       titleEn + titleDe + descEn + descDe + flags + causes + repair + renderSources(c.sources) +
       '</div>';
   }
@@ -418,6 +475,15 @@ ${pidLinks}
     if (!li) return;
     input.value = li.dataset.key;
     search(input.value);
+  });
+
+  // Klickbare Beispiele
+  document.querySelectorAll('.ex code[data-q]').forEach(el => {
+    el.addEventListener('click', () => {
+      input.value = el.dataset.q;
+      input.focus();
+      search(input.value);
+    });
   });
 
   function handleHash() {
