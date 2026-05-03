@@ -57,16 +57,23 @@ tools/                    Node.js validation + build scripts
 
 ## Status
 
-| Scope         | Codes | Coverage |
-| ------------- | ----: | -------- |
-| Generic P0    |   505 | extensive|
-| Generic P2    |   293 | extensive|
-| Generic P3    |    97 | extensive|
-| Generic U0    |   227 | extensive|
-| Generic B0    |   200 | extensive|
-| Generic C0    |   207 | extensive|
-| PIDs Mode 01  |   119 | extensive|
-| PIDs Mode 09  |    13 | extensive|
+The database has two depth tiers per code:
+
+- **enriched** — full schema: English+German title, description, affected components, common causes (with likelihood), repair difficulty/cost/hours, flags, references, sources.
+- **indexed** — minimum schema: code, category, English title, source. Always passes validation, but no diagnostic detail yet. Indexed entries are progressively converted to enriched in subsequent waves.
+
+| Family            |  Codes | Depth                            |
+| ----------------- | -----: | -------------------------------- |
+| Generic P0        |  3,705 | 605 enriched + 3,100 indexed     |
+| Generic P2        |  3,495 | 293 enriched + 3,202 indexed     |
+| Generic P3        |    155 | 97 enriched + 58 indexed         |
+| Generic U0        |  1,056 | 227 enriched + 829 indexed       |
+| Generic U3        |    174 | indexed                          |
+| Generic B0        |    323 | 200 enriched + 123 indexed       |
+| Generic C0        |    626 | 207 enriched + 419 indexed       |
+| **Generic total** |**9,534**| **1,629 enriched + 7,905 indexed** |
+| PIDs Mode 01      |    119 | extensive                        |
+| PIDs Mode 09      |     13 | extensive                        |
 
 Live counts: see [`meta.json`](https://foerbsnavi.github.io/obdex/meta.json).
 
