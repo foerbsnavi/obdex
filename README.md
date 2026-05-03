@@ -72,10 +72,10 @@ The database has two depth tiers per code:
 | Generic P2        |  3,495 | 293 enriched + 3,202 indexed     |
 | Generic P3        |    155 | **155 enriched (100%)**          |
 | Generic U0        |  1,056 | 427 enriched + 629 indexed       |
-| Generic U3        |    174 | indexed                          |
+| Generic U3        |    174 | **174 enriched (100%)**          |
 | Generic B0        |    323 | 200 enriched + 123 indexed       |
 | Generic C0        |    626 | 207 enriched + 419 indexed       |
-| **Generic total** |**9,534**| **2,287 enriched + 7,247 indexed** |
+| **Generic total** |**9,534**| **2,461 enriched + 7,073 indexed** |
 | PIDs Mode 01      |    119 | extensive                        |
 | PIDs Mode 09      |     13 | extensive                        |
 
