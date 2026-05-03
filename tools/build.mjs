@@ -86,7 +86,7 @@ const coverageRows = families
     const e = coverage[f].enriched;
     const t = coverage[f].total;
     const pct = t === 0 ? 0 : Math.round((e / t) * 100);
-    return `      <tr><td><code>${f}</code></td><td class="num">${t.toLocaleString("en-US")}</td><td class="num">${e.toLocaleString("en-US")}</td><td class="bar"><div class="bar-track"><div class="bar-fill" style="width:${pct}%"></div></div><span class="bar-pct">${pct}%</span></td></tr>`;
+    return `      <tr><td><code>${f}</code></td><td class="num">${t.toLocaleString("en-US")}</td><td class="num">${e.toLocaleString("en-US")}</td><td class="bar"><div class="bar-row"><div class="bar-track"><div class="bar-fill" style="width:${pct}%"></div></div><span class="bar-pct">${pct}%</span></div></td></tr>`;
   })
   .join("\n");
 
@@ -182,7 +182,8 @@ const indexHtml = `<!doctype html>
     table.coverage td, table.coverage th { padding: .35rem .25rem; text-align: left; border-bottom: 1px solid var(--border); }
     table.coverage th { font-size: .75rem; text-transform: uppercase; letter-spacing: .05em; color: var(--muted); font-weight: 600; }
     table.coverage td.num { text-align: right; font-variant-numeric: tabular-nums; font-family: ui-monospace, "SF Mono", Consolas, monospace; font-size: .9em; }
-    table.coverage td.bar { width: 40%; display: flex; align-items: center; gap: .6rem; padding-left: .75rem; }
+    table.coverage td.bar { width: 40%; padding-left: .75rem; }
+    .bar-row { display: flex; align-items: center; gap: .6rem; }
     .bar-track { flex: 1; height: 6px; background: var(--code-bg); border-radius: 3px; overflow: hidden; border: 1px solid var(--border); }
     .bar-fill { height: 100%; background: var(--accent); transition: width .3s; }
     .bar-pct { font-size: .78rem; color: var(--muted); font-variant-numeric: tabular-nums; min-width: 2.5rem; text-align: right; }
@@ -212,7 +213,7 @@ const indexHtml = `<!doctype html>
     <tbody>
 ${coverageRows}
     </tbody>
-    <tfoot><tr><td><strong>All generic</strong></td><td class="num">${totalCodes.toLocaleString("en-US")}</td><td class="num">${totalEnriched.toLocaleString("en-US")}</td><td class="bar"><div class="bar-track"><div class="bar-fill" style="width:${Math.round((totalEnriched / totalCodes) * 100)}%"></div></div><span class="bar-pct">${Math.round((totalEnriched / totalCodes) * 100)}%</span></td></tr></tfoot>
+    <tfoot><tr><td><strong>All generic</strong></td><td class="num">${totalCodes.toLocaleString("en-US")}</td><td class="num">${totalEnriched.toLocaleString("en-US")}</td><td class="bar"><div class="bar-row"><div class="bar-track"><div class="bar-fill" style="width:${Math.round((totalEnriched / totalCodes) * 100)}%"></div></div><span class="bar-pct">${Math.round((totalEnriched / totalCodes) * 100)}%</span></div></td></tr></tfoot>
   </table>
 
   <h2>Bundle</h2>
