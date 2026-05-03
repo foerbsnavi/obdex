@@ -181,7 +181,9 @@ const indexHtml = `<!doctype html>
     table.coverage { width: 100%; border-collapse: collapse; font-size: .92rem; }
     table.coverage td, table.coverage th { padding: .35rem .25rem; text-align: left; border-bottom: 1px solid var(--border); }
     table.coverage th { font-size: .75rem; text-transform: uppercase; letter-spacing: .05em; color: var(--muted); font-weight: 600; }
-    table.coverage td.num { text-align: right; font-variant-numeric: tabular-nums; font-family: ui-monospace, "SF Mono", Consolas, monospace; font-size: .9em; }
+    table.coverage th.num, table.coverage td.num { text-align: right; font-variant-numeric: tabular-nums; font-family: ui-monospace, "SF Mono", Consolas, monospace; font-size: .9em; }
+    table.coverage th.num { font-family: inherit; font-size: .75rem; }
+    table.coverage th.bar-h { padding-left: .75rem; }
     table.coverage td.bar { width: 40%; padding-left: .75rem; }
     .bar-row { display: flex; align-items: center; gap: .6rem; }
     .bar-track { flex: 1; height: 6px; background: var(--code-bg); border-radius: 3px; overflow: hidden; border: 1px solid var(--border); }
@@ -209,7 +211,7 @@ const indexHtml = `<!doctype html>
   <h2>Coverage</h2>
   <p class="hint">Each code is at one of two depths: <span class="depth enriched">enriched</span> with full description, causes, repair estimate; or <span class="depth indexed">indexed</span> with code + title only, awaiting enrichment.</p>
   <table class="coverage">
-    <thead><tr><th>Family</th><th class="num">Total</th><th class="num">Enriched</th><th>Coverage</th></tr></thead>
+    <thead><tr><th>Family</th><th class="num">Total</th><th class="num">Enriched</th><th class="bar-h">Coverage</th></tr></thead>
     <tbody>
 ${coverageRows}
     </tbody>
