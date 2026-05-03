@@ -9672,7 +9672,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
-    - https://en.wikipedia.org/wiki/Common_rail
+    - https://en.wikipedia.org/wiki/Fuel_injection
 
 - code: U01B7
   category: network

@@ -89,7 +89,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
-    - https://en.wikipedia.org/wiki/Common_rail
+    - https://en.wikipedia.org/wiki/Fuel_injection
 
 - code: P0003
   category: powertrain
@@ -127,7 +127,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
-    - https://en.wikipedia.org/wiki/Common_rail
+    - https://en.wikipedia.org/wiki/Fuel_injection
 
 - code: P0004
   category: powertrain
@@ -165,7 +165,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
-    - https://en.wikipedia.org/wiki/Common_rail
+    - https://en.wikipedia.org/wiki/Fuel_injection
 
 - code: P0005
   category: powertrain
@@ -204,7 +204,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
-    - https://en.wikipedia.org/wiki/Common_rail
+    - https://en.wikipedia.org/wiki/Fuel_injection
 
 - code: P0006
   category: powertrain
@@ -242,7 +242,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
-    - https://en.wikipedia.org/wiki/Common_rail
+    - https://en.wikipedia.org/wiki/Fuel_injection
 
 - code: P0007
   category: powertrain
@@ -280,7 +280,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
-    - https://en.wikipedia.org/wiki/Common_rail
+    - https://en.wikipedia.org/wiki/Fuel_injection
 
 - code: P0008
   category: powertrain
@@ -576,7 +576,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
-    - https://en.wikipedia.org/wiki/Common_rail
+    - https://en.wikipedia.org/wiki/Fuel_injection
 
 - code: P000F
   category: powertrain
@@ -616,7 +616,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
-    - https://en.wikipedia.org/wiki/Common_rail
+    - https://en.wikipedia.org/wiki/Fuel_injection
 
 - code: P0010
   category: powertrain
@@ -3669,7 +3669,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
-    - https://en.wikipedia.org/wiki/Common_rail
+    - https://en.wikipedia.org/wiki/Fuel_injection
 
 - code: P0066
   category: powertrain
@@ -3702,7 +3702,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
-    - https://en.wikipedia.org/wiki/Common_rail
+    - https://en.wikipedia.org/wiki/Fuel_injection
 
 - code: P0067
   category: powertrain
@@ -3735,7 +3735,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
-    - https://en.wikipedia.org/wiki/Common_rail
+    - https://en.wikipedia.org/wiki/Fuel_injection
 
 - code: P0068
   category: powertrain
@@ -4969,7 +4969,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
-    - https://en.wikipedia.org/wiki/Common_rail
+    - https://en.wikipedia.org/wiki/Fuel_injection
 
 - code: P008B
   category: powertrain
@@ -5008,7 +5008,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
-    - https://en.wikipedia.org/wiki/Common_rail
+    - https://en.wikipedia.org/wiki/Fuel_injection
 
 - code: P008C
   category: powertrain
@@ -5046,7 +5046,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
-    - https://en.wikipedia.org/wiki/Common_rail
+    - https://en.wikipedia.org/wiki/Fuel_injection
 
 - code: P008D
   category: powertrain
@@ -5079,7 +5079,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
-    - https://en.wikipedia.org/wiki/Common_rail
+    - https://en.wikipedia.org/wiki/Fuel_injection
 
 - code: P008E
   category: powertrain
@@ -5112,7 +5112,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
-    - https://en.wikipedia.org/wiki/Common_rail
+    - https://en.wikipedia.org/wiki/Fuel_injection
 
 - code: P008F
   category: powertrain
@@ -5183,7 +5183,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
-    - https://en.wikipedia.org/wiki/Common_rail
+    - https://en.wikipedia.org/wiki/Fuel_injection
 
 - code: P0091
   category: powertrain
@@ -5216,7 +5216,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
-    - https://en.wikipedia.org/wiki/Common_rail
+    - https://en.wikipedia.org/wiki/Fuel_injection
 
 - code: P0092
   category: powertrain
@@ -5249,7 +5249,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
-    - https://en.wikipedia.org/wiki/Common_rail
+    - https://en.wikipedia.org/wiki/Fuel_injection
 
 - code: P0093
   category: powertrain
@@ -5551,7 +5551,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
-    - https://en.wikipedia.org/wiki/Common_rail
+    - https://en.wikipedia.org/wiki/Fuel_injection
 
 - code: P009C
   category: powertrain
@@ -5584,7 +5584,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
-    - https://en.wikipedia.org/wiki/Common_rail
+    - https://en.wikipedia.org/wiki/Fuel_injection
 
 - code: P009D
   category: powertrain
@@ -5617,7 +5617,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
-    - https://en.wikipedia.org/wiki/Common_rail
+    - https://en.wikipedia.org/wiki/Fuel_injection
 
 - code: P009E
   category: powertrain
@@ -5649,7 +5649,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
-    - https://en.wikipedia.org/wiki/Common_rail
+    - https://en.wikipedia.org/wiki/Fuel_injection
 
 - code: P009F
   category: powertrain
@@ -5681,7 +5681,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
-    - https://en.wikipedia.org/wiki/Common_rail
+    - https://en.wikipedia.org/wiki/Fuel_injection
 
 - code: P00A0
   category: powertrain
@@ -6581,7 +6581,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
-    - https://en.wikipedia.org/wiki/Common_rail
+    - https://en.wikipedia.org/wiki/Fuel_injection
 
 - code: P00BB
   category: powertrain
@@ -6613,7 +6613,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
-    - https://en.wikipedia.org/wiki/Common_rail
+    - https://en.wikipedia.org/wiki/Fuel_injection
 
 - code: P00BC
   category: powertrain
@@ -6978,7 +6978,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
-    - https://en.wikipedia.org/wiki/Common_rail
+    - https://en.wikipedia.org/wiki/Fuel_injection
 
 - code: P00C7
   category: powertrain
@@ -7044,7 +7044,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
-    - https://en.wikipedia.org/wiki/Common_rail
+    - https://en.wikipedia.org/wiki/Fuel_injection
 
 - code: P00C9
   category: powertrain
@@ -7078,7 +7078,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
-    - https://en.wikipedia.org/wiki/Common_rail
+    - https://en.wikipedia.org/wiki/Fuel_injection
 
 - code: P00CA
   category: powertrain
@@ -7111,7 +7111,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
-    - https://en.wikipedia.org/wiki/Common_rail
+    - https://en.wikipedia.org/wiki/Fuel_injection
 
 - code: P00CB
   category: powertrain
@@ -7144,7 +7144,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
-    - https://en.wikipedia.org/wiki/Common_rail
+    - https://en.wikipedia.org/wiki/Fuel_injection
 
 - code: P00CC
   category: powertrain
@@ -7178,7 +7178,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
-    - https://en.wikipedia.org/wiki/Common_rail
+    - https://en.wikipedia.org/wiki/Fuel_injection
 
 - code: P00CD
   category: powertrain
@@ -7211,7 +7211,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
-    - https://en.wikipedia.org/wiki/Common_rail
+    - https://en.wikipedia.org/wiki/Fuel_injection
 
 - code: P00CE
   category: powertrain
@@ -12829,7 +12829,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
-    - https://en.wikipedia.org/wiki/Common_rail
+    - https://en.wikipedia.org/wiki/Fuel_injection
 
 - code: P016E
   category: powertrain
@@ -12862,7 +12862,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
-    - https://en.wikipedia.org/wiki/Common_rail
+    - https://en.wikipedia.org/wiki/Fuel_injection
 
 - code: P016F
   category: powertrain
@@ -12895,7 +12895,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
-    - https://en.wikipedia.org/wiki/Common_rail
+    - https://en.wikipedia.org/wiki/Fuel_injection
 
 - code: P0170
   category: powertrain
@@ -13877,7 +13877,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
-    - https://en.wikipedia.org/wiki/Common_rail
+    - https://en.wikipedia.org/wiki/Fuel_injection
 
 - code: P018B
   category: powertrain
@@ -13909,7 +13909,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
-    - https://en.wikipedia.org/wiki/Common_rail
+    - https://en.wikipedia.org/wiki/Fuel_injection
 
 - code: P018C
   category: powertrain
@@ -13942,7 +13942,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
-    - https://en.wikipedia.org/wiki/Common_rail
+    - https://en.wikipedia.org/wiki/Fuel_injection
 
 - code: P018D
   category: powertrain
@@ -13975,7 +13975,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
-    - https://en.wikipedia.org/wiki/Common_rail
+    - https://en.wikipedia.org/wiki/Fuel_injection
 
 - code: P018E
   category: powertrain
@@ -14008,7 +14008,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
-    - https://en.wikipedia.org/wiki/Common_rail
+    - https://en.wikipedia.org/wiki/Fuel_injection
 
 - code: P018F
   category: powertrain
@@ -14721,7 +14721,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
-    - https://en.wikipedia.org/wiki/Common_rail
+    - https://en.wikipedia.org/wiki/Fuel_injection
 
 - code: P01A4
   category: powertrain
@@ -14753,7 +14753,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
-    - https://en.wikipedia.org/wiki/Common_rail
+    - https://en.wikipedia.org/wiki/Fuel_injection
 
 - code: P01A5
   category: powertrain
@@ -14786,7 +14786,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
-    - https://en.wikipedia.org/wiki/Common_rail
+    - https://en.wikipedia.org/wiki/Fuel_injection
 
 - code: P01A6
   category: powertrain
@@ -14819,7 +14819,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
-    - https://en.wikipedia.org/wiki/Common_rail
+    - https://en.wikipedia.org/wiki/Fuel_injection
 
 - code: P01A7
   category: powertrain
@@ -14852,7 +14852,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
-    - https://en.wikipedia.org/wiki/Common_rail
+    - https://en.wikipedia.org/wiki/Fuel_injection
 
 - code: P01A8
   category: powertrain
@@ -14886,7 +14886,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
-    - https://en.wikipedia.org/wiki/Common_rail
+    - https://en.wikipedia.org/wiki/Fuel_injection
 
 - code: P01A9
   category: powertrain
@@ -14919,7 +14919,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
-    - https://en.wikipedia.org/wiki/Common_rail
+    - https://en.wikipedia.org/wiki/Fuel_injection
 
 - code: P01AA
   category: powertrain
@@ -15280,7 +15280,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
-    - https://en.wikipedia.org/wiki/Common_rail
+    - https://en.wikipedia.org/wiki/Fuel_injection
 
 - code: P01B5
   category: powertrain
@@ -15312,7 +15312,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
-    - https://en.wikipedia.org/wiki/Common_rail
+    - https://en.wikipedia.org/wiki/Fuel_injection
 
 - code: P01B6
   category: powertrain
@@ -15345,7 +15345,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
-    - https://en.wikipedia.org/wiki/Common_rail
+    - https://en.wikipedia.org/wiki/Fuel_injection
 
 - code: P01B7
   category: powertrain
@@ -15378,7 +15378,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
-    - https://en.wikipedia.org/wiki/Common_rail
+    - https://en.wikipedia.org/wiki/Fuel_injection
 
 - code: P01B8
   category: powertrain
@@ -15411,7 +15411,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
-    - https://en.wikipedia.org/wiki/Common_rail
+    - https://en.wikipedia.org/wiki/Fuel_injection
 
 - code: P01B9
   category: powertrain
@@ -15608,7 +15608,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
-    - https://en.wikipedia.org/wiki/Common_rail
+    - https://en.wikipedia.org/wiki/Fuel_injection
 
 - code: P01BF
   category: powertrain
@@ -15640,7 +15640,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
-    - https://en.wikipedia.org/wiki/Common_rail
+    - https://en.wikipedia.org/wiki/Fuel_injection
 
 - code: P01C0
   category: powertrain
@@ -15673,7 +15673,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
-    - https://en.wikipedia.org/wiki/Common_rail
+    - https://en.wikipedia.org/wiki/Fuel_injection
 
 - code: P01C1
   category: powertrain
@@ -15706,7 +15706,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
-    - https://en.wikipedia.org/wiki/Common_rail
+    - https://en.wikipedia.org/wiki/Fuel_injection
 
 - code: P01C2
   category: powertrain
@@ -15739,7 +15739,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
-    - https://en.wikipedia.org/wiki/Common_rail
+    - https://en.wikipedia.org/wiki/Fuel_injection
 
 - code: P01C3
   category: powertrain
@@ -15772,7 +15772,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
-    - https://en.wikipedia.org/wiki/Common_rail
+    - https://en.wikipedia.org/wiki/Fuel_injection
 
 - code: P01C4
   category: powertrain
@@ -15804,7 +15804,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
-    - https://en.wikipedia.org/wiki/Common_rail
+    - https://en.wikipedia.org/wiki/Fuel_injection
 
 - code: P01C5
   category: powertrain
@@ -15837,7 +15837,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
-    - https://en.wikipedia.org/wiki/Common_rail
+    - https://en.wikipedia.org/wiki/Fuel_injection
 
 - code: P01C6
   category: powertrain
@@ -15870,7 +15870,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
-    - https://en.wikipedia.org/wiki/Common_rail
+    - https://en.wikipedia.org/wiki/Fuel_injection
 
 - code: P01C7
   category: powertrain
@@ -15903,7 +15903,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
-    - https://en.wikipedia.org/wiki/Common_rail
+    - https://en.wikipedia.org/wiki/Fuel_injection
 
 - code: P01C8
   category: powertrain
@@ -15936,7 +15936,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
-    - https://en.wikipedia.org/wiki/Common_rail
+    - https://en.wikipedia.org/wiki/Fuel_injection
 
 - code: P01C9
   category: powertrain
@@ -15969,7 +15969,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
-    - https://en.wikipedia.org/wiki/Common_rail
+    - https://en.wikipedia.org/wiki/Fuel_injection
 
 - code: P01CA
   category: powertrain
@@ -16003,7 +16003,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
-    - https://en.wikipedia.org/wiki/Common_rail
+    - https://en.wikipedia.org/wiki/Fuel_injection
 
 - code: P01CB
   category: powertrain
@@ -18424,7 +18424,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
-    - https://en.wikipedia.org/wiki/Common_rail
+    - https://en.wikipedia.org/wiki/Fuel_injection
 
 - code: P0214
   category: powertrain
@@ -18456,7 +18456,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
-    - https://en.wikipedia.org/wiki/Common_rail
+    - https://en.wikipedia.org/wiki/Fuel_injection
 
 - code: P0215
   category: powertrain
@@ -19524,7 +19524,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
-    - https://en.wikipedia.org/wiki/Common_rail
+    - https://en.wikipedia.org/wiki/Fuel_injection
 
 - code: P0234
   category: powertrain
@@ -19953,7 +19953,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
-    - https://en.wikipedia.org/wiki/Common_rail
+    - https://en.wikipedia.org/wiki/Fuel_injection
 
 - code: P0240
   category: powertrain
@@ -20866,7 +20866,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
-    - https://en.wikipedia.org/wiki/Common_rail
+    - https://en.wikipedia.org/wiki/Fuel_injection
 
 - code: P025B
   category: powertrain
@@ -20898,7 +20898,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
-    - https://en.wikipedia.org/wiki/Common_rail
+    - https://en.wikipedia.org/wiki/Fuel_injection
 
 - code: P025C
   category: powertrain
@@ -20931,7 +20931,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
-    - https://en.wikipedia.org/wiki/Common_rail
+    - https://en.wikipedia.org/wiki/Fuel_injection
 
 - code: P025D
   category: powertrain
@@ -20964,7 +20964,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
-    - https://en.wikipedia.org/wiki/Common_rail
+    - https://en.wikipedia.org/wiki/Fuel_injection
 
 - code: P025E
   category: powertrain
@@ -21985,7 +21985,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
-    - https://en.wikipedia.org/wiki/Common_rail
+    - https://en.wikipedia.org/wiki/Fuel_injection
 
 - code: P027B
   category: powertrain
@@ -22017,7 +22017,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
-    - https://en.wikipedia.org/wiki/Common_rail
+    - https://en.wikipedia.org/wiki/Fuel_injection
 
 - code: P027C
   category: powertrain
@@ -22050,7 +22050,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
-    - https://en.wikipedia.org/wiki/Common_rail
+    - https://en.wikipedia.org/wiki/Fuel_injection
 
 - code: P027D
   category: powertrain
@@ -22083,7 +22083,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
-    - https://en.wikipedia.org/wiki/Common_rail
+    - https://en.wikipedia.org/wiki/Fuel_injection
 
 - code: P027E
   category: powertrain

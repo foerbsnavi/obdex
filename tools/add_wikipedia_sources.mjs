@@ -28,8 +28,10 @@ const mappings = [
   { re: /Turbocharger|Supercharger|Boost (Control|Sensor|Pressure)|Turbo (Outlet|Inlet)/i, url: "https://en.wikipedia.org/wiki/Turbocharger" },
   // Charge Air Cooler / Intercooler
   { re: /Charge Air Cooler|Intercooler/i, url: "https://en.wikipedia.org/wiki/Intercooler" },
-  // Common rail / Fuel rail / Fuel pressure / HP pump / Injector
-  { re: /Common Rail|Fuel Rail|Fuel Pressure|Fuel Volume Regulator|Fuel Shutoff|Fuel Cooler|Fuel Heater|Cold Start Injector|Injection Pump|Fuel Injector|Air Assisted Injector|Fuel Pump (Module|Secondary)/i, url: "https://en.wikipedia.org/wiki/Common_rail" },
+  // Common rail / Injection pump (Diesel-spezifisch)
+  { re: /Common Rail|Injection Pump|High.?Pressure Fuel Pump/i, url: "https://en.wikipedia.org/wiki/Common_rail" },
+  // Generelle Kraftstoff-Komponenten (auch GDI-Benziner) → Fuel injection
+  { re: /Fuel Rail|Fuel Pressure|Fuel Volume Regulator|Fuel Shutoff|Fuel Cooler|Fuel Heater|Cold Start Injector|Fuel Injector|Air Assisted Injector|Fuel Pump (Module|Secondary)/i, url: "https://en.wikipedia.org/wiki/Fuel_injection" },
   // Glow plug
   { re: /Glow Plug/i, url: "https://en.wikipedia.org/wiki/Glow_plug" },
   // Throttle / Pedal
