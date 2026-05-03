@@ -13,6 +13,16 @@ if (!outputPath || inputs.length === 0) {
   process.exit(1);
 }
 
+// Schutz vor Argument-Vertausch (siehe wave-19 C0-Lesson):
+// Output MUSS dem Familien-Naming `<F>xxx_enriched.yaml` folgen.
+// Verhindert, dass eine Tranchen-Datei wie `_temp/u0_t1.yaml` versehentlich
+// als Output angegeben und damit überschrieben wird.
+if (!/_enriched\.yaml$/.test(outputPath)) {
+  console.error(`ABBRUCH: Output "${outputPath}" endet nicht auf "_enriched.yaml".`);
+  console.error("Argument-Reihenfolge ist: <output> <input1> [input2 ...] — Output zuerst.");
+  process.exit(1);
+}
+
 // Parse jede Eingabe-Datei in Code-Block-Map.
 // Jeder Block beginnt mit "- code: XXXXX" und endet vor dem nächsten "- code:".
 const blocks = [];
