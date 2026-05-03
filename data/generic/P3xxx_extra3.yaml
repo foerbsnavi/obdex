@@ -1,0 +1,409 @@
+# wave 15 Bulk-Import (Minimal-Schema)
+# Quelle: Wal33D/dtc-database (MIT)
+# 58 Codes, P3-Familie. Anreicherung folgt in wave 16+.
+
+- code: P340A
+  category: powertrain
+  title:
+    en: 'Deactivation/Intake Valve Control Circuit Bank 1'
+  sources:
+    - https://github.com/Wal33D/dtc-database
+
+- code: P340B
+  category: powertrain
+  title:
+    en: 'Deactivation/Intake Valve Control Circuit Bank 2'
+  sources:
+    - https://github.com/Wal33D/dtc-database
+
+- code: P340C
+  category: powertrain
+  title:
+    en: 'Deactivation/Exhaust Valve Control Circuit Bank 1'
+  sources:
+    - https://github.com/Wal33D/dtc-database
+
+- code: P340D
+  category: powertrain
+  title:
+    en: 'Deactivation/Exhaust Valve Control Circuit Bank 2'
+  sources:
+    - https://github.com/Wal33D/dtc-database
+
+- code: P341A
+  category: powertrain
+  title:
+    en: 'Deactivation/Intake Valve Control Circuit Performance Bank 1'
+  sources:
+    - https://github.com/Wal33D/dtc-database
+
+- code: P341B
+  category: powertrain
+  title:
+    en: 'Deactivation/Intake Valve Control Circuit Performance Bank 2'
+  sources:
+    - https://github.com/Wal33D/dtc-database
+
+- code: P341C
+  category: powertrain
+  title:
+    en: 'Deactivation/Exhaust Valve Control Circuit Performance Bank 1'
+  sources:
+    - https://github.com/Wal33D/dtc-database
+
+- code: P341D
+  category: powertrain
+  title:
+    en: 'Deactivation/Exhaust Valve Control Circuit Performance Bank 2'
+  sources:
+    - https://github.com/Wal33D/dtc-database
+
+- code: P3486
+  category: powertrain
+  title:
+    en: 'Cylinder 11 Exhaust Valve Control Circuit Performance'
+  sources:
+    - https://github.com/Wal33D/dtc-database
+
+- code: P3487
+  category: powertrain
+  title:
+    en: 'Cylinder 11 Exhaust Valve Control Circuit Low'
+  sources:
+    - https://github.com/Wal33D/dtc-database
+
+- code: P3488
+  category: powertrain
+  title:
+    en: 'Cylinder 11 Exhaust Valve Control Circuit High'
+  sources:
+    - https://github.com/Wal33D/dtc-database
+
+- code: P349A
+  category: powertrain
+  title:
+    en: 'Cylinder 3 Deactivation/Intake Valve Performance'
+  sources:
+    - https://github.com/Wal33D/dtc-database
+
+- code: P349B
+  category: powertrain
+  title:
+    en: 'Cylinder 4 Deactivation/Intake Valve Performance'
+  sources:
+    - https://github.com/Wal33D/dtc-database
+
+- code: P349C
+  category: powertrain
+  title:
+    en: 'Cylinder 5 Deactivation/Intake Valve Performance'
+  sources:
+    - https://github.com/Wal33D/dtc-database
+
+- code: P349D
+  category: powertrain
+  title:
+    en: 'Cylinder 6 Deactivation/Intake Valve Performance'
+  sources:
+    - https://github.com/Wal33D/dtc-database
+
+- code: P349E
+  category: powertrain
+  title:
+    en: 'Cylinder 7 Deactivation/Intake Valve Performance'
+  sources:
+    - https://github.com/Wal33D/dtc-database
+
+- code: P349F
+  category: powertrain
+  title:
+    en: 'Cylinder 8 Deactivation/Intake Valve Performance'
+  sources:
+    - https://github.com/Wal33D/dtc-database
+
+- code: P34A0
+  category: powertrain
+  title:
+    en: 'Cylinder 9 Deactivation/Intake Valve Performance'
+  sources:
+    - https://github.com/Wal33D/dtc-database
+
+- code: P34A1
+  category: powertrain
+  title:
+    en: 'Cylinder 10 Deactivation/Intake Valve Performance'
+  sources:
+    - https://github.com/Wal33D/dtc-database
+
+- code: P34A2
+  category: powertrain
+  title:
+    en: 'Cylinder 11 Deactivation/Intake Valve Performance'
+  sources:
+    - https://github.com/Wal33D/dtc-database
+
+- code: P34A3
+  category: powertrain
+  title:
+    en: 'Cylinder 12 Deactivation/Intake Valve Performance'
+  sources:
+    - https://github.com/Wal33D/dtc-database
+
+- code: P34A4
+  category: powertrain
+  title:
+    en: 'A Camshaft Position Actuator Temperature Sensor Circuit Bank 1'
+  sources:
+    - https://github.com/Wal33D/dtc-database
+
+- code: P34A5
+  category: powertrain
+  title:
+    en: 'A Camshaft Position Actuator Temperature Sensor Range/Performance Bank 1'
+  sources:
+    - https://github.com/Wal33D/dtc-database
+
+- code: P34A6
+  category: powertrain
+  title:
+    en: 'A Camshaft Position Actuator Temperature Sensor Circuit Low Bank 1'
+  sources:
+    - https://github.com/Wal33D/dtc-database
+
+- code: P34A7
+  category: powertrain
+  title:
+    en: 'A Camshaft Position Actuator Temperature Sensor Circuit High Bank 1'
+  sources:
+    - https://github.com/Wal33D/dtc-database
+
+- code: P34A8
+  category: powertrain
+  title:
+    en: 'A Camshaft Position Actuator Temperature Sensor Circuit Bank 2'
+  sources:
+    - https://github.com/Wal33D/dtc-database
+
+- code: P34A9
+  category: powertrain
+  title:
+    en: 'A Camshaft Position Actuator Temperature Sensor Range/Performance Bank 2'
+  sources:
+    - https://github.com/Wal33D/dtc-database
+
+- code: P34AA
+  category: powertrain
+  title:
+    en: 'A Camshaft Position Actuator Temperature Sensor Circuit Low Bank 2'
+  sources:
+    - https://github.com/Wal33D/dtc-database
+
+- code: P34AB
+  category: powertrain
+  title:
+    en: 'A Camshaft Position Actuator Temperature Sensor Circuit High Bank 2'
+  sources:
+    - https://github.com/Wal33D/dtc-database
+
+- code: P34AC
+  category: powertrain
+  title:
+    en: 'A Camshaft Position Actuator Position Sensor A Circuit Bank 1'
+  sources:
+    - https://github.com/Wal33D/dtc-database
+
+- code: P34AD
+  category: powertrain
+  title:
+    en: 'A Camshaft Position Actuator Position Sensor A Range/Performance Bank 1'
+  sources:
+    - https://github.com/Wal33D/dtc-database
+
+- code: P34AE
+  category: powertrain
+  title:
+    en: 'A Camshaft Position Actuator Position Sensor A Circuit Low Bank 1'
+  sources:
+    - https://github.com/Wal33D/dtc-database
+
+- code: P34AF
+  category: powertrain
+  title:
+    en: 'A Camshaft Position Actuator Position Sensor A Circuit High Bank 1'
+  sources:
+    - https://github.com/Wal33D/dtc-database
+
+- code: P34B0
+  category: powertrain
+  title:
+    en: 'A Camshaft Position Actuator Position Sensor A Circuit Bank 2'
+  sources:
+    - https://github.com/Wal33D/dtc-database
+
+- code: P34B1
+  category: powertrain
+  title:
+    en: 'A Camshaft Position Actuator Position Sensor A Range/Performance Bank 2'
+  sources:
+    - https://github.com/Wal33D/dtc-database
+
+- code: P34B2
+  category: powertrain
+  title:
+    en: 'A Camshaft Position Actuator Position Sensor A Circuit Low Bank 2'
+  sources:
+    - https://github.com/Wal33D/dtc-database
+
+- code: P34B3
+  category: powertrain
+  title:
+    en: 'A Camshaft Position Actuator Position Sensor A Circuit High Bank 2'
+  sources:
+    - https://github.com/Wal33D/dtc-database
+
+- code: P34B4
+  category: powertrain
+  title:
+    en: 'B Camshaft Position Actuator Temperature Sensor Circuit Bank 1'
+  sources:
+    - https://github.com/Wal33D/dtc-database
+
+- code: P34B5
+  category: powertrain
+  title:
+    en: 'B Camshaft Position Actuator Temperature Sensor Range/Performance Bank 1'
+  sources:
+    - https://github.com/Wal33D/dtc-database
+
+- code: P34B6
+  category: powertrain
+  title:
+    en: 'B Camshaft Position Actuator Temperature Sensor Circuit Low Bank 1'
+  sources:
+    - https://github.com/Wal33D/dtc-database
+
+- code: P34B7
+  category: powertrain
+  title:
+    en: 'B Camshaft Position Actuator Temperature Sensor Circuit High Bank 1'
+  sources:
+    - https://github.com/Wal33D/dtc-database
+
+- code: P34B8
+  category: powertrain
+  title:
+    en: 'B Camshaft Position Actuator Temperature Sensor Circuit Bank 2'
+  sources:
+    - https://github.com/Wal33D/dtc-database
+
+- code: P34B9
+  category: powertrain
+  title:
+    en: 'B Camshaft Position Actuator Temperature Sensor Range/Performance Bank 2'
+  sources:
+    - https://github.com/Wal33D/dtc-database
+
+- code: P34BA
+  category: powertrain
+  title:
+    en: 'B Camshaft Position Actuator Temperature Sensor Circuit Low Bank 2'
+  sources:
+    - https://github.com/Wal33D/dtc-database
+
+- code: P34BB
+  category: powertrain
+  title:
+    en: 'B Camshaft Position Actuator Temperature Sensor Circuit High Bank 2'
+  sources:
+    - https://github.com/Wal33D/dtc-database
+
+- code: P34BC
+  category: powertrain
+  title:
+    en: 'B Camshaft Position Actuator Position Sensor A Circuit Bank 1'
+  sources:
+    - https://github.com/Wal33D/dtc-database
+
+- code: P34BD
+  category: powertrain
+  title:
+    en: 'B Camshaft Position Actuator Position Sensor A Range/Performance Bank 1'
+  sources:
+    - https://github.com/Wal33D/dtc-database
+
+- code: P34BE
+  category: powertrain
+  title:
+    en: 'B Camshaft Position Actuator Position Sensor A Circuit Low Bank 1'
+  sources:
+    - https://github.com/Wal33D/dtc-database
+
+- code: P34BF
+  category: powertrain
+  title:
+    en: 'B Camshaft Position Actuator Position Sensor A Circuit High Bank 1'
+  sources:
+    - https://github.com/Wal33D/dtc-database
+
+- code: P34C0
+  category: powertrain
+  title:
+    en: 'B Camshaft Position Actuator Position Sensor A Circuit Bank 2'
+  sources:
+    - https://github.com/Wal33D/dtc-database
+
+- code: P34C1
+  category: powertrain
+  title:
+    en: 'B Camshaft Position Actuator Position Sensor A Range/Performance Bank 2'
+  sources:
+    - https://github.com/Wal33D/dtc-database
+
+- code: P34C2
+  category: powertrain
+  title:
+    en: 'B Camshaft Position Actuator Position Sensor A Circuit Low Bank 2'
+  sources:
+    - https://github.com/Wal33D/dtc-database
+
+- code: P34C3
+  category: powertrain
+  title:
+    en: 'B Camshaft Position Actuator Position Sensor A Circuit High Bank 2'
+  sources:
+    - https://github.com/Wal33D/dtc-database
+
+- code: P34C4
+  category: powertrain
+  title:
+    en: 'A Camshaft Position Actuator Control Circuit Driver Current/Temperature Too High Bank 1'
+  sources:
+    - https://github.com/Wal33D/dtc-database
+
+- code: P34C5
+  category: powertrain
+  title:
+    en: 'A Camshaft Position Actuator Control Circuit Driver Current/Temperature Too High Bank 2'
+  sources:
+    - https://github.com/Wal33D/dtc-database
+
+- code: P34C6
+  category: powertrain
+  title:
+    en: 'B Camshaft Position Actuator Control Circuit Driver Current/Temperature Too High Bank 1'
+  sources:
+    - https://github.com/Wal33D/dtc-database
+
+- code: P34C7
+  category: powertrain
+  title:
+    en: 'B Camshaft Position Actuator Control Circuit Driver Current/Temperature Too High Bank 2'
+  sources:
+    - https://github.com/Wal33D/dtc-database
+
+- code: P34C8
+  category: powertrain
+  title:
+    en: 'Camshaft Position Control Module Performance'
+  sources:
+    - https://github.com/Wal33D/dtc-database
