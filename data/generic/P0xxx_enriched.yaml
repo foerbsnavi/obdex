@@ -89,6 +89,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Common_rail
 
 - code: P0003
   category: powertrain
@@ -126,6 +127,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Common_rail
 
 - code: P0004
   category: powertrain
@@ -163,6 +165,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Common_rail
 
 - code: P0005
   category: powertrain
@@ -201,6 +204,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Common_rail
 
 - code: P0006
   category: powertrain
@@ -238,6 +242,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Common_rail
 
 - code: P0007
   category: powertrain
@@ -275,6 +280,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Common_rail
 
 - code: P0008
   category: powertrain
@@ -319,6 +325,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Crankshaft_position_sensor
 
 - code: P0009
   category: powertrain
@@ -358,6 +365,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Crankshaft_position_sensor
 
 - code: P000A
   category: powertrain
@@ -445,6 +453,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Variable_valve_timing
 
 - code: P000C
   category: powertrain
@@ -483,6 +492,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Variable_valve_timing
 
 - code: P000D
   category: powertrain
@@ -521,6 +531,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Variable_valve_timing
 
 - code: P000E
   category: powertrain
@@ -565,6 +576,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Common_rail
 
 - code: P000F
   category: powertrain
@@ -604,6 +616,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Common_rail
 
 - code: P0010
   category: powertrain
@@ -1025,6 +1038,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Variable_valve_timing
 
 - code: P001B
   category: powertrain
@@ -1062,6 +1076,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Variable_valve_timing
 
 - code: P001C
   category: powertrain
@@ -1099,6 +1114,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Variable_valve_timing
 
 - code: P001D
   category: powertrain
@@ -1136,6 +1152,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Variable_valve_timing
 
 - code: P001E
   category: powertrain
@@ -1168,6 +1185,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Variable_valve_timing
 
 - code: P001F
   category: powertrain
@@ -1200,6 +1218,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Variable_valve_timing
 
 - code: P0020
   category: powertrain
@@ -1612,6 +1631,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Variable_valve_timing
 
 - code: P002B
   category: powertrain
@@ -1644,6 +1664,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Variable_valve_timing
 
 - code: P002C
   category: powertrain
@@ -1676,6 +1697,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Variable_valve_timing
 
 - code: P002D
   category: powertrain
@@ -1708,6 +1730,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Variable_valve_timing
 
 - code: P002E
   category: powertrain
@@ -1740,6 +1763,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Variable_valve_timing
 
 - code: P002F
   category: powertrain
@@ -1772,6 +1796,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Variable_valve_timing
 
 - code: P0030
   category: powertrain
@@ -2184,6 +2209,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Wastegate
 
 - code: P003B
   category: powertrain
@@ -2216,6 +2242,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Wastegate
 
 - code: P003C
   category: powertrain
@@ -2254,6 +2281,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Variable_valve_timing
 
 - code: P003D
   category: powertrain
@@ -2291,6 +2319,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Variable_valve_timing
 
 - code: P003E
   category: powertrain
@@ -2323,6 +2352,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Variable_valve_timing
 
 - code: P003F
   category: powertrain
@@ -2355,6 +2385,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Variable_valve_timing
 
 - code: P0040
   category: powertrain
@@ -2393,6 +2424,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Oxygen_sensor
 
 - code: P0041
   category: powertrain
@@ -2426,6 +2458,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Oxygen_sensor
 
 - code: P0042
   category: powertrain
@@ -2463,6 +2496,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Oxygen_sensor
 
 - code: P0043
   category: powertrain
@@ -2495,6 +2529,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Oxygen_sensor
 
 - code: P0044
   category: powertrain
@@ -2527,6 +2562,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Oxygen_sensor
 
 - code: P0045
   category: powertrain
@@ -2564,6 +2600,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Wastegate
 
 - code: P0046
   category: powertrain
@@ -2602,6 +2639,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Turbocharger
 
 - code: P0047
   category: powertrain
@@ -2634,6 +2672,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Turbocharger
 
 - code: P0048
   category: powertrain
@@ -2666,6 +2705,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Turbocharger
 
 - code: P0049
   category: powertrain
@@ -2704,6 +2744,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Wastegate
 
 - code: P004A
   category: powertrain
@@ -2736,6 +2777,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Turbocharger
 
 - code: P004B
   category: powertrain
@@ -2768,6 +2810,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Turbocharger
 
 - code: P004C
   category: powertrain
@@ -2800,6 +2843,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Turbocharger
 
 - code: P004D
   category: powertrain
@@ -2832,6 +2876,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Turbocharger
 
 - code: P004E
   category: powertrain
@@ -2869,6 +2914,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Turbocharger
 
 - code: P004F
   category: powertrain
@@ -2901,6 +2947,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Turbocharger
 
 - code: P0050
   category: powertrain
@@ -3034,6 +3081,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Oxygen_sensor
 
 - code: P0054
   category: powertrain
@@ -3065,6 +3113,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Oxygen_sensor
 
 - code: P0055
   category: powertrain
@@ -3096,6 +3145,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Oxygen_sensor
 
 - code: P0056
   category: powertrain
@@ -3224,6 +3274,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Oxygen_sensor
 
 - code: P005A
   category: powertrain
@@ -3256,6 +3307,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Variable_valve_timing
 
 - code: P005B
   category: powertrain
@@ -3288,6 +3340,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Variable_valve_timing
 
 - code: P005C
   category: powertrain
@@ -3320,6 +3373,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Variable_valve_timing
 
 - code: P005D
   category: powertrain
@@ -3352,6 +3406,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Variable_valve_timing
 
 - code: P005E
   category: powertrain
@@ -3385,6 +3440,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Turbocharger
 
 - code: P005F
   category: powertrain
@@ -3417,6 +3473,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Turbocharger
 
 - code: P0060
   category: powertrain
@@ -3448,6 +3505,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Oxygen_sensor
 
 - code: P0061
   category: powertrain
@@ -3479,6 +3537,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Oxygen_sensor
 
 - code: P0062
   category: powertrain
@@ -3511,6 +3570,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Oxygen_sensor
 
 - code: P0063
   category: powertrain
@@ -3543,6 +3603,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Oxygen_sensor
 
 - code: P0064
   category: powertrain
@@ -3575,6 +3636,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Oxygen_sensor
 
 - code: P0065
   category: powertrain
@@ -3607,6 +3669,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Common_rail
 
 - code: P0066
   category: powertrain
@@ -3639,6 +3702,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Common_rail
 
 - code: P0067
   category: powertrain
@@ -3671,6 +3735,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Common_rail
 
 - code: P0068
   category: powertrain
@@ -3833,6 +3898,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/MAP_sensor
 
 - code: P006C
   category: powertrain
@@ -3866,6 +3932,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/MAP_sensor
 
 - code: P006D
   category: powertrain
@@ -3898,6 +3965,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Turbocharger
 
 - code: P006E
   category: powertrain
@@ -3931,6 +3999,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Turbocharger
 
 - code: P006F
   category: powertrain
@@ -3963,6 +4032,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Turbocharger
 
 - code: P0070
   category: powertrain
@@ -4000,6 +4070,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Thermistor
 
 - code: P0071
   category: powertrain
@@ -4036,6 +4107,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Internal_combustion_engine_cooling
 
 - code: P0072
   category: powertrain
@@ -4068,6 +4140,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Thermistor
 
 - code: P0073
   category: powertrain
@@ -4100,6 +4173,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Thermistor
 
 - code: P0074
   category: powertrain
@@ -4132,6 +4206,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Thermistor
 
 - code: P0075
   category: powertrain
@@ -4164,6 +4239,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Variable_valve_lift
 
 - code: P0076
   category: powertrain
@@ -4196,6 +4272,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Variable_valve_lift
 
 - code: P0077
   category: powertrain
@@ -4228,6 +4305,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Variable_valve_lift
 
 - code: P0078
   category: powertrain
@@ -4260,6 +4338,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Variable_valve_lift
 
 - code: P0079
   category: powertrain
@@ -4292,6 +4371,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Variable_valve_lift
 
 - code: P007A
   category: powertrain
@@ -4324,6 +4404,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Intercooler
 
 - code: P007B
   category: powertrain
@@ -4356,6 +4437,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Intercooler
 
 - code: P007C
   category: powertrain
@@ -4388,6 +4470,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Intercooler
 
 - code: P007D
   category: powertrain
@@ -4420,6 +4503,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Intercooler
 
 - code: P007E
   category: powertrain
@@ -4452,6 +4536,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Intercooler
 
 - code: P007F
   category: powertrain
@@ -4484,6 +4569,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Intercooler
 
 - code: P0080
   category: powertrain
@@ -4516,6 +4602,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Variable_valve_lift
 
 - code: P0081
   category: powertrain
@@ -4548,6 +4635,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Variable_valve_lift
 
 - code: P0082
   category: powertrain
@@ -4580,6 +4668,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Variable_valve_lift
 
 - code: P0083
   category: powertrain
@@ -4612,6 +4701,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Variable_valve_lift
 
 - code: P0084
   category: powertrain
@@ -4644,6 +4734,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Variable_valve_lift
 
 - code: P0085
   category: powertrain
@@ -4676,6 +4767,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Variable_valve_lift
 
 - code: P0086
   category: powertrain
@@ -4708,6 +4800,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Variable_valve_lift
 
 - code: P0087
   category: powertrain
@@ -4876,6 +4969,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Common_rail
 
 - code: P008B
   category: powertrain
@@ -4914,6 +5008,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Common_rail
 
 - code: P008C
   category: powertrain
@@ -4951,6 +5046,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Common_rail
 
 - code: P008D
   category: powertrain
@@ -4983,6 +5079,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Common_rail
 
 - code: P008E
   category: powertrain
@@ -5015,6 +5112,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Common_rail
 
 - code: P008F
   category: powertrain
@@ -5047,6 +5145,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Internal_combustion_engine_cooling
 
 - code: P0090
   category: powertrain
@@ -5084,6 +5183,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Common_rail
 
 - code: P0091
   category: powertrain
@@ -5116,6 +5216,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Common_rail
 
 - code: P0092
   category: powertrain
@@ -5148,6 +5249,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Common_rail
 
 - code: P0093
   category: powertrain
@@ -5186,6 +5288,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Fuel_injection
 
 - code: P0094
   category: powertrain
@@ -5218,6 +5321,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Fuel_injection
 
 - code: P0095
   category: powertrain
@@ -5250,6 +5354,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Intercooler
 
 - code: P0096
   category: powertrain
@@ -5281,6 +5386,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Thermistor
 
 - code: P0097
   category: powertrain
@@ -5313,6 +5419,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Thermistor
 
 - code: P0098
   category: powertrain
@@ -5345,6 +5452,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Thermistor
 
 - code: P0099
   category: powertrain
@@ -5377,6 +5485,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Thermistor
 
 - code: P009A
   category: powertrain
@@ -5409,6 +5518,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Thermistor
 
 - code: P009B
   category: powertrain
@@ -5441,6 +5551,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Common_rail
 
 - code: P009C
   category: powertrain
@@ -5473,6 +5584,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Common_rail
 
 - code: P009D
   category: powertrain
@@ -5505,6 +5617,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Common_rail
 
 - code: P009E
   category: powertrain
@@ -5536,6 +5649,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Common_rail
 
 - code: P009F
   category: powertrain
@@ -5567,6 +5681,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Common_rail
 
 - code: P00A0
   category: powertrain
@@ -5599,6 +5714,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Intercooler
 
 - code: P00A1
   category: powertrain
@@ -5630,6 +5746,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Intercooler
 
 - code: P00A2
   category: powertrain
@@ -5662,6 +5779,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Intercooler
 
 - code: P00A3
   category: powertrain
@@ -5694,6 +5812,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Intercooler
 
 - code: P00A4
   category: powertrain
@@ -5726,6 +5845,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Intercooler
 
 - code: P00A5
   category: powertrain
@@ -5758,6 +5878,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Intercooler
 
 - code: P00A6
   category: powertrain
@@ -5789,6 +5910,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Thermistor
 
 - code: P00A7
   category: powertrain
@@ -5821,6 +5943,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Thermistor
 
 - code: P00A8
   category: powertrain
@@ -5853,6 +5976,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Thermistor
 
 - code: P00A9
   category: powertrain
@@ -5885,6 +6009,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Thermistor
 
 - code: P00AA
   category: powertrain
@@ -5917,6 +6042,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Intercooler
 
 - code: P00AB
   category: powertrain
@@ -5948,6 +6074,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Thermistor
 
 - code: P00AC
   category: powertrain
@@ -5980,6 +6107,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Thermistor
 
 - code: P00AD
   category: powertrain
@@ -6012,6 +6140,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Thermistor
 
 - code: P00AE
   category: powertrain
@@ -6044,6 +6173,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Thermistor
 
 - code: P00AF
   category: powertrain
@@ -6075,6 +6205,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Turbocharger
 
 - code: P00B0
   category: powertrain
@@ -6106,6 +6237,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Turbocharger
 
 - code: P00B1
   category: powertrain
@@ -6138,6 +6270,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Internal_combustion_engine_cooling
 
 - code: P00B2
   category: powertrain
@@ -6170,6 +6303,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Internal_combustion_engine_cooling
 
 - code: P00B3
   category: powertrain
@@ -6202,6 +6336,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Internal_combustion_engine_cooling
 
 - code: P00B4
   category: powertrain
@@ -6234,6 +6369,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Internal_combustion_engine_cooling
 
 - code: P00B5
   category: powertrain
@@ -6266,6 +6402,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Internal_combustion_engine_cooling
 
 - code: P00B6
   category: powertrain
@@ -6299,6 +6436,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Internal_combustion_engine_cooling
 
 - code: P00B7
   category: powertrain
@@ -6337,6 +6475,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Internal_combustion_engine_cooling
 
 - code: P00B8
   category: powertrain
@@ -6374,6 +6513,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Mass_flow_sensor
 
 - code: P00B9
   category: powertrain
@@ -6407,6 +6547,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Fuel_injection
 
 - code: P00BA
   category: powertrain
@@ -6440,6 +6581,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Common_rail
 
 - code: P00BB
   category: powertrain
@@ -6471,6 +6613,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Common_rail
 
 - code: P00BC
   category: powertrain
@@ -6503,6 +6646,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Mass_flow_sensor
 
 - code: P00BD
   category: powertrain
@@ -6534,6 +6678,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Mass_flow_sensor
 
 - code: P00BE
   category: powertrain
@@ -6565,6 +6710,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Mass_flow_sensor
 
 - code: P00BF
   category: powertrain
@@ -6596,6 +6742,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Mass_flow_sensor
 
 - code: P00C0
   category: powertrain
@@ -6628,6 +6775,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Turbocharger
 
 - code: P00C1
   category: powertrain
@@ -6660,6 +6808,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Turbocharger
 
 - code: P00C2
   category: powertrain
@@ -6692,6 +6841,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Turbocharger
 
 - code: P00C3
   category: powertrain
@@ -6723,6 +6873,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Turbocharger
 
 - code: P00C4
   category: powertrain
@@ -6755,6 +6906,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Turbocharger
 
 - code: P00C5
   category: powertrain
@@ -6787,6 +6939,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Turbocharger
 
 - code: P00C6
   category: powertrain
@@ -6825,6 +6978,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Common_rail
 
 - code: P00C7
   category: powertrain
@@ -6857,6 +7011,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/MAP_sensor
 
 - code: P00C8
   category: powertrain
@@ -6889,6 +7044,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Common_rail
 
 - code: P00C9
   category: powertrain
@@ -6922,6 +7078,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Common_rail
 
 - code: P00CA
   category: powertrain
@@ -6954,6 +7111,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Common_rail
 
 - code: P00CB
   category: powertrain
@@ -6986,6 +7144,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Common_rail
 
 - code: P00CC
   category: powertrain
@@ -7019,6 +7178,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Common_rail
 
 - code: P00CD
   category: powertrain
@@ -7051,6 +7211,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Common_rail
 
 - code: P00CE
   category: powertrain
@@ -7083,6 +7244,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Thermistor
 
 - code: P00CF
   category: powertrain
@@ -7115,6 +7277,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Turbocharger
 
 - code: P00D0
   category: powertrain
@@ -7147,6 +7310,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Turbocharger
 
 - code: P00D1
   category: powertrain
@@ -7178,6 +7342,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Oxygen_sensor
 
 - code: P00D2
   category: powertrain
@@ -7209,6 +7374,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Oxygen_sensor
 
 - code: P00D3
   category: powertrain
@@ -7240,6 +7406,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Oxygen_sensor
 
 - code: P00D4
   category: powertrain
@@ -7271,6 +7438,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Oxygen_sensor
 
 - code: P00D5
   category: powertrain
@@ -7304,6 +7472,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Oxygen_sensor
 
 - code: P00D6
   category: powertrain
@@ -7337,6 +7506,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Oxygen_sensor
 
 - code: P00D7
   category: powertrain
@@ -7369,6 +7539,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Turbocharger
 
 - code: P00D8
   category: powertrain
@@ -7401,6 +7572,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Turbocharger
 
 - code: P00D9
   category: powertrain
@@ -7433,6 +7605,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Thermistor
 
 - code: P00DA
   category: powertrain
@@ -7464,6 +7637,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Thermistor
 
 - code: P00DB
   category: powertrain
@@ -7496,6 +7670,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Thermistor
 
 - code: P00DC
   category: powertrain
@@ -7528,6 +7703,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Thermistor
 
 - code: P00DD
   category: powertrain
@@ -7560,6 +7736,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Thermistor
 
 - code: P00DE
   category: powertrain
@@ -7592,6 +7769,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Intercooler
 
 - code: P00DF
   category: powertrain
@@ -7623,6 +7801,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Intercooler
 
 - code: P00E0
   category: powertrain
@@ -7655,6 +7834,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Intercooler
 
 - code: P00E1
   category: powertrain
@@ -7687,6 +7867,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Intercooler
 
 - code: P00E2
   category: powertrain
@@ -7719,6 +7900,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Intercooler
 
 - code: P00E3
   category: powertrain
@@ -7751,6 +7933,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Heat_exchanger
 
 - code: P00E4
   category: powertrain
@@ -7783,6 +7966,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Heat_exchanger
 
 - code: P00E5
   category: powertrain
@@ -7815,6 +7999,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Thermistor
 
 - code: P00E6
   category: powertrain
@@ -7847,6 +8032,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/MAP_sensor
 
 - code: P00E7
   category: powertrain
@@ -7879,6 +8065,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Thermistor
 
 - code: P00E8
   category: powertrain
@@ -7911,6 +8098,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Intercooler
 
 - code: P00E9
   category: powertrain
@@ -7942,6 +8130,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Thermistor
 
 - code: P00EA
   category: powertrain
@@ -7974,6 +8163,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Thermistor
 
 - code: P00EB
   category: powertrain
@@ -8006,6 +8196,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Thermistor
 
 - code: P00EC
   category: powertrain
@@ -8038,6 +8229,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Thermistor
 
 - code: P00ED
   category: powertrain
@@ -8070,6 +8262,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Intercooler
 
 - code: P00EE
   category: powertrain
@@ -8101,6 +8294,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Thermistor
 
 - code: P00EF
   category: powertrain
@@ -8133,6 +8327,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Thermistor
 
 - code: P00F0
   category: powertrain
@@ -8165,6 +8360,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Thermistor
 
 - code: P00F1
   category: powertrain
@@ -8197,6 +8393,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Thermistor
 
 - code: P00F2
   category: powertrain
@@ -8229,6 +8426,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Hygrometer
 
 - code: P00F3
   category: powertrain
@@ -8260,6 +8458,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Hygrometer
 
 - code: P00F4
   category: powertrain
@@ -8292,6 +8491,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Hygrometer
 
 - code: P00F5
   category: powertrain
@@ -8324,6 +8524,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Hygrometer
 
 - code: P00F6
   category: powertrain
@@ -8356,6 +8557,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Hygrometer
 
 - code: P00F7
   category: powertrain
@@ -8388,6 +8590,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Turbocharger
 
 - code: P00F8
   category: powertrain
@@ -8420,6 +8623,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Turbocharger
 
 - code: P00F9
   category: powertrain
@@ -8451,6 +8655,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Turbocharger
 
 - code: P00FA
   category: powertrain
@@ -8483,6 +8688,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Turbocharger
 
 - code: P00FB
   category: powertrain
@@ -8515,6 +8721,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Turbocharger
 
 - code: P00FC
   category: powertrain
@@ -8547,6 +8754,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Turbocharger
 
 - code: P00FD
   category: powertrain
@@ -8579,6 +8787,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/State_of_charge
 
 - code: P00FE
   category: powertrain
@@ -8611,6 +8820,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Onboard_refueling_vapor_recovery
 
 - code: P00FF
   category: network
@@ -8643,6 +8853,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Body_control_module
 
 - code: P0100
   category: powertrain
@@ -9096,6 +9307,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Mass_flow_sensor
 
 - code: P010B
   category: powertrain
@@ -9127,6 +9339,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Mass_flow_sensor
 
 - code: P010C
   category: powertrain
@@ -9159,6 +9372,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Mass_flow_sensor
 
 - code: P010D
   category: powertrain
@@ -9191,6 +9405,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Mass_flow_sensor
 
 - code: P010E
   category: powertrain
@@ -9223,6 +9438,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Mass_flow_sensor
 
 - code: P010F
   category: powertrain
@@ -9255,6 +9471,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Mass_flow_sensor
 
 - code: P0110
   category: powertrain
@@ -9659,6 +9876,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Internal_combustion_engine_cooling
 
 - code: P011B
   category: powertrain
@@ -9691,6 +9909,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Internal_combustion_engine_cooling
 
 - code: P011C
   category: powertrain
@@ -9723,6 +9942,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Intercooler
 
 - code: P011D
   category: powertrain
@@ -9755,6 +9975,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Intercooler
 
 - code: P011E
   category: powertrain
@@ -9787,6 +10008,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Internal_combustion_engine_cooling
 
 - code: P011F
   category: powertrain
@@ -9819,6 +10041,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Internal_combustion_engine_cooling
 
 - code: P0120
   category: powertrain
@@ -10127,6 +10350,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Thermistor
 
 - code: P0128
   category: powertrain
@@ -10194,6 +10418,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Barometer
 
 - code: P012A
   category: powertrain
@@ -10226,6 +10451,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Turbocharger
 
 - code: P012B
   category: powertrain
@@ -10257,6 +10483,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Turbocharger
 
 - code: P012C
   category: powertrain
@@ -10289,6 +10516,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Turbocharger
 
 - code: P012D
   category: powertrain
@@ -10321,6 +10549,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Turbocharger
 
 - code: P012E
   category: powertrain
@@ -10353,6 +10582,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Turbocharger
 
 - code: P012F
   category: powertrain
@@ -10385,6 +10615,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Internal_combustion_engine_cooling
 
 - code: P0130
   category: powertrain
@@ -10814,6 +11045,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Oxygen_sensor
 
 - code: P013B
   category: powertrain
@@ -10845,6 +11077,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Oxygen_sensor
 
 - code: P013C
   category: powertrain
@@ -10876,6 +11109,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Oxygen_sensor
 
 - code: P013D
   category: powertrain
@@ -10907,6 +11141,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Oxygen_sensor
 
 - code: P013E
   category: powertrain
@@ -10938,6 +11173,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Oxygen_sensor
 
 - code: P013F
   category: powertrain
@@ -10969,6 +11205,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Oxygen_sensor
 
 - code: P0140
   category: powertrain
@@ -11312,6 +11549,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Fuel_injection
 
 - code: P0149
   category: powertrain
@@ -11345,6 +11583,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Fuel_injection
 
 - code: P014A
   category: powertrain
@@ -11376,6 +11615,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Oxygen_sensor
 
 - code: P014B
   category: powertrain
@@ -11407,6 +11647,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Oxygen_sensor
 
 - code: P014C
   category: powertrain
@@ -11438,6 +11679,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Oxygen_sensor
 
 - code: P014D
   category: powertrain
@@ -11469,6 +11711,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Oxygen_sensor
 
 - code: P014E
   category: powertrain
@@ -11500,6 +11743,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Oxygen_sensor
 
 - code: P014F
   category: powertrain
@@ -11531,6 +11775,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Oxygen_sensor
 
 - code: P0150
   category: powertrain
@@ -11934,6 +12179,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Oxygen_sensor
 
 - code: P015B
   category: powertrain
@@ -11965,6 +12211,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Oxygen_sensor
 
 - code: P015C
   category: powertrain
@@ -11996,6 +12243,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Oxygen_sensor
 
 - code: P015D
   category: powertrain
@@ -12027,6 +12275,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Oxygen_sensor
 
 - code: P015E
   category: powertrain
@@ -12059,6 +12308,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Air%E2%80%93fuel_ratio
 
 - code: P015F
   category: powertrain
@@ -12091,6 +12341,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Fuel_injection
 
 - code: P0160
   category: powertrain
@@ -12411,6 +12662,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Fuel_injection
 
 - code: P0169
   category: powertrain
@@ -12442,6 +12694,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Fuel_injection
 
 - code: P016A
   category: powertrain
@@ -12474,6 +12727,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Oxygen_sensor
 
 - code: P016B
   category: powertrain
@@ -12507,6 +12761,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Oxygen_sensor
 
 - code: P016C
   category: powertrain
@@ -12540,6 +12795,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Mass_flow_sensor
 
 - code: P016D
   category: powertrain
@@ -12573,6 +12829,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Common_rail
 
 - code: P016E
   category: powertrain
@@ -12605,6 +12862,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Common_rail
 
 - code: P016F
   category: powertrain
@@ -12637,6 +12895,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Common_rail
 
 - code: P0170
   category: powertrain
@@ -13073,6 +13332,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Internal_combustion_engine_cooling
 
 - code: P017B
   category: powertrain
@@ -13104,6 +13364,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Internal_combustion_engine_cooling
 
 - code: P017C
   category: powertrain
@@ -13136,6 +13397,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Internal_combustion_engine_cooling
 
 - code: P017D
   category: powertrain
@@ -13168,6 +13430,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Internal_combustion_engine_cooling
 
 - code: P017E
   category: powertrain
@@ -13200,6 +13463,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Internal_combustion_engine_cooling
 
 - code: P017F
   category: powertrain
@@ -13232,6 +13496,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Onboard_refueling_vapor_recovery
 
 - code: P0180
   category: powertrain
@@ -13612,6 +13877,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Common_rail
 
 - code: P018B
   category: powertrain
@@ -13643,6 +13909,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Common_rail
 
 - code: P018C
   category: powertrain
@@ -13675,6 +13942,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Common_rail
 
 - code: P018D
   category: powertrain
@@ -13707,6 +13975,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Common_rail
 
 - code: P018E
   category: powertrain
@@ -13739,6 +14008,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Common_rail
 
 - code: P018F
   category: powertrain
@@ -13771,6 +14041,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Fuel_injection
 
 - code: P0190
   category: powertrain
@@ -14157,6 +14428,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Oxygen_sensor
 
 - code: P019B
   category: powertrain
@@ -14188,6 +14460,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Oxygen_sensor
 
 - code: P019C
   category: powertrain
@@ -14219,6 +14492,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Oxygen_sensor
 
 - code: P019D
   category: powertrain
@@ -14250,6 +14524,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Oxygen_sensor
 
 - code: P019E
   category: powertrain
@@ -14282,6 +14557,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Fuel_injection
 
 - code: P019F
   category: powertrain
@@ -14313,6 +14589,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Fuel_injection
 
 - code: P01A0
   category: powertrain
@@ -14345,6 +14622,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Fuel_injection
 
 - code: P01A1
   category: powertrain
@@ -14377,6 +14655,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Fuel_injection
 
 - code: P01A2
   category: powertrain
@@ -14409,6 +14688,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Fuel_injection
 
 - code: P01A3
   category: powertrain
@@ -14441,6 +14721,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Common_rail
 
 - code: P01A4
   category: powertrain
@@ -14472,6 +14753,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Common_rail
 
 - code: P01A5
   category: powertrain
@@ -14504,6 +14786,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Common_rail
 
 - code: P01A6
   category: powertrain
@@ -14536,6 +14819,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Common_rail
 
 - code: P01A7
   category: powertrain
@@ -14568,6 +14852,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Common_rail
 
 - code: P01A8
   category: powertrain
@@ -14601,6 +14886,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Common_rail
 
 - code: P01A9
   category: powertrain
@@ -14633,6 +14919,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Common_rail
 
 - code: P01AA
   category: powertrain
@@ -14665,6 +14952,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Fuel_injection
 
 - code: P01AB
   category: powertrain
@@ -14696,6 +14984,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Fuel_injection
 
 - code: P01AC
   category: powertrain
@@ -14728,6 +15017,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Fuel_injection
 
 - code: P01AD
   category: powertrain
@@ -14760,6 +15050,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Fuel_injection
 
 - code: P01AE
   category: powertrain
@@ -14792,6 +15083,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Fuel_injection
 
 - code: P01AF
   category: powertrain
@@ -14824,6 +15116,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Fuel_injection
 
 - code: P01B0
   category: powertrain
@@ -14855,6 +15148,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Fuel_injection
 
 - code: P01B1
   category: powertrain
@@ -14887,6 +15181,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Fuel_injection
 
 - code: P01B2
   category: powertrain
@@ -14919,6 +15214,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Fuel_injection
 
 - code: P01B3
   category: powertrain
@@ -14951,6 +15247,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Fuel_injection
 
 - code: P01B4
   category: powertrain
@@ -14983,6 +15280,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Common_rail
 
 - code: P01B5
   category: powertrain
@@ -15014,6 +15312,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Common_rail
 
 - code: P01B6
   category: powertrain
@@ -15046,6 +15345,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Common_rail
 
 - code: P01B7
   category: powertrain
@@ -15078,6 +15378,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Common_rail
 
 - code: P01B8
   category: powertrain
@@ -15110,6 +15411,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Common_rail
 
 - code: P01B9
   category: powertrain
@@ -15142,6 +15444,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Motor_oil
 
 - code: P01BA
   category: powertrain
@@ -15173,6 +15476,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Motor_oil
 
 - code: P01BB
   category: powertrain
@@ -15205,6 +15509,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Motor_oil
 
 - code: P01BC
   category: powertrain
@@ -15237,6 +15542,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Motor_oil
 
 - code: P01BD
   category: powertrain
@@ -15269,6 +15575,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Motor_oil
 
 - code: P01BE
   category: powertrain
@@ -15301,6 +15608,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Common_rail
 
 - code: P01BF
   category: powertrain
@@ -15332,6 +15640,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Common_rail
 
 - code: P01C0
   category: powertrain
@@ -15364,6 +15673,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Common_rail
 
 - code: P01C1
   category: powertrain
@@ -15396,6 +15706,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Common_rail
 
 - code: P01C2
   category: powertrain
@@ -15428,6 +15739,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Common_rail
 
 - code: P01C3
   category: powertrain
@@ -15460,6 +15772,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Common_rail
 
 - code: P01C4
   category: powertrain
@@ -15491,6 +15804,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Common_rail
 
 - code: P01C5
   category: powertrain
@@ -15523,6 +15837,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Common_rail
 
 - code: P01C6
   category: powertrain
@@ -15555,6 +15870,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Common_rail
 
 - code: P01C7
   category: powertrain
@@ -15587,6 +15903,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Common_rail
 
 - code: P01C8
   category: powertrain
@@ -15619,6 +15936,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Common_rail
 
 - code: P01C9
   category: powertrain
@@ -15651,6 +15969,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Common_rail
 
 - code: P01CA
   category: powertrain
@@ -15684,6 +16003,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Common_rail
 
 - code: P01CB
   category: powertrain
@@ -15715,6 +16035,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Fuel_injection
 
 - code: P01CC
   category: powertrain
@@ -15746,6 +16067,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Fuel_injection
 
 - code: P01CD
   category: powertrain
@@ -15777,6 +16099,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Fuel_injection
 
 - code: P01CE
   category: powertrain
@@ -15808,6 +16131,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Fuel_injection
 
 - code: P01CF
   category: powertrain
@@ -15839,6 +16163,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Fuel_injection
 
 - code: P01D0
   category: powertrain
@@ -15870,6 +16195,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Fuel_injection
 
 - code: P01D1
   category: powertrain
@@ -15901,6 +16227,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Fuel_injection
 
 - code: P01D2
   category: powertrain
@@ -15932,6 +16259,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Fuel_injection
 
 - code: P01D3
   category: powertrain
@@ -15963,6 +16291,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Fuel_injection
 
 - code: P01D4
   category: powertrain
@@ -15994,6 +16323,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Fuel_injection
 
 - code: P01D5
   category: powertrain
@@ -16025,6 +16355,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Fuel_injection
 
 - code: P01D6
   category: powertrain
@@ -16056,6 +16387,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Fuel_injection
 
 - code: P01D7
   category: powertrain
@@ -16087,6 +16419,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Fuel_injection
 
 - code: P01D8
   category: powertrain
@@ -16118,6 +16451,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Fuel_injection
 
 - code: P01D9
   category: powertrain
@@ -16149,6 +16483,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Fuel_injection
 
 - code: P01DA
   category: powertrain
@@ -16180,6 +16515,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Fuel_injection
 
 - code: P01DB
   category: powertrain
@@ -16211,6 +16547,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Fuel_injection
 
 - code: P01DC
   category: powertrain
@@ -16242,6 +16579,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Fuel_injection
 
 - code: P01DD
   category: powertrain
@@ -16273,6 +16611,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Fuel_injection
 
 - code: P01DE
   category: powertrain
@@ -16304,6 +16643,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Fuel_injection
 
 - code: P01DF
   category: powertrain
@@ -16335,6 +16675,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Fuel_injection
 
 - code: P01E0
   category: powertrain
@@ -16366,6 +16707,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Fuel_injection
 
 - code: P01E1
   category: powertrain
@@ -16397,6 +16739,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Fuel_injection
 
 - code: P01E2
   category: powertrain
@@ -16428,6 +16771,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Fuel_injection
 
 - code: P01E3
   category: powertrain
@@ -16460,6 +16804,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Internal_combustion_engine_cooling
 
 - code: P01E4
   category: powertrain
@@ -16491,6 +16836,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Internal_combustion_engine_cooling
 
 - code: P01E5
   category: powertrain
@@ -16523,6 +16869,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Internal_combustion_engine_cooling
 
 - code: P01E6
   category: powertrain
@@ -16555,6 +16902,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Internal_combustion_engine_cooling
 
 - code: P01E7
   category: powertrain
@@ -16587,6 +16935,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Internal_combustion_engine_cooling
 
 - code: P01E8
   category: powertrain
@@ -16619,6 +16968,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Internal_combustion_engine_cooling
 
 - code: P01E9
   category: powertrain
@@ -16651,6 +17001,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Internal_combustion_engine_cooling
 
 - code: P01EA
   category: powertrain
@@ -16683,6 +17034,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Internal_combustion_engine_cooling
 
 - code: P01EB
   category: powertrain
@@ -16714,6 +17066,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Internal_combustion_engine_cooling
 
 - code: P01EC
   category: powertrain
@@ -16746,6 +17099,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Internal_combustion_engine_cooling
 
 - code: P01ED
   category: powertrain
@@ -16778,6 +17132,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Internal_combustion_engine_cooling
 
 - code: P01EE
   category: powertrain
@@ -16810,6 +17165,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Internal_combustion_engine_cooling
 
 - code: P01EF
   category: powertrain
@@ -16841,6 +17197,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Internal_combustion_engine_cooling
 
 - code: P01F0
   category: powertrain
@@ -16873,6 +17230,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Internal_combustion_engine_cooling
 
 - code: P01F1
   category: powertrain
@@ -16905,6 +17263,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Oxygen_sensor
 
 - code: P01F2
   category: powertrain
@@ -16937,6 +17296,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Oxygen_sensor
 
 - code: P01F3
   category: powertrain
@@ -16969,6 +17329,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Oxygen_sensor
 
 - code: P01F4
   category: powertrain
@@ -17000,6 +17361,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Oxygen_sensor
 
 - code: P01F5
   category: powertrain
@@ -17032,6 +17394,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Oxygen_sensor
 
 - code: P01F6
   category: powertrain
@@ -17063,6 +17426,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Oxygen_sensor
 
 - code: P01F7
   category: powertrain
@@ -17094,6 +17458,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Oxygen_sensor
 
 - code: P01F8
   category: powertrain
@@ -17126,6 +17491,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Internal_combustion_engine_cooling
 
 - code: P01F9
   category: powertrain
@@ -17158,6 +17524,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Internal_combustion_engine_cooling
 
 - code: P01FA
   category: powertrain
@@ -17190,6 +17557,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Turbocharger
 
 - code: P01FB
   category: powertrain
@@ -17221,6 +17589,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Turbocharger
 
 - code: P01FC
   category: powertrain
@@ -17253,6 +17622,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Turbocharger
 
 - code: P01FD
   category: powertrain
@@ -17285,6 +17655,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Turbocharger
 
 - code: P01FE
   category: powertrain
@@ -17317,6 +17688,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Turbocharger
 
 - code: P01FF
   category: powertrain
@@ -17349,6 +17721,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Turbocharger
 
 - code: P0200
   category: powertrain
@@ -17381,6 +17754,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Fuel_injection
 
 - code: P0201
   category: powertrain
@@ -17747,6 +18121,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Fuel_injection
 
 - code: P020B
   category: powertrain
@@ -17778,6 +18153,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Fuel_injection
 
 - code: P020C
   category: powertrain
@@ -17809,6 +18185,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Fuel_injection
 
 - code: P020D
   category: powertrain
@@ -17840,6 +18217,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Fuel_injection
 
 - code: P020E
   category: powertrain
@@ -17871,6 +18249,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Fuel_injection
 
 - code: P020F
   category: powertrain
@@ -17902,6 +18281,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Fuel_injection
 
 - code: P0210
   category: powertrain
@@ -18044,6 +18424,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Common_rail
 
 - code: P0214
   category: powertrain
@@ -18075,6 +18456,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Common_rail
 
 - code: P0215
   category: powertrain
@@ -18107,6 +18489,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Fuel_injection
 
 - code: P0216
   category: powertrain
@@ -18139,6 +18522,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Common_rail
 
 - code: P0217
   category: powertrain
@@ -18183,6 +18567,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Internal_combustion_engine_cooling
 
 - code: P0218
   category: powertrain
@@ -18291,6 +18676,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Fuel_injection
 
 - code: P021B
   category: powertrain
@@ -18322,6 +18708,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Fuel_injection
 
 - code: P021C
   category: powertrain
@@ -18353,6 +18740,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Fuel_injection
 
 - code: P021D
   category: powertrain
@@ -18384,6 +18772,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Fuel_injection
 
 - code: P021E
   category: powertrain
@@ -18415,6 +18804,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Fuel_injection
 
 - code: P021F
   category: powertrain
@@ -18446,6 +18836,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Fuel_injection
 
 - code: P0220
   category: powertrain
@@ -18626,6 +19017,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Throttle_position_sensor
 
 - code: P0225
   category: powertrain
@@ -18658,6 +19050,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Throttle_position_sensor
 
 - code: P0226
   category: powertrain
@@ -18726,6 +19119,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Throttle_position_sensor
 
 - code: P0228
   category: powertrain
@@ -18758,6 +19152,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Throttle_position_sensor
 
 - code: P0229
   category: powertrain
@@ -18790,6 +19185,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Throttle_position_sensor
 
 - code: P022A
   category: powertrain
@@ -18822,6 +19218,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Intercooler
 
 - code: P022B
   category: powertrain
@@ -18854,6 +19251,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Intercooler
 
 - code: P022C
   category: powertrain
@@ -18886,6 +19284,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Intercooler
 
 - code: P022D
   category: powertrain
@@ -18918,6 +19317,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Intercooler
 
 - code: P022E
   category: powertrain
@@ -18950,6 +19350,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Intercooler
 
 - code: P022F
   category: powertrain
@@ -18982,6 +19383,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Intercooler
 
 - code: P0230
   category: powertrain
@@ -19122,6 +19524,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Common_rail
 
 - code: P0234
   category: powertrain
@@ -19352,6 +19755,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Turbocharger
 
 - code: P023A
   category: powertrain
@@ -19384,6 +19788,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Intercooler
 
 - code: P023B
   category: powertrain
@@ -19416,6 +19821,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Intercooler
 
 - code: P023C
   category: powertrain
@@ -19448,6 +19854,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Intercooler
 
 - code: P023D
   category: powertrain
@@ -19480,6 +19887,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/MAP_sensor
 
 - code: P023E
   category: powertrain
@@ -19512,6 +19920,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/MAP_sensor
 
 - code: P023F
   category: powertrain
@@ -19544,6 +19953,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Common_rail
 
 - code: P0240
   category: powertrain
@@ -19575,6 +19985,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Turbocharger
 
 - code: P0241
   category: powertrain
@@ -19607,6 +20018,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Turbocharger
 
 - code: P0242
   category: powertrain
@@ -19639,6 +20051,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Turbocharger
 
 - code: P0243
   category: powertrain
@@ -19671,6 +20084,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Wastegate
 
 - code: P0244
   category: powertrain
@@ -19703,6 +20117,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Wastegate
 
 - code: P0245
   category: powertrain
@@ -19895,6 +20310,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Wastegate
 
 - code: P024A
   category: powertrain
@@ -19926,6 +20342,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Intercooler
 
 - code: P024B
   category: powertrain
@@ -19957,6 +20374,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Intercooler
 
 - code: P024C
   category: powertrain
@@ -19989,6 +20407,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Intercooler
 
 - code: P024D
   category: powertrain
@@ -20020,6 +20439,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Intercooler
 
 - code: P024E
   category: powertrain
@@ -20052,6 +20472,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Intercooler
 
 - code: P024F
   category: powertrain
@@ -20084,6 +20505,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Intercooler
 
 - code: P0250
   category: powertrain
@@ -20116,6 +20538,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Wastegate
 
 - code: P0251
   category: powertrain
@@ -20148,6 +20571,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Common_rail
 
 - code: P0252
   category: powertrain
@@ -20180,6 +20604,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Common_rail
 
 - code: P0253
   category: powertrain
@@ -20212,6 +20637,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Common_rail
 
 - code: P0254
   category: powertrain
@@ -20244,6 +20670,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Common_rail
 
 - code: P0255
   category: powertrain
@@ -20276,6 +20703,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Common_rail
 
 - code: P0256
   category: powertrain
@@ -20307,6 +20735,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Common_rail
 
 - code: P0257
   category: powertrain
@@ -20338,6 +20767,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Common_rail
 
 - code: P0258
   category: powertrain
@@ -20370,6 +20800,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Common_rail
 
 - code: P0259
   category: powertrain
@@ -20402,6 +20833,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Common_rail
 
 - code: P025A
   category: powertrain
@@ -20434,6 +20866,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Common_rail
 
 - code: P025B
   category: powertrain
@@ -20465,6 +20898,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Common_rail
 
 - code: P025C
   category: powertrain
@@ -20497,6 +20931,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Common_rail
 
 - code: P025D
   category: powertrain
@@ -20529,6 +20964,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Common_rail
 
 - code: P025E
   category: powertrain
@@ -20561,6 +20997,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Turbocharger
 
 - code: P025F
   category: powertrain
@@ -20593,6 +21030,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Turbocharger
 
 - code: P0260
   category: powertrain
@@ -21006,6 +21444,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Intercooler
 
 - code: P026B
   category: powertrain
@@ -21038,6 +21477,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Fuel_injection
 
 - code: P026C
   category: powertrain
@@ -21069,6 +21509,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Fuel_injection
 
 - code: P026D
   category: powertrain
@@ -21100,6 +21541,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Fuel_injection
 
 - code: P026E
   category: powertrain
@@ -21131,6 +21573,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Intercooler
 
 - code: P026F
   category: powertrain
@@ -21162,6 +21605,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Internal_combustion_engine_cooling
 
 - code: P0270
   category: powertrain
@@ -21343,6 +21787,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Fuel_injection
 
 - code: P0275
   category: powertrain
@@ -21375,6 +21820,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Fuel_injection
 
 - code: P0276
   category: powertrain
@@ -21407,6 +21853,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Fuel_injection
 
 - code: P0277
   category: powertrain
@@ -21439,6 +21886,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Fuel_injection
 
 - code: P0278
   category: powertrain
@@ -21471,6 +21919,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Fuel_injection
 
 - code: P0279
   category: powertrain
@@ -21503,6 +21952,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Fuel_injection
 
 - code: P027A
   category: powertrain
@@ -21535,6 +21985,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Common_rail
 
 - code: P027B
   category: powertrain
@@ -21566,6 +22017,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Common_rail
 
 - code: P027C
   category: powertrain
@@ -21598,6 +22050,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Common_rail
 
 - code: P027D
   category: powertrain
@@ -21630,6 +22083,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Common_rail
 
 - code: P027E
   category: powertrain
@@ -21662,6 +22116,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Fuel_injection
 
 - code: P027F
   category: powertrain
@@ -21693,6 +22148,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Fuel_injection
 
 - code: P0280
   category: powertrain
@@ -21725,6 +22181,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Fuel_injection
 
 - code: P0281
   category: powertrain
@@ -21757,6 +22214,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Fuel_injection
 
 - code: P0282
   category: powertrain
@@ -21789,6 +22247,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Fuel_injection
 
 - code: P0283
   category: powertrain
@@ -21821,6 +22280,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Fuel_injection
 
 - code: P0284
   category: powertrain
@@ -21853,6 +22313,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Fuel_injection
 
 - code: P0285
   category: powertrain
@@ -21885,6 +22346,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Fuel_injection
 
 - code: P0286
   category: powertrain
@@ -21917,6 +22379,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Fuel_injection
 
 - code: P0287
   category: powertrain
@@ -21949,6 +22412,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Fuel_injection
 
 - code: P0288
   category: powertrain
@@ -21981,6 +22445,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Fuel_injection
 
 - code: P0289
   category: powertrain
@@ -22013,6 +22478,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Fuel_injection
 
 - code: P028A
   category: powertrain
@@ -22045,6 +22511,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Intercooler
 
 - code: P028B
   category: powertrain
@@ -22076,6 +22543,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Intercooler
 
 - code: P028C
   category: powertrain
@@ -22108,6 +22576,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Intercooler
 
 - code: P028D
   category: powertrain
@@ -22140,6 +22609,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Intercooler
 
 - code: P028E
   category: powertrain
@@ -22172,6 +22642,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Intercooler
 
 - code: P028F
   category: powertrain
@@ -22204,6 +22675,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Intercooler
 
 - code: P0290
   category: powertrain
@@ -22236,6 +22708,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Fuel_injection
 
 - code: P0291
   category: powertrain
@@ -22268,6 +22741,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Fuel_injection
 
 - code: P0292
   category: powertrain
@@ -22300,6 +22774,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Fuel_injection
 
 - code: P0293
   category: powertrain
@@ -22332,6 +22807,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Fuel_injection
 
 - code: P0294
   category: powertrain
@@ -22364,6 +22840,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Fuel_injection
 
 - code: P0295
   category: powertrain
@@ -22396,6 +22873,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Fuel_injection
 
 - code: P0296
   category: powertrain
@@ -22428,6 +22906,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Fuel_injection
 
 - code: P0297
   category: powertrain
@@ -22460,6 +22939,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Speedometer
 
 - code: P0298
   category: powertrain
@@ -22492,6 +22972,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Motor_oil
 
 - code: P0299
   category: powertrain
@@ -22574,6 +23055,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Fuel_injection
 
 - code: P029B
   category: powertrain
@@ -22605,6 +23087,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Fuel_injection
 
 - code: P029C
   category: powertrain
@@ -22636,6 +23119,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Fuel_injection
 
 - code: P029D
   category: powertrain
@@ -22667,6 +23151,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Fuel_injection
 
 - code: P029E
   category: powertrain
@@ -22698,6 +23183,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Fuel_injection
 
 - code: P029F
   category: powertrain
@@ -22729,6 +23215,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Fuel_injection
 
 - code: P02A0
   category: powertrain
@@ -22760,6 +23247,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Fuel_injection
 
 - code: P02A1
   category: powertrain
@@ -22791,6 +23279,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Fuel_injection
 
 - code: P02A2
   category: powertrain
@@ -22822,6 +23311,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Fuel_injection
 
 - code: P02A3
   category: powertrain
@@ -22853,6 +23343,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Fuel_injection
 
 - code: P02A4
   category: powertrain
@@ -22884,6 +23375,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Fuel_injection
 
 - code: P02A5
   category: powertrain
@@ -22915,6 +23407,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Fuel_injection
 
 - code: P02A6
   category: powertrain
@@ -22946,6 +23439,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Fuel_injection
 
 - code: P02A7
   category: powertrain
@@ -22977,6 +23471,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Fuel_injection
 
 - code: P02A8
   category: powertrain
@@ -23008,6 +23503,7 @@
     - sae:J2012
   sources:
     - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Fuel_injection
 
 - code: P0300
   category: powertrain
