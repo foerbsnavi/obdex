@@ -6,7 +6,7 @@
   "private": true,
   "scripts": {
     "validate": "node tools/validate.mjs",
-    "duplicates": "node tools/check-duplicates.mjs",
+    "duplicates": "node tools/check_duplicates.mjs",
     "build": "node tools/build.mjs",
     "check": "npm run validate && npm run duplicates"
   },

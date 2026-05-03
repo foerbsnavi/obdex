@@ -49,7 +49,7 @@ Requires Node.js ≥ 20.
 ```
 data/
 ├── generic/                          SAE J2012 codes, valid for all OBD-II vehicles
-│   ├── <family>xxx_enriched.yaml     full schema (P0/P2/P3/U0/B0/C0)
+│   ├── <family>xxx_enriched.yaml     full schema (P0/P2/P3/U0/U3/B0/C0)
 │   └── <family>xxx_stub.yaml         minimum schema, awaiting enrichment
 └── pids/                             Live data parameter IDs (Mode 01, 09, …)
 
@@ -71,11 +71,11 @@ The database has two depth tiers per code:
 | Generic P0        |  3,705 | 1,005 enriched + 2,700 indexed   |
 | Generic P2        |  3,495 | 293 enriched + 3,202 indexed     |
 | Generic P3        |    155 | **155 enriched (100%)**          |
-| Generic U0        |  1,056 | 427 enriched + 629 indexed       |
+| Generic U0        |  1,055 | 426 enriched + 629 indexed       |
 | Generic U3        |    174 | **174 enriched (100%)**          |
 | Generic B0        |    323 | **323 enriched (100%)**          |
 | Generic C0        |    626 | **626 enriched (100%)**          |
-| **Generic total** |**9,534**| **3,003 enriched + 6,531 indexed** |
+| **Generic total** |**9,533**| **3,002 enriched + 6,531 indexed** |
 | PIDs Mode 01      |    119 | extensive                        |
 | PIDs Mode 09      |     13 | extensive                        |
 
