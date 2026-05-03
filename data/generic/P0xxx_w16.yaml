@@ -1,0 +1,3464 @@
+# wave 16 — Anreicherung P0001-P008C (100 Codes)
+# Aus P0xxx_extra3.yaml hochgezogen auf volle Schema-Tiefe.
+
+- code: P0001
+  category: powertrain
+  title:
+    en: Fuel Volume Regulator A Control Circuit/Open
+    de: Kraftstoffmengenregelventil A Schaltkreis unterbrochen
+  description:
+    en: The ECU detects an open circuit in the control of fuel volume regulator A (often the metering valve on the high-pressure fuel pump). The actuator does not respond, so rail pressure cannot be controlled accurately.
+    de: Die Motorsteuerung erkennt einen unterbrochenen Schaltkreis am Kraftstoffmengenregelventil A (meist das Zumessventil der Hochdruckpumpe). Der Aktuator reagiert nicht, der Raildruck kann nicht geregelt werden.
+  affected_components:
+    - fuel_volume_regulator
+    - high_pressure_fuel_pump
+    - fvr_wiring
+    - fvr_connector
+  common_causes:
+    - id: open_wiring
+      likelihood: high
+      label:
+        en: Wiring break or unplugged connector
+        de: Kabelbruch oder abgezogener Stecker
+    - id: regulator_coil_open
+      likelihood: medium
+      label:
+        en: Regulator solenoid coil open
+        de: Magnetspule im Regelventil unterbrochen
+    - id: ecu_driver_fault
+      likelihood: low
+      label:
+        en: ECU output driver failed
+        de: Endstufe im Steuergerät defekt
+  repair:
+    difficulty: medium
+    diy_possible: true
+    estimated_cost_eur: [80, 600]
+    estimated_hours: [0.5, 3]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: false
+    limp_mode_possible: true
+  references:
+    - sae:J2012
+  sources:
+    - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Common_rail
+
+- code: P0002
+  category: powertrain
+  title:
+    en: Fuel Volume Regulator A Control Circuit Range/Performance
+    de: Kraftstoffmengenregelventil A Schaltkreis Bereich/Leistung
+  description:
+    en: The control signal of fuel volume regulator A is electrically present but the actual rail pressure does not follow the target value within tolerance. Indicates a mechanical or hydraulic issue rather than pure wiring.
+    de: Das Steuersignal des Kraftstoffmengenregelventils A liegt elektrisch an, der tatsächliche Raildruck folgt jedoch nicht innerhalb der Toleranz. Hinweis auf ein mechanisches oder hydraulisches Problem statt reiner Verkabelung.
+  affected_components:
+    - fuel_volume_regulator
+    - high_pressure_fuel_pump
+    - fuel_rail_pressure_sensor
+  common_causes:
+    - id: pump_wear
+      likelihood: high
+      label:
+        en: High-pressure pump worn or leaking internally
+        de: Hochdruckpumpe verschlissen oder intern undicht
+    - id: regulator_sticking
+      likelihood: medium
+      label:
+        en: Regulator valve sticking from contamination
+        de: Regelventil klemmt durch Verschmutzung
+    - id: pressure_sensor_drift
+      likelihood: medium
+      label:
+        en: Rail pressure sensor reading drifted
+        de: Raildrucksensor liefert verschobenen Messwert
+  repair:
+    difficulty: hard
+    diy_possible: false
+    estimated_cost_eur: [200, 1500]
+    estimated_hours: [1, 5]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+    limp_mode_possible: true
+  references:
+    - sae:J2012
+  sources:
+    - https://github.com/Wal33D/dtc-database
+
+- code: P0003
+  category: powertrain
+  title:
+    en: Fuel Volume Regulator A Control Circuit Low
+    de: Kraftstoffmengenregelventil A Schaltkreis niedrig
+  description:
+    en: The ECU sees the control voltage of fuel volume regulator A pulled below the expected range, typically a short to ground or a low-resistance fault in the wiring or coil.
+    de: Die Steuerspannung am Kraftstoffmengenregelventil A liegt unter dem Sollbereich. Meist Kurzschluss gegen Masse oder niederohmige Verkabelung/Spule.
+  affected_components:
+    - fuel_volume_regulator
+    - fvr_wiring
+  common_causes:
+    - id: short_to_ground
+      likelihood: high
+      label:
+        en: Wiring shorted to ground
+        de: Verkabelung mit Masseschluss
+    - id: coil_short
+      likelihood: medium
+      label:
+        en: Regulator coil internal short
+        de: Magnetspule mit Windungsschluss
+  repair:
+    difficulty: medium
+    diy_possible: true
+    estimated_cost_eur: [80, 500]
+    estimated_hours: [0.5, 2.5]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: false
+    limp_mode_possible: true
+  references:
+    - sae:J2012
+  sources:
+    - https://github.com/Wal33D/dtc-database
+
+- code: P0004
+  category: powertrain
+  title:
+    en: Fuel Volume Regulator A Control Circuit High
+    de: Kraftstoffmengenregelventil A Schaltkreis hoch
+  description:
+    en: The ECU sees the control voltage of fuel volume regulator A above the expected range, typically a short to power or open ground return.
+    de: Die Steuerspannung am Kraftstoffmengenregelventil A liegt über dem Sollbereich. Meist Kurzschluss gegen Plus oder unterbrochener Masserückleiter.
+  affected_components:
+    - fuel_volume_regulator
+    - fvr_wiring
+  common_causes:
+    - id: short_to_power
+      likelihood: high
+      label:
+        en: Wiring shorted to battery voltage
+        de: Verkabelung mit Plus-Schluss
+    - id: open_ground
+      likelihood: medium
+      label:
+        en: Open ground return path
+        de: Masserückleiter unterbrochen
+  repair:
+    difficulty: medium
+    diy_possible: true
+    estimated_cost_eur: [80, 500]
+    estimated_hours: [0.5, 2.5]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: false
+    limp_mode_possible: true
+  references:
+    - sae:J2012
+  sources:
+    - https://github.com/Wal33D/dtc-database
+
+- code: P0005
+  category: powertrain
+  title:
+    en: Fuel Shutoff Valve A Control Circuit/Open
+    de: Kraftstoffabsperrventil A Schaltkreis unterbrochen
+  description:
+    en: Open circuit detected at the fuel shutoff valve A solenoid (used on diesels to stop fuel flow at engine-off and as anti-theft). Engine may not start or not stop cleanly.
+    de: Unterbrechung am Kraftstoffabsperrventil A (bei Dieseln zum Motorstopp und als Diebstahlschutz). Motor startet evtl. nicht oder läuft nach.
+  affected_components:
+    - fuel_shutoff_valve
+    - shutoff_wiring
+    - shutoff_connector
+  common_causes:
+    - id: open_wiring
+      likelihood: high
+      label:
+        en: Open wiring or unplugged connector
+        de: Kabelbruch oder loser Stecker
+    - id: solenoid_open
+      likelihood: medium
+      label:
+        en: Shutoff solenoid coil open
+        de: Magnetspule unterbrochen
+  repair:
+    difficulty: medium
+    diy_possible: true
+    estimated_cost_eur: [70, 400]
+    estimated_hours: [0.5, 2]
+  flags:
+    mil: true
+    emissions_relevant: false
+    drive_cycle_required: false
+    limp_mode_possible: false
+  references:
+    - sae:J2012
+  sources:
+    - https://github.com/Wal33D/dtc-database
+
+- code: P0006
+  category: powertrain
+  title:
+    en: Fuel Shutoff Valve A Control Circuit Low
+    de: Kraftstoffabsperrventil A Schaltkreis niedrig
+  description:
+    en: Control voltage of fuel shutoff valve A is below the expected range, typically caused by a short to ground or low-resistance fault in the solenoid circuit.
+    de: Die Steuerspannung am Kraftstoffabsperrventil A liegt unter dem Sollbereich. Meist Masseschluss oder niederohmiger Fehler im Magnetkreis.
+  affected_components:
+    - fuel_shutoff_valve
+    - shutoff_wiring
+  common_causes:
+    - id: short_to_ground
+      likelihood: high
+      label:
+        en: Wiring shorted to ground
+        de: Verkabelung mit Masseschluss
+    - id: solenoid_short
+      likelihood: medium
+      label:
+        en: Shutoff solenoid internal short
+        de: Magnetspule mit Windungsschluss
+  repair:
+    difficulty: medium
+    diy_possible: true
+    estimated_cost_eur: [70, 400]
+    estimated_hours: [0.5, 2]
+  flags:
+    mil: true
+    emissions_relevant: false
+    drive_cycle_required: false
+    limp_mode_possible: false
+  references:
+    - sae:J2012
+  sources:
+    - https://github.com/Wal33D/dtc-database
+
+- code: P0007
+  category: powertrain
+  title:
+    en: Fuel Shutoff Valve A Control Circuit High
+    de: Kraftstoffabsperrventil A Schaltkreis hoch
+  description:
+    en: Control voltage of fuel shutoff valve A is above the expected range, typically caused by a short to power or open ground return.
+    de: Die Steuerspannung am Kraftstoffabsperrventil A liegt über dem Sollbereich. Meist Plus-Schluss oder unterbrochene Masse.
+  affected_components:
+    - fuel_shutoff_valve
+    - shutoff_wiring
+  common_causes:
+    - id: short_to_power
+      likelihood: high
+      label:
+        en: Wiring shorted to battery voltage
+        de: Verkabelung mit Plus-Schluss
+    - id: open_ground
+      likelihood: medium
+      label:
+        en: Open ground return path
+        de: Masserückleiter unterbrochen
+  repair:
+    difficulty: medium
+    diy_possible: true
+    estimated_cost_eur: [70, 400]
+    estimated_hours: [0.5, 2]
+  flags:
+    mil: true
+    emissions_relevant: false
+    drive_cycle_required: false
+    limp_mode_possible: false
+  references:
+    - sae:J2012
+  sources:
+    - https://github.com/Wal33D/dtc-database
+
+- code: P0008
+  category: powertrain
+  title:
+    en: Engine Position System Performance Bank 1
+    de: Motorpositions-System Leistung Bank 1
+  description:
+    en: The ECU detects an implausible relationship between crankshaft and camshaft signals on bank 1, indicating timing chain stretch, jumped tooth, or sensor reluctor wear.
+    de: Die Motorsteuerung erkennt eine unplausible Lage zwischen Kurbel- und Nockenwellensignal auf Bank 1. Hinweis auf gelängte Steuerkette, übergesprungenen Zahn oder verschlissene Geberrad.
+  affected_components:
+    - timing_chain
+    - crankshaft_position_sensor
+    - camshaft_position_sensor
+    - reluctor_ring
+  common_causes:
+    - id: timing_chain_stretched
+      likelihood: high
+      label:
+        en: Timing chain stretched, guides worn
+        de: Steuerkette gelängt, Gleitschienen verschlissen
+    - id: jumped_tooth
+      likelihood: medium
+      label:
+        en: Chain jumped one tooth
+        de: Kette um einen Zahn übergesprungen
+    - id: sensor_misalignment
+      likelihood: low
+      label:
+        en: Crankshaft or camshaft sensor misaligned
+        de: Kurbel- oder Nockenwellensensor falsch sitzend
+  repair:
+    difficulty: hard
+    diy_possible: false
+    estimated_cost_eur: [400, 2500]
+    estimated_hours: [4, 12]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+    limp_mode_possible: true
+  references:
+    - sae:J2012
+  sources:
+    - https://github.com/Wal33D/dtc-database
+
+- code: P0009
+  category: powertrain
+  title:
+    en: Engine Position System Performance Bank 2
+    de: Motorpositions-System Leistung Bank 2
+  description:
+    en: Same fault pattern as P0008 but on bank 2 of a V or boxer engine. Crank/cam correlation outside spec on the second cylinder bank.
+    de: Gleicher Fehler wie P0008, jedoch auf Bank 2 eines V- oder Boxermotors. Korrelation Kurbel/Nockenwelle Bank 2 außerhalb der Spezifikation.
+  affected_components:
+    - timing_chain
+    - crankshaft_position_sensor
+    - camshaft_position_sensor
+    - reluctor_ring
+  common_causes:
+    - id: timing_chain_stretched
+      likelihood: high
+      label:
+        en: Timing chain bank 2 stretched
+        de: Steuerkette Bank 2 gelängt
+    - id: jumped_tooth
+      likelihood: medium
+      label:
+        en: Chain jumped one tooth on bank 2
+        de: Kette auf Bank 2 übergesprungen
+  repair:
+    difficulty: hard
+    diy_possible: false
+    estimated_cost_eur: [400, 2500]
+    estimated_hours: [4, 12]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+    limp_mode_possible: true
+  references:
+    - sae:J2012
+  sources:
+    - https://github.com/Wal33D/dtc-database
+
+- code: P000A
+  category: powertrain
+  title:
+    en: A Camshaft Position Slow Response Bank 1
+    de: A-Nockenwellenposition langsame Reaktion Bank 1
+  description:
+    en: The intake camshaft phaser on bank 1 responds too slowly to commanded position changes. Often caused by VVT solenoid sticking, oil aging, or low oil pressure.
+    de: Der Einlass-Nockenwellenversteller auf Bank 1 reagiert zu langsam auf Sollwerte. Häufig durch klemmendes VVT-Magnetventil, Ölalterung oder zu geringen Öldruck.
+  affected_components:
+    - vvt_solenoid_intake_bank1
+    - cam_phaser_intake
+    - engine_oil
+  common_causes:
+    - id: vvt_solenoid_clogged
+      likelihood: high
+      label:
+        en: VVT solenoid clogged with sludge
+        de: VVT-Magnetventil durch Schlamm verstopft
+    - id: low_oil_pressure
+      likelihood: medium
+      label:
+        en: Low oil pressure or wrong oil viscosity
+        de: Zu geringer Öldruck oder falsche Viskosität
+    - id: phaser_wear
+      likelihood: medium
+      label:
+        en: Cam phaser worn internally
+        de: Nockenwellenversteller intern verschlissen
+  repair:
+    difficulty: medium
+    diy_possible: true
+    estimated_cost_eur: [60, 1200]
+    estimated_hours: [0.5, 6]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+    limp_mode_possible: false
+  references:
+    - sae:J2012
+  sources:
+    - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Variable_valve_timing
+
+- code: P000B
+  category: powertrain
+  title:
+    en: B Camshaft Position Slow Response Bank 1
+    de: B-Nockenwellenposition langsame Reaktion Bank 1
+  description:
+    en: The exhaust camshaft phaser on bank 1 responds too slowly to commanded position changes. Same root causes as P000A but on the exhaust cam.
+    de: Der Auslass-Nockenwellenversteller auf Bank 1 reagiert zu langsam. Gleiche Ursachen wie P000A, jedoch an der Auslassnockenwelle.
+  affected_components:
+    - vvt_solenoid_exhaust_bank1
+    - cam_phaser_exhaust
+    - engine_oil
+  common_causes:
+    - id: vvt_solenoid_clogged
+      likelihood: high
+      label:
+        en: Exhaust VVT solenoid clogged
+        de: Auslass-VVT-Magnetventil verstopft
+    - id: low_oil_pressure
+      likelihood: medium
+      label:
+        en: Low oil pressure
+        de: Zu geringer Öldruck
+    - id: phaser_wear
+      likelihood: medium
+      label:
+        en: Exhaust cam phaser worn
+        de: Auslass-Nockenwellenversteller verschlissen
+  repair:
+    difficulty: medium
+    diy_possible: true
+    estimated_cost_eur: [60, 1200]
+    estimated_hours: [0.5, 6]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+    limp_mode_possible: false
+  references:
+    - sae:J2012
+  sources:
+    - https://github.com/Wal33D/dtc-database
+
+- code: P000C
+  category: powertrain
+  title:
+    en: A Camshaft Position Slow Response Bank 2
+    de: A-Nockenwellenposition langsame Reaktion Bank 2
+  description:
+    en: Intake camshaft phaser on bank 2 responds too slowly. Same fault pattern as P000A on the second cylinder bank.
+    de: Einlass-Nockenwellenversteller auf Bank 2 reagiert zu langsam. Gleiches Muster wie P000A auf der zweiten Bank.
+  affected_components:
+    - vvt_solenoid_intake_bank2
+    - cam_phaser_intake
+    - engine_oil
+  common_causes:
+    - id: vvt_solenoid_clogged
+      likelihood: high
+      label:
+        en: VVT solenoid clogged
+        de: VVT-Magnetventil verstopft
+    - id: low_oil_pressure
+      likelihood: medium
+      label:
+        en: Low oil pressure
+        de: Zu geringer Öldruck
+  repair:
+    difficulty: medium
+    diy_possible: true
+    estimated_cost_eur: [60, 1200]
+    estimated_hours: [0.5, 6]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+    limp_mode_possible: false
+  references:
+    - sae:J2012
+  sources:
+    - https://github.com/Wal33D/dtc-database
+
+- code: P000D
+  category: powertrain
+  title:
+    en: B Camshaft Position Slow Response Bank 2
+    de: B-Nockenwellenposition langsame Reaktion Bank 2
+  description:
+    en: Exhaust camshaft phaser on bank 2 responds too slowly. Same fault pattern as P000B on the second cylinder bank.
+    de: Auslass-Nockenwellenversteller auf Bank 2 reagiert zu langsam. Gleiches Muster wie P000B auf der zweiten Bank.
+  affected_components:
+    - vvt_solenoid_exhaust_bank2
+    - cam_phaser_exhaust
+    - engine_oil
+  common_causes:
+    - id: vvt_solenoid_clogged
+      likelihood: high
+      label:
+        en: Exhaust VVT solenoid clogged
+        de: Auslass-VVT-Magnetventil verstopft
+    - id: phaser_wear
+      likelihood: medium
+      label:
+        en: Cam phaser worn
+        de: Nockenwellenversteller verschlissen
+  repair:
+    difficulty: medium
+    diy_possible: true
+    estimated_cost_eur: [60, 1200]
+    estimated_hours: [0.5, 6]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+    limp_mode_possible: false
+  references:
+    - sae:J2012
+  sources:
+    - https://github.com/Wal33D/dtc-database
+
+- code: P000E
+  category: powertrain
+  title:
+    en: Fuel Volume Regulator Control Exceeded Learning Limit
+    de: Kraftstoffmengenregelung Adaptionsgrenze überschritten
+  description:
+    en: The ECU's adaptive correction of fuel volume regulator A has reached its learning limit. Indicates a long-term drift between commanded and actual rail pressure that could no longer be compensated.
+    de: Die Adaption der Kraftstoffmengenregelung hat ihre Lerngrenze erreicht. Hinweis auf eine länger anhaltende Abweichung zwischen Soll- und Ist-Raildruck, die nicht mehr kompensiert werden konnte.
+  affected_components:
+    - high_pressure_fuel_pump
+    - fuel_volume_regulator
+    - fuel_filter
+    - fuel_rail_pressure_sensor
+  common_causes:
+    - id: pump_wear
+      likelihood: high
+      label:
+        en: HP pump worn out
+        de: Hochdruckpumpe verschlissen
+    - id: clogged_fuel_filter
+      likelihood: medium
+      label:
+        en: Fuel filter clogged, restricted supply
+        de: Kraftstofffilter verstopft, Vorförderung gedrosselt
+    - id: leak_in_rail
+      likelihood: medium
+      label:
+        en: Internal leak (injector or rail)
+        de: Interne Leckage (Injektor oder Rail)
+  repair:
+    difficulty: hard
+    diy_possible: false
+    estimated_cost_eur: [200, 2000]
+    estimated_hours: [1, 6]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+    limp_mode_possible: true
+  references:
+    - sae:J2012
+  sources:
+    - https://github.com/Wal33D/dtc-database
+
+- code: P000F
+  category: powertrain
+  title:
+    en: Fuel System Over Pressure Relief Valve Activated
+    de: Kraftstoffsystem Überdruck-Sicherheitsventil ausgelöst
+  description:
+    en: The mechanical pressure relief valve on the fuel rail has opened due to overpressure. Indicates a malfunction of the rail pressure regulation that drove pressure beyond the safe limit.
+    de: Das mechanische Überdruckventil am Kraftstoffrail hat durch Überdruck geöffnet. Hinweis auf eine fehlerhafte Raildruck-Regelung, die den Druck über den Sicherheitswert getrieben hat.
+  affected_components:
+    - pressure_relief_valve
+    - fuel_rail
+    - fuel_pressure_regulator
+    - fuel_rail_pressure_sensor
+  common_causes:
+    - id: pressure_regulator_stuck
+      likelihood: high
+      label:
+        en: Pressure regulator valve stuck closed
+        de: Druckregelventil hängt geschlossen
+    - id: pressure_sensor_fault
+      likelihood: medium
+      label:
+        en: Rail pressure sensor reading low
+        de: Raildrucksensor liefert zu niedrigen Wert
+  repair:
+    difficulty: hard
+    diy_possible: false
+    estimated_cost_eur: [250, 1500]
+    estimated_hours: [1, 5]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: false
+    limp_mode_possible: true
+  references:
+    - sae:J2012
+  sources:
+    - https://github.com/Wal33D/dtc-database
+
+- code: P001A
+  category: powertrain
+  title:
+    en: A Camshaft Profile Actuator A Control Circuit/Open Bank 1
+    de: A-Nockenwellen-Profilaktuator A Schaltkreis unterbrochen Bank 1
+  description:
+    en: Open circuit at the camshaft profile actuator (intake, profile A, bank 1). Used by systems with discrete cam-lift levels (e.g. BMW Valvetronic, Honda VTEC, Audi AVS) — the actuator that selects the lift profile cannot be driven.
+    de: Unterbrochener Schaltkreis am Nockenwellen-Profilaktuator (Einlass, Profil A, Bank 1). Bei Systemen mit umschaltbarem Ventilhub (z. B. BMW Valvetronic, Honda VTEC, Audi AVS) — die Hub-Umschaltung lässt sich nicht ansteuern.
+  affected_components:
+    - cam_profile_actuator
+    - actuator_wiring
+    - actuator_connector
+  common_causes:
+    - id: open_wiring
+      likelihood: high
+      label:
+        en: Wiring break or unplugged connector
+        de: Kabelbruch oder loser Stecker
+    - id: actuator_coil_open
+      likelihood: medium
+      label:
+        en: Actuator coil open
+        de: Aktuator-Spule unterbrochen
+  repair:
+    difficulty: medium
+    diy_possible: true
+    estimated_cost_eur: [80, 800]
+    estimated_hours: [0.5, 4]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: false
+    limp_mode_possible: false
+  references:
+    - sae:J2012
+  sources:
+    - https://github.com/Wal33D/dtc-database
+
+- code: P001B
+  category: powertrain
+  title:
+    en: A Camshaft Profile Actuator A Control Circuit Low Bank 1
+    de: A-Nockenwellen-Profilaktuator A Schaltkreis niedrig Bank 1
+  description:
+    en: Low control voltage at the cam profile actuator (intake, profile A, bank 1). Typically a short to ground in the wiring or actuator coil.
+    de: Zu niedrige Steuerspannung am Profilaktuator (Einlass, Profil A, Bank 1). Meist Kurzschluss gegen Masse in Verkabelung oder Spule.
+  affected_components:
+    - cam_profile_actuator
+    - actuator_wiring
+  common_causes:
+    - id: short_to_ground
+      likelihood: high
+      label:
+        en: Wiring shorted to ground
+        de: Verkabelung mit Masseschluss
+    - id: coil_short
+      likelihood: medium
+      label:
+        en: Actuator coil shorted internally
+        de: Aktuator-Spule mit Windungsschluss
+  repair:
+    difficulty: medium
+    diy_possible: true
+    estimated_cost_eur: [80, 800]
+    estimated_hours: [0.5, 4]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: false
+    limp_mode_possible: false
+  references:
+    - sae:J2012
+  sources:
+    - https://github.com/Wal33D/dtc-database
+
+- code: P001C
+  category: powertrain
+  title:
+    en: A Camshaft Profile Actuator A Control Circuit High Bank 1
+    de: A-Nockenwellen-Profilaktuator A Schaltkreis hoch Bank 1
+  description:
+    en: Excessively high control voltage at the cam profile actuator (intake, profile A, bank 1). Typically a short to power or open ground.
+    de: Zu hohe Steuerspannung am Profilaktuator (Einlass, Profil A, Bank 1). Meist Plus-Schluss oder unterbrochene Masse.
+  affected_components:
+    - cam_profile_actuator
+    - actuator_wiring
+  common_causes:
+    - id: short_to_power
+      likelihood: high
+      label:
+        en: Wiring shorted to battery voltage
+        de: Verkabelung mit Plus-Schluss
+    - id: open_ground
+      likelihood: medium
+      label:
+        en: Open ground return path
+        de: Masserückleiter unterbrochen
+  repair:
+    difficulty: medium
+    diy_possible: true
+    estimated_cost_eur: [80, 800]
+    estimated_hours: [0.5, 4]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: false
+    limp_mode_possible: false
+  references:
+    - sae:J2012
+  sources:
+    - https://github.com/Wal33D/dtc-database
+
+- code: P001D
+  category: powertrain
+  title:
+    en: A Camshaft Profile Actuator A Control Circuit/Open Bank 2
+    de: A-Nockenwellen-Profilaktuator A Schaltkreis unterbrochen Bank 2
+  description:
+    en: Open circuit at the cam profile actuator (intake, profile A, bank 2). Same fault as P001A but on bank 2.
+    de: Unterbrochener Schaltkreis am Profilaktuator (Einlass, Profil A, Bank 2). Wie P001A, jedoch Bank 2.
+  affected_components:
+    - cam_profile_actuator
+    - actuator_wiring
+  common_causes:
+    - id: open_wiring
+      likelihood: high
+      label:
+        en: Wiring break
+        de: Kabelbruch
+    - id: actuator_coil_open
+      likelihood: medium
+      label:
+        en: Actuator coil open
+        de: Aktuator-Spule unterbrochen
+  repair:
+    difficulty: medium
+    diy_possible: true
+    estimated_cost_eur: [80, 800]
+    estimated_hours: [0.5, 4]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: false
+    limp_mode_possible: false
+  references:
+    - sae:J2012
+  sources:
+    - https://github.com/Wal33D/dtc-database
+
+- code: P001E
+  category: powertrain
+  title:
+    en: A Camshaft Profile Actuator A Control Circuit Low Bank 2
+    de: A-Nockenwellen-Profilaktuator A Schaltkreis niedrig Bank 2
+  description:
+    en: Low control voltage at the cam profile actuator (intake, profile A, bank 2). Same fault as P001B on bank 2.
+    de: Zu niedrige Steuerspannung am Profilaktuator (Einlass, Profil A, Bank 2). Wie P001B, jedoch Bank 2.
+  affected_components:
+    - cam_profile_actuator
+    - actuator_wiring
+  common_causes:
+    - id: short_to_ground
+      likelihood: high
+      label:
+        en: Wiring shorted to ground
+        de: Verkabelung mit Masseschluss
+  repair:
+    difficulty: medium
+    diy_possible: true
+    estimated_cost_eur: [80, 800]
+    estimated_hours: [0.5, 4]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: false
+    limp_mode_possible: false
+  references:
+    - sae:J2012
+  sources:
+    - https://github.com/Wal33D/dtc-database
+
+- code: P001F
+  category: powertrain
+  title:
+    en: A Camshaft Profile Actuator A Control Circuit High Bank 2
+    de: A-Nockenwellen-Profilaktuator A Schaltkreis hoch Bank 2
+  description:
+    en: Excessively high control voltage at the cam profile actuator (intake, profile A, bank 2). Same fault as P001C on bank 2.
+    de: Zu hohe Steuerspannung am Profilaktuator (Einlass, Profil A, Bank 2). Wie P001C, jedoch Bank 2.
+  affected_components:
+    - cam_profile_actuator
+    - actuator_wiring
+  common_causes:
+    - id: short_to_power
+      likelihood: high
+      label:
+        en: Wiring shorted to battery voltage
+        de: Verkabelung mit Plus-Schluss
+  repair:
+    difficulty: medium
+    diy_possible: true
+    estimated_cost_eur: [80, 800]
+    estimated_hours: [0.5, 4]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: false
+    limp_mode_possible: false
+  references:
+    - sae:J2012
+  sources:
+    - https://github.com/Wal33D/dtc-database
+
+- code: P002A
+  category: powertrain
+  title:
+    en: B Camshaft Profile Actuator A Control Circuit/Open Bank 1
+    de: B-Nockenwellen-Profilaktuator A Schaltkreis unterbrochen Bank 1
+  description:
+    en: Open circuit at the cam profile actuator on the exhaust cam (profile A, bank 1). Same diagnosis as P001A but for the exhaust profile actuator.
+    de: Unterbrochener Schaltkreis am Profilaktuator der Auslassnockenwelle (Profil A, Bank 1). Wie P001A, jedoch Auslass.
+  affected_components:
+    - cam_profile_actuator_exhaust
+    - actuator_wiring
+  common_causes:
+    - id: open_wiring
+      likelihood: high
+      label:
+        en: Wiring break
+        de: Kabelbruch
+    - id: actuator_coil_open
+      likelihood: medium
+      label:
+        en: Actuator coil open
+        de: Aktuator-Spule unterbrochen
+  repair:
+    difficulty: medium
+    diy_possible: true
+    estimated_cost_eur: [80, 800]
+    estimated_hours: [0.5, 4]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: false
+    limp_mode_possible: false
+  references:
+    - sae:J2012
+  sources:
+    - https://github.com/Wal33D/dtc-database
+
+- code: P002B
+  category: powertrain
+  title:
+    en: B Camshaft Profile Actuator A Control Circuit Low Bank 1
+    de: B-Nockenwellen-Profilaktuator A Schaltkreis niedrig Bank 1
+  description:
+    en: Low control voltage at the exhaust cam profile actuator (profile A, bank 1). Short to ground in wiring or coil.
+    de: Zu niedrige Steuerspannung am Auslass-Profilaktuator (Profil A, Bank 1). Masseschluss in Verkabelung oder Spule.
+  affected_components:
+    - cam_profile_actuator_exhaust
+    - actuator_wiring
+  common_causes:
+    - id: short_to_ground
+      likelihood: high
+      label:
+        en: Wiring shorted to ground
+        de: Verkabelung mit Masseschluss
+  repair:
+    difficulty: medium
+    diy_possible: true
+    estimated_cost_eur: [80, 800]
+    estimated_hours: [0.5, 4]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: false
+    limp_mode_possible: false
+  references:
+    - sae:J2012
+  sources:
+    - https://github.com/Wal33D/dtc-database
+
+- code: P002C
+  category: powertrain
+  title:
+    en: B Camshaft Profile Actuator A Control Circuit High Bank 1
+    de: B-Nockenwellen-Profilaktuator A Schaltkreis hoch Bank 1
+  description:
+    en: Excessively high control voltage at the exhaust cam profile actuator (profile A, bank 1). Short to power or open ground.
+    de: Zu hohe Steuerspannung am Auslass-Profilaktuator (Profil A, Bank 1). Plus-Schluss oder offene Masse.
+  affected_components:
+    - cam_profile_actuator_exhaust
+    - actuator_wiring
+  common_causes:
+    - id: short_to_power
+      likelihood: high
+      label:
+        en: Wiring shorted to battery voltage
+        de: Verkabelung mit Plus-Schluss
+  repair:
+    difficulty: medium
+    diy_possible: true
+    estimated_cost_eur: [80, 800]
+    estimated_hours: [0.5, 4]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: false
+    limp_mode_possible: false
+  references:
+    - sae:J2012
+  sources:
+    - https://github.com/Wal33D/dtc-database
+
+- code: P002D
+  category: powertrain
+  title:
+    en: B Camshaft Profile Actuator A Control Circuit/Open Bank 2
+    de: B-Nockenwellen-Profilaktuator A Schaltkreis unterbrochen Bank 2
+  description:
+    en: Open circuit at the exhaust cam profile actuator (profile A, bank 2). Same as P002A on bank 2.
+    de: Unterbrochener Schaltkreis am Auslass-Profilaktuator (Profil A, Bank 2). Wie P002A, jedoch Bank 2.
+  affected_components:
+    - cam_profile_actuator_exhaust
+    - actuator_wiring
+  common_causes:
+    - id: open_wiring
+      likelihood: high
+      label:
+        en: Wiring break
+        de: Kabelbruch
+  repair:
+    difficulty: medium
+    diy_possible: true
+    estimated_cost_eur: [80, 800]
+    estimated_hours: [0.5, 4]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: false
+    limp_mode_possible: false
+  references:
+    - sae:J2012
+  sources:
+    - https://github.com/Wal33D/dtc-database
+
+- code: P002E
+  category: powertrain
+  title:
+    en: B Camshaft Profile Actuator A Control Circuit Low Bank 2
+    de: B-Nockenwellen-Profilaktuator A Schaltkreis niedrig Bank 2
+  description:
+    en: Low control voltage at the exhaust cam profile actuator (profile A, bank 2). Same as P002B on bank 2.
+    de: Zu niedrige Steuerspannung am Auslass-Profilaktuator (Profil A, Bank 2). Wie P002B, jedoch Bank 2.
+  affected_components:
+    - cam_profile_actuator_exhaust
+    - actuator_wiring
+  common_causes:
+    - id: short_to_ground
+      likelihood: high
+      label:
+        en: Wiring shorted to ground
+        de: Verkabelung mit Masseschluss
+  repair:
+    difficulty: medium
+    diy_possible: true
+    estimated_cost_eur: [80, 800]
+    estimated_hours: [0.5, 4]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: false
+    limp_mode_possible: false
+  references:
+    - sae:J2012
+  sources:
+    - https://github.com/Wal33D/dtc-database
+
+- code: P002F
+  category: powertrain
+  title:
+    en: B Camshaft Profile Actuator A Control Circuit High Bank 2
+    de: B-Nockenwellen-Profilaktuator A Schaltkreis hoch Bank 2
+  description:
+    en: Excessively high control voltage at the exhaust cam profile actuator (profile A, bank 2). Same as P002C on bank 2.
+    de: Zu hohe Steuerspannung am Auslass-Profilaktuator (Profil A, Bank 2). Wie P002C, jedoch Bank 2.
+  affected_components:
+    - cam_profile_actuator_exhaust
+    - actuator_wiring
+  common_causes:
+    - id: short_to_power
+      likelihood: high
+      label:
+        en: Wiring shorted to battery voltage
+        de: Verkabelung mit Plus-Schluss
+  repair:
+    difficulty: medium
+    diy_possible: true
+    estimated_cost_eur: [80, 800]
+    estimated_hours: [0.5, 4]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: false
+    limp_mode_possible: false
+  references:
+    - sae:J2012
+  sources:
+    - https://github.com/Wal33D/dtc-database
+
+- code: P0039
+  category: powertrain
+  title:
+    en: Turbocharger/Supercharger Bypass Valve A Control Circuit Range/Performance
+    de: Turbolader/Kompressor Bypassventil A Schaltkreis Bereich/Leistung
+  description:
+    en: The wastegate or bypass valve A on the turbo/supercharger does not respond mechanically as expected to its control signal. Boost pressure deviates from target.
+    de: Wastegate bzw. Bypassventil A am Turbolader/Kompressor reagiert mechanisch nicht wie erwartet. Ladedruck weicht vom Sollwert ab.
+  affected_components:
+    - wastegate_actuator
+    - bypass_valve
+    - boost_pressure_sensor
+  common_causes:
+    - id: wastegate_stuck
+      likelihood: high
+      label:
+        en: Wastegate sticking from carbon
+        de: Wastegate hängt durch Verkokung
+    - id: vacuum_leak
+      likelihood: medium
+      label:
+        en: Vacuum/boost line leaking
+        de: Unterdruck-/Ladedruckleitung undicht
+    - id: actuator_worn
+      likelihood: medium
+      label:
+        en: Wastegate actuator worn
+        de: Wastegate-Aktuator verschlissen
+  repair:
+    difficulty: medium
+    diy_possible: false
+    estimated_cost_eur: [150, 1500]
+    estimated_hours: [1, 6]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+    limp_mode_possible: true
+  references:
+    - sae:J2012
+  sources:
+    - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/Wastegate
+
+- code: P003A
+  category: powertrain
+  title:
+    en: Turbocharger/Supercharger Boost Control A Position Exceeded Learning Limit
+    de: Turbolader/Kompressor Ladedruck-Regelung A Adaptionsgrenze überschritten
+  description:
+    en: Adaptive learning of boost control actuator A position has hit its limit. Long-term mechanical drift (wastegate wear, linkage stretched) outside compensable range.
+    de: Adaptionswert der Ladedruck-Regelung A hat die Lerngrenze erreicht. Langfristige mechanische Drift (Wastegate-Verschleiß, Gestänge gelängt) außerhalb des Kompensationsbereichs.
+  affected_components:
+    - wastegate_actuator
+    - turbocharger
+    - position_sensor
+  common_causes:
+    - id: actuator_worn
+      likelihood: high
+      label:
+        en: Wastegate actuator worn or sticking
+        de: Wastegate-Aktuator verschlissen oder klemmt
+    - id: linkage_loose
+      likelihood: medium
+      label:
+        en: Linkage rod stretched or loose
+        de: Stellgestänge gelängt oder lose
+  repair:
+    difficulty: hard
+    diy_possible: false
+    estimated_cost_eur: [200, 2000]
+    estimated_hours: [1.5, 8]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+    limp_mode_possible: true
+  references:
+    - sae:J2012
+  sources:
+    - https://github.com/Wal33D/dtc-database
+
+- code: P003B
+  category: powertrain
+  title:
+    en: Turbocharger/Supercharger Boost Control B Position Exceeded Learning Limit
+    de: Turbolader/Kompressor Ladedruck-Regelung B Adaptionsgrenze überschritten
+  description:
+    en: Same as P003A but on boost control actuator B (twin-turbo or two-stage system).
+    de: Wie P003A, jedoch am Ladedruck-Aktuator B (Twin-Turbo oder zweistufiges System).
+  affected_components:
+    - wastegate_actuator_b
+    - turbocharger_b
+  common_causes:
+    - id: actuator_worn
+      likelihood: high
+      label:
+        en: Actuator B worn or sticking
+        de: Aktuator B verschlissen oder klemmt
+  repair:
+    difficulty: hard
+    diy_possible: false
+    estimated_cost_eur: [200, 2000]
+    estimated_hours: [1.5, 8]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+    limp_mode_possible: true
+  references:
+    - sae:J2012
+  sources:
+    - https://github.com/Wal33D/dtc-database
+
+- code: P003C
+  category: powertrain
+  title:
+    en: A Camshaft Profile Actuator A Control Performance/Stuck Off Bank 1
+    de: A-Nockenwellen-Profilaktuator A Leistung/hängt aus Bank 1
+  description:
+    en: The intake cam profile actuator (profile A, bank 1) does not engage when commanded — stays in low-lift profile. Often hydraulic pin sticking or low oil pressure.
+    de: Der Einlass-Profilaktuator (Profil A, Bank 1) schaltet bei Anforderung nicht zu — bleibt im Klein-Hub. Häufig hängender Hydraulikpin oder zu geringer Öldruck.
+  affected_components:
+    - cam_profile_actuator
+    - oil_control_valve
+    - engine_oil
+  common_causes:
+    - id: ocv_stuck
+      likelihood: high
+      label:
+        en: Oil control valve stuck
+        de: Ölsteuerventil klemmt
+    - id: low_oil_pressure
+      likelihood: medium
+      label:
+        en: Low oil pressure
+        de: Zu geringer Öldruck
+  repair:
+    difficulty: medium
+    diy_possible: true
+    estimated_cost_eur: [80, 1000]
+    estimated_hours: [0.5, 5]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+    limp_mode_possible: false
+  references:
+    - sae:J2012
+  sources:
+    - https://github.com/Wal33D/dtc-database
+
+- code: P003D
+  category: powertrain
+  title:
+    en: A Camshaft Profile Actuator A Control Stuck On Bank 1
+    de: A-Nockenwellen-Profilaktuator A hängt zugeschaltet Bank 1
+  description:
+    en: The intake cam profile actuator (profile A, bank 1) stays engaged when commanded off — stuck in high-lift profile. Idle quality and emissions affected.
+    de: Der Einlass-Profilaktuator (Profil A, Bank 1) bleibt zugeschaltet, obwohl Sollwert auf Aus — hängt im Groß-Hub. Beeinträchtigt Leerlauf und Emissionen.
+  affected_components:
+    - cam_profile_actuator
+    - oil_control_valve
+  common_causes:
+    - id: pin_stuck_engaged
+      likelihood: high
+      label:
+        en: Locking pin stuck engaged
+        de: Verriegelungspin sitzt fest
+    - id: ocv_stuck_open
+      likelihood: medium
+      label:
+        en: Oil control valve stuck open
+        de: Ölsteuerventil klemmt offen
+  repair:
+    difficulty: medium
+    diy_possible: true
+    estimated_cost_eur: [80, 1000]
+    estimated_hours: [0.5, 5]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+    limp_mode_possible: false
+  references:
+    - sae:J2012
+  sources:
+    - https://github.com/Wal33D/dtc-database
+
+- code: P003E
+  category: powertrain
+  title:
+    en: A Camshaft Profile Actuator A Control Performance/Stuck Off Bank 2
+    de: A-Nockenwellen-Profilaktuator A Leistung/hängt aus Bank 2
+  description:
+    en: Same as P003C but on bank 2 — intake cam profile actuator A stuck disengaged.
+    de: Wie P003C, jedoch Bank 2 — Einlass-Profilaktuator A bleibt aus.
+  affected_components:
+    - cam_profile_actuator
+    - oil_control_valve
+  common_causes:
+    - id: ocv_stuck
+      likelihood: high
+      label:
+        en: Oil control valve stuck
+        de: Ölsteuerventil klemmt
+  repair:
+    difficulty: medium
+    diy_possible: true
+    estimated_cost_eur: [80, 1000]
+    estimated_hours: [0.5, 5]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+    limp_mode_possible: false
+  references:
+    - sae:J2012
+  sources:
+    - https://github.com/Wal33D/dtc-database
+
+- code: P003F
+  category: powertrain
+  title:
+    en: A Camshaft Profile Actuator A Control Stuck On Bank 2
+    de: A-Nockenwellen-Profilaktuator A hängt zugeschaltet Bank 2
+  description:
+    en: Same as P003D but on bank 2 — intake cam profile actuator A stuck engaged.
+    de: Wie P003D, jedoch Bank 2 — Einlass-Profilaktuator A bleibt zugeschaltet.
+  affected_components:
+    - cam_profile_actuator
+    - oil_control_valve
+  common_causes:
+    - id: pin_stuck_engaged
+      likelihood: high
+      label:
+        en: Locking pin stuck engaged
+        de: Verriegelungspin sitzt fest
+  repair:
+    difficulty: medium
+    diy_possible: true
+    estimated_cost_eur: [80, 1000]
+    estimated_hours: [0.5, 5]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+    limp_mode_possible: false
+  references:
+    - sae:J2012
+  sources:
+    - https://github.com/Wal33D/dtc-database
+
+- code: P0040
+  category: powertrain
+  title:
+    en: O2 Sensor Signals Swapped Bank 1 Sensor 1/Bank 2 Sensor 1
+    de: O2-Sensorsignale vertauscht Bank 1 Sensor 1/Bank 2 Sensor 1
+  description:
+    en: The pre-cat oxygen sensors of bank 1 and bank 2 appear to be wired the wrong way around — bank 1 reacts when bank 2 should and vice versa. Typically after recent service.
+    de: Die Vorkatalysator-Lambdasonden von Bank 1 und Bank 2 sind offenbar vertauscht angeschlossen — Bank 1 reagiert auf Bank-2-Bedingungen und umgekehrt. Häufig nach Werkstattarbeit.
+  affected_components:
+    - o2_sensor_b1s1
+    - o2_sensor_b2s1
+    - sensor_wiring
+  common_causes:
+    - id: sensors_swapped
+      likelihood: high
+      label:
+        en: Sensors swapped after recent replacement
+        de: Sensoren nach Tausch vertauscht angeschlossen
+    - id: wiring_routed_wrong
+      likelihood: medium
+      label:
+        en: Wiring harness routed across banks
+        de: Kabelbaum bankübergreifend verlegt
+  repair:
+    difficulty: easy
+    diy_possible: true
+    estimated_cost_eur: [0, 100]
+    estimated_hours: [0.3, 1]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+    limp_mode_possible: false
+  references:
+    - sae:J2012
+  sources:
+    - https://github.com/Wal33D/dtc-database
+
+- code: P0041
+  category: powertrain
+  title:
+    en: O2 Sensor Signals Swapped Bank 1 Sensor 2/Bank 2 Sensor 2
+    de: O2-Sensorsignale vertauscht Bank 1 Sensor 2/Bank 2 Sensor 2
+  description:
+    en: Same fault as P0040 but for the post-cat oxygen sensors — bank 1 sensor 2 and bank 2 sensor 2 swapped.
+    de: Wie P0040, jedoch für die Nachkatalysator-Lambdasonden — Bank 1 Sensor 2 und Bank 2 Sensor 2 vertauscht.
+  affected_components:
+    - o2_sensor_b1s2
+    - o2_sensor_b2s2
+    - sensor_wiring
+  common_causes:
+    - id: sensors_swapped
+      likelihood: high
+      label:
+        en: Sensors swapped after replacement
+        de: Sensoren nach Tausch vertauscht
+  repair:
+    difficulty: easy
+    diy_possible: true
+    estimated_cost_eur: [0, 100]
+    estimated_hours: [0.3, 1]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+    limp_mode_possible: false
+  references:
+    - sae:J2012
+  sources:
+    - https://github.com/Wal33D/dtc-database
+
+- code: P0042
+  category: powertrain
+  title:
+    en: HO2S Heater Control Circuit Bank 1 Sensor 3
+    de: Lambdasondenheizung Schaltkreis Bank 1 Sensor 3
+  description:
+    en: Generic electrical fault in the heater control of the bank 1, sensor 3 oxygen sensor (typically a third sensor downstream of multi-stage cat or NOx trap).
+    de: Allgemeiner elektrischer Fehler an der Heizungsansteuerung der Lambdasonde Bank 1 Sensor 3 (meist dritter Sensor hinter Mehrstufen-Kat oder NOx-Speicherkat).
+  affected_components:
+    - o2_sensor_b1s3_heater
+    - heater_wiring
+  common_causes:
+    - id: heater_open
+      likelihood: high
+      label:
+        en: Heater element open
+        de: Heizelement unterbrochen
+    - id: heater_wiring
+      likelihood: medium
+      label:
+        en: Heater wiring or connector fault
+        de: Heizungsverkabelung oder Stecker fehlerhaft
+  repair:
+    difficulty: medium
+    diy_possible: true
+    estimated_cost_eur: [80, 400]
+    estimated_hours: [0.5, 2]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+    limp_mode_possible: false
+  references:
+    - sae:J2012
+  sources:
+    - https://github.com/Wal33D/dtc-database
+
+- code: P0043
+  category: powertrain
+  title:
+    en: HO2S Heater Control Circuit Low Bank 1 Sensor 3
+    de: Lambdasondenheizung Schaltkreis niedrig Bank 1 Sensor 3
+  description:
+    en: Heater control voltage of the bank 1, sensor 3 oxygen sensor is below the expected range — short to ground or low-resistance fault.
+    de: Heizungs-Steuerspannung der Lambdasonde Bank 1 Sensor 3 unter Sollbereich — Masseschluss oder niederohmiger Fehler.
+  affected_components:
+    - o2_sensor_b1s3_heater
+    - heater_wiring
+  common_causes:
+    - id: short_to_ground
+      likelihood: high
+      label:
+        en: Heater wiring shorted to ground
+        de: Heizungsverkabelung mit Masseschluss
+  repair:
+    difficulty: medium
+    diy_possible: true
+    estimated_cost_eur: [80, 400]
+    estimated_hours: [0.5, 2]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+    limp_mode_possible: false
+  references:
+    - sae:J2012
+  sources:
+    - https://github.com/Wal33D/dtc-database
+
+- code: P0044
+  category: powertrain
+  title:
+    en: HO2S Heater Control Circuit High Bank 1 Sensor 3
+    de: Lambdasondenheizung Schaltkreis hoch Bank 1 Sensor 3
+  description:
+    en: Heater control voltage of the bank 1, sensor 3 oxygen sensor is above the expected range — short to power or open ground.
+    de: Heizungs-Steuerspannung der Lambdasonde Bank 1 Sensor 3 über Sollbereich — Plus-Schluss oder offene Masse.
+  affected_components:
+    - o2_sensor_b1s3_heater
+    - heater_wiring
+  common_causes:
+    - id: short_to_power
+      likelihood: high
+      label:
+        en: Heater wiring shorted to battery
+        de: Heizungsverkabelung mit Plus-Schluss
+  repair:
+    difficulty: medium
+    diy_possible: true
+    estimated_cost_eur: [80, 400]
+    estimated_hours: [0.5, 2]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+    limp_mode_possible: false
+  references:
+    - sae:J2012
+  sources:
+    - https://github.com/Wal33D/dtc-database
+
+- code: P0045
+  category: powertrain
+  title:
+    en: Turbocharger/Supercharger Boost Control A Circuit/Open
+    de: Turbolader/Kompressor Ladedruck-Regelung A Schaltkreis unterbrochen
+  description:
+    en: Open circuit at the boost control solenoid/actuator A. The ECU cannot drive the wastegate or VGT vanes.
+    de: Unterbrochener Schaltkreis am Ladedruck-Aktuator A. Wastegate oder VTG-Schaufeln können vom Steuergerät nicht angesteuert werden.
+  affected_components:
+    - boost_control_solenoid
+    - actuator_wiring
+  common_causes:
+    - id: open_wiring
+      likelihood: high
+      label:
+        en: Wiring break or unplugged connector
+        de: Kabelbruch oder loser Stecker
+    - id: solenoid_open
+      likelihood: medium
+      label:
+        en: Solenoid coil open
+        de: Magnetspule unterbrochen
+  repair:
+    difficulty: medium
+    diy_possible: true
+    estimated_cost_eur: [80, 600]
+    estimated_hours: [0.5, 3]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+    limp_mode_possible: true
+  references:
+    - sae:J2012
+  sources:
+    - https://github.com/Wal33D/dtc-database
+
+- code: P0046
+  category: powertrain
+  title:
+    en: Turbocharger/Supercharger Boost Control A Circuit Range/Performance
+    de: Turbolader/Kompressor Ladedruck-Regelung A Schaltkreis Bereich/Leistung
+  description:
+    en: Boost control actuator A is electrically active but boost pressure deviates from target. Mechanical or hydraulic limitation.
+    de: Ladedruck-Aktuator A ist elektrisch aktiv, der Ladedruck weicht jedoch vom Sollwert ab. Mechanische oder hydraulische Begrenzung.
+  affected_components:
+    - boost_control_solenoid
+    - wastegate
+    - vacuum_lines
+  common_causes:
+    - id: vacuum_leak
+      likelihood: high
+      label:
+        en: Vacuum/boost line leak
+        de: Unterdruck-/Ladedruckleitung undicht
+    - id: wastegate_stuck
+      likelihood: medium
+      label:
+        en: Wastegate sticking
+        de: Wastegate klemmt
+  repair:
+    difficulty: medium
+    diy_possible: false
+    estimated_cost_eur: [120, 1500]
+    estimated_hours: [1, 6]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+    limp_mode_possible: true
+  references:
+    - sae:J2012
+  sources:
+    - https://github.com/Wal33D/dtc-database
+
+- code: P0047
+  category: powertrain
+  title:
+    en: Turbocharger/Supercharger Boost Control A Circuit Low
+    de: Turbolader/Kompressor Ladedruck-Regelung A Schaltkreis niedrig
+  description:
+    en: Boost control circuit A voltage below expected range — short to ground or low-resistance fault in solenoid wiring.
+    de: Spannung am Ladedruck-Schaltkreis A unter Sollbereich — Masseschluss oder niederohmiger Fehler in der Solenoid-Verkabelung.
+  affected_components:
+    - boost_control_solenoid
+    - actuator_wiring
+  common_causes:
+    - id: short_to_ground
+      likelihood: high
+      label:
+        en: Wiring shorted to ground
+        de: Verkabelung mit Masseschluss
+  repair:
+    difficulty: medium
+    diy_possible: true
+    estimated_cost_eur: [80, 600]
+    estimated_hours: [0.5, 3]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+    limp_mode_possible: true
+  references:
+    - sae:J2012
+  sources:
+    - https://github.com/Wal33D/dtc-database
+
+- code: P0048
+  category: powertrain
+  title:
+    en: Turbocharger/Supercharger Boost Control A Circuit High
+    de: Turbolader/Kompressor Ladedruck-Regelung A Schaltkreis hoch
+  description:
+    en: Boost control circuit A voltage above expected range — short to power or open ground in solenoid wiring.
+    de: Spannung am Ladedruck-Schaltkreis A über Sollbereich — Plus-Schluss oder offene Masse in der Solenoid-Verkabelung.
+  affected_components:
+    - boost_control_solenoid
+    - actuator_wiring
+  common_causes:
+    - id: short_to_power
+      likelihood: high
+      label:
+        en: Wiring shorted to battery
+        de: Verkabelung mit Plus-Schluss
+  repair:
+    difficulty: medium
+    diy_possible: true
+    estimated_cost_eur: [80, 600]
+    estimated_hours: [0.5, 3]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+    limp_mode_possible: true
+  references:
+    - sae:J2012
+  sources:
+    - https://github.com/Wal33D/dtc-database
+
+- code: P0049
+  category: powertrain
+  title:
+    en: Turbocharger/Supercharger A Turbine Overspeed
+    de: Turbolader/Kompressor A Turbinenüberdrehzahl
+  description:
+    en: The turbocharger A turbine speed exceeded its safe limit. Risk of bearing damage and shaft fracture. Often caused by a stuck-closed wastegate or boost control fault.
+    de: Die Turbinendrehzahl des Turboladers A hat den Sicherheitswert überschritten. Risiko von Lager- und Wellenschaden. Häufig durch geschlossen klemmendes Wastegate oder Regelfehler.
+  affected_components:
+    - turbocharger
+    - wastegate
+    - turbine_speed_sensor
+  common_causes:
+    - id: wastegate_stuck_closed
+      likelihood: high
+      label:
+        en: Wastegate stuck closed
+        de: Wastegate klemmt geschlossen
+    - id: boost_control_fault
+      likelihood: medium
+      label:
+        en: Boost control loop fault
+        de: Ladedruckregelkreis fehlerhaft
+  repair:
+    difficulty: hard
+    diy_possible: false
+    estimated_cost_eur: [300, 3000]
+    estimated_hours: [2, 10]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+    limp_mode_possible: true
+  references:
+    - sae:J2012
+  sources:
+    - https://github.com/Wal33D/dtc-database
+
+- code: P004A
+  category: powertrain
+  title:
+    en: Turbocharger/Supercharger Boost Control B Circuit/Open
+    de: Turbolader/Kompressor Ladedruck-Regelung B Schaltkreis unterbrochen
+  description:
+    en: Open circuit at boost control solenoid B (twin-turbo or two-stage system). Same diagnosis as P0045 on actuator B.
+    de: Unterbrochener Schaltkreis am Ladedruck-Aktuator B (Twin-Turbo oder zweistufig). Wie P0045, jedoch Aktuator B.
+  affected_components:
+    - boost_control_solenoid_b
+    - actuator_wiring
+  common_causes:
+    - id: open_wiring
+      likelihood: high
+      label:
+        en: Wiring break
+        de: Kabelbruch
+  repair:
+    difficulty: medium
+    diy_possible: true
+    estimated_cost_eur: [80, 600]
+    estimated_hours: [0.5, 3]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+    limp_mode_possible: true
+  references:
+    - sae:J2012
+  sources:
+    - https://github.com/Wal33D/dtc-database
+
+- code: P004B
+  category: powertrain
+  title:
+    en: Turbocharger/Supercharger Boost Control B Circuit Range/Performance
+    de: Turbolader/Kompressor Ladedruck-Regelung B Schaltkreis Bereich/Leistung
+  description:
+    en: Boost control B mechanical/hydraulic deviation from target. Same as P0046 on actuator B.
+    de: Mechanische/hydraulische Abweichung am Ladedruck-Aktuator B. Wie P0046, jedoch Aktuator B.
+  affected_components:
+    - boost_control_solenoid_b
+    - wastegate_b
+  common_causes:
+    - id: vacuum_leak
+      likelihood: high
+      label:
+        en: Vacuum/boost line leak
+        de: Unterdruck-/Ladedruckleitung undicht
+  repair:
+    difficulty: medium
+    diy_possible: false
+    estimated_cost_eur: [120, 1500]
+    estimated_hours: [1, 6]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+    limp_mode_possible: true
+  references:
+    - sae:J2012
+  sources:
+    - https://github.com/Wal33D/dtc-database
+
+- code: P004C
+  category: powertrain
+  title:
+    en: Turbocharger/Supercharger Boost Control B Circuit Low
+    de: Turbolader/Kompressor Ladedruck-Regelung B Schaltkreis niedrig
+  description:
+    en: Boost control B circuit voltage below expected range. Same as P0047 on actuator B.
+    de: Spannung am Ladedruck-Schaltkreis B unter Sollbereich. Wie P0047, jedoch Aktuator B.
+  affected_components:
+    - boost_control_solenoid_b
+    - actuator_wiring
+  common_causes:
+    - id: short_to_ground
+      likelihood: high
+      label:
+        en: Wiring shorted to ground
+        de: Verkabelung mit Masseschluss
+  repair:
+    difficulty: medium
+    diy_possible: true
+    estimated_cost_eur: [80, 600]
+    estimated_hours: [0.5, 3]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+    limp_mode_possible: true
+  references:
+    - sae:J2012
+  sources:
+    - https://github.com/Wal33D/dtc-database
+
+- code: P004D
+  category: powertrain
+  title:
+    en: Turbocharger/Supercharger Boost Control B Circuit High
+    de: Turbolader/Kompressor Ladedruck-Regelung B Schaltkreis hoch
+  description:
+    en: Boost control B circuit voltage above expected range. Same as P0048 on actuator B.
+    de: Spannung am Ladedruck-Schaltkreis B über Sollbereich. Wie P0048, jedoch Aktuator B.
+  affected_components:
+    - boost_control_solenoid_b
+    - actuator_wiring
+  common_causes:
+    - id: short_to_power
+      likelihood: high
+      label:
+        en: Wiring shorted to battery
+        de: Verkabelung mit Plus-Schluss
+  repair:
+    difficulty: medium
+    diy_possible: true
+    estimated_cost_eur: [80, 600]
+    estimated_hours: [0.5, 3]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+    limp_mode_possible: true
+  references:
+    - sae:J2012
+  sources:
+    - https://github.com/Wal33D/dtc-database
+
+- code: P004E
+  category: powertrain
+  title:
+    en: Turbocharger/Supercharger Boost Control A Circuit Intermittent/Erratic
+    de: Turbolader/Kompressor Ladedruck-Regelung A sporadisch/unstetig
+  description:
+    en: Intermittent dropouts or noise on boost control A circuit. Loose connector, partial wiring break, or solenoid degrading.
+    de: Sporadische Aussetzer oder Störungen am Ladedruck-Schaltkreis A. Wackelkontakt, partieller Kabelbruch oder Solenoid in Verschlechterung.
+  affected_components:
+    - boost_control_solenoid
+    - connector
+  common_causes:
+    - id: loose_connector
+      likelihood: high
+      label:
+        en: Connector loose or corroded
+        de: Stecker locker oder korrodiert
+    - id: chafed_wiring
+      likelihood: medium
+      label:
+        en: Wiring chafed inside loom
+        de: Kabelbaum scheuert intern
+  repair:
+    difficulty: medium
+    diy_possible: true
+    estimated_cost_eur: [50, 500]
+    estimated_hours: [0.5, 3]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+    limp_mode_possible: false
+  references:
+    - sae:J2012
+  sources:
+    - https://github.com/Wal33D/dtc-database
+
+- code: P004F
+  category: powertrain
+  title:
+    en: Turbocharger/Supercharger Boost Control B Circuit Intermittent/Erratic
+    de: Turbolader/Kompressor Ladedruck-Regelung B sporadisch/unstetig
+  description:
+    en: Same intermittent fault pattern as P004E on boost control B.
+    de: Gleiches sporadisches Fehlermuster wie P004E auf Ladedruck-Schaltkreis B.
+  affected_components:
+    - boost_control_solenoid_b
+    - connector
+  common_causes:
+    - id: loose_connector
+      likelihood: high
+      label:
+        en: Connector loose or corroded
+        de: Stecker locker oder korrodiert
+  repair:
+    difficulty: medium
+    diy_possible: true
+    estimated_cost_eur: [50, 500]
+    estimated_hours: [0.5, 3]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+    limp_mode_possible: false
+  references:
+    - sae:J2012
+  sources:
+    - https://github.com/Wal33D/dtc-database
+
+- code: P0053
+  category: powertrain
+  title:
+    en: HO2S Heater Resistance Bank 1 Sensor 1
+    de: Lambdasondenheizung Widerstand Bank 1 Sensor 1
+  description:
+    en: The heater resistance of the bank 1, sensor 1 oxygen sensor is outside its specified range. Sensor heater aging or short between heater and signal.
+    de: Der Heizungswiderstand der Lambdasonde Bank 1 Sensor 1 liegt außerhalb der Spezifikation. Heizung gealtert oder Kurzschluss zwischen Heizung und Signal.
+  affected_components:
+    - o2_sensor_b1s1
+  common_causes:
+    - id: heater_aged
+      likelihood: high
+      label:
+        en: Heater element aged, resistance high
+        de: Heizelement gealtert, Widerstand hoch
+    - id: sensor_failed
+      likelihood: medium
+      label:
+        en: Oxygen sensor failed
+        de: Lambdasonde defekt
+  repair:
+    difficulty: easy
+    diy_possible: true
+    estimated_cost_eur: [60, 300]
+    estimated_hours: [0.3, 1.5]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+    limp_mode_possible: false
+  references:
+    - sae:J2012
+  sources:
+    - https://github.com/Wal33D/dtc-database
+
+- code: P0054
+  category: powertrain
+  title:
+    en: HO2S Heater Resistance Bank 1 Sensor 2
+    de: Lambdasondenheizung Widerstand Bank 1 Sensor 2
+  description:
+    en: Same as P0053 on bank 1 sensor 2 (post-cat). Heater resistance out of range.
+    de: Wie P0053 auf Bank 1 Sensor 2 (nach Kat). Heizungswiderstand außerhalb des Bereichs.
+  affected_components:
+    - o2_sensor_b1s2
+  common_causes:
+    - id: heater_aged
+      likelihood: high
+      label:
+        en: Heater element aged
+        de: Heizelement gealtert
+  repair:
+    difficulty: easy
+    diy_possible: true
+    estimated_cost_eur: [60, 300]
+    estimated_hours: [0.3, 1.5]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+    limp_mode_possible: false
+  references:
+    - sae:J2012
+  sources:
+    - https://github.com/Wal33D/dtc-database
+
+- code: P0055
+  category: powertrain
+  title:
+    en: HO2S Heater Resistance Bank 1 Sensor 3
+    de: Lambdasondenheizung Widerstand Bank 1 Sensor 3
+  description:
+    en: Same as P0053 but on bank 1 sensor 3 (third sensor downstream).
+    de: Wie P0053, jedoch Bank 1 Sensor 3 (dritter Sensor stromabwärts).
+  affected_components:
+    - o2_sensor_b1s3
+  common_causes:
+    - id: heater_aged
+      likelihood: high
+      label:
+        en: Heater element aged
+        de: Heizelement gealtert
+  repair:
+    difficulty: easy
+    diy_possible: true
+    estimated_cost_eur: [60, 300]
+    estimated_hours: [0.3, 1.5]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+    limp_mode_possible: false
+  references:
+    - sae:J2012
+  sources:
+    - https://github.com/Wal33D/dtc-database
+
+- code: P0059
+  category: powertrain
+  title:
+    en: HO2S Heater Resistance Bank 2 Sensor 1
+    de: Lambdasondenheizung Widerstand Bank 2 Sensor 1
+  description:
+    en: Heater resistance out of range on bank 2 sensor 1 (pre-cat). Same diagnostic as P0053 on the second bank.
+    de: Heizungswiderstand außerhalb des Bereichs an Bank 2 Sensor 1 (vor Kat). Gleiche Diagnose wie P0053, jedoch zweite Bank.
+  affected_components:
+    - o2_sensor_b2s1
+  common_causes:
+    - id: heater_aged
+      likelihood: high
+      label:
+        en: Heater element aged
+        de: Heizelement gealtert
+  repair:
+    difficulty: easy
+    diy_possible: true
+    estimated_cost_eur: [60, 300]
+    estimated_hours: [0.3, 1.5]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+    limp_mode_possible: false
+  references:
+    - sae:J2012
+  sources:
+    - https://github.com/Wal33D/dtc-database
+
+- code: P005A
+  category: powertrain
+  title:
+    en: B Camshaft Profile Actuator A Control Performance/Stuck Off Bank 1
+    de: B-Nockenwellen-Profilaktuator A Leistung/hängt aus Bank 1
+  description:
+    en: Exhaust cam profile actuator A on bank 1 stuck disengaged. Same fault pattern as P003C but on the exhaust cam.
+    de: Auslass-Profilaktuator A auf Bank 1 bleibt aus. Gleiches Fehlerbild wie P003C, jedoch Auslass.
+  affected_components:
+    - cam_profile_actuator_exhaust
+    - oil_control_valve
+  common_causes:
+    - id: ocv_stuck
+      likelihood: high
+      label:
+        en: Oil control valve stuck
+        de: Ölsteuerventil klemmt
+  repair:
+    difficulty: medium
+    diy_possible: true
+    estimated_cost_eur: [80, 1000]
+    estimated_hours: [0.5, 5]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+    limp_mode_possible: false
+  references:
+    - sae:J2012
+  sources:
+    - https://github.com/Wal33D/dtc-database
+
+- code: P005B
+  category: powertrain
+  title:
+    en: B Camshaft Profile Actuator A Control Stuck On Bank 1
+    de: B-Nockenwellen-Profilaktuator A hängt zugeschaltet Bank 1
+  description:
+    en: Exhaust cam profile actuator A on bank 1 stuck engaged. Same fault pattern as P003D on the exhaust cam.
+    de: Auslass-Profilaktuator A auf Bank 1 bleibt zugeschaltet. Wie P003D, jedoch Auslass.
+  affected_components:
+    - cam_profile_actuator_exhaust
+    - oil_control_valve
+  common_causes:
+    - id: pin_stuck_engaged
+      likelihood: high
+      label:
+        en: Locking pin stuck engaged
+        de: Verriegelungspin sitzt fest
+  repair:
+    difficulty: medium
+    diy_possible: true
+    estimated_cost_eur: [80, 1000]
+    estimated_hours: [0.5, 5]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+    limp_mode_possible: false
+  references:
+    - sae:J2012
+  sources:
+    - https://github.com/Wal33D/dtc-database
+
+- code: P005C
+  category: powertrain
+  title:
+    en: B Camshaft Profile Actuator A Control Performance/Stuck Off Bank 2
+    de: B-Nockenwellen-Profilaktuator A Leistung/hängt aus Bank 2
+  description:
+    en: Same as P005A on bank 2.
+    de: Wie P005A, jedoch Bank 2.
+  affected_components:
+    - cam_profile_actuator_exhaust
+    - oil_control_valve
+  common_causes:
+    - id: ocv_stuck
+      likelihood: high
+      label:
+        en: Oil control valve stuck
+        de: Ölsteuerventil klemmt
+  repair:
+    difficulty: medium
+    diy_possible: true
+    estimated_cost_eur: [80, 1000]
+    estimated_hours: [0.5, 5]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+    limp_mode_possible: false
+  references:
+    - sae:J2012
+  sources:
+    - https://github.com/Wal33D/dtc-database
+
+- code: P005D
+  category: powertrain
+  title:
+    en: B Camshaft Profile Actuator A Control Stuck On Bank 2
+    de: B-Nockenwellen-Profilaktuator A hängt zugeschaltet Bank 2
+  description:
+    en: Same as P005B on bank 2.
+    de: Wie P005B, jedoch Bank 2.
+  affected_components:
+    - cam_profile_actuator_exhaust
+    - oil_control_valve
+  common_causes:
+    - id: pin_stuck_engaged
+      likelihood: high
+      label:
+        en: Locking pin stuck engaged
+        de: Verriegelungspin sitzt fest
+  repair:
+    difficulty: medium
+    diy_possible: true
+    estimated_cost_eur: [80, 1000]
+    estimated_hours: [0.5, 5]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+    limp_mode_possible: false
+  references:
+    - sae:J2012
+  sources:
+    - https://github.com/Wal33D/dtc-database
+
+- code: P005E
+  category: powertrain
+  title:
+    en: Turbocharger/Supercharger Boost Control B Supply Voltage Circuit Low
+    de: Turbolader/Kompressor Ladedruck-Regelung B Versorgungsspannung niedrig
+  description:
+    en: Supply voltage feeding boost control actuator B is below the expected range. Likely fuse, supply wiring or relay fault.
+    de: Versorgungsspannung des Ladedruck-Aktuators B unter Sollbereich. Wahrscheinlich Sicherung, Versorgungsleitung oder Relais defekt.
+  affected_components:
+    - boost_actuator_b_supply
+    - relay
+    - fuse
+  common_causes:
+    - id: blown_fuse
+      likelihood: high
+      label:
+        en: Supply fuse blown or relay failed
+        de: Versorgungssicherung defekt oder Relais ausgefallen
+  repair:
+    difficulty: medium
+    diy_possible: true
+    estimated_cost_eur: [10, 200]
+    estimated_hours: [0.3, 1.5]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: false
+    limp_mode_possible: true
+  references:
+    - sae:J2012
+  sources:
+    - https://github.com/Wal33D/dtc-database
+
+- code: P005F
+  category: powertrain
+  title:
+    en: Turbocharger/Supercharger Boost Control B Supply Voltage Circuit High
+    de: Turbolader/Kompressor Ladedruck-Regelung B Versorgungsspannung hoch
+  description:
+    en: Supply voltage feeding boost control actuator B is above the expected range. Likely charging system overvoltage or wiring shorted to a higher potential.
+    de: Versorgungsspannung des Ladedruck-Aktuators B über Sollbereich. Wahrscheinlich Überspannung im Bordnetz oder Plus-Schluss auf höheres Potential.
+  affected_components:
+    - boost_actuator_b_supply
+    - charging_system
+  common_causes:
+    - id: charging_overvoltage
+      likelihood: high
+      label:
+        en: Alternator regulator failed (overvoltage)
+        de: Lichtmaschinenregler defekt (Überspannung)
+  repair:
+    difficulty: medium
+    diy_possible: true
+    estimated_cost_eur: [50, 600]
+    estimated_hours: [0.5, 3]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: false
+    limp_mode_possible: true
+  references:
+    - sae:J2012
+  sources:
+    - https://github.com/Wal33D/dtc-database
+
+- code: P0060
+  category: powertrain
+  title:
+    en: HO2S Heater Resistance Bank 2 Sensor 2
+    de: Lambdasondenheizung Widerstand Bank 2 Sensor 2
+  description:
+    en: Heater resistance out of range on bank 2 sensor 2 (post-cat). Same diagnostic as P0053 on second bank, post-cat.
+    de: Heizungswiderstand außerhalb des Bereichs an Bank 2 Sensor 2 (nach Kat). Wie P0053, jedoch zweite Bank, nach Kat.
+  affected_components:
+    - o2_sensor_b2s2
+  common_causes:
+    - id: heater_aged
+      likelihood: high
+      label:
+        en: Heater element aged
+        de: Heizelement gealtert
+  repair:
+    difficulty: easy
+    diy_possible: true
+    estimated_cost_eur: [60, 300]
+    estimated_hours: [0.3, 1.5]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+    limp_mode_possible: false
+  references:
+    - sae:J2012
+  sources:
+    - https://github.com/Wal33D/dtc-database
+
+- code: P0061
+  category: powertrain
+  title:
+    en: HO2S Heater Resistance Bank 2 Sensor 3
+    de: Lambdasondenheizung Widerstand Bank 2 Sensor 3
+  description:
+    en: Heater resistance out of range on bank 2 sensor 3.
+    de: Heizungswiderstand außerhalb des Bereichs an Bank 2 Sensor 3.
+  affected_components:
+    - o2_sensor_b2s3
+  common_causes:
+    - id: heater_aged
+      likelihood: high
+      label:
+        en: Heater element aged
+        de: Heizelement gealtert
+  repair:
+    difficulty: easy
+    diy_possible: true
+    estimated_cost_eur: [60, 300]
+    estimated_hours: [0.3, 1.5]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+    limp_mode_possible: false
+  references:
+    - sae:J2012
+  sources:
+    - https://github.com/Wal33D/dtc-database
+
+- code: P0062
+  category: powertrain
+  title:
+    en: HO2S Heater Control Circuit Bank 2 Sensor 3
+    de: Lambdasondenheizung Schaltkreis Bank 2 Sensor 3
+  description:
+    en: Generic electrical fault in the heater control of bank 2 sensor 3.
+    de: Allgemeiner elektrischer Fehler an der Heizungsansteuerung Bank 2 Sensor 3.
+  affected_components:
+    - o2_sensor_b2s3_heater
+    - heater_wiring
+  common_causes:
+    - id: heater_open
+      likelihood: high
+      label:
+        en: Heater element open
+        de: Heizelement unterbrochen
+  repair:
+    difficulty: medium
+    diy_possible: true
+    estimated_cost_eur: [80, 400]
+    estimated_hours: [0.5, 2]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+    limp_mode_possible: false
+  references:
+    - sae:J2012
+  sources:
+    - https://github.com/Wal33D/dtc-database
+
+- code: P0063
+  category: powertrain
+  title:
+    en: HO2S Heater Control Circuit Low Bank 2 Sensor 3
+    de: Lambdasondenheizung Schaltkreis niedrig Bank 2 Sensor 3
+  description:
+    en: Heater control voltage of bank 2 sensor 3 below the expected range.
+    de: Heizungs-Steuerspannung Bank 2 Sensor 3 unter Sollbereich.
+  affected_components:
+    - o2_sensor_b2s3_heater
+    - heater_wiring
+  common_causes:
+    - id: short_to_ground
+      likelihood: high
+      label:
+        en: Heater wiring shorted to ground
+        de: Heizungsverkabelung mit Masseschluss
+  repair:
+    difficulty: medium
+    diy_possible: true
+    estimated_cost_eur: [80, 400]
+    estimated_hours: [0.5, 2]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+    limp_mode_possible: false
+  references:
+    - sae:J2012
+  sources:
+    - https://github.com/Wal33D/dtc-database
+
+- code: P0064
+  category: powertrain
+  title:
+    en: HO2S Heater Control Circuit High Bank 2 Sensor 3
+    de: Lambdasondenheizung Schaltkreis hoch Bank 2 Sensor 3
+  description:
+    en: Heater control voltage of bank 2 sensor 3 above the expected range.
+    de: Heizungs-Steuerspannung Bank 2 Sensor 3 über Sollbereich.
+  affected_components:
+    - o2_sensor_b2s3_heater
+    - heater_wiring
+  common_causes:
+    - id: short_to_power
+      likelihood: high
+      label:
+        en: Heater wiring shorted to battery
+        de: Heizungsverkabelung mit Plus-Schluss
+  repair:
+    difficulty: medium
+    diy_possible: true
+    estimated_cost_eur: [80, 400]
+    estimated_hours: [0.5, 2]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+    limp_mode_possible: false
+  references:
+    - sae:J2012
+  sources:
+    - https://github.com/Wal33D/dtc-database
+
+- code: P0065
+  category: powertrain
+  title:
+    en: Air Assisted Injector Control Range/Performance
+    de: Luftunterstützte Einspritzdüsen-Regelung Bereich/Leistung
+  description:
+    en: The air-assist injector control system (used on some lean-burn or direct-injection engines to atomize fuel with air) shows a performance deviation from the expected behavior.
+    de: Das luftunterstützte Einspritzsystem (bei manchen Magerlauf- oder Direkteinspritzern zur Kraftstoffzerstäubung) zeigt eine Abweichung vom Sollverhalten.
+  affected_components:
+    - air_assist_valve
+    - air_supply
+  common_causes:
+    - id: clogged_air_passage
+      likelihood: high
+      label:
+        en: Air passage clogged with carbon
+        de: Luftkanal durch Verkokung verstopft
+  repair:
+    difficulty: hard
+    diy_possible: false
+    estimated_cost_eur: [200, 1500]
+    estimated_hours: [2, 8]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+    limp_mode_possible: false
+  references:
+    - sae:J2012
+  sources:
+    - https://github.com/Wal33D/dtc-database
+
+- code: P0066
+  category: powertrain
+  title:
+    en: Air Assisted Injector Control Circuit Low
+    de: Luftunterstützte Einspritzdüsen-Regelung Schaltkreis niedrig
+  description:
+    en: Control voltage of the air-assist injector valve is below the expected range — short to ground or low-resistance fault.
+    de: Steuerspannung des Luftunterstützungsventils unter Sollbereich — Masseschluss oder niederohmiger Fehler.
+  affected_components:
+    - air_assist_valve
+    - actuator_wiring
+  common_causes:
+    - id: short_to_ground
+      likelihood: high
+      label:
+        en: Wiring shorted to ground
+        de: Verkabelung mit Masseschluss
+  repair:
+    difficulty: medium
+    diy_possible: true
+    estimated_cost_eur: [80, 600]
+    estimated_hours: [0.5, 3]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: false
+    limp_mode_possible: false
+  references:
+    - sae:J2012
+  sources:
+    - https://github.com/Wal33D/dtc-database
+
+- code: P0067
+  category: powertrain
+  title:
+    en: Air Assisted Injector Control Circuit High
+    de: Luftunterstützte Einspritzdüsen-Regelung Schaltkreis hoch
+  description:
+    en: Control voltage of the air-assist injector valve is above the expected range — short to power or open ground.
+    de: Steuerspannung des Luftunterstützungsventils über Sollbereich — Plus-Schluss oder offene Masse.
+  affected_components:
+    - air_assist_valve
+    - actuator_wiring
+  common_causes:
+    - id: short_to_power
+      likelihood: high
+      label:
+        en: Wiring shorted to battery
+        de: Verkabelung mit Plus-Schluss
+  repair:
+    difficulty: medium
+    diy_possible: true
+    estimated_cost_eur: [80, 600]
+    estimated_hours: [0.5, 3]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: false
+    limp_mode_possible: false
+  references:
+    - sae:J2012
+  sources:
+    - https://github.com/Wal33D/dtc-database
+
+- code: P006A
+  category: powertrain
+  title:
+    en: MAP - Mass or Volume Air Flow Correlation Bank 1
+    de: MAP-Saugrohrdruck zu Luftmasse Korrelation Bank 1
+  description:
+    en: The expected relationship between manifold absolute pressure (MAP) and mass airflow (MAF) on bank 1 is violated. One of the two sensors is reading incorrectly.
+    de: Die erwartete Beziehung zwischen Saugrohrdrucksensor (MAP) und Luftmassenmesser (MAF) auf Bank 1 ist verletzt. Einer der beiden Sensoren liest fehlerhaft.
+  affected_components:
+    - map_sensor
+    - mass_air_flow_sensor
+    - intake_system
+  common_causes:
+    - id: maf_contaminated
+      likelihood: high
+      label:
+        en: MAF sensor contaminated
+        de: LMM verschmutzt
+    - id: vacuum_leak
+      likelihood: high
+      label:
+        en: Intake/vacuum leak
+        de: Saugrohr- oder Unterdruckleck
+    - id: map_sensor_drift
+      likelihood: medium
+      label:
+        en: MAP sensor reading drifted
+        de: MAP-Sensor mit verschobenem Messwert
+  repair:
+    difficulty: medium
+    diy_possible: true
+    estimated_cost_eur: [50, 600]
+    estimated_hours: [0.5, 3]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+    limp_mode_possible: false
+  references:
+    - sae:J2012
+  sources:
+    - https://github.com/Wal33D/dtc-database
+    - https://en.wikipedia.org/wiki/MAP_sensor
+
+- code: P006B
+  category: powertrain
+  title:
+    en: MAP - Exhaust Pressure Correlation
+    de: MAP-Saugrohrdruck zu Abgasdruck Korrelation
+  description:
+    en: The relationship between manifold absolute pressure and exhaust back pressure is implausible. One of the two pressure sensors is faulty or there is a major leak in either path.
+    de: Die Beziehung zwischen Saugrohrdruck und Abgasgegendruck ist unplausibel. Einer der beiden Drucksensoren ist defekt oder es liegt ein größeres Leck vor.
+  affected_components:
+    - map_sensor
+    - exhaust_pressure_sensor
+  common_causes:
+    - id: exhaust_pressure_sensor
+      likelihood: high
+      label:
+        en: Exhaust back-pressure sensor faulty
+        de: Abgasgegendrucksensor defekt
+    - id: dpf_or_exhaust_leak
+      likelihood: medium
+      label:
+        en: DPF or exhaust path leak
+        de: DPF- oder Abgaswegleckage
+  repair:
+    difficulty: medium
+    diy_possible: false
+    estimated_cost_eur: [120, 1500]
+    estimated_hours: [1, 6]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+    limp_mode_possible: false
+  references:
+    - sae:J2012
+  sources:
+    - https://github.com/Wal33D/dtc-database
+
+- code: P006C
+  category: powertrain
+  title:
+    en: MAP - Turbocharger/Supercharger Inlet Pressure Correlation
+    de: MAP-Saugrohrdruck zu Turbo-Eingangsdruck Korrelation
+  description:
+    en: The relationship between manifold absolute pressure and turbocharger inlet pressure is implausible. Indicates a leak between turbo inlet and intake manifold or a sensor fault.
+    de: Die Beziehung zwischen Saugrohrdruck und Turbo-Eingangsdruck ist unplausibel. Hinweis auf Leck zwischen Turbo-Eingang und Saugrohr oder Sensorfehler.
+  affected_components:
+    - map_sensor
+    - turbo_inlet_pressure_sensor
+    - charge_pipe
+  common_causes:
+    - id: charge_pipe_leak
+      likelihood: high
+      label:
+        en: Charge pipe leak between turbo and intake
+        de: Ladeluftrohr undicht zwischen Turbo und Ansaugung
+  repair:
+    difficulty: medium
+    diy_possible: true
+    estimated_cost_eur: [80, 600]
+    estimated_hours: [0.5, 3]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+    limp_mode_possible: false
+  references:
+    - sae:J2012
+  sources:
+    - https://github.com/Wal33D/dtc-database
+
+- code: P006D
+  category: powertrain
+  title:
+    en: Barometric Pressure - Turbocharger/Supercharger Inlet Pressure Correlation Bank 1
+    de: Atmosphärendruck zu Turbo-Eingangsdruck Korrelation Bank 1
+  description:
+    en: The relationship between barometric pressure and turbo inlet pressure (bank 1) is implausible — at engine off the two should match. Indicates an inlet sensor or barometric sensor fault.
+    de: Die Beziehung zwischen Atmosphärendruck und Turbo-Eingangsdruck (Bank 1) ist unplausibel — bei stehendem Motor sollten beide übereinstimmen. Hinweis auf Defekt am Eingangs- oder Atmosphärendrucksensor.
+  affected_components:
+    - barometric_pressure_sensor
+    - turbo_inlet_pressure_sensor
+  common_causes:
+    - id: inlet_sensor_drift
+      likelihood: high
+      label:
+        en: Turbo inlet pressure sensor drifted
+        de: Turbo-Eingangsdrucksensor mit verschobenem Wert
+  repair:
+    difficulty: medium
+    diy_possible: true
+    estimated_cost_eur: [80, 500]
+    estimated_hours: [0.5, 2]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+    limp_mode_possible: false
+  references:
+    - sae:J2012
+  sources:
+    - https://github.com/Wal33D/dtc-database
+
+- code: P006E
+  category: powertrain
+  title:
+    en: Turbocharger/Supercharger Boost Control A Supply Voltage Circuit Low
+    de: Turbolader/Kompressor Ladedruck-Regelung A Versorgungsspannung niedrig
+  description:
+    en: Supply voltage to boost control actuator A below expected range. Same as P005E but on actuator A.
+    de: Versorgungsspannung des Ladedruck-Aktuators A unter Sollbereich. Wie P005E, jedoch Aktuator A.
+  affected_components:
+    - boost_actuator_supply
+    - relay
+    - fuse
+  common_causes:
+    - id: blown_fuse
+      likelihood: high
+      label:
+        en: Supply fuse blown or relay failed
+        de: Versorgungssicherung oder Relais defekt
+  repair:
+    difficulty: medium
+    diy_possible: true
+    estimated_cost_eur: [10, 200]
+    estimated_hours: [0.3, 1.5]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: false
+    limp_mode_possible: true
+  references:
+    - sae:J2012
+  sources:
+    - https://github.com/Wal33D/dtc-database
+
+- code: P006F
+  category: powertrain
+  title:
+    en: Turbocharger/Supercharger Boost Control A Supply Voltage Circuit High
+    de: Turbolader/Kompressor Ladedruck-Regelung A Versorgungsspannung hoch
+  description:
+    en: Supply voltage to boost control actuator A above expected range. Same as P005F but on actuator A.
+    de: Versorgungsspannung des Ladedruck-Aktuators A über Sollbereich. Wie P005F, jedoch Aktuator A.
+  affected_components:
+    - boost_actuator_supply
+    - charging_system
+  common_causes:
+    - id: charging_overvoltage
+      likelihood: high
+      label:
+        en: Alternator regulator failed
+        de: Lichtmaschinenregler defekt
+  repair:
+    difficulty: medium
+    diy_possible: true
+    estimated_cost_eur: [50, 600]
+    estimated_hours: [0.5, 3]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: false
+    limp_mode_possible: true
+  references:
+    - sae:J2012
+  sources:
+    - https://github.com/Wal33D/dtc-database
+
+- code: P0070
+  category: powertrain
+  title:
+    en: Ambient Air Temperature Sensor Circuit A
+    de: Außenlufttemperatursensor Schaltkreis A
+  description:
+    en: Generic electrical fault in the ambient air temperature sensor A circuit. Used by the ECU for cold-start corrections, climate logic, and intake-air calculations.
+    de: Allgemeiner elektrischer Fehler am Außenlufttemperatursensor A. Wird vom Steuergerät für Kaltstart-Korrektur, Klimalogik und Ansauglufttemperatur-Berechnungen genutzt.
+  affected_components:
+    - ambient_air_temp_sensor
+    - sensor_wiring
+  common_causes:
+    - id: sensor_failed
+      likelihood: high
+      label:
+        en: Sensor element failed
+        de: Sensor defekt
+    - id: open_wiring
+      likelihood: medium
+      label:
+        en: Wiring open or connector loose
+        de: Verkabelung offen oder Stecker locker
+  repair:
+    difficulty: easy
+    diy_possible: true
+    estimated_cost_eur: [30, 200]
+    estimated_hours: [0.3, 1]
+  flags:
+    mil: true
+    emissions_relevant: false
+    drive_cycle_required: false
+    limp_mode_possible: false
+  references:
+    - sae:J2012
+  sources:
+    - https://github.com/Wal33D/dtc-database
+
+- code: P0071
+  category: powertrain
+  title:
+    en: Ambient Air Temperature Sensor Circuit A Range/Performance
+    de: Außenlufttemperatursensor A Bereich/Leistung
+  description:
+    en: The ambient air temperature reading is electrically valid but implausible compared to other temperature sources (intake air temp, coolant at cold start).
+    de: Der Wert des Außenlufttemperatursensors A ist elektrisch plausibel, aber unstimmig im Vergleich zu anderen Temperaturquellen (Ansaug, Kühlmittel bei Kaltstart).
+  affected_components:
+    - ambient_air_temp_sensor
+  common_causes:
+    - id: sensor_drift
+      likelihood: high
+      label:
+        en: Sensor reading drifted
+        de: Messwert des Sensors verschoben
+    - id: sensor_location_heat
+      likelihood: medium
+      label:
+        en: Sensor exposed to engine heat
+        de: Sensor wird durch Motorwärme erwärmt
+  repair:
+    difficulty: easy
+    diy_possible: true
+    estimated_cost_eur: [30, 200]
+    estimated_hours: [0.3, 1]
+  flags:
+    mil: true
+    emissions_relevant: false
+    drive_cycle_required: false
+    limp_mode_possible: false
+  references:
+    - sae:J2012
+  sources:
+    - https://github.com/Wal33D/dtc-database
+
+- code: P0072
+  category: powertrain
+  title:
+    en: Ambient Air Temperature Sensor Circuit A Low
+    de: Außenlufttemperatursensor A Schaltkreis niedrig
+  description:
+    en: Ambient air temperature sensor A signal voltage below the expected range — typically a short to ground.
+    de: Signalspannung des Außenlufttemperatursensors A unter Sollbereich — meist Masseschluss.
+  affected_components:
+    - ambient_air_temp_sensor
+    - sensor_wiring
+  common_causes:
+    - id: short_to_ground
+      likelihood: high
+      label:
+        en: Signal wire shorted to ground
+        de: Signalleitung mit Masseschluss
+  repair:
+    difficulty: easy
+    diy_possible: true
+    estimated_cost_eur: [30, 200]
+    estimated_hours: [0.3, 1]
+  flags:
+    mil: true
+    emissions_relevant: false
+    drive_cycle_required: false
+    limp_mode_possible: false
+  references:
+    - sae:J2012
+  sources:
+    - https://github.com/Wal33D/dtc-database
+
+- code: P0073
+  category: powertrain
+  title:
+    en: Ambient Air Temperature Sensor Circuit A High
+    de: Außenlufttemperatursensor A Schaltkreis hoch
+  description:
+    en: Ambient air temperature sensor A signal voltage above the expected range — typically open circuit (broken wire or sensor) or short to power.
+    de: Signalspannung des Außenlufttemperatursensors A über Sollbereich — meist Unterbrechung (Kabelbruch/Sensor) oder Plus-Schluss.
+  affected_components:
+    - ambient_air_temp_sensor
+    - sensor_wiring
+  common_causes:
+    - id: open_wiring
+      likelihood: high
+      label:
+        en: Signal wire open
+        de: Signalleitung unterbrochen
+  repair:
+    difficulty: easy
+    diy_possible: true
+    estimated_cost_eur: [30, 200]
+    estimated_hours: [0.3, 1]
+  flags:
+    mil: true
+    emissions_relevant: false
+    drive_cycle_required: false
+    limp_mode_possible: false
+  references:
+    - sae:J2012
+  sources:
+    - https://github.com/Wal33D/dtc-database
+
+- code: P0074
+  category: powertrain
+  title:
+    en: Ambient Air Temperature Sensor Circuit A Intermittent/Erratic
+    de: Außenlufttemperatursensor A sporadisch/unstetig
+  description:
+    en: Intermittent dropouts or noise on the ambient air temperature sensor A signal — typically a loose connector or chafed wiring.
+    de: Sporadische Aussetzer oder Störungen am Signal des Außenlufttemperatursensors A — meist Wackelkontakt oder gescheuerter Kabelbaum.
+  affected_components:
+    - ambient_air_temp_sensor
+    - sensor_wiring
+  common_causes:
+    - id: loose_connector
+      likelihood: high
+      label:
+        en: Connector loose or corroded
+        de: Stecker locker oder korrodiert
+  repair:
+    difficulty: easy
+    diy_possible: true
+    estimated_cost_eur: [20, 150]
+    estimated_hours: [0.3, 1]
+  flags:
+    mil: true
+    emissions_relevant: false
+    drive_cycle_required: false
+    limp_mode_possible: false
+  references:
+    - sae:J2012
+  sources:
+    - https://github.com/Wal33D/dtc-database
+
+- code: P0075
+  category: powertrain
+  title:
+    en: Intake Valve Control Solenoid Circuit Bank 1
+    de: Einlassventilsteuerungs-Magnetventil Schaltkreis Bank 1
+  description:
+    en: Generic electrical fault on the intake-valve control solenoid for bank 1 (used to switch valve lift, deactivation or VVL profiles).
+    de: Allgemeiner elektrischer Fehler am Einlassventilsteuerungs-Magnetventil Bank 1 (für Ventilhub-Umschaltung, Zylinderabschaltung oder VVL).
+  affected_components:
+    - intake_valve_solenoid
+    - solenoid_wiring
+  common_causes:
+    - id: solenoid_failed
+      likelihood: high
+      label:
+        en: Solenoid coil failed
+        de: Magnetspule defekt
+  repair:
+    difficulty: medium
+    diy_possible: true
+    estimated_cost_eur: [80, 500]
+    estimated_hours: [0.5, 3]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+    limp_mode_possible: false
+  references:
+    - sae:J2012
+  sources:
+    - https://github.com/Wal33D/dtc-database
+
+- code: P0076
+  category: powertrain
+  title:
+    en: Intake Valve Control Solenoid Circuit Low Bank 1
+    de: Einlassventilsteuerungs-Magnetventil Schaltkreis niedrig Bank 1
+  description:
+    en: Intake valve solenoid bank 1 control voltage below expected range. Short to ground or low-resistance fault.
+    de: Steuerspannung am Einlassventil-Magnetventil Bank 1 unter Sollbereich. Masseschluss oder niederohmiger Fehler.
+  affected_components:
+    - intake_valve_solenoid
+    - solenoid_wiring
+  common_causes:
+    - id: short_to_ground
+      likelihood: high
+      label:
+        en: Wiring shorted to ground
+        de: Verkabelung mit Masseschluss
+  repair:
+    difficulty: medium
+    diy_possible: true
+    estimated_cost_eur: [80, 500]
+    estimated_hours: [0.5, 3]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+    limp_mode_possible: false
+  references:
+    - sae:J2012
+  sources:
+    - https://github.com/Wal33D/dtc-database
+
+- code: P0077
+  category: powertrain
+  title:
+    en: Intake Valve Control Solenoid Circuit High Bank 1
+    de: Einlassventilsteuerungs-Magnetventil Schaltkreis hoch Bank 1
+  description:
+    en: Intake valve solenoid bank 1 control voltage above expected range. Short to power or open ground.
+    de: Steuerspannung am Einlassventil-Magnetventil Bank 1 über Sollbereich. Plus-Schluss oder offene Masse.
+  affected_components:
+    - intake_valve_solenoid
+    - solenoid_wiring
+  common_causes:
+    - id: short_to_power
+      likelihood: high
+      label:
+        en: Wiring shorted to battery
+        de: Verkabelung mit Plus-Schluss
+  repair:
+    difficulty: medium
+    diy_possible: true
+    estimated_cost_eur: [80, 500]
+    estimated_hours: [0.5, 3]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+    limp_mode_possible: false
+  references:
+    - sae:J2012
+  sources:
+    - https://github.com/Wal33D/dtc-database
+
+- code: P0078
+  category: powertrain
+  title:
+    en: Exhaust Valve Control Solenoid Circuit Bank 1
+    de: Auslassventilsteuerungs-Magnetventil Schaltkreis Bank 1
+  description:
+    en: Generic electrical fault on the exhaust-valve control solenoid for bank 1.
+    de: Allgemeiner elektrischer Fehler am Auslassventilsteuerungs-Magnetventil Bank 1.
+  affected_components:
+    - exhaust_valve_solenoid
+    - solenoid_wiring
+  common_causes:
+    - id: solenoid_failed
+      likelihood: high
+      label:
+        en: Solenoid coil failed
+        de: Magnetspule defekt
+  repair:
+    difficulty: medium
+    diy_possible: true
+    estimated_cost_eur: [80, 500]
+    estimated_hours: [0.5, 3]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+    limp_mode_possible: false
+  references:
+    - sae:J2012
+  sources:
+    - https://github.com/Wal33D/dtc-database
+
+- code: P0079
+  category: powertrain
+  title:
+    en: Exhaust Valve Control Solenoid Circuit Low Bank 1
+    de: Auslassventilsteuerungs-Magnetventil Schaltkreis niedrig Bank 1
+  description:
+    en: Exhaust valve solenoid bank 1 control voltage below expected range.
+    de: Steuerspannung am Auslassventil-Magnetventil Bank 1 unter Sollbereich.
+  affected_components:
+    - exhaust_valve_solenoid
+    - solenoid_wiring
+  common_causes:
+    - id: short_to_ground
+      likelihood: high
+      label:
+        en: Wiring shorted to ground
+        de: Verkabelung mit Masseschluss
+  repair:
+    difficulty: medium
+    diy_possible: true
+    estimated_cost_eur: [80, 500]
+    estimated_hours: [0.5, 3]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+    limp_mode_possible: false
+  references:
+    - sae:J2012
+  sources:
+    - https://github.com/Wal33D/dtc-database
+
+- code: P007A
+  category: powertrain
+  title:
+    en: Charge Air Cooler Temperature Sensor Circuit Bank 1
+    de: Ladeluftkühler-Temperatursensor Schaltkreis Bank 1
+  description:
+    en: Generic electrical fault on the charge air cooler (intercooler) outlet temperature sensor on bank 1. Used to monitor intercooler effectiveness and to correct boost calculations.
+    de: Allgemeiner elektrischer Fehler am Temperatursensor des Ladeluftkühlers (Intercoolers) Bank 1. Überwacht die Kühlerleistung und korrigiert Ladedruck-Berechnungen.
+  affected_components:
+    - cac_temperature_sensor
+    - sensor_wiring
+  common_causes:
+    - id: sensor_failed
+      likelihood: high
+      label:
+        en: Sensor failed
+        de: Sensor defekt
+  repair:
+    difficulty: medium
+    diy_possible: true
+    estimated_cost_eur: [60, 350]
+    estimated_hours: [0.5, 2]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+    limp_mode_possible: false
+  references:
+    - sae:J2012
+  sources:
+    - https://github.com/Wal33D/dtc-database
+
+- code: P007B
+  category: powertrain
+  title:
+    en: Charge Air Cooler Temperature Sensor Circuit Range/Performance Bank 1
+    de: Ladeluftkühler-Temperatursensor Bereich/Leistung Bank 1
+  description:
+    en: Charge air cooler temperature sensor reading on bank 1 is electrically valid but implausible — does not match expected behavior under load, ambient conditions or after long soak.
+    de: Wert des Ladeluftkühler-Temperatursensors Bank 1 elektrisch plausibel, aber unstimmig — passt nicht zu Last, Umgebungstemperatur oder Standzeit.
+  affected_components:
+    - cac_temperature_sensor
+    - intercooler
+  common_causes:
+    - id: sensor_drift
+      likelihood: high
+      label:
+        en: Sensor reading drifted
+        de: Sensorwert verschoben
+  repair:
+    difficulty: medium
+    diy_possible: true
+    estimated_cost_eur: [60, 350]
+    estimated_hours: [0.5, 2]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+    limp_mode_possible: false
+  references:
+    - sae:J2012
+  sources:
+    - https://github.com/Wal33D/dtc-database
+
+- code: P007C
+  category: powertrain
+  title:
+    en: Charge Air Cooler Temperature Sensor Circuit Low Bank 1
+    de: Ladeluftkühler-Temperatursensor Schaltkreis niedrig Bank 1
+  description:
+    en: Charge air cooler temperature sensor signal voltage on bank 1 below expected range. Typically a short to ground.
+    de: Signalspannung des Ladeluftkühler-Temperatursensors Bank 1 unter Sollbereich. Meist Masseschluss.
+  affected_components:
+    - cac_temperature_sensor
+    - sensor_wiring
+  common_causes:
+    - id: short_to_ground
+      likelihood: high
+      label:
+        en: Signal wire shorted to ground
+        de: Signalleitung mit Masseschluss
+  repair:
+    difficulty: medium
+    diy_possible: true
+    estimated_cost_eur: [60, 350]
+    estimated_hours: [0.5, 2]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+    limp_mode_possible: false
+  references:
+    - sae:J2012
+  sources:
+    - https://github.com/Wal33D/dtc-database
+
+- code: P007D
+  category: powertrain
+  title:
+    en: Charge Air Cooler Temperature Sensor Circuit High Bank 1
+    de: Ladeluftkühler-Temperatursensor Schaltkreis hoch Bank 1
+  description:
+    en: Charge air cooler temperature sensor signal voltage on bank 1 above expected range. Typically open circuit or short to power.
+    de: Signalspannung des Ladeluftkühler-Temperatursensors Bank 1 über Sollbereich. Meist Unterbrechung oder Plus-Schluss.
+  affected_components:
+    - cac_temperature_sensor
+    - sensor_wiring
+  common_causes:
+    - id: open_wiring
+      likelihood: high
+      label:
+        en: Signal wire open
+        de: Signalleitung unterbrochen
+  repair:
+    difficulty: medium
+    diy_possible: true
+    estimated_cost_eur: [60, 350]
+    estimated_hours: [0.5, 2]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+    limp_mode_possible: false
+  references:
+    - sae:J2012
+  sources:
+    - https://github.com/Wal33D/dtc-database
+
+- code: P007E
+  category: powertrain
+  title:
+    en: Charge Air Cooler Temperature Sensor Circuit Intermittent/Erratic Bank 1
+    de: Ladeluftkühler-Temperatursensor sporadisch/unstetig Bank 1
+  description:
+    en: Intermittent dropouts or noise on the charge air cooler temperature sensor signal on bank 1.
+    de: Sporadische Aussetzer oder Störungen am Signal des Ladeluftkühler-Temperatursensors Bank 1.
+  affected_components:
+    - cac_temperature_sensor
+    - sensor_wiring
+  common_causes:
+    - id: loose_connector
+      likelihood: high
+      label:
+        en: Connector loose or corroded
+        de: Stecker locker oder korrodiert
+  repair:
+    difficulty: medium
+    diy_possible: true
+    estimated_cost_eur: [40, 300]
+    estimated_hours: [0.5, 2]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+    limp_mode_possible: false
+  references:
+    - sae:J2012
+  sources:
+    - https://github.com/Wal33D/dtc-database
+
+- code: P007F
+  category: powertrain
+  title:
+    en: Charge Air Cooler Temperature Sensor Bank1/Bank2 Correlation
+    de: Ladeluftkühler-Temperatursensor Bank 1/Bank 2 Korrelation
+  description:
+    en: The charge air cooler temperature sensors of bank 1 and bank 2 deviate from each other beyond plausible limits. One of the two has drifted.
+    de: Die Ladeluftkühler-Temperatursensoren Bank 1 und Bank 2 weichen über das plausible Maß voneinander ab. Einer der beiden ist verschoben.
+  affected_components:
+    - cac_temperature_sensor_b1
+    - cac_temperature_sensor_b2
+  common_causes:
+    - id: sensor_drift
+      likelihood: high
+      label:
+        en: One sensor drifted
+        de: Einer der Sensoren verschoben
+  repair:
+    difficulty: medium
+    diy_possible: true
+    estimated_cost_eur: [60, 350]
+    estimated_hours: [0.5, 2]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+    limp_mode_possible: false
+  references:
+    - sae:J2012
+  sources:
+    - https://github.com/Wal33D/dtc-database
+
+- code: P0080
+  category: powertrain
+  title:
+    en: Exhaust Valve Control Solenoid Circuit High Bank 1
+    de: Auslassventilsteuerungs-Magnetventil Schaltkreis hoch Bank 1
+  description:
+    en: Exhaust valve solenoid bank 1 control voltage above expected range. Short to power or open ground.
+    de: Steuerspannung am Auslassventil-Magnetventil Bank 1 über Sollbereich. Plus-Schluss oder offene Masse.
+  affected_components:
+    - exhaust_valve_solenoid
+    - solenoid_wiring
+  common_causes:
+    - id: short_to_power
+      likelihood: high
+      label:
+        en: Wiring shorted to battery
+        de: Verkabelung mit Plus-Schluss
+  repair:
+    difficulty: medium
+    diy_possible: true
+    estimated_cost_eur: [80, 500]
+    estimated_hours: [0.5, 3]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+    limp_mode_possible: false
+  references:
+    - sae:J2012
+  sources:
+    - https://github.com/Wal33D/dtc-database
+
+- code: P0081
+  category: powertrain
+  title:
+    en: Intake Valve Control Solenoid Circuit Bank 2
+    de: Einlassventilsteuerungs-Magnetventil Schaltkreis Bank 2
+  description:
+    en: Same as P0075 on bank 2.
+    de: Wie P0075, jedoch Bank 2.
+  affected_components:
+    - intake_valve_solenoid
+    - solenoid_wiring
+  common_causes:
+    - id: solenoid_failed
+      likelihood: high
+      label:
+        en: Solenoid coil failed
+        de: Magnetspule defekt
+  repair:
+    difficulty: medium
+    diy_possible: true
+    estimated_cost_eur: [80, 500]
+    estimated_hours: [0.5, 3]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+    limp_mode_possible: false
+  references:
+    - sae:J2012
+  sources:
+    - https://github.com/Wal33D/dtc-database
+
+- code: P0082
+  category: powertrain
+  title:
+    en: Intake Valve Control Solenoid Circuit Low Bank 2
+    de: Einlassventilsteuerungs-Magnetventil Schaltkreis niedrig Bank 2
+  description:
+    en: Same as P0076 on bank 2.
+    de: Wie P0076, jedoch Bank 2.
+  affected_components:
+    - intake_valve_solenoid
+    - solenoid_wiring
+  common_causes:
+    - id: short_to_ground
+      likelihood: high
+      label:
+        en: Wiring shorted to ground
+        de: Verkabelung mit Masseschluss
+  repair:
+    difficulty: medium
+    diy_possible: true
+    estimated_cost_eur: [80, 500]
+    estimated_hours: [0.5, 3]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+    limp_mode_possible: false
+  references:
+    - sae:J2012
+  sources:
+    - https://github.com/Wal33D/dtc-database
+
+- code: P0083
+  category: powertrain
+  title:
+    en: Intake Valve Control Solenoid Circuit High Bank 2
+    de: Einlassventilsteuerungs-Magnetventil Schaltkreis hoch Bank 2
+  description:
+    en: Same as P0077 on bank 2.
+    de: Wie P0077, jedoch Bank 2.
+  affected_components:
+    - intake_valve_solenoid
+    - solenoid_wiring
+  common_causes:
+    - id: short_to_power
+      likelihood: high
+      label:
+        en: Wiring shorted to battery
+        de: Verkabelung mit Plus-Schluss
+  repair:
+    difficulty: medium
+    diy_possible: true
+    estimated_cost_eur: [80, 500]
+    estimated_hours: [0.5, 3]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+    limp_mode_possible: false
+  references:
+    - sae:J2012
+  sources:
+    - https://github.com/Wal33D/dtc-database
+
+- code: P0084
+  category: powertrain
+  title:
+    en: Exhaust Valve Control Solenoid Circuit Bank 2
+    de: Auslassventilsteuerungs-Magnetventil Schaltkreis Bank 2
+  description:
+    en: Same as P0078 on bank 2.
+    de: Wie P0078, jedoch Bank 2.
+  affected_components:
+    - exhaust_valve_solenoid
+    - solenoid_wiring
+  common_causes:
+    - id: solenoid_failed
+      likelihood: high
+      label:
+        en: Solenoid coil failed
+        de: Magnetspule defekt
+  repair:
+    difficulty: medium
+    diy_possible: true
+    estimated_cost_eur: [80, 500]
+    estimated_hours: [0.5, 3]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+    limp_mode_possible: false
+  references:
+    - sae:J2012
+  sources:
+    - https://github.com/Wal33D/dtc-database
+
+- code: P0085
+  category: powertrain
+  title:
+    en: Exhaust Valve Control Solenoid Circuit Low Bank 2
+    de: Auslassventilsteuerungs-Magnetventil Schaltkreis niedrig Bank 2
+  description:
+    en: Same as P0079 on bank 2.
+    de: Wie P0079, jedoch Bank 2.
+  affected_components:
+    - exhaust_valve_solenoid
+    - solenoid_wiring
+  common_causes:
+    - id: short_to_ground
+      likelihood: high
+      label:
+        en: Wiring shorted to ground
+        de: Verkabelung mit Masseschluss
+  repair:
+    difficulty: medium
+    diy_possible: true
+    estimated_cost_eur: [80, 500]
+    estimated_hours: [0.5, 3]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+    limp_mode_possible: false
+  references:
+    - sae:J2012
+  sources:
+    - https://github.com/Wal33D/dtc-database
+
+- code: P0086
+  category: powertrain
+  title:
+    en: Exhaust Valve Control Solenoid Circuit High Bank 2
+    de: Auslassventilsteuerungs-Magnetventil Schaltkreis hoch Bank 2
+  description:
+    en: Same as P0080 on bank 2.
+    de: Wie P0080, jedoch Bank 2.
+  affected_components:
+    - exhaust_valve_solenoid
+    - solenoid_wiring
+  common_causes:
+    - id: short_to_power
+      likelihood: high
+      label:
+        en: Wiring shorted to battery
+        de: Verkabelung mit Plus-Schluss
+  repair:
+    difficulty: medium
+    diy_possible: true
+    estimated_cost_eur: [80, 500]
+    estimated_hours: [0.5, 3]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+    limp_mode_possible: false
+  references:
+    - sae:J2012
+  sources:
+    - https://github.com/Wal33D/dtc-database
+
+- code: P008A
+  category: powertrain
+  title:
+    en: Low Pressure Fuel System Pressure - Too Low
+    de: Niederdruck-Kraftstoffsystem Druck zu niedrig
+  description:
+    en: The low-pressure (lift pump) fuel pressure is below the expected value. Insufficient supply to the high-pressure pump leads to power loss and possible HP pump cavitation.
+    de: Der Druck im Niederdruckkreis (Vorförderpumpe) liegt unter dem Sollwert. Mangelhafte Zufuhr zur Hochdruckpumpe führt zu Leistungsverlust und möglicher Kavitation der HD-Pumpe.
+  affected_components:
+    - lift_pump
+    - fuel_filter
+    - low_pressure_sensor
+  common_causes:
+    - id: clogged_filter
+      likelihood: high
+      label:
+        en: Fuel filter clogged
+        de: Kraftstofffilter verstopft
+    - id: lift_pump_weak
+      likelihood: high
+      label:
+        en: Lift pump weak or failing
+        de: Vorförderpumpe schwach oder defekt
+    - id: leak_in_low_pressure_line
+      likelihood: medium
+      label:
+        en: Leak or air ingress in low-pressure line
+        de: Leck oder Luftansaugung im Niederdruckkreis
+  repair:
+    difficulty: medium
+    diy_possible: true
+    estimated_cost_eur: [50, 800]
+    estimated_hours: [0.5, 4]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+    limp_mode_possible: true
+  references:
+    - sae:J2012
+  sources:
+    - https://github.com/Wal33D/dtc-database
+
+- code: P008B
+  category: powertrain
+  title:
+    en: Low Pressure Fuel System Pressure - Too High
+    de: Niederdruck-Kraftstoffsystem Druck zu hoch
+  description:
+    en: The low-pressure fuel pressure is above the expected value. Often caused by a stuck-closed fuel return valve or a faulty pressure regulator.
+    de: Der Druck im Niederdruckkreis liegt über dem Sollwert. Häufig durch geschlossen klemmendes Rücklaufventil oder defekten Druckregler.
+  affected_components:
+    - low_pressure_regulator
+    - fuel_return_valve
+    - low_pressure_sensor
+  common_causes:
+    - id: regulator_stuck
+      likelihood: high
+      label:
+        en: Pressure regulator stuck closed
+        de: Druckregler hängt geschlossen
+    - id: return_blocked
+      likelihood: medium
+      label:
+        en: Return line blocked
+        de: Rücklauf blockiert
+  repair:
+    difficulty: medium
+    diy_possible: true
+    estimated_cost_eur: [80, 600]
+    estimated_hours: [0.5, 3]
+  flags:
+    mil: true
+    emissions_relevant: true
+    drive_cycle_required: true
+    limp_mode_possible: false
+  references:
+    - sae:J2012
+  sources:
+    - https://github.com/Wal33D/dtc-database
+
+- code: P008C
+  category: powertrain
+  title:
+    en: Fuel Cooler Pump Control Circuit/Open
+    de: Kraftstoffkühlerpumpe Schaltkreis unterbrochen
+  description:
+    en: Open circuit at the fuel cooler pump control. The pump that circulates fuel through a cooler (used on diesels and some hot-fuel applications) cannot be driven.
+    de: Unterbrochener Schaltkreis an der Kraftstoffkühlerpumpe. Die Pumpe, die Kraftstoff durch einen Kühler fördert (bei Dieseln und heißen Anwendungen), lässt sich nicht ansteuern.
+  affected_components:
+    - fuel_cooler_pump
+    - pump_wiring
+  common_causes:
+    - id: open_wiring
+      likelihood: high
+      label:
+        en: Wiring break or unplugged connector
+        de: Kabelbruch oder loser Stecker
+    - id: pump_motor_open
+      likelihood: medium
+      label:
+        en: Pump motor open
+        de: Pumpenmotor unterbrochen
+  repair:
+    difficulty: medium
+    diy_possible: true
+    estimated_cost_eur: [60, 500]
+    estimated_hours: [0.5, 3]
+  flags:
+    mil: true
+    emissions_relevant: false
+    drive_cycle_required: false
+    limp_mode_possible: false
+  references:
+    - sae:J2012
+  sources:
+    - https://github.com/Wal33D/dtc-database
