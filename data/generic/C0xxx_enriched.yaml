@@ -1399,8 +1399,8 @@
     en: Right Front Wheel Speed Sensor Circuit Malfunction
     de: Raddrehzahlsensor vorne rechts Schaltung Fehlfunktion
   description:
-    en: The ABS control module has detected a fault in the left front wheel speed sensor circuit. Loss of wheel speed information disables ABS and stability control, and a separate ABS warning lamp is illuminated.
-    de: Das ABS-Steuergerät hat einen Fehler im Stromkreis des Raddrehzahlsensors vorne links erkannt. Ohne Raddrehzahlsignal werden ABS und Stabilitätsregelung deaktiviert und die ABS-Warnleuchte leuchtet.
+    en: The ABS control module has detected a fault in the right front wheel speed sensor circuit. Loss of wheel speed information disables ABS and stability control, and a separate ABS warning lamp is illuminated.
+    de: Das ABS-Steuergerät hat einen Fehler im Stromkreis des Raddrehzahlsensors vorne rechts erkannt. Ohne Raddrehzahlsignal werden ABS und Stabilitätsregelung deaktiviert und die ABS-Warnleuchte leuchtet.
   affected_components:
     - wheel_speed_sensor
     - abs_control_module
@@ -1600,8 +1600,8 @@
     en: Left Rear Wheel Speed Sensor Circuit Malfunction
     de: Raddrehzahlsensor hinten links Schaltung Fehlfunktion
   description:
-    en: The ABS control module has detected a fault in the left front wheel speed sensor circuit. Loss of wheel speed information disables ABS and stability control, and a separate ABS warning lamp is illuminated.
-    de: Das ABS-Steuergerät hat einen Fehler im Stromkreis des Raddrehzahlsensors vorne links erkannt. Ohne Raddrehzahlsignal werden ABS und Stabilitätsregelung deaktiviert und die ABS-Warnleuchte leuchtet.
+    en: The ABS control module has detected a fault in the left rear wheel speed sensor circuit. Loss of wheel speed information disables ABS and stability control, and a separate ABS warning lamp is illuminated.
+    de: Das ABS-Steuergerät hat einen Fehler im Stromkreis des Raddrehzahlsensors hinten links erkannt. Ohne Raddrehzahlsignal werden ABS und Stabilitätsregelung deaktiviert und die ABS-Warnleuchte leuchtet.
   affected_components:
     - wheel_speed_sensor
     - abs_control_module
@@ -2004,8 +2004,8 @@
     en: Right Rear Wheel Speed Sensor Circuit Malfunction
     de: Raddrehzahlsensor hinten rechts Schaltung Fehlfunktion
   description:
-    en: The ABS control module has detected a fault in the left front wheel speed sensor circuit. Loss of wheel speed information disables ABS and stability control, and a separate ABS warning lamp is illuminated.
-    de: Das ABS-Steuergerät hat einen Fehler im Stromkreis des Raddrehzahlsensors vorne links erkannt. Ohne Raddrehzahlsignal werden ABS und Stabilitätsregelung deaktiviert und die ABS-Warnleuchte leuchtet.
+    en: The ABS control module has detected a fault in the right rear wheel speed sensor circuit. Loss of wheel speed information disables ABS and stability control, and a separate ABS warning lamp is illuminated.
+    de: Das ABS-Steuergerät hat einen Fehler im Stromkreis des Raddrehzahlsensors hinten rechts erkannt. Ohne Raddrehzahlsignal werden ABS und Stabilitätsregelung deaktiviert und die ABS-Warnleuchte leuchtet.
   affected_components:
     - wheel_speed_sensor
     - abs_control_module
@@ -12128,7 +12128,7 @@
   references:
     - sae:J2012
   sources:
-    - https://en.wikipedia.org/wiki/Electric_park_brake
+    - https://en.wikipedia.org/wiki/Electronic_parking_brake
 - code: C0574
   category: chassis
   title:
@@ -12202,7 +12202,7 @@
   references:
     - sae:J2012
   sources:
-    - https://en.wikipedia.org/wiki/Electric_park_brake
+    - https://en.wikipedia.org/wiki/Electronic_parking_brake
 - code: C0576
   category: chassis
   title:
@@ -12277,7 +12277,7 @@
   references:
     - sae:J2012
   sources:
-    - https://en.wikipedia.org/wiki/Electric_park_brake
+    - https://en.wikipedia.org/wiki/Electronic_parking_brake
 - code: C0578
   category: chassis
   title:
@@ -12316,7 +12316,7 @@
   references:
     - sae:J2012
   sources:
-    - https://en.wikipedia.org/wiki/Electric_park_brake
+    - https://en.wikipedia.org/wiki/Electronic_parking_brake
 - code: C0579
   category: chassis
   title:
@@ -12643,7 +12643,7 @@
   references:
     - sae:J2012
   sources:
-    - https://en.wikipedia.org/wiki/Electric_park_brake
+    - https://en.wikipedia.org/wiki/Electronic_parking_brake
 - code: C0582
   category: chassis
   title:
@@ -12723,7 +12723,7 @@
   references:
     - sae:J2012
   sources:
-    - https://en.wikipedia.org/wiki/Electric_park_brake
+    - https://en.wikipedia.org/wiki/Electronic_parking_brake
 - code: C0584
   category: chassis
   title:
@@ -20503,7 +20503,7 @@
   references:
     - sae:J2012
   sources:
-    - https://en.wikipedia.org/wiki/Electric_parking_brake
+    - https://en.wikipedia.org/wiki/Electronic_parking_brake
 - code: C0661
   category: chassis
   title:
@@ -21071,7 +21071,7 @@
   references:
     - sae:J2012
   sources:
-    - https://en.wikipedia.org/wiki/Electric_parking_brake
+    - https://en.wikipedia.org/wiki/Electronic_parking_brake
 - code: C0671
   category: chassis
   title:
@@ -21109,7 +21109,7 @@
   references:
     - sae:J2012
   sources:
-    - https://en.wikipedia.org/wiki/Electric_parking_brake
+    - https://en.wikipedia.org/wiki/Electronic_parking_brake
 - code: C0680
   category: chassis
   title:
@@ -21140,7 +21140,7 @@
   references:
     - sae:J2012
   sources:
-    - https://en.wikipedia.org/wiki/Electric_parking_brake
+    - https://en.wikipedia.org/wiki/Electronic_parking_brake
 - code: C0700
   category: chassis
   title:
