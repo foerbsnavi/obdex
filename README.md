@@ -8,10 +8,6 @@ Open, machine-readable database of generic OBD-II diagnostic trouble codes (DTCs
 
 Codes follow the publicly known SAE J2012 identifier scheme and ISO 15031-6. The project deliberately limits itself to the generic, standard-defined layer — manufacturer-specific codes are out of scope.
 
-## Why
-
-Workshop databases like Autodata, Haynes Pro, or Bosch ESI cost thousands per year. The codes themselves are public knowledge — only their structured aggregation is locked behind paywalls. obdex closes that gap for the generic layer that every OBD-II tool needs.
-
 ## Use
 
 Direct JSON, served via GitHub Pages from `dist/`:
