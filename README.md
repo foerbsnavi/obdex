@@ -11,7 +11,7 @@ If you are looking up a P-, B-, C- or U-code from your scan tool, this is a sing
 ## What you get
 
 - **All 9,533 generic codes** of the SAE J2012 / ISO 15031-6 standard in one repository.
-- **Plain English and German descriptions**, written from public sources, on every enriched code (currently 4,833 — growing wave by wave toward full coverage).
+- **Plain English and German descriptions**, written from public sources, on every enriched code (currently 5,033 — growing wave by wave toward full coverage).
 - **Per code:** title, description, affected components, common causes with likelihood, repair difficulty + cost + hours, MIL/emissions/limp-mode flags, sources.
 - **132 OBD-II PIDs** (Mode 01 + Mode 09) with formulas and units.
 - **CC0 data, MIT tooling.** Use it in your scan-tool app, garage software, training material — no attribution required, no licence fee.
