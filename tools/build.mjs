@@ -39,10 +39,35 @@ const all = {
   pids: pidsByMode
 };
 
+// Coverage je Familie: enriched (mit Description) vs indexed (nur Minimal-Schema)
+const families = ["P0", "P2", "P3", "U0", "U3", "B0", "C0"];
+const coverage = {};
+for (const fam of families) coverage[fam] = { total: 0, enriched: 0, indexed: 0 };
+for (const c of generic) {
+  const fam = c.code.slice(0, 2);
+  if (!coverage[fam]) continue;
+  coverage[fam].total++;
+  if (c.description?.en) coverage[fam].enriched++;
+  else coverage[fam].indexed++;
+}
+const totalCodes = generic.length;
+const totalPids = Object.values(pidsByMode).reduce((a, b) => a + b.length, 0);
+const totalEnriched = Object.values(coverage).reduce((a, b) => a + b.enriched, 0);
+const totalIndexed = totalCodes - totalEnriched;
+
 const meta = {
   generated_at: new Date().toISOString(),
   counts: {
-    generic: generic.length,
+    generic: {
+      total: totalCodes,
+      enriched: totalEnriched,
+      indexed: totalIndexed,
+      by_family: Object.fromEntries(
+        families
+          .filter(f => coverage[f].total > 0)
+          .map(f => [f, { total: coverage[f].total, enriched: coverage[f].enriched, indexed: coverage[f].indexed }])
+      )
+    },
     pids: Object.fromEntries(Object.entries(pidsByMode).map(([k, v]) => [k, v.length]))
   }
 };
@@ -60,25 +85,9 @@ for (const [mode, pids] of Object.entries(pidsByMode)) {
   writePair(join(dist, "pids", mode), pids);
 }
 
-const totalCodes = generic.length;
-const totalPids = Object.values(pidsByMode).reduce((a, b) => a + b.length, 0);
-
 const pidLinks = Object.keys(pidsByMode).sort()
   .map(mode => `      <li><a href="pids/${mode}.json"><code>pids/${mode}.json</code></a> <span class="count">${pidsByMode[mode].length}</span></li>`)
   .join("\n");
-
-// Coverage je Familie: enriched (mit Description) vs indexed (nur Minimal-Schema)
-const families = ["P0", "P2", "P3", "U0", "U3", "B0", "C0"];
-const coverage = {};
-for (const fam of families) coverage[fam] = { total: 0, enriched: 0 };
-for (const c of generic) {
-  const fam = c.code.slice(0, 2);
-  if (!coverage[fam]) continue;
-  coverage[fam].total++;
-  if (c.description?.en) coverage[fam].enriched++;
-}
-const totalEnriched = Object.values(coverage).reduce((a, b) => a + b.enriched, 0);
-const totalIndexed = totalCodes - totalEnriched;
 
 const coverageRows = families
   .filter(f => coverage[f].total > 0)

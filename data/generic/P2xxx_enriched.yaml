@@ -19924,8 +19924,8 @@
     en: NOx Sensor Performance - Signal Biased/Stuck Low (Bank 1 Sensor 2)
     de: NOx-Sensor Leistung - Signal verschoben/niedrig festgesetzt (Bank 1 Sensor 2)
   description:
-    en: 'Same as P225C but stuck low.'
-    de: 'Wie P225C, jedoch niedrig festgesetzt.'
+    en: 'The NOx sensor on bank 1 sensor 2 reads suspiciously low for too long — biased downward or stuck. Common after sensor element ageing, condensate damage from cold start, or wiring fault that pulls the signal down.'
+    de: 'Der NOx-Sensor an Bank 1 Sensor 2 liest verdächtig lange zu niedrig — nach unten verschoben oder eingefroren. Häufig nach Alterung des Sensorelements, Kondensatschaden beim Kaltstart oder Kabelbaumfehler, der das Signal nach unten zieht.'
   affected_components:
     - nox_sensor
   common_causes:
@@ -20708,8 +20708,8 @@
     en: O2 Sensor Signal Biased/Stuck Rich (Bank 2 Sensor 3)
     de: Lambdasonden-Signal verschoben/fett festgesetzt (Bank 2 Sensor 3)
   description:
-    en: 'Same as P2274 but stuck rich.'
-    de: 'Wie P2274, jedoch fett festgesetzt.'
+    en: 'O2 sensor at bank 2 sensor 3 reports a rich reading suspiciously stable for too long. Sensor 3 is typically downstream of the second catalyst on systems with three-stage aftertreatment; sensor coated with carbon or fuel residue is the typical cause.'
+    de: 'Lambdasonde an Bank 2 Sensor 3 meldet einen fetten Wert verdächtig stabil für zu lange. Sensor 3 sitzt meist hinter dem zweiten Katalysator bei dreistufiger Abgasnachbehandlung; typische Ursache ist eine Sonde, die mit Russ oder Kraftstoffrückständen belegt ist.'
   affected_components:
     - oxygen_sensor
   common_causes:
@@ -21959,8 +21959,8 @@
     en: Fuel Pressure Regulator B Exceeded Learning Limits - Too High
     de: Kraftstoffdruckregler B überschreitet Lerngrenzen - zu hoch
   description:
-    en: 'Same as P228E with the learning offset at the upper limit.'
-    de: 'Wie P228E, jedoch Lern-Offset an oberer Grenze.'
+    en: 'The adaptive learning offset for fuel pressure regulator B has reached the upper limit. Long-term drift upward indicates progressive wear of the regulator or a return path that is becoming restricted.'
+    de: 'Der adaptive Lern-Offset für Kraftstoffdruckregler B hat die obere Lerngrenze erreicht. Langzeitdrift nach oben weist auf zunehmenden Verschleiss des Reglers oder eine sich verengende Rücklaufleitung hin.'
   affected_components:
     - fuel_pressure_regulator
   common_causes:
@@ -22356,8 +22356,8 @@
     en: NOx Sensor Heater Sense Circuit Intermittent (Bank 1 Sensor 2)
     de: NOx-Sensor Heizungs-Erkennungs-Schaltkreis sporadisch (Bank 1 Sensor 2)
   description:
-    en: 'Same as P2212 on bank 2.'
-    de: 'Wie P2212, jedoch Bank 2.'
+    en: 'The feedback line that monitors the NOx sensor heater current draw on bank 1 sensor 2 jumps or drops out intermittently — connector loose or chafed wire near the exhaust heat zone.'
+    de: 'Die Rückmeldeleitung zur Stromüberwachung der NOx-Sensorheizung an Bank 1 Sensor 2 springt oder fällt sporadisch aus — Stecker locker oder durchgescheuerte Leitung in der Hitzezone.'
   affected_components:
     - nox_sensor
   common_causes:

@@ -5,9 +5,11 @@
 
 import { readFileSync, readdirSync } from "node:fs";
 import { join } from "node:path";
+import { fileURLToPath } from "node:url";
 import { parse } from "yaml";
 
-const dir = "C:/Claude/_projekte/obdex/data/generic";
+const root = fileURLToPath(new URL("..", import.meta.url));
+const dir = join(root, "data/generic");
 const files = readdirSync(dir).filter(f => f.endsWith("_enriched.yaml"));
 
 let total = 0;

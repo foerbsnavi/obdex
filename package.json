@@ -7,8 +7,9 @@
   "scripts": {
     "validate": "node tools/validate.mjs",
     "duplicates": "node tools/check_duplicates.mjs",
+    "relations": "node tools/check_relations.mjs",
     "build": "node tools/build.mjs",
-    "check": "npm run validate && npm run duplicates"
+    "check": "npm run validate && npm run duplicates && npm run relations"
   },
   "devDependencies": {
     "ajv": "^8.17.1",

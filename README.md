@@ -19,27 +19,69 @@ If you are looking up a P-, B-, C- or U-code from your scan tool, this is a sing
 
 Manufacturer-specific codes (P1xxx, B1xxx, etc.) are deliberately out of scope — those are vendor IP. obdex covers only the generic layer that every OBD-II tool already speaks.
 
-## Use
+## Use it
 
-Direct JSON, served via GitHub Pages from `dist/`:
+Direct JSON over GitHub Pages — no auth, no rate limit:
 
 ```
-https://foerbsnavi.github.io/obdex/all.json
-https://foerbsnavi.github.io/obdex/generic.json
-https://foerbsnavi.github.io/obdex/pids/mode01.json
-https://foerbsnavi.github.io/obdex/pids/mode09.json
-https://foerbsnavi.github.io/obdex/meta.json
+https://foerbsnavi.github.io/obdex/all.json          # everything
+https://foerbsnavi.github.io/obdex/generic.json      # DTCs only
+https://foerbsnavi.github.io/obdex/pids/mode01.json  # live data PIDs
+https://foerbsnavi.github.io/obdex/pids/mode09.json  # vehicle info PIDs
+https://foerbsnavi.github.io/obdex/meta.json         # counts, build time
 ```
 
-Each file also exists as a minified `.min.json` variant for production use:
+Each file also exists as a minified `.min.json` variant for production:
 
 ```
 https://foerbsnavi.github.io/obdex/all.min.json
 ```
 
-Or clone the repo and read the YAML directly.
+Search interactively at <https://foerbsnavi.github.io/obdex/> — try `P0420`, `oxygen sensor`, `Lambdasonde`, `0C`.
 
-## Quickstart
+## What an entry looks like
+
+```yaml
+- code: P0420
+  category: powertrain
+  title:
+    en: Catalyst System Efficiency Below Threshold (Bank 1)
+    de: Katalysatorwirkungsgrad unter Schwellwert (Bank 1)
+  description:
+    en: The oxygen storage capacity of the main catalytic converter on bank 1
+      has degraded below the OBD threshold. The downstream oxygen sensor signal
+      increasingly mirrors the upstream sensor, indicating reduced conversion
+      efficiency.
+    de: Die Sauerstoffspeicherfähigkeit des Hauptkatalysators auf Bank 1 liegt
+      unter dem OBD-Grenzwert. …
+  affected_components:
+    - catalytic_converter
+    - oxygen_sensor_upstream
+    - oxygen_sensor_downstream
+  common_causes:
+    - id: catalyst_aged
+      likelihood: high
+      label:
+        en: Catalyst aged or contaminated
+        de: Katalysator gealtert oder vergiftet
+    - id: o2_sensor_downstream_drift
+      likelihood: medium
+      label: { en: Downstream oxygen sensor drift, de: Nachgeschaltete Lambdasonde driftet }
+  repair:
+    difficulty: hard
+    diy_possible: false
+    estimated_cost_eur: [600, 2500]
+    estimated_hours: [1.5, 5.0]
+  flags:
+    mil: true
+    emissions_relevant: true
+  sources:
+    - https://en.wikipedia.org/wiki/Catalytic_converter
+```
+
+Stub entries are minimal: `code`, `category`, `title.en`, `sources`. Always schema-valid; enriched progressively.
+
+## Develop locally
 
 ```bash
 git clone https://github.com/foerbsnavi/obdex.git
@@ -66,27 +108,16 @@ tools/                                Node.js validation + build scripts
 
 Each generic-DTC family has at most two files — `_enriched.yaml` for fully described codes, `_stub.yaml` for minimum-schema entries. The build reads both recursively, so consumers see one merged dataset in `dist/`.
 
-## Status
+## Coverage
 
-The database has two depth tiers per code:
+Each code is at one of two depths:
 
 - **enriched** — full schema: English+German title, description, affected components, common causes (with likelihood), repair difficulty/cost/hours, flags, references, sources.
 - **indexed** — minimum schema: code, category, English title, source. Always passes validation, but no diagnostic detail yet. Indexed entries are progressively converted to enriched in subsequent waves.
 
-| Family            |  Codes | Depth                            |
-| ----------------- | -----: | -------------------------------- |
-| Generic P0        |  3,705 | 1,405 enriched + 2,300 indexed   |
-| Generic P2        |  3,495 | 887 enriched + 2,608 indexed     |
-| Generic P3        |    155 | **155 enriched (100%)**          |
-| Generic U0        |  1,055 | **1,055 enriched (100%)**        |
-| Generic U3        |    174 | **174 enriched (100%)**          |
-| Generic B0        |    323 | **323 enriched (100%)**          |
-| Generic C0        |    626 | **626 enriched (100%)**          |
-| **Generic total** |**9,533**| **4,625 enriched + 4,908 indexed** |
-| PIDs Mode 01      |    119 | extensive                        |
-| PIDs Mode 09      |     13 | extensive                        |
+Live counts per family are in [`meta.json`](https://foerbsnavi.github.io/obdex/meta.json) and visualised on the [landing page](https://foerbsnavi.github.io/obdex/). All five non-powertrain families (P3, U0, U3, B0, C0) are at 100% enriched; P0 and P2 are progressing wave by wave.
 
-Live counts: see [`meta.json`](https://foerbsnavi.github.io/obdex/meta.json).
+PIDs (Mode 01 + Mode 09) are all extensive — formula, unit, range where applicable.
 
 ## Maintainer notes
 
