@@ -37,7 +37,10 @@ Each file also exists as a minified `.min.json` variant for production:
 https://foerbsnavi.github.io/obdex/all.min.json
 ```
 
-Search interactively at <https://foerbsnavi.github.io/obdex/> — try `P0420`, `oxygen sensor`, `Lambdasonde`, `0C`.
+Two ways to explore the dataset:
+
+- **Interactive search** — <https://obd.signalwelt.de/> — full search app with detail cards (causes, components, repair, sources) and offline PWA. Try `P0420`, `oxygen sensor`, `Lambdasonde`, `0C`.
+- **Data browser** — <https://foerbsnavi.github.io/obdex/> — overview page with live coverage counts and direct JSON download links.
 
 ## What an entry looks like
 
