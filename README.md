@@ -11,7 +11,7 @@ If you are looking up a P-, B-, C- or U-code from your scan tool, this is a sing
 ## What you get
 
 - **All 9,533 generic codes** of the SAE J2012 / ISO 15031-6 standard in one repository.
-- **Plain English and German descriptions**, written from public sources, on every enriched code (currently 4,225 — growing wave by wave toward full coverage).
+- **Plain English and German descriptions**, written from public sources, on every enriched code (currently 4,425 — growing wave by wave toward full coverage).
 - **Per code:** title, description, affected components, common causes with likelihood, repair difficulty + cost + hours, MIL/emissions/limp-mode flags, sources.
 - **132 OBD-II PIDs** (Mode 01 + Mode 09) with formulas and units.
 - **CC0 data, MIT tooling.** Use it in your scan-tool app, garage software, training material — no attribution required, no licence fee.
@@ -76,13 +76,13 @@ The database has two depth tiers per code:
 | Family            |  Codes | Depth                            |
 | ----------------- | -----: | -------------------------------- |
 | Generic P0        |  3,705 | 1,205 enriched + 2,500 indexed   |
-| Generic P2        |  3,495 | 687 enriched + 2,808 indexed     |
+| Generic P2        |  3,495 | 887 enriched + 2,608 indexed     |
 | Generic P3        |    155 | **155 enriched (100%)**          |
 | Generic U0        |  1,055 | **1,055 enriched (100%)**        |
 | Generic U3        |    174 | **174 enriched (100%)**          |
 | Generic B0        |    323 | **323 enriched (100%)**          |
 | Generic C0        |    626 | **626 enriched (100%)**          |
-| **Generic total** |**9,533**| **4,225 enriched + 5,308 indexed** |
+| **Generic total** |**9,533**| **4,425 enriched + 5,108 indexed** |
 | PIDs Mode 01      |    119 | extensive                        |
 | PIDs Mode 09      |     13 | extensive                        |
 
