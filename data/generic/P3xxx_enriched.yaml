@@ -69,6 +69,11 @@
       label:
         en: Wiring or connector open
         de: Verkabelung oder Stecker unterbrochen
+    - id: connector_back_out
+      likelihood: low
+      label:
+        en: 'Pin pushed back out of connector body'
+        de: 'Pin aus dem Steckergehäuse zurückgedrückt'
   repair:
     difficulty: hard
     diy_possible: false
@@ -107,6 +112,11 @@
       label:
         en: Solenoid stuck
         de: Magnetventil klemmt
+    - id: stuck_carbon_buildup
+      likelihood: low
+      label:
+        en: 'Carbon or debris buildup preventing free movement'
+        de: 'Verkokung oder Ablagerungen verhindern freies Bewegen'
   repair:
     difficulty: hard
     diy_possible: false
@@ -143,6 +153,11 @@
       label:
         en: Solenoid stuck in deactivation position
         de: Magnetventil in Abschaltposition fest
+    - id: stuck_carbon_buildup
+      likelihood: low
+      label:
+        en: 'Carbon or debris buildup preventing free movement'
+        de: 'Verkokung oder Ablagerungen verhindern freies Bewegen'
   repair:
     difficulty: hard
     diy_possible: false
@@ -180,6 +195,11 @@
       label:
         en: Solenoid internally shorted
         de: Magnetventil interner Kurzschluss
+    - id: connector_corrosion
+      likelihood: low
+      label:
+        en: 'Connector pins corroded - high contact resistance'
+        de: 'Steckerkontakte korrodiert - hoher Übergangswiderstand'
   repair:
     difficulty: medium
     diy_possible: false
@@ -217,6 +237,11 @@
       label:
         en: Solenoid open circuit
         de: Magnetventil offener Stromkreis
+    - id: connector_corrosion
+      likelihood: low
+      label:
+        en: 'Connector pins corroded - high contact resistance'
+        de: 'Steckerkontakte korrodiert - hoher Übergangswiderstand'
   repair:
     difficulty: medium
     diy_possible: false
@@ -254,6 +279,11 @@
       label:
         en: Solenoid stuck
         de: Magnetventil klemmt
+    - id: stuck_carbon_buildup
+      likelihood: low
+      label:
+        en: 'Carbon or debris buildup preventing free movement'
+        de: 'Verkokung oder Ablagerungen verhindern freies Bewegen'
   repair:
     difficulty: hard
     diy_possible: false
@@ -291,6 +321,11 @@
       label:
         en: Lifter stuck collapsed
         de: Schaltstößel im eingefahrenen Zustand fest
+    - id: stuck_carbon_buildup
+      likelihood: low
+      label:
+        en: 'Carbon or debris buildup preventing free movement'
+        de: 'Verkokung oder Ablagerungen verhindern freies Bewegen'
   repair:
     difficulty: hard
     diy_possible: false
@@ -328,6 +363,11 @@
       label:
         en: Solenoid internally shorted
         de: Magnetventil interner Kurzschluss
+    - id: connector_corrosion
+      likelihood: low
+      label:
+        en: 'Connector pins corroded - high contact resistance'
+        de: 'Steckerkontakte korrodiert - hoher Übergangswiderstand'
   repair:
     difficulty: medium
     diy_possible: false
@@ -365,6 +405,11 @@
       label:
         en: Solenoid open circuit
         de: Magnetventil offener Stromkreis
+    - id: connector_corrosion
+      likelihood: low
+      label:
+        en: 'Connector pins corroded - high contact resistance'
+        de: 'Steckerkontakte korrodiert - hoher Übergangswiderstand'
   repair:
     difficulty: medium
     diy_possible: false
@@ -640,6 +685,11 @@
       label:
         en: Solenoid stuck
         de: Magnetventil klemmt
+    - id: stuck_carbon_buildup
+      likelihood: low
+      label:
+        en: 'Carbon or debris buildup preventing free movement'
+        de: 'Verkokung oder Ablagerungen verhindern freies Bewegen'
   repair:
     difficulty: hard
     diy_possible: false
@@ -677,6 +727,11 @@
       label:
         en: Lifter stuck collapsed
         de: Schaltstößel im eingefahrenen Zustand fest
+    - id: stuck_carbon_buildup
+      likelihood: low
+      label:
+        en: 'Carbon or debris buildup preventing free movement'
+        de: 'Verkokung oder Ablagerungen verhindern freies Bewegen'
   repair:
     difficulty: hard
     diy_possible: false
@@ -715,6 +770,11 @@
       label:
         en: Wiring or connector open
         de: Verkabelung oder Stecker unterbrochen
+    - id: connector_back_out
+      likelihood: low
+      label:
+        en: 'Pin pushed back out of connector body'
+        de: 'Pin aus dem Steckergehäuse zurückgedrückt'
   repair:
     difficulty: hard
     diy_possible: false
@@ -753,6 +813,11 @@
       label:
         en: Solenoid internal short
         de: Interner Kurzschluss im Magnetventil
+    - id: connector_corrosion
+      likelihood: low
+      label:
+        en: 'Connector pins corroded - high contact resistance'
+        de: 'Steckerkontakte korrodiert - hoher Übergangswiderstand'
   repair:
     difficulty: hard
     diy_possible: false
@@ -791,6 +856,11 @@
       label:
         en: Solenoid internal short
         de: Interner Kurzschluss im Magnetventil
+    - id: connector_corrosion
+      likelihood: low
+      label:
+        en: 'Connector pins corroded - high contact resistance'
+        de: 'Steckerkontakte korrodiert - hoher Übergangswiderstand'
   repair:
     difficulty: hard
     diy_possible: false
@@ -829,6 +899,11 @@
       label:
         en: Wiring or connector open
         de: Verkabelung oder Stecker unterbrochen
+    - id: connector_back_out
+      likelihood: low
+      label:
+        en: 'Pin pushed back out of connector body'
+        de: 'Pin aus dem Steckergehäuse zurückgedrückt'
   repair:
     difficulty: hard
     diy_possible: false
@@ -910,6 +985,11 @@
       label:
         en: Solenoid internal short
         de: Interner Kurzschluss im Magnetventil
+    - id: connector_corrosion
+      likelihood: low
+      label:
+        en: 'Connector pins corroded - high contact resistance'
+        de: 'Steckerkontakte korrodiert - hoher Übergangswiderstand'
   repair:
     difficulty: hard
     diy_possible: false
@@ -1098,6 +1178,11 @@
       label:
         en: Solenoid internal short
         de: Interner Kurzschluss im Magnetventil
+    - id: connector_corrosion
+      likelihood: low
+      label:
+        en: 'Connector pins corroded - high contact resistance'
+        de: 'Steckerkontakte korrodiert - hoher Übergangswiderstand'
   repair:
     difficulty: hard
     diy_possible: false
@@ -1136,6 +1221,11 @@
       label:
         en: Wiring or connector open
         de: Verkabelung oder Stecker unterbrochen
+    - id: connector_back_out
+      likelihood: low
+      label:
+        en: 'Pin pushed back out of connector body'
+        de: 'Pin aus dem Steckergehäuse zurückgedrückt'
   repair:
     difficulty: hard
     diy_possible: false
@@ -1212,6 +1302,11 @@
       label:
         en: Solenoid internal short
         de: Interner Kurzschluss im Magnetventil
+    - id: connector_corrosion
+      likelihood: low
+      label:
+        en: 'Connector pins corroded - high contact resistance'
+        de: 'Steckerkontakte korrodiert - hoher Übergangswiderstand'
   repair:
     difficulty: hard
     diy_possible: false
@@ -1250,6 +1345,11 @@
       label:
         en: Solenoid internal short
         de: Interner Kurzschluss im Magnetventil
+    - id: connector_corrosion
+      likelihood: low
+      label:
+        en: 'Connector pins corroded - high contact resistance'
+        de: 'Steckerkontakte korrodiert - hoher Übergangswiderstand'
   repair:
     difficulty: hard
     diy_possible: false
@@ -1287,6 +1387,11 @@
       label:
         en: Wiring or connector open
         de: Verkabelung oder Stecker unterbrochen
+    - id: connector_back_out
+      likelihood: low
+      label:
+        en: 'Pin pushed back out of connector body'
+        de: 'Pin aus dem Steckergehäuse zurückgedrückt'
   repair:
     difficulty: hard
     diy_possible: false
@@ -1363,6 +1468,11 @@
       label:
         en: Solenoid internal short
         de: Interner Kurzschluss im Magnetventil
+    - id: connector_corrosion
+      likelihood: low
+      label:
+        en: 'Connector pins corroded - high contact resistance'
+        de: 'Steckerkontakte korrodiert - hoher Übergangswiderstand'
   repair:
     difficulty: hard
     diy_possible: false
@@ -1401,6 +1511,11 @@
       label:
         en: Solenoid internal short
         de: Interner Kurzschluss im Magnetventil
+    - id: connector_corrosion
+      likelihood: low
+      label:
+        en: 'Connector pins corroded - high contact resistance'
+        de: 'Steckerkontakte korrodiert - hoher Übergangswiderstand'
   repair:
     difficulty: hard
     diy_possible: false
@@ -1439,6 +1554,11 @@
       label:
         en: Wiring or connector open
         de: Verkabelung oder Stecker unterbrochen
+    - id: connector_back_out
+      likelihood: low
+      label:
+        en: 'Pin pushed back out of connector body'
+        de: 'Pin aus dem Steckergehäuse zurückgedrückt'
   repair:
     difficulty: hard
     diy_possible: false
@@ -1515,6 +1635,11 @@
       label:
         en: Solenoid internal short
         de: Interner Kurzschluss im Magnetventil
+    - id: connector_corrosion
+      likelihood: low
+      label:
+        en: 'Connector pins corroded - high contact resistance'
+        de: 'Steckerkontakte korrodiert - hoher Übergangswiderstand'
   repair:
     difficulty: hard
     diy_possible: false
@@ -1553,6 +1678,11 @@
       label:
         en: Solenoid internal short
         de: Interner Kurzschluss im Magnetventil
+    - id: connector_corrosion
+      likelihood: low
+      label:
+        en: 'Connector pins corroded - high contact resistance'
+        de: 'Steckerkontakte korrodiert - hoher Übergangswiderstand'
   repair:
     difficulty: hard
     diy_possible: false
@@ -1628,6 +1758,11 @@
       label:
         en: Solenoid stuck
         de: Magnetventil klemmt
+    - id: stuck_carbon_buildup
+      likelihood: low
+      label:
+        en: 'Carbon or debris buildup preventing free movement'
+        de: 'Verkokung oder Ablagerungen verhindern freies Bewegen'
   repair:
     difficulty: hard
     diy_possible: false
@@ -1665,6 +1800,11 @@
       label:
         en: Lifter stuck collapsed
         de: Schaltstößel im eingefahrenen Zustand fest
+    - id: stuck_carbon_buildup
+      likelihood: low
+      label:
+        en: 'Carbon or debris buildup preventing free movement'
+        de: 'Verkokung oder Ablagerungen verhindern freies Bewegen'
   repair:
     difficulty: hard
     diy_possible: false
@@ -1703,6 +1843,11 @@
       label:
         en: Wiring or connector open
         de: Verkabelung oder Stecker unterbrochen
+    - id: connector_back_out
+      likelihood: low
+      label:
+        en: 'Pin pushed back out of connector body'
+        de: 'Pin aus dem Steckergehäuse zurückgedrückt'
   repair:
     difficulty: hard
     diy_possible: false
@@ -1779,6 +1924,11 @@
       label:
         en: Solenoid internal short
         de: Interner Kurzschluss im Magnetventil
+    - id: connector_corrosion
+      likelihood: low
+      label:
+        en: 'Connector pins corroded - high contact resistance'
+        de: 'Steckerkontakte korrodiert - hoher Übergangswiderstand'
   repair:
     difficulty: hard
     diy_possible: false
@@ -1817,6 +1967,11 @@
       label:
         en: Solenoid internal short
         de: Interner Kurzschluss im Magnetventil
+    - id: connector_corrosion
+      likelihood: low
+      label:
+        en: 'Connector pins corroded - high contact resistance'
+        de: 'Steckerkontakte korrodiert - hoher Übergangswiderstand'
   repair:
     difficulty: hard
     diy_possible: false
@@ -1855,6 +2010,11 @@
       label:
         en: Wiring or connector open
         de: Verkabelung oder Stecker unterbrochen
+    - id: connector_back_out
+      likelihood: low
+      label:
+        en: 'Pin pushed back out of connector body'
+        de: 'Pin aus dem Steckergehäuse zurückgedrückt'
   repair:
     difficulty: hard
     diy_possible: false
@@ -1931,6 +2091,11 @@
       label:
         en: Solenoid internal short
         de: Interner Kurzschluss im Magnetventil
+    - id: connector_corrosion
+      likelihood: low
+      label:
+        en: 'Connector pins corroded - high contact resistance'
+        de: 'Steckerkontakte korrodiert - hoher Übergangswiderstand'
   repair:
     difficulty: hard
     diy_possible: false
@@ -1969,6 +2134,11 @@
       label:
         en: Solenoid internal short
         de: Interner Kurzschluss im Magnetventil
+    - id: connector_corrosion
+      likelihood: low
+      label:
+        en: 'Connector pins corroded - high contact resistance'
+        de: 'Steckerkontakte korrodiert - hoher Übergangswiderstand'
   repair:
     difficulty: hard
     diy_possible: false
@@ -2007,6 +2177,11 @@
       label:
         en: Wiring or connector open
         de: Verkabelung oder Stecker unterbrochen
+    - id: connector_back_out
+      likelihood: low
+      label:
+        en: 'Pin pushed back out of connector body'
+        de: 'Pin aus dem Steckergehäuse zurückgedrückt'
   repair:
     difficulty: hard
     diy_possible: false
@@ -2083,6 +2258,11 @@
       label:
         en: Solenoid internal short
         de: Interner Kurzschluss im Magnetventil
+    - id: connector_corrosion
+      likelihood: low
+      label:
+        en: 'Connector pins corroded - high contact resistance'
+        de: 'Steckerkontakte korrodiert - hoher Übergangswiderstand'
   repair:
     difficulty: hard
     diy_possible: false
@@ -2121,6 +2301,11 @@
       label:
         en: Solenoid internal short
         de: Interner Kurzschluss im Magnetventil
+    - id: connector_corrosion
+      likelihood: low
+      label:
+        en: 'Connector pins corroded - high contact resistance'
+        de: 'Steckerkontakte korrodiert - hoher Übergangswiderstand'
   repair:
     difficulty: hard
     diy_possible: false
@@ -2159,6 +2344,11 @@
       label:
         en: Wiring or connector open
         de: Verkabelung oder Stecker unterbrochen
+    - id: connector_back_out
+      likelihood: low
+      label:
+        en: 'Pin pushed back out of connector body'
+        de: 'Pin aus dem Steckergehäuse zurückgedrückt'
   repair:
     difficulty: hard
     diy_possible: false
@@ -2235,6 +2425,11 @@
       label:
         en: Solenoid internal short
         de: Interner Kurzschluss im Magnetventil
+    - id: connector_corrosion
+      likelihood: low
+      label:
+        en: 'Connector pins corroded - high contact resistance'
+        de: 'Steckerkontakte korrodiert - hoher Übergangswiderstand'
   repair:
     difficulty: hard
     diy_possible: false
@@ -2273,6 +2468,11 @@
       label:
         en: Solenoid internal short
         de: Interner Kurzschluss im Magnetventil
+    - id: connector_corrosion
+      likelihood: low
+      label:
+        en: 'Connector pins corroded - high contact resistance'
+        de: 'Steckerkontakte korrodiert - hoher Übergangswiderstand'
   repair:
     difficulty: hard
     diy_possible: false
@@ -2311,6 +2511,11 @@
       label:
         en: Wiring or connector open
         de: Verkabelung oder Stecker unterbrochen
+    - id: connector_back_out
+      likelihood: low
+      label:
+        en: 'Pin pushed back out of connector body'
+        de: 'Pin aus dem Steckergehäuse zurückgedrückt'
   repair:
     difficulty: hard
     diy_possible: false
@@ -2481,6 +2686,11 @@
       label:
         en: Wiring or connector open
         de: Verkabelung oder Stecker unterbrochen
+    - id: connector_back_out
+      likelihood: low
+      label:
+        en: 'Pin pushed back out of connector body'
+        de: 'Pin aus dem Steckergehäuse zurückgedrückt'
   repair:
     difficulty: hard
     diy_possible: false
@@ -2557,6 +2767,11 @@
       label:
         en: Solenoid internal short
         de: Interner Kurzschluss im Magnetventil
+    - id: connector_corrosion
+      likelihood: low
+      label:
+        en: 'Connector pins corroded - high contact resistance'
+        de: 'Steckerkontakte korrodiert - hoher Übergangswiderstand'
   repair:
     difficulty: hard
     diy_possible: false
@@ -2595,6 +2810,11 @@
       label:
         en: Solenoid internal short
         de: Interner Kurzschluss im Magnetventil
+    - id: connector_corrosion
+      likelihood: low
+      label:
+        en: 'Connector pins corroded - high contact resistance'
+        de: 'Steckerkontakte korrodiert - hoher Übergangswiderstand'
   repair:
     difficulty: hard
     diy_possible: false
@@ -2633,6 +2853,11 @@
       label:
         en: Wiring or connector open
         de: Verkabelung oder Stecker unterbrochen
+    - id: connector_back_out
+      likelihood: low
+      label:
+        en: 'Pin pushed back out of connector body'
+        de: 'Pin aus dem Steckergehäuse zurückgedrückt'
   repair:
     difficulty: hard
     diy_possible: false
@@ -2709,6 +2934,11 @@
       label:
         en: Solenoid internal short
         de: Interner Kurzschluss im Magnetventil
+    - id: connector_corrosion
+      likelihood: low
+      label:
+        en: 'Connector pins corroded - high contact resistance'
+        de: 'Steckerkontakte korrodiert - hoher Übergangswiderstand'
   repair:
     difficulty: hard
     diy_possible: false
@@ -2747,6 +2977,11 @@
       label:
         en: Solenoid internal short
         de: Interner Kurzschluss im Magnetventil
+    - id: connector_corrosion
+      likelihood: low
+      label:
+        en: 'Connector pins corroded - high contact resistance'
+        de: 'Steckerkontakte korrodiert - hoher Übergangswiderstand'
   repair:
     difficulty: hard
     diy_possible: false
@@ -3760,6 +3995,16 @@
       label:
         en: Wiring shorted to ground
         de: Verkabelung mit Masseschluss
+    - id: connector_corrosion
+      likelihood: low
+      label:
+        en: 'Connector pins corroded - high contact resistance'
+        de: 'Steckerkontakte korrodiert - hoher Übergangswiderstand'
+    - id: harness_chafe
+      likelihood: low
+      label:
+        en: 'Harness chafing through insulation'
+        de: 'Kabelbaum scheuert sich durch die Isolation'
   repair:
     difficulty: medium
     diy_possible: true
@@ -3794,6 +4039,16 @@
       label:
         en: Wiring shorted to battery
         de: Verkabelung mit Plus-Schluss
+    - id: connector_corrosion
+      likelihood: low
+      label:
+        en: 'Connector pins corroded - high contact resistance'
+        de: 'Steckerkontakte korrodiert - hoher Übergangswiderstand'
+    - id: supply_pinch
+      likelihood: low
+      label:
+        en: 'Supply wire pinched against B+ source'
+        de: 'Versorgungsleitung gegen B+-Quelle eingeklemmt'
   repair:
     difficulty: medium
     diy_possible: true
@@ -4680,6 +4935,16 @@
       label:
         en: Sensor reading drifted
         de: Sensorwert verschoben
+    - id: sensor_aged
+      likelihood: low
+      label:
+        en: 'Sensor element aged beyond calibration window'
+        de: 'Sensorelement gealtert über Kalibrierfenster hinaus'
+    - id: mounting_loose
+      likelihood: low
+      label:
+        en: 'Sensor mounting loose - signal damping'
+        de: 'Sensorbefestigung lose - Signaldämpfung'
   symptoms:
     - en: 'Check engine light on'
       de: 'Motorkontrollleuchte an'
@@ -4723,6 +4988,16 @@
       label:
         en: Signal wire shorted to ground
         de: Signalleitung mit Masseschluss
+    - id: connector_corrosion
+      likelihood: low
+      label:
+        en: 'Connector pins corroded - high contact resistance'
+        de: 'Steckerkontakte korrodiert - hoher Übergangswiderstand'
+    - id: harness_chafe
+      likelihood: low
+      label:
+        en: 'Harness chafing through insulation'
+        de: 'Kabelbaum scheuert sich durch die Isolation'
   symptoms:
     - en: 'Check engine light on'
       de: 'Motorkontrollleuchte an'
@@ -4766,6 +5041,16 @@
       label:
         en: Signal wire open
         de: Signalleitung unterbrochen
+    - id: connector_corrosion
+      likelihood: low
+      label:
+        en: 'Connector pins corroded - high contact resistance'
+        de: 'Steckerkontakte korrodiert - hoher Übergangswiderstand'
+    - id: supply_pinch
+      likelihood: low
+      label:
+        en: 'Supply wire pinched against B+ source'
+        de: 'Versorgungsleitung gegen B+-Quelle eingeklemmt'
   symptoms:
     - en: 'Check engine light on'
       de: 'Motorkontrollleuchte an'
@@ -4851,6 +5136,16 @@
       label:
         en: Sensor reading drifted
         de: Sensorwert verschoben
+    - id: sensor_aged
+      likelihood: low
+      label:
+        en: 'Sensor element aged beyond calibration window'
+        de: 'Sensorelement gealtert über Kalibrierfenster hinaus'
+    - id: mounting_loose
+      likelihood: low
+      label:
+        en: 'Sensor mounting loose - signal damping'
+        de: 'Sensorbefestigung lose - Signaldämpfung'
   symptoms:
     - en: 'Check engine light on'
       de: 'Motorkontrollleuchte an'
@@ -4894,6 +5189,16 @@
       label:
         en: Signal wire shorted to ground
         de: Signalleitung mit Masseschluss
+    - id: connector_corrosion
+      likelihood: low
+      label:
+        en: 'Connector pins corroded - high contact resistance'
+        de: 'Steckerkontakte korrodiert - hoher Übergangswiderstand'
+    - id: harness_chafe
+      likelihood: low
+      label:
+        en: 'Harness chafing through insulation'
+        de: 'Kabelbaum scheuert sich durch die Isolation'
   symptoms:
     - en: 'Check engine light on'
       de: 'Motorkontrollleuchte an'
@@ -4937,6 +5242,16 @@
       label:
         en: Signal wire open
         de: Signalleitung unterbrochen
+    - id: connector_corrosion
+      likelihood: low
+      label:
+        en: 'Connector pins corroded - high contact resistance'
+        de: 'Steckerkontakte korrodiert - hoher Übergangswiderstand'
+    - id: supply_pinch
+      likelihood: low
+      label:
+        en: 'Supply wire pinched against B+ source'
+        de: 'Versorgungsleitung gegen B+-Quelle eingeklemmt'
   symptoms:
     - en: 'Check engine light on'
       de: 'Motorkontrollleuchte an'
@@ -5022,6 +5337,16 @@
       label:
         en: Sensor reading drifted
         de: Sensorwert verschoben
+    - id: sensor_aged
+      likelihood: low
+      label:
+        en: 'Sensor element aged beyond calibration window'
+        de: 'Sensorelement gealtert über Kalibrierfenster hinaus'
+    - id: mounting_loose
+      likelihood: low
+      label:
+        en: 'Sensor mounting loose - signal damping'
+        de: 'Sensorbefestigung lose - Signaldämpfung'
   symptoms:
     - en: 'Check engine light on'
       de: 'Motorkontrollleuchte an'
@@ -5065,6 +5390,16 @@
       label:
         en: Signal wire shorted to ground
         de: Signalleitung mit Masseschluss
+    - id: connector_corrosion
+      likelihood: low
+      label:
+        en: 'Connector pins corroded - high contact resistance'
+        de: 'Steckerkontakte korrodiert - hoher Übergangswiderstand'
+    - id: harness_chafe
+      likelihood: low
+      label:
+        en: 'Harness chafing through insulation'
+        de: 'Kabelbaum scheuert sich durch die Isolation'
   symptoms:
     - en: 'Check engine light on'
       de: 'Motorkontrollleuchte an'
@@ -5108,6 +5443,16 @@
       label:
         en: Signal wire open
         de: Signalleitung unterbrochen
+    - id: connector_corrosion
+      likelihood: low
+      label:
+        en: 'Connector pins corroded - high contact resistance'
+        de: 'Steckerkontakte korrodiert - hoher Übergangswiderstand'
+    - id: supply_pinch
+      likelihood: low
+      label:
+        en: 'Supply wire pinched against B+ source'
+        de: 'Versorgungsleitung gegen B+-Quelle eingeklemmt'
   symptoms:
     - en: 'Check engine light on'
       de: 'Motorkontrollleuchte an'
@@ -5193,6 +5538,16 @@
       label:
         en: Sensor reading drifted
         de: Sensorwert verschoben
+    - id: sensor_aged
+      likelihood: low
+      label:
+        en: 'Sensor element aged beyond calibration window'
+        de: 'Sensorelement gealtert über Kalibrierfenster hinaus'
+    - id: mounting_loose
+      likelihood: low
+      label:
+        en: 'Sensor mounting loose - signal damping'
+        de: 'Sensorbefestigung lose - Signaldämpfung'
   symptoms:
     - en: 'Check engine light on'
       de: 'Motorkontrollleuchte an'
@@ -5236,6 +5591,16 @@
       label:
         en: Signal wire shorted to ground
         de: Signalleitung mit Masseschluss
+    - id: connector_corrosion
+      likelihood: low
+      label:
+        en: 'Connector pins corroded - high contact resistance'
+        de: 'Steckerkontakte korrodiert - hoher Übergangswiderstand'
+    - id: harness_chafe
+      likelihood: low
+      label:
+        en: 'Harness chafing through insulation'
+        de: 'Kabelbaum scheuert sich durch die Isolation'
   symptoms:
     - en: 'Check engine light on'
       de: 'Motorkontrollleuchte an'
@@ -5279,6 +5644,16 @@
       label:
         en: Signal wire open
         de: Signalleitung unterbrochen
+    - id: connector_corrosion
+      likelihood: low
+      label:
+        en: 'Connector pins corroded - high contact resistance'
+        de: 'Steckerkontakte korrodiert - hoher Übergangswiderstand'
+    - id: supply_pinch
+      likelihood: low
+      label:
+        en: 'Supply wire pinched against B+ source'
+        de: 'Versorgungsleitung gegen B+-Quelle eingeklemmt'
   symptoms:
     - en: 'Check engine light on'
       de: 'Motorkontrollleuchte an'
@@ -5364,6 +5739,16 @@
       label:
         en: Sensor reading drifted
         de: Sensorwert verschoben
+    - id: sensor_aged
+      likelihood: low
+      label:
+        en: 'Sensor element aged beyond calibration window'
+        de: 'Sensorelement gealtert über Kalibrierfenster hinaus'
+    - id: mounting_loose
+      likelihood: low
+      label:
+        en: 'Sensor mounting loose - signal damping'
+        de: 'Sensorbefestigung lose - Signaldämpfung'
   symptoms:
     - en: 'Check engine light on'
       de: 'Motorkontrollleuchte an'
@@ -5407,6 +5792,16 @@
       label:
         en: Signal wire shorted to ground
         de: Signalleitung mit Masseschluss
+    - id: connector_corrosion
+      likelihood: low
+      label:
+        en: 'Connector pins corroded - high contact resistance'
+        de: 'Steckerkontakte korrodiert - hoher Übergangswiderstand'
+    - id: harness_chafe
+      likelihood: low
+      label:
+        en: 'Harness chafing through insulation'
+        de: 'Kabelbaum scheuert sich durch die Isolation'
   symptoms:
     - en: 'Check engine light on'
       de: 'Motorkontrollleuchte an'
@@ -5450,6 +5845,16 @@
       label:
         en: Signal wire open
         de: Signalleitung unterbrochen
+    - id: connector_corrosion
+      likelihood: low
+      label:
+        en: 'Connector pins corroded - high contact resistance'
+        de: 'Steckerkontakte korrodiert - hoher Übergangswiderstand'
+    - id: supply_pinch
+      likelihood: low
+      label:
+        en: 'Supply wire pinched against B+ source'
+        de: 'Versorgungsleitung gegen B+-Quelle eingeklemmt'
   symptoms:
     - en: 'Check engine light on'
       de: 'Motorkontrollleuchte an'
@@ -5535,6 +5940,16 @@
       label:
         en: Sensor reading drifted
         de: Sensorwert verschoben
+    - id: sensor_aged
+      likelihood: low
+      label:
+        en: 'Sensor element aged beyond calibration window'
+        de: 'Sensorelement gealtert über Kalibrierfenster hinaus'
+    - id: mounting_loose
+      likelihood: low
+      label:
+        en: 'Sensor mounting loose - signal damping'
+        de: 'Sensorbefestigung lose - Signaldämpfung'
   symptoms:
     - en: 'Check engine light on'
       de: 'Motorkontrollleuchte an'
@@ -5578,6 +5993,16 @@
       label:
         en: Signal wire shorted to ground
         de: Signalleitung mit Masseschluss
+    - id: connector_corrosion
+      likelihood: low
+      label:
+        en: 'Connector pins corroded - high contact resistance'
+        de: 'Steckerkontakte korrodiert - hoher Übergangswiderstand'
+    - id: harness_chafe
+      likelihood: low
+      label:
+        en: 'Harness chafing through insulation'
+        de: 'Kabelbaum scheuert sich durch die Isolation'
   symptoms:
     - en: 'Check engine light on'
       de: 'Motorkontrollleuchte an'
@@ -5621,6 +6046,16 @@
       label:
         en: Signal wire open
         de: Signalleitung unterbrochen
+    - id: connector_corrosion
+      likelihood: low
+      label:
+        en: 'Connector pins corroded - high contact resistance'
+        de: 'Steckerkontakte korrodiert - hoher Übergangswiderstand'
+    - id: supply_pinch
+      likelihood: low
+      label:
+        en: 'Supply wire pinched against B+ source'
+        de: 'Versorgungsleitung gegen B+-Quelle eingeklemmt'
   symptoms:
     - en: 'Check engine light on'
       de: 'Motorkontrollleuchte an'
@@ -5706,6 +6141,16 @@
       label:
         en: Sensor reading drifted
         de: Sensorwert verschoben
+    - id: sensor_aged
+      likelihood: low
+      label:
+        en: 'Sensor element aged beyond calibration window'
+        de: 'Sensorelement gealtert über Kalibrierfenster hinaus'
+    - id: mounting_loose
+      likelihood: low
+      label:
+        en: 'Sensor mounting loose - signal damping'
+        de: 'Sensorbefestigung lose - Signaldämpfung'
   symptoms:
     - en: 'Check engine light on'
       de: 'Motorkontrollleuchte an'
@@ -5749,6 +6194,16 @@
       label:
         en: Signal wire shorted to ground
         de: Signalleitung mit Masseschluss
+    - id: connector_corrosion
+      likelihood: low
+      label:
+        en: 'Connector pins corroded - high contact resistance'
+        de: 'Steckerkontakte korrodiert - hoher Übergangswiderstand'
+    - id: harness_chafe
+      likelihood: low
+      label:
+        en: 'Harness chafing through insulation'
+        de: 'Kabelbaum scheuert sich durch die Isolation'
   symptoms:
     - en: 'Check engine light on'
       de: 'Motorkontrollleuchte an'
@@ -5792,6 +6247,16 @@
       label:
         en: Signal wire open
         de: Signalleitung unterbrochen
+    - id: connector_corrosion
+      likelihood: low
+      label:
+        en: 'Connector pins corroded - high contact resistance'
+        de: 'Steckerkontakte korrodiert - hoher Übergangswiderstand'
+    - id: supply_pinch
+      likelihood: low
+      label:
+        en: 'Supply wire pinched against B+ source'
+        de: 'Versorgungsleitung gegen B+-Quelle eingeklemmt'
   symptoms:
     - en: 'Check engine light on'
       de: 'Motorkontrollleuchte an'
@@ -5877,6 +6342,16 @@
       label:
         en: Sensor reading drifted
         de: Sensorwert verschoben
+    - id: sensor_aged
+      likelihood: low
+      label:
+        en: 'Sensor element aged beyond calibration window'
+        de: 'Sensorelement gealtert über Kalibrierfenster hinaus'
+    - id: mounting_loose
+      likelihood: low
+      label:
+        en: 'Sensor mounting loose - signal damping'
+        de: 'Sensorbefestigung lose - Signaldämpfung'
   symptoms:
     - en: 'Check engine light on'
       de: 'Motorkontrollleuchte an'
@@ -5920,6 +6395,16 @@
       label:
         en: Signal wire shorted to ground
         de: Signalleitung mit Masseschluss
+    - id: connector_corrosion
+      likelihood: low
+      label:
+        en: 'Connector pins corroded - high contact resistance'
+        de: 'Steckerkontakte korrodiert - hoher Übergangswiderstand'
+    - id: harness_chafe
+      likelihood: low
+      label:
+        en: 'Harness chafing through insulation'
+        de: 'Kabelbaum scheuert sich durch die Isolation'
   symptoms:
     - en: 'Check engine light on'
       de: 'Motorkontrollleuchte an'
@@ -5963,6 +6448,16 @@
       label:
         en: Signal wire open
         de: Signalleitung unterbrochen
+    - id: connector_corrosion
+      likelihood: low
+      label:
+        en: 'Connector pins corroded - high contact resistance'
+        de: 'Steckerkontakte korrodiert - hoher Übergangswiderstand'
+    - id: supply_pinch
+      likelihood: low
+      label:
+        en: 'Supply wire pinched against B+ source'
+        de: 'Versorgungsleitung gegen B+-Quelle eingeklemmt'
   symptoms:
     - en: 'Check engine light on'
       de: 'Motorkontrollleuchte an'
@@ -6182,6 +6677,16 @@
       label:
         en: Module internal fault
         de: Interner Modulfehler
+    - id: needs_reflash
+      likelihood: low
+      label:
+        en: 'Module software outdated, reflash may resolve'
+        de: 'Modul-Software veraltet, Reflash kann helfen'
+    - id: voltage_supply_issue
+      likelihood: low
+      label:
+        en: 'Supply voltage outside specification'
+        de: 'Versorgungsspannung außerhalb der Spezifikation'
   symptoms:
     - en: 'Check engine light on'
       de: 'Motorkontrollleuchte an'

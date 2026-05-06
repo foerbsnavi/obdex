@@ -18,6 +18,16 @@
       label:
         en: Module internal fault
         de: Interner Modulfehler
+    - id: gateway_module_fault
+      likelihood: low
+      label:
+        en: 'Gateway module routing CAN messages incorrectly'
+        de: 'Gateway-Modul leitet CAN-Botschaften fehlerhaft'
+    - id: terminator_resistor_drift
+      likelihood: low
+      label:
+        en: 'CAN terminating resistor (120 Ω) drifted out of spec'
+        de: 'CAN-Abschlusswiderstand (120 Ω) außerhalb der Spezifikation'
   symptoms:
     - en: 'Multiple warning lights may illuminate'
       de: 'Mehrere Warnleuchten können aufleuchten'
@@ -65,6 +75,11 @@
       label:
         en: Bad ground connection
         de: Schlechte Masseverbindung
+    - id: gateway_module_fault
+      likelihood: low
+      label:
+        en: 'Gateway module routing CAN messages incorrectly'
+        de: 'Gateway-Modul leitet CAN-Botschaften fehlerhaft'
   symptoms:
     - en: 'Multiple warning lights may illuminate'
       de: 'Mehrere Warnleuchten können aufleuchten'
@@ -112,6 +127,11 @@
       label:
         en: VIN not programmed in replacement module
         de: VIN im Ersatzmodul nicht einprogrammiert
+    - id: gateway_module_fault
+      likelihood: low
+      label:
+        en: 'Gateway module routing CAN messages incorrectly'
+        de: 'Gateway-Modul leitet CAN-Botschaften fehlerhaft'
   symptoms:
     - en: 'Multiple warning lights may illuminate'
       de: 'Mehrere Warnleuchten können aufleuchten'
@@ -160,6 +180,11 @@
       label:
         en: Alternator regulator fault (over- or undervoltage)
         de: Lichtmaschinenregler defekt (Über- oder Unterspannung)
+    - id: gateway_module_fault
+      likelihood: low
+      label:
+        en: 'Gateway module routing CAN messages incorrectly'
+        de: 'Gateway-Modul leitet CAN-Botschaften fehlerhaft'
   symptoms:
     - en: 'Multiple warning lights may illuminate'
       de: 'Mehrere Warnleuchten können aufleuchten'
@@ -202,6 +227,16 @@
       label:
         en: Relay contacts failed or coil open
         de: Relaiskontakte defekt oder Spule unterbrochen
+    - id: gateway_module_fault
+      likelihood: low
+      label:
+        en: 'Gateway module routing CAN messages incorrectly'
+        de: 'Gateway-Modul leitet CAN-Botschaften fehlerhaft'
+    - id: terminator_resistor_drift
+      likelihood: low
+      label:
+        en: 'CAN terminating resistor (120 Ω) drifted out of spec'
+        de: 'CAN-Abschlusswiderstand (120 Ω) außerhalb der Spezifikation'
   symptoms:
     - en: 'Multiple warning lights may illuminate'
       de: 'Mehrere Warnleuchten können aufleuchten'
@@ -244,6 +279,16 @@
       label:
         en: RAP relay or BCM logic failed
         de: RAP-Relais oder BCM-Logik defekt
+    - id: gateway_module_fault
+      likelihood: low
+      label:
+        en: 'Gateway module routing CAN messages incorrectly'
+        de: 'Gateway-Modul leitet CAN-Botschaften fehlerhaft'
+    - id: terminator_resistor_drift
+      likelihood: low
+      label:
+        en: 'CAN terminating resistor (120 Ω) drifted out of spec'
+        de: 'CAN-Abschlusswiderstand (120 Ω) außerhalb der Spezifikation'
   symptoms:
     - en: 'Multiple warning lights may illuminate'
       de: 'Mehrere Warnleuchten können aufleuchten'
@@ -292,6 +337,11 @@
       label:
         en: Power wiring break
         de: Versorgungsleitung unterbrochen
+    - id: gateway_module_fault
+      likelihood: low
+      label:
+        en: 'Gateway module routing CAN messages incorrectly'
+        de: 'Gateway-Modul leitet CAN-Botschaften fehlerhaft'
   symptoms:
     - en: 'Multiple warning lights may illuminate'
       de: 'Mehrere Warnleuchten können aufleuchten'
@@ -336,6 +386,16 @@
       label:
         en: Supply fuse blown
         de: Versorgungssicherung defekt
+    - id: gateway_module_fault
+      likelihood: low
+      label:
+        en: 'Gateway module routing CAN messages incorrectly'
+        de: 'Gateway-Modul leitet CAN-Botschaften fehlerhaft'
+    - id: terminator_resistor_drift
+      likelihood: low
+      label:
+        en: 'CAN terminating resistor (120 Ω) drifted out of spec'
+        de: 'CAN-Abschlusswiderstand (120 Ω) außerhalb der Spezifikation'
   symptoms:
     - en: 'Multiple warning lights may illuminate'
       de: 'Mehrere Warnleuchten können aufleuchten'
@@ -384,6 +444,11 @@
       label:
         en: Ground connection loose
         de: Masseanschluss locker
+    - id: gateway_module_fault
+      likelihood: low
+      label:
+        en: 'Gateway module routing CAN messages incorrectly'
+        de: 'Gateway-Modul leitet CAN-Botschaften fehlerhaft'
   symptoms:
     - en: 'Multiple warning lights may illuminate'
       de: 'Mehrere Warnleuchten können aufleuchten'
@@ -427,6 +492,16 @@
       label:
         en: Ground stud corroded
         de: Massepunkt korrodiert
+    - id: gateway_module_fault
+      likelihood: low
+      label:
+        en: 'Gateway module routing CAN messages incorrectly'
+        de: 'Gateway-Modul leitet CAN-Botschaften fehlerhaft'
+    - id: terminator_resistor_drift
+      likelihood: low
+      label:
+        en: 'CAN terminating resistor (120 Ω) drifted out of spec'
+        de: 'CAN-Abschlusswiderstand (120 Ω) außerhalb der Spezifikation'
   symptoms:
     - en: 'Multiple warning lights may illuminate'
       de: 'Mehrere Warnleuchten können aufleuchten'
@@ -470,6 +545,16 @@
       label:
         en: Ignition switch contacts worn
         de: Zündschalterkontakte verschlissen
+    - id: gateway_module_fault
+      likelihood: low
+      label:
+        en: 'Gateway module routing CAN messages incorrectly'
+        de: 'Gateway-Modul leitet CAN-Botschaften fehlerhaft'
+    - id: terminator_resistor_drift
+      likelihood: low
+      label:
+        en: 'CAN terminating resistor (120 Ω) drifted out of spec'
+        de: 'CAN-Abschlusswiderstand (120 Ω) außerhalb der Spezifikation'
   symptoms:
     - en: 'Multiple warning lights may illuminate'
       de: 'Mehrere Warnleuchten können aufleuchten'
@@ -512,6 +597,16 @@
       label:
         en: Wiring or connector fault
         de: Verkabelung oder Stecker fehlerhaft
+    - id: gateway_module_fault
+      likelihood: low
+      label:
+        en: 'Gateway module routing CAN messages incorrectly'
+        de: 'Gateway-Modul leitet CAN-Botschaften fehlerhaft'
+    - id: terminator_resistor_drift
+      likelihood: low
+      label:
+        en: 'CAN terminating resistor (120 Ω) drifted out of spec'
+        de: 'CAN-Abschlusswiderstand (120 Ω) außerhalb der Spezifikation'
   symptoms:
     - en: 'Multiple warning lights may illuminate'
       de: 'Mehrere Warnleuchten können aufleuchten'
@@ -554,6 +649,16 @@
       label:
         en: Wiring or connector fault
         de: Verkabelung oder Stecker fehlerhaft
+    - id: gateway_module_fault
+      likelihood: low
+      label:
+        en: 'Gateway module routing CAN messages incorrectly'
+        de: 'Gateway-Modul leitet CAN-Botschaften fehlerhaft'
+    - id: terminator_resistor_drift
+      likelihood: low
+      label:
+        en: 'CAN terminating resistor (120 Ω) drifted out of spec'
+        de: 'CAN-Abschlusswiderstand (120 Ω) außerhalb der Spezifikation'
   symptoms:
     - en: 'Multiple warning lights may illuminate'
       de: 'Mehrere Warnleuchten können aufleuchten'
@@ -596,6 +701,16 @@
       label:
         en: Wiring or connector fault
         de: Verkabelung oder Stecker fehlerhaft
+    - id: gateway_module_fault
+      likelihood: low
+      label:
+        en: 'Gateway module routing CAN messages incorrectly'
+        de: 'Gateway-Modul leitet CAN-Botschaften fehlerhaft'
+    - id: terminator_resistor_drift
+      likelihood: low
+      label:
+        en: 'CAN terminating resistor (120 Ω) drifted out of spec'
+        de: 'CAN-Abschlusswiderstand (120 Ω) außerhalb der Spezifikation'
   symptoms:
     - en: 'Multiple warning lights may illuminate'
       de: 'Mehrere Warnleuchten können aufleuchten'
@@ -638,6 +753,16 @@
       label:
         en: Ignition switch contacts worn
         de: Zündschalterkontakte verschlissen
+    - id: gateway_module_fault
+      likelihood: low
+      label:
+        en: 'Gateway module routing CAN messages incorrectly'
+        de: 'Gateway-Modul leitet CAN-Botschaften fehlerhaft'
+    - id: terminator_resistor_drift
+      likelihood: low
+      label:
+        en: 'CAN terminating resistor (120 Ω) drifted out of spec'
+        de: 'CAN-Abschlusswiderstand (120 Ω) außerhalb der Spezifikation'
   symptoms:
     - en: 'Multiple warning lights may illuminate'
       de: 'Mehrere Warnleuchten können aufleuchten'
@@ -680,6 +805,16 @@
       label:
         en: Ignition switch contacts worn
         de: Zündschalterkontakte verschlissen
+    - id: gateway_module_fault
+      likelihood: low
+      label:
+        en: 'Gateway module routing CAN messages incorrectly'
+        de: 'Gateway-Modul leitet CAN-Botschaften fehlerhaft'
+    - id: terminator_resistor_drift
+      likelihood: low
+      label:
+        en: 'CAN terminating resistor (120 Ω) drifted out of spec'
+        de: 'CAN-Abschlusswiderstand (120 Ω) außerhalb der Spezifikation'
   symptoms:
     - en: 'Multiple warning lights may illuminate'
       de: 'Mehrere Warnleuchten können aufleuchten'
@@ -722,6 +857,16 @@
       label:
         en: Start position contacts worn
         de: Startkontakte verschlissen
+    - id: gateway_module_fault
+      likelihood: low
+      label:
+        en: 'Gateway module routing CAN messages incorrectly'
+        de: 'Gateway-Modul leitet CAN-Botschaften fehlerhaft'
+    - id: terminator_resistor_drift
+      likelihood: low
+      label:
+        en: 'CAN terminating resistor (120 Ω) drifted out of spec'
+        de: 'CAN-Abschlusswiderstand (120 Ω) außerhalb der Spezifikation'
   symptoms:
     - en: 'Multiple warning lights may illuminate'
       de: 'Mehrere Warnleuchten können aufleuchten'
@@ -764,6 +909,16 @@
       label:
         en: Ignition switch contacts worn
         de: Zündschalterkontakte verschlissen
+    - id: gateway_module_fault
+      likelihood: low
+      label:
+        en: 'Gateway module routing CAN messages incorrectly'
+        de: 'Gateway-Modul leitet CAN-Botschaften fehlerhaft'
+    - id: terminator_resistor_drift
+      likelihood: low
+      label:
+        en: 'CAN terminating resistor (120 Ω) drifted out of spec'
+        de: 'CAN-Abschlusswiderstand (120 Ω) außerhalb der Spezifikation'
   symptoms:
     - en: 'Multiple warning lights may illuminate'
       de: 'Mehrere Warnleuchten können aufleuchten'
@@ -811,6 +966,11 @@
       label:
         en: Wake signal noise or glitch
         de: Wake-Signal mit Störungen oder Glitches
+    - id: gateway_module_fault
+      likelihood: low
+      label:
+        en: 'Gateway module routing CAN messages incorrectly'
+        de: 'Gateway-Modul leitet CAN-Botschaften fehlerhaft'
   symptoms:
     - en: 'Multiple warning lights may illuminate'
       de: 'Mehrere Warnleuchten können aufleuchten'
@@ -853,6 +1013,16 @@
       label:
         en: Supply fuse blown
         de: Versorgungssicherung defekt
+    - id: gateway_module_fault
+      likelihood: low
+      label:
+        en: 'Gateway module routing CAN messages incorrectly'
+        de: 'Gateway-Modul leitet CAN-Botschaften fehlerhaft'
+    - id: terminator_resistor_drift
+      likelihood: low
+      label:
+        en: 'CAN terminating resistor (120 Ω) drifted out of spec'
+        de: 'CAN-Abschlusswiderstand (120 Ω) außerhalb der Spezifikation'
   symptoms:
     - en: 'Multiple warning lights may illuminate'
       de: 'Mehrere Warnleuchten können aufleuchten'
@@ -896,6 +1066,16 @@
       label:
         en: Supply fuse blown
         de: Versorgungssicherung defekt
+    - id: gateway_module_fault
+      likelihood: low
+      label:
+        en: 'Gateway module routing CAN messages incorrectly'
+        de: 'Gateway-Modul leitet CAN-Botschaften fehlerhaft'
+    - id: terminator_resistor_drift
+      likelihood: low
+      label:
+        en: 'CAN terminating resistor (120 Ω) drifted out of spec'
+        de: 'CAN-Abschlusswiderstand (120 Ω) außerhalb der Spezifikation'
   symptoms:
     - en: 'Multiple warning lights may illuminate'
       de: 'Mehrere Warnleuchten können aufleuchten'
@@ -938,6 +1118,16 @@
       label:
         en: Ground stud corroded
         de: Massepunkt korrodiert
+    - id: gateway_module_fault
+      likelihood: low
+      label:
+        en: 'Gateway module routing CAN messages incorrectly'
+        de: 'Gateway-Modul leitet CAN-Botschaften fehlerhaft'
+    - id: terminator_resistor_drift
+      likelihood: low
+      label:
+        en: 'CAN terminating resistor (120 Ω) drifted out of spec'
+        de: 'CAN-Abschlusswiderstand (120 Ω) außerhalb der Spezifikation'
   symptoms:
     - en: 'Multiple warning lights may illuminate'
       de: 'Mehrere Warnleuchten können aufleuchten'
@@ -980,6 +1170,16 @@
       label:
         en: Ground stud corroded
         de: Massepunkt korrodiert
+    - id: gateway_module_fault
+      likelihood: low
+      label:
+        en: 'Gateway module routing CAN messages incorrectly'
+        de: 'Gateway-Modul leitet CAN-Botschaften fehlerhaft'
+    - id: terminator_resistor_drift
+      likelihood: low
+      label:
+        en: 'CAN terminating resistor (120 Ω) drifted out of spec'
+        de: 'CAN-Abschlusswiderstand (120 Ω) außerhalb der Spezifikation'
   symptoms:
     - en: 'Multiple warning lights may illuminate'
       de: 'Mehrere Warnleuchten können aufleuchten'
@@ -1023,6 +1223,16 @@
       label:
         en: Internal oscillator drifted
         de: Interner Oszillator gedriftet
+    - id: gateway_module_fault
+      likelihood: low
+      label:
+        en: 'Gateway module routing CAN messages incorrectly'
+        de: 'Gateway-Modul leitet CAN-Botschaften fehlerhaft'
+    - id: terminator_resistor_drift
+      likelihood: low
+      label:
+        en: 'CAN terminating resistor (120 Ω) drifted out of spec'
+        de: 'CAN-Abschlusswiderstand (120 Ω) außerhalb der Spezifikation'
   symptoms:
     - en: 'Multiple warning lights may illuminate'
       de: 'Mehrere Warnleuchten können aufleuchten'
@@ -1065,6 +1275,16 @@
       label:
         en: One supply line has high resistance
         de: Eine Versorgung mit hohem Übergangswiderstand
+    - id: gateway_module_fault
+      likelihood: low
+      label:
+        en: 'Gateway module routing CAN messages incorrectly'
+        de: 'Gateway-Modul leitet CAN-Botschaften fehlerhaft'
+    - id: terminator_resistor_drift
+      likelihood: low
+      label:
+        en: 'CAN terminating resistor (120 Ω) drifted out of spec'
+        de: 'CAN-Abschlusswiderstand (120 Ω) außerhalb der Spezifikation'
   symptoms:
     - en: 'Multiple warning lights may illuminate'
       de: 'Mehrere Warnleuchten können aufleuchten'
@@ -1108,6 +1328,16 @@
       label:
         en: One supply line has high resistance
         de: Eine Versorgung mit hohem Übergangswiderstand
+    - id: gateway_module_fault
+      likelihood: low
+      label:
+        en: 'Gateway module routing CAN messages incorrectly'
+        de: 'Gateway-Modul leitet CAN-Botschaften fehlerhaft'
+    - id: terminator_resistor_drift
+      likelihood: low
+      label:
+        en: 'CAN terminating resistor (120 Ω) drifted out of spec'
+        de: 'CAN-Abschlusswiderstand (120 Ω) außerhalb der Spezifikation'
   symptoms:
     - en: 'Multiple warning lights may illuminate'
       de: 'Mehrere Warnleuchten können aufleuchten'
@@ -1151,6 +1381,16 @@
       label:
         en: Wake-up wire broken
         de: Wake-up-Leitung unterbrochen
+    - id: gateway_module_fault
+      likelihood: low
+      label:
+        en: 'Gateway module routing CAN messages incorrectly'
+        de: 'Gateway-Modul leitet CAN-Botschaften fehlerhaft'
+    - id: terminator_resistor_drift
+      likelihood: low
+      label:
+        en: 'CAN terminating resistor (120 Ω) drifted out of spec'
+        de: 'CAN-Abschlusswiderstand (120 Ω) außerhalb der Spezifikation'
   symptoms:
     - en: 'Multiple warning lights may illuminate'
       de: 'Mehrere Warnleuchten können aufleuchten'
@@ -1194,6 +1434,16 @@
       label:
         en: Wiring shorted to ground
         de: Verkabelung mit Masseschluss
+    - id: gateway_module_fault
+      likelihood: low
+      label:
+        en: 'Gateway module routing CAN messages incorrectly'
+        de: 'Gateway-Modul leitet CAN-Botschaften fehlerhaft'
+    - id: terminator_resistor_drift
+      likelihood: low
+      label:
+        en: 'CAN terminating resistor (120 Ω) drifted out of spec'
+        de: 'CAN-Abschlusswiderstand (120 Ω) außerhalb der Spezifikation'
   symptoms:
     - en: 'Multiple warning lights may illuminate'
       de: 'Mehrere Warnleuchten können aufleuchten'
@@ -1237,6 +1487,16 @@
       label:
         en: Wiring shorted to battery
         de: Verkabelung mit Plus-Schluss
+    - id: gateway_module_fault
+      likelihood: low
+      label:
+        en: 'Gateway module routing CAN messages incorrectly'
+        de: 'Gateway-Modul leitet CAN-Botschaften fehlerhaft'
+    - id: terminator_resistor_drift
+      likelihood: low
+      label:
+        en: 'CAN terminating resistor (120 Ω) drifted out of spec'
+        de: 'CAN-Abschlusswiderstand (120 Ω) außerhalb der Spezifikation'
   symptoms:
     - en: 'Multiple warning lights may illuminate'
       de: 'Mehrere Warnleuchten können aufleuchten'
@@ -1279,6 +1539,16 @@
       label:
         en: Wake signal noise or glitch
         de: Wake-Signal mit Störungen
+    - id: gateway_module_fault
+      likelihood: low
+      label:
+        en: 'Gateway module routing CAN messages incorrectly'
+        de: 'Gateway-Modul leitet CAN-Botschaften fehlerhaft'
+    - id: terminator_resistor_drift
+      likelihood: low
+      label:
+        en: 'CAN terminating resistor (120 Ω) drifted out of spec'
+        de: 'CAN-Abschlusswiderstand (120 Ω) außerhalb der Spezifikation'
   symptoms:
     - en: 'Multiple warning lights may illuminate'
       de: 'Mehrere Warnleuchten können aufleuchten'
@@ -1322,6 +1592,16 @@
       label:
         en: Wake-up wire broken
         de: Wake-up-Leitung unterbrochen
+    - id: gateway_module_fault
+      likelihood: low
+      label:
+        en: 'Gateway module routing CAN messages incorrectly'
+        de: 'Gateway-Modul leitet CAN-Botschaften fehlerhaft'
+    - id: terminator_resistor_drift
+      likelihood: low
+      label:
+        en: 'CAN terminating resistor (120 Ω) drifted out of spec'
+        de: 'CAN-Abschlusswiderstand (120 Ω) außerhalb der Spezifikation'
   symptoms:
     - en: 'Multiple warning lights may illuminate'
       de: 'Mehrere Warnleuchten können aufleuchten'
@@ -1365,6 +1645,16 @@
       label:
         en: Wiring shorted to ground
         de: Verkabelung mit Masseschluss
+    - id: gateway_module_fault
+      likelihood: low
+      label:
+        en: 'Gateway module routing CAN messages incorrectly'
+        de: 'Gateway-Modul leitet CAN-Botschaften fehlerhaft'
+    - id: terminator_resistor_drift
+      likelihood: low
+      label:
+        en: 'CAN terminating resistor (120 Ω) drifted out of spec'
+        de: 'CAN-Abschlusswiderstand (120 Ω) außerhalb der Spezifikation'
   symptoms:
     - en: 'Multiple warning lights may illuminate'
       de: 'Mehrere Warnleuchten können aufleuchten'
@@ -1408,6 +1698,16 @@
       label:
         en: Wiring shorted to battery
         de: Verkabelung mit Plus-Schluss
+    - id: gateway_module_fault
+      likelihood: low
+      label:
+        en: 'Gateway module routing CAN messages incorrectly'
+        de: 'Gateway-Modul leitet CAN-Botschaften fehlerhaft'
+    - id: terminator_resistor_drift
+      likelihood: low
+      label:
+        en: 'CAN terminating resistor (120 Ω) drifted out of spec'
+        de: 'CAN-Abschlusswiderstand (120 Ω) außerhalb der Spezifikation'
   symptoms:
     - en: 'Multiple warning lights may illuminate'
       de: 'Mehrere Warnleuchten können aufleuchten'
@@ -1450,6 +1750,16 @@
       label:
         en: Wake signal noise or glitch
         de: Wake-Signal mit Störungen
+    - id: gateway_module_fault
+      likelihood: low
+      label:
+        en: 'Gateway module routing CAN messages incorrectly'
+        de: 'Gateway-Modul leitet CAN-Botschaften fehlerhaft'
+    - id: terminator_resistor_drift
+      likelihood: low
+      label:
+        en: 'CAN terminating resistor (120 Ω) drifted out of spec'
+        de: 'CAN-Abschlusswiderstand (120 Ω) außerhalb der Spezifikation'
   symptoms:
     - en: 'Multiple warning lights may illuminate'
       de: 'Mehrere Warnleuchten können aufleuchten'
@@ -1493,6 +1803,16 @@
       label:
         en: Ignition switch contacts worn
         de: Zündschalterkontakte verschlissen
+    - id: gateway_module_fault
+      likelihood: low
+      label:
+        en: 'Gateway module routing CAN messages incorrectly'
+        de: 'Gateway-Modul leitet CAN-Botschaften fehlerhaft'
+    - id: terminator_resistor_drift
+      likelihood: low
+      label:
+        en: 'CAN terminating resistor (120 Ω) drifted out of spec'
+        de: 'CAN-Abschlusswiderstand (120 Ω) außerhalb der Spezifikation'
   symptoms:
     - en: 'Multiple warning lights may illuminate'
       de: 'Mehrere Warnleuchten können aufleuchten'
@@ -1535,6 +1855,16 @@
       label:
         en: Wiring or relay fault between supply and ignition path
         de: Verkabelungs- oder Relaisfehler zwischen Versorgung und Zündpfad
+    - id: gateway_module_fault
+      likelihood: low
+      label:
+        en: 'Gateway module routing CAN messages incorrectly'
+        de: 'Gateway-Modul leitet CAN-Botschaften fehlerhaft'
+    - id: terminator_resistor_drift
+      likelihood: low
+      label:
+        en: 'CAN terminating resistor (120 Ω) drifted out of spec'
+        de: 'CAN-Abschlusswiderstand (120 Ω) außerhalb der Spezifikation'
   symptoms:
     - en: 'Multiple warning lights may illuminate'
       de: 'Mehrere Warnleuchten können aufleuchten'
@@ -1578,6 +1908,16 @@
       label:
         en: Wiring or relay fault
         de: Verkabelungs- oder Relaisfehler
+    - id: gateway_module_fault
+      likelihood: low
+      label:
+        en: 'Gateway module routing CAN messages incorrectly'
+        de: 'Gateway-Modul leitet CAN-Botschaften fehlerhaft'
+    - id: terminator_resistor_drift
+      likelihood: low
+      label:
+        en: 'CAN terminating resistor (120 Ω) drifted out of spec'
+        de: 'CAN-Abschlusswiderstand (120 Ω) außerhalb der Spezifikation'
   symptoms:
     - en: 'Multiple warning lights may illuminate'
       de: 'Mehrere Warnleuchten können aufleuchten'
@@ -1621,6 +1961,16 @@
       label:
         en: Disable wire broken
         de: Disable-Leitung unterbrochen
+    - id: gateway_module_fault
+      likelihood: low
+      label:
+        en: 'Gateway module routing CAN messages incorrectly'
+        de: 'Gateway-Modul leitet CAN-Botschaften fehlerhaft'
+    - id: terminator_resistor_drift
+      likelihood: low
+      label:
+        en: 'CAN terminating resistor (120 Ω) drifted out of spec'
+        de: 'CAN-Abschlusswiderstand (120 Ω) außerhalb der Spezifikation'
   symptoms:
     - en: 'Multiple warning lights may illuminate'
       de: 'Mehrere Warnleuchten können aufleuchten'
@@ -1663,6 +2013,16 @@
       label:
         en: Wiring shorted to ground
         de: Verkabelung mit Masseschluss
+    - id: gateway_module_fault
+      likelihood: low
+      label:
+        en: 'Gateway module routing CAN messages incorrectly'
+        de: 'Gateway-Modul leitet CAN-Botschaften fehlerhaft'
+    - id: terminator_resistor_drift
+      likelihood: low
+      label:
+        en: 'CAN terminating resistor (120 Ω) drifted out of spec'
+        de: 'CAN-Abschlusswiderstand (120 Ω) außerhalb der Spezifikation'
   symptoms:
     - en: 'Multiple warning lights may illuminate'
       de: 'Mehrere Warnleuchten können aufleuchten'
@@ -1705,6 +2065,16 @@
       label:
         en: Wiring shorted to battery
         de: Verkabelung mit Plus-Schluss
+    - id: gateway_module_fault
+      likelihood: low
+      label:
+        en: 'Gateway module routing CAN messages incorrectly'
+        de: 'Gateway-Modul leitet CAN-Botschaften fehlerhaft'
+    - id: terminator_resistor_drift
+      likelihood: low
+      label:
+        en: 'CAN terminating resistor (120 Ω) drifted out of spec'
+        de: 'CAN-Abschlusswiderstand (120 Ω) außerhalb der Spezifikation'
   symptoms:
     - en: 'Multiple warning lights may illuminate'
       de: 'Mehrere Warnleuchten können aufleuchten'
@@ -1747,6 +2117,16 @@
       label:
         en: Feedback wire fault
         de: Rückmeldeleitung fehlerhaft
+    - id: gateway_module_fault
+      likelihood: low
+      label:
+        en: 'Gateway module routing CAN messages incorrectly'
+        de: 'Gateway-Modul leitet CAN-Botschaften fehlerhaft'
+    - id: terminator_resistor_drift
+      likelihood: low
+      label:
+        en: 'CAN terminating resistor (120 Ω) drifted out of spec'
+        de: 'CAN-Abschlusswiderstand (120 Ω) außerhalb der Spezifikation'
   symptoms:
     - en: 'Multiple warning lights may illuminate'
       de: 'Mehrere Warnleuchten können aufleuchten'
@@ -1789,6 +2169,16 @@
       label:
         en: Wiring shorted to ground
         de: Verkabelung mit Masseschluss
+    - id: gateway_module_fault
+      likelihood: low
+      label:
+        en: 'Gateway module routing CAN messages incorrectly'
+        de: 'Gateway-Modul leitet CAN-Botschaften fehlerhaft'
+    - id: terminator_resistor_drift
+      likelihood: low
+      label:
+        en: 'CAN terminating resistor (120 Ω) drifted out of spec'
+        de: 'CAN-Abschlusswiderstand (120 Ω) außerhalb der Spezifikation'
   symptoms:
     - en: 'Multiple warning lights may illuminate'
       de: 'Mehrere Warnleuchten können aufleuchten'
@@ -1831,6 +2221,16 @@
       label:
         en: Wiring shorted to battery
         de: Verkabelung mit Plus-Schluss
+    - id: gateway_module_fault
+      likelihood: low
+      label:
+        en: 'Gateway module routing CAN messages incorrectly'
+        de: 'Gateway-Modul leitet CAN-Botschaften fehlerhaft'
+    - id: terminator_resistor_drift
+      likelihood: low
+      label:
+        en: 'CAN terminating resistor (120 Ω) drifted out of spec'
+        de: 'CAN-Abschlusswiderstand (120 Ω) außerhalb der Spezifikation'
   symptoms:
     - en: 'Multiple warning lights may illuminate'
       de: 'Mehrere Warnleuchten können aufleuchten'
@@ -1873,6 +2273,16 @@
       label:
         en: Wiring or relay fault
         de: Verkabelungs- oder Relaisfehler
+    - id: gateway_module_fault
+      likelihood: low
+      label:
+        en: 'Gateway module routing CAN messages incorrectly'
+        de: 'Gateway-Modul leitet CAN-Botschaften fehlerhaft'
+    - id: terminator_resistor_drift
+      likelihood: low
+      label:
+        en: 'CAN terminating resistor (120 Ω) drifted out of spec'
+        de: 'CAN-Abschlusswiderstand (120 Ω) außerhalb der Spezifikation'
   symptoms:
     - en: 'Multiple warning lights may illuminate'
       de: 'Mehrere Warnleuchten können aufleuchten'
@@ -1915,6 +2325,16 @@
       label:
         en: Wiring or relay fault
         de: Verkabelungs- oder Relaisfehler
+    - id: gateway_module_fault
+      likelihood: low
+      label:
+        en: 'Gateway module routing CAN messages incorrectly'
+        de: 'Gateway-Modul leitet CAN-Botschaften fehlerhaft'
+    - id: terminator_resistor_drift
+      likelihood: low
+      label:
+        en: 'CAN terminating resistor (120 Ω) drifted out of spec'
+        de: 'CAN-Abschlusswiderstand (120 Ω) außerhalb der Spezifikation'
   symptoms:
     - en: 'Multiple warning lights may illuminate'
       de: 'Mehrere Warnleuchten können aufleuchten'
@@ -1957,6 +2377,16 @@
       label:
         en: Wiring or relay fault
         de: Verkabelungs- oder Relaisfehler
+    - id: gateway_module_fault
+      likelihood: low
+      label:
+        en: 'Gateway module routing CAN messages incorrectly'
+        de: 'Gateway-Modul leitet CAN-Botschaften fehlerhaft'
+    - id: terminator_resistor_drift
+      likelihood: low
+      label:
+        en: 'CAN terminating resistor (120 Ω) drifted out of spec'
+        de: 'CAN-Abschlusswiderstand (120 Ω) außerhalb der Spezifikation'
   symptoms:
     - en: 'Multiple warning lights may illuminate'
       de: 'Mehrere Warnleuchten können aufleuchten'
@@ -1999,6 +2429,16 @@
       label:
         en: Wiring or relay fault
         de: Verkabelungs- oder Relaisfehler
+    - id: gateway_module_fault
+      likelihood: low
+      label:
+        en: 'Gateway module routing CAN messages incorrectly'
+        de: 'Gateway-Modul leitet CAN-Botschaften fehlerhaft'
+    - id: terminator_resistor_drift
+      likelihood: low
+      label:
+        en: 'CAN terminating resistor (120 Ω) drifted out of spec'
+        de: 'CAN-Abschlusswiderstand (120 Ω) außerhalb der Spezifikation'
   symptoms:
     - en: 'Multiple warning lights may illuminate'
       de: 'Mehrere Warnleuchten können aufleuchten'
@@ -2041,6 +2481,16 @@
       label:
         en: Wiring or relay fault
         de: Verkabelungs- oder Relaisfehler
+    - id: gateway_module_fault
+      likelihood: low
+      label:
+        en: 'Gateway module routing CAN messages incorrectly'
+        de: 'Gateway-Modul leitet CAN-Botschaften fehlerhaft'
+    - id: terminator_resistor_drift
+      likelihood: low
+      label:
+        en: 'CAN terminating resistor (120 Ω) drifted out of spec'
+        de: 'CAN-Abschlusswiderstand (120 Ω) außerhalb der Spezifikation'
   symptoms:
     - en: 'Multiple warning lights may illuminate'
       de: 'Mehrere Warnleuchten können aufleuchten'
@@ -2083,6 +2533,16 @@
       label:
         en: Wiring or starter relay fault
         de: Verkabelung oder Anlasserrelais defekt
+    - id: gateway_module_fault
+      likelihood: low
+      label:
+        en: 'Gateway module routing CAN messages incorrectly'
+        de: 'Gateway-Modul leitet CAN-Botschaften fehlerhaft'
+    - id: terminator_resistor_drift
+      likelihood: low
+      label:
+        en: 'CAN terminating resistor (120 Ω) drifted out of spec'
+        de: 'CAN-Abschlusswiderstand (120 Ω) außerhalb der Spezifikation'
   symptoms:
     - en: 'Multiple warning lights may illuminate'
       de: 'Mehrere Warnleuchten können aufleuchten'
@@ -2125,6 +2585,16 @@
       label:
         en: Wiring or relay fault
         de: Verkabelungs- oder Relaisfehler
+    - id: gateway_module_fault
+      likelihood: low
+      label:
+        en: 'Gateway module routing CAN messages incorrectly'
+        de: 'Gateway-Modul leitet CAN-Botschaften fehlerhaft'
+    - id: terminator_resistor_drift
+      likelihood: low
+      label:
+        en: 'CAN terminating resistor (120 Ω) drifted out of spec'
+        de: 'CAN-Abschlusswiderstand (120 Ω) außerhalb der Spezifikation'
   symptoms:
     - en: 'Multiple warning lights may illuminate'
       de: 'Mehrere Warnleuchten können aufleuchten'
@@ -2167,6 +2637,16 @@
       label:
         en: Wiring or relay fault
         de: Verkabelungs- oder Relaisfehler
+    - id: gateway_module_fault
+      likelihood: low
+      label:
+        en: 'Gateway module routing CAN messages incorrectly'
+        de: 'Gateway-Modul leitet CAN-Botschaften fehlerhaft'
+    - id: terminator_resistor_drift
+      likelihood: low
+      label:
+        en: 'CAN terminating resistor (120 Ω) drifted out of spec'
+        de: 'CAN-Abschlusswiderstand (120 Ω) außerhalb der Spezifikation'
   symptoms:
     - en: 'Multiple warning lights may illuminate'
       de: 'Mehrere Warnleuchten können aufleuchten'
@@ -2214,6 +2694,11 @@
       label:
         en: Certificate expired or revoked
         de: Zertifikat abgelaufen oder widerrufen
+    - id: gateway_module_fault
+      likelihood: low
+      label:
+        en: 'Gateway module routing CAN messages incorrectly'
+        de: 'Gateway-Modul leitet CAN-Botschaften fehlerhaft'
   symptoms:
     - en: 'Multiple warning lights may illuminate'
       de: 'Mehrere Warnleuchten können aufleuchten'
@@ -2256,6 +2741,16 @@
       label:
         en: Key not provisioned
         de: Schlüssel nicht eingespielt
+    - id: gateway_module_fault
+      likelihood: low
+      label:
+        en: 'Gateway module routing CAN messages incorrectly'
+        de: 'Gateway-Modul leitet CAN-Botschaften fehlerhaft'
+    - id: terminator_resistor_drift
+      likelihood: low
+      label:
+        en: 'CAN terminating resistor (120 Ω) drifted out of spec'
+        de: 'CAN-Abschlusswiderstand (120 Ω) außerhalb der Spezifikation'
   symptoms:
     - en: 'Multiple warning lights may illuminate'
       de: 'Mehrere Warnleuchten können aufleuchten'
@@ -2298,6 +2793,16 @@
       label:
         en: Authentication code mismatch
         de: Authentifizierungs-Code stimmt nicht überein
+    - id: gateway_module_fault
+      likelihood: low
+      label:
+        en: 'Gateway module routing CAN messages incorrectly'
+        de: 'Gateway-Modul leitet CAN-Botschaften fehlerhaft'
+    - id: terminator_resistor_drift
+      likelihood: low
+      label:
+        en: 'CAN terminating resistor (120 Ω) drifted out of spec'
+        de: 'CAN-Abschlusswiderstand (120 Ω) außerhalb der Spezifikation'
   symptoms:
     - en: 'Multiple warning lights may illuminate'
       de: 'Mehrere Warnleuchten können aufleuchten'
@@ -2340,6 +2845,16 @@
       label:
         en: Authentication timing drift
         de: Timing der Authentifizierung gedriftet
+    - id: gateway_module_fault
+      likelihood: low
+      label:
+        en: 'Gateway module routing CAN messages incorrectly'
+        de: 'Gateway-Modul leitet CAN-Botschaften fehlerhaft'
+    - id: terminator_resistor_drift
+      likelihood: low
+      label:
+        en: 'CAN terminating resistor (120 Ω) drifted out of spec'
+        de: 'CAN-Abschlusswiderstand (120 Ω) außerhalb der Spezifikation'
   symptoms:
     - en: 'Multiple warning lights may illuminate'
       de: 'Mehrere Warnleuchten können aufleuchten'
@@ -2382,6 +2897,16 @@
       label:
         en: High resistance in supply path
         de: Hoher Übergangswiderstand im Versorgungspfad
+    - id: gateway_module_fault
+      likelihood: low
+      label:
+        en: 'Gateway module routing CAN messages incorrectly'
+        de: 'Gateway-Modul leitet CAN-Botschaften fehlerhaft'
+    - id: terminator_resistor_drift
+      likelihood: low
+      label:
+        en: 'CAN terminating resistor (120 Ω) drifted out of spec'
+        de: 'CAN-Abschlusswiderstand (120 Ω) außerhalb der Spezifikation'
   symptoms:
     - en: 'Multiple warning lights may illuminate'
       de: 'Mehrere Warnleuchten können aufleuchten'
@@ -2425,6 +2950,16 @@
       label:
         en: Weak battery or high supply resistance
         de: Schwache Batterie oder hoher Versorgungswiderstand
+    - id: gateway_module_fault
+      likelihood: low
+      label:
+        en: 'Gateway module routing CAN messages incorrectly'
+        de: 'Gateway-Modul leitet CAN-Botschaften fehlerhaft'
+    - id: terminator_resistor_drift
+      likelihood: low
+      label:
+        en: 'CAN terminating resistor (120 Ω) drifted out of spec'
+        de: 'CAN-Abschlusswiderstand (120 Ω) außerhalb der Spezifikation'
   symptoms:
     - en: 'Multiple warning lights may illuminate'
       de: 'Mehrere Warnleuchten können aufleuchten'
@@ -2468,6 +3003,16 @@
       label:
         en: Alternator regulator failed (overvoltage)
         de: Lichtmaschinenregler defekt (Überspannung)
+    - id: gateway_module_fault
+      likelihood: low
+      label:
+        en: 'Gateway module routing CAN messages incorrectly'
+        de: 'Gateway-Modul leitet CAN-Botschaften fehlerhaft'
+    - id: terminator_resistor_drift
+      likelihood: low
+      label:
+        en: 'CAN terminating resistor (120 Ω) drifted out of spec'
+        de: 'CAN-Abschlusswiderstand (120 Ω) außerhalb der Spezifikation'
   symptoms:
     - en: 'Multiple warning lights may illuminate'
       de: 'Mehrere Warnleuchten können aufleuchten'
@@ -2511,6 +3056,16 @@
       label:
         en: Connector loose or corroded
         de: Stecker locker oder korrodiert
+    - id: gateway_module_fault
+      likelihood: low
+      label:
+        en: 'Gateway module routing CAN messages incorrectly'
+        de: 'Gateway-Modul leitet CAN-Botschaften fehlerhaft'
+    - id: terminator_resistor_drift
+      likelihood: low
+      label:
+        en: 'CAN terminating resistor (120 Ω) drifted out of spec'
+        de: 'CAN-Abschlusswiderstand (120 Ω) außerhalb der Spezifikation'
   symptoms:
     - en: 'Multiple warning lights may illuminate'
       de: 'Mehrere Warnleuchten können aufleuchten'
@@ -2554,6 +3109,16 @@
       label:
         en: High resistance in supply path
         de: Hoher Übergangswiderstand im Versorgungspfad
+    - id: gateway_module_fault
+      likelihood: low
+      label:
+        en: 'Gateway module routing CAN messages incorrectly'
+        de: 'Gateway-Modul leitet CAN-Botschaften fehlerhaft'
+    - id: terminator_resistor_drift
+      likelihood: low
+      label:
+        en: 'CAN terminating resistor (120 Ω) drifted out of spec'
+        de: 'CAN-Abschlusswiderstand (120 Ω) außerhalb der Spezifikation'
   symptoms:
     - en: 'Multiple warning lights may illuminate'
       de: 'Mehrere Warnleuchten können aufleuchten'
@@ -2597,6 +3162,16 @@
       label:
         en: Weak battery or high supply resistance
         de: Schwache Batterie oder hoher Versorgungswiderstand
+    - id: gateway_module_fault
+      likelihood: low
+      label:
+        en: 'Gateway module routing CAN messages incorrectly'
+        de: 'Gateway-Modul leitet CAN-Botschaften fehlerhaft'
+    - id: terminator_resistor_drift
+      likelihood: low
+      label:
+        en: 'CAN terminating resistor (120 Ω) drifted out of spec'
+        de: 'CAN-Abschlusswiderstand (120 Ω) außerhalb der Spezifikation'
   symptoms:
     - en: 'Multiple warning lights may illuminate'
       de: 'Mehrere Warnleuchten können aufleuchten'
@@ -2640,6 +3215,16 @@
       label:
         en: Alternator regulator failed
         de: Lichtmaschinenregler defekt
+    - id: gateway_module_fault
+      likelihood: low
+      label:
+        en: 'Gateway module routing CAN messages incorrectly'
+        de: 'Gateway-Modul leitet CAN-Botschaften fehlerhaft'
+    - id: terminator_resistor_drift
+      likelihood: low
+      label:
+        en: 'CAN terminating resistor (120 Ω) drifted out of spec'
+        de: 'CAN-Abschlusswiderstand (120 Ω) außerhalb der Spezifikation'
   symptoms:
     - en: 'Multiple warning lights may illuminate'
       de: 'Mehrere Warnleuchten können aufleuchten'
@@ -2683,6 +3268,16 @@
       label:
         en: Connector loose or corroded
         de: Stecker locker oder korrodiert
+    - id: gateway_module_fault
+      likelihood: low
+      label:
+        en: 'Gateway module routing CAN messages incorrectly'
+        de: 'Gateway-Modul leitet CAN-Botschaften fehlerhaft'
+    - id: terminator_resistor_drift
+      likelihood: low
+      label:
+        en: 'CAN terminating resistor (120 Ω) drifted out of spec'
+        de: 'CAN-Abschlusswiderstand (120 Ω) außerhalb der Spezifikation'
   symptoms:
     - en: 'Multiple warning lights may illuminate'
       de: 'Mehrere Warnleuchten können aufleuchten'
@@ -2726,6 +3321,16 @@
       label:
         en: High resistance in supply path
         de: Hoher Übergangswiderstand im Versorgungspfad
+    - id: gateway_module_fault
+      likelihood: low
+      label:
+        en: 'Gateway module routing CAN messages incorrectly'
+        de: 'Gateway-Modul leitet CAN-Botschaften fehlerhaft'
+    - id: terminator_resistor_drift
+      likelihood: low
+      label:
+        en: 'CAN terminating resistor (120 Ω) drifted out of spec'
+        de: 'CAN-Abschlusswiderstand (120 Ω) außerhalb der Spezifikation'
   symptoms:
     - en: 'Multiple warning lights may illuminate'
       de: 'Mehrere Warnleuchten können aufleuchten'
@@ -2769,6 +3374,16 @@
       label:
         en: Weak battery or high supply resistance
         de: Schwache Batterie oder hoher Versorgungswiderstand
+    - id: gateway_module_fault
+      likelihood: low
+      label:
+        en: 'Gateway module routing CAN messages incorrectly'
+        de: 'Gateway-Modul leitet CAN-Botschaften fehlerhaft'
+    - id: terminator_resistor_drift
+      likelihood: low
+      label:
+        en: 'CAN terminating resistor (120 Ω) drifted out of spec'
+        de: 'CAN-Abschlusswiderstand (120 Ω) außerhalb der Spezifikation'
   symptoms:
     - en: 'Multiple warning lights may illuminate'
       de: 'Mehrere Warnleuchten können aufleuchten'
@@ -2812,6 +3427,16 @@
       label:
         en: Alternator regulator failed
         de: Lichtmaschinenregler defekt
+    - id: gateway_module_fault
+      likelihood: low
+      label:
+        en: 'Gateway module routing CAN messages incorrectly'
+        de: 'Gateway-Modul leitet CAN-Botschaften fehlerhaft'
+    - id: terminator_resistor_drift
+      likelihood: low
+      label:
+        en: 'CAN terminating resistor (120 Ω) drifted out of spec'
+        de: 'CAN-Abschlusswiderstand (120 Ω) außerhalb der Spezifikation'
   symptoms:
     - en: 'Multiple warning lights may illuminate'
       de: 'Mehrere Warnleuchten können aufleuchten'
@@ -2855,6 +3480,16 @@
       label:
         en: Connector loose or corroded
         de: Stecker locker oder korrodiert
+    - id: gateway_module_fault
+      likelihood: low
+      label:
+        en: 'Gateway module routing CAN messages incorrectly'
+        de: 'Gateway-Modul leitet CAN-Botschaften fehlerhaft'
+    - id: terminator_resistor_drift
+      likelihood: low
+      label:
+        en: 'CAN terminating resistor (120 Ω) drifted out of spec'
+        de: 'CAN-Abschlusswiderstand (120 Ω) außerhalb der Spezifikation'
   symptoms:
     - en: 'Multiple warning lights may illuminate'
       de: 'Mehrere Warnleuchten können aufleuchten'
@@ -2898,6 +3533,16 @@
       label:
         en: Fan motor open
         de: Lüftermotor unterbrochen
+    - id: gateway_module_fault
+      likelihood: low
+      label:
+        en: 'Gateway module routing CAN messages incorrectly'
+        de: 'Gateway-Modul leitet CAN-Botschaften fehlerhaft'
+    - id: terminator_resistor_drift
+      likelihood: low
+      label:
+        en: 'CAN terminating resistor (120 Ω) drifted out of spec'
+        de: 'CAN-Abschlusswiderstand (120 Ω) außerhalb der Spezifikation'
   symptoms:
     - en: 'Multiple warning lights may illuminate'
       de: 'Mehrere Warnleuchten können aufleuchten'
@@ -2940,6 +3585,16 @@
       label:
         en: Wiring shorted to ground
         de: Verkabelung mit Masseschluss
+    - id: gateway_module_fault
+      likelihood: low
+      label:
+        en: 'Gateway module routing CAN messages incorrectly'
+        de: 'Gateway-Modul leitet CAN-Botschaften fehlerhaft'
+    - id: terminator_resistor_drift
+      likelihood: low
+      label:
+        en: 'CAN terminating resistor (120 Ω) drifted out of spec'
+        de: 'CAN-Abschlusswiderstand (120 Ω) außerhalb der Spezifikation'
   symptoms:
     - en: 'Multiple warning lights may illuminate'
       de: 'Mehrere Warnleuchten können aufleuchten'
@@ -2982,6 +3637,16 @@
       label:
         en: Wiring shorted to battery
         de: Verkabelung mit Plus-Schluss
+    - id: gateway_module_fault
+      likelihood: low
+      label:
+        en: 'Gateway module routing CAN messages incorrectly'
+        de: 'Gateway-Modul leitet CAN-Botschaften fehlerhaft'
+    - id: terminator_resistor_drift
+      likelihood: low
+      label:
+        en: 'CAN terminating resistor (120 Ω) drifted out of spec'
+        de: 'CAN-Abschlusswiderstand (120 Ω) außerhalb der Spezifikation'
   symptoms:
     - en: 'Multiple warning lights may illuminate'
       de: 'Mehrere Warnleuchten können aufleuchten'
@@ -3023,6 +3688,16 @@
       label:
         en: Fan motor seized
         de: Lüftermotor festgefressen
+    - id: gateway_module_fault
+      likelihood: low
+      label:
+        en: 'Gateway module routing CAN messages incorrectly'
+        de: 'Gateway-Modul leitet CAN-Botschaften fehlerhaft'
+    - id: terminator_resistor_drift
+      likelihood: low
+      label:
+        en: 'CAN terminating resistor (120 Ω) drifted out of spec'
+        de: 'CAN-Abschlusswiderstand (120 Ω) außerhalb der Spezifikation'
   symptoms:
     - en: 'Multiple warning lights may illuminate'
       de: 'Mehrere Warnleuchten können aufleuchten'
@@ -3065,6 +3740,16 @@
       label:
         en: Module not programmed after replacement
         de: Modul nach Tausch nicht programmiert
+    - id: gateway_module_fault
+      likelihood: low
+      label:
+        en: 'Gateway module routing CAN messages incorrectly'
+        de: 'Gateway-Modul leitet CAN-Botschaften fehlerhaft'
+    - id: terminator_resistor_drift
+      likelihood: low
+      label:
+        en: 'CAN terminating resistor (120 Ω) drifted out of spec'
+        de: 'CAN-Abschlusswiderstand (120 Ω) außerhalb der Spezifikation'
   symptoms:
     - en: 'Multiple warning lights may illuminate'
       de: 'Mehrere Warnleuchten können aufleuchten'
@@ -3112,6 +3797,11 @@
       label:
         en: Interlock pilot pin damaged
         de: Interlock-Pilotpin beschädigt
+    - id: gateway_module_fault
+      likelihood: low
+      label:
+        en: 'Gateway module routing CAN messages incorrectly'
+        de: 'Gateway-Modul leitet CAN-Botschaften fehlerhaft'
   symptoms:
     - en: 'Multiple warning lights may illuminate'
       de: 'Mehrere Warnleuchten können aufleuchten'
@@ -3154,6 +3844,16 @@
       label:
         en: Intermittent contact in HV connector
         de: Sporadischer Kontakt im HV-Stecker
+    - id: gateway_module_fault
+      likelihood: low
+      label:
+        en: 'Gateway module routing CAN messages incorrectly'
+        de: 'Gateway-Modul leitet CAN-Botschaften fehlerhaft'
+    - id: terminator_resistor_drift
+      likelihood: low
+      label:
+        en: 'CAN terminating resistor (120 Ω) drifted out of spec'
+        de: 'CAN-Abschlusswiderstand (120 Ω) außerhalb der Spezifikation'
   symptoms:
     - en: 'Multiple warning lights may illuminate'
       de: 'Mehrere Warnleuchten können aufleuchten'
@@ -3197,6 +3897,16 @@
       label:
         en: Interlock wire shorted to ground
         de: Interlock-Leitung mit Masseschluss
+    - id: gateway_module_fault
+      likelihood: low
+      label:
+        en: 'Gateway module routing CAN messages incorrectly'
+        de: 'Gateway-Modul leitet CAN-Botschaften fehlerhaft'
+    - id: terminator_resistor_drift
+      likelihood: low
+      label:
+        en: 'CAN terminating resistor (120 Ω) drifted out of spec'
+        de: 'CAN-Abschlusswiderstand (120 Ω) außerhalb der Spezifikation'
   symptoms:
     - en: 'Multiple warning lights may illuminate'
       de: 'Mehrere Warnleuchten können aufleuchten'
@@ -3240,6 +3950,16 @@
       label:
         en: Interlock loop open (connector unmated)
         de: Interlock-Loop offen (Stecker abgezogen)
+    - id: gateway_module_fault
+      likelihood: low
+      label:
+        en: 'Gateway module routing CAN messages incorrectly'
+        de: 'Gateway-Modul leitet CAN-Botschaften fehlerhaft'
+    - id: terminator_resistor_drift
+      likelihood: low
+      label:
+        en: 'CAN terminating resistor (120 Ω) drifted out of spec'
+        de: 'CAN-Abschlusswiderstand (120 Ω) außerhalb der Spezifikation'
   symptoms:
     - en: 'Multiple warning lights may illuminate'
       de: 'Mehrere Warnleuchten können aufleuchten'
@@ -3283,6 +4003,16 @@
       label:
         en: HV connector not fully mated
         de: HV-Stecker nicht vollständig gesteckt
+    - id: gateway_module_fault
+      likelihood: low
+      label:
+        en: 'Gateway module routing CAN messages incorrectly'
+        de: 'Gateway-Modul leitet CAN-Botschaften fehlerhaft'
+    - id: terminator_resistor_drift
+      likelihood: low
+      label:
+        en: 'CAN terminating resistor (120 Ω) drifted out of spec'
+        de: 'CAN-Abschlusswiderstand (120 Ω) außerhalb der Spezifikation'
   symptoms:
     - en: 'Multiple warning lights may illuminate'
       de: 'Mehrere Warnleuchten können aufleuchten'
@@ -3325,6 +4055,16 @@
       label:
         en: Intermittent contact in HV connector
         de: Sporadischer Kontakt im HV-Stecker
+    - id: gateway_module_fault
+      likelihood: low
+      label:
+        en: 'Gateway module routing CAN messages incorrectly'
+        de: 'Gateway-Modul leitet CAN-Botschaften fehlerhaft'
+    - id: terminator_resistor_drift
+      likelihood: low
+      label:
+        en: 'CAN terminating resistor (120 Ω) drifted out of spec'
+        de: 'CAN-Abschlusswiderstand (120 Ω) außerhalb der Spezifikation'
   symptoms:
     - en: 'Multiple warning lights may illuminate'
       de: 'Mehrere Warnleuchten können aufleuchten'
@@ -3368,6 +4108,16 @@
       label:
         en: Interlock wire shorted to ground
         de: Interlock-Leitung mit Masseschluss
+    - id: gateway_module_fault
+      likelihood: low
+      label:
+        en: 'Gateway module routing CAN messages incorrectly'
+        de: 'Gateway-Modul leitet CAN-Botschaften fehlerhaft'
+    - id: terminator_resistor_drift
+      likelihood: low
+      label:
+        en: 'CAN terminating resistor (120 Ω) drifted out of spec'
+        de: 'CAN-Abschlusswiderstand (120 Ω) außerhalb der Spezifikation'
   symptoms:
     - en: 'Multiple warning lights may illuminate'
       de: 'Mehrere Warnleuchten können aufleuchten'
@@ -3411,6 +4161,16 @@
       label:
         en: Interlock loop open (connector unmated)
         de: Interlock-Loop offen (Stecker abgezogen)
+    - id: gateway_module_fault
+      likelihood: low
+      label:
+        en: 'Gateway module routing CAN messages incorrectly'
+        de: 'Gateway-Modul leitet CAN-Botschaften fehlerhaft'
+    - id: terminator_resistor_drift
+      likelihood: low
+      label:
+        en: 'CAN terminating resistor (120 Ω) drifted out of spec'
+        de: 'CAN-Abschlusswiderstand (120 Ω) außerhalb der Spezifikation'
   symptoms:
     - en: 'Multiple warning lights may illuminate'
       de: 'Mehrere Warnleuchten können aufleuchten'
@@ -3454,6 +4214,16 @@
       label:
         en: HV connector not fully mated
         de: HV-Stecker nicht vollständig gesteckt
+    - id: gateway_module_fault
+      likelihood: low
+      label:
+        en: 'Gateway module routing CAN messages incorrectly'
+        de: 'Gateway-Modul leitet CAN-Botschaften fehlerhaft'
+    - id: terminator_resistor_drift
+      likelihood: low
+      label:
+        en: 'CAN terminating resistor (120 Ω) drifted out of spec'
+        de: 'CAN-Abschlusswiderstand (120 Ω) außerhalb der Spezifikation'
   symptoms:
     - en: 'Multiple warning lights may illuminate'
       de: 'Mehrere Warnleuchten können aufleuchten'
@@ -3496,6 +4266,16 @@
       label:
         en: Intermittent contact in HV connector
         de: Sporadischer Kontakt im HV-Stecker
+    - id: gateway_module_fault
+      likelihood: low
+      label:
+        en: 'Gateway module routing CAN messages incorrectly'
+        de: 'Gateway-Modul leitet CAN-Botschaften fehlerhaft'
+    - id: terminator_resistor_drift
+      likelihood: low
+      label:
+        en: 'CAN terminating resistor (120 Ω) drifted out of spec'
+        de: 'CAN-Abschlusswiderstand (120 Ω) außerhalb der Spezifikation'
   symptoms:
     - en: 'Multiple warning lights may illuminate'
       de: 'Mehrere Warnleuchten können aufleuchten'
@@ -3539,6 +4319,16 @@
       label:
         en: Interlock wire shorted to ground
         de: Interlock-Leitung mit Masseschluss
+    - id: gateway_module_fault
+      likelihood: low
+      label:
+        en: 'Gateway module routing CAN messages incorrectly'
+        de: 'Gateway-Modul leitet CAN-Botschaften fehlerhaft'
+    - id: terminator_resistor_drift
+      likelihood: low
+      label:
+        en: 'CAN terminating resistor (120 Ω) drifted out of spec'
+        de: 'CAN-Abschlusswiderstand (120 Ω) außerhalb der Spezifikation'
   symptoms:
     - en: 'Multiple warning lights may illuminate'
       de: 'Mehrere Warnleuchten können aufleuchten'
@@ -3582,6 +4372,16 @@
       label:
         en: Interlock loop open (connector unmated)
         de: Interlock-Loop offen (Stecker abgezogen)
+    - id: gateway_module_fault
+      likelihood: low
+      label:
+        en: 'Gateway module routing CAN messages incorrectly'
+        de: 'Gateway-Modul leitet CAN-Botschaften fehlerhaft'
+    - id: terminator_resistor_drift
+      likelihood: low
+      label:
+        en: 'CAN terminating resistor (120 Ω) drifted out of spec'
+        de: 'CAN-Abschlusswiderstand (120 Ω) außerhalb der Spezifikation'
   symptoms:
     - en: 'Multiple warning lights may illuminate'
       de: 'Mehrere Warnleuchten können aufleuchten'
@@ -3625,6 +4425,16 @@
       label:
         en: HV connector not fully mated
         de: HV-Stecker nicht vollständig gesteckt
+    - id: gateway_module_fault
+      likelihood: low
+      label:
+        en: 'Gateway module routing CAN messages incorrectly'
+        de: 'Gateway-Modul leitet CAN-Botschaften fehlerhaft'
+    - id: terminator_resistor_drift
+      likelihood: low
+      label:
+        en: 'CAN terminating resistor (120 Ω) drifted out of spec'
+        de: 'CAN-Abschlusswiderstand (120 Ω) außerhalb der Spezifikation'
   symptoms:
     - en: 'Multiple warning lights may illuminate'
       de: 'Mehrere Warnleuchten können aufleuchten'
@@ -3667,6 +4477,16 @@
       label:
         en: Intermittent contact in HV connector
         de: Sporadischer Kontakt im HV-Stecker
+    - id: gateway_module_fault
+      likelihood: low
+      label:
+        en: 'Gateway module routing CAN messages incorrectly'
+        de: 'Gateway-Modul leitet CAN-Botschaften fehlerhaft'
+    - id: terminator_resistor_drift
+      likelihood: low
+      label:
+        en: 'CAN terminating resistor (120 Ω) drifted out of spec'
+        de: 'CAN-Abschlusswiderstand (120 Ω) außerhalb der Spezifikation'
   symptoms:
     - en: 'Multiple warning lights may illuminate'
       de: 'Mehrere Warnleuchten können aufleuchten'
@@ -3710,6 +4530,16 @@
       label:
         en: Interlock wire shorted to ground
         de: Interlock-Leitung mit Masseschluss
+    - id: gateway_module_fault
+      likelihood: low
+      label:
+        en: 'Gateway module routing CAN messages incorrectly'
+        de: 'Gateway-Modul leitet CAN-Botschaften fehlerhaft'
+    - id: terminator_resistor_drift
+      likelihood: low
+      label:
+        en: 'CAN terminating resistor (120 Ω) drifted out of spec'
+        de: 'CAN-Abschlusswiderstand (120 Ω) außerhalb der Spezifikation'
   symptoms:
     - en: 'Multiple warning lights may illuminate'
       de: 'Mehrere Warnleuchten können aufleuchten'
@@ -3753,6 +4583,16 @@
       label:
         en: Interlock loop open
         de: Interlock-Loop offen
+    - id: gateway_module_fault
+      likelihood: low
+      label:
+        en: 'Gateway module routing CAN messages incorrectly'
+        de: 'Gateway-Modul leitet CAN-Botschaften fehlerhaft'
+    - id: terminator_resistor_drift
+      likelihood: low
+      label:
+        en: 'CAN terminating resistor (120 Ω) drifted out of spec'
+        de: 'CAN-Abschlusswiderstand (120 Ω) außerhalb der Spezifikation'
   symptoms:
     - en: 'Multiple warning lights may illuminate'
       de: 'Mehrere Warnleuchten können aufleuchten'
@@ -3796,6 +4636,16 @@
       label:
         en: HV connector not fully mated
         de: HV-Stecker nicht vollständig gesteckt
+    - id: gateway_module_fault
+      likelihood: low
+      label:
+        en: 'Gateway module routing CAN messages incorrectly'
+        de: 'Gateway-Modul leitet CAN-Botschaften fehlerhaft'
+    - id: terminator_resistor_drift
+      likelihood: low
+      label:
+        en: 'CAN terminating resistor (120 Ω) drifted out of spec'
+        de: 'CAN-Abschlusswiderstand (120 Ω) außerhalb der Spezifikation'
   symptoms:
     - en: 'Multiple warning lights may illuminate'
       de: 'Mehrere Warnleuchten können aufleuchten'
@@ -3838,6 +4688,16 @@
       label:
         en: Intermittent contact in HV connector
         de: Sporadischer Kontakt im HV-Stecker
+    - id: gateway_module_fault
+      likelihood: low
+      label:
+        en: 'Gateway module routing CAN messages incorrectly'
+        de: 'Gateway-Modul leitet CAN-Botschaften fehlerhaft'
+    - id: terminator_resistor_drift
+      likelihood: low
+      label:
+        en: 'CAN terminating resistor (120 Ω) drifted out of spec'
+        de: 'CAN-Abschlusswiderstand (120 Ω) außerhalb der Spezifikation'
   symptoms:
     - en: 'Multiple warning lights may illuminate'
       de: 'Mehrere Warnleuchten können aufleuchten'
@@ -3881,6 +4741,16 @@
       label:
         en: Interlock wire shorted to ground
         de: Interlock-Leitung mit Masseschluss
+    - id: gateway_module_fault
+      likelihood: low
+      label:
+        en: 'Gateway module routing CAN messages incorrectly'
+        de: 'Gateway-Modul leitet CAN-Botschaften fehlerhaft'
+    - id: terminator_resistor_drift
+      likelihood: low
+      label:
+        en: 'CAN terminating resistor (120 Ω) drifted out of spec'
+        de: 'CAN-Abschlusswiderstand (120 Ω) außerhalb der Spezifikation'
   symptoms:
     - en: 'Multiple warning lights may illuminate'
       de: 'Mehrere Warnleuchten können aufleuchten'
@@ -3924,6 +4794,16 @@
       label:
         en: Interlock loop open
         de: Interlock-Loop offen
+    - id: gateway_module_fault
+      likelihood: low
+      label:
+        en: 'Gateway module routing CAN messages incorrectly'
+        de: 'Gateway-Modul leitet CAN-Botschaften fehlerhaft'
+    - id: terminator_resistor_drift
+      likelihood: low
+      label:
+        en: 'CAN terminating resistor (120 Ω) drifted out of spec'
+        de: 'CAN-Abschlusswiderstand (120 Ω) außerhalb der Spezifikation'
   symptoms:
     - en: 'Multiple warning lights may illuminate'
       de: 'Mehrere Warnleuchten können aufleuchten'
@@ -3967,6 +4847,16 @@
       label:
         en: HV connector not fully mated
         de: HV-Stecker nicht vollständig gesteckt
+    - id: gateway_module_fault
+      likelihood: low
+      label:
+        en: 'Gateway module routing CAN messages incorrectly'
+        de: 'Gateway-Modul leitet CAN-Botschaften fehlerhaft'
+    - id: terminator_resistor_drift
+      likelihood: low
+      label:
+        en: 'CAN terminating resistor (120 Ω) drifted out of spec'
+        de: 'CAN-Abschlusswiderstand (120 Ω) außerhalb der Spezifikation'
   symptoms:
     - en: 'Multiple warning lights may illuminate'
       de: 'Mehrere Warnleuchten können aufleuchten'
@@ -4009,6 +4899,16 @@
       label:
         en: Intermittent contact in HV connector
         de: Sporadischer Kontakt im HV-Stecker
+    - id: gateway_module_fault
+      likelihood: low
+      label:
+        en: 'Gateway module routing CAN messages incorrectly'
+        de: 'Gateway-Modul leitet CAN-Botschaften fehlerhaft'
+    - id: terminator_resistor_drift
+      likelihood: low
+      label:
+        en: 'CAN terminating resistor (120 Ω) drifted out of spec'
+        de: 'CAN-Abschlusswiderstand (120 Ω) außerhalb der Spezifikation'
   symptoms:
     - en: 'Multiple warning lights may illuminate'
       de: 'Mehrere Warnleuchten können aufleuchten'
@@ -4052,6 +4952,16 @@
       label:
         en: Interlock wire shorted to ground
         de: Interlock-Leitung mit Masseschluss
+    - id: gateway_module_fault
+      likelihood: low
+      label:
+        en: 'Gateway module routing CAN messages incorrectly'
+        de: 'Gateway-Modul leitet CAN-Botschaften fehlerhaft'
+    - id: terminator_resistor_drift
+      likelihood: low
+      label:
+        en: 'CAN terminating resistor (120 Ω) drifted out of spec'
+        de: 'CAN-Abschlusswiderstand (120 Ω) außerhalb der Spezifikation'
   symptoms:
     - en: 'Multiple warning lights may illuminate'
       de: 'Mehrere Warnleuchten können aufleuchten'
@@ -4095,6 +5005,16 @@
       label:
         en: Interlock loop open
         de: Interlock-Loop offen
+    - id: gateway_module_fault
+      likelihood: low
+      label:
+        en: 'Gateway module routing CAN messages incorrectly'
+        de: 'Gateway-Modul leitet CAN-Botschaften fehlerhaft'
+    - id: terminator_resistor_drift
+      likelihood: low
+      label:
+        en: 'CAN terminating resistor (120 Ω) drifted out of spec'
+        de: 'CAN-Abschlusswiderstand (120 Ω) außerhalb der Spezifikation'
   symptoms:
     - en: 'Multiple warning lights may illuminate'
       de: 'Mehrere Warnleuchten können aufleuchten'
@@ -4138,6 +5058,16 @@
       label:
         en: HV connector not fully mated
         de: HV-Stecker nicht vollständig gesteckt
+    - id: gateway_module_fault
+      likelihood: low
+      label:
+        en: 'Gateway module routing CAN messages incorrectly'
+        de: 'Gateway-Modul leitet CAN-Botschaften fehlerhaft'
+    - id: terminator_resistor_drift
+      likelihood: low
+      label:
+        en: 'CAN terminating resistor (120 Ω) drifted out of spec'
+        de: 'CAN-Abschlusswiderstand (120 Ω) außerhalb der Spezifikation'
   symptoms:
     - en: 'Multiple warning lights may illuminate'
       de: 'Mehrere Warnleuchten können aufleuchten'
@@ -4180,6 +5110,16 @@
       label:
         en: Intermittent contact in HV connector
         de: Sporadischer Kontakt im HV-Stecker
+    - id: gateway_module_fault
+      likelihood: low
+      label:
+        en: 'Gateway module routing CAN messages incorrectly'
+        de: 'Gateway-Modul leitet CAN-Botschaften fehlerhaft'
+    - id: terminator_resistor_drift
+      likelihood: low
+      label:
+        en: 'CAN terminating resistor (120 Ω) drifted out of spec'
+        de: 'CAN-Abschlusswiderstand (120 Ω) außerhalb der Spezifikation'
   symptoms:
     - en: 'Multiple warning lights may illuminate'
       de: 'Mehrere Warnleuchten können aufleuchten'
@@ -4223,6 +5163,16 @@
       label:
         en: Interlock wire shorted to ground
         de: Interlock-Leitung mit Masseschluss
+    - id: gateway_module_fault
+      likelihood: low
+      label:
+        en: 'Gateway module routing CAN messages incorrectly'
+        de: 'Gateway-Modul leitet CAN-Botschaften fehlerhaft'
+    - id: terminator_resistor_drift
+      likelihood: low
+      label:
+        en: 'CAN terminating resistor (120 Ω) drifted out of spec'
+        de: 'CAN-Abschlusswiderstand (120 Ω) außerhalb der Spezifikation'
   symptoms:
     - en: 'Multiple warning lights may illuminate'
       de: 'Mehrere Warnleuchten können aufleuchten'
@@ -4266,6 +5216,16 @@
       label:
         en: Interlock loop open
         de: Interlock-Loop offen
+    - id: gateway_module_fault
+      likelihood: low
+      label:
+        en: 'Gateway module routing CAN messages incorrectly'
+        de: 'Gateway-Modul leitet CAN-Botschaften fehlerhaft'
+    - id: terminator_resistor_drift
+      likelihood: low
+      label:
+        en: 'CAN terminating resistor (120 Ω) drifted out of spec'
+        de: 'CAN-Abschlusswiderstand (120 Ω) außerhalb der Spezifikation'
   symptoms:
     - en: 'Multiple warning lights may illuminate'
       de: 'Mehrere Warnleuchten können aufleuchten'
@@ -4309,6 +5269,16 @@
       label:
         en: HV connector not fully mated
         de: HV-Stecker nicht vollständig gesteckt
+    - id: gateway_module_fault
+      likelihood: low
+      label:
+        en: 'Gateway module routing CAN messages incorrectly'
+        de: 'Gateway-Modul leitet CAN-Botschaften fehlerhaft'
+    - id: terminator_resistor_drift
+      likelihood: low
+      label:
+        en: 'CAN terminating resistor (120 Ω) drifted out of spec'
+        de: 'CAN-Abschlusswiderstand (120 Ω) außerhalb der Spezifikation'
   symptoms:
     - en: 'Multiple warning lights may illuminate'
       de: 'Mehrere Warnleuchten können aufleuchten'
@@ -4351,6 +5321,16 @@
       label:
         en: Intermittent contact in HV connector
         de: Sporadischer Kontakt im HV-Stecker
+    - id: gateway_module_fault
+      likelihood: low
+      label:
+        en: 'Gateway module routing CAN messages incorrectly'
+        de: 'Gateway-Modul leitet CAN-Botschaften fehlerhaft'
+    - id: terminator_resistor_drift
+      likelihood: low
+      label:
+        en: 'CAN terminating resistor (120 Ω) drifted out of spec'
+        de: 'CAN-Abschlusswiderstand (120 Ω) außerhalb der Spezifikation'
   symptoms:
     - en: 'Multiple warning lights may illuminate'
       de: 'Mehrere Warnleuchten können aufleuchten'
@@ -4394,6 +5374,16 @@
       label:
         en: Interlock wire shorted to ground
         de: Interlock-Leitung mit Masseschluss
+    - id: gateway_module_fault
+      likelihood: low
+      label:
+        en: 'Gateway module routing CAN messages incorrectly'
+        de: 'Gateway-Modul leitet CAN-Botschaften fehlerhaft'
+    - id: terminator_resistor_drift
+      likelihood: low
+      label:
+        en: 'CAN terminating resistor (120 Ω) drifted out of spec'
+        de: 'CAN-Abschlusswiderstand (120 Ω) außerhalb der Spezifikation'
   symptoms:
     - en: 'Multiple warning lights may illuminate'
       de: 'Mehrere Warnleuchten können aufleuchten'
@@ -4437,6 +5427,16 @@
       label:
         en: Interlock loop open
         de: Interlock-Loop offen
+    - id: gateway_module_fault
+      likelihood: low
+      label:
+        en: 'Gateway module routing CAN messages incorrectly'
+        de: 'Gateway-Modul leitet CAN-Botschaften fehlerhaft'
+    - id: terminator_resistor_drift
+      likelihood: low
+      label:
+        en: 'CAN terminating resistor (120 Ω) drifted out of spec'
+        de: 'CAN-Abschlusswiderstand (120 Ω) außerhalb der Spezifikation'
   symptoms:
     - en: 'Multiple warning lights may illuminate'
       de: 'Mehrere Warnleuchten können aufleuchten'
@@ -4480,6 +5480,16 @@
       label:
         en: HV connector not fully mated
         de: HV-Stecker nicht vollständig gesteckt
+    - id: gateway_module_fault
+      likelihood: low
+      label:
+        en: 'Gateway module routing CAN messages incorrectly'
+        de: 'Gateway-Modul leitet CAN-Botschaften fehlerhaft'
+    - id: terminator_resistor_drift
+      likelihood: low
+      label:
+        en: 'CAN terminating resistor (120 Ω) drifted out of spec'
+        de: 'CAN-Abschlusswiderstand (120 Ω) außerhalb der Spezifikation'
   symptoms:
     - en: 'Multiple warning lights may illuminate'
       de: 'Mehrere Warnleuchten können aufleuchten'
@@ -4522,6 +5532,16 @@
       label:
         en: Intermittent contact in HV connector
         de: Sporadischer Kontakt im HV-Stecker
+    - id: gateway_module_fault
+      likelihood: low
+      label:
+        en: 'Gateway module routing CAN messages incorrectly'
+        de: 'Gateway-Modul leitet CAN-Botschaften fehlerhaft'
+    - id: terminator_resistor_drift
+      likelihood: low
+      label:
+        en: 'CAN terminating resistor (120 Ω) drifted out of spec'
+        de: 'CAN-Abschlusswiderstand (120 Ω) außerhalb der Spezifikation'
   symptoms:
     - en: 'Multiple warning lights may illuminate'
       de: 'Mehrere Warnleuchten können aufleuchten'
@@ -4565,6 +5585,16 @@
       label:
         en: Interlock wire shorted to ground
         de: Interlock-Leitung mit Masseschluss
+    - id: gateway_module_fault
+      likelihood: low
+      label:
+        en: 'Gateway module routing CAN messages incorrectly'
+        de: 'Gateway-Modul leitet CAN-Botschaften fehlerhaft'
+    - id: terminator_resistor_drift
+      likelihood: low
+      label:
+        en: 'CAN terminating resistor (120 Ω) drifted out of spec'
+        de: 'CAN-Abschlusswiderstand (120 Ω) außerhalb der Spezifikation'
   symptoms:
     - en: 'Multiple warning lights may illuminate'
       de: 'Mehrere Warnleuchten können aufleuchten'
@@ -4608,6 +5638,16 @@
       label:
         en: Interlock loop open
         de: Interlock-Loop offen
+    - id: gateway_module_fault
+      likelihood: low
+      label:
+        en: 'Gateway module routing CAN messages incorrectly'
+        de: 'Gateway-Modul leitet CAN-Botschaften fehlerhaft'
+    - id: terminator_resistor_drift
+      likelihood: low
+      label:
+        en: 'CAN terminating resistor (120 Ω) drifted out of spec'
+        de: 'CAN-Abschlusswiderstand (120 Ω) außerhalb der Spezifikation'
   symptoms:
     - en: 'Multiple warning lights may illuminate'
       de: 'Mehrere Warnleuchten können aufleuchten'
@@ -4651,6 +5691,16 @@
       label:
         en: HV connector not fully mated
         de: HV-Stecker nicht vollständig gesteckt
+    - id: gateway_module_fault
+      likelihood: low
+      label:
+        en: 'Gateway module routing CAN messages incorrectly'
+        de: 'Gateway-Modul leitet CAN-Botschaften fehlerhaft'
+    - id: terminator_resistor_drift
+      likelihood: low
+      label:
+        en: 'CAN terminating resistor (120 Ω) drifted out of spec'
+        de: 'CAN-Abschlusswiderstand (120 Ω) außerhalb der Spezifikation'
   symptoms:
     - en: 'Multiple warning lights may illuminate'
       de: 'Mehrere Warnleuchten können aufleuchten'
@@ -4693,6 +5743,16 @@
       label:
         en: Intermittent contact in HV connector
         de: Sporadischer Kontakt im HV-Stecker
+    - id: gateway_module_fault
+      likelihood: low
+      label:
+        en: 'Gateway module routing CAN messages incorrectly'
+        de: 'Gateway-Modul leitet CAN-Botschaften fehlerhaft'
+    - id: terminator_resistor_drift
+      likelihood: low
+      label:
+        en: 'CAN terminating resistor (120 Ω) drifted out of spec'
+        de: 'CAN-Abschlusswiderstand (120 Ω) außerhalb der Spezifikation'
   symptoms:
     - en: 'Multiple warning lights may illuminate'
       de: 'Mehrere Warnleuchten können aufleuchten'
@@ -4736,6 +5796,16 @@
       label:
         en: Interlock wire shorted to ground
         de: Interlock-Leitung mit Masseschluss
+    - id: gateway_module_fault
+      likelihood: low
+      label:
+        en: 'Gateway module routing CAN messages incorrectly'
+        de: 'Gateway-Modul leitet CAN-Botschaften fehlerhaft'
+    - id: terminator_resistor_drift
+      likelihood: low
+      label:
+        en: 'CAN terminating resistor (120 Ω) drifted out of spec'
+        de: 'CAN-Abschlusswiderstand (120 Ω) außerhalb der Spezifikation'
   symptoms:
     - en: 'Multiple warning lights may illuminate'
       de: 'Mehrere Warnleuchten können aufleuchten'
@@ -4779,6 +5849,16 @@
       label:
         en: Interlock loop open
         de: Interlock-Loop offen
+    - id: gateway_module_fault
+      likelihood: low
+      label:
+        en: 'Gateway module routing CAN messages incorrectly'
+        de: 'Gateway-Modul leitet CAN-Botschaften fehlerhaft'
+    - id: terminator_resistor_drift
+      likelihood: low
+      label:
+        en: 'CAN terminating resistor (120 Ω) drifted out of spec'
+        de: 'CAN-Abschlusswiderstand (120 Ω) außerhalb der Spezifikation'
   symptoms:
     - en: 'Multiple warning lights may illuminate'
       de: 'Mehrere Warnleuchten können aufleuchten'
@@ -4822,6 +5902,16 @@
       label:
         en: HV connector not fully mated
         de: HV-Stecker nicht vollständig gesteckt
+    - id: gateway_module_fault
+      likelihood: low
+      label:
+        en: 'Gateway module routing CAN messages incorrectly'
+        de: 'Gateway-Modul leitet CAN-Botschaften fehlerhaft'
+    - id: terminator_resistor_drift
+      likelihood: low
+      label:
+        en: 'CAN terminating resistor (120 Ω) drifted out of spec'
+        de: 'CAN-Abschlusswiderstand (120 Ω) außerhalb der Spezifikation'
   symptoms:
     - en: 'Multiple warning lights may illuminate'
       de: 'Mehrere Warnleuchten können aufleuchten'
@@ -4864,6 +5954,16 @@
       label:
         en: Intermittent contact in HV connector
         de: Sporadischer Kontakt im HV-Stecker
+    - id: gateway_module_fault
+      likelihood: low
+      label:
+        en: 'Gateway module routing CAN messages incorrectly'
+        de: 'Gateway-Modul leitet CAN-Botschaften fehlerhaft'
+    - id: terminator_resistor_drift
+      likelihood: low
+      label:
+        en: 'CAN terminating resistor (120 Ω) drifted out of spec'
+        de: 'CAN-Abschlusswiderstand (120 Ω) außerhalb der Spezifikation'
   symptoms:
     - en: 'Multiple warning lights may illuminate'
       de: 'Mehrere Warnleuchten können aufleuchten'
@@ -4907,6 +6007,16 @@
       label:
         en: Interlock wire shorted to ground
         de: Interlock-Leitung mit Masseschluss
+    - id: gateway_module_fault
+      likelihood: low
+      label:
+        en: 'Gateway module routing CAN messages incorrectly'
+        de: 'Gateway-Modul leitet CAN-Botschaften fehlerhaft'
+    - id: terminator_resistor_drift
+      likelihood: low
+      label:
+        en: 'CAN terminating resistor (120 Ω) drifted out of spec'
+        de: 'CAN-Abschlusswiderstand (120 Ω) außerhalb der Spezifikation'
   symptoms:
     - en: 'Multiple warning lights may illuminate'
       de: 'Mehrere Warnleuchten können aufleuchten'
@@ -4950,6 +6060,16 @@
       label:
         en: Interlock loop open
         de: Interlock-Loop offen
+    - id: gateway_module_fault
+      likelihood: low
+      label:
+        en: 'Gateway module routing CAN messages incorrectly'
+        de: 'Gateway-Modul leitet CAN-Botschaften fehlerhaft'
+    - id: terminator_resistor_drift
+      likelihood: low
+      label:
+        en: 'CAN terminating resistor (120 Ω) drifted out of spec'
+        de: 'CAN-Abschlusswiderstand (120 Ω) außerhalb der Spezifikation'
   symptoms:
     - en: 'Multiple warning lights may illuminate'
       de: 'Mehrere Warnleuchten können aufleuchten'
@@ -4993,6 +6113,16 @@
       label:
         en: HV connector not fully mated
         de: HV-Stecker nicht vollständig gesteckt
+    - id: gateway_module_fault
+      likelihood: low
+      label:
+        en: 'Gateway module routing CAN messages incorrectly'
+        de: 'Gateway-Modul leitet CAN-Botschaften fehlerhaft'
+    - id: terminator_resistor_drift
+      likelihood: low
+      label:
+        en: 'CAN terminating resistor (120 Ω) drifted out of spec'
+        de: 'CAN-Abschlusswiderstand (120 Ω) außerhalb der Spezifikation'
   symptoms:
     - en: 'Multiple warning lights may illuminate'
       de: 'Mehrere Warnleuchten können aufleuchten'
@@ -5035,6 +6165,16 @@
       label:
         en: Intermittent contact in HV connector
         de: Sporadischer Kontakt im HV-Stecker
+    - id: gateway_module_fault
+      likelihood: low
+      label:
+        en: 'Gateway module routing CAN messages incorrectly'
+        de: 'Gateway-Modul leitet CAN-Botschaften fehlerhaft'
+    - id: terminator_resistor_drift
+      likelihood: low
+      label:
+        en: 'CAN terminating resistor (120 Ω) drifted out of spec'
+        de: 'CAN-Abschlusswiderstand (120 Ω) außerhalb der Spezifikation'
   symptoms:
     - en: 'Multiple warning lights may illuminate'
       de: 'Mehrere Warnleuchten können aufleuchten'
@@ -5078,6 +6218,16 @@
       label:
         en: Interlock wire shorted to ground
         de: Interlock-Leitung mit Masseschluss
+    - id: gateway_module_fault
+      likelihood: low
+      label:
+        en: 'Gateway module routing CAN messages incorrectly'
+        de: 'Gateway-Modul leitet CAN-Botschaften fehlerhaft'
+    - id: terminator_resistor_drift
+      likelihood: low
+      label:
+        en: 'CAN terminating resistor (120 Ω) drifted out of spec'
+        de: 'CAN-Abschlusswiderstand (120 Ω) außerhalb der Spezifikation'
   symptoms:
     - en: 'Multiple warning lights may illuminate'
       de: 'Mehrere Warnleuchten können aufleuchten'
@@ -5121,6 +6271,16 @@
       label:
         en: Interlock loop open
         de: Interlock-Loop offen
+    - id: gateway_module_fault
+      likelihood: low
+      label:
+        en: 'Gateway module routing CAN messages incorrectly'
+        de: 'Gateway-Modul leitet CAN-Botschaften fehlerhaft'
+    - id: terminator_resistor_drift
+      likelihood: low
+      label:
+        en: 'CAN terminating resistor (120 Ω) drifted out of spec'
+        de: 'CAN-Abschlusswiderstand (120 Ω) außerhalb der Spezifikation'
   symptoms:
     - en: 'Multiple warning lights may illuminate'
       de: 'Mehrere Warnleuchten können aufleuchten'
@@ -5164,6 +6324,16 @@
       label:
         en: HV connector not fully mated
         de: HV-Stecker nicht vollständig gesteckt
+    - id: gateway_module_fault
+      likelihood: low
+      label:
+        en: 'Gateway module routing CAN messages incorrectly'
+        de: 'Gateway-Modul leitet CAN-Botschaften fehlerhaft'
+    - id: terminator_resistor_drift
+      likelihood: low
+      label:
+        en: 'CAN terminating resistor (120 Ω) drifted out of spec'
+        de: 'CAN-Abschlusswiderstand (120 Ω) außerhalb der Spezifikation'
   symptoms:
     - en: 'Multiple warning lights may illuminate'
       de: 'Mehrere Warnleuchten können aufleuchten'
@@ -5206,6 +6376,16 @@
       label:
         en: Intermittent contact in HV connector
         de: Sporadischer Kontakt im HV-Stecker
+    - id: gateway_module_fault
+      likelihood: low
+      label:
+        en: 'Gateway module routing CAN messages incorrectly'
+        de: 'Gateway-Modul leitet CAN-Botschaften fehlerhaft'
+    - id: terminator_resistor_drift
+      likelihood: low
+      label:
+        en: 'CAN terminating resistor (120 Ω) drifted out of spec'
+        de: 'CAN-Abschlusswiderstand (120 Ω) außerhalb der Spezifikation'
   symptoms:
     - en: 'Multiple warning lights may illuminate'
       de: 'Mehrere Warnleuchten können aufleuchten'
@@ -5249,6 +6429,16 @@
       label:
         en: Interlock wire shorted to ground
         de: Interlock-Leitung mit Masseschluss
+    - id: gateway_module_fault
+      likelihood: low
+      label:
+        en: 'Gateway module routing CAN messages incorrectly'
+        de: 'Gateway-Modul leitet CAN-Botschaften fehlerhaft'
+    - id: terminator_resistor_drift
+      likelihood: low
+      label:
+        en: 'CAN terminating resistor (120 Ω) drifted out of spec'
+        de: 'CAN-Abschlusswiderstand (120 Ω) außerhalb der Spezifikation'
   symptoms:
     - en: 'Multiple warning lights may illuminate'
       de: 'Mehrere Warnleuchten können aufleuchten'
@@ -5292,6 +6482,16 @@
       label:
         en: Interlock loop open
         de: Interlock-Loop offen
+    - id: gateway_module_fault
+      likelihood: low
+      label:
+        en: 'Gateway module routing CAN messages incorrectly'
+        de: 'Gateway-Modul leitet CAN-Botschaften fehlerhaft'
+    - id: terminator_resistor_drift
+      likelihood: low
+      label:
+        en: 'CAN terminating resistor (120 Ω) drifted out of spec'
+        de: 'CAN-Abschlusswiderstand (120 Ω) außerhalb der Spezifikation'
   symptoms:
     - en: 'Multiple warning lights may illuminate'
       de: 'Mehrere Warnleuchten können aufleuchten'
@@ -5335,6 +6535,16 @@
       label:
         en: HV connector not fully mated
         de: HV-Stecker nicht vollständig gesteckt
+    - id: gateway_module_fault
+      likelihood: low
+      label:
+        en: 'Gateway module routing CAN messages incorrectly'
+        de: 'Gateway-Modul leitet CAN-Botschaften fehlerhaft'
+    - id: terminator_resistor_drift
+      likelihood: low
+      label:
+        en: 'CAN terminating resistor (120 Ω) drifted out of spec'
+        de: 'CAN-Abschlusswiderstand (120 Ω) außerhalb der Spezifikation'
   symptoms:
     - en: 'Multiple warning lights may illuminate'
       de: 'Mehrere Warnleuchten können aufleuchten'
@@ -5377,6 +6587,16 @@
       label:
         en: Intermittent contact in HV connector
         de: Sporadischer Kontakt im HV-Stecker
+    - id: gateway_module_fault
+      likelihood: low
+      label:
+        en: 'Gateway module routing CAN messages incorrectly'
+        de: 'Gateway-Modul leitet CAN-Botschaften fehlerhaft'
+    - id: terminator_resistor_drift
+      likelihood: low
+      label:
+        en: 'CAN terminating resistor (120 Ω) drifted out of spec'
+        de: 'CAN-Abschlusswiderstand (120 Ω) außerhalb der Spezifikation'
   symptoms:
     - en: 'Multiple warning lights may illuminate'
       de: 'Mehrere Warnleuchten können aufleuchten'
@@ -5420,6 +6640,16 @@
       label:
         en: Interlock wire shorted to ground
         de: Interlock-Leitung mit Masseschluss
+    - id: gateway_module_fault
+      likelihood: low
+      label:
+        en: 'Gateway module routing CAN messages incorrectly'
+        de: 'Gateway-Modul leitet CAN-Botschaften fehlerhaft'
+    - id: terminator_resistor_drift
+      likelihood: low
+      label:
+        en: 'CAN terminating resistor (120 Ω) drifted out of spec'
+        de: 'CAN-Abschlusswiderstand (120 Ω) außerhalb der Spezifikation'
   symptoms:
     - en: 'Multiple warning lights may illuminate'
       de: 'Mehrere Warnleuchten können aufleuchten'
@@ -5463,6 +6693,16 @@
       label:
         en: Interlock loop open
         de: Interlock-Loop offen
+    - id: gateway_module_fault
+      likelihood: low
+      label:
+        en: 'Gateway module routing CAN messages incorrectly'
+        de: 'Gateway-Modul leitet CAN-Botschaften fehlerhaft'
+    - id: terminator_resistor_drift
+      likelihood: low
+      label:
+        en: 'CAN terminating resistor (120 Ω) drifted out of spec'
+        de: 'CAN-Abschlusswiderstand (120 Ω) außerhalb der Spezifikation'
   symptoms:
     - en: 'Multiple warning lights may illuminate'
       de: 'Mehrere Warnleuchten können aufleuchten'
@@ -5506,6 +6746,16 @@
       label:
         en: Pressure sensor failed
         de: Drucksensor defekt
+    - id: gateway_module_fault
+      likelihood: low
+      label:
+        en: 'Gateway module routing CAN messages incorrectly'
+        de: 'Gateway-Modul leitet CAN-Botschaften fehlerhaft'
+    - id: terminator_resistor_drift
+      likelihood: low
+      label:
+        en: 'CAN terminating resistor (120 Ω) drifted out of spec'
+        de: 'CAN-Abschlusswiderstand (120 Ω) außerhalb der Spezifikation'
   symptoms:
     - en: 'Multiple warning lights may illuminate'
       de: 'Mehrere Warnleuchten können aufleuchten'
@@ -5548,6 +6798,16 @@
       label:
         en: Temperature sensor failed
         de: Temperatursensor defekt
+    - id: gateway_module_fault
+      likelihood: low
+      label:
+        en: 'Gateway module routing CAN messages incorrectly'
+        de: 'Gateway-Modul leitet CAN-Botschaften fehlerhaft'
+    - id: terminator_resistor_drift
+      likelihood: low
+      label:
+        en: 'CAN terminating resistor (120 Ω) drifted out of spec'
+        de: 'CAN-Abschlusswiderstand (120 Ω) außerhalb der Spezifikation'
   symptoms:
     - en: 'Multiple warning lights may illuminate'
       de: 'Mehrere Warnleuchten können aufleuchten'
@@ -5591,6 +6851,16 @@
       label:
         en: Temperature sensor failed
         de: Temperatursensor defekt
+    - id: gateway_module_fault
+      likelihood: low
+      label:
+        en: 'Gateway module routing CAN messages incorrectly'
+        de: 'Gateway-Modul leitet CAN-Botschaften fehlerhaft'
+    - id: terminator_resistor_drift
+      likelihood: low
+      label:
+        en: 'CAN terminating resistor (120 Ω) drifted out of spec'
+        de: 'CAN-Abschlusswiderstand (120 Ω) außerhalb der Spezifikation'
   symptoms:
     - en: 'Multiple warning lights may illuminate'
       de: 'Mehrere Warnleuchten können aufleuchten'
@@ -5634,6 +6904,16 @@
       label:
         en: Temperature sensor failed
         de: Temperatursensor defekt
+    - id: gateway_module_fault
+      likelihood: low
+      label:
+        en: 'Gateway module routing CAN messages incorrectly'
+        de: 'Gateway-Modul leitet CAN-Botschaften fehlerhaft'
+    - id: terminator_resistor_drift
+      likelihood: low
+      label:
+        en: 'CAN terminating resistor (120 Ω) drifted out of spec'
+        de: 'CAN-Abschlusswiderstand (120 Ω) außerhalb der Spezifikation'
   symptoms:
     - en: 'Multiple warning lights may illuminate'
       de: 'Mehrere Warnleuchten können aufleuchten'
@@ -5677,6 +6957,16 @@
       label:
         en: Temperature sensor failed
         de: Temperatursensor defekt
+    - id: gateway_module_fault
+      likelihood: low
+      label:
+        en: 'Gateway module routing CAN messages incorrectly'
+        de: 'Gateway-Modul leitet CAN-Botschaften fehlerhaft'
+    - id: terminator_resistor_drift
+      likelihood: low
+      label:
+        en: 'CAN terminating resistor (120 Ω) drifted out of spec'
+        de: 'CAN-Abschlusswiderstand (120 Ω) außerhalb der Spezifikation'
   symptoms:
     - en: 'Multiple warning lights may illuminate'
       de: 'Mehrere Warnleuchten können aufleuchten'
@@ -5720,6 +7010,16 @@
       label:
         en: Temperature sensor failed
         de: Temperatursensor defekt
+    - id: gateway_module_fault
+      likelihood: low
+      label:
+        en: 'Gateway module routing CAN messages incorrectly'
+        de: 'Gateway-Modul leitet CAN-Botschaften fehlerhaft'
+    - id: terminator_resistor_drift
+      likelihood: low
+      label:
+        en: 'CAN terminating resistor (120 Ω) drifted out of spec'
+        de: 'CAN-Abschlusswiderstand (120 Ω) außerhalb der Spezifikation'
   symptoms:
     - en: 'Multiple warning lights may illuminate'
       de: 'Mehrere Warnleuchten können aufleuchten'
@@ -5763,6 +7063,16 @@
       label:
         en: Temperature sensor failed
         de: Temperatursensor defekt
+    - id: gateway_module_fault
+      likelihood: low
+      label:
+        en: 'Gateway module routing CAN messages incorrectly'
+        de: 'Gateway-Modul leitet CAN-Botschaften fehlerhaft'
+    - id: terminator_resistor_drift
+      likelihood: low
+      label:
+        en: 'CAN terminating resistor (120 Ω) drifted out of spec'
+        de: 'CAN-Abschlusswiderstand (120 Ω) außerhalb der Spezifikation'
   symptoms:
     - en: 'Multiple warning lights may illuminate'
       de: 'Mehrere Warnleuchten können aufleuchten'
@@ -5806,6 +7116,16 @@
       label:
         en: Valve solenoid failed
         de: Ventil-Magnetspule defekt
+    - id: gateway_module_fault
+      likelihood: low
+      label:
+        en: 'Gateway module routing CAN messages incorrectly'
+        de: 'Gateway-Modul leitet CAN-Botschaften fehlerhaft'
+    - id: terminator_resistor_drift
+      likelihood: low
+      label:
+        en: 'CAN terminating resistor (120 Ω) drifted out of spec'
+        de: 'CAN-Abschlusswiderstand (120 Ω) außerhalb der Spezifikation'
   symptoms:
     - en: 'Multiple warning lights may illuminate'
       de: 'Mehrere Warnleuchten können aufleuchten'
@@ -5849,6 +7169,16 @@
       label:
         en: Enable wire open or relay failed
         de: Freigabeleitung unterbrochen oder Relais defekt
+    - id: gateway_module_fault
+      likelihood: low
+      label:
+        en: 'Gateway module routing CAN messages incorrectly'
+        de: 'Gateway-Modul leitet CAN-Botschaften fehlerhaft'
+    - id: terminator_resistor_drift
+      likelihood: low
+      label:
+        en: 'CAN terminating resistor (120 Ω) drifted out of spec'
+        de: 'CAN-Abschlusswiderstand (120 Ω) außerhalb der Spezifikation'
   symptoms:
     - en: 'Multiple warning lights may illuminate'
       de: 'Mehrere Warnleuchten können aufleuchten'
@@ -5891,6 +7221,16 @@
       label:
         en: Valve stuck mechanically
         de: Ventil mechanisch klemmend
+    - id: gateway_module_fault
+      likelihood: low
+      label:
+        en: 'Gateway module routing CAN messages incorrectly'
+        de: 'Gateway-Modul leitet CAN-Botschaften fehlerhaft'
+    - id: terminator_resistor_drift
+      likelihood: low
+      label:
+        en: 'CAN terminating resistor (120 Ω) drifted out of spec'
+        de: 'CAN-Abschlusswiderstand (120 Ω) außerhalb der Spezifikation'
   symptoms:
     - en: 'Multiple warning lights may illuminate'
       de: 'Mehrere Warnleuchten können aufleuchten'
@@ -5934,6 +7274,16 @@
       label:
         en: Valve solenoid failed
         de: Ventil-Magnetspule defekt
+    - id: gateway_module_fault
+      likelihood: low
+      label:
+        en: 'Gateway module routing CAN messages incorrectly'
+        de: 'Gateway-Modul leitet CAN-Botschaften fehlerhaft'
+    - id: terminator_resistor_drift
+      likelihood: low
+      label:
+        en: 'CAN terminating resistor (120 Ω) drifted out of spec'
+        de: 'CAN-Abschlusswiderstand (120 Ω) außerhalb der Spezifikation'
   symptoms:
     - en: 'Multiple warning lights may illuminate'
       de: 'Mehrere Warnleuchten können aufleuchten'
@@ -5977,6 +7327,16 @@
       label:
         en: Enable wire open or relay failed
         de: Freigabeleitung unterbrochen oder Relais defekt
+    - id: gateway_module_fault
+      likelihood: low
+      label:
+        en: 'Gateway module routing CAN messages incorrectly'
+        de: 'Gateway-Modul leitet CAN-Botschaften fehlerhaft'
+    - id: terminator_resistor_drift
+      likelihood: low
+      label:
+        en: 'CAN terminating resistor (120 Ω) drifted out of spec'
+        de: 'CAN-Abschlusswiderstand (120 Ω) außerhalb der Spezifikation'
   symptoms:
     - en: 'Multiple warning lights may illuminate'
       de: 'Mehrere Warnleuchten können aufleuchten'
@@ -6019,6 +7379,16 @@
       label:
         en: Valve stuck mechanically
         de: Ventil mechanisch klemmend
+    - id: gateway_module_fault
+      likelihood: low
+      label:
+        en: 'Gateway module routing CAN messages incorrectly'
+        de: 'Gateway-Modul leitet CAN-Botschaften fehlerhaft'
+    - id: terminator_resistor_drift
+      likelihood: low
+      label:
+        en: 'CAN terminating resistor (120 Ω) drifted out of spec'
+        de: 'CAN-Abschlusswiderstand (120 Ω) außerhalb der Spezifikation'
   symptoms:
     - en: 'Multiple warning lights may illuminate'
       de: 'Mehrere Warnleuchten können aufleuchten'
@@ -6062,6 +7432,16 @@
       label:
         en: Valve solenoid failed
         de: Ventil-Magnetspule defekt
+    - id: gateway_module_fault
+      likelihood: low
+      label:
+        en: 'Gateway module routing CAN messages incorrectly'
+        de: 'Gateway-Modul leitet CAN-Botschaften fehlerhaft'
+    - id: terminator_resistor_drift
+      likelihood: low
+      label:
+        en: 'CAN terminating resistor (120 Ω) drifted out of spec'
+        de: 'CAN-Abschlusswiderstand (120 Ω) außerhalb der Spezifikation'
   symptoms:
     - en: 'Multiple warning lights may illuminate'
       de: 'Mehrere Warnleuchten können aufleuchten'
@@ -6105,6 +7485,16 @@
       label:
         en: Enable wire open or relay failed
         de: Freigabeleitung unterbrochen oder Relais defekt
+    - id: gateway_module_fault
+      likelihood: low
+      label:
+        en: 'Gateway module routing CAN messages incorrectly'
+        de: 'Gateway-Modul leitet CAN-Botschaften fehlerhaft'
+    - id: terminator_resistor_drift
+      likelihood: low
+      label:
+        en: 'CAN terminating resistor (120 Ω) drifted out of spec'
+        de: 'CAN-Abschlusswiderstand (120 Ω) außerhalb der Spezifikation'
   symptoms:
     - en: 'Multiple warning lights may illuminate'
       de: 'Mehrere Warnleuchten können aufleuchten'
@@ -6147,6 +7537,16 @@
       label:
         en: Valve electrical or mechanical failure
         de: Ventil elektrisch oder mechanisch defekt
+    - id: gateway_module_fault
+      likelihood: low
+      label:
+        en: 'Gateway module routing CAN messages incorrectly'
+        de: 'Gateway-Modul leitet CAN-Botschaften fehlerhaft'
+    - id: terminator_resistor_drift
+      likelihood: low
+      label:
+        en: 'CAN terminating resistor (120 Ω) drifted out of spec'
+        de: 'CAN-Abschlusswiderstand (120 Ω) außerhalb der Spezifikation'
   symptoms:
     - en: 'Multiple warning lights may illuminate'
       de: 'Mehrere Warnleuchten können aufleuchten'
@@ -6189,6 +7589,16 @@
       label:
         en: Sensor failed
         de: Sensor defekt
+    - id: gateway_module_fault
+      likelihood: low
+      label:
+        en: 'Gateway module routing CAN messages incorrectly'
+        de: 'Gateway-Modul leitet CAN-Botschaften fehlerhaft'
+    - id: terminator_resistor_drift
+      likelihood: low
+      label:
+        en: 'CAN terminating resistor (120 Ω) drifted out of spec'
+        de: 'CAN-Abschlusswiderstand (120 Ω) außerhalb der Spezifikation'
   symptoms:
     - en: 'Multiple warning lights may illuminate'
       de: 'Mehrere Warnleuchten können aufleuchten'
@@ -6231,6 +7641,16 @@
       label:
         en: Sensor failed
         de: Sensor defekt
+    - id: gateway_module_fault
+      likelihood: low
+      label:
+        en: 'Gateway module routing CAN messages incorrectly'
+        de: 'Gateway-Modul leitet CAN-Botschaften fehlerhaft'
+    - id: terminator_resistor_drift
+      likelihood: low
+      label:
+        en: 'CAN terminating resistor (120 Ω) drifted out of spec'
+        de: 'CAN-Abschlusswiderstand (120 Ω) außerhalb der Spezifikation'
   symptoms:
     - en: 'Multiple warning lights may illuminate'
       de: 'Mehrere Warnleuchten können aufleuchten'
@@ -6274,6 +7694,16 @@
       label:
         en: Sensor failed
         de: Sensor defekt
+    - id: gateway_module_fault
+      likelihood: low
+      label:
+        en: 'Gateway module routing CAN messages incorrectly'
+        de: 'Gateway-Modul leitet CAN-Botschaften fehlerhaft'
+    - id: terminator_resistor_drift
+      likelihood: low
+      label:
+        en: 'CAN terminating resistor (120 Ω) drifted out of spec'
+        de: 'CAN-Abschlusswiderstand (120 Ω) außerhalb der Spezifikation'
   symptoms:
     - en: 'Multiple warning lights may illuminate'
       de: 'Mehrere Warnleuchten können aufleuchten'
@@ -6317,6 +7747,16 @@
       label:
         en: Sensor failed
         de: Sensor defekt
+    - id: gateway_module_fault
+      likelihood: low
+      label:
+        en: 'Gateway module routing CAN messages incorrectly'
+        de: 'Gateway-Modul leitet CAN-Botschaften fehlerhaft'
+    - id: terminator_resistor_drift
+      likelihood: low
+      label:
+        en: 'CAN terminating resistor (120 Ω) drifted out of spec'
+        de: 'CAN-Abschlusswiderstand (120 Ω) außerhalb der Spezifikation'
   symptoms:
     - en: 'Multiple warning lights may illuminate'
       de: 'Mehrere Warnleuchten können aufleuchten'
@@ -6359,6 +7799,16 @@
       label:
         en: Sensor failed
         de: Sensor defekt
+    - id: gateway_module_fault
+      likelihood: low
+      label:
+        en: 'Gateway module routing CAN messages incorrectly'
+        de: 'Gateway-Modul leitet CAN-Botschaften fehlerhaft'
+    - id: terminator_resistor_drift
+      likelihood: low
+      label:
+        en: 'CAN terminating resistor (120 Ω) drifted out of spec'
+        de: 'CAN-Abschlusswiderstand (120 Ω) außerhalb der Spezifikation'
   symptoms:
     - en: 'Multiple warning lights may illuminate'
       de: 'Mehrere Warnleuchten können aufleuchten'
@@ -6402,6 +7852,16 @@
       label:
         en: Sensor failed
         de: Sensor defekt
+    - id: gateway_module_fault
+      likelihood: low
+      label:
+        en: 'Gateway module routing CAN messages incorrectly'
+        de: 'Gateway-Modul leitet CAN-Botschaften fehlerhaft'
+    - id: terminator_resistor_drift
+      likelihood: low
+      label:
+        en: 'CAN terminating resistor (120 Ω) drifted out of spec'
+        de: 'CAN-Abschlusswiderstand (120 Ω) außerhalb der Spezifikation'
   symptoms:
     - en: 'Multiple warning lights may illuminate'
       de: 'Mehrere Warnleuchten können aufleuchten'
@@ -6445,6 +7905,16 @@
       label:
         en: Valve actuator failed
         de: Ventil-Aktuator defekt
+    - id: gateway_module_fault
+      likelihood: low
+      label:
+        en: 'Gateway module routing CAN messages incorrectly'
+        de: 'Gateway-Modul leitet CAN-Botschaften fehlerhaft'
+    - id: terminator_resistor_drift
+      likelihood: low
+      label:
+        en: 'CAN terminating resistor (120 Ω) drifted out of spec'
+        de: 'CAN-Abschlusswiderstand (120 Ω) außerhalb der Spezifikation'
   symptoms:
     - en: 'Multiple warning lights may illuminate'
       de: 'Mehrere Warnleuchten können aufleuchten'
@@ -6487,6 +7957,16 @@
       label:
         en: Position sensor failed
         de: Positionssensor defekt
+    - id: gateway_module_fault
+      likelihood: low
+      label:
+        en: 'Gateway module routing CAN messages incorrectly'
+        de: 'Gateway-Modul leitet CAN-Botschaften fehlerhaft'
+    - id: terminator_resistor_drift
+      likelihood: low
+      label:
+        en: 'CAN terminating resistor (120 Ω) drifted out of spec'
+        de: 'CAN-Abschlusswiderstand (120 Ω) außerhalb der Spezifikation'
   symptoms:
     - en: 'Multiple warning lights may illuminate'
       de: 'Mehrere Warnleuchten können aufleuchten'
@@ -6529,6 +8009,16 @@
       label:
         en: Valve actuator failed
         de: Ventil-Aktuator defekt
+    - id: gateway_module_fault
+      likelihood: low
+      label:
+        en: 'Gateway module routing CAN messages incorrectly'
+        de: 'Gateway-Modul leitet CAN-Botschaften fehlerhaft'
+    - id: terminator_resistor_drift
+      likelihood: low
+      label:
+        en: 'CAN terminating resistor (120 Ω) drifted out of spec'
+        de: 'CAN-Abschlusswiderstand (120 Ω) außerhalb der Spezifikation'
   symptoms:
     - en: 'Multiple warning lights may illuminate'
       de: 'Mehrere Warnleuchten können aufleuchten'
@@ -6570,6 +8060,16 @@
       label:
         en: Valve electrical or mechanical failure
         de: Ventil elektrisch oder mechanisch defekt
+    - id: gateway_module_fault
+      likelihood: low
+      label:
+        en: 'Gateway module routing CAN messages incorrectly'
+        de: 'Gateway-Modul leitet CAN-Botschaften fehlerhaft'
+    - id: terminator_resistor_drift
+      likelihood: low
+      label:
+        en: 'CAN terminating resistor (120 Ω) drifted out of spec'
+        de: 'CAN-Abschlusswiderstand (120 Ω) außerhalb der Spezifikation'
   symptoms:
     - en: 'Multiple warning lights may illuminate'
       de: 'Mehrere Warnleuchten können aufleuchten'
@@ -6612,6 +8112,16 @@
       label:
         en: Position sensor failed
         de: Positionssensor defekt
+    - id: gateway_module_fault
+      likelihood: low
+      label:
+        en: 'Gateway module routing CAN messages incorrectly'
+        de: 'Gateway-Modul leitet CAN-Botschaften fehlerhaft'
+    - id: terminator_resistor_drift
+      likelihood: low
+      label:
+        en: 'CAN terminating resistor (120 Ω) drifted out of spec'
+        de: 'CAN-Abschlusswiderstand (120 Ω) außerhalb der Spezifikation'
   symptoms:
     - en: 'Multiple warning lights may illuminate'
       de: 'Mehrere Warnleuchten können aufleuchten'
@@ -6654,6 +8164,16 @@
       label:
         en: Sensor failed
         de: Sensor defekt
+    - id: gateway_module_fault
+      likelihood: low
+      label:
+        en: 'Gateway module routing CAN messages incorrectly'
+        de: 'Gateway-Modul leitet CAN-Botschaften fehlerhaft'
+    - id: terminator_resistor_drift
+      likelihood: low
+      label:
+        en: 'CAN terminating resistor (120 Ω) drifted out of spec'
+        de: 'CAN-Abschlusswiderstand (120 Ω) außerhalb der Spezifikation'
   symptoms:
     - en: 'Multiple warning lights may illuminate'
       de: 'Mehrere Warnleuchten können aufleuchten'
@@ -6697,6 +8217,16 @@
       label:
         en: Sensor failed
         de: Sensor defekt
+    - id: gateway_module_fault
+      likelihood: low
+      label:
+        en: 'Gateway module routing CAN messages incorrectly'
+        de: 'Gateway-Modul leitet CAN-Botschaften fehlerhaft'
+    - id: terminator_resistor_drift
+      likelihood: low
+      label:
+        en: 'CAN terminating resistor (120 Ω) drifted out of spec'
+        de: 'CAN-Abschlusswiderstand (120 Ω) außerhalb der Spezifikation'
   symptoms:
     - en: 'Multiple warning lights may illuminate'
       de: 'Mehrere Warnleuchten können aufleuchten'
@@ -6740,6 +8270,16 @@
       label:
         en: Sensor failed
         de: Sensor defekt
+    - id: gateway_module_fault
+      likelihood: low
+      label:
+        en: 'Gateway module routing CAN messages incorrectly'
+        de: 'Gateway-Modul leitet CAN-Botschaften fehlerhaft'
+    - id: terminator_resistor_drift
+      likelihood: low
+      label:
+        en: 'CAN terminating resistor (120 Ω) drifted out of spec'
+        de: 'CAN-Abschlusswiderstand (120 Ω) außerhalb der Spezifikation'
   symptoms:
     - en: 'Multiple warning lights may illuminate'
       de: 'Mehrere Warnleuchten können aufleuchten'
@@ -6783,6 +8323,16 @@
       label:
         en: Sensor failed
         de: Sensor defekt
+    - id: gateway_module_fault
+      likelihood: low
+      label:
+        en: 'Gateway module routing CAN messages incorrectly'
+        de: 'Gateway-Modul leitet CAN-Botschaften fehlerhaft'
+    - id: terminator_resistor_drift
+      likelihood: low
+      label:
+        en: 'CAN terminating resistor (120 Ω) drifted out of spec'
+        de: 'CAN-Abschlusswiderstand (120 Ω) außerhalb der Spezifikation'
   symptoms:
     - en: 'Multiple warning lights may illuminate'
       de: 'Mehrere Warnleuchten können aufleuchten'
@@ -6826,6 +8376,16 @@
       label:
         en: Valve actuator failed
         de: Ventil-Aktuator defekt
+    - id: gateway_module_fault
+      likelihood: low
+      label:
+        en: 'Gateway module routing CAN messages incorrectly'
+        de: 'Gateway-Modul leitet CAN-Botschaften fehlerhaft'
+    - id: terminator_resistor_drift
+      likelihood: low
+      label:
+        en: 'CAN terminating resistor (120 Ω) drifted out of spec'
+        de: 'CAN-Abschlusswiderstand (120 Ω) außerhalb der Spezifikation'
   symptoms:
     - en: 'Multiple warning lights may illuminate'
       de: 'Mehrere Warnleuchten können aufleuchten'
@@ -6867,6 +8427,16 @@
       label:
         en: Valve electrical or mechanical failure
         de: Ventil elektrisch oder mechanisch defekt
+    - id: gateway_module_fault
+      likelihood: low
+      label:
+        en: 'Gateway module routing CAN messages incorrectly'
+        de: 'Gateway-Modul leitet CAN-Botschaften fehlerhaft'
+    - id: terminator_resistor_drift
+      likelihood: low
+      label:
+        en: 'CAN terminating resistor (120 Ω) drifted out of spec'
+        de: 'CAN-Abschlusswiderstand (120 Ω) außerhalb der Spezifikation'
   symptoms:
     - en: 'Multiple warning lights may illuminate'
       de: 'Mehrere Warnleuchten können aufleuchten'
@@ -6909,6 +8479,16 @@
       label:
         en: Valve actuator failed
         de: Ventil-Aktuator defekt
+    - id: gateway_module_fault
+      likelihood: low
+      label:
+        en: 'Gateway module routing CAN messages incorrectly'
+        de: 'Gateway-Modul leitet CAN-Botschaften fehlerhaft'
+    - id: terminator_resistor_drift
+      likelihood: low
+      label:
+        en: 'CAN terminating resistor (120 Ω) drifted out of spec'
+        de: 'CAN-Abschlusswiderstand (120 Ω) außerhalb der Spezifikation'
   symptoms:
     - en: 'Multiple warning lights may illuminate'
       de: 'Mehrere Warnleuchten können aufleuchten'
@@ -6950,6 +8530,16 @@
       label:
         en: Valve electrical or mechanical failure
         de: Ventil elektrisch oder mechanisch defekt
+    - id: gateway_module_fault
+      likelihood: low
+      label:
+        en: 'Gateway module routing CAN messages incorrectly'
+        de: 'Gateway-Modul leitet CAN-Botschaften fehlerhaft'
+    - id: terminator_resistor_drift
+      likelihood: low
+      label:
+        en: 'CAN terminating resistor (120 Ω) drifted out of spec'
+        de: 'CAN-Abschlusswiderstand (120 Ω) außerhalb der Spezifikation'
   symptoms:
     - en: 'Multiple warning lights may illuminate'
       de: 'Mehrere Warnleuchten können aufleuchten'
@@ -6992,6 +8582,16 @@
       label:
         en: Valve actuator failed
         de: Ventil-Aktuator defekt
+    - id: gateway_module_fault
+      likelihood: low
+      label:
+        en: 'Gateway module routing CAN messages incorrectly'
+        de: 'Gateway-Modul leitet CAN-Botschaften fehlerhaft'
+    - id: terminator_resistor_drift
+      likelihood: low
+      label:
+        en: 'CAN terminating resistor (120 Ω) drifted out of spec'
+        de: 'CAN-Abschlusswiderstand (120 Ω) außerhalb der Spezifikation'
   symptoms:
     - en: 'Multiple warning lights may illuminate'
       de: 'Mehrere Warnleuchten können aufleuchten'
@@ -7033,6 +8633,16 @@
       label:
         en: Valve electrical or mechanical failure
         de: Ventil elektrisch oder mechanisch defekt
+    - id: gateway_module_fault
+      likelihood: low
+      label:
+        en: 'Gateway module routing CAN messages incorrectly'
+        de: 'Gateway-Modul leitet CAN-Botschaften fehlerhaft'
+    - id: terminator_resistor_drift
+      likelihood: low
+      label:
+        en: 'CAN terminating resistor (120 Ω) drifted out of spec'
+        de: 'CAN-Abschlusswiderstand (120 Ω) außerhalb der Spezifikation'
   symptoms:
     - en: 'Multiple warning lights may illuminate'
       de: 'Mehrere Warnleuchten können aufleuchten'
@@ -7075,6 +8685,16 @@
       label:
         en: Heater relay failed
         de: Heizungsrelais defekt
+    - id: gateway_module_fault
+      likelihood: low
+      label:
+        en: 'Gateway module routing CAN messages incorrectly'
+        de: 'Gateway-Modul leitet CAN-Botschaften fehlerhaft'
+    - id: terminator_resistor_drift
+      likelihood: low
+      label:
+        en: 'CAN terminating resistor (120 Ω) drifted out of spec'
+        de: 'CAN-Abschlusswiderstand (120 Ω) außerhalb der Spezifikation'
   symptoms:
     - en: 'Multiple warning lights may illuminate'
       de: 'Mehrere Warnleuchten können aufleuchten'
@@ -7117,6 +8737,16 @@
       label:
         en: Heater relay failed
         de: Heizungsrelais defekt
+    - id: gateway_module_fault
+      likelihood: low
+      label:
+        en: 'Gateway module routing CAN messages incorrectly'
+        de: 'Gateway-Modul leitet CAN-Botschaften fehlerhaft'
+    - id: terminator_resistor_drift
+      likelihood: low
+      label:
+        en: 'CAN terminating resistor (120 Ω) drifted out of spec'
+        de: 'CAN-Abschlusswiderstand (120 Ω) außerhalb der Spezifikation'
   symptoms:
     - en: 'Multiple warning lights may illuminate'
       de: 'Mehrere Warnleuchten können aufleuchten'
@@ -7159,6 +8789,16 @@
       label:
         en: Sensor failed
         de: Sensor defekt
+    - id: gateway_module_fault
+      likelihood: low
+      label:
+        en: 'Gateway module routing CAN messages incorrectly'
+        de: 'Gateway-Modul leitet CAN-Botschaften fehlerhaft'
+    - id: terminator_resistor_drift
+      likelihood: low
+      label:
+        en: 'CAN terminating resistor (120 Ω) drifted out of spec'
+        de: 'CAN-Abschlusswiderstand (120 Ω) außerhalb der Spezifikation'
   symptoms:
     - en: 'Multiple warning lights may illuminate'
       de: 'Mehrere Warnleuchten können aufleuchten'
@@ -7201,6 +8841,16 @@
       label:
         en: Sensor failed
         de: Sensor defekt
+    - id: gateway_module_fault
+      likelihood: low
+      label:
+        en: 'Gateway module routing CAN messages incorrectly'
+        de: 'Gateway-Modul leitet CAN-Botschaften fehlerhaft'
+    - id: terminator_resistor_drift
+      likelihood: low
+      label:
+        en: 'CAN terminating resistor (120 Ω) drifted out of spec'
+        de: 'CAN-Abschlusswiderstand (120 Ω) außerhalb der Spezifikation'
   symptoms:
     - en: 'Multiple warning lights may illuminate'
       de: 'Mehrere Warnleuchten können aufleuchten'
@@ -7244,6 +8894,16 @@
       label:
         en: Sensor failed
         de: Sensor defekt
+    - id: gateway_module_fault
+      likelihood: low
+      label:
+        en: 'Gateway module routing CAN messages incorrectly'
+        de: 'Gateway-Modul leitet CAN-Botschaften fehlerhaft'
+    - id: terminator_resistor_drift
+      likelihood: low
+      label:
+        en: 'CAN terminating resistor (120 Ω) drifted out of spec'
+        de: 'CAN-Abschlusswiderstand (120 Ω) außerhalb der Spezifikation'
   symptoms:
     - en: 'Multiple warning lights may illuminate'
       de: 'Mehrere Warnleuchten können aufleuchten'
@@ -7287,6 +8947,16 @@
       label:
         en: Valve actuator failed
         de: Ventil-Aktuator defekt
+    - id: gateway_module_fault
+      likelihood: low
+      label:
+        en: 'Gateway module routing CAN messages incorrectly'
+        de: 'Gateway-Modul leitet CAN-Botschaften fehlerhaft'
+    - id: terminator_resistor_drift
+      likelihood: low
+      label:
+        en: 'CAN terminating resistor (120 Ω) drifted out of spec'
+        de: 'CAN-Abschlusswiderstand (120 Ω) außerhalb der Spezifikation'
   symptoms:
     - en: 'Multiple warning lights may illuminate'
       de: 'Mehrere Warnleuchten können aufleuchten'
@@ -7328,6 +8998,16 @@
       label:
         en: Valve electrical or mechanical failure
         de: Ventil elektrisch oder mechanisch defekt
+    - id: gateway_module_fault
+      likelihood: low
+      label:
+        en: 'Gateway module routing CAN messages incorrectly'
+        de: 'Gateway-Modul leitet CAN-Botschaften fehlerhaft'
+    - id: terminator_resistor_drift
+      likelihood: low
+      label:
+        en: 'CAN terminating resistor (120 Ω) drifted out of spec'
+        de: 'CAN-Abschlusswiderstand (120 Ω) außerhalb der Spezifikation'
   symptoms:
     - en: 'Multiple warning lights may illuminate'
       de: 'Mehrere Warnleuchten können aufleuchten'
@@ -7370,6 +9050,16 @@
       label:
         en: Position sensor failed
         de: Positionssensor defekt
+    - id: gateway_module_fault
+      likelihood: low
+      label:
+        en: 'Gateway module routing CAN messages incorrectly'
+        de: 'Gateway-Modul leitet CAN-Botschaften fehlerhaft'
+    - id: terminator_resistor_drift
+      likelihood: low
+      label:
+        en: 'CAN terminating resistor (120 Ω) drifted out of spec'
+        de: 'CAN-Abschlusswiderstand (120 Ω) außerhalb der Spezifikation'
   symptoms:
     - en: 'Multiple warning lights may illuminate'
       de: 'Mehrere Warnleuchten können aufleuchten'
@@ -7412,6 +9102,16 @@
       label:
         en: Sensor failed
         de: Sensor defekt
+    - id: gateway_module_fault
+      likelihood: low
+      label:
+        en: 'Gateway module routing CAN messages incorrectly'
+        de: 'Gateway-Modul leitet CAN-Botschaften fehlerhaft'
+    - id: terminator_resistor_drift
+      likelihood: low
+      label:
+        en: 'CAN terminating resistor (120 Ω) drifted out of spec'
+        de: 'CAN-Abschlusswiderstand (120 Ω) außerhalb der Spezifikation'
   symptoms:
     - en: 'Multiple warning lights may illuminate'
       de: 'Mehrere Warnleuchten können aufleuchten'

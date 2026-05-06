@@ -3631,6 +3631,11 @@
       label:
         en: Sensor not powered
         de: Sensor ohne Versorgung
+    - id: gateway_module_fault
+      likelihood: low
+      label:
+        en: 'Gateway module routing CAN messages incorrectly'
+        de: 'Gateway-Modul leitet CAN-Botschaften fehlerhaft'
   symptoms:
     - en: 'Warning light or symbol related to the affected system'
       de: 'Warnleuchte oder Symbol zum betroffenen System'
@@ -6196,6 +6201,16 @@
       label:
         en: Open bus wiring
         de: Unterbrochene Busverkabelung
+    - id: gateway_module_fault
+      likelihood: low
+      label:
+        en: 'Gateway module routing CAN messages incorrectly'
+        de: 'Gateway-Modul leitet CAN-Botschaften fehlerhaft'
+    - id: terminator_resistor_drift
+      likelihood: low
+      label:
+        en: 'CAN terminating resistor (120 Ω) drifted out of spec'
+        de: 'CAN-Abschlusswiderstand (120 Ω) außerhalb der Spezifikation'
   symptoms:
     - en: 'Warning light or symbol related to the affected system'
       de: 'Warnleuchte oder Symbol zum betroffenen System'
@@ -6271,6 +6286,16 @@
       label:
         en: Open bus wiring to sensor
         de: Unterbrochene Busverkabelung zum Sensor
+    - id: gateway_module_fault
+      likelihood: low
+      label:
+        en: 'Gateway module routing CAN messages incorrectly'
+        de: 'Gateway-Modul leitet CAN-Botschaften fehlerhaft'
+    - id: terminator_resistor_drift
+      likelihood: low
+      label:
+        en: 'CAN terminating resistor (120 Ω) drifted out of spec'
+        de: 'CAN-Abschlusswiderstand (120 Ω) außerhalb der Spezifikation'
   symptoms:
     - en: 'Warning light or symbol related to the affected system'
       de: 'Warnleuchte oder Symbol zum betroffenen System'
@@ -7598,6 +7623,16 @@
       label:
         en: Outlet wiring open
         de: Steckdosen-Verkabelung unterbrochen
+    - id: connector_back_out
+      likelihood: low
+      label:
+        en: 'Pin pushed back out of connector body'
+        de: 'Pin aus dem Steckergehäuse zurückgedrückt'
+    - id: solder_joint_cracked
+      likelihood: low
+      label:
+        en: 'Cracked solder joint inside the module or sensor'
+        de: 'Gerissene Lötstelle im Modul oder Sensor'
   symptoms:
     - en: 'Warning light or symbol related to the affected system'
       de: 'Warnleuchte oder Symbol zum betroffenen System'
@@ -7683,6 +7718,16 @@
       label:
         en: Outlet wiring open
         de: Steckdosen-Verkabelung unterbrochen
+    - id: connector_back_out
+      likelihood: low
+      label:
+        en: 'Pin pushed back out of connector body'
+        de: 'Pin aus dem Steckergehäuse zurückgedrückt'
+    - id: solder_joint_cracked
+      likelihood: low
+      label:
+        en: 'Cracked solder joint inside the module or sensor'
+        de: 'Gerissene Lötstelle im Modul oder Sensor'
   symptoms:
     - en: 'Warning light or symbol related to the affected system'
       de: 'Warnleuchte oder Symbol zum betroffenen System'
@@ -7722,6 +7767,16 @@
       label:
         en: Outlet wiring open
         de: Steckdosen-Verkabelung unterbrochen
+    - id: connector_back_out
+      likelihood: low
+      label:
+        en: 'Pin pushed back out of connector body'
+        de: 'Pin aus dem Steckergehäuse zurückgedrückt'
+    - id: solder_joint_cracked
+      likelihood: low
+      label:
+        en: 'Cracked solder joint inside the module or sensor'
+        de: 'Gerissene Lötstelle im Modul oder Sensor'
   symptoms:
     - en: 'Warning light or symbol related to the affected system'
       de: 'Warnleuchte oder Symbol zum betroffenen System'
@@ -7761,6 +7816,16 @@
       label:
         en: Outlet wiring open
         de: Steckdosen-Verkabelung unterbrochen
+    - id: connector_back_out
+      likelihood: low
+      label:
+        en: 'Pin pushed back out of connector body'
+        de: 'Pin aus dem Steckergehäuse zurückgedrückt'
+    - id: solder_joint_cracked
+      likelihood: low
+      label:
+        en: 'Cracked solder joint inside the module or sensor'
+        de: 'Gerissene Lötstelle im Modul oder Sensor'
   symptoms:
     - en: 'Warning light or symbol related to the affected system'
       de: 'Warnleuchte oder Symbol zum betroffenen System'
@@ -8400,6 +8465,11 @@
       label:
         en: Wiring or connector fault
         de: Verkabelungs- oder Steckerfehler
+    - id: sensor_aged
+      likelihood: low
+      label:
+        en: 'Sensor element aged beyond calibration window'
+        de: 'Sensorelement gealtert über Kalibrierfenster hinaus'
   symptoms:
     - en: 'Warning light or symbol related to the affected system'
       de: 'Warnleuchte oder Symbol zum betroffenen System'
@@ -10628,6 +10698,11 @@
       label:
         en: Wiring open or shorted
         de: Verkabelung unterbrochen oder kurzgeschlossen
+    - id: needs_reflash
+      likelihood: low
+      label:
+        en: 'Module software outdated, reflash may resolve'
+        de: 'Modul-Software veraltet, Reflash kann helfen'
   symptoms:
     - en: 'Warning light or symbol related to the affected system'
       de: 'Warnleuchte oder Symbol zum betroffenen System'
@@ -10668,6 +10743,11 @@
       label:
         en: Seat module internal fault
         de: Sitzmodul interner Fehler
+    - id: needs_reflash
+      likelihood: low
+      label:
+        en: 'Module software outdated, reflash may resolve'
+        de: 'Modul-Software veraltet, Reflash kann helfen'
   symptoms:
     - en: 'Warning light or symbol related to the affected system'
       de: 'Warnleuchte oder Symbol zum betroffenen System'
@@ -11889,6 +11969,11 @@
       label:
         en: Unstable power supply
         de: Instabile Spannungsversorgung
+    - id: needs_reflash
+      likelihood: low
+      label:
+        en: 'Module software outdated, reflash may resolve'
+        de: 'Modul-Software veraltet, Reflash kann helfen'
   symptoms:
     - en: 'Warning light or symbol related to the affected system'
       de: 'Warnleuchte oder Symbol zum betroffenen System'

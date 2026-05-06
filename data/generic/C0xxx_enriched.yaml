@@ -786,6 +786,11 @@
       label:
         en: Hydraulic block contaminated with brake fluid debris
         de: Hydraulikblock durch Bremsfluessigkeitsablagerungen verschmutzt
+    - id: sensor_aged
+      likelihood: low
+      label:
+        en: 'Sensor element aged beyond calibration window'
+        de: 'Sensorelement gealtert über Kalibrierfenster hinaus'
   symptoms:
     - en: 'ABS warning light on'
       de: 'ABS-Warnleuchte an'
@@ -833,6 +838,11 @@
       label:
         en: Pump motor relay failed
         de: Pumpenmotor-Relais defekt
+    - id: connector_corrosion
+      likelihood: low
+      label:
+        en: 'Connector pins corroded - high contact resistance'
+        de: 'Steckerkontakte korrodiert - hoher Übergangswiderstand'
   symptoms:
     - en: 'ABS warning light on'
       de: 'ABS-Warnleuchte an'
@@ -880,6 +890,11 @@
       label:
         en: Relay contacts welded closed
         de: Relaiskontakte verschweisst
+    - id: connector_corrosion
+      likelihood: low
+      label:
+        en: 'Connector pins corroded - high contact resistance'
+        de: 'Steckerkontakte korrodiert - hoher Übergangswiderstand'
   symptoms:
     - en: 'ABS warning light on'
       de: 'ABS-Warnleuchte an'
@@ -1069,6 +1084,11 @@
       label:
         en: Sensor coil open internally
         de: Sensorspule intern unterbrochen
+    - id: connector_corrosion
+      likelihood: low
+      label:
+        en: 'Connector pins corroded - high contact resistance'
+        de: 'Steckerkontakte korrodiert - hoher Übergangswiderstand'
   symptoms:
     - en: 'ABS warning light on'
       de: 'ABS-Warnleuchte an'
@@ -1115,6 +1135,11 @@
       label:
         en: Connector water ingress
         de: Wassereintritt am Steckverbinder
+    - id: connector_corrosion
+      likelihood: low
+      label:
+        en: 'Connector pins corroded - high contact resistance'
+        de: 'Steckerkontakte korrodiert - hoher Übergangswiderstand'
   symptoms:
     - en: 'ABS warning light on'
       de: 'ABS-Warnleuchte an'
@@ -1162,6 +1187,11 @@
       label:
         en: Tone ring cracked or missing teeth
         de: Polrad gerissen oder mit fehlenden Zaehnen
+    - id: connector_intermittent
+      likelihood: low
+      label:
+        en: 'Connector with intermittent contact under vibration'
+        de: 'Stecker mit sporadischem Kontakt unter Vibration'
   symptoms:
     - en: 'ABS warning light on'
       de: 'ABS-Warnleuchte an'
@@ -1316,6 +1346,11 @@
       label:
         en: Wire chafe on bracket
         de: Kabel an Halter durchgescheuert
+    - id: connector_intermittent
+      likelihood: low
+      label:
+        en: 'Connector with intermittent contact under vibration'
+        de: 'Stecker mit sporadischem Kontakt unter Vibration'
   symptoms:
     - en: 'ABS warning light on'
       de: 'ABS-Warnleuchte an'
@@ -1822,6 +1857,11 @@
       label:
         en: Sensor air gap too large
         de: Sensor-Luftspalt zu gross
+    - id: sensor_aged
+      likelihood: low
+      label:
+        en: 'Sensor element aged beyond calibration window'
+        de: 'Sensorelement gealtert über Kalibrierfenster hinaus'
   symptoms:
     - en: 'ABS warning light on'
       de: 'ABS-Warnleuchte an'
@@ -1868,6 +1908,11 @@
       label:
         en: Sensor coil open
         de: Sensorspule unterbrochen
+    - id: connector_corrosion
+      likelihood: low
+      label:
+        en: 'Connector pins corroded - high contact resistance'
+        de: 'Steckerkontakte korrodiert - hoher Übergangswiderstand'
   symptoms:
     - en: 'ABS warning light on'
       de: 'ABS-Warnleuchte an'
@@ -1914,6 +1959,11 @@
       label:
         en: Connector water ingress
         de: Wassereintritt am Steckverbinder
+    - id: connector_corrosion
+      likelihood: low
+      label:
+        en: 'Connector pins corroded - high contact resistance'
+        de: 'Steckerkontakte korrodiert - hoher Übergangswiderstand'
   symptoms:
     - en: 'ABS warning light on'
       de: 'ABS-Warnleuchte an'
@@ -1961,6 +2011,11 @@
       label:
         en: Tone ring cracked
         de: Polrad gerissen
+    - id: connector_intermittent
+      likelihood: low
+      label:
+        en: 'Connector with intermittent contact under vibration'
+        de: 'Stecker mit sporadischem Kontakt unter Vibration'
   symptoms:
     - en: 'ABS warning light on'
       de: 'ABS-Warnleuchte an'
@@ -2067,6 +2122,11 @@
       label:
         en: Wire chafe on bracket
         de: Kabel an Halter durchgescheuert
+    - id: connector_intermittent
+      likelihood: low
+      label:
+        en: 'Connector with intermittent contact under vibration'
+        de: 'Stecker mit sporadischem Kontakt unter Vibration'
   symptoms:
     - en: 'ABS warning light on'
       de: 'ABS-Warnleuchte an'
@@ -2283,6 +2343,16 @@
       label:
         en: Wiring open
         de: Verkabelung unterbrochen
+    - id: connector_back_out
+      likelihood: low
+      label:
+        en: 'Pin pushed back out of connector body'
+        de: 'Pin aus dem Steckergehäuse zurückgedrückt'
+    - id: solder_joint_cracked
+      likelihood: low
+      label:
+        en: 'Cracked solder joint inside the module or sensor'
+        de: 'Gerissene Lötstelle im Modul oder Sensor'
   symptoms:
     - en: 'ABS warning light on'
       de: 'ABS-Warnleuchte an'
@@ -2623,6 +2693,11 @@
       label:
         en: Sensor open internally
         de: Sensor intern unterbrochen
+    - id: connector_corrosion
+      likelihood: low
+      label:
+        en: 'Connector pins corroded - high contact resistance'
+        de: 'Steckerkontakte korrodiert - hoher Übergangswiderstand'
   symptoms:
     - en: 'ABS warning light on'
       de: 'ABS-Warnleuchte an'
@@ -2669,6 +2744,11 @@
       label:
         en: Connector water ingress
         de: Wassereintritt am Steckverbinder
+    - id: connector_corrosion
+      likelihood: low
+      label:
+        en: 'Connector pins corroded - high contact resistance'
+        de: 'Steckerkontakte korrodiert - hoher Übergangswiderstand'
   symptoms:
     - en: 'ABS warning light on'
       de: 'ABS-Warnleuchte an'
@@ -2716,6 +2796,11 @@
       label:
         en: Tone ring cracked
         de: Polrad gerissen
+    - id: connector_intermittent
+      likelihood: low
+      label:
+        en: 'Connector with intermittent contact under vibration'
+        de: 'Stecker mit sporadischem Kontakt unter Vibration'
   symptoms:
     - en: 'ABS warning light on'
       de: 'ABS-Warnleuchte an'
@@ -2809,6 +2894,11 @@
       label:
         en: Wire chafe
         de: Kabel durchgescheuert
+    - id: connector_intermittent
+      likelihood: low
+      label:
+        en: 'Connector with intermittent contact under vibration'
+        de: 'Stecker mit sporadischem Kontakt unter Vibration'
   symptoms:
     - en: 'ABS warning light on'
       de: 'ABS-Warnleuchte an'
@@ -2903,6 +2993,11 @@
       label:
         en: Sensor air gap too large
         de: Sensor-Luftspalt zu gross
+    - id: sensor_aged
+      likelihood: low
+      label:
+        en: 'Sensor element aged beyond calibration window'
+        de: 'Sensorelement gealtert über Kalibrierfenster hinaus'
   symptoms:
     - en: 'ABS warning light on'
       de: 'ABS-Warnleuchte an'
@@ -2949,6 +3044,11 @@
       label:
         en: Sensor open
         de: Sensor unterbrochen
+    - id: connector_corrosion
+      likelihood: low
+      label:
+        en: 'Connector pins corroded - high contact resistance'
+        de: 'Steckerkontakte korrodiert - hoher Übergangswiderstand'
   symptoms:
     - en: 'ABS warning light on'
       de: 'ABS-Warnleuchte an'
@@ -2995,6 +3095,11 @@
       label:
         en: Connector water ingress
         de: Wassereintritt am Steckverbinder
+    - id: connector_corrosion
+      likelihood: low
+      label:
+        en: 'Connector pins corroded - high contact resistance'
+        de: 'Steckerkontakte korrodiert - hoher Übergangswiderstand'
   symptoms:
     - en: 'ABS warning light on'
       de: 'ABS-Warnleuchte an'
@@ -3042,6 +3147,11 @@
       label:
         en: Tone ring cracked
         de: Polrad gerissen
+    - id: connector_intermittent
+      likelihood: low
+      label:
+        en: 'Connector with intermittent contact under vibration'
+        de: 'Stecker mit sporadischem Kontakt unter Vibration'
   symptoms:
     - en: 'ABS warning light on'
       de: 'ABS-Warnleuchte an'
@@ -3135,6 +3245,11 @@
       label:
         en: Wire chafe
         de: Kabel durchgescheuert
+    - id: connector_intermittent
+      likelihood: low
+      label:
+        en: 'Connector with intermittent contact under vibration'
+        de: 'Stecker mit sporadischem Kontakt unter Vibration'
   symptoms:
     - en: 'ABS warning light on'
       de: 'ABS-Warnleuchte an'
@@ -4251,6 +4366,11 @@
       label:
         en: Internal hydraulic block leak
         de: Interner Leckage im Hydraulikblock
+    - id: sensor_aged
+      likelihood: low
+      label:
+        en: 'Sensor element aged beyond calibration window'
+        de: 'Sensorelement gealtert über Kalibrierfenster hinaus'
   symptoms:
     - en: 'ABS warning light on'
       de: 'ABS-Warnleuchte an'
@@ -7412,6 +7532,11 @@
       label:
         en: Ground wire broken
         de: Masseleitung gebrochen
+    - id: connector_back_out
+      likelihood: low
+      label:
+        en: 'Pin pushed back out of connector body'
+        de: 'Pin aus dem Steckergehäuse zurückgedrückt'
   symptoms:
     - en: 'ABS warning light on'
       de: 'ABS-Warnleuchte an'
@@ -9742,6 +9867,11 @@
       label:
         en: Sensor mounting loose
         de: Sensorbefestigung lose
+    - id: sensor_aged
+      likelihood: low
+      label:
+        en: 'Sensor element aged beyond calibration window'
+        de: 'Sensorelement gealtert über Kalibrierfenster hinaus'
   symptoms:
     - en: 'ABS warning light on'
       de: 'ABS-Warnleuchte an'
@@ -9836,6 +9966,11 @@
       label:
         en: Sensor mounting loose
         de: Sensorbefestigung lose
+    - id: sensor_aged
+      likelihood: low
+      label:
+        en: 'Sensor element aged beyond calibration window'
+        de: 'Sensorelement gealtert über Kalibrierfenster hinaus'
   symptoms:
     - en: 'ABS warning light on'
       de: 'ABS-Warnleuchte an'
@@ -9973,6 +10108,16 @@
       label:
         en: Signal wire shorted to ground
         de: Signalleitung mit Masseschluss
+    - id: connector_corrosion
+      likelihood: low
+      label:
+        en: 'Connector pins corroded - high contact resistance'
+        de: 'Steckerkontakte korrodiert - hoher Übergangswiderstand'
+    - id: harness_chafe
+      likelihood: low
+      label:
+        en: 'Harness chafing through insulation'
+        de: 'Kabelbaum scheuert sich durch die Isolation'
   symptoms:
     - en: 'ABS warning light on'
       de: 'ABS-Warnleuchte an'
@@ -10019,6 +10164,16 @@
       label:
         en: Signal wire open or short to power
         de: Signalleitung unterbrochen oder Plus-Schluss
+    - id: connector_corrosion
+      likelihood: low
+      label:
+        en: 'Connector pins corroded - high contact resistance'
+        de: 'Steckerkontakte korrodiert - hoher Übergangswiderstand'
+    - id: supply_pinch
+      likelihood: low
+      label:
+        en: 'Supply wire pinched against B+ source'
+        de: 'Versorgungsleitung gegen B+-Quelle eingeklemmt'
   symptoms:
     - en: 'ABS warning light on'
       de: 'ABS-Warnleuchte an'
@@ -10065,6 +10220,16 @@
       label:
         en: Connector loose or chafed wiring
         de: Stecker locker oder Verkabelung gescheuert
+    - id: connector_intermittent
+      likelihood: low
+      label:
+        en: 'Connector with intermittent contact under vibration'
+        de: 'Stecker mit sporadischem Kontakt unter Vibration'
+    - id: harness_vibration
+      likelihood: low
+      label:
+        en: 'Harness routed against vibrating component'
+        de: 'Kabelbaum verläuft an vibrierender Komponente'
   symptoms:
     - en: 'ABS warning light on'
       de: 'ABS-Warnleuchte an'
@@ -10157,6 +10322,16 @@
       label:
         en: Wire broken or connector unplugged
         de: Kabelbruch oder Stecker ab
+    - id: connector_back_out
+      likelihood: low
+      label:
+        en: 'Pin pushed back out of connector body'
+        de: 'Pin aus dem Steckergehäuse zurückgedrückt'
+    - id: solder_joint_cracked
+      likelihood: low
+      label:
+        en: 'Cracked solder joint inside the module or sensor'
+        de: 'Gerissene Lötstelle im Modul oder Sensor'
   symptoms:
     - en: 'ABS warning light on'
       de: 'ABS-Warnleuchte an'
@@ -10202,6 +10377,16 @@
       label:
         en: Sensor reading drifted
         de: Sensorwert verschoben
+    - id: sensor_aged
+      likelihood: low
+      label:
+        en: 'Sensor element aged beyond calibration window'
+        de: 'Sensorelement gealtert über Kalibrierfenster hinaus'
+    - id: mounting_loose
+      likelihood: low
+      label:
+        en: 'Sensor mounting loose - signal damping'
+        de: 'Sensorbefestigung lose - Signaldämpfung'
   symptoms:
     - en: 'ABS warning light on'
       de: 'ABS-Warnleuchte an'
@@ -10248,6 +10433,16 @@
       label:
         en: Signal wire shorted to ground
         de: Signalleitung mit Masseschluss
+    - id: connector_corrosion
+      likelihood: low
+      label:
+        en: 'Connector pins corroded - high contact resistance'
+        de: 'Steckerkontakte korrodiert - hoher Übergangswiderstand'
+    - id: harness_chafe
+      likelihood: low
+      label:
+        en: 'Harness chafing through insulation'
+        de: 'Kabelbaum scheuert sich durch die Isolation'
   symptoms:
     - en: 'ABS warning light on'
       de: 'ABS-Warnleuchte an'
@@ -10294,6 +10489,16 @@
       label:
         en: Signal wire open or short to power
         de: Signalleitung unterbrochen oder Plus-Schluss
+    - id: connector_corrosion
+      likelihood: low
+      label:
+        en: 'Connector pins corroded - high contact resistance'
+        de: 'Steckerkontakte korrodiert - hoher Übergangswiderstand'
+    - id: supply_pinch
+      likelihood: low
+      label:
+        en: 'Supply wire pinched against B+ source'
+        de: 'Versorgungsleitung gegen B+-Quelle eingeklemmt'
   symptoms:
     - en: 'ABS warning light on'
       de: 'ABS-Warnleuchte an'
@@ -10340,6 +10545,16 @@
       label:
         en: Connector loose or chafed wiring
         de: Stecker locker oder Verkabelung gescheuert
+    - id: connector_intermittent
+      likelihood: low
+      label:
+        en: 'Connector with intermittent contact under vibration'
+        de: 'Stecker mit sporadischem Kontakt unter Vibration'
+    - id: harness_vibration
+      likelihood: low
+      label:
+        en: 'Harness routed against vibrating component'
+        de: 'Kabelbaum verläuft an vibrierender Komponente'
   symptoms:
     - en: 'ABS warning light on'
       de: 'ABS-Warnleuchte an'
@@ -10431,6 +10646,16 @@
       label:
         en: Wire broken or connector unplugged
         de: Kabelbruch oder Stecker ab
+    - id: connector_back_out
+      likelihood: low
+      label:
+        en: 'Pin pushed back out of connector body'
+        de: 'Pin aus dem Steckergehäuse zurückgedrückt'
+    - id: solder_joint_cracked
+      likelihood: low
+      label:
+        en: 'Cracked solder joint inside the module or sensor'
+        de: 'Gerissene Lötstelle im Modul oder Sensor'
   symptoms:
     - en: 'ABS warning light on'
       de: 'ABS-Warnleuchte an'
@@ -10476,6 +10701,16 @@
       label:
         en: Sensor reading drifted
         de: Sensorwert verschoben
+    - id: sensor_aged
+      likelihood: low
+      label:
+        en: 'Sensor element aged beyond calibration window'
+        de: 'Sensorelement gealtert über Kalibrierfenster hinaus'
+    - id: mounting_loose
+      likelihood: low
+      label:
+        en: 'Sensor mounting loose - signal damping'
+        de: 'Sensorbefestigung lose - Signaldämpfung'
   symptoms:
     - en: 'ABS warning light on'
       de: 'ABS-Warnleuchte an'
@@ -10521,6 +10756,16 @@
       label:
         en: Signal wire shorted to ground
         de: Signalleitung mit Masseschluss
+    - id: connector_corrosion
+      likelihood: low
+      label:
+        en: 'Connector pins corroded - high contact resistance'
+        de: 'Steckerkontakte korrodiert - hoher Übergangswiderstand'
+    - id: harness_chafe
+      likelihood: low
+      label:
+        en: 'Harness chafing through insulation'
+        de: 'Kabelbaum scheuert sich durch die Isolation'
   symptoms:
     - en: 'ABS warning light on'
       de: 'ABS-Warnleuchte an'
@@ -10567,6 +10812,16 @@
       label:
         en: Signal wire open or short to power
         de: Signalleitung unterbrochen oder Plus-Schluss
+    - id: connector_corrosion
+      likelihood: low
+      label:
+        en: 'Connector pins corroded - high contact resistance'
+        de: 'Steckerkontakte korrodiert - hoher Übergangswiderstand'
+    - id: supply_pinch
+      likelihood: low
+      label:
+        en: 'Supply wire pinched against B+ source'
+        de: 'Versorgungsleitung gegen B+-Quelle eingeklemmt'
   symptoms:
     - en: 'ABS warning light on'
       de: 'ABS-Warnleuchte an'
@@ -10706,6 +10961,16 @@
       label:
         en: Wire broken or connector unplugged
         de: Kabelbruch oder Stecker ab
+    - id: connector_back_out
+      likelihood: low
+      label:
+        en: 'Pin pushed back out of connector body'
+        de: 'Pin aus dem Steckergehäuse zurückgedrückt'
+    - id: solder_joint_cracked
+      likelihood: low
+      label:
+        en: 'Cracked solder joint inside the module or sensor'
+        de: 'Gerissene Lötstelle im Modul oder Sensor'
   symptoms:
     - en: 'ABS warning light on'
       de: 'ABS-Warnleuchte an'
@@ -10751,6 +11016,16 @@
       label:
         en: Sensor reading drifted
         de: Sensorwert verschoben
+    - id: sensor_aged
+      likelihood: low
+      label:
+        en: 'Sensor element aged beyond calibration window'
+        de: 'Sensorelement gealtert über Kalibrierfenster hinaus'
+    - id: mounting_loose
+      likelihood: low
+      label:
+        en: 'Sensor mounting loose - signal damping'
+        de: 'Sensorbefestigung lose - Signaldämpfung'
   symptoms:
     - en: 'ABS warning light on'
       de: 'ABS-Warnleuchte an'
@@ -10797,6 +11072,16 @@
       label:
         en: Signal wire shorted to ground
         de: Signalleitung mit Masseschluss
+    - id: connector_corrosion
+      likelihood: low
+      label:
+        en: 'Connector pins corroded - high contact resistance'
+        de: 'Steckerkontakte korrodiert - hoher Übergangswiderstand'
+    - id: harness_chafe
+      likelihood: low
+      label:
+        en: 'Harness chafing through insulation'
+        de: 'Kabelbaum scheuert sich durch die Isolation'
   symptoms:
     - en: 'ABS warning light on'
       de: 'ABS-Warnleuchte an'
@@ -10843,6 +11128,16 @@
       label:
         en: Signal wire open or short to power
         de: Signalleitung unterbrochen oder Plus-Schluss
+    - id: connector_corrosion
+      likelihood: low
+      label:
+        en: 'Connector pins corroded - high contact resistance'
+        de: 'Steckerkontakte korrodiert - hoher Übergangswiderstand'
+    - id: supply_pinch
+      likelihood: low
+      label:
+        en: 'Supply wire pinched against B+ source'
+        de: 'Versorgungsleitung gegen B+-Quelle eingeklemmt'
   symptoms:
     - en: 'ABS warning light on'
       de: 'ABS-Warnleuchte an'
@@ -10889,6 +11184,16 @@
       label:
         en: Connector loose or chafed wiring
         de: Stecker locker oder Verkabelung gescheuert
+    - id: connector_intermittent
+      likelihood: low
+      label:
+        en: 'Connector with intermittent contact under vibration'
+        de: 'Stecker mit sporadischem Kontakt unter Vibration'
+    - id: harness_vibration
+      likelihood: low
+      label:
+        en: 'Harness routed against vibrating component'
+        de: 'Kabelbaum verläuft an vibrierender Komponente'
   symptoms:
     - en: 'ABS warning light on'
       de: 'ABS-Warnleuchte an'
@@ -11159,6 +11464,16 @@
       label:
         en: Sensor reading drifted
         de: Sensorwert verschoben
+    - id: sensor_aged
+      likelihood: low
+      label:
+        en: 'Sensor element aged beyond calibration window'
+        de: 'Sensorelement gealtert über Kalibrierfenster hinaus'
+    - id: mounting_loose
+      likelihood: low
+      label:
+        en: 'Sensor mounting loose - signal damping'
+        de: 'Sensorbefestigung lose - Signaldämpfung'
   symptoms:
     - en: 'ABS warning light on'
       de: 'ABS-Warnleuchte an'
@@ -11249,6 +11564,16 @@
       label:
         en: Connector loose
         de: Stecker locker
+    - id: connector_intermittent
+      likelihood: low
+      label:
+        en: 'Connector with intermittent contact under vibration'
+        de: 'Stecker mit sporadischem Kontakt unter Vibration'
+    - id: harness_vibration
+      likelihood: low
+      label:
+        en: 'Harness routed against vibrating component'
+        de: 'Kabelbaum verläuft an vibrierender Komponente'
   symptoms:
     - en: 'ABS warning light on'
       de: 'ABS-Warnleuchte an'
@@ -11385,6 +11710,16 @@
       label:
         en: Sensor reading drifted
         de: Sensorwert verschoben
+    - id: sensor_aged
+      likelihood: low
+      label:
+        en: 'Sensor element aged beyond calibration window'
+        de: 'Sensorelement gealtert über Kalibrierfenster hinaus'
+    - id: mounting_loose
+      likelihood: low
+      label:
+        en: 'Sensor mounting loose - signal damping'
+        de: 'Sensorbefestigung lose - Signaldämpfung'
   symptoms:
     - en: 'ABS warning light on'
       de: 'ABS-Warnleuchte an'
@@ -11475,6 +11810,16 @@
       label:
         en: Connector loose
         de: Stecker locker
+    - id: connector_intermittent
+      likelihood: low
+      label:
+        en: 'Connector with intermittent contact under vibration'
+        de: 'Stecker mit sporadischem Kontakt unter Vibration'
+    - id: harness_vibration
+      likelihood: low
+      label:
+        en: 'Harness routed against vibrating component'
+        de: 'Kabelbaum verläuft an vibrierender Komponente'
   symptoms:
     - en: 'ABS warning light on'
       de: 'ABS-Warnleuchte an'
@@ -11697,6 +12042,16 @@
       label:
         en: Sensor reading drifted
         de: Sensorwert verschoben
+    - id: sensor_aged
+      likelihood: low
+      label:
+        en: 'Sensor element aged beyond calibration window'
+        de: 'Sensorelement gealtert über Kalibrierfenster hinaus'
+    - id: mounting_loose
+      likelihood: low
+      label:
+        en: 'Sensor mounting loose - signal damping'
+        de: 'Sensorbefestigung lose - Signaldämpfung'
   symptoms:
     - en: 'ABS warning light on'
       de: 'ABS-Warnleuchte an'
@@ -11829,6 +12184,16 @@
       label:
         en: Pump motor failed
         de: Pumpenmotor defekt
+    - id: sensor_aged
+      likelihood: low
+      label:
+        en: 'Sensor element aged beyond calibration window'
+        de: 'Sensorelement gealtert über Kalibrierfenster hinaus'
+    - id: mounting_loose
+      likelihood: low
+      label:
+        en: 'Sensor mounting loose - signal damping'
+        de: 'Sensorbefestigung lose - Signaldämpfung'
   symptoms:
     - en: 'ABS warning light on'
       de: 'ABS-Warnleuchte an'
@@ -11874,6 +12239,16 @@
       label:
         en: Wiring break or relay open
         de: Kabelbruch oder Relais offen
+    - id: connector_back_out
+      likelihood: low
+      label:
+        en: 'Pin pushed back out of connector body'
+        de: 'Pin aus dem Steckergehäuse zurückgedrückt'
+    - id: solder_joint_cracked
+      likelihood: low
+      label:
+        en: 'Cracked solder joint inside the module or sensor'
+        de: 'Gerissene Lötstelle im Modul oder Sensor'
   symptoms:
     - en: 'ABS warning light on'
       de: 'ABS-Warnleuchte an'
@@ -11919,6 +12294,16 @@
       label:
         en: Wiring shorted to battery
         de: Verkabelung mit Plus-Schluss
+    - id: connector_corrosion
+      likelihood: low
+      label:
+        en: 'Connector pins corroded - high contact resistance'
+        de: 'Steckerkontakte korrodiert - hoher Übergangswiderstand'
+    - id: supply_pinch
+      likelihood: low
+      label:
+        en: 'Supply wire pinched against B+ source'
+        de: 'Versorgungsleitung gegen B+-Quelle eingeklemmt'
   symptoms:
     - en: 'ABS warning light on'
       de: 'ABS-Warnleuchte an'
@@ -11964,6 +12349,16 @@
       label:
         en: Wiring shorted to ground
         de: Verkabelung mit Masseschluss
+    - id: connector_corrosion
+      likelihood: low
+      label:
+        en: 'Connector pins corroded - high contact resistance'
+        de: 'Steckerkontakte korrodiert - hoher Übergangswiderstand'
+    - id: harness_chafe
+      likelihood: low
+      label:
+        en: 'Harness chafing through insulation'
+        de: 'Kabelbaum scheuert sich durch die Isolation'
   symptoms:
     - en: 'ABS warning light on'
       de: 'ABS-Warnleuchte an'
@@ -12009,6 +12404,16 @@
       label:
         en: Supply fuse blown
         de: Versorgungssicherung defekt
+    - id: connector_back_out
+      likelihood: low
+      label:
+        en: 'Pin pushed back out of connector body'
+        de: 'Pin aus dem Steckergehäuse zurückgedrückt'
+    - id: solder_joint_cracked
+      likelihood: low
+      label:
+        en: 'Cracked solder joint inside the module or sensor'
+        de: 'Gerissene Lötstelle im Modul oder Sensor'
   symptoms:
     - en: 'ABS warning light on'
       de: 'ABS-Warnleuchte an'
@@ -12053,6 +12458,16 @@
       label:
         en: Motor failed
         de: Motor defekt
+    - id: sensor_aged
+      likelihood: low
+      label:
+        en: 'Sensor element aged beyond calibration window'
+        de: 'Sensorelement gealtert über Kalibrierfenster hinaus'
+    - id: mounting_loose
+      likelihood: low
+      label:
+        en: 'Sensor mounting loose - signal damping'
+        de: 'Sensorbefestigung lose - Signaldämpfung'
   symptoms:
     - en: 'ABS warning light on'
       de: 'ABS-Warnleuchte an'
@@ -12099,6 +12514,16 @@
       label:
         en: Wiring break
         de: Kabelbruch
+    - id: connector_back_out
+      likelihood: low
+      label:
+        en: 'Pin pushed back out of connector body'
+        de: 'Pin aus dem Steckergehäuse zurückgedrückt'
+    - id: solder_joint_cracked
+      likelihood: low
+      label:
+        en: 'Cracked solder joint inside the module or sensor'
+        de: 'Gerissene Lötstelle im Modul oder Sensor'
   symptoms:
     - en: 'ABS warning light on'
       de: 'ABS-Warnleuchte an'
@@ -12145,6 +12570,16 @@
       label:
         en: Wiring shorted to battery
         de: Verkabelung mit Plus-Schluss
+    - id: connector_corrosion
+      likelihood: low
+      label:
+        en: 'Connector pins corroded - high contact resistance'
+        de: 'Steckerkontakte korrodiert - hoher Übergangswiderstand'
+    - id: supply_pinch
+      likelihood: low
+      label:
+        en: 'Supply wire pinched against B+ source'
+        de: 'Versorgungsleitung gegen B+-Quelle eingeklemmt'
   symptoms:
     - en: 'ABS warning light on'
       de: 'ABS-Warnleuchte an'
@@ -12191,6 +12626,16 @@
       label:
         en: Wiring shorted to ground
         de: Verkabelung mit Masseschluss
+    - id: connector_corrosion
+      likelihood: low
+      label:
+        en: 'Connector pins corroded - high contact resistance'
+        de: 'Steckerkontakte korrodiert - hoher Übergangswiderstand'
+    - id: harness_chafe
+      likelihood: low
+      label:
+        en: 'Harness chafing through insulation'
+        de: 'Kabelbaum scheuert sich durch die Isolation'
   symptoms:
     - en: 'ABS warning light on'
       de: 'ABS-Warnleuchte an'
@@ -12237,6 +12682,16 @@
       label:
         en: Supply fuse blown
         de: Versorgungssicherung defekt
+    - id: connector_back_out
+      likelihood: low
+      label:
+        en: 'Pin pushed back out of connector body'
+        de: 'Pin aus dem Steckergehäuse zurückgedrückt'
+    - id: solder_joint_cracked
+      likelihood: low
+      label:
+        en: 'Cracked solder joint inside the module or sensor'
+        de: 'Gerissene Lötstelle im Modul oder Sensor'
   symptoms:
     - en: 'ABS warning light on'
       de: 'ABS-Warnleuchte an'
@@ -12282,6 +12737,16 @@
       label:
         en: Motor failed
         de: Motor defekt
+    - id: sensor_aged
+      likelihood: low
+      label:
+        en: 'Sensor element aged beyond calibration window'
+        de: 'Sensorelement gealtert über Kalibrierfenster hinaus'
+    - id: mounting_loose
+      likelihood: low
+      label:
+        en: 'Sensor mounting loose - signal damping'
+        de: 'Sensorbefestigung lose - Signaldämpfung'
   symptoms:
     - en: 'ABS warning light on'
       de: 'ABS-Warnleuchte an'
@@ -12328,6 +12793,16 @@
       label:
         en: Wiring break
         de: Kabelbruch
+    - id: connector_back_out
+      likelihood: low
+      label:
+        en: 'Pin pushed back out of connector body'
+        de: 'Pin aus dem Steckergehäuse zurückgedrückt'
+    - id: solder_joint_cracked
+      likelihood: low
+      label:
+        en: 'Cracked solder joint inside the module or sensor'
+        de: 'Gerissene Lötstelle im Modul oder Sensor'
   symptoms:
     - en: 'ABS warning light on'
       de: 'ABS-Warnleuchte an'
@@ -12374,6 +12849,16 @@
       label:
         en: Wiring shorted to battery
         de: Verkabelung mit Plus-Schluss
+    - id: connector_corrosion
+      likelihood: low
+      label:
+        en: 'Connector pins corroded - high contact resistance'
+        de: 'Steckerkontakte korrodiert - hoher Übergangswiderstand'
+    - id: supply_pinch
+      likelihood: low
+      label:
+        en: 'Supply wire pinched against B+ source'
+        de: 'Versorgungsleitung gegen B+-Quelle eingeklemmt'
   symptoms:
     - en: 'ABS warning light on'
       de: 'ABS-Warnleuchte an'
@@ -12420,6 +12905,16 @@
       label:
         en: Wiring shorted to ground
         de: Verkabelung mit Masseschluss
+    - id: connector_corrosion
+      likelihood: low
+      label:
+        en: 'Connector pins corroded - high contact resistance'
+        de: 'Steckerkontakte korrodiert - hoher Übergangswiderstand'
+    - id: harness_chafe
+      likelihood: low
+      label:
+        en: 'Harness chafing through insulation'
+        de: 'Kabelbaum scheuert sich durch die Isolation'
   symptoms:
     - en: 'ABS warning light on'
       de: 'ABS-Warnleuchte an'
@@ -12466,6 +12961,16 @@
       label:
         en: Supply fuse blown
         de: Versorgungssicherung defekt
+    - id: connector_back_out
+      likelihood: low
+      label:
+        en: 'Pin pushed back out of connector body'
+        de: 'Pin aus dem Steckergehäuse zurückgedrückt'
+    - id: solder_joint_cracked
+      likelihood: low
+      label:
+        en: 'Cracked solder joint inside the module or sensor'
+        de: 'Gerissene Lötstelle im Modul oder Sensor'
   symptoms:
     - en: 'ABS warning light on'
       de: 'ABS-Warnleuchte an'
@@ -12556,6 +13061,16 @@
       label:
         en: Supply fuse blown
         de: Versorgungssicherung defekt
+    - id: connector_back_out
+      likelihood: low
+      label:
+        en: 'Pin pushed back out of connector body'
+        de: 'Pin aus dem Steckergehäuse zurückgedrückt'
+    - id: solder_joint_cracked
+      likelihood: low
+      label:
+        en: 'Cracked solder joint inside the module or sensor'
+        de: 'Gerissene Lötstelle im Modul oder Sensor'
   symptoms:
     - en: 'ABS warning light on'
       de: 'ABS-Warnleuchte an'
@@ -12600,6 +13115,16 @@
       label:
         en: Sensor reading drifted
         de: Sensorwert verschoben
+    - id: sensor_aged
+      likelihood: low
+      label:
+        en: 'Sensor element aged beyond calibration window'
+        de: 'Sensorelement gealtert über Kalibrierfenster hinaus'
+    - id: mounting_loose
+      likelihood: low
+      label:
+        en: 'Sensor mounting loose - signal damping'
+        de: 'Sensorbefestigung lose - Signaldämpfung'
   symptoms:
     - en: 'ABS warning light on'
       de: 'ABS-Warnleuchte an'
@@ -12644,6 +13169,16 @@
       label:
         en: Sensor reading drifted
         de: Sensorwert verschoben
+    - id: sensor_aged
+      likelihood: low
+      label:
+        en: 'Sensor element aged beyond calibration window'
+        de: 'Sensorelement gealtert über Kalibrierfenster hinaus'
+    - id: mounting_loose
+      likelihood: low
+      label:
+        en: 'Sensor mounting loose - signal damping'
+        de: 'Sensorbefestigung lose - Signaldämpfung'
   symptoms:
     - en: 'ABS warning light on'
       de: 'ABS-Warnleuchte an'
@@ -12690,6 +13225,16 @@
       label:
         en: Signal wire shorted to ground
         de: Signalleitung mit Masseschluss
+    - id: connector_corrosion
+      likelihood: low
+      label:
+        en: 'Connector pins corroded - high contact resistance'
+        de: 'Steckerkontakte korrodiert - hoher Übergangswiderstand'
+    - id: harness_chafe
+      likelihood: low
+      label:
+        en: 'Harness chafing through insulation'
+        de: 'Kabelbaum scheuert sich durch die Isolation'
   symptoms:
     - en: 'ABS warning light on'
       de: 'ABS-Warnleuchte an'
@@ -12736,6 +13281,16 @@
       label:
         en: Signal wire open or short to power
         de: Signalleitung unterbrochen oder Plus-Schluss
+    - id: connector_corrosion
+      likelihood: low
+      label:
+        en: 'Connector pins corroded - high contact resistance'
+        de: 'Steckerkontakte korrodiert - hoher Übergangswiderstand'
+    - id: supply_pinch
+      likelihood: low
+      label:
+        en: 'Supply wire pinched against B+ source'
+        de: 'Versorgungsleitung gegen B+-Quelle eingeklemmt'
   symptoms:
     - en: 'ABS warning light on'
       de: 'ABS-Warnleuchte an'
@@ -12828,6 +13383,16 @@
       label:
         en: Sensor reading drifted
         de: Sensorwert verschoben
+    - id: sensor_aged
+      likelihood: low
+      label:
+        en: 'Sensor element aged beyond calibration window'
+        de: 'Sensorelement gealtert über Kalibrierfenster hinaus'
+    - id: mounting_loose
+      likelihood: low
+      label:
+        en: 'Sensor mounting loose - signal damping'
+        de: 'Sensorbefestigung lose - Signaldämpfung'
   symptoms:
     - en: 'ABS warning light on'
       de: 'ABS-Warnleuchte an'
@@ -12874,6 +13439,16 @@
       label:
         en: Signal wire shorted to ground
         de: Signalleitung mit Masseschluss
+    - id: connector_corrosion
+      likelihood: low
+      label:
+        en: 'Connector pins corroded - high contact resistance'
+        de: 'Steckerkontakte korrodiert - hoher Übergangswiderstand'
+    - id: harness_chafe
+      likelihood: low
+      label:
+        en: 'Harness chafing through insulation'
+        de: 'Kabelbaum scheuert sich durch die Isolation'
   symptoms:
     - en: 'ABS warning light on'
       de: 'ABS-Warnleuchte an'
@@ -12920,6 +13495,16 @@
       label:
         en: Signal wire open or short to power
         de: Signalleitung unterbrochen oder Plus-Schluss
+    - id: connector_corrosion
+      likelihood: low
+      label:
+        en: 'Connector pins corroded - high contact resistance'
+        de: 'Steckerkontakte korrodiert - hoher Übergangswiderstand'
+    - id: supply_pinch
+      likelihood: low
+      label:
+        en: 'Supply wire pinched against B+ source'
+        de: 'Versorgungsleitung gegen B+-Quelle eingeklemmt'
   symptoms:
     - en: 'ABS warning light on'
       de: 'ABS-Warnleuchte an'
@@ -12966,6 +13551,16 @@
       label:
         en: Wire broken
         de: Kabel gebrochen
+    - id: connector_back_out
+      likelihood: low
+      label:
+        en: 'Pin pushed back out of connector body'
+        de: 'Pin aus dem Steckergehäuse zurückgedrückt'
+    - id: solder_joint_cracked
+      likelihood: low
+      label:
+        en: 'Cracked solder joint inside the module or sensor'
+        de: 'Gerissene Lötstelle im Modul oder Sensor'
   symptoms:
     - en: 'ABS warning light on'
       de: 'ABS-Warnleuchte an'
@@ -13100,6 +13695,16 @@
       label:
         en: Supply wiring open
         de: Versorgungsleitung unterbrochen
+    - id: connector_back_out
+      likelihood: low
+      label:
+        en: 'Pin pushed back out of connector body'
+        de: 'Pin aus dem Steckergehäuse zurückgedrückt'
+    - id: solder_joint_cracked
+      likelihood: low
+      label:
+        en: 'Cracked solder joint inside the module or sensor'
+        de: 'Gerissene Lötstelle im Modul oder Sensor'
   symptoms:
     - en: 'ABS warning light on'
       de: 'ABS-Warnleuchte an'
@@ -13190,6 +13795,16 @@
       label:
         en: Signal wire open
         de: Signalleitung unterbrochen
+    - id: connector_back_out
+      likelihood: low
+      label:
+        en: 'Pin pushed back out of connector body'
+        de: 'Pin aus dem Steckergehäuse zurückgedrückt'
+    - id: solder_joint_cracked
+      likelihood: low
+      label:
+        en: 'Cracked solder joint inside the module or sensor'
+        de: 'Gerissene Lötstelle im Modul oder Sensor'
   symptoms:
     - en: 'ABS warning light on'
       de: 'ABS-Warnleuchte an'
@@ -13235,6 +13850,16 @@
       label:
         en: Sensor reading drifted
         de: Sensorwert verschoben
+    - id: sensor_aged
+      likelihood: low
+      label:
+        en: 'Sensor element aged beyond calibration window'
+        de: 'Sensorelement gealtert über Kalibrierfenster hinaus'
+    - id: mounting_loose
+      likelihood: low
+      label:
+        en: 'Sensor mounting loose - signal damping'
+        de: 'Sensorbefestigung lose - Signaldämpfung'
   symptoms:
     - en: 'ABS warning light on'
       de: 'ABS-Warnleuchte an'
@@ -13281,6 +13906,16 @@
       label:
         en: Signal wire shorted to ground
         de: Signalleitung mit Masseschluss
+    - id: connector_corrosion
+      likelihood: low
+      label:
+        en: 'Connector pins corroded - high contact resistance'
+        de: 'Steckerkontakte korrodiert - hoher Übergangswiderstand'
+    - id: harness_chafe
+      likelihood: low
+      label:
+        en: 'Harness chafing through insulation'
+        de: 'Kabelbaum scheuert sich durch die Isolation'
   symptoms:
     - en: 'ABS warning light on'
       de: 'ABS-Warnleuchte an'
@@ -13327,6 +13962,16 @@
       label:
         en: Signal wire shorted to battery
         de: Signalleitung mit Plus-Schluss
+    - id: connector_corrosion
+      likelihood: low
+      label:
+        en: 'Connector pins corroded - high contact resistance'
+        de: 'Steckerkontakte korrodiert - hoher Übergangswiderstand'
+    - id: supply_pinch
+      likelihood: low
+      label:
+        en: 'Supply wire pinched against B+ source'
+        de: 'Versorgungsleitung gegen B+-Quelle eingeklemmt'
   symptoms:
     - en: 'ABS warning light on'
       de: 'ABS-Warnleuchte an'
@@ -13372,6 +14017,16 @@
       label:
         en: Signal wire open
         de: Signalleitung unterbrochen
+    - id: connector_back_out
+      likelihood: low
+      label:
+        en: 'Pin pushed back out of connector body'
+        de: 'Pin aus dem Steckergehäuse zurückgedrückt'
+    - id: solder_joint_cracked
+      likelihood: low
+      label:
+        en: 'Cracked solder joint inside the module or sensor'
+        de: 'Gerissene Lötstelle im Modul oder Sensor'
   symptoms:
     - en: 'ABS warning light on'
       de: 'ABS-Warnleuchte an'
@@ -13417,6 +14072,16 @@
       label:
         en: Sensor reading drifted
         de: Sensorwert verschoben
+    - id: sensor_aged
+      likelihood: low
+      label:
+        en: 'Sensor element aged beyond calibration window'
+        de: 'Sensorelement gealtert über Kalibrierfenster hinaus'
+    - id: mounting_loose
+      likelihood: low
+      label:
+        en: 'Sensor mounting loose - signal damping'
+        de: 'Sensorbefestigung lose - Signaldämpfung'
   symptoms:
     - en: 'ABS warning light on'
       de: 'ABS-Warnleuchte an'
@@ -13463,6 +14128,16 @@
       label:
         en: Signal wire shorted to ground
         de: Signalleitung mit Masseschluss
+    - id: connector_corrosion
+      likelihood: low
+      label:
+        en: 'Connector pins corroded - high contact resistance'
+        de: 'Steckerkontakte korrodiert - hoher Übergangswiderstand'
+    - id: harness_chafe
+      likelihood: low
+      label:
+        en: 'Harness chafing through insulation'
+        de: 'Kabelbaum scheuert sich durch die Isolation'
   symptoms:
     - en: 'ABS warning light on'
       de: 'ABS-Warnleuchte an'
@@ -13562,6 +14237,16 @@
       label:
         en: Wiring open
         de: Verkabelung unterbrochen
+    - id: connector_back_out
+      likelihood: low
+      label:
+        en: 'Pin pushed back out of connector body'
+        de: 'Pin aus dem Steckergehäuse zurückgedrückt'
+    - id: solder_joint_cracked
+      likelihood: low
+      label:
+        en: 'Cracked solder joint inside the module or sensor'
+        de: 'Gerissene Lötstelle im Modul oder Sensor'
   symptoms:
     - en: 'ABS warning light on'
       de: 'ABS-Warnleuchte an'
@@ -13606,6 +14291,16 @@
       label:
         en: Sensor reading drifted
         de: Sensorwert verschoben
+    - id: sensor_aged
+      likelihood: low
+      label:
+        en: 'Sensor element aged beyond calibration window'
+        de: 'Sensorelement gealtert über Kalibrierfenster hinaus'
+    - id: mounting_loose
+      likelihood: low
+      label:
+        en: 'Sensor mounting loose - signal damping'
+        de: 'Sensorbefestigung lose - Signaldämpfung'
   symptoms:
     - en: 'ABS warning light on'
       de: 'ABS-Warnleuchte an'
@@ -13651,6 +14346,16 @@
       label:
         en: Signal wire shorted to ground
         de: Signalleitung mit Masseschluss
+    - id: connector_corrosion
+      likelihood: low
+      label:
+        en: 'Connector pins corroded - high contact resistance'
+        de: 'Steckerkontakte korrodiert - hoher Übergangswiderstand'
+    - id: harness_chafe
+      likelihood: low
+      label:
+        en: 'Harness chafing through insulation'
+        de: 'Kabelbaum scheuert sich durch die Isolation'
   symptoms:
     - en: 'ABS warning light on'
       de: 'ABS-Warnleuchte an'
@@ -13696,6 +14401,16 @@
       label:
         en: Signal wire shorted to battery
         de: Signalleitung mit Plus-Schluss
+    - id: connector_corrosion
+      likelihood: low
+      label:
+        en: 'Connector pins corroded - high contact resistance'
+        de: 'Steckerkontakte korrodiert - hoher Übergangswiderstand'
+    - id: supply_pinch
+      likelihood: low
+      label:
+        en: 'Supply wire pinched against B+ source'
+        de: 'Versorgungsleitung gegen B+-Quelle eingeklemmt'
   symptoms:
     - en: 'ABS warning light on'
       de: 'ABS-Warnleuchte an'
@@ -13792,6 +14507,11 @@
       label:
         en: Vacuum pump weak
         de: Vakuumpumpe schwach
+    - id: sensor_aged
+      likelihood: low
+      label:
+        en: 'Sensor element aged beyond calibration window'
+        de: 'Sensorelement gealtert über Kalibrierfenster hinaus'
   symptoms:
     - en: 'ABS warning light on'
       de: 'ABS-Warnleuchte an'
@@ -13922,6 +14642,16 @@
       label:
         en: Module reading drifted
         de: Modulwert verschoben
+    - id: sensor_aged
+      likelihood: low
+      label:
+        en: 'Sensor element aged beyond calibration window'
+        de: 'Sensorelement gealtert über Kalibrierfenster hinaus'
+    - id: mounting_loose
+      likelihood: low
+      label:
+        en: 'Sensor mounting loose - signal damping'
+        de: 'Sensorbefestigung lose - Signaldämpfung'
   symptoms:
     - en: 'ABS warning light on'
       de: 'ABS-Warnleuchte an'
@@ -14054,6 +14784,16 @@
       label:
         en: Connector with high resistance
         de: Stecker mit hohem Übergangswiderstand
+    - id: sensor_aged
+      likelihood: low
+      label:
+        en: 'Sensor element aged beyond calibration window'
+        de: 'Sensorelement gealtert über Kalibrierfenster hinaus'
+    - id: mounting_loose
+      likelihood: low
+      label:
+        en: 'Sensor mounting loose - signal damping'
+        de: 'Sensorbefestigung lose - Signaldämpfung'
   symptoms:
     - en: 'ABS warning light on'
       de: 'ABS-Warnleuchte an'
@@ -14330,6 +15070,16 @@
       label:
         en: Supply wiring open
         de: Versorgungsleitung unterbrochen
+    - id: connector_back_out
+      likelihood: low
+      label:
+        en: 'Pin pushed back out of connector body'
+        de: 'Pin aus dem Steckergehäuse zurückgedrückt'
+    - id: solder_joint_cracked
+      likelihood: low
+      label:
+        en: 'Cracked solder joint inside the module or sensor'
+        de: 'Gerissene Lötstelle im Modul oder Sensor'
   symptoms:
     - en: 'ABS warning light on'
       de: 'ABS-Warnleuchte an'
@@ -14512,6 +15262,16 @@
       label:
         en: Wiring break or coil open
         de: Kabelbruch oder Spule unterbrochen
+    - id: connector_back_out
+      likelihood: low
+      label:
+        en: 'Pin pushed back out of connector body'
+        de: 'Pin aus dem Steckergehäuse zurückgedrückt'
+    - id: solder_joint_cracked
+      likelihood: low
+      label:
+        en: 'Cracked solder joint inside the module or sensor'
+        de: 'Gerissene Lötstelle im Modul oder Sensor'
   symptoms:
     - en: 'ABS warning light on'
       de: 'ABS-Warnleuchte an'
@@ -14556,6 +15316,16 @@
       label:
         en: Wiring shorted to ground
         de: Verkabelung mit Masseschluss
+    - id: connector_corrosion
+      likelihood: low
+      label:
+        en: 'Connector pins corroded - high contact resistance'
+        de: 'Steckerkontakte korrodiert - hoher Übergangswiderstand'
+    - id: harness_chafe
+      likelihood: low
+      label:
+        en: 'Harness chafing through insulation'
+        de: 'Kabelbaum scheuert sich durch die Isolation'
   symptoms:
     - en: 'ABS warning light on'
       de: 'ABS-Warnleuchte an'
@@ -14600,6 +15370,16 @@
       label:
         en: Wiring shorted to battery
         de: Verkabelung mit Plus-Schluss
+    - id: connector_corrosion
+      likelihood: low
+      label:
+        en: 'Connector pins corroded - high contact resistance'
+        de: 'Steckerkontakte korrodiert - hoher Übergangswiderstand'
+    - id: supply_pinch
+      likelihood: low
+      label:
+        en: 'Supply wire pinched against B+ source'
+        de: 'Versorgungsleitung gegen B+-Quelle eingeklemmt'
   symptoms:
     - en: 'ABS warning light on'
       de: 'ABS-Warnleuchte an'
@@ -14732,6 +15512,16 @@
       label:
         en: Connector loose or chafed wiring
         de: Stecker locker oder Verkabelung gescheuert
+    - id: connector_intermittent
+      likelihood: low
+      label:
+        en: 'Connector with intermittent contact under vibration'
+        de: 'Stecker mit sporadischem Kontakt unter Vibration'
+    - id: harness_vibration
+      likelihood: low
+      label:
+        en: 'Harness routed against vibrating component'
+        de: 'Kabelbaum verläuft an vibrierender Komponente'
   symptoms:
     - en: 'ABS warning light on'
       de: 'ABS-Warnleuchte an'
@@ -14777,6 +15567,16 @@
       label:
         en: Connector loose or chafed wiring
         de: Stecker locker oder Verkabelung gescheuert
+    - id: connector_intermittent
+      likelihood: low
+      label:
+        en: 'Connector with intermittent contact under vibration'
+        de: 'Stecker mit sporadischem Kontakt unter Vibration'
+    - id: harness_vibration
+      likelihood: low
+      label:
+        en: 'Harness routed against vibrating component'
+        de: 'Kabelbaum verläuft an vibrierender Komponente'
   symptoms:
     - en: 'ABS warning light on'
       de: 'ABS-Warnleuchte an'
@@ -14823,6 +15623,16 @@
       label:
         en: Supply wire shorted to ground
         de: Versorgungsleitung mit Masseschluss
+    - id: connector_corrosion
+      likelihood: low
+      label:
+        en: 'Connector pins corroded - high contact resistance'
+        de: 'Steckerkontakte korrodiert - hoher Übergangswiderstand'
+    - id: harness_chafe
+      likelihood: low
+      label:
+        en: 'Harness chafing through insulation'
+        de: 'Kabelbaum scheuert sich durch die Isolation'
   symptoms:
     - en: 'ABS warning light on'
       de: 'ABS-Warnleuchte an'
@@ -14868,6 +15678,16 @@
       label:
         en: Supply wire shorted to battery
         de: Versorgungsleitung mit Plus-Schluss
+    - id: connector_corrosion
+      likelihood: low
+      label:
+        en: 'Connector pins corroded - high contact resistance'
+        de: 'Steckerkontakte korrodiert - hoher Übergangswiderstand'
+    - id: supply_pinch
+      likelihood: low
+      label:
+        en: 'Supply wire pinched against B+ source'
+        de: 'Versorgungsleitung gegen B+-Quelle eingeklemmt'
   symptoms:
     - en: 'ABS warning light on'
       de: 'ABS-Warnleuchte an'
@@ -14912,6 +15732,16 @@
       label:
         en: Signal wire shorted to ground
         de: Signalleitung mit Masseschluss
+    - id: connector_corrosion
+      likelihood: low
+      label:
+        en: 'Connector pins corroded - high contact resistance'
+        de: 'Steckerkontakte korrodiert - hoher Übergangswiderstand'
+    - id: harness_chafe
+      likelihood: low
+      label:
+        en: 'Harness chafing through insulation'
+        de: 'Kabelbaum scheuert sich durch die Isolation'
   symptoms:
     - en: 'ABS warning light on'
       de: 'ABS-Warnleuchte an'
@@ -14956,6 +15786,16 @@
       label:
         en: Signal wire shorted to battery
         de: Signalleitung mit Plus-Schluss
+    - id: connector_corrosion
+      likelihood: low
+      label:
+        en: 'Connector pins corroded - high contact resistance'
+        de: 'Steckerkontakte korrodiert - hoher Übergangswiderstand'
+    - id: supply_pinch
+      likelihood: low
+      label:
+        en: 'Supply wire pinched against B+ source'
+        de: 'Versorgungsleitung gegen B+-Quelle eingeklemmt'
   symptoms:
     - en: 'ABS warning light on'
       de: 'ABS-Warnleuchte an'
@@ -15054,6 +15894,16 @@
       label:
         en: Signal wire shorted to battery
         de: Signalleitung mit Plus-Schluss
+    - id: connector_corrosion
+      likelihood: low
+      label:
+        en: 'Connector pins corroded - high contact resistance'
+        de: 'Steckerkontakte korrodiert - hoher Übergangswiderstand'
+    - id: supply_pinch
+      likelihood: low
+      label:
+        en: 'Supply wire pinched against B+ source'
+        de: 'Versorgungsleitung gegen B+-Quelle eingeklemmt'
   symptoms:
     - en: 'ABS warning light on'
       de: 'ABS-Warnleuchte an'
@@ -15147,6 +15997,16 @@
       label:
         en: Sensor reading drifted
         de: Sensorwert verschoben
+    - id: sensor_aged
+      likelihood: low
+      label:
+        en: 'Sensor element aged beyond calibration window'
+        de: 'Sensorelement gealtert über Kalibrierfenster hinaus'
+    - id: mounting_loose
+      likelihood: low
+      label:
+        en: 'Sensor mounting loose - signal damping'
+        de: 'Sensorbefestigung lose - Signaldämpfung'
   symptoms:
     - en: 'ABS warning light on'
       de: 'ABS-Warnleuchte an'
@@ -15241,6 +16101,16 @@
       label:
         en: Signal wire shorted to battery
         de: Signalleitung mit Plus-Schluss
+    - id: connector_corrosion
+      likelihood: low
+      label:
+        en: 'Connector pins corroded - high contact resistance'
+        de: 'Steckerkontakte korrodiert - hoher Übergangswiderstand'
+    - id: supply_pinch
+      likelihood: low
+      label:
+        en: 'Supply wire pinched against B+ source'
+        de: 'Versorgungsleitung gegen B+-Quelle eingeklemmt'
   symptoms:
     - en: 'ABS warning light on'
       de: 'ABS-Warnleuchte an'
@@ -15341,6 +16211,11 @@
       label:
         en: Wiring break in switch circuit
         de: Kabelbruch im Schalterstromkreis
+    - id: stuck_carbon_buildup
+      likelihood: low
+      label:
+        en: 'Carbon or debris buildup preventing free movement'
+        de: 'Verkokung oder Ablagerungen verhindern freies Bewegen'
   symptoms:
     - en: 'ABS warning light on'
       de: 'ABS-Warnleuchte an'
@@ -15382,6 +16257,16 @@
       label:
         en: Signal wire shorted to ground
         de: Signalleitung mit Masseschluss
+    - id: connector_corrosion
+      likelihood: low
+      label:
+        en: 'Connector pins corroded - high contact resistance'
+        de: 'Steckerkontakte korrodiert - hoher Übergangswiderstand'
+    - id: harness_chafe
+      likelihood: low
+      label:
+        en: 'Harness chafing through insulation'
+        de: 'Kabelbaum scheuert sich durch die Isolation'
   symptoms:
     - en: 'ABS warning light on'
       de: 'ABS-Warnleuchte an'
@@ -15427,6 +16312,16 @@
       label:
         en: Signal wire shorted to battery
         de: Signalleitung mit Plus-Schluss
+    - id: connector_corrosion
+      likelihood: low
+      label:
+        en: 'Connector pins corroded - high contact resistance'
+        de: 'Steckerkontakte korrodiert - hoher Übergangswiderstand'
+    - id: supply_pinch
+      likelihood: low
+      label:
+        en: 'Supply wire pinched against B+ source'
+        de: 'Versorgungsleitung gegen B+-Quelle eingeklemmt'
   symptoms:
     - en: 'ABS warning light on'
       de: 'ABS-Warnleuchte an'
@@ -15472,6 +16367,16 @@
       label:
         en: Signal wire open
         de: Signalleitung unterbrochen
+    - id: connector_back_out
+      likelihood: low
+      label:
+        en: 'Pin pushed back out of connector body'
+        de: 'Pin aus dem Steckergehäuse zurückgedrückt'
+    - id: solder_joint_cracked
+      likelihood: low
+      label:
+        en: 'Cracked solder joint inside the module or sensor'
+        de: 'Gerissene Lötstelle im Modul oder Sensor'
   symptoms:
     - en: 'ABS warning light on'
       de: 'ABS-Warnleuchte an'
@@ -15517,6 +16422,16 @@
       label:
         en: Sensor reading drifted
         de: Sensorwert verschoben
+    - id: sensor_aged
+      likelihood: low
+      label:
+        en: 'Sensor element aged beyond calibration window'
+        de: 'Sensorelement gealtert über Kalibrierfenster hinaus'
+    - id: mounting_loose
+      likelihood: low
+      label:
+        en: 'Sensor mounting loose - signal damping'
+        de: 'Sensorbefestigung lose - Signaldämpfung'
   symptoms:
     - en: 'ABS warning light on'
       de: 'ABS-Warnleuchte an'
@@ -15562,6 +16477,16 @@
       label:
         en: Connector loose
         de: Stecker locker
+    - id: connector_intermittent
+      likelihood: low
+      label:
+        en: 'Connector with intermittent contact under vibration'
+        de: 'Stecker mit sporadischem Kontakt unter Vibration'
+    - id: harness_vibration
+      likelihood: low
+      label:
+        en: 'Harness routed against vibrating component'
+        de: 'Kabelbaum verläuft an vibrierender Komponente'
   symptoms:
     - en: 'ABS warning light on'
       de: 'ABS-Warnleuchte an'
@@ -15651,6 +16576,16 @@
       label:
         en: Phase wire open or motor winding open
         de: Phasen- oder Wicklungsleitung unterbrochen
+    - id: connector_back_out
+      likelihood: low
+      label:
+        en: 'Pin pushed back out of connector body'
+        de: 'Pin aus dem Steckergehäuse zurückgedrückt'
+    - id: solder_joint_cracked
+      likelihood: low
+      label:
+        en: 'Cracked solder joint inside the module or sensor'
+        de: 'Gerissene Lötstelle im Modul oder Sensor'
   symptoms:
     - en: 'ABS warning light on'
       de: 'ABS-Warnleuchte an'
@@ -15696,6 +16631,16 @@
       label:
         en: Phase shorted to ground
         de: Phase mit Masseschluss
+    - id: connector_corrosion
+      likelihood: low
+      label:
+        en: 'Connector pins corroded - high contact resistance'
+        de: 'Steckerkontakte korrodiert - hoher Übergangswiderstand'
+    - id: harness_chafe
+      likelihood: low
+      label:
+        en: 'Harness chafing through insulation'
+        de: 'Kabelbaum scheuert sich durch die Isolation'
   symptoms:
     - en: 'ABS warning light on'
       de: 'ABS-Warnleuchte an'
@@ -15795,6 +16740,16 @@
       label:
         en: Motor winding resistance drifted
         de: Wicklungswiderstand verschoben
+    - id: sensor_aged
+      likelihood: low
+      label:
+        en: 'Sensor element aged beyond calibration window'
+        de: 'Sensorelement gealtert über Kalibrierfenster hinaus'
+    - id: mounting_loose
+      likelihood: low
+      label:
+        en: 'Sensor mounting loose - signal damping'
+        de: 'Sensorbefestigung lose - Signaldämpfung'
   symptoms:
     - en: 'ABS warning light on'
       de: 'ABS-Warnleuchte an'
@@ -15895,6 +16850,16 @@
       label:
         en: Phase shorted to ground
         de: Phase mit Masseschluss
+    - id: connector_corrosion
+      likelihood: low
+      label:
+        en: 'Connector pins corroded - high contact resistance'
+        de: 'Steckerkontakte korrodiert - hoher Übergangswiderstand'
+    - id: harness_chafe
+      likelihood: low
+      label:
+        en: 'Harness chafing through insulation'
+        de: 'Kabelbaum scheuert sich durch die Isolation'
   symptoms:
     - en: 'ABS warning light on'
       de: 'ABS-Warnleuchte an'
@@ -15941,6 +16906,16 @@
       label:
         en: Phase shorted to power
         de: Phase mit Plus-Schluss
+    - id: connector_corrosion
+      likelihood: low
+      label:
+        en: 'Connector pins corroded - high contact resistance'
+        de: 'Steckerkontakte korrodiert - hoher Übergangswiderstand'
+    - id: supply_pinch
+      likelihood: low
+      label:
+        en: 'Supply wire pinched against B+ source'
+        de: 'Versorgungsleitung gegen B+-Quelle eingeklemmt'
   symptoms:
     - en: 'ABS warning light on'
       de: 'ABS-Warnleuchte an'
@@ -15985,6 +16960,16 @@
       label:
         en: Motor winding resistance drifted
         de: Wicklungswiderstand verschoben
+    - id: sensor_aged
+      likelihood: low
+      label:
+        en: 'Sensor element aged beyond calibration window'
+        de: 'Sensorelement gealtert über Kalibrierfenster hinaus'
+    - id: mounting_loose
+      likelihood: low
+      label:
+        en: 'Sensor mounting loose - signal damping'
+        de: 'Sensorbefestigung lose - Signaldämpfung'
   symptoms:
     - en: 'ABS warning light on'
       de: 'ABS-Warnleuchte an'
@@ -16030,6 +17015,16 @@
       label:
         en: Signal wire open
         de: Signalleitung unterbrochen
+    - id: connector_back_out
+      likelihood: low
+      label:
+        en: 'Pin pushed back out of connector body'
+        de: 'Pin aus dem Steckergehäuse zurückgedrückt'
+    - id: solder_joint_cracked
+      likelihood: low
+      label:
+        en: 'Cracked solder joint inside the module or sensor'
+        de: 'Gerissene Lötstelle im Modul oder Sensor'
   symptoms:
     - en: 'ABS warning light on'
       de: 'ABS-Warnleuchte an'
@@ -16075,6 +17070,16 @@
       label:
         en: Signal wire shorted to ground
         de: Signalleitung mit Masseschluss
+    - id: connector_corrosion
+      likelihood: low
+      label:
+        en: 'Connector pins corroded - high contact resistance'
+        de: 'Steckerkontakte korrodiert - hoher Übergangswiderstand'
+    - id: harness_chafe
+      likelihood: low
+      label:
+        en: 'Harness chafing through insulation'
+        de: 'Kabelbaum scheuert sich durch die Isolation'
   symptoms:
     - en: 'ABS warning light on'
       de: 'ABS-Warnleuchte an'
@@ -16120,6 +17125,16 @@
       label:
         en: Signal wire shorted to battery
         de: Signalleitung mit Plus-Schluss
+    - id: connector_corrosion
+      likelihood: low
+      label:
+        en: 'Connector pins corroded - high contact resistance'
+        de: 'Steckerkontakte korrodiert - hoher Übergangswiderstand'
+    - id: supply_pinch
+      likelihood: low
+      label:
+        en: 'Supply wire pinched against B+ source'
+        de: 'Versorgungsleitung gegen B+-Quelle eingeklemmt'
   symptoms:
     - en: 'ABS warning light on'
       de: 'ABS-Warnleuchte an'
@@ -16165,6 +17180,16 @@
       label:
         en: Sensor reading drifted
         de: Sensorwert verschoben
+    - id: sensor_aged
+      likelihood: low
+      label:
+        en: 'Sensor element aged beyond calibration window'
+        de: 'Sensorelement gealtert über Kalibrierfenster hinaus'
+    - id: mounting_loose
+      likelihood: low
+      label:
+        en: 'Sensor mounting loose - signal damping'
+        de: 'Sensorbefestigung lose - Signaldämpfung'
   symptoms:
     - en: 'ABS warning light on'
       de: 'ABS-Warnleuchte an'
@@ -16210,6 +17235,16 @@
       label:
         en: Signal wire open
         de: Signalleitung unterbrochen
+    - id: connector_back_out
+      likelihood: low
+      label:
+        en: 'Pin pushed back out of connector body'
+        de: 'Pin aus dem Steckergehäuse zurückgedrückt'
+    - id: solder_joint_cracked
+      likelihood: low
+      label:
+        en: 'Cracked solder joint inside the module or sensor'
+        de: 'Gerissene Lötstelle im Modul oder Sensor'
   symptoms:
     - en: 'ABS warning light on'
       de: 'ABS-Warnleuchte an'
@@ -16255,6 +17290,16 @@
       label:
         en: Signal wire shorted to ground
         de: Signalleitung mit Masseschluss
+    - id: connector_corrosion
+      likelihood: low
+      label:
+        en: 'Connector pins corroded - high contact resistance'
+        de: 'Steckerkontakte korrodiert - hoher Übergangswiderstand'
+    - id: harness_chafe
+      likelihood: low
+      label:
+        en: 'Harness chafing through insulation'
+        de: 'Kabelbaum scheuert sich durch die Isolation'
   symptoms:
     - en: 'ABS warning light on'
       de: 'ABS-Warnleuchte an'
@@ -16300,6 +17345,16 @@
       label:
         en: Signal wire shorted to battery
         de: Signalleitung mit Plus-Schluss
+    - id: connector_corrosion
+      likelihood: low
+      label:
+        en: 'Connector pins corroded - high contact resistance'
+        de: 'Steckerkontakte korrodiert - hoher Übergangswiderstand'
+    - id: supply_pinch
+      likelihood: low
+      label:
+        en: 'Supply wire pinched against B+ source'
+        de: 'Versorgungsleitung gegen B+-Quelle eingeklemmt'
   symptoms:
     - en: 'ABS warning light on'
       de: 'ABS-Warnleuchte an'
@@ -16345,6 +17400,16 @@
       label:
         en: Sensor reading drifted
         de: Sensorwert verschoben
+    - id: sensor_aged
+      likelihood: low
+      label:
+        en: 'Sensor element aged beyond calibration window'
+        de: 'Sensorelement gealtert über Kalibrierfenster hinaus'
+    - id: mounting_loose
+      likelihood: low
+      label:
+        en: 'Sensor mounting loose - signal damping'
+        de: 'Sensorbefestigung lose - Signaldämpfung'
   symptoms:
     - en: 'ABS warning light on'
       de: 'ABS-Warnleuchte an'
@@ -16667,6 +17732,16 @@
       label:
         en: Power driver internal fault
         de: Endstufe intern defekt
+    - id: sensor_aged
+      likelihood: low
+      label:
+        en: 'Sensor element aged beyond calibration window'
+        de: 'Sensorelement gealtert über Kalibrierfenster hinaus'
+    - id: mounting_loose
+      likelihood: low
+      label:
+        en: 'Sensor mounting loose - signal damping'
+        de: 'Sensorbefestigung lose - Signaldämpfung'
   symptoms:
     - en: 'ABS warning light on'
       de: 'ABS-Warnleuchte an'
@@ -16711,6 +17786,16 @@
       label:
         en: Sensor reading drifted
         de: Sensorwert verschoben
+    - id: sensor_aged
+      likelihood: low
+      label:
+        en: 'Sensor element aged beyond calibration window'
+        de: 'Sensorelement gealtert über Kalibrierfenster hinaus'
+    - id: mounting_loose
+      likelihood: low
+      label:
+        en: 'Sensor mounting loose - signal damping'
+        de: 'Sensorbefestigung lose - Signaldämpfung'
   symptoms:
     - en: 'ABS warning light on'
       de: 'ABS-Warnleuchte an'
@@ -17115,6 +18200,16 @@
       label:
         en: Signal wire shorted to ground
         de: Signalleitung mit Masseschluss
+    - id: connector_corrosion
+      likelihood: low
+      label:
+        en: 'Connector pins corroded - high contact resistance'
+        de: 'Steckerkontakte korrodiert - hoher Übergangswiderstand'
+    - id: harness_chafe
+      likelihood: low
+      label:
+        en: 'Harness chafing through insulation'
+        de: 'Kabelbaum scheuert sich durch die Isolation'
   symptoms:
     - en: 'ABS warning light on'
       de: 'ABS-Warnleuchte an'
@@ -17161,6 +18256,16 @@
       label:
         en: Signal wire shorted to battery
         de: Signalleitung mit Plus-Schluss
+    - id: connector_corrosion
+      likelihood: low
+      label:
+        en: 'Connector pins corroded - high contact resistance'
+        de: 'Steckerkontakte korrodiert - hoher Übergangswiderstand'
+    - id: supply_pinch
+      likelihood: low
+      label:
+        en: 'Supply wire pinched against B+ source'
+        de: 'Versorgungsleitung gegen B+-Quelle eingeklemmt'
   symptoms:
     - en: 'ABS warning light on'
       de: 'ABS-Warnleuchte an'
@@ -17207,6 +18312,16 @@
       label:
         en: Wire broken
         de: Kabel gebrochen
+    - id: connector_back_out
+      likelihood: low
+      label:
+        en: 'Pin pushed back out of connector body'
+        de: 'Pin aus dem Steckergehäuse zurückgedrückt'
+    - id: solder_joint_cracked
+      likelihood: low
+      label:
+        en: 'Cracked solder joint inside the module or sensor'
+        de: 'Gerissene Lötstelle im Modul oder Sensor'
   symptoms:
     - en: 'ABS warning light on'
       de: 'ABS-Warnleuchte an'
@@ -17252,6 +18367,16 @@
       label:
         en: Sensor reading drifted
         de: Sensorwert verschoben
+    - id: sensor_aged
+      likelihood: low
+      label:
+        en: 'Sensor element aged beyond calibration window'
+        de: 'Sensorelement gealtert über Kalibrierfenster hinaus'
+    - id: mounting_loose
+      likelihood: low
+      label:
+        en: 'Sensor mounting loose - signal damping'
+        de: 'Sensorbefestigung lose - Signaldämpfung'
   symptoms:
     - en: 'ABS warning light on'
       de: 'ABS-Warnleuchte an'
@@ -17297,6 +18422,16 @@
       label:
         en: Supply shorted to battery
         de: Versorgung mit Plus-Schluss
+    - id: connector_corrosion
+      likelihood: low
+      label:
+        en: 'Connector pins corroded - high contact resistance'
+        de: 'Steckerkontakte korrodiert - hoher Übergangswiderstand'
+    - id: supply_pinch
+      likelihood: low
+      label:
+        en: 'Supply wire pinched against B+ source'
+        de: 'Versorgungsleitung gegen B+-Quelle eingeklemmt'
   symptoms:
     - en: 'ABS warning light on'
       de: 'ABS-Warnleuchte an'
@@ -17341,6 +18476,16 @@
       label:
         en: Supply shorted to ground
         de: Versorgung mit Masseschluss
+    - id: connector_corrosion
+      likelihood: low
+      label:
+        en: 'Connector pins corroded - high contact resistance'
+        de: 'Steckerkontakte korrodiert - hoher Übergangswiderstand'
+    - id: harness_chafe
+      likelihood: low
+      label:
+        en: 'Harness chafing through insulation'
+        de: 'Kabelbaum scheuert sich durch die Isolation'
   symptoms:
     - en: 'ABS warning light on'
       de: 'ABS-Warnleuchte an'
@@ -17386,6 +18531,16 @@
       label:
         en: Fuse blown
         de: Sicherung defekt
+    - id: connector_back_out
+      likelihood: low
+      label:
+        en: 'Pin pushed back out of connector body'
+        de: 'Pin aus dem Steckergehäuse zurückgedrückt'
+    - id: solder_joint_cracked
+      likelihood: low
+      label:
+        en: 'Cracked solder joint inside the module or sensor'
+        de: 'Gerissene Lötstelle im Modul oder Sensor'
   symptoms:
     - en: 'ABS warning light on'
       de: 'ABS-Warnleuchte an'
@@ -17430,6 +18585,16 @@
       label:
         en: Overvoltage
         de: Überspannung
+    - id: connector_corrosion
+      likelihood: low
+      label:
+        en: 'Connector pins corroded - high contact resistance'
+        de: 'Steckerkontakte korrodiert - hoher Übergangswiderstand'
+    - id: supply_pinch
+      likelihood: low
+      label:
+        en: 'Supply wire pinched against B+ source'
+        de: 'Versorgungsleitung gegen B+-Quelle eingeklemmt'
   symptoms:
     - en: 'ABS warning light on'
       de: 'ABS-Warnleuchte an'
@@ -17474,6 +18639,16 @@
       label:
         en: Weak supply or high resistance
         de: Schwache Versorgung oder hoher Widerstand
+    - id: connector_corrosion
+      likelihood: low
+      label:
+        en: 'Connector pins corroded - high contact resistance'
+        de: 'Steckerkontakte korrodiert - hoher Übergangswiderstand'
+    - id: harness_chafe
+      likelihood: low
+      label:
+        en: 'Harness chafing through insulation'
+        de: 'Kabelbaum scheuert sich durch die Isolation'
   symptoms:
     - en: 'ABS warning light on'
       de: 'ABS-Warnleuchte an'
@@ -17518,6 +18693,16 @@
       label:
         en: Connector with high resistance
         de: Stecker mit hohem Übergangswiderstand
+    - id: sensor_aged
+      likelihood: low
+      label:
+        en: 'Sensor element aged beyond calibration window'
+        de: 'Sensorelement gealtert über Kalibrierfenster hinaus'
+    - id: mounting_loose
+      likelihood: low
+      label:
+        en: 'Sensor mounting loose - signal damping'
+        de: 'Sensorbefestigung lose - Signaldämpfung'
   symptoms:
     - en: 'ABS warning light on'
       de: 'ABS-Warnleuchte an'
@@ -17695,6 +18880,16 @@
       label:
         en: Valve stuck closed
         de: Ventil hängt geschlossen
+    - id: stuck_carbon_buildup
+      likelihood: low
+      label:
+        en: 'Carbon or debris buildup preventing free movement'
+        de: 'Verkokung oder Ablagerungen verhindern freies Bewegen'
+    - id: component_age_wear
+      likelihood: low
+      label:
+        en: 'Component wear with age - mechanical play'
+        de: 'Bauteil-Verschleiß mit Alter - mechanisches Spiel'
   symptoms:
     - en: 'ABS warning light on'
       de: 'ABS-Warnleuchte an'
@@ -17827,6 +19022,16 @@
       label:
         en: Sensor reading drifted
         de: Sensorwert verschoben
+    - id: sensor_aged
+      likelihood: low
+      label:
+        en: 'Sensor element aged beyond calibration window'
+        de: 'Sensorelement gealtert über Kalibrierfenster hinaus'
+    - id: mounting_loose
+      likelihood: low
+      label:
+        en: 'Sensor mounting loose - signal damping'
+        de: 'Sensorbefestigung lose - Signaldämpfung'
   symptoms:
     - en: 'ABS warning light on'
       de: 'ABS-Warnleuchte an'
@@ -18007,6 +19212,16 @@
       label:
         en: Signal wire shorted to ground
         de: Signalleitung mit Masseschluss
+    - id: connector_corrosion
+      likelihood: low
+      label:
+        en: 'Connector pins corroded - high contact resistance'
+        de: 'Steckerkontakte korrodiert - hoher Übergangswiderstand'
+    - id: harness_chafe
+      likelihood: low
+      label:
+        en: 'Harness chafing through insulation'
+        de: 'Kabelbaum scheuert sich durch die Isolation'
   symptoms:
     - en: 'ABS warning light on'
       de: 'ABS-Warnleuchte an'
@@ -18052,6 +19267,16 @@
       label:
         en: Signal wire shorted to battery
         de: Signalleitung mit Plus-Schluss
+    - id: connector_corrosion
+      likelihood: low
+      label:
+        en: 'Connector pins corroded - high contact resistance'
+        de: 'Steckerkontakte korrodiert - hoher Übergangswiderstand'
+    - id: supply_pinch
+      likelihood: low
+      label:
+        en: 'Supply wire pinched against B+ source'
+        de: 'Versorgungsleitung gegen B+-Quelle eingeklemmt'
   symptoms:
     - en: 'ABS warning light on'
       de: 'ABS-Warnleuchte an'
@@ -18097,6 +19322,16 @@
       label:
         en: Signal wire open
         de: Signalleitung unterbrochen
+    - id: connector_back_out
+      likelihood: low
+      label:
+        en: 'Pin pushed back out of connector body'
+        de: 'Pin aus dem Steckergehäuse zurückgedrückt'
+    - id: solder_joint_cracked
+      likelihood: low
+      label:
+        en: 'Cracked solder joint inside the module or sensor'
+        de: 'Gerissene Lötstelle im Modul oder Sensor'
   symptoms:
     - en: 'ABS warning light on'
       de: 'ABS-Warnleuchte an'
@@ -18142,6 +19377,16 @@
       label:
         en: Sensor reading drifted
         de: Sensorwert verschoben
+    - id: sensor_aged
+      likelihood: low
+      label:
+        en: 'Sensor element aged beyond calibration window'
+        de: 'Sensorelement gealtert über Kalibrierfenster hinaus'
+    - id: mounting_loose
+      likelihood: low
+      label:
+        en: 'Sensor mounting loose - signal damping'
+        de: 'Sensorbefestigung lose - Signaldämpfung'
   symptoms:
     - en: 'ABS warning light on'
       de: 'ABS-Warnleuchte an'
@@ -18187,6 +19432,16 @@
       label:
         en: Connector loose
         de: Stecker locker
+    - id: connector_intermittent
+      likelihood: low
+      label:
+        en: 'Connector with intermittent contact under vibration'
+        de: 'Stecker mit sporadischem Kontakt unter Vibration'
+    - id: harness_vibration
+      likelihood: low
+      label:
+        en: 'Harness routed against vibrating component'
+        de: 'Kabelbaum verläuft an vibrierender Komponente'
   symptoms:
     - en: 'ABS warning light on'
       de: 'ABS-Warnleuchte an'
@@ -18232,6 +19487,16 @@
       label:
         en: Supply wire open
         de: Versorgungsleitung unterbrochen
+    - id: connector_back_out
+      likelihood: low
+      label:
+        en: 'Pin pushed back out of connector body'
+        de: 'Pin aus dem Steckergehäuse zurückgedrückt'
+    - id: solder_joint_cracked
+      likelihood: low
+      label:
+        en: 'Cracked solder joint inside the module or sensor'
+        de: 'Gerissene Lötstelle im Modul oder Sensor'
   symptoms:
     - en: 'ABS warning light on'
       de: 'ABS-Warnleuchte an'
@@ -18277,6 +19542,16 @@
       label:
         en: Supply wire shorted to ground
         de: Versorgung mit Masseschluss
+    - id: connector_corrosion
+      likelihood: low
+      label:
+        en: 'Connector pins corroded - high contact resistance'
+        de: 'Steckerkontakte korrodiert - hoher Übergangswiderstand'
+    - id: harness_chafe
+      likelihood: low
+      label:
+        en: 'Harness chafing through insulation'
+        de: 'Kabelbaum scheuert sich durch die Isolation'
   symptoms:
     - en: 'ABS warning light on'
       de: 'ABS-Warnleuchte an'
@@ -18322,6 +19597,16 @@
       label:
         en: Supply wire shorted to battery
         de: Versorgung mit Plus-Schluss
+    - id: connector_corrosion
+      likelihood: low
+      label:
+        en: 'Connector pins corroded - high contact resistance'
+        de: 'Steckerkontakte korrodiert - hoher Übergangswiderstand'
+    - id: supply_pinch
+      likelihood: low
+      label:
+        en: 'Supply wire pinched against B+ source'
+        de: 'Versorgungsleitung gegen B+-Quelle eingeklemmt'
   symptoms:
     - en: 'ABS warning light on'
       de: 'ABS-Warnleuchte an'
@@ -18367,6 +19652,16 @@
       label:
         en: Connector with high resistance
         de: Stecker mit hohem Widerstand
+    - id: sensor_aged
+      likelihood: low
+      label:
+        en: 'Sensor element aged beyond calibration window'
+        de: 'Sensorelement gealtert über Kalibrierfenster hinaus'
+    - id: mounting_loose
+      likelihood: low
+      label:
+        en: 'Sensor mounting loose - signal damping'
+        de: 'Sensorbefestigung lose - Signaldämpfung'
   symptoms:
     - en: 'ABS warning light on'
       de: 'ABS-Warnleuchte an'
@@ -18412,6 +19707,16 @@
       label:
         en: Supply wire open
         de: Versorgungsleitung unterbrochen
+    - id: connector_back_out
+      likelihood: low
+      label:
+        en: 'Pin pushed back out of connector body'
+        de: 'Pin aus dem Steckergehäuse zurückgedrückt'
+    - id: solder_joint_cracked
+      likelihood: low
+      label:
+        en: 'Cracked solder joint inside the module or sensor'
+        de: 'Gerissene Lötstelle im Modul oder Sensor'
   symptoms:
     - en: 'ABS warning light on'
       de: 'ABS-Warnleuchte an'
@@ -18457,6 +19762,16 @@
       label:
         en: Supply wire shorted to ground
         de: Versorgung mit Masseschluss
+    - id: connector_corrosion
+      likelihood: low
+      label:
+        en: 'Connector pins corroded - high contact resistance'
+        de: 'Steckerkontakte korrodiert - hoher Übergangswiderstand'
+    - id: harness_chafe
+      likelihood: low
+      label:
+        en: 'Harness chafing through insulation'
+        de: 'Kabelbaum scheuert sich durch die Isolation'
   symptoms:
     - en: 'ABS warning light on'
       de: 'ABS-Warnleuchte an'
@@ -18502,6 +19817,16 @@
       label:
         en: Supply wire shorted to battery
         de: Versorgung mit Plus-Schluss
+    - id: connector_corrosion
+      likelihood: low
+      label:
+        en: 'Connector pins corroded - high contact resistance'
+        de: 'Steckerkontakte korrodiert - hoher Übergangswiderstand'
+    - id: supply_pinch
+      likelihood: low
+      label:
+        en: 'Supply wire pinched against B+ source'
+        de: 'Versorgungsleitung gegen B+-Quelle eingeklemmt'
   symptoms:
     - en: 'ABS warning light on'
       de: 'ABS-Warnleuchte an'
@@ -18547,6 +19872,16 @@
       label:
         en: Connector with high resistance
         de: Stecker mit hohem Widerstand
+    - id: sensor_aged
+      likelihood: low
+      label:
+        en: 'Sensor element aged beyond calibration window'
+        de: 'Sensorelement gealtert über Kalibrierfenster hinaus'
+    - id: mounting_loose
+      likelihood: low
+      label:
+        en: 'Sensor mounting loose - signal damping'
+        de: 'Sensorbefestigung lose - Signaldämpfung'
   symptoms:
     - en: 'ABS warning light on'
       de: 'ABS-Warnleuchte an'
@@ -18816,6 +20151,16 @@
       label:
         en: Sensor reading drifted
         de: Sensorwert verschoben
+    - id: sensor_aged
+      likelihood: low
+      label:
+        en: 'Sensor element aged beyond calibration window'
+        de: 'Sensorelement gealtert über Kalibrierfenster hinaus'
+    - id: mounting_loose
+      likelihood: low
+      label:
+        en: 'Sensor mounting loose - signal damping'
+        de: 'Sensorbefestigung lose - Signaldämpfung'
   symptoms:
     - en: 'ABS warning light on'
       de: 'ABS-Warnleuchte an'
@@ -18862,6 +20207,16 @@
       label:
         en: Signal wire shorted to ground
         de: Signalleitung mit Masseschluss
+    - id: connector_corrosion
+      likelihood: low
+      label:
+        en: 'Connector pins corroded - high contact resistance'
+        de: 'Steckerkontakte korrodiert - hoher Übergangswiderstand'
+    - id: harness_chafe
+      likelihood: low
+      label:
+        en: 'Harness chafing through insulation'
+        de: 'Kabelbaum scheuert sich durch die Isolation'
   symptoms:
     - en: 'ABS warning light on'
       de: 'ABS-Warnleuchte an'
@@ -18908,6 +20263,16 @@
       label:
         en: Signal wire shorted to battery
         de: Signalleitung mit Plus-Schluss
+    - id: connector_corrosion
+      likelihood: low
+      label:
+        en: 'Connector pins corroded - high contact resistance'
+        de: 'Steckerkontakte korrodiert - hoher Übergangswiderstand'
+    - id: supply_pinch
+      likelihood: low
+      label:
+        en: 'Supply wire pinched against B+ source'
+        de: 'Versorgungsleitung gegen B+-Quelle eingeklemmt'
   symptoms:
     - en: 'ABS warning light on'
       de: 'ABS-Warnleuchte an'
@@ -18954,6 +20319,16 @@
       label:
         en: Wire broken
         de: Kabel gebrochen
+    - id: connector_back_out
+      likelihood: low
+      label:
+        en: 'Pin pushed back out of connector body'
+        de: 'Pin aus dem Steckergehäuse zurückgedrückt'
+    - id: solder_joint_cracked
+      likelihood: low
+      label:
+        en: 'Cracked solder joint inside the module or sensor'
+        de: 'Gerissene Lötstelle im Modul oder Sensor'
   symptoms:
     - en: 'ABS warning light on'
       de: 'ABS-Warnleuchte an'
@@ -19133,6 +20508,16 @@
       label:
         en: Sensor reading drifted
         de: Sensorwert verschoben
+    - id: sensor_aged
+      likelihood: low
+      label:
+        en: 'Sensor element aged beyond calibration window'
+        de: 'Sensorelement gealtert über Kalibrierfenster hinaus'
+    - id: mounting_loose
+      likelihood: low
+      label:
+        en: 'Sensor mounting loose - signal damping'
+        de: 'Sensorbefestigung lose - Signaldämpfung'
   symptoms:
     - en: 'ABS warning light on'
       de: 'ABS-Warnleuchte an'
@@ -19268,6 +20653,16 @@
       label:
         en: Sensor reading drifted
         de: Sensorwert verschoben
+    - id: sensor_aged
+      likelihood: low
+      label:
+        en: 'Sensor element aged beyond calibration window'
+        de: 'Sensorelement gealtert über Kalibrierfenster hinaus'
+    - id: mounting_loose
+      likelihood: low
+      label:
+        en: 'Sensor mounting loose - signal damping'
+        de: 'Sensorbefestigung lose - Signaldämpfung'
   symptoms:
     - en: 'ABS warning light on'
       de: 'ABS-Warnleuchte an'
@@ -19579,6 +20974,16 @@
       label:
         en: Module internal fault
         de: Interner Modulfehler
+    - id: needs_reflash
+      likelihood: low
+      label:
+        en: 'Module software outdated, reflash may resolve'
+        de: 'Modul-Software veraltet, Reflash kann helfen'
+    - id: voltage_supply_issue
+      likelihood: low
+      label:
+        en: 'Supply voltage outside specification'
+        de: 'Versorgungsspannung außerhalb der Spezifikation'
   symptoms:
     - en: 'ABS warning light on'
       de: 'ABS-Warnleuchte an'
@@ -19667,6 +21072,16 @@
       label:
         en: Wiring break
         de: Kabelbruch
+    - id: connector_back_out
+      likelihood: low
+      label:
+        en: 'Pin pushed back out of connector body'
+        de: 'Pin aus dem Steckergehäuse zurückgedrückt'
+    - id: solder_joint_cracked
+      likelihood: low
+      label:
+        en: 'Cracked solder joint inside the module or sensor'
+        de: 'Gerissene Lötstelle im Modul oder Sensor'
   symptoms:
     - en: 'ABS warning light on'
       de: 'ABS-Warnleuchte an'
@@ -19757,6 +21172,16 @@
       label:
         en: Wiring shorted to ground
         de: Verkabelung mit Masseschluss
+    - id: connector_corrosion
+      likelihood: low
+      label:
+        en: 'Connector pins corroded - high contact resistance'
+        de: 'Steckerkontakte korrodiert - hoher Übergangswiderstand'
+    - id: harness_chafe
+      likelihood: low
+      label:
+        en: 'Harness chafing through insulation'
+        de: 'Kabelbaum scheuert sich durch die Isolation'
   symptoms:
     - en: 'ABS warning light on'
       de: 'ABS-Warnleuchte an'
@@ -19802,6 +21227,16 @@
       label:
         en: Wiring shorted to battery
         de: Verkabelung mit Plus-Schluss
+    - id: connector_corrosion
+      likelihood: low
+      label:
+        en: 'Connector pins corroded - high contact resistance'
+        de: 'Steckerkontakte korrodiert - hoher Übergangswiderstand'
+    - id: supply_pinch
+      likelihood: low
+      label:
+        en: 'Supply wire pinched against B+ source'
+        de: 'Versorgungsleitung gegen B+-Quelle eingeklemmt'
   symptoms:
     - en: 'ABS warning light on'
       de: 'ABS-Warnleuchte an'
@@ -20071,6 +21506,16 @@
       label:
         en: Sensor reading drifted
         de: Sensorwert verschoben
+    - id: sensor_aged
+      likelihood: low
+      label:
+        en: 'Sensor element aged beyond calibration window'
+        de: 'Sensorelement gealtert über Kalibrierfenster hinaus'
+    - id: mounting_loose
+      likelihood: low
+      label:
+        en: 'Sensor mounting loose - signal damping'
+        de: 'Sensorbefestigung lose - Signaldämpfung'
   symptoms:
     - en: 'ABS warning light on'
       de: 'ABS-Warnleuchte an'
@@ -20115,6 +21560,16 @@
       label:
         en: Signal wire shorted to ground
         de: Signalleitung mit Masseschluss
+    - id: connector_corrosion
+      likelihood: low
+      label:
+        en: 'Connector pins corroded - high contact resistance'
+        de: 'Steckerkontakte korrodiert - hoher Übergangswiderstand'
+    - id: harness_chafe
+      likelihood: low
+      label:
+        en: 'Harness chafing through insulation'
+        de: 'Kabelbaum scheuert sich durch die Isolation'
   symptoms:
     - en: 'ABS warning light on'
       de: 'ABS-Warnleuchte an'
@@ -20159,6 +21614,16 @@
       label:
         en: Signal wire shorted to battery
         de: Signalleitung mit Plus-Schluss
+    - id: connector_corrosion
+      likelihood: low
+      label:
+        en: 'Connector pins corroded - high contact resistance'
+        de: 'Steckerkontakte korrodiert - hoher Übergangswiderstand'
+    - id: supply_pinch
+      likelihood: low
+      label:
+        en: 'Supply wire pinched against B+ source'
+        de: 'Versorgungsleitung gegen B+-Quelle eingeklemmt'
   symptoms:
     - en: 'ABS warning light on'
       de: 'ABS-Warnleuchte an'
@@ -20203,6 +21668,16 @@
       label:
         en: Connector loose
         de: Stecker locker
+    - id: connector_intermittent
+      likelihood: low
+      label:
+        en: 'Connector with intermittent contact under vibration'
+        de: 'Stecker mit sporadischem Kontakt unter Vibration'
+    - id: harness_vibration
+      likelihood: low
+      label:
+        en: 'Harness routed against vibrating component'
+        de: 'Kabelbaum verläuft an vibrierender Komponente'
   symptoms:
     - en: 'ABS warning light on'
       de: 'ABS-Warnleuchte an'
@@ -20336,6 +21811,16 @@
       label:
         en: Wiring break
         de: Kabelbruch
+    - id: connector_back_out
+      likelihood: low
+      label:
+        en: 'Pin pushed back out of connector body'
+        de: 'Pin aus dem Steckergehäuse zurückgedrückt'
+    - id: solder_joint_cracked
+      likelihood: low
+      label:
+        en: 'Cracked solder joint inside the module or sensor'
+        de: 'Gerissene Lötstelle im Modul oder Sensor'
   symptoms:
     - en: 'ABS warning light on'
       de: 'ABS-Warnleuchte an'
@@ -20426,6 +21911,16 @@
       label:
         en: Wiring shorted to ground
         de: Verkabelung mit Masseschluss
+    - id: connector_corrosion
+      likelihood: low
+      label:
+        en: 'Connector pins corroded - high contact resistance'
+        de: 'Steckerkontakte korrodiert - hoher Übergangswiderstand'
+    - id: harness_chafe
+      likelihood: low
+      label:
+        en: 'Harness chafing through insulation'
+        de: 'Kabelbaum scheuert sich durch die Isolation'
   symptoms:
     - en: 'ABS warning light on'
       de: 'ABS-Warnleuchte an'
@@ -20471,6 +21966,16 @@
       label:
         en: Wiring shorted to battery
         de: Verkabelung mit Plus-Schluss
+    - id: connector_corrosion
+      likelihood: low
+      label:
+        en: 'Connector pins corroded - high contact resistance'
+        de: 'Steckerkontakte korrodiert - hoher Übergangswiderstand'
+    - id: supply_pinch
+      likelihood: low
+      label:
+        en: 'Supply wire pinched against B+ source'
+        de: 'Versorgungsleitung gegen B+-Quelle eingeklemmt'
   symptoms:
     - en: 'ABS warning light on'
       de: 'ABS-Warnleuchte an'
@@ -20741,6 +22246,16 @@
       label:
         en: Signal wire shorted to ground
         de: Signalleitung mit Masseschluss
+    - id: connector_corrosion
+      likelihood: low
+      label:
+        en: 'Connector pins corroded - high contact resistance'
+        de: 'Steckerkontakte korrodiert - hoher Übergangswiderstand'
+    - id: harness_chafe
+      likelihood: low
+      label:
+        en: 'Harness chafing through insulation'
+        de: 'Kabelbaum scheuert sich durch die Isolation'
   symptoms:
     - en: 'ABS warning light on'
       de: 'ABS-Warnleuchte an'
@@ -20785,6 +22300,16 @@
       label:
         en: Signal wire shorted to battery
         de: Signalleitung mit Plus-Schluss
+    - id: connector_corrosion
+      likelihood: low
+      label:
+        en: 'Connector pins corroded - high contact resistance'
+        de: 'Steckerkontakte korrodiert - hoher Übergangswiderstand'
+    - id: supply_pinch
+      likelihood: low
+      label:
+        en: 'Supply wire pinched against B+ source'
+        de: 'Versorgungsleitung gegen B+-Quelle eingeklemmt'
   symptoms:
     - en: 'ABS warning light on'
       de: 'ABS-Warnleuchte an'
@@ -20829,6 +22354,16 @@
       label:
         en: Connector loose
         de: Stecker locker
+    - id: connector_intermittent
+      likelihood: low
+      label:
+        en: 'Connector with intermittent contact under vibration'
+        de: 'Stecker mit sporadischem Kontakt unter Vibration'
+    - id: harness_vibration
+      likelihood: low
+      label:
+        en: 'Harness routed against vibrating component'
+        de: 'Kabelbaum verläuft an vibrierender Komponente'
   symptoms:
     - en: 'ABS warning light on'
       de: 'ABS-Warnleuchte an'
@@ -20918,6 +22453,16 @@
       label:
         en: Sensor reading drifted
         de: Sensorwert verschoben
+    - id: sensor_aged
+      likelihood: low
+      label:
+        en: 'Sensor element aged beyond calibration window'
+        de: 'Sensorelement gealtert über Kalibrierfenster hinaus'
+    - id: mounting_loose
+      likelihood: low
+      label:
+        en: 'Sensor mounting loose - signal damping'
+        de: 'Sensorbefestigung lose - Signaldämpfung'
   symptoms:
     - en: 'ABS warning light on'
       de: 'ABS-Warnleuchte an'
@@ -20962,6 +22507,16 @@
       label:
         en: Wiring break
         de: Kabelbruch
+    - id: connector_back_out
+      likelihood: low
+      label:
+        en: 'Pin pushed back out of connector body'
+        de: 'Pin aus dem Steckergehäuse zurückgedrückt'
+    - id: solder_joint_cracked
+      likelihood: low
+      label:
+        en: 'Cracked solder joint inside the module or sensor'
+        de: 'Gerissene Lötstelle im Modul oder Sensor'
   symptoms:
     - en: 'ABS warning light on'
       de: 'ABS-Warnleuchte an'
@@ -21050,6 +22605,16 @@
       label:
         en: Wiring shorted to ground
         de: Verkabelung mit Masseschluss
+    - id: connector_corrosion
+      likelihood: low
+      label:
+        en: 'Connector pins corroded - high contact resistance'
+        de: 'Steckerkontakte korrodiert - hoher Übergangswiderstand'
+    - id: harness_chafe
+      likelihood: low
+      label:
+        en: 'Harness chafing through insulation'
+        de: 'Kabelbaum scheuert sich durch die Isolation'
   symptoms:
     - en: 'ABS warning light on'
       de: 'ABS-Warnleuchte an'
@@ -21094,6 +22659,16 @@
       label:
         en: Wiring shorted to battery
         de: Verkabelung mit Plus-Schluss
+    - id: connector_corrosion
+      likelihood: low
+      label:
+        en: 'Connector pins corroded - high contact resistance'
+        de: 'Steckerkontakte korrodiert - hoher Übergangswiderstand'
+    - id: supply_pinch
+      likelihood: low
+      label:
+        en: 'Supply wire pinched against B+ source'
+        de: 'Versorgungsleitung gegen B+-Quelle eingeklemmt'
   symptoms:
     - en: 'ABS warning light on'
       de: 'ABS-Warnleuchte an'
@@ -21270,6 +22845,16 @@
       label:
         en: Sensor reading drifted
         de: Sensorwert verschoben
+    - id: sensor_aged
+      likelihood: low
+      label:
+        en: 'Sensor element aged beyond calibration window'
+        de: 'Sensorelement gealtert über Kalibrierfenster hinaus'
+    - id: mounting_loose
+      likelihood: low
+      label:
+        en: 'Sensor mounting loose - signal damping'
+        de: 'Sensorbefestigung lose - Signaldämpfung'
   symptoms:
     - en: 'ABS warning light on'
       de: 'ABS-Warnleuchte an'
@@ -21314,6 +22899,16 @@
       label:
         en: Signal wire shorted to ground
         de: Signalleitung mit Masseschluss
+    - id: connector_corrosion
+      likelihood: low
+      label:
+        en: 'Connector pins corroded - high contact resistance'
+        de: 'Steckerkontakte korrodiert - hoher Übergangswiderstand'
+    - id: harness_chafe
+      likelihood: low
+      label:
+        en: 'Harness chafing through insulation'
+        de: 'Kabelbaum scheuert sich durch die Isolation'
   symptoms:
     - en: 'ABS warning light on'
       de: 'ABS-Warnleuchte an'
@@ -21358,6 +22953,16 @@
       label:
         en: Signal wire shorted to battery
         de: Signalleitung mit Plus-Schluss
+    - id: connector_corrosion
+      likelihood: low
+      label:
+        en: 'Connector pins corroded - high contact resistance'
+        de: 'Steckerkontakte korrodiert - hoher Übergangswiderstand'
+    - id: supply_pinch
+      likelihood: low
+      label:
+        en: 'Supply wire pinched against B+ source'
+        de: 'Versorgungsleitung gegen B+-Quelle eingeklemmt'
   symptoms:
     - en: 'ABS warning light on'
       de: 'ABS-Warnleuchte an'
@@ -21493,6 +23098,16 @@
       label:
         en: Wiring break
         de: Kabelbruch
+    - id: connector_back_out
+      likelihood: low
+      label:
+        en: 'Pin pushed back out of connector body'
+        de: 'Pin aus dem Steckergehäuse zurückgedrückt'
+    - id: solder_joint_cracked
+      likelihood: low
+      label:
+        en: 'Cracked solder joint inside the module or sensor'
+        de: 'Gerissene Lötstelle im Modul oder Sensor'
   symptoms:
     - en: 'ABS warning light on'
       de: 'ABS-Warnleuchte an'
@@ -21537,6 +23152,16 @@
       label:
         en: Wiring shorted to ground
         de: Verkabelung mit Masseschluss
+    - id: connector_corrosion
+      likelihood: low
+      label:
+        en: 'Connector pins corroded - high contact resistance'
+        de: 'Steckerkontakte korrodiert - hoher Übergangswiderstand'
+    - id: harness_chafe
+      likelihood: low
+      label:
+        en: 'Harness chafing through insulation'
+        de: 'Kabelbaum scheuert sich durch die Isolation'
   symptoms:
     - en: 'ABS warning light on'
       de: 'ABS-Warnleuchte an'
@@ -21581,6 +23206,16 @@
       label:
         en: Wiring shorted to battery
         de: Verkabelung mit Plus-Schluss
+    - id: connector_corrosion
+      likelihood: low
+      label:
+        en: 'Connector pins corroded - high contact resistance'
+        de: 'Steckerkontakte korrodiert - hoher Übergangswiderstand'
+    - id: supply_pinch
+      likelihood: low
+      label:
+        en: 'Supply wire pinched against B+ source'
+        de: 'Versorgungsleitung gegen B+-Quelle eingeklemmt'
   symptoms:
     - en: 'ABS warning light on'
       de: 'ABS-Warnleuchte an'
@@ -21709,6 +23344,16 @@
       label:
         en: Signal wire shorted to ground
         de: Signalleitung mit Masseschluss
+    - id: connector_corrosion
+      likelihood: low
+      label:
+        en: 'Connector pins corroded - high contact resistance'
+        de: 'Steckerkontakte korrodiert - hoher Übergangswiderstand'
+    - id: harness_chafe
+      likelihood: low
+      label:
+        en: 'Harness chafing through insulation'
+        de: 'Kabelbaum scheuert sich durch die Isolation'
   symptoms:
     - en: 'ABS warning light on'
       de: 'ABS-Warnleuchte an'
@@ -21753,6 +23398,16 @@
       label:
         en: Signal wire shorted to battery
         de: Signalleitung mit Plus-Schluss
+    - id: connector_corrosion
+      likelihood: low
+      label:
+        en: 'Connector pins corroded - high contact resistance'
+        de: 'Steckerkontakte korrodiert - hoher Übergangswiderstand'
+    - id: supply_pinch
+      likelihood: low
+      label:
+        en: 'Supply wire pinched against B+ source'
+        de: 'Versorgungsleitung gegen B+-Quelle eingeklemmt'
   symptoms:
     - en: 'ABS warning light on'
       de: 'ABS-Warnleuchte an'
@@ -21930,6 +23585,16 @@
       label:
         en: Wiring break
         de: Kabelbruch
+    - id: connector_back_out
+      likelihood: low
+      label:
+        en: 'Pin pushed back out of connector body'
+        de: 'Pin aus dem Steckergehäuse zurückgedrückt'
+    - id: solder_joint_cracked
+      likelihood: low
+      label:
+        en: 'Cracked solder joint inside the module or sensor'
+        de: 'Gerissene Lötstelle im Modul oder Sensor'
   symptoms:
     - en: 'ABS warning light on'
       de: 'ABS-Warnleuchte an'
@@ -21974,6 +23639,16 @@
       label:
         en: Wiring shorted to ground
         de: Verkabelung mit Masseschluss
+    - id: connector_corrosion
+      likelihood: low
+      label:
+        en: 'Connector pins corroded - high contact resistance'
+        de: 'Steckerkontakte korrodiert - hoher Übergangswiderstand'
+    - id: harness_chafe
+      likelihood: low
+      label:
+        en: 'Harness chafing through insulation'
+        de: 'Kabelbaum scheuert sich durch die Isolation'
   symptoms:
     - en: 'ABS warning light on'
       de: 'ABS-Warnleuchte an'
@@ -22018,6 +23693,16 @@
       label:
         en: Wiring shorted to battery
         de: Verkabelung mit Plus-Schluss
+    - id: connector_corrosion
+      likelihood: low
+      label:
+        en: 'Connector pins corroded - high contact resistance'
+        de: 'Steckerkontakte korrodiert - hoher Übergangswiderstand'
+    - id: supply_pinch
+      likelihood: low
+      label:
+        en: 'Supply wire pinched against B+ source'
+        de: 'Versorgungsleitung gegen B+-Quelle eingeklemmt'
   symptoms:
     - en: 'ABS warning light on'
       de: 'ABS-Warnleuchte an'
@@ -22062,6 +23747,16 @@
       label:
         en: Actuator stuck off
         de: Aktuator hakt offen
+    - id: stuck_carbon_buildup
+      likelihood: low
+      label:
+        en: 'Carbon or debris buildup preventing free movement'
+        de: 'Verkokung oder Ablagerungen verhindern freies Bewegen'
+    - id: component_age_wear
+      likelihood: low
+      label:
+        en: 'Component wear with age - mechanical play'
+        de: 'Bauteil-Verschleiß mit Alter - mechanisches Spiel'
   symptoms:
     - en: 'ABS warning light on'
       de: 'ABS-Warnleuchte an'
@@ -22106,6 +23801,16 @@
       label:
         en: Actuator stuck on
         de: Aktuator hakt geschlossen
+    - id: stuck_carbon_buildup
+      likelihood: low
+      label:
+        en: 'Carbon or debris buildup preventing free movement'
+        de: 'Verkokung oder Ablagerungen verhindern freies Bewegen'
+    - id: component_age_wear
+      likelihood: low
+      label:
+        en: 'Component wear with age - mechanical play'
+        de: 'Bauteil-Verschleiß mit Alter - mechanisches Spiel'
   symptoms:
     - en: 'ABS warning light on'
       de: 'ABS-Warnleuchte an'
@@ -22157,6 +23862,11 @@
       label:
         en: Terminating resistor open
         de: Abschlusswiderstand unterbrochen
+    - id: gateway_module_fault
+      likelihood: low
+      label:
+        en: 'Gateway module routing CAN messages incorrectly'
+        de: 'Gateway-Modul leitet CAN-Botschaften fehlerhaft'
   symptoms:
     - en: 'ABS warning light on'
       de: 'ABS-Warnleuchte an'
@@ -22197,6 +23907,16 @@
       label:
         en: Wiring shorted to ground
         de: Verkabelung mit Masseschluss
+    - id: connector_corrosion
+      likelihood: low
+      label:
+        en: 'Connector pins corroded - high contact resistance'
+        de: 'Steckerkontakte korrodiert - hoher Übergangswiderstand'
+    - id: harness_chafe
+      likelihood: low
+      label:
+        en: 'Harness chafing through insulation'
+        de: 'Kabelbaum scheuert sich durch die Isolation'
   symptoms:
     - en: 'ABS warning light on'
       de: 'ABS-Warnleuchte an'
@@ -22241,6 +23961,16 @@
       label:
         en: Wiring shorted to battery
         de: Verkabelung mit Plus-Schluss
+    - id: connector_corrosion
+      likelihood: low
+      label:
+        en: 'Connector pins corroded - high contact resistance'
+        de: 'Steckerkontakte korrodiert - hoher Übergangswiderstand'
+    - id: supply_pinch
+      likelihood: low
+      label:
+        en: 'Supply wire pinched against B+ source'
+        de: 'Versorgungsleitung gegen B+-Quelle eingeklemmt'
   symptoms:
     - en: 'ABS warning light on'
       de: 'ABS-Warnleuchte an'
@@ -22285,6 +24015,16 @@
       label:
         en: Actuator stuck off
         de: Aktuator hakt offen
+    - id: stuck_carbon_buildup
+      likelihood: low
+      label:
+        en: 'Carbon or debris buildup preventing free movement'
+        de: 'Verkokung oder Ablagerungen verhindern freies Bewegen'
+    - id: component_age_wear
+      likelihood: low
+      label:
+        en: 'Component wear with age - mechanical play'
+        de: 'Bauteil-Verschleiß mit Alter - mechanisches Spiel'
   symptoms:
     - en: 'ABS warning light on'
       de: 'ABS-Warnleuchte an'
@@ -22329,6 +24069,16 @@
       label:
         en: Actuator stuck on
         de: Aktuator hakt geschlossen
+    - id: stuck_carbon_buildup
+      likelihood: low
+      label:
+        en: 'Carbon or debris buildup preventing free movement'
+        de: 'Verkokung oder Ablagerungen verhindern freies Bewegen'
+    - id: component_age_wear
+      likelihood: low
+      label:
+        en: 'Component wear with age - mechanical play'
+        de: 'Bauteil-Verschleiß mit Alter - mechanisches Spiel'
   symptoms:
     - en: 'ABS warning light on'
       de: 'ABS-Warnleuchte an'
@@ -22461,6 +24211,16 @@
       label:
         en: Low battery or weak supply
         de: Schwache Batterie oder Versorgung
+    - id: connector_corrosion
+      likelihood: low
+      label:
+        en: 'Connector pins corroded - high contact resistance'
+        de: 'Steckerkontakte korrodiert - hoher Übergangswiderstand'
+    - id: harness_chafe
+      likelihood: low
+      label:
+        en: 'Harness chafing through insulation'
+        de: 'Kabelbaum scheuert sich durch die Isolation'
   symptoms:
     - en: 'ABS warning light on'
       de: 'ABS-Warnleuchte an'
@@ -22506,6 +24266,16 @@
       label:
         en: Charging system overvoltage
         de: Überspannung im Ladesystem
+    - id: connector_corrosion
+      likelihood: low
+      label:
+        en: 'Connector pins corroded - high contact resistance'
+        de: 'Steckerkontakte korrodiert - hoher Übergangswiderstand'
+    - id: supply_pinch
+      likelihood: low
+      label:
+        en: 'Supply wire pinched against B+ source'
+        de: 'Versorgungsleitung gegen B+-Quelle eingeklemmt'
   symptoms:
     - en: 'ABS warning light on'
       de: 'ABS-Warnleuchte an'
@@ -22685,6 +24455,16 @@
       label:
         en: Wiring break
         de: Kabelbruch
+    - id: connector_back_out
+      likelihood: low
+      label:
+        en: 'Pin pushed back out of connector body'
+        de: 'Pin aus dem Steckergehäuse zurückgedrückt'
+    - id: solder_joint_cracked
+      likelihood: low
+      label:
+        en: 'Cracked solder joint inside the module or sensor'
+        de: 'Gerissene Lötstelle im Modul oder Sensor'
   symptoms:
     - en: 'ABS warning light on'
       de: 'ABS-Warnleuchte an'
@@ -22729,6 +24509,16 @@
       label:
         en: Wiring shorted to ground
         de: Verkabelung mit Masseschluss
+    - id: connector_corrosion
+      likelihood: low
+      label:
+        en: 'Connector pins corroded - high contact resistance'
+        de: 'Steckerkontakte korrodiert - hoher Übergangswiderstand'
+    - id: harness_chafe
+      likelihood: low
+      label:
+        en: 'Harness chafing through insulation'
+        de: 'Kabelbaum scheuert sich durch die Isolation'
   symptoms:
     - en: 'ABS warning light on'
       de: 'ABS-Warnleuchte an'
@@ -22773,6 +24563,16 @@
       label:
         en: Wiring shorted to battery
         de: Verkabelung mit Plus-Schluss
+    - id: connector_corrosion
+      likelihood: low
+      label:
+        en: 'Connector pins corroded - high contact resistance'
+        de: 'Steckerkontakte korrodiert - hoher Übergangswiderstand'
+    - id: supply_pinch
+      likelihood: low
+      label:
+        en: 'Supply wire pinched against B+ source'
+        de: 'Versorgungsleitung gegen B+-Quelle eingeklemmt'
   symptoms:
     - en: 'ABS warning light on'
       de: 'ABS-Warnleuchte an'
@@ -22914,6 +24714,16 @@
       label:
         en: Wiring shorted to ground
         de: Verkabelung mit Masseschluss
+    - id: connector_corrosion
+      likelihood: low
+      label:
+        en: 'Connector pins corroded - high contact resistance'
+        de: 'Steckerkontakte korrodiert - hoher Übergangswiderstand'
+    - id: harness_chafe
+      likelihood: low
+      label:
+        en: 'Harness chafing through insulation'
+        de: 'Kabelbaum scheuert sich durch die Isolation'
   symptoms:
     - en: 'ABS warning light on'
       de: 'ABS-Warnleuchte an'
@@ -22958,6 +24768,16 @@
       label:
         en: Wiring shorted to battery
         de: Verkabelung mit Plus-Schluss
+    - id: connector_corrosion
+      likelihood: low
+      label:
+        en: 'Connector pins corroded - high contact resistance'
+        de: 'Steckerkontakte korrodiert - hoher Übergangswiderstand'
+    - id: supply_pinch
+      likelihood: low
+      label:
+        en: 'Supply wire pinched against B+ source'
+        de: 'Versorgungsleitung gegen B+-Quelle eingeklemmt'
   symptoms:
     - en: 'ABS warning light on'
       de: 'ABS-Warnleuchte an'
@@ -23090,6 +24910,16 @@
       label:
         en: Sensor reading drifted
         de: Sensorwert verschoben
+    - id: sensor_aged
+      likelihood: low
+      label:
+        en: 'Sensor element aged beyond calibration window'
+        de: 'Sensorelement gealtert über Kalibrierfenster hinaus'
+    - id: mounting_loose
+      likelihood: low
+      label:
+        en: 'Sensor mounting loose - signal damping'
+        de: 'Sensorbefestigung lose - Signaldämpfung'
   symptoms:
     - en: 'ABS warning light on'
       de: 'ABS-Warnleuchte an'
@@ -23134,6 +24964,16 @@
       label:
         en: Signal wire shorted to ground
         de: Signalleitung mit Masseschluss
+    - id: connector_corrosion
+      likelihood: low
+      label:
+        en: 'Connector pins corroded - high contact resistance'
+        de: 'Steckerkontakte korrodiert - hoher Übergangswiderstand'
+    - id: harness_chafe
+      likelihood: low
+      label:
+        en: 'Harness chafing through insulation'
+        de: 'Kabelbaum scheuert sich durch die Isolation'
   symptoms:
     - en: 'ABS warning light on'
       de: 'ABS-Warnleuchte an'
@@ -23178,6 +25018,16 @@
       label:
         en: Signal wire shorted to battery
         de: Signalleitung mit Plus-Schluss
+    - id: connector_corrosion
+      likelihood: low
+      label:
+        en: 'Connector pins corroded - high contact resistance'
+        de: 'Steckerkontakte korrodiert - hoher Übergangswiderstand'
+    - id: supply_pinch
+      likelihood: low
+      label:
+        en: 'Supply wire pinched against B+ source'
+        de: 'Versorgungsleitung gegen B+-Quelle eingeklemmt'
   symptoms:
     - en: 'ABS warning light on'
       de: 'ABS-Warnleuchte an'
@@ -23222,6 +25072,16 @@
       label:
         en: Module internal fault
         de: Interner Modulfehler
+    - id: needs_reflash
+      likelihood: low
+      label:
+        en: 'Module software outdated, reflash may resolve'
+        de: 'Modul-Software veraltet, Reflash kann helfen'
+    - id: voltage_supply_issue
+      likelihood: low
+      label:
+        en: 'Supply voltage outside specification'
+        de: 'Versorgungsspannung außerhalb der Spezifikation'
   symptoms:
     - en: 'ABS warning light on'
       de: 'ABS-Warnleuchte an'
@@ -23442,6 +25302,16 @@
       label:
         en: Valve stuck or coil weak
         de: Ventil klemmt oder Spule schwach
+    - id: sensor_aged
+      likelihood: low
+      label:
+        en: 'Sensor element aged beyond calibration window'
+        de: 'Sensorelement gealtert über Kalibrierfenster hinaus'
+    - id: mounting_loose
+      likelihood: low
+      label:
+        en: 'Sensor mounting loose - signal damping'
+        de: 'Sensorbefestigung lose - Signaldämpfung'
   symptoms:
     - en: 'ABS warning light on'
       de: 'ABS-Warnleuchte an'
@@ -23487,6 +25357,16 @@
       label:
         en: Supply wiring fault
         de: Versorgungsleitung defekt
+    - id: connector_corrosion
+      likelihood: low
+      label:
+        en: 'Connector pins corroded - high contact resistance'
+        de: 'Steckerkontakte korrodiert - hoher Übergangswiderstand'
+    - id: harness_chafe
+      likelihood: low
+      label:
+        en: 'Harness chafing through insulation'
+        de: 'Kabelbaum scheuert sich durch die Isolation'
   symptoms:
     - en: 'ABS warning light on'
       de: 'ABS-Warnleuchte an'
@@ -23532,6 +25412,16 @@
       label:
         en: Charging system overvoltage
         de: Überspannung im Ladesystem
+    - id: connector_corrosion
+      likelihood: low
+      label:
+        en: 'Connector pins corroded - high contact resistance'
+        de: 'Steckerkontakte korrodiert - hoher Übergangswiderstand'
+    - id: supply_pinch
+      likelihood: low
+      label:
+        en: 'Supply wire pinched against B+ source'
+        de: 'Versorgungsleitung gegen B+-Quelle eingeklemmt'
   symptoms:
     - en: 'ABS warning light on'
       de: 'ABS-Warnleuchte an'
@@ -23798,6 +25688,16 @@
       label:
         en: Wire broken
         de: Kabel gebrochen
+    - id: connector_back_out
+      likelihood: low
+      label:
+        en: 'Pin pushed back out of connector body'
+        de: 'Pin aus dem Steckergehäuse zurückgedrückt'
+    - id: solder_joint_cracked
+      likelihood: low
+      label:
+        en: 'Cracked solder joint inside the module or sensor'
+        de: 'Gerissene Lötstelle im Modul oder Sensor'
   symptoms:
     - en: 'ABS warning light on'
       de: 'ABS-Warnleuchte an'
@@ -23843,6 +25743,16 @@
       label:
         en: Signal wire shorted to battery
         de: Signalleitung mit Plus-Schluss
+    - id: connector_corrosion
+      likelihood: low
+      label:
+        en: 'Connector pins corroded - high contact resistance'
+        de: 'Steckerkontakte korrodiert - hoher Übergangswiderstand'
+    - id: supply_pinch
+      likelihood: low
+      label:
+        en: 'Supply wire pinched against B+ source'
+        de: 'Versorgungsleitung gegen B+-Quelle eingeklemmt'
   symptoms:
     - en: 'ABS warning light on'
       de: 'ABS-Warnleuchte an'
@@ -23888,6 +25798,16 @@
       label:
         en: Signal wire shorted to ground
         de: Signalleitung mit Masseschluss
+    - id: connector_corrosion
+      likelihood: low
+      label:
+        en: 'Connector pins corroded - high contact resistance'
+        de: 'Steckerkontakte korrodiert - hoher Übergangswiderstand'
+    - id: harness_chafe
+      likelihood: low
+      label:
+        en: 'Harness chafing through insulation'
+        de: 'Kabelbaum scheuert sich durch die Isolation'
   symptoms:
     - en: 'ABS warning light on'
       de: 'ABS-Warnleuchte an'
@@ -23933,6 +25853,16 @@
       label:
         en: Sensor reading drifted
         de: Sensorwert verschoben
+    - id: sensor_aged
+      likelihood: low
+      label:
+        en: 'Sensor element aged beyond calibration window'
+        de: 'Sensorelement gealtert über Kalibrierfenster hinaus'
+    - id: mounting_loose
+      likelihood: low
+      label:
+        en: 'Sensor mounting loose - signal damping'
+        de: 'Sensorbefestigung lose - Signaldämpfung'
   symptoms:
     - en: 'ABS warning light on'
       de: 'ABS-Warnleuchte an'
@@ -23978,6 +25908,16 @@
       label:
         en: Wire broken
         de: Kabel gebrochen
+    - id: connector_back_out
+      likelihood: low
+      label:
+        en: 'Pin pushed back out of connector body'
+        de: 'Pin aus dem Steckergehäuse zurückgedrückt'
+    - id: solder_joint_cracked
+      likelihood: low
+      label:
+        en: 'Cracked solder joint inside the module or sensor'
+        de: 'Gerissene Lötstelle im Modul oder Sensor'
   symptoms:
     - en: 'ABS warning light on'
       de: 'ABS-Warnleuchte an'
@@ -24023,6 +25963,16 @@
       label:
         en: Signal wire shorted to battery
         de: Signalleitung mit Plus-Schluss
+    - id: connector_corrosion
+      likelihood: low
+      label:
+        en: 'Connector pins corroded - high contact resistance'
+        de: 'Steckerkontakte korrodiert - hoher Übergangswiderstand'
+    - id: supply_pinch
+      likelihood: low
+      label:
+        en: 'Supply wire pinched against B+ source'
+        de: 'Versorgungsleitung gegen B+-Quelle eingeklemmt'
   symptoms:
     - en: 'ABS warning light on'
       de: 'ABS-Warnleuchte an'
@@ -24068,6 +26018,16 @@
       label:
         en: Signal wire shorted to ground
         de: Signalleitung mit Masseschluss
+    - id: connector_corrosion
+      likelihood: low
+      label:
+        en: 'Connector pins corroded - high contact resistance'
+        de: 'Steckerkontakte korrodiert - hoher Übergangswiderstand'
+    - id: harness_chafe
+      likelihood: low
+      label:
+        en: 'Harness chafing through insulation'
+        de: 'Kabelbaum scheuert sich durch die Isolation'
   symptoms:
     - en: 'ABS warning light on'
       de: 'ABS-Warnleuchte an'
@@ -24113,6 +26073,16 @@
       label:
         en: Sensor reading drifted
         de: Sensorwert verschoben
+    - id: sensor_aged
+      likelihood: low
+      label:
+        en: 'Sensor element aged beyond calibration window'
+        de: 'Sensorelement gealtert über Kalibrierfenster hinaus'
+    - id: mounting_loose
+      likelihood: low
+      label:
+        en: 'Sensor mounting loose - signal damping'
+        de: 'Sensorbefestigung lose - Signaldämpfung'
   symptoms:
     - en: 'ABS warning light on'
       de: 'ABS-Warnleuchte an'
@@ -24158,6 +26128,16 @@
       label:
         en: Wire broken
         de: Kabel gebrochen
+    - id: connector_back_out
+      likelihood: low
+      label:
+        en: 'Pin pushed back out of connector body'
+        de: 'Pin aus dem Steckergehäuse zurückgedrückt'
+    - id: solder_joint_cracked
+      likelihood: low
+      label:
+        en: 'Cracked solder joint inside the module or sensor'
+        de: 'Gerissene Lötstelle im Modul oder Sensor'
   symptoms:
     - en: 'ABS warning light on'
       de: 'ABS-Warnleuchte an'
@@ -24203,6 +26183,16 @@
       label:
         en: Signal wire shorted to battery
         de: Signalleitung mit Plus-Schluss
+    - id: connector_corrosion
+      likelihood: low
+      label:
+        en: 'Connector pins corroded - high contact resistance'
+        de: 'Steckerkontakte korrodiert - hoher Übergangswiderstand'
+    - id: supply_pinch
+      likelihood: low
+      label:
+        en: 'Supply wire pinched against B+ source'
+        de: 'Versorgungsleitung gegen B+-Quelle eingeklemmt'
   symptoms:
     - en: 'ABS warning light on'
       de: 'ABS-Warnleuchte an'
@@ -24248,6 +26238,16 @@
       label:
         en: Signal wire shorted to ground
         de: Signalleitung mit Masseschluss
+    - id: connector_corrosion
+      likelihood: low
+      label:
+        en: 'Connector pins corroded - high contact resistance'
+        de: 'Steckerkontakte korrodiert - hoher Übergangswiderstand'
+    - id: harness_chafe
+      likelihood: low
+      label:
+        en: 'Harness chafing through insulation'
+        de: 'Kabelbaum scheuert sich durch die Isolation'
   symptoms:
     - en: 'ABS warning light on'
       de: 'ABS-Warnleuchte an'
@@ -24293,6 +26293,16 @@
       label:
         en: Sensor reading drifted
         de: Sensorwert verschoben
+    - id: sensor_aged
+      likelihood: low
+      label:
+        en: 'Sensor element aged beyond calibration window'
+        de: 'Sensorelement gealtert über Kalibrierfenster hinaus'
+    - id: mounting_loose
+      likelihood: low
+      label:
+        en: 'Sensor mounting loose - signal damping'
+        de: 'Sensorbefestigung lose - Signaldämpfung'
   symptoms:
     - en: 'ABS warning light on'
       de: 'ABS-Warnleuchte an'
@@ -24338,6 +26348,16 @@
       label:
         en: Wire broken
         de: Kabel gebrochen
+    - id: connector_back_out
+      likelihood: low
+      label:
+        en: 'Pin pushed back out of connector body'
+        de: 'Pin aus dem Steckergehäuse zurückgedrückt'
+    - id: solder_joint_cracked
+      likelihood: low
+      label:
+        en: 'Cracked solder joint inside the module or sensor'
+        de: 'Gerissene Lötstelle im Modul oder Sensor'
   symptoms:
     - en: 'ABS warning light on'
       de: 'ABS-Warnleuchte an'
@@ -24383,6 +26403,16 @@
       label:
         en: Signal wire shorted to battery
         de: Signalleitung mit Plus-Schluss
+    - id: connector_corrosion
+      likelihood: low
+      label:
+        en: 'Connector pins corroded - high contact resistance'
+        de: 'Steckerkontakte korrodiert - hoher Übergangswiderstand'
+    - id: supply_pinch
+      likelihood: low
+      label:
+        en: 'Supply wire pinched against B+ source'
+        de: 'Versorgungsleitung gegen B+-Quelle eingeklemmt'
   symptoms:
     - en: 'ABS warning light on'
       de: 'ABS-Warnleuchte an'
@@ -24428,6 +26458,16 @@
       label:
         en: Signal wire shorted to ground
         de: Signalleitung mit Masseschluss
+    - id: connector_corrosion
+      likelihood: low
+      label:
+        en: 'Connector pins corroded - high contact resistance'
+        de: 'Steckerkontakte korrodiert - hoher Übergangswiderstand'
+    - id: harness_chafe
+      likelihood: low
+      label:
+        en: 'Harness chafing through insulation'
+        de: 'Kabelbaum scheuert sich durch die Isolation'
   symptoms:
     - en: 'ABS warning light on'
       de: 'ABS-Warnleuchte an'
@@ -24473,6 +26513,16 @@
       label:
         en: Sensor reading drifted
         de: Sensorwert verschoben
+    - id: sensor_aged
+      likelihood: low
+      label:
+        en: 'Sensor element aged beyond calibration window'
+        de: 'Sensorelement gealtert über Kalibrierfenster hinaus'
+    - id: mounting_loose
+      likelihood: low
+      label:
+        en: 'Sensor mounting loose - signal damping'
+        de: 'Sensorbefestigung lose - Signaldämpfung'
   symptoms:
     - en: 'ABS warning light on'
       de: 'ABS-Warnleuchte an'
@@ -24518,6 +26568,16 @@
       label:
         en: Wire broken
         de: Kabel gebrochen
+    - id: connector_back_out
+      likelihood: low
+      label:
+        en: 'Pin pushed back out of connector body'
+        de: 'Pin aus dem Steckergehäuse zurückgedrückt'
+    - id: solder_joint_cracked
+      likelihood: low
+      label:
+        en: 'Cracked solder joint inside the module or sensor'
+        de: 'Gerissene Lötstelle im Modul oder Sensor'
   symptoms:
     - en: 'ABS warning light on'
       de: 'ABS-Warnleuchte an'
@@ -24563,6 +26623,16 @@
       label:
         en: Signal wire shorted to battery
         de: Signalleitung mit Plus-Schluss
+    - id: connector_corrosion
+      likelihood: low
+      label:
+        en: 'Connector pins corroded - high contact resistance'
+        de: 'Steckerkontakte korrodiert - hoher Übergangswiderstand'
+    - id: supply_pinch
+      likelihood: low
+      label:
+        en: 'Supply wire pinched against B+ source'
+        de: 'Versorgungsleitung gegen B+-Quelle eingeklemmt'
   symptoms:
     - en: 'ABS warning light on'
       de: 'ABS-Warnleuchte an'
@@ -24608,6 +26678,16 @@
       label:
         en: Signal wire shorted to ground
         de: Signalleitung mit Masseschluss
+    - id: connector_corrosion
+      likelihood: low
+      label:
+        en: 'Connector pins corroded - high contact resistance'
+        de: 'Steckerkontakte korrodiert - hoher Übergangswiderstand'
+    - id: harness_chafe
+      likelihood: low
+      label:
+        en: 'Harness chafing through insulation'
+        de: 'Kabelbaum scheuert sich durch die Isolation'
   symptoms:
     - en: 'ABS warning light on'
       de: 'ABS-Warnleuchte an'
@@ -24653,6 +26733,16 @@
       label:
         en: Sensor reading drifted
         de: Sensorwert verschoben
+    - id: sensor_aged
+      likelihood: low
+      label:
+        en: 'Sensor element aged beyond calibration window'
+        de: 'Sensorelement gealtert über Kalibrierfenster hinaus'
+    - id: mounting_loose
+      likelihood: low
+      label:
+        en: 'Sensor mounting loose - signal damping'
+        de: 'Sensorbefestigung lose - Signaldämpfung'
   symptoms:
     - en: 'ABS warning light on'
       de: 'ABS-Warnleuchte an'
@@ -24698,6 +26788,16 @@
       label:
         en: Wire broken
         de: Kabel gebrochen
+    - id: connector_back_out
+      likelihood: low
+      label:
+        en: 'Pin pushed back out of connector body'
+        de: 'Pin aus dem Steckergehäuse zurückgedrückt'
+    - id: solder_joint_cracked
+      likelihood: low
+      label:
+        en: 'Cracked solder joint inside the module or sensor'
+        de: 'Gerissene Lötstelle im Modul oder Sensor'
   symptoms:
     - en: 'ABS warning light on'
       de: 'ABS-Warnleuchte an'
@@ -24743,6 +26843,16 @@
       label:
         en: Signal wire shorted to battery
         de: Signalleitung mit Plus-Schluss
+    - id: connector_corrosion
+      likelihood: low
+      label:
+        en: 'Connector pins corroded - high contact resistance'
+        de: 'Steckerkontakte korrodiert - hoher Übergangswiderstand'
+    - id: supply_pinch
+      likelihood: low
+      label:
+        en: 'Supply wire pinched against B+ source'
+        de: 'Versorgungsleitung gegen B+-Quelle eingeklemmt'
   symptoms:
     - en: 'ABS warning light on'
       de: 'ABS-Warnleuchte an'
@@ -24788,6 +26898,16 @@
       label:
         en: Signal wire shorted to ground
         de: Signalleitung mit Masseschluss
+    - id: connector_corrosion
+      likelihood: low
+      label:
+        en: 'Connector pins corroded - high contact resistance'
+        de: 'Steckerkontakte korrodiert - hoher Übergangswiderstand'
+    - id: harness_chafe
+      likelihood: low
+      label:
+        en: 'Harness chafing through insulation'
+        de: 'Kabelbaum scheuert sich durch die Isolation'
   symptoms:
     - en: 'ABS warning light on'
       de: 'ABS-Warnleuchte an'
@@ -24833,6 +26953,16 @@
       label:
         en: Sensor reading drifted
         de: Sensorwert verschoben
+    - id: sensor_aged
+      likelihood: low
+      label:
+        en: 'Sensor element aged beyond calibration window'
+        de: 'Sensorelement gealtert über Kalibrierfenster hinaus'
+    - id: mounting_loose
+      likelihood: low
+      label:
+        en: 'Sensor mounting loose - signal damping'
+        de: 'Sensorbefestigung lose - Signaldämpfung'
   symptoms:
     - en: 'ABS warning light on'
       de: 'ABS-Warnleuchte an'
@@ -24878,6 +27008,16 @@
       label:
         en: Wire broken
         de: Kabel gebrochen
+    - id: connector_back_out
+      likelihood: low
+      label:
+        en: 'Pin pushed back out of connector body'
+        de: 'Pin aus dem Steckergehäuse zurückgedrückt'
+    - id: solder_joint_cracked
+      likelihood: low
+      label:
+        en: 'Cracked solder joint inside the module or sensor'
+        de: 'Gerissene Lötstelle im Modul oder Sensor'
   symptoms:
     - en: 'ABS warning light on'
       de: 'ABS-Warnleuchte an'
@@ -24923,6 +27063,16 @@
       label:
         en: Signal wire shorted to battery
         de: Signalleitung mit Plus-Schluss
+    - id: connector_corrosion
+      likelihood: low
+      label:
+        en: 'Connector pins corroded - high contact resistance'
+        de: 'Steckerkontakte korrodiert - hoher Übergangswiderstand'
+    - id: supply_pinch
+      likelihood: low
+      label:
+        en: 'Supply wire pinched against B+ source'
+        de: 'Versorgungsleitung gegen B+-Quelle eingeklemmt'
   symptoms:
     - en: 'ABS warning light on'
       de: 'ABS-Warnleuchte an'
@@ -24968,6 +27118,16 @@
       label:
         en: Signal wire shorted to ground
         de: Signalleitung mit Masseschluss
+    - id: connector_corrosion
+      likelihood: low
+      label:
+        en: 'Connector pins corroded - high contact resistance'
+        de: 'Steckerkontakte korrodiert - hoher Übergangswiderstand'
+    - id: harness_chafe
+      likelihood: low
+      label:
+        en: 'Harness chafing through insulation'
+        de: 'Kabelbaum scheuert sich durch die Isolation'
   symptoms:
     - en: 'ABS warning light on'
       de: 'ABS-Warnleuchte an'
@@ -25013,6 +27173,16 @@
       label:
         en: Sensor reading drifted
         de: Sensorwert verschoben
+    - id: sensor_aged
+      likelihood: low
+      label:
+        en: 'Sensor element aged beyond calibration window'
+        de: 'Sensorelement gealtert über Kalibrierfenster hinaus'
+    - id: mounting_loose
+      likelihood: low
+      label:
+        en: 'Sensor mounting loose - signal damping'
+        de: 'Sensorbefestigung lose - Signaldämpfung'
   symptoms:
     - en: 'ABS warning light on'
       de: 'ABS-Warnleuchte an'
@@ -25058,6 +27228,16 @@
       label:
         en: Sensor wiring broken
         de: Sensorverkabelung defekt
+    - id: connector_back_out
+      likelihood: low
+      label:
+        en: 'Pin pushed back out of connector body'
+        de: 'Pin aus dem Steckergehäuse zurückgedrückt'
+    - id: solder_joint_cracked
+      likelihood: low
+      label:
+        en: 'Cracked solder joint inside the module or sensor'
+        de: 'Gerissene Lötstelle im Modul oder Sensor'
   symptoms:
     - en: 'ABS warning light on'
       de: 'ABS-Warnleuchte an'
@@ -25102,6 +27282,16 @@
       label:
         en: Tone ring damaged or contaminated
         de: Geberring beschädigt oder verschmutzt
+    - id: sensor_aged
+      likelihood: low
+      label:
+        en: 'Sensor element aged beyond calibration window'
+        de: 'Sensorelement gealtert über Kalibrierfenster hinaus'
+    - id: mounting_loose
+      likelihood: low
+      label:
+        en: 'Sensor mounting loose - signal damping'
+        de: 'Sensorbefestigung lose - Signaldämpfung'
   symptoms:
     - en: 'ABS warning light on'
       de: 'ABS-Warnleuchte an'
@@ -25146,6 +27336,16 @@
       label:
         en: Signal wire shorted to ground
         de: Signalleitung mit Masseschluss
+    - id: connector_corrosion
+      likelihood: low
+      label:
+        en: 'Connector pins corroded - high contact resistance'
+        de: 'Steckerkontakte korrodiert - hoher Übergangswiderstand'
+    - id: harness_chafe
+      likelihood: low
+      label:
+        en: 'Harness chafing through insulation'
+        de: 'Kabelbaum scheuert sich durch die Isolation'
   symptoms:
     - en: 'ABS warning light on'
       de: 'ABS-Warnleuchte an'
@@ -25191,6 +27391,16 @@
       label:
         en: Signal wire shorted to battery
         de: Signalleitung mit Plus-Schluss
+    - id: connector_corrosion
+      likelihood: low
+      label:
+        en: 'Connector pins corroded - high contact resistance'
+        de: 'Steckerkontakte korrodiert - hoher Übergangswiderstand'
+    - id: supply_pinch
+      likelihood: low
+      label:
+        en: 'Supply wire pinched against B+ source'
+        de: 'Versorgungsleitung gegen B+-Quelle eingeklemmt'
   symptoms:
     - en: 'ABS warning light on'
       de: 'ABS-Warnleuchte an'
@@ -25236,6 +27446,16 @@
       label:
         en: Connector loose or oxidized
         de: Stecker locker oder oxidiert
+    - id: connector_intermittent
+      likelihood: low
+      label:
+        en: 'Connector with intermittent contact under vibration'
+        de: 'Stecker mit sporadischem Kontakt unter Vibration'
+    - id: harness_vibration
+      likelihood: low
+      label:
+        en: 'Harness routed against vibrating component'
+        de: 'Kabelbaum verläuft an vibrierender Komponente'
   symptoms:
     - en: 'ABS warning light on'
       de: 'ABS-Warnleuchte an'
@@ -25370,6 +27590,16 @@
       label:
         en: Sensor wiring broken
         de: Sensorverkabelung defekt
+    - id: connector_back_out
+      likelihood: low
+      label:
+        en: 'Pin pushed back out of connector body'
+        de: 'Pin aus dem Steckergehäuse zurückgedrückt'
+    - id: solder_joint_cracked
+      likelihood: low
+      label:
+        en: 'Cracked solder joint inside the module or sensor'
+        de: 'Gerissene Lötstelle im Modul oder Sensor'
   symptoms:
     - en: 'ABS warning light on'
       de: 'ABS-Warnleuchte an'
@@ -25415,6 +27645,16 @@
       label:
         en: Tone ring damaged or contaminated
         de: Geberring beschädigt oder verschmutzt
+    - id: sensor_aged
+      likelihood: low
+      label:
+        en: 'Sensor element aged beyond calibration window'
+        de: 'Sensorelement gealtert über Kalibrierfenster hinaus'
+    - id: mounting_loose
+      likelihood: low
+      label:
+        en: 'Sensor mounting loose - signal damping'
+        de: 'Sensorbefestigung lose - Signaldämpfung'
   symptoms:
     - en: 'ABS warning light on'
       de: 'ABS-Warnleuchte an'
@@ -25460,6 +27700,16 @@
       label:
         en: Signal wire shorted to ground
         de: Signalleitung mit Masseschluss
+    - id: connector_corrosion
+      likelihood: low
+      label:
+        en: 'Connector pins corroded - high contact resistance'
+        de: 'Steckerkontakte korrodiert - hoher Übergangswiderstand'
+    - id: harness_chafe
+      likelihood: low
+      label:
+        en: 'Harness chafing through insulation'
+        de: 'Kabelbaum scheuert sich durch die Isolation'
   symptoms:
     - en: 'ABS warning light on'
       de: 'ABS-Warnleuchte an'
@@ -25505,6 +27755,16 @@
       label:
         en: Signal wire shorted to battery
         de: Signalleitung mit Plus-Schluss
+    - id: connector_corrosion
+      likelihood: low
+      label:
+        en: 'Connector pins corroded - high contact resistance'
+        de: 'Steckerkontakte korrodiert - hoher Übergangswiderstand'
+    - id: supply_pinch
+      likelihood: low
+      label:
+        en: 'Supply wire pinched against B+ source'
+        de: 'Versorgungsleitung gegen B+-Quelle eingeklemmt'
   symptoms:
     - en: 'ABS warning light on'
       de: 'ABS-Warnleuchte an'
@@ -25550,6 +27810,16 @@
       label:
         en: Connector loose or oxidized
         de: Stecker locker oder oxidiert
+    - id: connector_intermittent
+      likelihood: low
+      label:
+        en: 'Connector with intermittent contact under vibration'
+        de: 'Stecker mit sporadischem Kontakt unter Vibration'
+    - id: harness_vibration
+      likelihood: low
+      label:
+        en: 'Harness routed against vibrating component'
+        de: 'Kabelbaum verläuft an vibrierender Komponente'
   symptoms:
     - en: 'ABS warning light on'
       de: 'ABS-Warnleuchte an'
@@ -25685,6 +27955,16 @@
       label:
         en: Sensor wiring broken
         de: Sensorverkabelung defekt
+    - id: connector_back_out
+      likelihood: low
+      label:
+        en: 'Pin pushed back out of connector body'
+        de: 'Pin aus dem Steckergehäuse zurückgedrückt'
+    - id: solder_joint_cracked
+      likelihood: low
+      label:
+        en: 'Cracked solder joint inside the module or sensor'
+        de: 'Gerissene Lötstelle im Modul oder Sensor'
   symptoms:
     - en: 'ABS warning light on'
       de: 'ABS-Warnleuchte an'
@@ -25777,6 +28057,16 @@
       label:
         en: Signal wire shorted to ground
         de: Signalleitung mit Masseschluss
+    - id: connector_corrosion
+      likelihood: low
+      label:
+        en: 'Connector pins corroded - high contact resistance'
+        de: 'Steckerkontakte korrodiert - hoher Übergangswiderstand'
+    - id: harness_chafe
+      likelihood: low
+      label:
+        en: 'Harness chafing through insulation'
+        de: 'Kabelbaum scheuert sich durch die Isolation'
   symptoms:
     - en: 'ABS warning light on'
       de: 'ABS-Warnleuchte an'
@@ -25822,6 +28112,16 @@
       label:
         en: Signal wire shorted to battery
         de: Signalleitung mit Plus-Schluss
+    - id: connector_corrosion
+      likelihood: low
+      label:
+        en: 'Connector pins corroded - high contact resistance'
+        de: 'Steckerkontakte korrodiert - hoher Übergangswiderstand'
+    - id: supply_pinch
+      likelihood: low
+      label:
+        en: 'Supply wire pinched against B+ source'
+        de: 'Versorgungsleitung gegen B+-Quelle eingeklemmt'
   symptoms:
     - en: 'ABS warning light on'
       de: 'ABS-Warnleuchte an'
@@ -25867,6 +28167,16 @@
       label:
         en: Connector loose or oxidized
         de: Stecker locker oder oxidiert
+    - id: connector_intermittent
+      likelihood: low
+      label:
+        en: 'Connector with intermittent contact under vibration'
+        de: 'Stecker mit sporadischem Kontakt unter Vibration'
+    - id: harness_vibration
+      likelihood: low
+      label:
+        en: 'Harness routed against vibrating component'
+        de: 'Kabelbaum verläuft an vibrierender Komponente'
   symptoms:
     - en: 'ABS warning light on'
       de: 'ABS-Warnleuchte an'
@@ -26002,6 +28312,16 @@
       label:
         en: Sensor wiring broken
         de: Sensorverkabelung defekt
+    - id: connector_back_out
+      likelihood: low
+      label:
+        en: 'Pin pushed back out of connector body'
+        de: 'Pin aus dem Steckergehäuse zurückgedrückt'
+    - id: solder_joint_cracked
+      likelihood: low
+      label:
+        en: 'Cracked solder joint inside the module or sensor'
+        de: 'Gerissene Lötstelle im Modul oder Sensor'
   symptoms:
     - en: 'ABS warning light on'
       de: 'ABS-Warnleuchte an'
@@ -26047,6 +28367,16 @@
       label:
         en: Tone ring damaged or contaminated
         de: Geberring beschädigt oder verschmutzt
+    - id: sensor_aged
+      likelihood: low
+      label:
+        en: 'Sensor element aged beyond calibration window'
+        de: 'Sensorelement gealtert über Kalibrierfenster hinaus'
+    - id: mounting_loose
+      likelihood: low
+      label:
+        en: 'Sensor mounting loose - signal damping'
+        de: 'Sensorbefestigung lose - Signaldämpfung'
   symptoms:
     - en: 'ABS warning light on'
       de: 'ABS-Warnleuchte an'
@@ -26092,6 +28422,16 @@
       label:
         en: Signal wire shorted to ground
         de: Signalleitung mit Masseschluss
+    - id: connector_corrosion
+      likelihood: low
+      label:
+        en: 'Connector pins corroded - high contact resistance'
+        de: 'Steckerkontakte korrodiert - hoher Übergangswiderstand'
+    - id: harness_chafe
+      likelihood: low
+      label:
+        en: 'Harness chafing through insulation'
+        de: 'Kabelbaum scheuert sich durch die Isolation'
   symptoms:
     - en: 'ABS warning light on'
       de: 'ABS-Warnleuchte an'
@@ -26137,6 +28477,16 @@
       label:
         en: Signal wire shorted to battery
         de: Signalleitung mit Plus-Schluss
+    - id: connector_corrosion
+      likelihood: low
+      label:
+        en: 'Connector pins corroded - high contact resistance'
+        de: 'Steckerkontakte korrodiert - hoher Übergangswiderstand'
+    - id: supply_pinch
+      likelihood: low
+      label:
+        en: 'Supply wire pinched against B+ source'
+        de: 'Versorgungsleitung gegen B+-Quelle eingeklemmt'
   symptoms:
     - en: 'ABS warning light on'
       de: 'ABS-Warnleuchte an'
@@ -26182,6 +28532,16 @@
       label:
         en: Connector loose or oxidized
         de: Stecker locker oder oxidiert
+    - id: connector_intermittent
+      likelihood: low
+      label:
+        en: 'Connector with intermittent contact under vibration'
+        de: 'Stecker mit sporadischem Kontakt unter Vibration'
+    - id: harness_vibration
+      likelihood: low
+      label:
+        en: 'Harness routed against vibrating component'
+        de: 'Kabelbaum verläuft an vibrierender Komponente'
   symptoms:
     - en: 'ABS warning light on'
       de: 'ABS-Warnleuchte an'
@@ -26703,6 +29063,11 @@
       label:
         en: Sensor calibration required after service
         de: Sensorkalibrierung nach Service erforderlich
+    - id: sensor_aged
+      likelihood: low
+      label:
+        en: 'Sensor element aged beyond calibration window'
+        de: 'Sensorelement gealtert über Kalibrierfenster hinaus'
   symptoms:
     - en: 'ABS warning light on'
       de: 'ABS-Warnleuchte an'
@@ -26751,6 +29116,11 @@
       label:
         en: Low power steering fluid level
         de: Niedriger Servolenkungs-Flüssigkeitsstand
+    - id: sensor_aged
+      likelihood: low
+      label:
+        en: 'Sensor element aged beyond calibration window'
+        de: 'Sensorelement gealtert über Kalibrierfenster hinaus'
   symptoms:
     - en: 'ABS warning light on'
       de: 'ABS-Warnleuchte an'
@@ -27610,6 +29980,11 @@
       label:
         en: Calibration required after service
         de: Kalibrierung nach Service erforderlich
+    - id: sensor_aged
+      likelihood: low
+      label:
+        en: 'Sensor element aged beyond calibration window'
+        de: 'Sensorelement gealtert über Kalibrierfenster hinaus'
   symptoms:
     - en: 'ABS warning light on'
       de: 'ABS-Warnleuchte an'
