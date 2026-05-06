@@ -1267,7 +1267,7 @@
   category: chassis
   title:
     en: Left Front Wheel Speed Sensor Circuit Malfunction
-    de: Raddrehzahlsensor vorne links Schaltung Fehlfunktion
+    de: Raddrehzahlsensor vorne links Stromkreis-Fehlfunktion
   description:
     en: The ABS control module has detected a fault in the left front wheel speed sensor circuit. Loss of wheel speed information disables ABS and stability control, and a separate ABS warning lamp is illuminated.
     de: Das ABS-Steuergerät hat einen Fehler im Stromkreis des Raddrehzahlsensors vorne links erkannt. Ohne Raddrehzahlsignal werden ABS und Stabilitätsregelung deaktiviert und die ABS-Warnleuchte leuchtet.
@@ -1778,7 +1778,7 @@
   category: chassis
   title:
     en: Right Front Wheel Speed Sensor Circuit Malfunction
-    de: Raddrehzahlsensor vorne rechts Schaltung Fehlfunktion
+    de: Raddrehzahlsensor vorne rechts Stromkreis-Fehlfunktion
   description:
     en: The ABS control module has detected a fault in the right front wheel speed sensor circuit. Loss of wheel speed information disables ABS and stability control, and a separate ABS warning lamp is illuminated.
     de: Das ABS-Steuergerät hat einen Fehler im Stromkreis des Raddrehzahlsensors vorne rechts erkannt. Ohne Raddrehzahlsignal werden ABS und Stabilitätsregelung deaktiviert und die ABS-Warnleuchte leuchtet.
@@ -2044,7 +2044,7 @@
   category: chassis
   title:
     en: Left Rear Wheel Speed Sensor Circuit Malfunction
-    de: Raddrehzahlsensor hinten links Schaltung Fehlfunktion
+    de: Raddrehzahlsensor hinten links Stromkreis-Fehlfunktion
   description:
     en: The ABS control module has detected a fault in the left rear wheel speed sensor circuit. Loss of wheel speed information disables ABS and stability control, and a separate ABS warning lamp is illuminated.
     de: Das ABS-Steuergerät hat einen Fehler im Stromkreis des Raddrehzahlsensors hinten links erkannt. Ohne Raddrehzahlsignal werden ABS und Stabilitätsregelung deaktiviert und die ABS-Warnleuchte leuchtet.
@@ -2562,7 +2562,7 @@
   category: chassis
   title:
     en: Right Rear Wheel Speed Sensor Circuit Malfunction
-    de: Raddrehzahlsensor hinten rechts Schaltung Fehlfunktion
+    de: Raddrehzahlsensor hinten rechts Stromkreis-Fehlfunktion
   description:
     en: The ABS control module has detected a fault in the right rear wheel speed sensor circuit. Loss of wheel speed information disables ABS and stability control, and a separate ABS warning lamp is illuminated.
     de: Das ABS-Steuergerät hat einen Fehler im Stromkreis des Raddrehzahlsensors hinten rechts erkannt. Ohne Raddrehzahlsignal werden ABS und Stabilitätsregelung deaktiviert und die ABS-Warnleuchte leuchtet.
@@ -5435,7 +5435,7 @@
   category: chassis
   title:
     en: ABS Pump Motor Circuit Malfunction
-    de: ABS-Pumpenmotor Schaltung Fehlfunktion
+    de: ABS-Pumpenmotor Stromkreis-Fehlfunktion
   description:
     en: The ABS control module has detected a fault in the hydraulic pump motor circuit. The pump rebuilds brake pressure during ABS regulation — without it, ABS and stability control are disabled.
     de: Das ABS-Steuergerät hat einen Fehler im Stromkreis des hydraulischen Pumpenmotors erkannt. Die Pumpe baut bei ABS-Regelung den Bremsdruck wieder auf — ohne sie werden ABS und Stabilitätsregelung deaktiviert.
@@ -5582,7 +5582,7 @@
   category: chassis
   title:
     en: Valve Relay Circuit Malfunction
-    de: Ventilrelais Schaltung Fehlfunktion
+    de: Ventilrelais Stromkreis-Fehlfunktion
   description:
     en: The ABS control module has detected a fault in the valve relay circuit, which supplies power to the ABS solenoid valves. With this fault, the module cannot energize the valves and ABS is disabled.
     de: Das ABS-Steuergerät hat einen Fehler im Stromkreis des Ventilrelais erkannt, das die ABS-Magnetventile mit Spannung versorgt. Bei aktivem Fehler kann das Steuergerät die Ventile nicht ansteuern und ABS wird deaktiviert.
@@ -5883,7 +5883,7 @@
   category: chassis
   title:
     en: Right Front ABS Outlet Solenoid B Circuit Malfunction
-    de: ABS-Auslassventil B vorne rechts Schaltung Fehlfunktion
+    de: ABS-Auslassventil B vorne rechts Stromkreis-Fehlfunktion
   description:
     en: The ABS module has detected an electrical fault in the secondary outlet solenoid for the right front wheel. ABS and stability control are disabled while the fault is active.
     de: Das ABS-Steuergerät hat einen elektrischen Fehler im zweiten Auslassventil für das rechte Vorderrad erkannt. ABS und Stabilitätsregelung sind bei aktivem Fehler deaktiviert.
@@ -5979,7 +5979,7 @@
   category: chassis
   title:
     en: Right Front ABS Inlet Solenoid B Circuit Malfunction
-    de: ABS-Einlassventil B vorne rechts Schaltung Fehlfunktion
+    de: ABS-Einlassventil B vorne rechts Stromkreis-Fehlfunktion
   description:
     en: Electrical fault in the secondary inlet solenoid for the right front wheel. Pressure modulation for that wheel is no longer possible and ABS is disabled.
     de: Elektrischer Fehler im zweiten Einlassventil für das rechte Vorderrad. Eine Druckmodulation an diesem Rad ist nicht mehr möglich und ABS ist deaktiviert.
@@ -6075,7 +6075,7 @@
   category: chassis
   title:
     en: Left Rear ABS Inlet Solenoid Circuit Malfunction
-    de: ABS-Einlassventil hinten links Schaltung Fehlfunktion
+    de: ABS-Einlassventil hinten links Stromkreis-Fehlfunktion
   description:
     en: Electrical fault in the inlet solenoid for the left rear wheel. ABS is disabled and the warning lamp is illuminated.
     de: Elektrischer Fehler im Einlassventil für das hintere linke Rad. ABS ist deaktiviert und die Warnleuchte leuchtet.
@@ -6171,7 +6171,7 @@
   category: chassis
   title:
     en: Left Rear ABS Outlet Solenoid Circuit Malfunction
-    de: ABS-Auslassventil hinten links Schaltung Fehlfunktion
+    de: ABS-Auslassventil hinten links Stromkreis-Fehlfunktion
   description:
     en: Electrical fault in the outlet solenoid for the left rear wheel. ABS pressure release for this wheel is no longer possible.
     de: Elektrischer Fehler im Auslassventil für das hintere linke Rad. Ein Druckabbau am Rad ist nicht mehr möglich.
@@ -6219,7 +6219,7 @@
   category: chassis
   title:
     en: Right Rear ABS Inlet Solenoid Circuit Malfunction
-    de: ABS-Einlassventil hinten rechts Schaltung Fehlfunktion
+    de: ABS-Einlassventil hinten rechts Stromkreis-Fehlfunktion
   description:
     en: Electrical fault in the inlet solenoid for the right rear wheel. ABS is disabled while the fault is active.
     de: Elektrischer Fehler im Einlassventil für das hintere rechte Rad. ABS ist bei aktivem Fehler deaktiviert.
@@ -6267,7 +6267,7 @@
   category: chassis
   title:
     en: Right Rear ABS Outlet Solenoid Circuit Malfunction
-    de: ABS-Auslassventil hinten rechts Schaltung Fehlfunktion
+    de: ABS-Auslassventil hinten rechts Stromkreis-Fehlfunktion
   description:
     en: Electrical fault in the outlet solenoid for the right rear wheel. ABS pressure release for this wheel is no longer possible.
     de: Elektrischer Fehler im Auslassventil für das hintere rechte Rad. Ein Druckabbau am Rad ist nicht mehr möglich.
@@ -7876,7 +7876,7 @@
   category: chassis
   title:
     en: Brake Booster Pressure Sensor Circuit Malfunction
-    de: Bremskraftverstärker-Drucksensor Schaltung Fehlfunktion
+    de: Bremskraftverstärker-Drucksensor Stromkreis-Fehlfunktion
   description:
     en: The brake control module has detected an out-of-range or implausible signal from the brake booster pressure sensor. Brake assist and electronic boost functions may be limited.
     de: Das Bremssteuergerät hat ein außerhalb des Bereichs liegendes oder unplausibles Signal vom Bremskraftverstärker-Drucksensor erkannt. Bremsassistent und elektronische Verstärkung können eingeschränkt sein.
@@ -7924,7 +7924,7 @@
   category: chassis
   title:
     en: Brake Booster Vacuum Sensor Circuit Malfunction
-    de: Bremskraftverstärker-Vakuumsensor Schaltung Fehlfunktion
+    de: Bremskraftverstärker-Vakuumsensor Stromkreis-Fehlfunktion
   description:
     en: The brake control module has detected an implausible signal from the booster vacuum sensor. Loss of vacuum signal can cause hard pedal and reduced power assist.
     de: Das Bremssteuergerät hat ein unplausibles Signal vom Vakuumsensor des Bremskraftverstärkers erkannt. Ein fehlendes Vakuumsignal kann zu hartem Pedal und reduzierter Verstärkung führen.
@@ -7972,7 +7972,7 @@
   category: chassis
   title:
     en: Brake Booster Boost Sensor Circuit Malfunction
-    de: Bremskraftverstärker-Boost-Sensor Schaltung Fehlfunktion
+    de: Bremskraftverstärker-Boost-Sensor Stromkreis-Fehlfunktion
   description:
     en: The brake control module has detected an electrical fault in the booster boost (assist pressure) sensor circuit. Power-assist regulation may default to a backup strategy.
     de: Das Bremssteuergerät hat einen elektrischen Fehler im Stromkreis des Boost- bzw. Unterstützungsdrucksensors erkannt. Die Verstärkungsregelung läuft ggf. im Notbetrieb.
@@ -8127,7 +8127,7 @@
   category: chassis
   title:
     en: Brake Pedal Stroke Sensor Circuit Malfunction
-    de: Bremspedalweg-Sensor Schaltung Fehlfunktion
+    de: Bremspedalweg-Sensor Stromkreis-Fehlfunktion
   description:
     en: The brake control module has detected an out-of-range signal from the brake pedal stroke sensor. Pedal travel information is required for brake assist and electronically boosted braking.
     de: Das Bremssteuergerät hat ein Signal des Bremspedalweg-Sensors außerhalb des gültigen Bereichs erkannt. Die Pedalweg-Information ist für Bremsassistent und elektronisch unterstützte Bremsung erforderlich.
@@ -8175,7 +8175,7 @@
   category: chassis
   title:
     en: Brake Pedal Apply Sensor Circuit Malfunction
-    de: Bremspedal-Betätigungssensor Schaltung Fehlfunktion
+    de: Bremspedal-Betätigungssensor Stromkreis-Fehlfunktion
   description:
     en: Electrical fault in the brake pedal apply sensor circuit. The module cannot reliably detect whether the brake pedal is pressed, which affects ABS, ESP and brake assist functions.
     de: Elektrischer Fehler im Stromkreis des Bremspedal-Betätigungssensors. Das Steuergerät kann nicht mehr zuverlässig erkennen, ob das Bremspedal getreten ist, was ABS, ESP und Bremsassistent betrifft.
@@ -9129,7 +9129,7 @@
   category: chassis
   title:
     en: Transfer Case High Range Switch Circuit Malfunction
-    de: Verteilergetriebe-Schalter Hochbereich Schaltung Fehlfunktion
+    de: Verteilergetriebe-Schalter Hochbereich Stromkreis-Fehlfunktion
   description:
     en: The transfer case control module has detected an implausible state from the high range (4H) position switch. Range selection in 4WD mode may be limited.
     de: Das Verteilergetriebe-Steuergerät hat einen unplausiblen Zustand des Hochbereich-Stellungsschalters (4H) erkannt. Die Bereichswahl im Allradbetrieb kann eingeschränkt sein.
@@ -9177,7 +9177,7 @@
   category: chassis
   title:
     en: Transfer Case Low Range Switch Circuit Malfunction
-    de: Verteilergetriebe-Schalter Geländebereich Schaltung Fehlfunktion
+    de: Verteilergetriebe-Schalter Geländebereich Stromkreis-Fehlfunktion
   description:
     en: The transfer case control module has detected an implausible state from the low range (4L) position switch. Engagement of low range may be inhibited.
     de: Das Verteilergetriebe-Steuergerät hat einen unplausiblen Zustand des Geländebereich-Stellungsschalters (4L) erkannt. Das Einlegen der Geländeuntersetzung kann blockiert sein.
@@ -9225,7 +9225,7 @@
   category: chassis
   title:
     en: 4WD Mode Switch Circuit Malfunction
-    de: Allrad-Modusschalter Schaltung Fehlfunktion
+    de: Allrad-Modusschalter Stromkreis-Fehlfunktion
   description:
     en: The transfer case or 4WD control module has detected an invalid signal from the driver-operated 4WD mode selector. Mode requests from the dashboard may be ignored.
     de: Das Verteilergetriebe- bzw. Allrad-Steuergerät hat ein ungültiges Signal des fahrerseitigen Allrad-Wahlschalters erkannt. Modusanforderungen vom Armaturenbrett werden ggf. ignoriert.
@@ -9458,7 +9458,7 @@
   category: chassis
   title:
     en: Adaptive Cruise Control Sensor Circuit Malfunction
-    de: ACC-Sensor Schaltung Fehlfunktion
+    de: ACC-Sensor Stromkreis-Fehlfunktion
   description:
     en: The adaptive cruise control module has detected a fault in its forward-looking radar or lidar sensor circuit. ACC and forward collision warning are unavailable while the fault is active.
     de: Das ACC-Steuergerät hat einen Fehler im nach vorn gerichteten Radar- oder Lidar-Sensor-Stromkreis erkannt. ACC und Auffahrwarnung sind bei aktivem Fehler nicht verfügbar.
@@ -15937,7 +15937,7 @@
   category: chassis
   title:
     en: Electric Park Brake Switch Circuit Malfunction
-    de: EPB-Schalter Schaltung Fehlfunktion
+    de: EPB-Schalter Stromkreis-Fehlfunktion
   description:
     en: The electric park brake (EPB) module has detected an implausible signal from the operator switch. The EPB cannot be reliably applied or released by the driver until the fault is corrected.
     de: Das EPB-Steuergerät hat ein unplausibles Signal des Bedienschalters erkannt. Bis zur Behebung kann der Fahrer die elektrische Feststellbremse nicht zuverlässig betätigen oder lösen.
@@ -16144,7 +16144,7 @@
   category: chassis
   title:
     en: Park Brake Force Sensor Circuit Malfunction
-    de: Feststellbremsen-Kraftsensor Schaltung Fehlfunktion
+    de: Feststellbremsen-Kraftsensor Stromkreis-Fehlfunktion
   description:
     en: The EPB module has detected an electrical fault in the clamp-force sensor circuit. Without this signal, regulated clamping force cannot be ensured and a fallback strategy is used.
     de: Das EPB-Steuergerät hat einen elektrischen Fehler im Stromkreis des Spannkraftsensors erkannt. Ohne dieses Signal kann die Spannkraft nicht geregelt werden und es greift eine Notstrategie.
@@ -29244,7 +29244,7 @@
   category: chassis
   title:
     en: Trailer Connector Circuit Malfunction
-    de: Anhängerstecker Schaltung Fehlfunktion
+    de: Anhängerstecker Stromkreis-Fehlfunktion
   description:
     en: The chassis or trailer brake module has detected a fault in the trailer wiring connector — for example open lighting circuit or short to ground. Trailer brake and lighting functions may be unavailable.
     de: Das Fahrwerk- oder Anhängerbrems-Steuergerät hat einen Fehler am Anhängerstecker erkannt — z. B. unterbrochener Licht-Stromkreis oder Kurzschluss nach Masse. Anhängerbrems- und Beleuchtungsfunktionen können ausfallen.
@@ -29529,7 +29529,7 @@
   category: chassis
   title:
     en: Trailer Brake Force Sensor Circuit Malfunction
-    de: Anhängerbremskraft-Sensor Schaltung Fehlfunktion
+    de: Anhängerbremskraft-Sensor Stromkreis-Fehlfunktion
   description:
     en: The integrated trailer brake controller has detected an electrical fault in the brake force sensor circuit. Proportional trailer brake control is disabled — the controller defaults to a manual or fixed-gain mode.
     de: Der integrierte Anhängerbrems-Controller hat einen elektrischen Fehler im Stromkreis des Bremskraftsensors erkannt. Die proportionale Anhängerbremsregelung ist deaktiviert — der Controller fällt in einen manuellen bzw. fest eingestellten Modus zurück.
@@ -30724,7 +30724,7 @@
   category: chassis
   title:
     en: TPMS Receiver Circuit Malfunction
-    de: RDKS-Empfänger Schaltung Fehlfunktion
+    de: RDKS-Empfänger Stromkreis-Fehlfunktion
   description:
     en: The body or chassis module has detected a fault in the TPMS RF receiver — for example open antenna or internal failure. No tire pressure data can be received.
     de: Das Karosserie- oder Fahrwerk-Steuergerät hat einen Fehler im RDKS-RF-Empfänger erkannt — z. B. unterbrochene Antenne oder interner Defekt. Es können keine Reifendruckdaten empfangen werden.
@@ -30772,7 +30772,7 @@
   category: chassis
   title:
     en: TPMS Initiator Front Circuit Malfunction
-    de: RDKS-Initiator vorne Schaltung Fehlfunktion
+    de: RDKS-Initiator vorne Stromkreis-Fehlfunktion
   description:
     en: The TPMS module has detected an electrical fault in the front low-frequency initiator (used to wake and locate sensors). Position learning of the front sensors fails.
     de: Das RDKS-Steuergerät hat einen elektrischen Fehler im vorderen LF-Initiator (Wecken und Lokalisieren der Sensoren) erkannt. Das Anlernen der vorderen Sensoren schlägt fehl.
