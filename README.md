@@ -11,7 +11,7 @@ If you are looking up a P-, B-, C- or U-code from your scan tool, this is a sing
 ## What you get
 
 - **All 9,533 generic codes** of the SAE J2012 / ISO 15031-6 standard in one repository.
-- **Plain English and German descriptions**, written from public sources, on every enriched code (currently 9,128 — growing wave by wave toward full coverage).
+- **Plain English and German descriptions**, written from public sources, on every enriched code — **9,533 / 9,533 = 100% complete across all seven families.**
 - **Per code:** title, description, affected components, common causes with likelihood, repair difficulty + cost + hours, MIL/emissions/limp-mode flags, sources.
 - **132 OBD-II PIDs** (Mode 01 + Mode 09) with formulas and units.
 - **CC0 data, MIT tooling.** Use it in your scan-tool app, garage software, training material — no attribution required, no licence fee.
@@ -118,7 +118,7 @@ Each code is at one of two depths:
 - **enriched** — full schema: English+German title, description, affected components, common causes (with likelihood), repair difficulty/cost/hours, flags, references, sources.
 - **indexed** — minimum schema: code, category, English title, source. Always passes validation, but no diagnostic detail yet. Indexed entries are progressively converted to enriched in subsequent waves.
 
-Live counts per family are in [`meta.json`](https://foerbsnavi.github.io/obdex/meta.json) and visualised on the [landing page](https://foerbsnavi.github.io/obdex/). All five non-powertrain families (P3, U0, U3, B0, C0) are at 100% enriched; P0 and P2 are progressing wave by wave.
+Live counts per family are in [`meta.json`](https://foerbsnavi.github.io/obdex/meta.json) and visualised on the [landing page](https://foerbsnavi.github.io/obdex/). **All seven families (P0, P2, P3, U0, U3, B0, C0) are at 100% enriched** — the dataset is complete.
 
 PIDs (Mode 01 + Mode 09) are all extensive — formula, unit, range where applicable.
 
